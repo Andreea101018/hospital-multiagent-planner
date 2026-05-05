@@ -1,0 +1,110 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+PFarthing
+#actions
+1270422399:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)
+1270527200:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)
+1270633900:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)
+1270750899:Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)
+1270804100:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1270917300:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1271034199:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1271150300:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1271266000:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1271388000:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1271432399:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1271522700:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1271615599:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1271656900:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1271693500:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1271803100:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1271916000:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1272029500:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1272107400:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1272146300:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1272186500:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1272229600:Move(E)@Move(E)|Pull(E,N)@Pull(E,N)|Push(N,E)@Push(N,E)|Move(E)@Move(E)
+1272274900:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(E,N)@Push(E,N)|Move(E)@Move(E)
+1272310799:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+1272346000:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Move(E)@Move(E)
+1272381800:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Move(E)@Move(E)
+1272419900:Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Pull(N,N)@Pull(N,N)
+1272457400:Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)
+1272492800:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272524899:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272556699:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272588700:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272620000:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272651600:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272684300:Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272716999:Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272758900:Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272790500:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272822799:Push(W,W)@Push(W,W)|Push(W,S)@Push(W,S)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272854699:Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272886700:Push(W,W)@Push(W,W)|Push(W,S)@Push(W,S)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272917100:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+1272948000:Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)|Push(W,S)@Push(W,S)|Push(W,W)@Push(W,W)
+1272981200:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+1273011800:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)
+1273042000:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+1273095000:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1273128200:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1273161800:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1273193100:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1273224500:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1273255600:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1273288999:Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)
+#end
+#solved
+true
+#numactions
+53
+#time
+1273288999
+#end

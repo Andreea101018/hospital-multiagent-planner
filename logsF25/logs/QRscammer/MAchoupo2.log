@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+QRscammer
+#actions
+48537200:Move(E)@Move(E)|Move(W)@Move(W)
+48695400:Pull(W,N)@Pull(W,N)|Pull(E,S)@Pull(E,S)
+48817200:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+48922500:Pull(W,W)@Pull(W,W)|Pull(N,E)@Pull(N,E)
+49031000:Pull(S,W)@Pull(S,W)|Pull(E,N)@Pull(E,N)
+49137800:Pull(S,S)@Pull(S,S)|Pull(E,E)@Pull(E,E)
+49250000:Push(N,W)@Push(N,W)|Pull(E,E)@Pull(E,E)
+49366500:Push(W,W)@Push(W,W)|Pull(E,E)@Pull(E,E)
+49478400:Push(W,W)@Push(W,W)|Pull(E,E)@Pull(E,E)
+49585100:Push(W,W)@Push(W,W)|Pull(N,E)@Pull(N,E)
+49689700:Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+49798200:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+49901400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+50005900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+50117700:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+50232900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+50328700:Move(E)@Move(E)|Move(W)@Move(W)
+50437500:Move(E)@Move(E)|Move(W)@Move(W)
+50532600:Move(E)@Move(E)|Move(W)@Move(W)
+50625300:Move(E)@Move(E)|Move(W)@Move(W)
+50712500:Move(N)@Move(N)|Move(S)@Move(S)
+50807000:Move(N)@Move(N)|Move(S)@Move(S)
+50897100:Move(N)@Move(N)|Move(S)@Move(S)
+50991400:Move(N)@Move(N)|Move(S)@Move(S)
+51081000:Move(N)@Move(N)|Move(S)@Move(S)
+51181700:Move(N)@Move(N)|Move(S)@Move(S)
+51281600:Move(W)@Move(W)|Move(E)@Move(E)
+51377100:Move(W)@Move(W)|NoOp@NoOp
+51462600:Move(W)@Move(W)|NoOp@NoOp
+51553000:Move(W)@Move(W)|NoOp@NoOp
+51635100:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+51635100
+#end

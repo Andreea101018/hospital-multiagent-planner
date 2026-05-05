@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+ClosedAI
+#actions
+771767800:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+771907500:Pull(W,W)@Pull(W,W)|Pull(S,E)@Pull(S,E)|Pull(E,N)@Pull(E,N)|Pull(W,S)@Pull(W,S)
+771977800:Push(E,S)@Push(E,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+772087200:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+772176600:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+772242400:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+772308800:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+772378700:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+772428000:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+772478200:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+772526200:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+772573400:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+772619100:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+772668900:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+772716800:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+772772500:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+772822000:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+772869400:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+772919100:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+772970400:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+773017000:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+773064700:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+773116600:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+773184400:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+773237000:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+773237000
+#end

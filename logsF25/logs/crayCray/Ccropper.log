@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+crayCray
+#actions
+138929141:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+139003623:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+139135869:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+139252000:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+139287714:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139312540:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139341278:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+139364316:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+139386764:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+139410885:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+139436728:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+139477574:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+139501559:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139524376:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+139547777:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+139570636:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+139593857:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+139619189:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+139641917:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+139663748:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139698551:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139720939:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139742111:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139763399:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+139784653:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+139784653
+#end

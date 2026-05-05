@@ -1,0 +1,258 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+pooh
+#actions
+38009564334:Move(E)@Move(E)|Move(E)
+38009637084:Move(E)@Move(E)|Move(E)
+38009766750:Move(N)@Move(N)|Move(E)
+38009780584:NoOp@NoOp|Move(E)
+38009870167:Move(S)@Move(S)|Move(E)
+38009894875:Move(S)@Move(S)|Move(E)
+38010060375:Move(E)@Move(E)|Move(E)
+38010114959:NoOp@NoOp|Move(E)
+38010175792:NoOp@NoOp|Move(S)
+38010236834:Move(E)@Move(E)|Move(S)
+38010300834:NoOp@NoOp|Move(S)
+38010322750:Move(W)@Move(W)|Move(W)
+38010414709:Move(N)@Move(N)|Move(S)
+38010491459:Move(E)@Move(E)|Move(S)
+38010563917:Move(N)@Move(N)|Move(S)
+38010605667:NoOp@NoOp|Move(S)
+38010656750:Move(E)@Move(E)|Move(S)
+38010713792:Move(S)@Move(S)|Move(S)
+38010739542:Move(W)@Move(W)|Move(E)
+38010751167:NoOp@NoOp|Pull(W,W)
+38010774709:Move(W)@Move(W)|Pull(N,W)
+38010790042:NoOp@NoOp|Pull(W,N)
+38010822084:Move(N)@Move(N)|Push(E,N)
+38010896959:Move(E)@Move(E)|Push(N,N)
+38010912375:Move(W)@Move(W)|Push(N,N)
+38010928917:Move(W)@Move(W)|Push(N,N)
+38010956584:Move(S)@Move(S)|Push(N,N)
+38010970917:Move(E)@Move(E)|Push(N,E)
+38010989459:NoOp@NoOp|Push(E,N)
+38011003750:NoOp@NoOp|Push(N,N)
+38011029084:Move(N)@Move(N)|Push(N,W)
+38011058750:Move(W)@Move(W)|Push(W,W)
+38011115750:NoOp@NoOp|Push(W,W)
+38011140459:NoOp@NoOp|Push(W,W)
+38011199584:Move(E)@Move(E)|Push(W,W)
+38011245667:Move(W)@Move(W)|Push(W,S)
+38011257917:Move(S)@Move(S)|Push(S,S)
+38011346834:Move(N)@Move(N)|Push(S,S)
+38011359709:NoOp@NoOp|Push(S,S)
+38011431375:Move(W)@Move(W)|Push(S,S)
+38011439000:NoOp@NoOp|Push(S,S)
+38011511334:Move(E)@Move(E)|Push(S,S)
+38011524917:Move(E)@Move(E)|Push(S,S)
+38011601750:Move(E)@Move(E)|Push(S,S)
+38011622750:Move(E)@Move(E)|Push(S,S)
+38011818125:Move(E)@Move(E)|Push(S,S)
+38011892500:Move(S)@Move(S)|Push(S,S)
+38011949292:Move(E)@Move(E)|Push(S,S)
+38011988417:Move(N)@Move(N)|Push(S,S)
+38012009250:Move(E)@Move(E)|Push(S,S)
+38012057750:Move(W)@Move(W)|Push(S,S)
+38012074084:Move(W)@Move(W)|Push(S,S)
+38012114834:Move(E)@Move(E)|Push(S,S)
+38012130000:Move(S)@Move(S)|Push(S,S)
+38012143417:Move(S)@Move(S)|Push(S,S)
+38012168792:NoOp@NoOp|Push(S,S)
+38012184167:Move(E)@Move(E)|Push(S,S)
+38012191875:Move(E)@Move(E)|Push(S,S)
+38012243834:NoOp@NoOp|Push(S,W)
+38012261959:Move(E)@Move(E)|Push(W,S)
+38012314834:Move(E)@Move(E)|Push(S,S)
+38012342334:Move(E)@Move(E)|Push(S,S)
+38012363667:Move(S)@Move(S)|Push(S,W)
+38012389292:Move(S)@Move(S)|Push(W,S)
+38012400042:Move(E)@Move(E)|Push(S,S)
+38012424209:Move(S)@Move(S)|Push(S,S)
+38012435500:Move(S)@Move(S)|Push(S,S)
+38012477542:Move(S)@Move(S)|Push(S,S)
+38012488084:Move(S)@Move(S)|Push(S,S)
+38012506875:Move(S)@Move(S)|Push(S,S)
+38012517542:Move(S)@Move(S)|Push(S,W)
+38012547209:Move(E)@Move(E)|Push(W,S)
+38012558125:Move(E)@Move(E)|Push(S,S)
+38012568334:Move(E)@Move(E)|Push(S,S)
+38012589125:Move(E)@Move(E)|Push(S,S)
+38012611459:Push(E,N)@Push(E,N)|NoOp
+38012620584:Push(N,N)@Push(N,N)|Move(E)
+38012636084:Push(N,N)@Push(N,N)|Move(S)
+38012656000:Push(N,N)@Push(N,N)|Move(E)
+38012686292:Push(N,N)@Push(N,N)|Move(W)
+38012714167:Push(N,N)@Push(N,N)|Move(E)
+38012760917:Push(N,N)@Push(N,N)|NoOp
+38012773500:Push(N,N)@Push(N,N)|NoOp
+38012787084:Push(N,W)@Push(N,W)|Move(N)
+38012818167:Push(W,W)@Push(W,W)|Move(S)
+38012833000:Push(W,W)@Push(W,W)|NoOp
+38012840959:Push(W,W)@Push(W,W)|Move(E)
+38012857875:Push(W,W)@Push(W,W)|Move(W)
+38012872917:Push(W,W)@Push(W,W)|NoOp
+38012884500:Push(W,W)@Push(W,W)|Move(E)
+38012910000:Push(W,W)@Push(W,W)|Move(W)
+38012923250:Push(W,W)@Push(W,W)|Move(N)
+38012943125:Push(W,W)@Push(W,W)|Move(S)
+38012953959:Push(W,W)@Push(W,W)|Move(E)
+38012978084:Push(W,S)@Push(W,S)|Move(N)
+38013003209:Push(S,W)@Push(S,W)|NoOp
+38013014917:Push(W,S)@Push(W,S)|Move(E)
+38013100709:Push(S,W)@Push(S,W)|Move(S)
+38013110834:Push(W,S)@Push(W,S)|Move(E)
+38013149709:Push(S,S)@Push(S,S)|Move(E)
+38013160959:Push(S,S)@Push(S,S)|Move(N)
+38013172625:Push(S,S)@Push(S,S)|NoOp
+38013205375:Push(S,S)@Push(S,S)|Move(W)
+38013231000:Push(S,S)@Push(S,S)|Move(E)
+38013239667:Push(S,S)@Push(S,S)|NoOp
+38013247875:Push(S,S)@Push(S,S)|Move(W)
+38013262250:Push(S,E)@Push(S,E)|NoOp
+38013276792:Push(E,E)@Push(E,E)|Move(E)
+38013288667:Push(E,S)@Push(E,S)|Move(E)
+38013303542:Push(S,E)@Push(S,E)|Move(S)
+38013329000:Push(E,S)@Push(E,S)|NoOp
+38013353125:Push(S,E)@Push(S,E)|Move(W)
+38013432250:Push(E,S)@Push(E,S)|Move(N)
+38013439375:Push(S,S)@Push(S,S)|NoOp
+38013511042:Push(S,S)@Push(S,S)|Move(E)
+38013533792:Push(S,S)@Push(S,S)|Move(N)
+38013573709:Push(S,S)@Push(S,S)|Move(N)
+38013601084:Push(S,S)@Push(S,S)|Move(W)
+38013618250:Push(S,S)@Push(S,S)|Move(S)
+38013641292:Push(S,S)@Push(S,S)|Move(E)
+38013654709:Push(S,S)@Push(S,S)|Move(N)
+38013691625:Push(S,S)@Push(S,S)|Move(W)
+38013708209:Push(S,S)@Push(S,S)|NoOp
+38013725917:Push(S,S)@Push(S,S)|NoOp
+38013736917:Push(S,S)@Push(S,S)|Move(E)
+38013757709:Push(S,S)@Push(S,S)|Move(W)
+38013766375:Push(S,S)@Push(S,S)|Move(S)
+38013868000:Push(S,S)@Push(S,S)|NoOp
+38013876042:Push(S,S)@Push(S,S)|Move(W)
+38013942459:Push(S,S)@Push(S,S)|Move(E)
+38013948917:Push(S,S)@Push(S,S)|Move(S)
+38014001792:Push(S,S)@Push(S,S)|Move(W)
+38014008084:Push(S,S)@Push(S,S)|Move(S)
+38014077167:Push(S,S)@Push(S,S)|Move(W)
+38014089167:Push(S,S)@Push(S,S)|Move(E)
+38014147500:Push(S,S)@Push(S,S)|Move(E)
+38014157625:Push(S,S)@Push(S,S)|Move(W)
+#end
+#solved
+true
+#numactions
+137
+#time
+38014157625
+#end

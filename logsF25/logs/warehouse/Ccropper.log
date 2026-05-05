@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+warehouse
+#actions
+31928792:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+32012667:Pull(W,W)@Pull(W,W)|Pull(N,E)@Pull(N,E)|Pull(N,N)@Pull(N,N)|Pull(E,S)@Pull(E,S)
+32057084:Push(E,S)@Push(E,S)|Pull(N,N)@Pull(N,N)|Push(S,W)@Push(S,W)|Pull(E,E)@Pull(E,E)
+32085125:Push(S,S)@Push(S,S)|Pull(N,N)@Pull(N,N)|Push(W,W)@Push(W,W)|Pull(E,E)@Pull(E,E)
+32106084:Push(S,S)@Push(S,S)|Pull(N,N)@Pull(N,N)|Push(W,W)@Push(W,W)|Pull(E,E)@Pull(E,E)
+32135042:Push(S,S)@Push(S,S)|Pull(E,N)@Pull(E,N)|Push(W,W)@Push(W,W)|Pull(S,E)@Pull(S,E)
+32158125:Push(S,W)@Push(S,W)|Pull(N,E)@Pull(N,E)|Push(W,N)@Push(W,N)|Pull(E,S)@Pull(E,S)
+32185709:Push(W,S)@Push(W,S)|Pull(E,N)@Pull(E,N)|Push(N,W)@Push(N,W)|Pull(S,E)@Pull(S,E)
+32202000:Push(S,W)@Push(S,W)|Pull(N,E)@Pull(N,E)|Push(W,N)@Push(W,N)|Pull(E,S)@Pull(E,S)
+32219292:Push(W,S)@Push(W,S)|Pull(E,N)@Pull(E,N)|Push(N,W)@Push(N,W)|Pull(S,E)@Pull(S,E)
+32234667:Push(S,W)@Push(S,W)|Pull(N,E)@Pull(N,E)|Push(W,N)@Push(W,N)|Pull(E,S)@Pull(E,S)
+32267875:Push(W,S)@Push(W,S)|Pull(E,N)@Pull(E,N)|Push(N,W)@Push(N,W)|Pull(E,E)@Pull(E,E)
+32281750:Push(S,S)@Push(S,S)|Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Pull(N,E)@Pull(N,E)
+32298542:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Pull(E,N)@Pull(E,N)
+32312334:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Pull(N,E)@Pull(N,E)
+32325875:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Pull(E,N)@Pull(E,N)
+32339709:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Pull(N,E)@Pull(N,E)
+32357959:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Pull(N,N)@Pull(N,N)
+32374917:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(S,E)@Push(S,E)
+32397209:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+32411917:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+32431125:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+32453292:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+32470792:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+32483417:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+32483417
+#end

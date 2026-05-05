@@ -1,0 +1,52 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+MArtians
+#actions
+3373367313:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|
+3373589897:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(N)@Move(N)|
+3373782799:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(N)@Move(N)|
+3373923669:Push(S,S)@Push(S,S)|Move(E)@Move(E)|NoOp@NoOp|
+3374005384:Push(S,S)@Push(S,S)|Move(E)@Move(E)|Move(E)@Move(E)|
+3374080323:Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)|
+3374138431:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|
+3374204711:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)|
+3374272387:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|
+3374355010:Move(N)@Move(N)|Move(W)@Move(W)|Move(E)@Move(E)|
+3374431346:NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|
+3374489594:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)|
+#end
+#solved
+true
+#numactions
+12
+#time
+3374489594
+#end

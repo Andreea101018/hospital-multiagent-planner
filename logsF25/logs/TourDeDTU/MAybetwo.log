@@ -1,0 +1,75 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+TourDeDTU
+#actions
+267471800:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+267673700:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+267887800:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+268077500:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+268248200:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp
+268427100:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+268615900:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+268682100:Push(E,S)@Push(E,S)|Move(W)@Move(W)|NoOp@NoOp
+268729300:Push(S,E)@Push(S,E)|Move(W)@Move(W)|Move(W)@Move(W)
+268764100:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(E)@Move(E)
+268798700:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+268832400:NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)
+268871000:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(N)@Move(N)
+268942700:NoOp@NoOp|Pull(W,S)@Pull(W,S)|Move(N)@Move(N)
+268987000:NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)
+269020600:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+269054000:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+269087400:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+269121600:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+269155600:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+269189000:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+269222600:NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+269256100:NoOp@NoOp|Pull(N,E)@Pull(N,E)|Move(E)@Move(E)
+269291100:NoOp@NoOp|Push(S,W)@Push(S,W)|Move(S)@Move(S)
+269325100:NoOp@NoOp|Pull(N,E)@Pull(N,E)|Move(S)@Move(S)
+269360100:NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+269394800:NoOp@NoOp|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+269428500:NoOp@NoOp|Move(S)@Move(S)|Push(S,S)@Push(S,S)
+269462200:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)
+269498700:NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)
+269532500:NoOp@NoOp|Pull(N,E)@Pull(N,E)|Move(S)@Move(S)
+269567000:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+269601200:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+269635100:NoOp@NoOp|Pull(W,N)@Pull(W,N)|Move(N)@Move(N)
+269670700:NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+35
+#time
+269670700
+#end

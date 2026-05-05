@@ -1,0 +1,113 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+rooMbA
+#actions
+2957453209:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)
+2957529459:Move(E)@Move(E)|Move(E)@Move(E)|Pull(W,N)@Pull(W,N)
+2957564167:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+2957597334:Move(S)@Move(S)|Move(N)@Move(N)|Push(W,W)@Push(W,W)
+2957625375:Move(S)@Move(S)|Move(N)@Move(N)|Push(W,W)@Push(W,W)
+2957675167:Push(E,E)@Push(E,E)|Pull(E,S)@Pull(E,S)|Push(W,S)@Push(W,S)
+2957708292:Push(E,N)@Push(E,N)|Pull(E,E)@Pull(E,E)|Push(S,S)@Push(S,S)
+2957740834:Push(N,E)@Push(N,E)|Pull(S,E)@Pull(S,E)|Push(S,W)@Push(S,W)
+2957764959:Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(W,S)@Push(W,S)
+2957787500:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+2957809584:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+2957850334:Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|NoOp@NoOp
+2957884917:Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|NoOp@NoOp
+2957908250:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|NoOp@NoOp
+2957937334:Push(E,E)@Push(E,E)|Push(N,W)@Push(N,W)|NoOp@NoOp
+2957964292:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2957988875:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+3063365875:Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)
+3063404209:Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)
+3063424334:Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+3063456792:Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+3063480250:Move(W)@Move(W)|Move(W)@Move(W)|Move(N)@Move(N)
+3063504250:Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)
+3063531959:Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)
+3063560834:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)
+3063587542:Move(S)@Move(S)|Pull(W,S)@Pull(W,S)|Move(E)@Move(E)
+3063612209:Move(S)@Move(S)|Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)
+3063633334:Pull(W,N)@Pull(W,N)|Move(W)@Move(W)|Push(S,S)@Push(S,S)
+3063653459:Push(E,N)@Push(E,N)|Pull(E,S)@Pull(E,S)|Push(S,S)@Push(S,S)
+3063673125:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+3063695959:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(S,W)@Push(S,W)
+3063718125:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(W,S)@Push(W,S)
+3063740292:Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(S,W)@Push(S,W)
+3063759125:Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)
+3063777417:Push(E,E)@Push(E,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)
+3063796125:Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)
+3063817750:Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp
+3079674292:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+3079703584:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+3079728542:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+3079751167:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+3079772875:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+3079799125:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+3079821959:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+3079844375:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+3079871459:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+3079893000:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+3079911417:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+3079935709:NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp
+3079957167:NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp
+3079978500:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+3079996667:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+52
+#time
+3079996667
+#end

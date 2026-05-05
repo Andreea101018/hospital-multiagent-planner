@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+ClosedAI
+#actions
+398500701:Move(E)@Move(E)|Move(W)@Move(W)
+398601001:Pull(W,N)@Pull(W,N)|Pull(E,S)@Pull(E,S)
+398680901:Pull(W,W)@Pull(W,W)|Pull(S,E)@Pull(S,E)
+398753101:Pull(S,W)@Pull(S,W)|NoOp@NoOp
+398809001:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+398854001:Push(N,W)@Push(N,W)|Push(N,E)@Push(N,E)
+398913201:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+398966501:Push(W,W)@Push(W,W)|Push(E,N)@Push(E,N)
+399026600:Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)
+399071201:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+399110801:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+399150400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+399189901:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+399229601:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+399268400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+399306001:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+399348701:Move(E)@Move(E)|Push(E,E)@Push(E,E)
+399388300:Move(E)@Move(E)|Push(E,E)@Push(E,E)
+399430300:Move(E)@Move(E)|Move(W)@Move(W)
+399469801:Move(E)@Move(E)|Move(W)@Move(W)
+399507601:Move(N)@Move(N)|Move(W)@Move(W)
+399545101:Move(N)@Move(N)|Move(W)@Move(W)
+399582201:Move(N)@Move(N)|Move(S)@Move(S)
+399620000:Move(N)@Move(N)|Move(S)@Move(S)
+399657001:Move(N)@Move(N)|Move(S)@Move(S)
+399693901:Move(N)@Move(N)|Move(S)@Move(S)
+399731501:Move(W)@Move(W)|Move(S)@Move(S)
+399769100:Move(W)@Move(W)|Move(E)@Move(E)
+399806300:Move(W)@Move(W)|Move(S)@Move(S)
+399843701:Move(W)@Move(W)|NoOp@NoOp
+399881601:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+399881601
+#end

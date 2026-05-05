@@ -1,0 +1,59 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+908047200:Move(E)@Move(E)|Move(W)|Move(N)
+908339500:Move(E)@Move(E)|Move(W)|Move(E)
+910263800:Move(E)@Move(E)|Move(W)|Move(E)
+910427000:Move(E)@Move(E)|Move(W)|Move(N)
+910564600:Move(E)@Move(E)|Move(W)|Move(N)
+910725300:Move(E)@Move(E)|Move(W)|Move(N)
+910841900:Move(E)@Move(E)|Move(W)|Move(N)
+910987800:Push(E,E)@Push(E,E)|Move(N)|Move(N)
+911149700:Push(E,S)@Push(E,S)|Move(N)|NoOp
+911300600:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+911437700:NoOp@NoOp|Push(N,N)|Move(E)
+911556100:NoOp@NoOp|Move(S)|Move(E)
+911707700:NoOp@NoOp|Move(S)|Move(E)
+911847200:NoOp@NoOp|Move(S)|Move(E)
+912020600:NoOp@NoOp|NoOp|Move(E)
+912189300:NoOp@NoOp|NoOp|Move(S)
+912369600:NoOp@NoOp|Move(E)|Move(S)
+912498900:NoOp@NoOp|Move(N)|Move(S)
+912623100:NoOp@NoOp|NoOp|Push(E,S)
+#end
+#solved
+true
+#numactions
+19
+#time
+912623100
+#end

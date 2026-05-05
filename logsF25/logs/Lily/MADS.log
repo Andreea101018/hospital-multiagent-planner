@@ -1,0 +1,65 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+Lily
+#actions
+630372250:Move(S)@Move(S)|Move(S)|Move(W)
+630534542:Move(S)@Move(S)|Move(S)|Move(S)
+630760584:NoOp@NoOp|Move(S)|Move(W)
+630889792:NoOp@NoOp|Move(S)|Move(S)
+631070000:Move(E)@Move(E)|Move(E)|Move(W)
+631310750:Move(E)@Move(E)|Push(E,E)|Move(S)
+631426292:Move(E)@Move(E)|Push(E,S)|Move(W)
+631551709:NoOp@NoOp|Push(S,S)|Move(W)
+631659750:Push(E,S)@Push(E,S)|Push(S,S)|Pull(E,E)
+631742417:Push(S,S)@Push(S,S)|Push(S,E)|NoOp
+631868292:Push(S,S)@Push(S,S)|Push(E,S)|Pull(E,E)
+631947792:Push(S,W)@Push(S,W)|NoOp|Pull(E,E)
+632022042:Push(W,W)@Push(W,W)|NoOp|Pull(N,E)
+632133292:Push(W,W)@Push(W,W)|Push(S,S)|NoOp
+632215792:Push(W,W)@Push(W,W)|Push(S,W)|NoOp
+632350459:NoOp@NoOp|Push(W,W)|NoOp
+632448917:NoOp@NoOp|Push(W,W)|Push(S,W)
+632587584:NoOp@NoOp|Push(W,W)|Push(W,W)
+632679792:NoOp@NoOp|Push(W,W)|Push(W,W)
+#end
+#solved
+true
+#numactions
+19
+#time
+632679792
+#end

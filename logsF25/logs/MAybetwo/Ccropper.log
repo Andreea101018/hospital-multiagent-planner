@@ -1,0 +1,169 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+MAybetwo
+#actions
+50672083:Move(E)|NoOp|NoOp|NoOp
+50775708:Push(E,S)|NoOp|NoOp|NoOp
+50840791:Push(S,W)|NoOp|NoOp|NoOp
+50913541:Push(W,S)|NoOp|NoOp|NoOp
+50969291:Push(S,S)|NoOp|NoOp|NoOp
+51020958:Push(S,S)|NoOp|NoOp|NoOp
+51094791:Push(S,E)|NoOp|NoOp|NoOp
+51147708:Push(E,S)|NoOp|NoOp|NoOp
+51327666:Push(S,E)|NoOp|NoOp|NoOp
+51423083:Push(E,S)|NoOp|NoOp|NoOp
+51488625:Push(S,E)|NoOp|NoOp|NoOp
+51540750:Push(E,S)|NoOp|NoOp|NoOp
+51591708:Push(S,S)|NoOp|NoOp|NoOp
+51668125:Push(S,W)|NoOp|NoOp|NoOp
+51764000:Push(W,S)|NoOp|NoOp|NoOp
+51828958:Push(S,W)|NoOp|NoOp|NoOp
+51895625:Push(W,S)|NoOp|NoOp|NoOp
+51949250:Push(S,W)|NoOp|NoOp|NoOp
+52018708:Push(W,S)|NoOp|NoOp|NoOp
+52079458:Push(S,S)|NoOp|NoOp|NoOp
+52137583:Push(S,S)|NoOp|NoOp|NoOp
+52192000:Push(S,S)|NoOp|NoOp|NoOp
+52243708:Push(S,S)|NoOp|NoOp|NoOp
+52303291:Push(S,S)|NoOp|NoOp|NoOp
+52410458:Push(S,S)|NoOp|NoOp|NoOp
+52550375:NoOp|Move(W)|NoOp|NoOp
+52629041:NoOp|Push(W,N)|NoOp|NoOp
+52720500:NoOp|Push(N,E)|NoOp|NoOp
+52784125:NoOp|Push(E,N)|NoOp|NoOp
+52837125:NoOp|Push(N,N)|NoOp|NoOp
+52887500:NoOp|Push(N,N)|NoOp|NoOp
+52964291:NoOp|Push(N,E)|NoOp|NoOp
+53076125:NoOp|Push(E,N)|NoOp|NoOp
+53140041:NoOp|Push(N,E)|NoOp|NoOp
+53192791:NoOp|Push(E,N)|NoOp|NoOp
+53273208:NoOp|Push(N,E)|NoOp|NoOp
+53360416:NoOp|Push(E,N)|NoOp|NoOp
+53438916:NoOp|Push(N,N)|NoOp|NoOp
+53497666:NoOp|Push(N,W)|NoOp|NoOp
+53549458:NoOp|Push(W,N)|NoOp|NoOp
+53598958:NoOp|Push(N,W)|NoOp|NoOp
+53651458:NoOp|Push(W,N)|NoOp|NoOp
+53735875:NoOp|Push(N,W)|NoOp|NoOp
+53783791:NoOp|Push(W,N)|NoOp|NoOp
+53829250:NoOp|Push(N,N)|NoOp|NoOp
+53911125:NoOp|Push(N,N)|NoOp|NoOp
+54051625:NoOp|Push(N,N)|NoOp|NoOp
+54120000:NoOp|Push(N,N)|NoOp|NoOp
+54199500:NoOp|Push(N,N)|NoOp|NoOp
+54290375:NoOp|Push(N,N)|NoOp|NoOp
+54393250:NoOp|NoOp|Move(S)|NoOp
+54498791:NoOp|NoOp|Push(S,W)|NoOp
+54720166:NoOp|NoOp|Push(W,N)|NoOp
+54895458:NoOp|NoOp|Push(N,W)|NoOp
+55025333:NoOp|NoOp|Push(W,W)|NoOp
+55170083:NoOp|NoOp|Push(W,W)|NoOp
+55274833:NoOp|NoOp|Push(W,N)|NoOp
+55386416:NoOp|NoOp|Push(N,W)|NoOp
+55434583:NoOp|NoOp|Push(W,N)|NoOp
+55479041:NoOp|NoOp|Push(N,W)|NoOp
+55552291:NoOp|NoOp|Push(W,N)|NoOp
+55660333:NoOp|NoOp|Push(N,W)|NoOp
+55821750:NoOp|NoOp|Push(W,W)|NoOp
+55929166:NoOp|NoOp|Push(W,S)|NoOp
+56018750:NoOp|NoOp|Push(S,W)|NoOp
+56115375:NoOp|NoOp|Push(W,S)|NoOp
+56209541:NoOp|NoOp|Push(S,W)|NoOp
+56260708:NoOp|NoOp|Push(W,S)|NoOp
+56392750:NoOp|NoOp|Push(S,W)|NoOp
+56521750:NoOp|NoOp|Push(W,W)|NoOp
+56625708:NoOp|NoOp|Push(W,W)|NoOp
+56720041:NoOp|NoOp|Push(W,W)|NoOp
+56802541:NoOp|NoOp|Push(W,W)|NoOp
+56869416:NoOp|NoOp|Push(W,W)|NoOp
+56949000:NoOp|NoOp|Push(W,W)|NoOp
+57035708:NoOp|NoOp|NoOp|Move(N)
+57108458:NoOp|NoOp|NoOp|Push(N,E)
+57195250:NoOp|NoOp|NoOp|Push(E,S)
+57284916:NoOp|NoOp|NoOp|Push(S,E)
+57398166:NoOp|NoOp|NoOp|Push(E,E)
+57544541:NoOp|NoOp|NoOp|Push(E,E)
+57627750:NoOp|NoOp|NoOp|Push(E,N)
+57715083:NoOp|NoOp|NoOp|Push(N,E)
+57831375:NoOp|NoOp|NoOp|Push(E,N)
+57940125:NoOp|NoOp|NoOp|Push(N,E)
+58007291:NoOp|NoOp|NoOp|Push(E,N)
+58070625:NoOp|NoOp|NoOp|Push(N,E)
+58155375:NoOp|NoOp|NoOp|Push(E,E)
+58259416:NoOp|NoOp|NoOp|Push(E,S)
+58352333:NoOp|NoOp|NoOp|Push(S,E)
+58417916:NoOp|NoOp|NoOp|Push(E,S)
+58488250:NoOp|NoOp|NoOp|Push(S,E)
+58554583:NoOp|NoOp|NoOp|Push(E,S)
+58712208:NoOp|NoOp|NoOp|Push(S,E)
+58810500:NoOp|NoOp|NoOp|Push(E,E)
+58890083:NoOp|NoOp|NoOp|Push(E,E)
+59007708:NoOp|NoOp|NoOp|Push(E,E)
+59110916:NoOp|NoOp|NoOp|Push(E,E)
+59187458:NoOp|NoOp|NoOp|Push(E,E)
+59246541:NoOp|NoOp|NoOp|Push(E,E)
+#end
+#solved
+true
+#numactions
+100
+#time
+59246541
+#end

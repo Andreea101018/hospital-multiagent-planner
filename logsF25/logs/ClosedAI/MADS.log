@@ -1,0 +1,69 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+ClosedAI
+#actions
+28953516400:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+28953603200:Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+28953646700:Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+28953706100:Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+28953768000:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)
+28953813200:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)
+28953869500:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+28953913099:Move(E)@Move(E)|Push(E,E)@Push(E,E)|Move(W)@Move(W)
+28953958100:Move(E)@Move(E)|Push(E,S)@Push(E,S)|Pull(E,E)@Pull(E,E)
+28953999099:NoOp@NoOp|Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)
+28954038600:Push(E,S)@Push(E,S)|Push(S,E)@Push(S,E)|Pull(E,E)@Pull(E,E)
+28954078700:Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)
+28954119100:Push(S,S)@Push(S,S)|NoOp@NoOp|Push(N,E)@Push(N,E)
+28954160200:Push(S,W)@Push(S,W)|NoOp@NoOp|Push(E,N)@Push(E,N)
+28954200000:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)
+28954231299:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)
+28954269499:Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)|Push(W,W)@Push(W,W)
+28954309699:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,S)@Push(W,S)
+28954349700:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+28954390399:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(E,S)@Push(E,S)
+28954435100:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)
+28954473400:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)
+28954507600:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+#end
+#solved
+true
+#numactions
+23
+#time
+28954507600
+#end

@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+216042500:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)
+216518200:Pull(N,W)@Pull(N,W)|Push(W,N)|Push(S,W)|Push(N,E)
+216822100:Push(S,S)@Push(S,S)|Push(N,E)|Push(W,N)|Push(E,S)
+217287200:Push(S,S)@Push(S,S)|Push(E,N)|Push(N,W)|Push(S,E)
+217588300:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+217785700:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+218032300:Push(S,E)@Push(S,E)|Push(N,W)|Push(W,S)|Push(E,N)
+218236300:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+218430600:Push(S,E)@Push(S,E)|Push(N,W)|Push(W,S)|Push(E,N)
+218610000:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+218846400:Push(S,E)@Push(S,E)|Push(N,W)|Push(W,S)|Push(E,N)
+219208200:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+219451900:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+219664800:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+219947400:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+220188400:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+220435700:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+220634700:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+220849200:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+221140100:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+221354800:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+221549100:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+221708900:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+221859700:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+222036600:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+222036600
+#end

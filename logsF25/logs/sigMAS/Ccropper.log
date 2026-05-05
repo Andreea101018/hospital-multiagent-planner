@@ -1,0 +1,275 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+151435042:Move(E)|NoOp|NoOp|NoOp
+151526000:Push(E,S)|NoOp|NoOp|NoOp
+151595709:Push(S,W)|NoOp|NoOp|NoOp
+151641334:Push(W,S)|NoOp|NoOp|NoOp
+151682917:Push(S,S)|NoOp|NoOp|NoOp
+151714125:Push(S,S)|NoOp|NoOp|NoOp
+151743375:Push(S,E)|NoOp|NoOp|NoOp
+151792959:Push(E,S)|NoOp|NoOp|NoOp
+151849459:Push(S,E)|NoOp|NoOp|NoOp
+151901625:Push(E,S)|NoOp|NoOp|NoOp
+151940792:Push(S,E)|NoOp|NoOp|NoOp
+151988834:Push(E,S)|NoOp|NoOp|NoOp
+152016417:Push(S,S)|NoOp|NoOp|NoOp
+152059542:Push(S,W)|NoOp|NoOp|NoOp
+152119834:Push(W,S)|NoOp|NoOp|NoOp
+152159750:Push(S,W)|NoOp|NoOp|NoOp
+152190625:Push(W,S)|NoOp|NoOp|NoOp
+152223292:Push(S,W)|NoOp|NoOp|NoOp
+152257000:NoOp|NoOp|NoOp|NoOp
+152285417:Push(W,S)|NoOp|NoOp|NoOp
+152334834:Push(S,S)|NoOp|NoOp|NoOp
+152382792:Push(S,S)|NoOp|NoOp|NoOp
+152415375:Push(S,S)|NoOp|NoOp|NoOp
+152444292:Push(S,S)|NoOp|NoOp|NoOp
+152474250:Push(S,S)|NoOp|NoOp|NoOp
+152511084:Push(S,S)|NoOp|NoOp|NoOp
+152542917:NoOp|NoOp|NoOp|NoOp
+152570625:NoOp|NoOp|NoOp|NoOp
+152613625:NoOp|NoOp|NoOp|NoOp
+152647542:NoOp|NoOp|NoOp|NoOp
+152676167:NoOp|Move(W)|Move(S)|NoOp
+152713959:NoOp|Pull(E,E)|Pull(E,N)|NoOp
+152743750:NoOp|Push(W,N)|Push(W,W)|NoOp
+152772084:NoOp|Push(N,N)|Push(W,W)|NoOp
+152802875:NoOp|Push(N,N)|Push(W,W)|NoOp
+152841459:NoOp|Push(N,N)|Push(W,W)|NoOp
+152879292:NoOp|Push(N,W)|Push(W,S)|NoOp
+152907167:NoOp|Push(W,N)|Push(S,W)|NoOp
+152934250:NoOp|Push(N,W)|Push(W,S)|NoOp
+152963334:NoOp|Push(W,N)|Push(S,W)|NoOp
+152991042:NoOp|Push(N,W)|Push(W,S)|NoOp
+153026625:NoOp|Push(W,N)|Push(S,W)|NoOp
+153069917:NoOp|Push(N,N)|Push(W,W)|NoOp
+153100292:NoOp|Push(N,E)|Push(W,N)|NoOp
+153135250:NoOp|Push(E,N)|Push(N,W)|NoOp
+153166625:NoOp|Push(N,E)|Push(W,N)|NoOp
+153192834:NoOp|Push(E,N)|Push(N,W)|NoOp
+153228584:NoOp|Push(N,E)|Push(W,N)|NoOp
+153256084:NoOp|Push(E,N)|Push(N,W)|NoOp
+153286000:NoOp|Push(N,N)|Push(W,W)|NoOp
+153311917:NoOp|Push(N,N)|Push(W,W)|NoOp
+153344292:NoOp|Push(N,N)|Push(W,W)|NoOp
+153383084:NoOp|Push(N,N)|Push(W,W)|NoOp
+153411834:NoOp|Push(N,N)|Push(W,W)|NoOp
+153439875:NoOp|Push(N,N)|Push(W,W)|NoOp
+153466125:NoOp|NoOp|NoOp|NoOp
+153492334:NoOp|NoOp|NoOp|NoOp
+153518000:NoOp|NoOp|NoOp|NoOp
+153544000:NoOp|NoOp|NoOp|NoOp
+153574584:NoOp|NoOp|NoOp|NoOp
+153600500:NoOp|NoOp|NoOp|NoOp
+153627500:NoOp|NoOp|NoOp|NoOp
+153670750:NoOp|NoOp|NoOp|NoOp
+153709459:NoOp|NoOp|NoOp|NoOp
+153745417:NoOp|NoOp|NoOp|NoOp
+153790875:NoOp|NoOp|NoOp|NoOp
+153824625:NoOp|NoOp|NoOp|NoOp
+153856917:NoOp|NoOp|NoOp|NoOp
+153895417:NoOp|NoOp|NoOp|NoOp
+153929250:NoOp|NoOp|NoOp|NoOp
+153965459:NoOp|NoOp|NoOp|NoOp
+153997792:NoOp|NoOp|NoOp|NoOp
+154024959:NoOp|NoOp|NoOp|NoOp
+154051959:NoOp|NoOp|NoOp|NoOp
+154077792:NoOp|NoOp|NoOp|NoOp
+154102917:NoOp|NoOp|NoOp|NoOp
+154127542:NoOp|NoOp|NoOp|NoOp
+154153042:NoOp|NoOp|NoOp|NoOp
+154177625:NoOp|NoOp|NoOp|NoOp
+154203084:NoOp|NoOp|NoOp|NoOp
+154255042:NoOp|NoOp|NoOp|NoOp
+154348375:NoOp|NoOp|NoOp|NoOp
+154422167:NoOp|NoOp|NoOp|NoOp
+154462000:NoOp|NoOp|NoOp|NoOp
+154509250:NoOp|NoOp|NoOp|NoOp
+154550334:NoOp|NoOp|NoOp|NoOp
+154588167:NoOp|NoOp|NoOp|NoOp
+154615292:NoOp|NoOp|NoOp|NoOp
+154640917:NoOp|NoOp|NoOp|NoOp
+154666375:NoOp|NoOp|NoOp|NoOp
+154690834:NoOp|NoOp|NoOp|Move(N)
+154716459:NoOp|NoOp|NoOp|Pull(E,S)
+154742042:NoOp|NoOp|NoOp|Pull(S,E)
+154767459:NoOp|NoOp|NoOp|Push(N,E)
+154791959:NoOp|NoOp|NoOp|Push(E,E)
+154816125:NoOp|NoOp|NoOp|Push(E,E)
+154843250:NoOp|NoOp|NoOp|Push(E,N)
+154878500:NoOp|NoOp|NoOp|Push(N,E)
+154903709:NoOp|NoOp|NoOp|Push(E,N)
+154935042:NoOp|NoOp|NoOp|Push(N,E)
+154963209:NoOp|NoOp|NoOp|Push(E,N)
+154988667:NoOp|NoOp|NoOp|Push(N,E)
+155013209:NoOp|NoOp|NoOp|Push(E,E)
+155042125:NoOp|NoOp|NoOp|Push(E,S)
+155066709:NoOp|NoOp|NoOp|Push(S,E)
+155091959:NoOp|NoOp|NoOp|Push(E,S)
+155151500:NoOp|NoOp|NoOp|Push(S,E)
+155196417:NoOp|NoOp|NoOp|Push(E,S)
+155225584:NoOp|NoOp|NoOp|Push(S,E)
+155249834:NoOp|NoOp|NoOp|Push(E,E)
+155276334:NoOp|NoOp|NoOp|Push(E,E)
+155313625:NoOp|NoOp|NoOp|Push(E,E)
+155339042:NoOp|NoOp|NoOp|Push(E,E)
+155367292:NoOp|NoOp|NoOp|Push(E,E)
+155391500:NoOp|NoOp|NoOp|Push(E,E)
+155415875:NoOp|NoOp|NoOp|NoOp
+155443209:NoOp|NoOp|NoOp|NoOp
+155517417:NoOp|NoOp|NoOp|NoOp
+155566750:NoOp|NoOp|NoOp|NoOp
+155607834:NoOp|NoOp|NoOp|NoOp
+155646667:NoOp|NoOp|NoOp|NoOp
+155680750:NoOp|NoOp|NoOp|NoOp
+155708334:NoOp|NoOp|NoOp|NoOp
+155733125:NoOp|NoOp|NoOp|NoOp
+155758834:NoOp|NoOp|NoOp|NoOp
+155783084:NoOp|NoOp|NoOp|NoOp
+155813459:NoOp|NoOp|NoOp|NoOp
+155852625:NoOp|NoOp|NoOp|NoOp
+155877834:NoOp|NoOp|NoOp|NoOp
+155903500:NoOp|NoOp|NoOp|NoOp
+155928792:NoOp|NoOp|NoOp|NoOp
+155958000:NoOp|NoOp|NoOp|NoOp
+155983459:NoOp|NoOp|NoOp|NoOp
+156007750:NoOp|NoOp|NoOp|NoOp
+156032167:NoOp|NoOp|NoOp|NoOp
+156056167:NoOp|NoOp|NoOp|NoOp
+156080250:NoOp|NoOp|NoOp|NoOp
+156104167:NoOp|NoOp|NoOp|NoOp
+156129084:NoOp|NoOp|NoOp|NoOp
+156153167:NoOp|NoOp|NoOp|NoOp
+156177667:NoOp|NoOp|NoOp|NoOp
+156201834:NoOp|NoOp|NoOp|NoOp
+156226500:NoOp|NoOp|NoOp|NoOp
+156250792:NoOp|NoOp|NoOp|NoOp
+156275084:NoOp|NoOp|NoOp|NoOp
+156305459:NoOp|NoOp|NoOp|NoOp
+156329500:NoOp|NoOp|NoOp|NoOp
+156354209:NoOp|NoOp|NoOp|NoOp
+156394875:NoOp|NoOp|NoOp|NoOp
+156423584:NoOp|NoOp|NoOp|NoOp
+156450167:NoOp|NoOp|NoOp|NoOp
+156482417:NoOp|NoOp|NoOp|NoOp
+156512000:NoOp|NoOp|NoOp|NoOp
+156536125:NoOp|NoOp|NoOp|NoOp
+156571792:NoOp|NoOp|NoOp|NoOp
+156597084:NoOp|NoOp|NoOp|NoOp
+156624959:NoOp|NoOp|NoOp|NoOp
+156648125:NoOp|NoOp|NoOp|NoOp
+156670542:NoOp|NoOp|NoOp|NoOp
+156693042:NoOp|NoOp|NoOp|NoOp
+156715375:NoOp|NoOp|NoOp|NoOp
+156737959:NoOp|NoOp|NoOp|NoOp
+156760125:NoOp|NoOp|NoOp|NoOp
+156787084:NoOp|NoOp|NoOp|NoOp
+156810292:NoOp|NoOp|NoOp|NoOp
+156832459:NoOp|NoOp|NoOp|NoOp
+156854542:NoOp|NoOp|NoOp|NoOp
+156876750:NoOp|NoOp|NoOp|NoOp
+156898917:NoOp|NoOp|NoOp|NoOp
+156921250:NoOp|NoOp|NoOp|NoOp
+156976500:NoOp|NoOp|NoOp|NoOp
+157006125:NoOp|NoOp|NoOp|NoOp
+157030709:NoOp|NoOp|NoOp|NoOp
+157054750:NoOp|NoOp|NoOp|NoOp
+157078167:NoOp|NoOp|NoOp|NoOp
+157101709:NoOp|NoOp|NoOp|NoOp
+157124917:NoOp|NoOp|NoOp|NoOp
+157148209:NoOp|NoOp|NoOp|NoOp
+157177084:NoOp|NoOp|NoOp|NoOp
+157201042:NoOp|NoOp|NoOp|NoOp
+157233250:NoOp|NoOp|NoOp|NoOp
+157257917:NoOp|NoOp|NoOp|NoOp
+157285959:NoOp|NoOp|NoOp|NoOp
+157324125:NoOp|NoOp|NoOp|NoOp
+157353709:NoOp|NoOp|NoOp|NoOp
+157392709:NoOp|NoOp|NoOp|NoOp
+157417167:NoOp|NoOp|NoOp|NoOp
+157442834:NoOp|NoOp|NoOp|NoOp
+157465959:NoOp|NoOp|NoOp|NoOp
+157489667:NoOp|NoOp|NoOp|NoOp
+157512084:NoOp|NoOp|NoOp|NoOp
+157549334:NoOp|NoOp|NoOp|NoOp
+157588917:NoOp|NoOp|NoOp|NoOp
+157615084:NoOp|NoOp|NoOp|NoOp
+157638500:NoOp|NoOp|NoOp|NoOp
+157668250:NoOp|NoOp|NoOp|NoOp
+157695250:NoOp|NoOp|NoOp|NoOp
+157719000:NoOp|NoOp|NoOp|NoOp
+157741792:NoOp|NoOp|NoOp|NoOp
+157765417:NoOp|NoOp|NoOp|NoOp
+157789917:NoOp|NoOp|NoOp|NoOp
+157812459:NoOp|NoOp|NoOp|NoOp
+157835000:NoOp|NoOp|NoOp|NoOp
+157859750:NoOp|NoOp|NoOp|NoOp
+157885209:NoOp|NoOp|NoOp|NoOp
+157927209:NoOp|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+206
+#time
+157927209
+#end

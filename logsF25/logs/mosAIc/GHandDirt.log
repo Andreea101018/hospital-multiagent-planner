@@ -1,0 +1,126 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+mosAIc
+#actions
+98864750:Move(S)@Move(S)|Move(E)|Move(S)
+98968375:Move(S)@Move(S)|Move(N)|Push(S,S)
+99006666:Move(S)@Move(S)|Move(E)|Push(S,S)
+99037458:Move(S)@Move(S)|Move(N)|Move(W)
+99071541:Move(E)@Move(E)|Move(E)|Pull(E,S)
+99113833:Push(S,E)@Push(S,E)|Pull(E,S)|Push(S,S)
+99151750:Push(E,E)@Push(E,E)|Pull(E,E)|Push(S,W)
+99180125:Push(N,E)@Push(N,E)|Pull(S,E)|Push(W,S)
+99203583:Push(E,E)@Push(E,E)|Push(N,E)|Push(S,W)
+99226333:Pull(N,N)@Pull(N,N)|Move(W)|Push(W,W)
+99267208:Pull(E,N)@Pull(E,N)|Pull(E,S)|Push(W,W)
+99300708:Pull(N,N)@Pull(N,N)|Pull(S,E)|Push(W,S)
+99323875:Push(S,E)@Push(S,E)|Move(E)|Move(E)
+99356958:Pull(N,E)@Pull(N,E)|Pull(W,S)|Move(E)
+99391541:Pull(E,N)@Pull(E,N)|Push(N,E)|Move(E)
+99527500:Pull(N,N)@Pull(N,N)|Move(S)|Move(N)
+99603541:Push(S,E)@Push(S,E)|Push(E,E)|Move(E)
+99643875:Push(E,N)@Push(E,N)|Push(N,E)|Move(N)
+99684666:Push(N,E)@Push(N,E)|Push(E,E)|Move(N)
+99719625:Move(S)@Move(S)|Pull(W,N)|Pull(S,E)
+99773250:Move(W)@Move(W)|Move(W)|Pull(S,S)
+99830375:Push(W,N)@Push(W,N)|Pull(E,S)|Pull(W,S)
+99879541:Push(N,E)@Push(N,E)|Pull(S,E)|Pull(S,W)
+99918166:Push(E,E)@Push(E,E)|Pull(E,S)|Pull(W,S)
+99955208:Push(E,N)@Push(E,N)|Pull(E,E)|Pull(W,W)
+99988791:Push(N,E)@Push(N,E)|Push(N,E)|Pull(S,W)
+100025791:Push(E,E)@Push(E,E)|Pull(S,E)|Push(N,W)
+100131958:NoOp@NoOp|Pull(E,E)|Move(S)
+100196000:NoOp@NoOp|Push(N,N)|Push(W,W)
+100275333:NoOp@NoOp|Push(W,W)|Pull(E,S)
+100321791:NoOp@NoOp|Pull(E,N)|NoOp
+100353375:NoOp@NoOp|Push(N,N)|NoOp
+100395208:NoOp@NoOp|Push(N,W)|NoOp
+100417958:NoOp@NoOp|Move(S)|NoOp
+100460041:NoOp@NoOp|Move(S)|NoOp
+100503583:NoOp@NoOp|Push(W,S)|NoOp
+100537583:NoOp@NoOp|Push(S,W)|NoOp
+100578000:NoOp@NoOp|Push(W,W)|NoOp
+100609791:NoOp@NoOp|Push(W,N)|NoOp
+100631875:NoOp@NoOp|Move(E)|NoOp
+100654125:NoOp@NoOp|Push(N,E)|NoOp
+100682291:NoOp@NoOp|Pull(S,E)|NoOp
+100716250:NoOp@NoOp|Move(E)|NoOp
+100735666:NoOp@NoOp|Push(N,E)|NoOp
+100764666:NoOp@NoOp|Push(E,N)|NoOp
+100796500:NoOp@NoOp|Move(W)|NoOp
+100822000:NoOp@NoOp|Pull(E,E)|NoOp
+100854250:NoOp@NoOp|Push(N,N)|NoOp
+100884083:NoOp@NoOp|Move(S)|NoOp
+100919291:NoOp@NoOp|Pull(N,E)|NoOp
+100961041:NoOp@NoOp|Pull(E,N)|NoOp
+100992708:NoOp@NoOp|Move(N)|NoOp
+101033416:NoOp@NoOp|Push(W,N)|NoOp
+101064208:NoOp@NoOp|Push(N,W)|NoOp
+101100208:NoOp@NoOp|Move(S)|NoOp
+101121333:NoOp@NoOp|Pull(N,N)|NoOp
+101171375:NoOp@NoOp|Push(W,W)|NoOp
+101205000:NoOp@NoOp|Push(W,S)|NoOp
+101241625:NoOp@NoOp|Move(E)|NoOp
+101274666:NoOp@NoOp|Move(E)|NoOp
+101305416:NoOp@NoOp|Pull(N,N)|NoOp
+101337416:NoOp@NoOp|Push(S,W)|NoOp
+101370208:NoOp@NoOp|Push(W,W)|NoOp
+101411750:NoOp@NoOp|Push(W,W)|NoOp
+101455375:NoOp@NoOp|Push(W,S)|NoOp
+#end
+#solved
+true
+#numactions
+65
+#time
+101455375
+#end

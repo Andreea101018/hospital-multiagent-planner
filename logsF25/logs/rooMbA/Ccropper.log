@@ -1,0 +1,119 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+rooMbA
+#actions
+68210000:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+68485333:Pull(S,W)@Pull(S,W)|Push(W,N)@Push(W,N)|NoOp@NoOp|Pull(W,S)@Pull(W,S)
+68514708:Pull(W,S)@Pull(W,S)|Push(N,E)@Push(N,E)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68538708:Push(E,S)@Push(E,S)|Push(E,N)@Push(E,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68561875:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68583291:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68604041:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|NoOp@NoOp|Push(E,N)@Push(E,N)
+68624291:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|NoOp@NoOp|Push(N,E)@Push(N,E)
+68644708:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|NoOp@NoOp|Push(E,N)@Push(E,N)
+68663500:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|NoOp@NoOp|Push(N,E)@Push(N,E)
+68684041:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|NoOp@NoOp|Push(E,N)@Push(E,N)
+68703708:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|NoOp@NoOp|Push(N,E)@Push(N,E)
+68729375:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68748833:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|NoOp@NoOp|Push(E,S)@Push(E,S)
+68767833:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|NoOp@NoOp|Push(S,E)@Push(S,E)
+68790125:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|NoOp@NoOp|Push(E,S)@Push(E,S)
+68809041:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|NoOp@NoOp|Push(S,E)@Push(S,E)
+68828333:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|NoOp@NoOp|Push(E,S)@Push(E,S)
+68848000:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|NoOp@NoOp|Push(S,E)@Push(S,E)
+68867041:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68885375:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68911250:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68930333:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+68983666:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+69007000:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(E,E)@Push(E,E)
+69031958:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+69057916:NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp
+69147416:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69173833:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69195791:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69220000:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69241208:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+69262083:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+69286625:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+69313625:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+69339750:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+69359416:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+69391625:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69420666:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+69443750:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+69465833:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+69488750:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+69511833:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+69542166:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+69568750:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69589458:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69608875:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69627583:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69647833:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+69666416:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+50
+#time
+69666416
+#end

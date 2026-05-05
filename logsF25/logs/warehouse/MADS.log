@@ -1,0 +1,70 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+warehouse
+#actions
+322372459:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+322430042:Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)
+322467917:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+322494834:Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+322516209:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+322541250:Push(E,S)@Push(E,S)|Move(S)@Move(S)|Move(W)@Move(W)
+322562500:Push(S,S)@Push(S,S)|Move(E)@Move(E)|Move(W)@Move(W)
+322579834:Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)|Move(W)@Move(W)
+322598667:Push(S,W)@Push(S,W)|Pull(E,E)@Pull(E,E)|Pull(E,E)@Pull(E,E)
+322619084:Push(W,W)@Push(W,W)|Pull(S,E)@Pull(S,E)|Pull(E,E)@Pull(E,E)
+322637167:Push(W,W)@Push(W,W)|Pull(S,S)@Pull(S,S)|Pull(E,E)@Pull(E,E)
+322667375:Push(W,W)@Push(W,W)|Pull(E,S)@Pull(E,S)|Push(W,N)@Push(W,N)
+322693000:NoOp@NoOp|Pull(E,E)@Pull(E,E)|Push(N,N)@Push(N,N)
+322710084:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+322727250:NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+322740709:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+322755334:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+322769292:NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+322783459:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(E,S)@Pull(E,S)
+322796500:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(S,E)@Pull(S,E)
+322819542:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,S)@Pull(W,S)
+322839625:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,W)@Pull(W,W)
+322851500:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,W)@Pull(W,W)
+322862834:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+#end
+#solved
+true
+#numactions
+24
+#time
+322862834
+#end

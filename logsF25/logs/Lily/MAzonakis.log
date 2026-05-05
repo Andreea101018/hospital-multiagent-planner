@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+Lily
+#actions
+189238125:Move(W)@Move(W)|Move(N)
+189437417:Move(W)@Move(W)|Move(W)
+189544834:Move(W)@Move(W)|Move(W)
+189693292:Move(W)@Move(W)|Move(W)
+189765750:Move(S)@Move(S)|Move(W)
+189825125:Move(W)@Move(W)|Move(W)
+189899917:Move(W)@Move(W)|Move(W)
+189977084:Move(W)@Move(W)|Move(W)
+190044834:Move(W)@Move(W)|Move(W)
+190142459:Move(W)@Move(W)|Move(W)
+190212542:Move(W)@Move(W)|Move(W)
+190264750:Move(W)@Move(W)|Move(W)
+190312459:Move(W)@Move(W)|Move(W)
+190381750:Move(W)@Move(W)|Move(W)
+190431792:Move(W)@Move(W)|Move(W)
+190487000:Move(W)@Move(W)|Move(W)
+190533334:Move(S)@Move(S)|Move(W)
+190588000:Move(S)@Move(S)|Move(W)
+190647625:Move(S)@Move(S)|Move(W)
+190691125:Move(W)@Move(W)|Move(N)
+190750875:Move(W)@Move(W)|Move(N)
+190800000:Move(W)@Move(W)|Move(N)
+190848834:Move(W)@Move(W)|Move(E)
+190925875:Move(W)@Move(W)|Move(E)
+190982500:Push(N,N)@Push(N,N)|Move(N)
+191038042:Push(W,N)@Push(W,N)|Move(E)
+191091792:Push(N,N)@Push(N,N)|Move(E)
+191142917:Push(N,N)@Push(N,N)|Move(E)
+191193709:Push(N,N)@Push(N,N)|Move(E)
+191300459:Push(N,W)@Push(N,W)|Move(E)
+191343792:Push(W,W)@Push(W,W)|Move(E)
+191382667:Push(W,W)@Push(W,W)|Move(E)
+191432250:Push(W,W)@Push(W,W)|Move(E)
+191477125:Move(E)@Move(E)|Move(N)
+191519834:Move(E)@Move(E)|Move(N)
+191568459:Move(E)@Move(E)|Move(N)
+191645042:Move(E)@Move(E)|Move(N)
+191694667:Move(S)@Move(S)|Move(E)
+191736292:Move(S)@Move(S)|Move(E)
+191801042:Push(S,W)@Push(S,W)|Move(E)
+191860084:Push(W,N)@Push(W,N)|Move(E)
+191903792:Push(N,N)@Push(N,N)|Move(E)
+191942167:Push(N,N)@Push(N,N)|Move(E)
+192006084:Push(N,W)@Push(N,W)|Move(E)
+192051542:Push(W,N)@Push(W,N)|Move(E)
+192107334:Push(N,W)@Push(N,W)|Move(E)
+192173125:Push(W,W)@Push(W,W)|Move(E)
+192216375:Push(W,W)@Push(W,W)|Move(E)
+192259000:NoOp@NoOp|Move(E)
+192300000:NoOp@NoOp|Move(E)
+192338959:NoOp@NoOp|Move(E)
+192383292:NoOp@NoOp|Move(E)
+192428542:NoOp@NoOp|Move(E)
+192468209:NoOp@NoOp|Move(N)
+192506667:NoOp@NoOp|Pull(S,S)
+192546959:NoOp@NoOp|Pull(S,S)
+192585750:NoOp@NoOp|Pull(W,S)
+192628709:NoOp@NoOp|Pull(N,W)
+192704459:NoOp@NoOp|Push(S,W)
+192779250:NoOp@NoOp|Push(W,W)
+192841167:NoOp@NoOp|Push(W,W)
+192908334:NoOp@NoOp|Push(W,W)
+192946584:NoOp@NoOp|Push(W,W)
+193000250:NoOp@NoOp|Push(W,W)
+193037834:NoOp@NoOp|Push(W,W)
+193077042:NoOp@NoOp|Push(W,W)
+193112750:NoOp@NoOp|Push(W,W)
+193152250:NoOp@NoOp|Push(W,W)
+193212042:NoOp@NoOp|Push(W,W)
+193253250:NoOp@NoOp|Push(W,W)
+193288334:NoOp@NoOp|Push(W,W)
+193325125:NoOp@NoOp|Push(W,W)
+193371375:NoOp@NoOp|Push(W,W)
+193442750:NoOp@NoOp|Push(W,S)
+193488750:NoOp@NoOp|Push(S,S)
+193522834:NoOp@NoOp|Push(S,S)
+193559417:NoOp@NoOp|Push(S,W)
+193594584:NoOp@NoOp|Push(W,W)
+193630167:NoOp@NoOp|Push(W,W)
+193679875:NoOp@NoOp|Push(W,W)
+193717750:NoOp@NoOp|Push(W,W)
+193754667:NoOp@NoOp|Push(W,W)
+193799875:NoOp@NoOp|Push(W,N)
+193836917:NoOp@NoOp|Push(N,N)
+193877792:NoOp@NoOp|Push(N,N)
+193919917:NoOp@NoOp|Push(N,N)
+193999084:NoOp@NoOp|Push(N,N)
+194054167:NoOp@NoOp|Push(N,N)
+194091417:NoOp@NoOp|Push(N,N)
+194130167:NoOp@NoOp|Push(N,N)
+194165834:NoOp@NoOp|Push(N,N)
+194203667:NoOp@NoOp|Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+194203667
+#end

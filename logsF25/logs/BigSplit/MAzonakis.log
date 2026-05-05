@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+BigSplit
+#actions
+120220708:Move(W)@h: 31|Move(N)@h: 55
+120382083:Move(S)@h: 30|Move(W)@h: 56
+120463458:Move(W)@h: 29|Move(W)@h: 57
+120547666:Move(W)@h: 28|Move(W)@h: 58
+120620666:Move(W)@h: 27|Move(W)@h: 59
+120692791:Move(W)@h: 26|Move(W)@h: 60
+120761250:Move(W)@h: 25|Move(W)@h: 61
+120856083:Move(W)@h: 24|Move(W)@h: 62
+120948666:Move(W)@h: 23|Move(W)@h: 63
+121098708:Move(W)@h: 22|Move(W)@h: 64
+122161166:Move(W)@h: 21|Move(W)@h: 65
+122266958:Move(W)@h: 20|Move(W)@h: 66
+122342875:Move(W)@h: 19|Move(W)@h: 67
+122408166:Move(W)@h: 18|Move(W)@h: 68
+122446416:Move(W)@h: 17|Move(W)@h: 69
+122544333:Move(W)@h: 16|Move(W)@h: 70
+122603583:Move(S)@h: 15|Move(W)@h: 71
+122695625:Move(S)@h: 14|Move(W)@h: 72
+122803583:Move(S)@h: 15|Move(W)@h: 73
+122852625:Move(W)@h: 14|Move(N)@h: 72
+123008458:Move(W)@h: 13|Move(N)@h: 71
+123083958:Move(W)@h: 12|Move(N)@h: 70
+123153791:Move(W)@h: 11|Move(E)@h: 69
+123242666:Move(W)@h: 10|Move(N)@h: 68
+123316166:Push(N,N)@h: 9|Move(E)@h: 67
+123356416:Push(N,W)@h: 9|Move(E)@h: 66
+123407375:Push(W,N)@h: 8|Move(E)@h: 65
+123443708:Pull(E,N)@h: 8|Move(E)@h: 64
+123518375:Move(N)@h: 8|Move(E)@h: 63
+123554041:Push(W,N)@h: 7|Move(E)@h: 62
+123610583:Pull(E,N)@h: 7|Move(E)@h: 61
+123657166:Move(N)@h: 7|Move(E)@h: 60
+123758208:Push(W,N)@h: 6|Move(E)@h: 59
+123839083:Pull(E,N)@h: 6|Move(N)@h: 58
+123917625:Move(N)@h: 6|Move(N)@h: 57
+123956500:Push(W,N)@h: 5|Move(N)@h: 56
+124004750:Pull(W,N)@h: 5|Move(E)@h: 55
+124084666:Pull(N,W)@h: 4|Move(E)@h: 54
+125024125:Pull(W,W)@h: 4|Move(E)@h: 53
+125118208:Pull(S,W)@h: 3|Move(N)@h: 52
+125185958:Pull(W,W)@h: 3|Move(E)@h: 51
+125248291:Pull(N,W)@h: 2|Move(E)@h: 50
+125313666:Pull(W,W)@h: 2|Move(E)@h: 49
+125375250:Pull(S,W)@h: 1|Move(E)@h: 48
+125441291:Push(E,E)@h: 2|Move(E)@h: 47
+125507083:Pull(N,W)@h: 1|Move(E)@h: 46
+125566541:Push(S,W)@h: 0|Move(E)@h: 45
+125648958:NoOp@NoOp|Move(E)@h: 44
+125725500:NoOp@NoOp|Move(E)@h: 43
+125819541:NoOp@NoOp|Move(E)@h: 42
+125891041:NoOp@NoOp|Move(E)@h: 41
+125989625:NoOp@NoOp|Move(E)@h: 40
+126080666:NoOp@NoOp|Move(E)@h: 39
+126142333:NoOp@NoOp|Move(N)@h: 38
+126210916:NoOp@NoOp|Pull(S,S)@h: 37
+126324750:NoOp@NoOp|Pull(S,S)@h: 36
+126387250:NoOp@NoOp|Push(N,W)@h: 35
+126447000:NoOp@NoOp|Push(W,W)@h: 34
+126491083:NoOp@NoOp|Push(W,S)@h: 33
+126592083:NoOp@NoOp|Push(S,W)@h: 32
+126656541:NoOp@NoOp|Push(W,W)@h: 31
+126713333:NoOp@NoOp|Push(W,W)@h: 30
+126758583:NoOp@NoOp|Push(W,W)@h: 29
+126836125:NoOp@NoOp|Push(W,W)@h: 28
+126942541:NoOp@NoOp|Push(W,W)@h: 27
+126987791:NoOp@NoOp|Push(W,W)@h: 26
+127077541:NoOp@NoOp|Push(W,W)@h: 25
+127136791:NoOp@NoOp|Push(W,W)@h: 24
+127222541:NoOp@NoOp|Push(W,W)@h: 23
+127288833:NoOp@NoOp|Push(W,W)@h: 22
+127368750:NoOp@NoOp|Push(W,W)@h: 21
+127415416:NoOp@NoOp|Push(W,W)@h: 20
+127492541:NoOp@NoOp|Push(W,W)@h: 19
+127558833:NoOp@NoOp|Push(W,S)@h: 18
+127611166:NoOp@NoOp|Push(S,S)@h: 17
+127661583:NoOp@NoOp|Push(S,S)@h: 16
+127740500:NoOp@NoOp|Push(S,W)@h: 15
+127805791:NoOp@NoOp|Push(W,W)@h: 14
+127846500:NoOp@NoOp|Push(W,W)@h: 13
+127885250:NoOp@NoOp|Push(W,W)@h: 12
+127925708:NoOp@NoOp|Push(W,W)@h: 11
+127994333:NoOp@NoOp|Push(W,N)@h: 10
+128057458:NoOp@NoOp|Push(N,N)@h: 9
+128109875:NoOp@NoOp|Push(N,N)@h: 8
+128170791:NoOp@NoOp|Push(N,W)@h: 7
+128234041:NoOp@NoOp|Push(W,N)@h: 6
+128304125:NoOp@NoOp|Push(N,N)@h: 5
+128365666:NoOp@NoOp|Push(N,N)@h: 4
+128424083:NoOp@NoOp|Push(N,N)@h: 3
+128473875:NoOp@NoOp|Push(N,N)@h: 2
+128525500:NoOp@NoOp|Push(N,N)@h: 1
+128629208:NoOp@NoOp|Push(N,N)@h: 0
+#end
+#solved
+true
+#numactions
+92
+#time
+128629208
+#end

@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+MAybetwo
+#actions
+704712667:Move(E)|Move(N)|NoOp
+705080333:Pull(W,N)|NoOp|Move(S)
+705285750:Push(E,E)|NoOp|NoOp
+705572125:Push(E,E)|Push(W,N)|NoOp
+705792333:Push(E,S)|Push(N,N)|Move(S)
+705997917:Push(S,S)|Push(N,W)|Move(W)
+706270042:Push(S,S)|NoOp|Push(W,S)
+706574333:Push(S,S)|NoOp|Push(S,S)
+706836792:Push(S,S)|Push(W,W)|Push(S,S)
+707050708:Push(S,S)|Push(W,W)|Push(S,S)
+707411625:Move(W)|Push(W,W)|Push(S,W)
+707621750:Move(S)|Push(W,W)|Push(W,W)
+707817417:NoOp|Push(W,W)|Push(W,N)
+708052292:NoOp|Push(W,W)|Push(N,N)
+708297083:NoOp|Push(W,W)|Push(N,N)
+708489500:NoOp|Push(W,W)|Push(N,N)
+708701208:NoOp|Push(W,W)|Push(N,W)
+708896083:NoOp|Push(W,W)|NoOp
+#end
+#solved
+false
+#numactions
+18
+#time
+708896083
+#end

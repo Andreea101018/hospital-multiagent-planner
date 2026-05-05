@@ -1,0 +1,73 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+MAybetwo
+#actions
+25352791:NoOp|NoOp|Move(E)
+26043500:NoOp|NoOp|Move(E)
+26083250:NoOp|NoOp|Move(E)
+26192041:NoOp|NoOp|Move(E)
+26269875:NoOp|NoOp|Move(E)
+26346541:NoOp|NoOp|Move(E)
+26384916:NoOp|NoOp|Move(E)
+26500375:NoOp|NoOp|Move(E)
+26557708:NoOp|NoOp|Move(N)
+26596375:NoOp|NoOp|Move(N)
+26630625:NoOp|NoOp|Move(N)
+26672666:NoOp|NoOp|Push(E,S)
+26712500:NoOp|Move(W)|NoOp
+26773375:NoOp|Move(W)|NoOp
+26818583:NoOp|Move(W)|NoOp
+26869125:NoOp|Move(W)|NoOp
+26901208:NoOp|Move(W)|NoOp
+26935291:NoOp|Move(W)|NoOp
+26964250:NoOp|Move(W)|NoOp
+26993291:NoOp|Move(N)|NoOp
+27064833:NoOp|Move(W)|NoOp
+27108458:NoOp|Move(N)|NoOp
+27150708:NoOp|Push(N,N)|NoOp
+27186083:Move(E)|NoOp|NoOp
+27275666:Move(E)|NoOp|NoOp
+27352083:Move(E)|NoOp|NoOp
+27396708:Move(E)|NoOp|NoOp
+27459833:Move(E)|NoOp|NoOp
+27535041:Move(E)|NoOp|NoOp
+27583875:Move(E)|NoOp|NoOp
+27629833:Push(E,E)|NoOp|NoOp
+27688208:Push(E,S)|NoOp|NoOp
+27729458:Push(S,S)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+33
+#time
+27729458
+#end

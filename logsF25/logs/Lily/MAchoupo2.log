@@ -1,0 +1,88 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+Lily
+#actions
+172765084:Move(E)@Move(E)|Move(W)
+172836417:Push(S,S)@Push(S,S)|Push(N,N)
+172901917:Push(S,W)@Push(S,W)|Push(N,E)
+172991459:Push(W,W)@Push(W,W)|Push(E,E)
+173055084:Push(W,N)@Push(W,N)|Push(E,S)
+173103917:Push(N,W)@Push(N,W)|Push(S,E)
+173151750:Push(W,W)@Push(W,W)|Push(E,E)
+173197834:Push(W,W)@Push(W,W)|Push(E,E)
+173248584:Push(W,W)@Push(W,W)|Push(E,E)
+173294709:Push(W,W)@Push(W,W)|Push(E,E)
+173341792:Push(W,W)@Push(W,W)|Push(E,E)
+173387625:Push(W,W)@Push(W,W)|Push(E,E)
+173434792:Push(W,W)@Push(W,W)|Push(E,E)
+173485042:Push(W,W)@Push(W,W)|Push(E,E)
+173532792:Push(W,W)@Push(W,W)|Push(E,E)
+173574209:Push(W,W)@Push(W,W)|Push(E,E)
+173616959:Move(E)@Move(E)|Move(W)
+173666209:Move(E)@Move(E)|Move(W)
+173705709:Move(E)@Move(E)|Move(W)
+173742750:Move(E)@Move(E)|Move(W)
+173784959:Move(E)@Move(E)|Move(W)
+173823417:Move(E)@Move(E)|Move(S)
+173870167:Move(E)@Move(E)|Move(W)
+173908625:Move(N)@Move(N)|Move(S)
+173956084:Move(N)@Move(N)|Move(S)
+173992334:Move(W)@Move(W)|Move(S)
+174024875:Move(N)@Move(N)|Move(S)
+174056750:Move(W)@Move(W)|Move(S)
+174108125:Move(N)@Move(N)|Move(E)
+174169834:Move(W)@Move(W)|Move(E)
+174203417:Move(N)@Move(N)|Move(E)
+174237459:Move(N)@Move(N)|NoOp
+174276125:Move(W)@Move(W)|NoOp
+174310750:Move(W)@Move(W)|NoOp
+174342417:Move(W)@Move(W)|NoOp
+174381250:Move(W)@Move(W)|NoOp
+174413375:Move(W)@Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+37
+#time
+174413375
+#end

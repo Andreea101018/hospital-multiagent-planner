@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+VNN
+#actions
+81042084:Move(E)@Move(E)|Move(W)
+81286417:Pull(W,N)@Pull(W,N)|Pull(E,S)
+81380459:Pull(W,W)@Pull(W,W)|Pull(E,E)
+81478084:Pull(W,W)@Pull(W,W)|Pull(E,E)
+81561042:Pull(S,W)@Pull(S,W)|Pull(N,E)
+81678417:Pull(W,S)@Pull(W,S)|Pull(E,N)
+81780750:Pull(W,W)@Pull(W,W)|Pull(E,E)
+81874167:Pull(W,W)@Pull(W,W)|Pull(E,E)
+81955542:Pull(W,W)@Pull(W,W)|Pull(E,E)
+82046417:Pull(W,W)@Pull(W,W)|Pull(E,E)
+82125042:Pull(W,W)@Pull(W,W)|Pull(E,E)
+82190667:Pull(W,W)@Pull(W,W)|Pull(E,E)
+82265334:Pull(N,W)@Pull(N,W)|Pull(E,E)
+82323542:Push(S,W)@Push(S,W)|Pull(E,E)
+82386167:Push(W,W)@Push(W,W)|Pull(N,E)
+82486500:Push(W,W)@Push(W,W)|Push(S,E)
+82599500:Move(E)@Move(E)|Move(W)
+82649209:Move(E)@Move(E)|Move(W)
+82723917:Move(E)@Move(E)|Move(W)
+82786625:Move(E)@Move(E)|Move(W)
+82845750:Move(N)@Move(N)|Move(S)
+82907625:Move(N)@Move(N)|Move(S)
+82972542:Move(N)@Move(N)|Move(S)
+83019542:Move(N)@Move(N)|Move(S)
+83090625:Move(N)@Move(N)|Move(S)
+83155125:Move(W)@Move(W)|Move(E)
+83232250:Move(N)@Move(N)|Move(S)
+83305750:Move(W)@Move(W)|NoOp
+83385042:Move(W)@Move(W)|NoOp
+83455459:Move(W)@Move(W)|NoOp
+83517209:Move(W)@Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+83517209
+#end

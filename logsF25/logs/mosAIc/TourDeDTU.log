@@ -1,0 +1,183 @@
+#domain
+hospital
+#levelname
+TourDeDTU
+#colors
+red: 8,1,Y,G
+blue: 3,5,D,T,U
+cyan: 6,7,2,C,B,S
+pink: N,O,V,0,4
+#initial
+++++++++++++++++++++++++++++++
++++++++++++++++++++++     ++++
++++++++++++++++         + ++++
+++++++++      Y  ++++++ + ++++
++++++      ++++  +      + ++++
++++++8+++++++++  ++++++G+ ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +      O+  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ + 0 +    +  +    + ++ +++
+++++ +  ++    +  +   1   + +++
+++++ +   NV   +  + + + + + +++
+++++ +        +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ + 4+++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++3 + +++++  + ++
++++ +                     + ++
+++                          ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++ U++  + +  + ++
+++ ++++ ++   ++  +  6+    + ++
+++ +5T+++    ++  + +   ++ + ++
+++ +             + + C ++ + ++
+++ +    ++++ ++  +     ++ + ++
+++ +    +        + + + ++ +  +
+++ + ++++        + + + ++ ++ +
++  +      +++++  +   + ++  + +
++ ++ D+ + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +    B7+  + +
++ + +   +++ +++  + + ++ +  + +
++                +   ++   +  +
++  ++++++++++++  +S+ ++  +   +
++                 2          +
+++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++
++++++++++++++++++++++ 8YG ++++
++++++++++++++++         + ++++
+++++++++         ++++++ + ++++
++++++      ++++  +      + ++++
++++++ +++++++++  ++++++ + ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +       +  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ +   +    +  +    + ++ +++
+++++ +  ++    +  +       + +++
+++++ +        +  + + + + + +++
+++++ + NOV0   +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ +  +++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++  + +++++  + ++
++++ +      4        1     + ++
+++         3        2       ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++  ++  + +  + ++
+++ ++++ ++   ++  +   +    + ++
+++ + 5+++    ++  + +   ++ + ++
+++ +   DTU       + +   ++ + ++
+++ +    ++++ ++  + 6   ++ + ++
+++ +    +        + + +C++ +  +
+++ + ++++        + + +B++ ++ +
++  +      +++++  +   +S++  + +
++ ++  + + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +      +  + +
++ + +   +++ +++  + + ++ + 7+ +
++                +   ++   +  +
++  ++++++++++++  + + ++  +   +
++                            +
+++++++++++++++++++++++++++++++
+#end
+#clientname
+mosAIc
+#actions
+5057193750:Move(S)@Move(S)|Move(E)|Push(N,N)|Move(S)|Move(N)|Push(E,S)|Move(S)|Push(W,N)|Move(N)
+5057439000:Move(S)@Move(S)|Move(E)|Push(N,N)|Move(S)|Move(W)|Push(S,E)|Move(S)|Push(N,N)|Move(E)
+5057502416:Move(E)@Move(E)|Move(N)|Push(N,N)|Move(S)|Move(W)|Push(E,E)|Move(S)|Push(N,N)|Move(E)
+5057562541:Push(E,S)@Push(E,S)|Move(N)|Push(N,N)|Move(S)|Move(W)|Push(E,E)|Move(E)|Push(N,N)|Move(E)
+5057632208:Push(S,W)@Push(S,W)|Move(N)|Push(N,N)|Move(S)|Move(N)|Move(W)|Pull(W,S)|Move(S)|Move(N)
+5057697333:Move(E)@Move(E)|Move(N)|Push(N,N)|Pull(N,W)|Move(N)|Move(W)|Push(E,E)|Move(S)|Move(E)
+5057804708:Pull(E,S)@Pull(E,S)|Move(N)|Push(N,E)|Push(S,S)|Move(N)|Move(N)|Push(E,S)|Move(S)|Move(E)
+5058008500:Push(W,W)@Push(W,W)|Push(N,N)|Push(E,E)|Push(S,S)|Move(N)|NoOp|Move(W)|Move(E)|Move(E)
+5058112875:Move(N)@Move(N)|Push(N,N)|Push(E,S)|Push(S,S)|Move(E)|NoOp|Move(W)|Move(S)|Move(E)
+5058218083:Move(W)@Move(W)|Push(N,N)|Push(S,S)|Push(S,W)|Move(E)|NoOp|Move(W)|Move(S)|Move(E)
+5058318250:Move(W)@Move(W)|Push(N,N)|Push(S,E)|Push(W,W)|Move(E)|NoOp|NoOp|Move(E)|Push(E,E)
+5058436125:Push(S,W)@Push(S,W)|Push(N,E)|Push(E,E)|Push(W,W)|Move(E)|NoOp|NoOp|Move(E)|Push(E,E)
+5058544875:Move(N)@Move(N)|Move(S)|Push(E,N)|Push(W,W)|Move(E)|NoOp|NoOp|Move(N)|Push(E,N)
+5058661541:Move(E)@Move(E)|Move(S)|Push(N,N)|Push(W,W)|Move(E)|NoOp|NoOp|Move(E)|Push(N,E)
+5058771458:Move(E)@Move(E)|Move(S)|Move(S)|Push(W,W)|Move(E)|NoOp|NoOp|NoOp|Push(E,E)
+5058876750:Move(N)@Move(N)|Move(S)|Move(W)|Move(E)|Move(E)|NoOp|NoOp|NoOp|Push(E,E)
+5058987750:Move(N)@Move(N)|Move(S)|Move(W)|Move(E)|Move(E)|NoOp|NoOp|NoOp|Push(E,E)
+5059094041:Move(N)@Move(N)|Move(S)|Move(N)|Move(S)|Move(E)|NoOp|NoOp|NoOp|Push(E,E)
+5059202666:Move(N)@Move(N)|Move(S)|Move(N)|Move(S)|Move(S)|NoOp|NoOp|NoOp|Push(E,E)
+5059305875:Move(E)@Move(E)|Move(S)|Move(N)|Move(W)|Move(S)|NoOp|NoOp|NoOp|Push(E,E)
+5059464583:Move(E)@Move(E)|Move(S)|Move(N)|Move(S)|Move(S)|NoOp|NoOp|NoOp|Push(E,N)
+5059611125:Pull(S,W)@Pull(S,W)|Move(S)|Move(N)|Move(W)|Move(S)|NoOp|NoOp|NoOp|Move(W)
+5059770708:Pull(S,S)@Pull(S,S)|Move(W)|Move(N)|Move(W)|Move(S)|NoOp|NoOp|NoOp|Move(N)
+5059970875:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(S)|Move(S)|NoOp|NoOp|NoOp|NoOp
+5060139041:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(W)|Move(S)|NoOp|NoOp|NoOp|NoOp
+5060280458:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(W)|Move(S)|NoOp|NoOp|NoOp|NoOp
+5060419541:Pull(W,S)@Pull(W,S)|Move(S)|Move(N)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp
+5060562125:Pull(N,W)@Pull(N,W)|Move(W)|Move(E)|Move(W)|Move(S)|NoOp|NoOp|NoOp|NoOp
+5060690958:Push(S,W)@Push(S,W)|Move(W)|Move(E)|Pull(E,N)|Move(S)|NoOp|NoOp|NoOp|NoOp
+5060834083:Push(W,N)@Push(W,N)|Move(W)|Move(S)|Push(W,W)|Move(S)|NoOp|NoOp|NoOp|NoOp
+5060958500:Push(N,W)@Push(N,W)|Move(W)|Move(S)|Push(W,N)|Move(W)|NoOp|NoOp|NoOp|NoOp
+5061097041:Push(W,W)@Push(W,W)|Move(S)|Move(E)|Push(N,N)|Move(W)|NoOp|NoOp|NoOp|NoOp
+5061246750:Push(W,S)@Push(W,S)|Move(S)|Move(E)|Push(N,N)|Move(W)|NoOp|NoOp|NoOp|NoOp
+5061458583:Move(E)@Move(E)|Move(S)|Move(N)|Push(N,N)|Move(W)|NoOp|NoOp|NoOp|NoOp
+5061619500:Move(E)@Move(E)|Move(S)|Move(N)|Push(N,E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5061767041:Move(S)@Move(S)|Move(S)|Move(E)|Push(E,E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5061901041:NoOp@NoOp|Move(S)|Move(N)|Push(E,E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5062069333:NoOp@NoOp|Move(S)|Move(N)|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp
+5062171875:NoOp@NoOp|Move(S)|Move(W)|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp
+5062267500:NoOp@NoOp|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+5062501916:NoOp@NoOp|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+5062653791:NoOp@NoOp|Move(S)|Move(W)|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp
+5062793125:NoOp@NoOp|Move(E)|Move(W)|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp
+5062917000:NoOp@NoOp|Move(E)|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5063045625:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5063180958:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5063376791:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5063507416:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5063739750:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5063862708:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5063945958:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5064135750:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5064316875:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5064415250:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5064510583:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5064647208:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5064763250:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5064923625:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065067333:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065197666:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065365291:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065449208:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065524875:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065589125:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065658000:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065739125:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065810333:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+5065866125:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+68
+#time
+5065866125
+#end

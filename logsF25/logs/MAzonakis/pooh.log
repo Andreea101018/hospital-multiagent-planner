@@ -1,0 +1,317 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+1508738791:NoOp@NoOp|Move(S)
+1508971375:NoOp@NoOp|Move(E)
+1509124958:NoOp@NoOp|Move(E)
+1509232833:NoOp@NoOp|Move(E)
+1509341708:NoOp@NoOp|Move(E)
+1509419916:NoOp@NoOp|Move(E)
+1509518833:NoOp@NoOp|Move(E)
+1509598166:NoOp@NoOp|Move(E)
+1509676291:NoOp@NoOp|Move(E)
+1509757916:NoOp@NoOp|Move(S)
+1509840625:NoOp@NoOp|Move(S)
+1509904125:NoOp@NoOp|Move(W)
+1509966208:NoOp@NoOp|Move(S)
+1510035458:NoOp@NoOp|Move(S)
+1510126250:NoOp@NoOp|Move(S)
+1510183583:NoOp@NoOp|Move(S)
+1510360416:NoOp@NoOp|Move(S)
+1510560541:NoOp@NoOp|Move(S)
+1510637208:NoOp@NoOp|Move(E)
+1510756750:NoOp@NoOp|Pull(W,W)
+1510846791:NoOp@NoOp|Pull(W,W)
+1510931375:NoOp@NoOp|Push(E,N)
+1511007291:NoOp@NoOp|Push(N,N)
+1511126166:NoOp@NoOp|Push(N,N)
+1511208291:NoOp@NoOp|Push(N,N)
+1511303166:NoOp@NoOp|Push(N,N)
+1511387000:NoOp@NoOp|Push(N,N)
+1511491958:NoOp@NoOp|Push(N,E)
+1511561416:NoOp@NoOp|Push(E,N)
+1511642458:NoOp@NoOp|Push(N,N)
+1511737583:NoOp@NoOp|Push(N,W)
+1511820625:NoOp@NoOp|Push(W,W)
+1511919458:NoOp@NoOp|Push(W,W)
+1512019291:NoOp@NoOp|Push(W,W)
+1512098166:NoOp@NoOp|Push(W,S)
+1512172458:NoOp@NoOp|Push(S,W)
+1512227750:NoOp@NoOp|Push(W,S)
+1512282166:NoOp@NoOp|Push(S,S)
+1512358833:NoOp@NoOp|Push(S,S)
+1512534333:NoOp@NoOp|Push(S,S)
+1512639500:NoOp@NoOp|Push(S,S)
+1512704000:NoOp@NoOp|Push(S,S)
+1512771875:NoOp@NoOp|Push(S,S)
+1512830083:NoOp@NoOp|Push(S,S)
+1512888291:NoOp@NoOp|Push(S,S)
+1512946625:NoOp@NoOp|Push(S,S)
+1513031000:NoOp@NoOp|Push(S,S)
+1513139750:NoOp@NoOp|Push(S,S)
+1513260333:NoOp@NoOp|Push(S,S)
+1513508375:NoOp@NoOp|Push(S,S)
+1513584458:NoOp@NoOp|Push(S,S)
+1513670666:NoOp@NoOp|Push(S,S)
+1513799333:NoOp@NoOp|Push(S,S)
+1513867791:NoOp@NoOp|Push(S,S)
+1513941958:NoOp@NoOp|Push(S,S)
+1514028500:NoOp@NoOp|Push(S,S)
+1514098708:NoOp@NoOp|Push(S,S)
+1514170500:NoOp@NoOp|Push(S,S)
+1514267000:NoOp@NoOp|Push(S,W)
+1514348000:NoOp@NoOp|Push(W,S)
+1514405750:NoOp@NoOp|Push(S,W)
+1514474458:NoOp@NoOp|Push(W,S)
+1514521916:NoOp@NoOp|Push(S,S)
+1514635250:NoOp@NoOp|Push(S,S)
+1514705541:NoOp@NoOp|Push(S,S)
+1514762875:NoOp@NoOp|Push(S,S)
+1514848416:NoOp@NoOp|Push(S,S)
+1514903625:NoOp@NoOp|Push(S,S)
+1514984583:NoOp@NoOp|Push(S,W)
+1515074958:NoOp@NoOp|Push(W,S)
+1515142291:NoOp@NoOp|Push(S,S)
+1515227833:NoOp@NoOp|Push(S,S)
+1515317500:NoOp@NoOp|Push(S,S)
+1515409750:NoOp@NoOp|Push(S,S)
+1515498458:NoOp@NoOp|Push(S,S)
+1515573833:NoOp@NoOp|Move(N)
+1515641958:NoOp@NoOp|Move(N)
+1515695458:NoOp@NoOp|Move(N)
+1515773958:NoOp@NoOp|Move(E)
+1515834625:NoOp@NoOp|Move(N)
+1515887708:NoOp@NoOp|Move(N)
+1515948708:NoOp@NoOp|Move(N)
+1516000458:NoOp@NoOp|Move(E)
+1516080333:NoOp@NoOp|Move(N)
+1516121833:NoOp@NoOp|Move(E)
+1516171250:NoOp@NoOp|Move(N)
+1516220541:NoOp@NoOp|Move(N)
+1516269291:NoOp@NoOp|Move(N)
+1516345916:NoOp@NoOp|Move(N)
+1516419458:NoOp@NoOp|Move(N)
+1516477375:NoOp@NoOp|Move(N)
+1516551375:NoOp@NoOp|Move(N)
+1516610333:NoOp@NoOp|Move(N)
+1516657375:NoOp@NoOp|Move(N)
+1516712500:NoOp@NoOp|Move(N)
+1516771416:NoOp@NoOp|Move(N)
+1516824541:NoOp@NoOp|Move(N)
+1516883208:NoOp@NoOp|Move(N)
+1516942625:NoOp@NoOp|Move(N)
+1517003166:NoOp@NoOp|Move(N)
+1517049958:NoOp@NoOp|Move(N)
+1517102333:NoOp@NoOp|Move(N)
+1517147333:NoOp@NoOp|Move(N)
+1517197458:NoOp@NoOp|Move(N)
+1517245916:NoOp@NoOp|Move(N)
+1517291208:NoOp@NoOp|Move(N)
+1517336166:NoOp@NoOp|Move(N)
+1517381708:NoOp@NoOp|Move(N)
+1517430208:NoOp@NoOp|Move(N)
+1517478041:NoOp@NoOp|Move(N)
+1517522708:NoOp@NoOp|Move(N)
+1517567500:NoOp@NoOp|Move(N)
+1517613958:NoOp@NoOp|Move(E)
+1517658958:NoOp@NoOp|Move(N)
+1517703083:NoOp@NoOp|Move(E)
+1517747500:NoOp@NoOp|Move(N)
+1517796500:NoOp@NoOp|Move(E)
+1517865125:NoOp@NoOp|Move(E)
+1517917291:NoOp@NoOp|Move(E)
+1517979458:NoOp@NoOp|Move(S)
+1518023708:NoOp@NoOp|Move(E)
+1518068708:NoOp@NoOp|Move(S)
+1518152500:NoOp@NoOp|Move(E)
+1518207875:NoOp@NoOp|Move(E)
+1518261833:NoOp@NoOp|Move(S)
+1518317791:NoOp@NoOp|Move(S)
+1518416666:NoOp@NoOp|Move(S)
+1518573833:NoOp@NoOp|Move(S)
+1518673791:NoOp@NoOp|Move(S)
+1518749166:NoOp@NoOp|Move(S)
+1518809833:NoOp@NoOp|Move(E)
+1518867833:NoOp@NoOp|Move(E)
+1518936875:NoOp@NoOp|Move(E)
+1518993041:NoOp@NoOp|Move(E)
+1519046666:NoOp@NoOp|Pull(N,W)
+1519113041:NoOp@NoOp|Push(S,W)
+1519167250:NoOp@NoOp|Push(W,W)
+1519223500:NoOp@NoOp|Push(W,W)
+1519317958:NoOp@NoOp|Push(W,W)
+1519388416:NoOp@NoOp|Push(W,N)
+1519471458:NoOp@NoOp|Push(N,N)
+1519570583:NoOp@NoOp|Push(N,N)
+1519647625:NoOp@NoOp|Push(N,N)
+1519723875:NoOp@NoOp|Push(N,N)
+1519803416:NoOp@NoOp|Push(N,N)
+1519863291:NoOp@NoOp|Push(N,N)
+1519933333:NoOp@NoOp|Push(N,N)
+1520004541:NoOp@NoOp|Push(N,W)
+1520125041:NoOp@NoOp|Push(W,W)
+1520209666:NoOp@NoOp|Push(W,W)
+1520267291:NoOp@NoOp|Push(W,W)
+1520340333:NoOp@NoOp|Push(W,W)
+1520422125:NoOp@NoOp|Push(W,W)
+1520501458:NoOp@NoOp|Push(W,S)
+1520553208:NoOp@NoOp|Push(S,W)
+1520602875:NoOp@NoOp|Push(W,W)
+1520652291:NoOp@NoOp|Push(W,S)
+1520707083:NoOp@NoOp|Push(S,S)
+1520778625:NoOp@NoOp|Push(S,S)
+1520831375:NoOp@NoOp|Push(S,S)
+1520918125:NoOp@NoOp|Push(S,S)
+1520992958:NoOp@NoOp|Push(S,S)
+1521084375:NoOp@NoOp|Push(S,S)
+1521149833:NoOp@NoOp|Push(S,S)
+1521189041:NoOp@NoOp|Push(S,S)
+1521242250:NoOp@NoOp|Push(S,S)
+1521290833:NoOp@NoOp|Push(S,E)
+1521340333:NoOp@NoOp|Push(E,S)
+1521387625:NoOp@NoOp|Push(S,S)
+1521470041:NoOp@NoOp|Push(S,E)
+1521537791:NoOp@NoOp|Push(E,E)
+1521605541:NoOp@NoOp|Push(E,S)
+1521672500:NoOp@NoOp|Push(S,E)
+1521740375:NoOp@NoOp|Push(E,S)
+1521791000:NoOp@NoOp|Push(S,S)
+1521867041:NoOp@NoOp|Push(S,S)
+1521923125:NoOp@NoOp|Push(S,S)
+1521984375:NoOp@NoOp|Push(S,S)
+1522032583:NoOp@NoOp|Push(S,S)
+1522098041:NoOp@NoOp|Push(S,S)
+1522143416:NoOp@NoOp|Push(S,S)
+1522193958:NoOp@NoOp|Push(S,S)
+1522241083:NoOp@NoOp|Push(S,S)
+1522300000:NoOp@NoOp|Push(S,S)
+1522353500:NoOp@NoOp|Push(S,S)
+1522398708:NoOp@NoOp|Push(S,S)
+1522442708:NoOp@NoOp|Push(S,S)
+1522494500:NoOp@NoOp|Push(S,S)
+1522572541:NoOp@NoOp|Push(S,S)
+1522648375:NoOp@NoOp|Push(S,S)
+1522720791:NoOp@NoOp|Push(S,S)
+1522830250:NoOp@NoOp|Push(S,S)
+1522900791:NoOp@NoOp|Push(S,S)
+1522968500:NoOp@NoOp|Push(S,S)
+1523035041:NoOp@NoOp|Push(S,S)
+1523101833:NoOp@NoOp|Push(S,S)
+#end
+#solved
+true
+#numactions
+196
+#time
+1523101833
+#end

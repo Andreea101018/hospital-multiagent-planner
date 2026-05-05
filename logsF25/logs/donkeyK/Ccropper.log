@@ -1,0 +1,103 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+donkeyK
+#actions
+1450495800:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+1450622800:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Pull(N,N)@Pull(N,N)|Pull(W,S)@Pull(W,S)
+1450761800:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+1450847200:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+1450917800:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+1451002300:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+1451128700:Push(S,E)@Push(S,E)|Push(N,E)@Push(N,E)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+1451222600:Push(E,S)@Push(E,S)|Push(E,N)@Push(E,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+1451285600:Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)
+1451374600:Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+1451446700:Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)
+1451495500:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Push(N,E)@Push(N,E)
+1451551300:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Push(E,E)@Push(E,E)
+1451599600:Push(E,S)@Push(E,S)|Pull(W,S)@Pull(W,S)|Push(W,S)@Push(W,S)|Push(E,S)@Push(E,S)
+1451652400:Push(S,S)@Push(S,S)|Pull(S,W)@Pull(S,W)|NoOp@NoOp|Push(S,E)@Push(S,E)
+1451706000:NoOp@NoOp|Push(N,W)@Push(N,W)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+1451779300:Push(S,W)@Push(S,W)|Push(W,N)@Push(W,N)|Push(W,S)@Push(W,S)|Push(S,E)@Push(S,E)
+1451886400:Push(W,S)@Push(W,S)|Push(N,W)@Push(N,W)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+1451958400:Push(S,W)@Push(S,W)|Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+1452030400:Push(W,S)@Push(W,S)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+1452100600:Push(S,W)@Push(S,W)|Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)
+1452157400:Push(W,S)@Push(W,S)|Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+1452213400:Push(S,S)@Push(S,S)|Push(N,E)@Push(N,E)|Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)
+1452297600:Push(S,S)@Push(S,S)|Push(E,N)@Push(E,N)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+1452368800:Push(S,S)@Push(S,S)|Push(N,E)@Push(N,E)|Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)
+1452464700:Push(S,S)@Push(S,S)|Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+1452528000:Push(S,S)@Push(S,S)|Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|NoOp@NoOp
+1452607500:Push(S,S)@Push(S,S)|Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+1452705500:NoOp@NoOp|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+1452784900:NoOp@NoOp|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+1452864700:NoOp@NoOp|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+1452943300:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+1453024100:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+1453078900:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+34
+#time
+1453078900
+#end

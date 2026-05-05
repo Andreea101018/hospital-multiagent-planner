@@ -1,0 +1,157 @@
+#domain
+hospital
+#levelname
+TourDeDTU
+#colors
+red: 8,1,Y,G
+blue: 3,5,D,T,U
+cyan: 6,7,2,C,B,S
+pink: N,O,V,0,4
+#initial
+++++++++++++++++++++++++++++++
++++++++++++++++++++++     ++++
++++++++++++++++         + ++++
+++++++++      Y  ++++++ + ++++
++++++      ++++  +      + ++++
++++++8+++++++++  ++++++G+ ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +      O+  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ + 0 +    +  +    + ++ +++
+++++ +  ++    +  +   1   + +++
+++++ +   NV   +  + + + + + +++
+++++ +        +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ + 4+++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++3 + +++++  + ++
++++ +                     + ++
+++                          ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++ U++  + +  + ++
+++ ++++ ++   ++  +  6+    + ++
+++ +5T+++    ++  + +   ++ + ++
+++ +             + + C ++ + ++
+++ +    ++++ ++  +     ++ + ++
+++ +    +        + + + ++ +  +
+++ + ++++        + + + ++ ++ +
++  +      +++++  +   + ++  + +
++ ++ D+ + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +    B7+  + +
++ + +   +++ +++  + + ++ +  + +
++                +   ++   +  +
++  ++++++++++++  +S+ ++  +   +
++                 2          +
+++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++
++++++++++++++++++++++ 8YG ++++
++++++++++++++++         + ++++
+++++++++         ++++++ + ++++
++++++      ++++  +      + ++++
++++++ +++++++++  ++++++ + ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +       +  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ +   +    +  +    + ++ +++
+++++ +  ++    +  +       + +++
+++++ +        +  + + + + + +++
+++++ + NOV0   +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ +  +++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++  + +++++  + ++
++++ +      4        1     + ++
+++         3        2       ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++  ++  + +  + ++
+++ ++++ ++   ++  +   +    + ++
+++ + 5+++    ++  + +   ++ + ++
+++ +   DTU       + +   ++ + ++
+++ +    ++++ ++  + 6   ++ + ++
+++ +    +        + + +C++ +  +
+++ + ++++        + + +B++ ++ +
++  +      +++++  +   +S++  + +
++ ++  + + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +      +  + +
++ + +   +++ +++  + + ++ + 7+ +
++                +   ++   +  +
++  ++++++++++++  + + ++  +   +
++                            +
+++++++++++++++++++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+208062916:Move(S)@Move(S)|Move(E)@Move(E)|Push(N,N)@Push(N,N)|Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Move(S)@Move(S)|Push(W,N)@Push(W,N)|Move(N)@Move(N)
+208338791:Move(S)@Move(S)|Move(E)@Move(E)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(E)@Move(E)|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+208424041:Move(E)@Move(E)|Move(N)@Move(N)|Push(N,N)@Push(N,N)|Move(S)@Move(S)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+208509416:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Push(N,E)@Push(N,E)|Move(S)@Move(S)|Move(E)@Move(E)|Push(E,E)@Push(E,E)|Push(S,E)@Push(S,E)|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+208583333:Push(S,E)@Push(S,E)|Move(N)@Move(N)|Push(E,E)@Push(E,E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Move(S)@Move(S)|Move(N)@Move(N)
+208654625:Pull(W,W)@Pull(W,W)|Move(N)@Move(N)|Push(E,N)@Push(E,N)|Push(S,W)@Push(S,W)|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)
+208722791:Pull(W,W)@Pull(W,W)|Move(N)@Move(N)|Push(N,E)@Push(N,E)|Pull(S,E)@Pull(S,E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)
+208791291:Pull(N,W)@Pull(N,W)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Pull(W,S)@Pull(W,S)|Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)
+208853333:Move(E)@Move(E)|Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Pull(S,W)@Pull(S,W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+208914833:Move(E)@Move(E)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Pull(S,S)@Pull(S,S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+208977083:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(S)@Move(S)|Pull(W,S)@Pull(W,S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|Push(E,E)@Push(E,E)
+209039833:Pull(S,S)@Pull(S,S)|Push(N,E)@Push(N,E)|Move(E)@Move(E)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|Push(E,N)@Push(E,N)
+209102375:Pull(W,S)@Pull(W,S)|Move(S)@Move(S)|Move(E)@Move(E)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp|Move(S)@Move(S)|Push(N,E)@Push(N,E)
+209164166:Pull(N,W)@Pull(N,W)|Move(S)@Move(S)|Move(E)@Move(E)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(E)@Move(E)|Push(E,E)@Push(E,E)
+209227666:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+209305166:Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+209370875:Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Pull(N,W)@Pull(N,W)|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+209439208:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+209497333:Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)
+209551791:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+209623333:Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+209676416:Push(E,S)@Push(E,S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+209727416:Push(S,W)@Push(S,W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+209777500:Push(W,S)@Push(W,S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+209823041:Push(S,W)@Push(S,W)|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+209870583:Push(W,S)@Push(W,S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+209927458:Push(S,W)@Push(S,W)|Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+209971791:Push(W,S)@Push(W,S)|Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210020416:Push(S,W)@Push(S,W)|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210068666:Push(W,W)@Push(W,W)|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210114250:Push(W,S)@Push(W,S)|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210158000:Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210217625:Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210260791:Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210300000:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210337875:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210384208:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210429625:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210466458:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210504875:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210540333:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+210588500:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+42
+#time
+210588500
+#end

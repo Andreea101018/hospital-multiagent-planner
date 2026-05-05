@@ -1,0 +1,50 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+VNN
+#actions
+59268167:Move(S)@Move(S)|Move(W)|Move(E)
+59375417:Pull(S,W)@Pull(S,W)|Move(W)|Move(E)
+59474417:Pull(S,S)@Pull(S,S)|Move(W)|Move(E)
+59563750:Push(N,E)@Push(N,E)|Move(W)|Move(E)
+59739875:Push(E,S)@Push(E,S)|Move(S)|Move(E)
+59827792:Push(S,S)@Push(S,S)|Move(W)|Move(N)
+59956958:Push(S,S)@Push(S,S)|Move(S)|Move(E)
+60039625:Move(W)@Move(W)|NoOp|Move(N)
+60108083:Move(S)@Move(S)|NoOp|NoOp
+60174875:Move(S)@Move(S)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+10
+#time
+60174875
+#end

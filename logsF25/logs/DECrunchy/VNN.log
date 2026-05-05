@@ -1,0 +1,162 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+DECrunchy
+#actions
+1998056044:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998234378:Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+1998367417:Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+1998383432:Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+1998393193:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998401542:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998412057:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998419622:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998436327:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998447945:Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)|Move(E)@Move(E)
+1998456883:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)
+1998464812:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+1998472211:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1998479671:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1998486948:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1998493834:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1998504534:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1998511841:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+1998519258:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998526395:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998533335:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998540336:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998547241:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998556397:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998563382:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998570674:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998577733:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998584790:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998591897:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998598944:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1998605866:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1998612844:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1998619927:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1998630933:Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(E)@Move(E)|Move(N)@Move(N)
+1998640696:Move(S)@Move(S)|Push(E,S)@Push(E,S)|Push(N,E)@Push(N,E)|Move(N)@Move(N)
+1998663467:Pull(N,E)@Pull(N,E)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+1998673180:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+1998680689:Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+1998688409:Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998695778:Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998703304:Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998710700:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998717766:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1998736798:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Pull(S,W)@Pull(S,W)|NoOp@NoOp
+1998749150:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|Move(S)@Move(S)
+1998757799:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|Move(W)@Move(W)
+1998765075:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|Move(S)@Move(S)
+1998772356:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|Move(W)@Move(W)
+1998779616:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|Move(W)@Move(W)
+1998788452:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|Move(W)@Move(W)
+1998797264:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)|Move(W)@Move(W)
+1998808920:Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)|Move(E)@Move(E)
+1998816964:Push(W,W)@Push(W,W)|Push(W,S)@Push(W,S)|Push(S,W)@Push(S,W)|Move(E)@Move(E)
+1998825430:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+1998836332:Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+1998844707:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+1998853490:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1998861045:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1998868193:Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1998875451:Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1998882853:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1998890974:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1998898102:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1998905225:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Move(N)@Move(N)
+1998914430:Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Pull(E,E)@Pull(E,E)
+1998922249:Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(W,S)@Push(W,S)
+1998930063:Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+1998937499:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)|Push(S,W)@Push(S,W)
+1998945234:Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(W,S)@Push(W,S)
+1998952747:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(S,S)@Push(S,S)
+1998959999:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(S,W)@Push(S,W)
+1998967410:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|Push(W,W)@Push(W,W)
+1998974940:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1998982148:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1998989333:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1998996178:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999003016:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999009944:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999016817:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999023546:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999030355:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999037027:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999043875:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999050795:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999057898:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999065141:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999072058:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+1999078951:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)
+1999086287:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)
+1999093554:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Push(N,N)@Push(N,N)
+1999101404:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Push(N,N)@Push(N,N)
+1999108415:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Push(N,E)@Push(N,E)
+1999115630:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Push(E,N)@Push(E,N)
+1999122741:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+1999129842:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+1999136741:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)
+1999143767:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)
+1999150799:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1999157821:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+1999164987:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+1999172059:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1999178981:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1999185791:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1999192628:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+1999199574:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)
+#end
+#solved
+true
+#numactions
+105
+#time
+1999199574
+#end

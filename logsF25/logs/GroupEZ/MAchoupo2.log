@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+132737000:Move(E)@Move(E)|Move(W)
+132996100:Pull(W,N)@Pull(W,N)|Pull(E,S)
+133195400:Pull(W,W)@Pull(W,W)|Pull(E,E)
+133458800:Pull(S,W)@Pull(S,W)|Pull(N,E)
+133678700:Pull(W,S)@Pull(W,S)|Pull(E,N)
+134005100:Pull(W,W)@Pull(W,W)|Pull(E,E)
+134116100:Pull(W,W)@Pull(W,W)|Pull(E,E)
+134253000:Pull(N,W)@Pull(N,W)|Pull(E,E)
+134398700:Push(S,W)@Push(S,W)|Pull(E,E)
+134590500:Push(W,W)@Push(W,W)|Pull(S,E)
+134749000:Push(W,W)@Push(W,W)|Push(N,E)
+134883900:Push(W,W)@Push(W,W)|Push(E,E)
+135019800:Push(W,W)@Push(W,W)|Push(E,E)
+135141300:Push(W,W)@Push(W,W)|Push(E,E)
+135346300:Push(W,W)@Push(W,W)|Push(E,E)
+135467600:Push(W,W)@Push(W,W)|Push(E,E)
+135562600:Move(E)@Move(E)|Move(W)
+135696900:Move(E)@Move(E)|Move(W)
+135805300:Move(E)@Move(E)|Move(W)
+135922900:Move(E)@Move(E)|Move(W)
+136057800:Move(N)@Move(N)|Move(S)
+136153800:Move(N)@Move(N)|Move(S)
+136307500:Move(N)@Move(N)|Move(S)
+136413300:Move(N)@Move(N)|Move(S)
+136519400:Move(N)@Move(N)|Move(S)
+136640600:Move(N)@Move(N)|Move(S)
+136771300:Move(W)@Move(W)|Move(E)
+136907500:Move(W)@Move(W)|NoOp
+137036200:Move(W)@Move(W)|NoOp
+137156500:Move(W)@Move(W)|NoOp
+137272800:Move(W)@Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+137272800
+#end

@@ -1,0 +1,69 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+DECrunchy
+#actions
+179568292:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+179637866:Pull(E,N)@Pull(E,N)|Push(N,N)@Push(N,N)|NoOp@NoOp
+179666971:Pull(E,E)@Pull(E,E)|Push(N,W)@Push(N,W)|NoOp@NoOp
+179680813:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+179689122:Push(W,S)@Push(W,S)|Push(N,W)@Push(N,W)|NoOp@NoOp
+179697980:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|NoOp@NoOp
+179706022:Push(S,E)@Push(S,E)|Push(W,W)@Push(W,W)|NoOp@NoOp
+179714582:Move(S)@Move(S)|Push(W,W)@Push(W,W)|NoOp@NoOp
+179728520:Move(N)@Move(N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+179737161:Pull(S,W)@Pull(S,W)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+179745763:Pull(S,S)@Pull(S,S)|NoOp@NoOp|Move(W)@Move(W)
+179753890:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+179761892:Pull(S,S)@Pull(S,S)|NoOp@NoOp|Push(S,E)@Push(S,E)
+179769848:Pull(W,S)@Pull(W,S)|NoOp@NoOp|Pull(S,W)@Pull(S,W)
+179777821:Push(E,E)@Push(E,E)|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+179786191:NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+179794140:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+179802121:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+179810360:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(S,W)@Pull(S,W)
+179818409:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,S)@Pull(W,S)
+179828086:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,W)@Pull(W,W)
+179836065:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)
+179843275:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+179850090:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+179856957:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+179863929:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)
+179870967:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+179877981:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+179884820:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+#end
+#solved
+true
+#numactions
+29
+#time
+179884820
+#end

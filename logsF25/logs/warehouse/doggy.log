@@ -1,0 +1,155 @@
+#domain
+hospital
+#levelname
+doggy
+#colors
+cyan: 3,B,C
+pink: 0,1,D
+red: A,2,4,5
+green: 6,7,8
+#initial
+++++++++++++++++++++
++                B +
++  ++++  6  ++++   +
++  +  +     +8 +   +
++  +  +  3  +  +   +
++  + 0+     +1 +   +
++  + ++  4  ++ +   +
++  + +++++++++ +  7+
++  +     5     +   +
++  +  ++   ++  +   +
++  +  +     +  +   +
++  +    +++    +   +
++  +  +++++++  +   +
++   + +     + +    +
++     + +++ +    D +
++    A+ +2+ +      +
++C                 +
+++++++++++++++++++++
+#goal
+++++++++++++++++++++
++         7        +
++  ++++     ++++   +
++  +C +     +  +   +
++  +  +     +  +   +
++ A+  +     +  +   +
++  + ++ 8   ++ +   +
++  + +++++++++ +   +
++  +     3     +   +
++  +  ++   ++  +   +
++  + D+  2  +  +   +
++  +    +++    +   +
++  + 6+++++++  +   +
++   + + 1 0 + +    +
++     + +++ +      +
++     + +5+ +      +
++B              4  +
+++++++++++++++++++++
+#end
+#clientname
+warehouse
+#actions
+3433874750:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|Move(E)@Move(E)
+3433991625:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)
+3434019209:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)|Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+3434051542:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+3434072250:Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+3434090042:Move(E)@Move(E)|Move(W)@Move(W)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+3434108834:Move(E)@Move(E)|Move(W)@Move(W)|Push(N,W)@Push(N,W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)
+3434132834:Move(E)@Move(E)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)
+3434149292:Move(E)@Move(E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+3434165250:Move(S)@Move(S)|Move(S)@Move(S)|Push(W,N)@Push(W,N)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+3434181709:Move(E)@Move(E)|Move(W)@Move(W)|Push(N,N)@Push(N,N)|Push(E,S)@Push(E,S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+3434198000:Move(S)@Move(S)|Move(W)@Move(W)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+3434214084:Move(E)@Move(E)|Move(W)@Move(W)|Push(N,N)@Push(N,N)|Push(S,W)@Push(S,W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3434234667:Move(S)@Move(S)|Move(S)@Move(S)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3434251000:Move(E)@Move(E)|Move(W)@Move(W)|Push(W,N)@Push(W,N)|Push(S,S)@Push(S,S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+3434272292:Move(E)@Move(E)|Move(W)@Move(W)|Push(N,E)@Push(N,E)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)
+3434292542:Move(S)@Move(S)|Move(S)@Move(S)|Push(E,N)@Push(E,N)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)
+3434312875:Move(S)@Move(S)|Move(S)@Move(S)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)
+3434332125:Move(S)@Move(S)|Move(S)@Move(S)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+3434351750:Move(E)@Move(E)|Move(W)@Move(W)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)
+3434367209:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)
+3434383292:Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)
+3434398917:Pull(W,W)@Pull(W,W)|Move(W)@Move(W)|Move(W)@Move(W)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)
+3434415250:Pull(W,W)@Pull(W,W)|Move(N)@Move(N)|Move(N)@Move(N)|Pull(E,N)@Pull(E,N)|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)
+3434436292:Pull(W,W)@Pull(W,W)|Move(N)@Move(N)|Move(N)@Move(N)|Pull(S,E)@Pull(S,E)|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(N)@Move(N)
+3434457209:Pull(S,W)@Pull(S,W)|Move(N)@Move(N)|Move(N)@Move(N)|Pull(E,S)@Pull(E,S)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)
+3434480209:Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(N)@Move(N)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)
+3434500125:Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)
+3434519542:Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(N)@Move(N)|Push(W,S)@Push(W,S)|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)
+3434538834:Push(N,W)@Push(N,W)|Move(N)@Move(N)|Move(N)@Move(N)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)
+3434559084:Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(N)@Move(N)|Push(S,W)@Push(S,W)|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+3434578750:Push(W,N)@Push(W,N)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,S)@Push(W,S)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+3434599667:Push(N,W)@Push(N,W)|Move(N)@Move(N)|Move(E)@Move(E)|Push(S,W)@Push(S,W)|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+3434618875:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+3434637042:Push(W,W)@Push(W,W)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)
+3434654125:Push(W,W)@Push(W,W)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)
+3434670417:Push(W,S)@Push(W,S)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)
+3434686917:Push(S,W)@Push(S,W)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)|Move(E)@Move(E)
+3434706792:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)
+3434723417:Push(W,N)@Push(W,N)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(N)@Move(N)
+3434739417:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)
+3434754709:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)
+3434773125:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)
+3434788959:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)
+3434807334:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)
+3434823500:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)
+3434839917:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+3434870792:Move(N)@Move(N)|Move(E)@Move(E)|Move(S)@Move(S)|Pull(N,E)@Pull(N,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)
+3434889250:Move(N)@Move(N)|Move(E)@Move(E)|Move(S)@Move(S)|Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)
+3434906459:Move(N)@Move(N)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)
+3434927667:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)
+3434947250:Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)
+3434963584:Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+3434978375:Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+3434993959:Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435011709:NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435027167:NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435077959:NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435102084:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435120542:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435153542:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435177417:NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435196334:NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435215792:NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435230959:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435246875:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435262167:NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435290792:NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435314334:NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435334459:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435353125:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435367959:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435388334:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435407542:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435427625:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435446875:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435464667:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435479917:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435494917:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435510084:Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435524625:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435540250:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435557875:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435572917:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435586959:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435601042:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435615459:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435629542:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435647167:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435662334:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435677334:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435691250:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435705500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435719292:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435734125:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3435750000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+96
+#time
+3435750000
+#end

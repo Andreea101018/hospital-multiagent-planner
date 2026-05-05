@@ -1,0 +1,54 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+sigMAS
+#actions
+62590584:Move(S)|NoOp|NoOp
+62666625:Push(E,S)|NoOp|NoOp
+62707917:Push(S,S)|NoOp|NoOp
+62775042:Push(S,S)|NoOp|NoOp
+62829709:Push(S,S)|NoOp|NoOp
+62879417:Move(W)|NoOp|NoOp
+62914167:Move(S)|Move(S)|Move(N)
+62955667:Move(S)|Move(S)|Move(E)
+62988417:NoOp|Move(W)|Move(N)
+63023834:NoOp|Move(W)|Move(E)
+63056084:NoOp|Move(W)|Move(E)
+63086917:NoOp|Move(W)|Move(E)
+63120334:NoOp|Move(W)|Move(E)
+63153417:NoOp|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+14
+#time
+63153417
+#end

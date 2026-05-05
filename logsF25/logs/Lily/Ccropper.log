@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+Lily
+#actions
+202989417:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)
+203118625:Push(E,S)@Push(E,S)|Pull(N,E)|Pull(N,N)|Push(N,E)
+203242750:Push(S,W)@Push(S,W)|Pull(W,N)|Push(S,W)|Push(E,S)
+203349042:Push(W,S)@Push(W,S)|Push(E,N)|Push(W,W)|Push(S,E)
+203477542:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+203591208:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+203778708:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+203868250:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+203979708:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+204059917:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+204141583:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+204214708:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+204308167:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+204384167:Push(S,E)@Push(S,E)|Push(N,W)|Push(W,S)|Push(E,N)
+204507917:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+204601333:Push(S,E)@Push(S,E)|Push(N,W)|Push(W,S)|Push(E,N)
+204671208:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+204775292:Push(S,E)@Push(S,E)|Push(N,W)|Push(W,S)|Push(E,N)
+204894667:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+204975375:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+205046875:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+205135750:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+205245958:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+205307875:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+205362500:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+205362500
+#end

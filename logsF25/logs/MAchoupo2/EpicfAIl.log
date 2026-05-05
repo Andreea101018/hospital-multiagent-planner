@@ -1,0 +1,145 @@
+#domain
+hospital
+#levelname
+EpicfAIl
+#colors
+blue: 0, A
+red: 2, C, X
+purple: I
+green: 3, B
+orange: J
+pink: E
+grey: 1, D, Y
+#initial
+++++++++++++++++++++
++1 +   +  +   +    +
++2   + +  X   Y    +
++3 + +    +   +    +
++++++++++++++++++A++
++0             +B  +
++              +C  +
++              +D  +
++     I        ++ ++
++    III EEE       +
++    III EJE       +
++    IIB EEE       +
++     B   B        +
++     B   B        +
+++++++++++++++++++++
+#goal
+++++++++++++++++++++
++  +   +  +   +    +
++    + +           +
++  + +    +   +    +
++++++++++++++++++ ++
++              +3 D+
++              +2 C+
++              +1 B+
++     I        ++ ++
++    III EEE       +
++    III EJE       +
++    IIB EEE       +
++     B   B       0+
++     B   B       A+
+++++++++++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+2320648916:Move(S)|Move(E)|NoOp|NoOp
+2320735291:Move(S)|Move(S)|NoOp|NoOp
+2320794083:Move(S)|Move(E)|NoOp|NoOp
+2320839791:NoOp|Move(E)|Move(E)|NoOp
+2320899333:Move(E)|NoOp|Move(E)|NoOp
+2320957208:Move(E)|Move(N)|NoOp|NoOp
+2321002750:Move(E)|Move(E)|NoOp|NoOp
+2321041291:Move(E)|Move(E)|NoOp|NoOp
+2321079583:NoOp|Move(S)|Move(E)|NoOp
+2321129958:NoOp|Move(S)|Move(N)|NoOp
+2321172791:NoOp|Move(E)|Move(E)|NoOp
+2321213333:NoOp|Move(E)|Move(E)|NoOp
+2321289041:NoOp|Move(N)|Move(S)|NoOp
+2321324125:NoOp|Move(E)|Move(S)|NoOp
+2321359500:NoOp|NoOp|Move(E)|Move(E)
+2321404541:NoOp|NoOp|Move(E)|Move(N)
+2321447083:NoOp|NoOp|Move(N)|Move(E)
+2321485833:NoOp|NoOp|NoOp|Move(E)
+2321520041:NoOp|NoOp|NoOp|Move(N)
+2321568833:NoOp|Move(S)|NoOp|Move(E)
+2321613166:NoOp|NoOp|Move(E)|Move(E)
+2321651916:NoOp|NoOp|Push(E,E)|Move(S)
+2321698041:NoOp|Move(N)|Push(E,E)|NoOp
+2321735416:NoOp|Move(E)|Push(E,E)|NoOp
+2321774458:NoOp|Move(E)|Push(E,S)|NoOp
+2321810833:NoOp|Move(E)|NoOp|Move(S)
+2321858208:Move(W)|NoOp|NoOp|Move(E)
+2321896666:Move(S)|NoOp|NoOp|Move(E)
+2321930916:Move(S)|NoOp|NoOp|Move(N)
+2321964541:Move(S)|NoOp|NoOp|Move(E)
+2321997041:Move(S)|NoOp|NoOp|Move(E)
+2322044791:Move(E)|NoOp|Move(N)|NoOp
+2322084125:NoOp|Move(E)|NoOp|Move(E)
+2322122541:NoOp|Push(E,E)|NoOp|Move(E)
+2322164583:NoOp|Push(E,N)|Move(S)|NoOp
+2322201250:NoOp|Move(S)|Move(E)|NoOp
+2322256958:NoOp|Move(E)|Move(E)|NoOp
+2322299333:NoOp|Move(E)|Move(E)|NoOp
+2322331791:NoOp|NoOp|Move(S)|Move(E)
+2322369458:Move(W)|NoOp|NoOp|Move(E)
+2322401083:Move(N)|NoOp|NoOp|Move(E)
+2322441416:Move(N)|NoOp|NoOp|Move(E)
+2322489875:Move(N)|NoOp|NoOp|Move(E)
+2322532500:Move(N)|NoOp|NoOp|NoOp
+2322566291:Move(E)|NoOp|NoOp|NoOp
+2322603333:Move(N)|NoOp|NoOp|NoOp
+2322640708:Move(E)|NoOp|NoOp|NoOp
+2322699500:Move(E)|NoOp|NoOp|NoOp
+2322736375:Move(E)|NoOp|NoOp|NoOp
+2322776666:Move(E)|NoOp|NoOp|NoOp
+2322816583:Move(E)|NoOp|NoOp|NoOp
+2322853208:Move(E)|NoOp|NoOp|NoOp
+2322896916:Move(S)|NoOp|NoOp|NoOp
+2322931375:Move(E)|NoOp|NoOp|NoOp
+2322962875:Move(E)|NoOp|NoOp|NoOp
+2322998083:Move(S)|NoOp|NoOp|NoOp
+2323029416:Move(E)|NoOp|NoOp|NoOp
+2323074708:Move(E)|NoOp|NoOp|NoOp
+2323114958:Move(E)|NoOp|NoOp|NoOp
+2323164791:Move(E)|NoOp|NoOp|Move(E)
+2323204458:Move(N)|NoOp|NoOp|Move(S)
+2323241208:Move(N)|NoOp|NoOp|NoOp
+2323278458:Move(N)|NoOp|NoOp|NoOp
+2323317291:Move(N)|NoOp|NoOp|NoOp
+2323354125:Pull(S,S)|NoOp|NoOp|NoOp
+2323405583:Pull(S,S)|Move(S)|NoOp|NoOp
+2323441000:NoOp|Move(S)|Move(E)|NoOp
+2323485083:Pull(S,S)|NoOp|Move(S)|NoOp
+2323529625:Pull(S,S)|Move(S)|NoOp|NoOp
+2323569000:Pull(S,S)|Move(S)|NoOp|NoOp
+2323610500:Pull(S,S)|NoOp|Move(S)|NoOp
+2323641958:Pull(E,S)|NoOp|Move(S)|NoOp
+2323682083:Pull(S,E)|NoOp|NoOp|Move(W)
+2323723125:NoOp|Pull(S,E)|NoOp|Move(S)
+2323757416:NoOp|Push(N,E)|NoOp|Move(S)
+2323794208:Pull(W,S)|Move(W)|NoOp|NoOp
+2323828625:Push(E,S)|Move(E)|NoOp|NoOp
+2323875666:NoOp|Push(E,N)|Push(W,S)|NoOp
+2323917208:NoOp|Push(N,N)|Push(S,E)|NoOp
+2323960166:NoOp|Move(S)|Push(E,N)|NoOp
+2324002166:NoOp|NoOp|Push(N,E)|NoOp
+2324036875:NoOp|Move(W)|Move(W)|NoOp
+2324079625:NoOp|Move(W)|NoOp|Pull(N,E)
+2324112291:NoOp|NoOp|NoOp|Push(S,S)
+2324147166:NoOp|NoOp|NoOp|Push(S,S)
+2324177541:NoOp|NoOp|NoOp|Push(S,E)
+2324212166:NoOp|NoOp|NoOp|Move(N)
+2324241750:NoOp|NoOp|NoOp|Move(N)
+2324268500:NoOp|NoOp|NoOp|Move(W)
+#end
+#solved
+true
+#numactions
+89
+#time
+2324268500
+#end

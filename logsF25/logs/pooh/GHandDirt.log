@@ -1,0 +1,102 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+pooh
+#actions
+24715261958:Move(S)@Move(S)|Move(E)|Move(S)
+24715306708:Move(S)@Move(S)|Move(E)|Move(W)
+24715336167:Move(S)@Move(S)|Move(E)|Push(S,W)
+24715379833:Move(E)@Move(E)|Move(N)|Push(W,W)
+24715407750:Move(S)@Move(S)|Move(N)|Move(E)
+24715438833:Push(S,E)@Push(S,E)|Pull(E,S)|Pull(W,W)
+24715477708:Push(E,E)@Push(E,E)|Pull(S,E)|Push(W,W)
+24715532208:Push(N,E)@Push(N,E)|Push(N,E)|Move(E)
+24715550792:Push(E,N)@Push(E,N)|Push(E,E)|Pull(W,W)
+24715577792:Pull(W,N)@Pull(W,N)|Pull(W,S)|Pull(S,W)
+24715618000:Push(E,E)@Push(E,E)|Pull(S,S)|Pull(W,S)
+24715637167:Push(N,E)@Push(N,E)|Pull(E,S)|Pull(S,S)
+24715661958:Push(E,N)@Push(E,N)|Pull(E,E)|Push(N,W)
+24715685292:Pull(E,N)@Pull(E,N)|Push(N,E)|Pull(S,W)
+24715707708:Pull(N,E)@Pull(N,E)|Pull(S,E)|Move(W)
+24715737167:Pull(E,N)@Pull(E,N)|Pull(E,E)|Pull(E,S)
+24715793083:Push(W,N)@Push(W,N)|Push(N,E)|Pull(S,S)
+24715811792:Pull(S,E)@Pull(S,E)|Pull(S,E)|Move(W)
+24715833000:Push(N,E)@Push(N,E)|Pull(E,E)|Pull(E,S)
+24715859750:Push(E,N)@Push(E,N)|Push(N,E)|Pull(S,S)
+24715889083:Push(N,N)@Push(N,N)|Pull(S,E)|Move(W)
+24715922667:Pull(E,E)@Pull(E,E)|Pull(E,E)|Pull(E,S)
+24715947417:Move(N)@Move(N)|Push(N,N)|Pull(S,S)
+24715971833:Pull(S,E)@Pull(S,E)|Pull(S,E)|Move(W)
+24715994083:Push(N,E)@Push(N,E)|Pull(E,E)|Pull(E,S)
+24716019667:Move(W)@Move(W)|Pull(N,E)|Pull(E,S)
+24716052083:Push(S,E)@Push(S,E)|Pull(N,N)|NoOp
+24716062667:NoOp@NoOp|Push(W,N)|NoOp
+24716102708:NoOp@NoOp|Pull(E,N)|NoOp
+24716114875:NoOp@NoOp|Pull(N,N)|NoOp
+24716144083:NoOp@NoOp|Push(W,W)|NoOp
+24716161583:NoOp@NoOp|Pull(E,N)|NoOp
+24716187083:NoOp@NoOp|Pull(N,N)|NoOp
+24716212375:NoOp@NoOp|Pull(N,N)|NoOp
+24716241917:NoOp@NoOp|Push(S,W)|NoOp
+24716265500:NoOp@NoOp|Push(W,W)|NoOp
+24716289083:NoOp@NoOp|Push(W,W)|NoOp
+24716307625:NoOp@NoOp|Push(S,W)|NoOp
+24716325250:NoOp@NoOp|Push(W,W)|NoOp
+24716341875:NoOp@NoOp|Pull(E,S)|NoOp
+24716357875:NoOp@NoOp|Pull(N,W)|NoOp
+#end
+#solved
+true
+#numactions
+41
+#time
+24716357875
+#end

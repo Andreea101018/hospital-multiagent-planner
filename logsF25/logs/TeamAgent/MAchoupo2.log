@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+TeamAgent
+#actions
+1100938500:Move(E)@Move(E)|Move(W)@Move(W)
+1100999208:Pull(W,N)@Pull(W,N)|Pull(E,S)@Pull(E,S)
+1101021458:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101046792:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101074458:Pull(S,W)@Pull(S,W)|Pull(N,E)@Pull(N,E)
+1101097208:Pull(W,S)@Pull(W,S)|Pull(E,N)@Pull(E,N)
+1101127042:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101149917:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101170542:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101194125:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101209625:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101225167:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101241625:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+1101258750:Pull(S,W)@Pull(S,W)|Pull(E,E)@Pull(E,E)
+1101278375:Push(N,W)@Push(N,W)|Pull(E,E)@Pull(E,E)
+1101304208:Push(W,W)@Push(W,W)|Pull(N,E)@Pull(N,E)
+1101324208:Move(E)@Move(E)|Move(W)@Move(W)
+1101346167:Move(E)@Move(E)|Move(S)@Move(S)
+1101365917:Move(E)@Move(E)|Move(W)@Move(W)
+1101385208:Move(E)@Move(E)|Move(W)@Move(W)
+1101413625:Move(N)@Move(N)|Move(W)@Move(W)
+1101431208:Move(N)@Move(N)|Move(W)@Move(W)
+1101447333:Move(N)@Move(N)|Move(S)@Move(S)
+1101465958:Move(N)@Move(N)|Move(S)@Move(S)
+1101484833:Move(N)@Move(N)|Move(S)@Move(S)
+1101501750:Move(W)@Move(W)|Move(S)@Move(S)
+1101524667:Move(W)@Move(W)|Move(S)@Move(S)
+1101542750:Move(W)@Move(W)|Move(S)@Move(S)
+1101561542:Move(W)@Move(W)|Move(E)@Move(E)
+1101578667:Move(W)@Move(W)|NoOp@NoOp
+1101596833:Move(N)@Move(N)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+1101596833
+#end

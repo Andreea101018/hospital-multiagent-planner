@@ -1,0 +1,156 @@
+#domain
+hospital
+#levelname
+warehouse
+#colors
+red: 0, A, F 
+blue: 1, B, G  
+green: 2, C, H
+cyan: 3, D, I
+lightblue: 4, E, J  
+#initial
++++++++++++++++++++++
++J   0        B     +
++ + + + + + + + + + +
++                  F+
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   A         1     +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    2         D    +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   G          3    +
++ + + + + + + + + + +
++  H     E          +
++ + + + + + + + + + +
++  4           C    +
++ + + + + + + + + + +
++  I                +
++++++++++++++++++++++
+#goal
++++++++++++++++++++++
++                 I +
++ + + + + + + + + + +
++   B           A   +
++ + + + + + + + + + +
++       G           +
++ + + + + + + + + + +
++               H   +
++ + + + + + + + + + +
++    D              +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++           F       +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    C            J +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++                E  +
++++++++++++++++++++++
+#end
+#clientname
+help
+#actions
+322223786:Move(S)@Move(S)|Move(W)|Move(S)|Move(N)|Move(E)
+322391444:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)|Move(E)
+322523084:Move(S)@Move(S)|Move(N)|Move(E)|Move(N)|Move(N)
+322658080:Move(S)@Move(S)|Move(N)|Move(E)|Push(N,W)|Move(N)
+322795992:Move(S)@Move(S)|Move(N)|Move(S)|Push(W,W)|Move(E)
+322933994:Move(S)@Move(S)|Move(N)|Move(S)|Push(W,W)|Move(E)
+323082115:Pull(N,E)@Pull(N,E)|Move(N)|Move(E)|Push(W,W)|Move(E)
+323224515:Push(S,E)@Push(S,E)|Pull(S,W)|Move(E)|Push(W,W)|Push(E,E)
+323357979:Push(E,E)@Push(E,E)|Push(N,W)|Move(E)|Push(W,W)|Push(E,E)
+323536618:Push(E,N)@Push(E,N)|Push(W,W)|Move(E)|Push(W,W)|Push(E,E)
+323676764:Push(N,N)@Push(N,N)|Push(W,W)|Move(S)|Push(W,W)|Push(E,E)
+323890700:Push(N,E)@Push(N,E)|Push(W,W)|Move(S)|Push(W,W)|Push(E,E)
+324031376:Push(E,E)@Push(E,E)|Push(W,W)|Move(S)|Push(W,W)|Push(E,E)
+324157335:Push(E,E)@Push(E,E)|Push(W,W)|Move(S)|Push(W,N)|Push(E,E)
+324269819:Push(E,E)@Push(E,E)|Push(W,W)|Move(E)|Push(N,N)|Push(E,E)
+324388594:Push(E,E)@Push(E,E)|Push(W,W)|Move(E)|Move(S)|Push(E,S)
+324499936:Push(E,E)@Push(E,E)|Push(W,S)|Move(E)|Move(S)|Push(S,S)
+324623570:Push(E,E)@Push(E,E)|Push(S,S)|Pull(W,W)|Move(S)|Push(S,S)
+324777082:Push(E,E)@Push(E,E)|Push(S,W)|Pull(W,W)|Move(S)|Push(S,S)
+324896528:Push(E,N)@Push(E,N)|Move(S)|Push(E,N)|Move(S)|Move(N)
+325036314:Push(N,N)@Push(N,N)|Move(S)|Push(N,N)|Move(S)|Move(N)
+325158566:Push(N,E)@Push(N,E)|Move(S)|Push(N,W)|Move(S)|Move(N)
+325282240:Move(S)@Move(S)|Move(S)|Push(W,W)|Move(S)|Move(N)
+325394072:Move(S)@Move(S)|Move(W)|Push(W,W)|Move(S)|Move(N)
+325542474:Move(E)@Move(E)|Move(W)|Push(W,W)|Move(W)|Move(W)
+325703460:Move(E)@Move(E)|Move(S)|Push(W,W)|Move(W)|Move(W)
+325826543:Move(E)@Move(E)|Move(S)|Push(W,W)|Move(S)|Move(N)
+325940710:Move(E)@Move(E)|Move(S)|Push(W,W)|Pull(N,N)|Move(N)
+326097477:Move(N)@Move(N)|Move(S)|Push(W,W)|Pull(E,N)|Move(W)
+326231331:Pull(S,S)@Pull(S,S)|Move(S)|Move(E)|Pull(E,E)|Move(W)
+326361078:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Pull(S,E)|Move(W)
+326488449:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Push(N,E)|Move(W)
+326606814:Pull(W,S)@Pull(W,S)|Move(S)|Move(N)|Push(E,E)|Move(W)
+326729497:Pull(W,W)@Pull(W,W)|Push(E,E)|Move(N)|Push(E,N)|Move(W)
+326857870:Pull(S,W)@Pull(S,W)|Push(E,E)|Move(W)|Push(N,N)|Move(W)
+326993989:Pull(S,S)@Pull(S,S)|Push(E,E)|Move(W)|Push(N,E)|Move(W)
+327131219:Pull(S,S)@Pull(S,S)|Push(E,N)|Move(W)|Push(E,E)|Move(W)
+327254163:Pull(S,S)@Pull(S,S)|Push(N,N)|Move(W)|Push(E,N)|Move(W)
+327384430:Pull(W,S)@Pull(W,S)|Push(N,N)|Move(S)|Push(N,N)|Move(W)
+327491353:Pull(W,W)@Pull(W,W)|Push(N,N)|Move(S)|Push(N,E)|Move(W)
+327594679:Pull(S,W)@Pull(S,W)|Push(N,N)|Move(S)|Push(E,E)|Move(N)
+327722141:Pull(S,S)@Pull(S,S)|Push(N,N)|Pull(N,N)|Push(E,N)|Move(N)
+327832801:Pull(W,S)@Pull(W,S)|Push(N,N)|Pull(N,N)|Push(N,N)|Move(N)
+327940926:Pull(W,W)@Pull(W,W)|Push(N,N)|Pull(N,N)|Push(N,N)|Move(N)
+328081422:Pull(W,W)@Pull(W,W)|Push(N,N)|Pull(E,N)|Push(N,N)|Move(N)
+328200208:Pull(W,W)@Pull(W,W)|Push(N,N)|Pull(E,E)|Push(N,N)|Move(N)
+328311178:NoOp@NoOp|Push(N,E)|Pull(N,E)|Push(N,N)|Move(N)
+328425345:NoOp@NoOp|NoOp|Pull(N,N)|Push(N,E)|Move(N)
+328526537:NoOp@NoOp|NoOp|Pull(E,N)|Push(E,E)|Move(N)
+328655482:NoOp@NoOp|NoOp|Pull(E,E)|Push(E,E)|Move(N)
+328912620:NoOp@NoOp|NoOp|Pull(E,E)|Push(E,E)|Move(N)
+329018270:NoOp@NoOp|NoOp|Pull(E,E)|Push(E,N)|Move(N)
+329116777:NoOp@NoOp|NoOp|Pull(E,E)|Push(N,N)|Move(W)
+329226736:NoOp@NoOp|NoOp|Pull(E,E)|Push(N,N)|Pull(E,E)
+329341774:NoOp@NoOp|NoOp|Pull(E,E)|Push(N,N)|Pull(S,E)
+329447625:NoOp@NoOp|NoOp|Pull(E,E)|Push(N,E)|Pull(S,S)
+329551652:NoOp@NoOp|NoOp|Pull(E,E)|Push(E,E)|Pull(S,S)
+329649668:NoOp@NoOp|NoOp|Pull(E,E)|Push(E,N)|Pull(S,S)
+329763044:NoOp@NoOp|NoOp|Pull(N,E)|Push(N,N)|Pull(E,S)
+329867372:NoOp@NoOp|NoOp|Pull(N,N)|Push(N,N)|Pull(E,E)
+329970577:NoOp@NoOp|NoOp|Pull(W,N)|Push(N,N)|Pull(S,E)
+330078422:NoOp@NoOp|NoOp|Push(E,N)|Push(N,E)|Pull(S,S)
+330226714:NoOp@NoOp|NoOp|Push(N,N)|NoOp|Pull(S,S)
+330408619:NoOp@NoOp|NoOp|Push(N,E)|NoOp|Push(N,E)
+330505513:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+330593600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)
+330686025:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+330775585:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+330867910:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+330955517:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)
+331061778:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+331146409:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)
+331228775:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+331321371:Move(N)@Move(N)|NoOp|NoOp|NoOp|Push(S,E)
+331422453:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+331568179:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)
+331657889:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+331734665:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)
+331814136:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+331893567:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+331961375:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+332027922:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+332090080:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+332158530:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)
+332222601:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+332290520:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)
+#end
+#solved
+true
+#numactions
+86
+#time
+332290520
+#end

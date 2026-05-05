@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+crayCray
+#actions
+170463395:Move(S)@Move(S)|Move(N)@Move(N)
+170648340:Move(W)@Move(W)|Move(W)@Move(W)
+170790781:Move(W)@Move(W)|Move(W)@Move(W)
+170884132:Move(W)@Move(W)|Move(W)@Move(W)
+170930864:Move(W)@Move(W)|Move(W)@Move(W)
+170970542:Move(W)@Move(W)|Move(W)@Move(W)
+171022316:Move(W)@Move(W)|Move(W)@Move(W)
+171112861:Move(W)@Move(W)|Move(W)@Move(W)
+171164237:Move(W)@Move(W)|Move(W)@Move(W)
+171211769:Move(W)@Move(W)|Move(W)@Move(W)
+171255141:Move(W)@Move(W)|Move(W)@Move(W)
+171294406:Move(W)@Move(W)|Move(W)@Move(W)
+171333795:Move(W)@Move(W)|Move(W)@Move(W)
+171386182:Move(W)@Move(W)|Move(W)@Move(W)
+171422591:Move(W)@Move(W)|Move(W)@Move(W)
+171458129:Move(W)@Move(W)|Move(W)@Move(W)
+171501620:Move(S)@Move(S)|Move(W)@Move(W)
+171538841:Move(S)@Move(S)|Move(W)@Move(W)
+171574908:Move(S)@Move(S)|Move(W)@Move(W)
+171609215:Move(W)@Move(W)|Move(N)@Move(N)
+171647288:Move(W)@Move(W)|Move(N)@Move(N)
+171680392:Move(W)@Move(W)|Move(N)@Move(N)
+171711612:Move(W)@Move(W)|Move(N)@Move(N)
+171742836:Move(W)@Move(W)|Move(E)@Move(E)
+171774577:Move(W)@Move(W)|Move(E)@Move(E)
+171806321:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+171863530:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+171900850:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+171935595:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+171971713:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+172020460:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+172071242:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+172110271:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+172145105:Move(E)@Move(E)|Move(N)@Move(N)
+172181951:Move(E)@Move(E)|Move(N)@Move(N)
+172219677:Move(E)@Move(E)|Move(N)@Move(N)
+172255127:Move(S)@Move(S)|Move(N)@Move(N)
+172290777:Move(S)@Move(S)|Move(E)@Move(E)
+172342112:Move(S)@Move(S)|Move(E)@Move(E)
+172375912:Move(S)@Move(S)|Move(E)@Move(E)
+172436958:Push(E,N)@Push(E,N)|Move(E)@Move(E)
+172489117:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+172527542:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+172562890:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+172597832:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+172645070:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+172678649:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+172706232:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+172733424:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+172762704:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+172790707:NoOp@NoOp|Move(E)@Move(E)
+172820209:NoOp@NoOp|Move(E)@Move(E)
+172848790:NoOp@NoOp|Move(E)@Move(E)
+172876231:NoOp@NoOp|Move(N)@Move(N)
+172904993:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+172940037:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+172966468:NoOp@NoOp|Push(E,S)@Push(E,S)
+172998673:NoOp@NoOp|Push(S,W)@Push(S,W)
+173028416:NoOp@NoOp|Push(W,W)@Push(W,W)
+173061238:NoOp@NoOp|Push(W,W)@Push(W,W)
+173090084:NoOp@NoOp|Push(W,W)@Push(W,W)
+173120691:NoOp@NoOp|Push(W,W)@Push(W,W)
+173148841:NoOp@NoOp|Push(W,W)@Push(W,W)
+173174645:NoOp@NoOp|Push(W,W)@Push(W,W)
+173197606:NoOp@NoOp|Push(W,W)@Push(W,W)
+173218352:NoOp@NoOp|Push(W,W)@Push(W,W)
+173242540:NoOp@NoOp|Push(W,W)@Push(W,W)
+173269818:NoOp@NoOp|Push(W,W)@Push(W,W)
+173296763:NoOp@NoOp|Push(W,W)@Push(W,W)
+173323150:NoOp@NoOp|Push(W,W)@Push(W,W)
+173366681:NoOp@NoOp|Push(W,W)@Push(W,W)
+173391284:NoOp@NoOp|Push(W,W)@Push(W,W)
+173415598:NoOp@NoOp|Push(W,W)@Push(W,W)
+173441001:NoOp@NoOp|Push(W,S)@Push(W,S)
+173466051:NoOp@NoOp|Push(S,S)@Push(S,S)
+173490652:NoOp@NoOp|Push(S,S)@Push(S,S)
+173515125:NoOp@NoOp|Push(S,W)@Push(S,W)
+173538862:NoOp@NoOp|Push(W,W)@Push(W,W)
+173562261:NoOp@NoOp|Push(W,W)@Push(W,W)
+173586817:NoOp@NoOp|Push(W,W)@Push(W,W)
+173611408:NoOp@NoOp|Push(W,W)@Push(W,W)
+173633439:NoOp@NoOp|Push(W,N)@Push(W,N)
+173658162:NoOp@NoOp|Push(N,N)@Push(N,N)
+173683491:NoOp@NoOp|Push(N,N)@Push(N,N)
+173705941:NoOp@NoOp|Push(N,N)@Push(N,N)
+173730101:NoOp@NoOp|Push(N,N)@Push(N,N)
+173755306:NoOp@NoOp|Push(N,N)@Push(N,N)
+173781299:NoOp@NoOp|Push(N,N)@Push(N,N)
+173807805:NoOp@NoOp|Push(N,N)@Push(N,N)
+173835393:NoOp@NoOp|Push(N,N)@Push(N,N)
+173860531:NoOp@NoOp|Push(N,N)@Push(N,N)
+173887249:NoOp@NoOp|Push(N,W)@Push(N,W)
+#end
+#solved
+true
+#numactions
+92
+#time
+173887249
+#end

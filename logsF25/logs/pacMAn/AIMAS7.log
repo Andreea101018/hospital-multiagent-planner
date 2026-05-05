@@ -1,0 +1,170 @@
+#domain
+hospital
+#levelname
+AIMAS7
+#colors
+orange: 0,A
+purple: 3,C
+green: 2,B
+blue: 1
+lightblue: F,4
+red: T,Z,5,V
+cyan: D
+grey: X,6,J
+#initial
++++++++++++++++++++++++++++++++++++
++                 0++++++3+++     +
++    A             ++++++ +++     +
++     A            ++++++ +++     +
++      A           ++++++ +++     +
++       A          ++++++C+++     +
++        A         +2   B         +
++ 1       A        ++++++F+++     +
++        A         ++++++ +++     +
++       A          ++++++ +++     +
++      A           ++++++ +++     +
++     A            ++++++4+++     +
++    A             ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++     T        D      X        6  +
++                                 +
++                                 +
++          D           D          +
++  +          D    D        ++    +
++  +         ++++++++       +     +
++  +    Z                   +     +
++  ++                D D    ++    +
++   +         D              +D   +
++    +               D          D +
++  5 +      D                     +
++    ++                           +
++         V      +++++++++     J  +
++                +         D      +
++                                 +
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++F    +
++                  ++++++ +++     +
++                  ++++++ +++C    +
++                  +              +
++            1     ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++    B+
++                  ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++     V               X           +
++                                 +
++                                 +
++  +                       J++    +
++  +         ++++++++       +     +
++ T+                        +     +
++  ++                       ++    +
++   +                        +    +
++    +                            +
++    +                            +
++    ++       Z                   +
++                +++++++++        +
++                +                +
++                                 +
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+pacMAn
+#actions
+3188259100:NoOp@NoOp|Move(E)|Move(E)|Move(S)|Move(N)|Move(E)|Move(S)
+3189554500:NoOp@NoOp|Move(E)|Move(E)|NoOp|NoOp|Move(S)|Move(S)
+3190148100:NoOp@NoOp|Move(N)|Move(E)|Move(S)|Move(N)|Move(S)|Move(S)
+3190617800:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|Move(N)|Move(E)|Move(S)
+3191209100:NoOp@NoOp|Move(N)|Push(E,E)|Move(S)|NoOp|Move(E)|Move(S)
+3191797300:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|NoOp|Move(E)|Move(S)
+3192483000:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|Push(N,N)|Move(E)|Move(S)
+3193117900:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|Push(N,E)|Move(N)|Move(S)
+3193875100:NoOp@NoOp|Move(E)|Push(E,S)|NoOp|Push(E,E)|Move(N)|Move(S)
+3194535600:NoOp@NoOp|Move(E)|Push(S,S)|Push(S,S)|Push(E,E)|Move(N)|Move(S)
+3194883300:NoOp@NoOp|Move(E)|Push(S,E)|Push(S,E)|Push(E,E)|Move(N)|Move(S)
+3195430600:NoOp@NoOp|Move(E)|Push(E,E)|Push(E,E)|Push(E,N)|Move(N)|Pull(E,N)
+3196140600:NoOp@NoOp|Move(S)|Push(E,E)|Push(E,E)|Push(N,N)|Push(N,E)|Push(W,N)
+3196695500:NoOp@NoOp|Move(S)|Push(E,S)|Push(E,E)|Push(N,N)|Push(E,E)|Push(N,N)
+3197334900:NoOp@NoOp|Move(E)|Push(S,E)|Push(E,N)|NoOp|Push(E,E)|Push(N,W)
+3197755800:NoOp@NoOp|Move(E)|Push(E,S)|NoOp|NoOp|Push(E,E)|Push(W,W)
+3198246900:NoOp@NoOp|Move(E)|Push(S,S)|NoOp|NoOp|Push(E,E)|Push(W,W)
+3198793800:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(E,S)|Push(W,N)
+3199271200:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(S,S)|Push(N,W)
+3199672400:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(S,S)|Push(W,N)
+3200065500:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(S,S)|Push(N,N)
+3200580900:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(S,E)|Push(N,N)
+3201031400:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(E,S)|Push(N,N)
+3201618900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(W)
+3202048400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(N)
+3202434800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(N)
+3202909600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(N)
+3203292300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(W)
+3203786200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(W)
+3204302200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(N)
+3204814000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(N)
+3205376900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(W)
+3205780200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(W,S)
+3206158200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+3206536600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+3206926600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+3207485700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+3208163200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+3209052500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+3209857400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+3210417200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+3210908200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+3211346400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,W)|NoOp
+3211787600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+3212263600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,S)|NoOp
+3212828000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,W)|NoOp
+3213386300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+3213884900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,S)|NoOp
+3214440500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+3214900200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+3215278600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+3215803800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3216241900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3216809300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3217294900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3217808600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3218321800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3218796800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3219250200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3219766000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3220272300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3220871700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3221531100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3222028200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3222569800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3223069200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3223814800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(S,W)|NoOp
+3225100700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,W)|NoOp
+3226031000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,N)|NoOp
+3227288900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3228162700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3228994000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3229479900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3229977900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3230407800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3230739500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3231110400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3231502900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3231970300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+3232389200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,W)|NoOp
+3232783300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+#end
+#solved
+true
+#numactions
+81
+#time
+3232783300
+#end

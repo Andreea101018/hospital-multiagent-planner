@@ -1,0 +1,282 @@
+#domain
+hospital
+#levelname
+DECrunchy
+#colors
+blue: 0,A,G,B,E,D,C
+orange: 1,H,N,I,L,K,J
+green: 2,R,P,Q,S
+#initial
++++++++++++++++
++0+    +1+    +
++ A+   + H+   +
++ GB+  + NI+  +
++ EDC+ + LKJ+ +
++ ++++ + ++++ +
++             +
++ ++++ + ++++++
++ 2+RPQ+ +++  +
++  ++S + +++  +
++   +  + ++++ +
++   ++ + ++++ +
++             +
++++++++++++++++
+#goal
++++++++++++++++
++ +  CB+ +  JI+
++  + AD+  + HK+
++   +EG+   +LN+
++    + +    + +
++ ++++ + ++++ +
++ 1         0 +
++ ++++ + ++++++
++  +   + +++RS+
++  ++  + +++PQ+
++   +  + ++++ +
++   ++ + ++++ +
++             +
++++++++++++++++
+#end
+#clientname
+MArtians
+#actions
+1681892385:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|
+1682056513:Pull(S,W)@Pull(S,W)|Pull(N,W)@Pull(N,W)|Move(N)@Move(N)|
+1682203879:Pull(S,S)@Pull(S,S)|Push(S,S)@Push(S,S)|Move(N)@Move(N)|
+1682337556:Pull(S,S)@Pull(S,S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)|
+1682420598:Pull(S,S)@Pull(S,S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)|
+1682493443:Pull(S,S)@Pull(S,S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)|
+1682562027:Push(N,E)@Push(N,E)|Push(S,E)@Push(S,E)|Move(E)@Move(E)|
+1682634034:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Move(E)@Move(E)|
+1682714632:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Move(S)@Move(S)|
+1682782029:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)|
+1682851591:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)|
+1682929953:Push(E,N)@Push(E,N)|Push(E,N)@Push(E,N)|Push(W,S)@Push(W,S)|
+1683000913:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|
+1683066843:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Pull(S,E)@Pull(S,E)|
+1683135917:Push(N,W)@Push(N,W)|Push(N,W)@Push(N,W)|Pull(E,N)@Pull(E,N)|
+1683205060:Push(W,N)@Push(W,N)|Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|
+1683273086:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|
+1683346419:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|
+1683427436:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|
+1683497976:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+1683564605:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+1683632421:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+1683698701:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|
+1683762606:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|
+1683825813:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|
+1683907597:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|
+1683987357:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|
+1684053636:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|
+1684118589:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|
+1684191504:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|
+1684251987:NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)|
+1684319174:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|
+1684384686:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|
+1684447194:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|
+1684538757:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|
+1684609716:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|
+1684663634:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1684745558:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1684803247:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1684858143:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1684919324:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1684994613:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1685060404:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1685116208:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1685186399:Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)|
+1685257428:Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)|
+1685311834:Pull(N,W)@Pull(N,W)|Pull(S,W)@Pull(S,W)|Move(N)@Move(N)|
+1685371898:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|
+1685429378:Pull(S,W)@Pull(S,W)|Move(E)@Move(E)|Move(N)@Move(N)|
+1685481200:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Pull(S,E)@Pull(S,E)|
+1685551880:Pull(W,W)@Pull(W,W)|Pull(S,W)@Pull(S,W)|Pull(S,S)@Pull(S,S)|
+1685609989:Push(W,N)@Push(W,N)|Push(E,N)@Push(E,N)|Pull(S,S)@Pull(S,S)|
+1685662859:Move(E)@Move(E)|Pull(W,W)@Pull(W,W)|Pull(E,S)@Pull(E,S)|
+1685714402:Pull(W,W)@Pull(W,W)|Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)|
+1685766713:Pull(S,W)@Pull(S,W)|Pull(S,W)@Pull(S,W)|Pull(N,E)@Pull(N,E)|
+1685819723:Pull(S,S)@Pull(S,S)|Pull(S,S)@Pull(S,S)|Push(S,E)@Push(S,E)|
+1685872244:Pull(E,S)@Pull(E,S)|Pull(W,S)@Pull(W,S)|Push(E,E)@Push(E,E)|
+1685938803:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|
+1686050131:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|
+1686099858:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|
+1686141204:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|
+1686213351:Pull(N,E)@Pull(N,E)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|
+1686261542:Pull(N,N)@Pull(N,N)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|
+1686353174:Pull(N,N)@Pull(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|
+1686416590:Pull(N,N)@Pull(N,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1686474279:Pull(N,N)@Pull(N,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1686527289:Pull(W,N)@Pull(W,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1686572058:Pull(W,W)@Pull(W,W)|Push(N,W)@Push(N,W)|NoOp@NoOp|
+1686622553:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1686661665:Push(E,S)@Push(E,S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1686698960:Pull(E,N)@Pull(E,N)|Move(S)@Move(S)|Move(S)@Move(S)|
+1686737443:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|
+1686776065:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|
+1686811824:Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|
+1686847164:Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|
+1686883831:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1686941450:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1686982378:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1687020302:Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)|
+1687057597:Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)|
+1687095242:Move(N)@Move(N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|
+1687132398:Move(N)@Move(N)|Push(E,S)@Push(E,S)|Move(N)@Move(N)|
+1687171020:Push(N,N)@Push(N,N)|Pull(W,W)@Pull(W,W)|Pull(W,S)@Pull(W,S)|
+1687209643:Push(E,S)@Push(E,S)|Pull(S,W)@Pull(S,W)|Push(E,S)@Push(E,S)|
+1687242817:Pull(W,W)@Pull(W,W)|Pull(S,S)@Pull(S,S)|Push(S,S)@Push(S,S)|
+1687292335:Pull(S,W)@Pull(S,W)|Pull(S,S)@Pull(S,S)|Push(S,S)@Push(S,S)|
+1687332215:Pull(S,S)@Pull(S,S)|Pull(E,S)@Pull(E,S)|Push(S,S)@Push(S,S)|
+1687369440:Pull(S,S)@Pull(S,S)|Pull(E,E)@Pull(E,E)|Push(S,E)@Push(S,E)|
+1687417212:Pull(S,S)@Pull(S,S)|Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|
+1687457231:Push(N,E)@Push(N,E)|Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|
+1687501930:Push(E,E)@Push(E,E)|Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|
+1687536502:Push(E,E)@Push(E,E)|Pull(N,E)@Pull(N,E)|Push(E,E)@Push(E,E)|
+1687571911:Push(E,E)@Push(E,E)|Pull(N,N)@Pull(N,N)|Push(E,E)@Push(E,E)|
+1687608578:Push(E,E)@Push(E,E)|Pull(N,N)@Pull(N,N)|Push(E,E)@Push(E,E)|
+1687643359:Push(E,N)@Push(E,N)|Pull(W,N)@Pull(W,N)|Push(E,N)@Push(E,N)|
+1687675277:Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|
+1687710547:Push(N,N)@Push(N,N)|NoOp@NoOp|Push(N,N)@Push(N,N)|
+1687746236:Push(N,N)@Push(N,N)|NoOp@NoOp|Push(N,W)@Push(N,W)|
+1687781017:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1687815799:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1687849672:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+1687883545:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1687927475:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1687964561:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1688005070:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1688042155:Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|
+1688079172:Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)|
+1688115978:Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)|
+1688149362:Move(N)@Move(N)|Push(E,N)@Push(E,N)|Move(N)@Move(N)|
+1688187915:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|
+1688220741:Pull(S,W)@Pull(S,W)|Pull(S,S)@Pull(S,S)|Pull(S,E)@Pull(S,E)|
+1688252728:Pull(S,S)@Pull(S,S)|Pull(W,S)@Pull(W,S)|Pull(S,S)@Pull(S,S)|
+1688286043:Pull(S,S)@Pull(S,S)|Pull(S,W)@Pull(S,W)|Pull(E,S)@Pull(E,S)|
+1688320614:Pull(S,S)@Pull(S,S)|Pull(S,S)@Pull(S,S)|Pull(E,E)@Pull(E,E)|
+1688355395:Pull(E,S)@Pull(E,S)|Pull(S,S)@Pull(S,S)|Pull(N,E)@Pull(N,E)|
+1688391085:Pull(E,E)@Pull(E,E)|Push(N,E)@Push(N,E)|Push(S,E)@Push(S,E)|
+1688426424:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|
+1688461275:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|
+1688496196:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|
+1688541803:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|
+1688576794:Push(W,N)@Push(W,N)|Push(E,N)@Push(E,N)|Push(E,N)@Push(E,N)|
+1688610597:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|
+1688645378:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|
+1688680718:Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|
+1688714102:Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|
+1688747976:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|
+1688783385:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|
+1688823893:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|
+1688858535:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|
+1688894294:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|
+1688939062:Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|
+1688975869:Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|
+1689012606:Pull(N,W)@Pull(N,W)|Pull(S,S)@Pull(S,S)|NoOp@NoOp|
+1689045501:Push(S,S)@Push(S,S)|Pull(S,S)@Pull(S,S)|NoOp@NoOp|
+1689080771:Push(S,S)@Push(S,S)|Pull(E,S)@Pull(E,S)|NoOp@NoOp|
+1689111082:Push(S,E)@Push(S,E)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|
+1689141464:Push(E,E)@Push(E,E)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|
+1689171076:Push(E,E)@Push(E,E)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|
+1689200620:Push(E,E)@Push(E,E)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|
+1689233515:Push(E,E)@Push(E,E)|Pull(N,E)@Pull(N,E)|NoOp@NoOp|
+1689265991:Push(E,S)@Push(E,S)|Pull(N,N)@Pull(N,N)|NoOp@NoOp|
+1689299795:Pull(N,N)@Pull(N,N)|Push(N,W)@Push(N,W)|NoOp@NoOp|
+1689372430:Pull(N,N)@Pull(N,N)|Move(S)@Move(S)|NoOp@NoOp|
+1689476215:Push(N,W)@Push(N,W)|Pull(N,N)@Pull(N,N)|NoOp@NoOp|
+1689520215:Move(S)@Move(S)|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1689560723:Pull(N,N)@Pull(N,N)|Move(S)@Move(S)|NoOp@NoOp|
+1689601581:Push(N,N)@Push(N,N)|Pull(N,N)@Pull(N,N)|NoOp@NoOp|
+1689693422:Move(S)@Move(S)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1689744477:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)|NoOp@NoOp|
+1689798255:Push(W,W)@Push(W,W)|Pull(W,N)@Pull(W,N)|NoOp@NoOp|
+1689852592:Move(E)@Move(E)|Push(S,E)@Push(S,E)|NoOp@NoOp|
+1689907417:Pull(W,N)@Pull(W,N)|Move(N)@Move(N)|NoOp@NoOp|
+1689971811:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|NoOp@NoOp|
+1690023634:Move(N)@Move(N)|Pull(S,W)@Pull(S,W)|NoOp@NoOp|
+1690105768:Push(N,W)@Push(N,W)|Push(E,N)@Push(E,N)|NoOp@NoOp|
+1690158079:Pull(S,W)@Pull(S,W)|Move(W)@Move(W)|NoOp@NoOp|
+1690197959:Push(E,N)@Push(E,N)|Pull(S,S)@Pull(S,S)|NoOp@NoOp|
+1690241750:Move(W)@Move(W)|Push(N,E)@Push(N,E)|NoOp@NoOp|
+1690272759:Pull(S,S)@Pull(S,S)|Pull(N,E)@Pull(N,E)|NoOp@NoOp|
+1690304188:Push(N,E)@Push(N,E)|Push(W,S)@Push(W,S)|NoOp@NoOp|
+1690335617:Pull(N,E)@Pull(N,E)|Pull(W,N)@Pull(W,N)|NoOp@NoOp|
+1690390163:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1690443033:Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|
+1690518462:Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp|
+1690580552:Pull(W,W)@Pull(W,W)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|
+1690622317:Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)|NoOp@NoOp|
+1690676165:Pull(E,N)@Pull(E,N)|Pull(E,N)@Pull(E,N)|NoOp@NoOp|
+1690720235:Push(S,W)@Push(S,W)|Push(S,W)@Push(S,W)|NoOp@NoOp|
+1690766051:Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|
+1690795594:Pull(S,E)@Pull(S,E)|Pull(S,E)@Pull(S,E)|NoOp@NoOp|
+1690849512:Pull(S,E)@Pull(S,E)|Pull(S,E)@Pull(S,E)|NoOp@NoOp|
+1690897772:Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)|NoOp@NoOp|
+1690960979:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)|NoOp@NoOp|
+1691003932:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)|NoOp@NoOp|
+1691034942:Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)|NoOp@NoOp|
+1691088859:Pull(W,N)@Pull(W,N)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1691143545:Pull(W,W)@Pull(W,W)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1691185241:Pull(W,W)@Pull(W,W)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1691226378:Move(W)@Move(W)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1691277711:Move(W)@Move(W)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1691327369:Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|
+1691377515:Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|
+1691428360:Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|
+1691477389:Move(N)@Move(N)|Pull(S,S)@Pull(S,S)|NoOp@NoOp|
+1691532005:Pull(S,S)@Pull(S,S)|Pull(E,S)@Pull(E,S)|NoOp@NoOp|
+1691588227:Pull(S,S)@Pull(S,S)|Push(W,S)@Push(W,S)|NoOp@NoOp|
+1691632717:Pull(S,S)@Pull(S,S)|Push(S,S)@Push(S,S)|NoOp@NoOp|
+1691675949:Pull(S,S)@Pull(S,S)|Push(S,E)@Push(S,E)|NoOp@NoOp|
+1691707936:Pull(E,S)@Pull(E,S)|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1691761994:Pull(E,E)@Pull(E,E)|Move(W)@Move(W)|NoOp@NoOp|
+1691804946:Push(E,E)@Push(E,E)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|
+1691883099:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1691942185:Push(E,E)@Push(E,E)|Move(W)@Move(W)|NoOp@NoOp|
+1691976547:Move(W)@Move(W)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|
+1692013633:Move(W)@Move(W)|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1692046529:Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|
+1692084243:Pull(E,E)@Pull(E,E)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|
+1692113367:Pull(E,E)@Pull(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1692143888:Pull(E,E)@Pull(E,E)|Push(E,N)@Push(E,N)|NoOp@NoOp|
+1692174409:Pull(S,E)@Pull(S,E)|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1692203463:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1692234473:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|NoOp@NoOp|
+1692264295:Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|
+1692293628:Pull(N,W)@Pull(N,W)|Move(S)@Move(S)|NoOp@NoOp|
+1692323241:Push(N,N)@Push(N,N)|Move(S)@Move(S)|NoOp@NoOp|
+1692351876:Push(N,W)@Push(N,W)|Move(W)@Move(W)|NoOp@NoOp|
+1692380931:Move(S)@Move(S)|Move(W)@Move(W)|NoOp@NoOp|
+1692410055:Move(S)@Move(S)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1692440575:Push(S,E)@Push(S,E)|Push(W,W)@Push(W,W)|NoOp@NoOp|
+1692470677:Pull(S,W)@Pull(S,W)|Push(W,N)@Push(W,N)|NoOp@NoOp|
+1692500779:Push(N,N)@Push(N,N)|Pull(S,S)@Pull(S,S)|NoOp@NoOp|
+1692530531:Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|NoOp@NoOp|
+1692559446:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1692586544:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1692616088:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1692645211:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|
+1692674335:NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|
+1692704367:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1692734818:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|
+1692764431:Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|
+1692793835:Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|
+1692823308:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|
+1692863327:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|
+1692901880:Move(S)@Move(S)|Move(W)@Move(W)|NoOp@NoOp|
+1692939105:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|
+1692968159:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|
+1692996306:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|
+1693024871:Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|
+1693054414:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|
+1693083538:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|
+1693112592:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|
+1693141716:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|
+#end
+#solved
+true
+#numactions
+232
+#time
+1693141716
+#end

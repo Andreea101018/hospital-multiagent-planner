@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+help
+#actions
+73433614:Move(E)@Move(E)|Move(W)
+73623300:Pull(W,N)@Pull(W,N)|Pull(E,S)
+73785074:Pull(W,W)@Pull(W,W)|Pull(E,E)
+73921981:Pull(W,W)@Pull(W,W)|Pull(E,E)
+74036315:Pull(S,W)@Pull(S,W)|Pull(N,E)
+74166229:Pull(W,S)@Pull(W,S)|Pull(E,N)
+74287126:Pull(W,W)@Pull(W,W)|Pull(E,E)
+74399236:Pull(W,W)@Pull(W,W)|Pull(E,E)
+74530913:Pull(W,W)@Pull(W,W)|Pull(E,E)
+74687397:Pull(W,W)@Pull(W,W)|Pull(E,E)
+74799778:Pull(W,W)@Pull(W,W)|Pull(E,E)
+74918871:Pull(W,W)@Pull(W,W)|Pull(E,E)
+75030982:Pull(W,W)@Pull(W,W)|Pull(E,E)
+75122754:Pull(S,W)@Pull(S,W)|Pull(E,E)
+75204056:Push(N,W)@Push(N,W)|Pull(N,E)
+75325063:Push(W,W)@Push(W,W)|Push(S,E)
+75442394:Move(E)@Move(E)|Move(W)
+75543744:Move(E)@Move(E)|Move(W)
+75606562:Move(E)@Move(E)|Move(W)
+75689437:Move(E)@Move(E)|Move(W)
+75751443:Move(N)@Move(N)|Move(S)
+75823929:Move(N)@Move(N)|Move(S)
+75883922:Move(N)@Move(N)|Move(S)
+75958652:Move(N)@Move(N)|Move(S)
+76039003:Move(N)@Move(N)|Move(S)
+76102302:Move(W)@Move(W)|Move(E)
+76182783:Move(W)@Move(W)|Move(S)
+76257573:Move(W)@Move(W)|NoOp
+76331091:Move(W)@Move(W)|NoOp
+76478077:Move(W)@Move(W)|NoOp
+76576011:Move(N)@Move(N)|NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+76576011
+#end

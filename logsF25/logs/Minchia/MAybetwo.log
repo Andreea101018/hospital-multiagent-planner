@@ -1,0 +1,62 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+18934000:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+18991125:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+19016666:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+19052958:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+19085708:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+19109041:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+19139583:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+19166416:Push(E,S)@Push(E,S)|NoOp@NoOp|Move(E)@Move(E)
+19189541:Push(S,E)@Push(S,E)|NoOp@NoOp|Move(N)@Move(N)
+19209458:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(N)@Move(N)
+19226791:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+19243708:NoOp@NoOp|Move(W)@Move(W)|Pull(S,S)@Pull(S,S)
+19258875:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+19272208:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+19286708:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+19299625:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+19312958:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+19326250:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+19340708:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+19356541:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+19373375:NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp
+19387125:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+22
+#time
+19387125
+#end

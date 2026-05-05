@@ -1,0 +1,49 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+donkeyK
+#actions
+187553800:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)
+187616600:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+187647600:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(E)@Move(E)
+187678500:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+187712400:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+187741600:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(E)@Move(E)
+187770600:Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+187802700:Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+187831600:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+9
+#time
+187831600
+#end

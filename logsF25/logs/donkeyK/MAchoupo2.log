@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+donkeyK
+#actions
+560816500:Move(E)@Move(E)|Move(W)@Move(W)
+560902300:Pull(W,N)@Pull(W,N)|Pull(S,S)@Pull(S,S)
+560937400:Pull(N,W)@Pull(N,W)|Push(N,E)@Push(N,E)
+560965500:Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+560992500:Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+561024700:Push(S,W)@Push(S,W)|Push(E,N)@Push(E,N)
+561052200:Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)
+561081300:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561107800:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561133900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561159800:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561185700:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561212400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561238900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561265000:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561292700:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+561318800:Move(E)@Move(E)|Move(W)@Move(W)
+561344900:Move(E)@Move(E)|Move(W)@Move(W)
+561370600:Move(E)@Move(E)|Move(W)@Move(W)
+561396100:Move(E)@Move(E)|Move(W)@Move(W)
+561421600:Move(N)@Move(N)|Move(S)@Move(S)
+561447100:Move(N)@Move(N)|Move(S)@Move(S)
+561489200:Move(N)@Move(N)|Move(S)@Move(S)
+561567900:Move(N)@Move(N)|Move(S)@Move(S)
+561640300:Move(N)@Move(N)|Move(S)@Move(S)
+561702900:Move(N)@Move(N)|Move(E)@Move(E)
+561732600:Move(W)@Move(W)|Move(S)@Move(S)
+561760400:Move(W)@Move(W)|NoOp@NoOp
+561808600:Move(W)@Move(W)|NoOp@NoOp
+561839400:Move(W)@Move(W)|NoOp@NoOp
+561884100:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+561884100
+#end

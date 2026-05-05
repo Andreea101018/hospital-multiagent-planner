@@ -1,0 +1,50 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+TourDeDTU
+#actions
+48621000:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+49146100:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+49255100:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)
+49476100:Push(E,S)@Push(E,S)|Move(W)@Move(W)|NoOp@NoOp
+49598500:Push(S,W)@Push(S,W)|Move(W)@Move(W)|NoOp@NoOp
+49738300:Push(W,S)@Push(W,S)|Move(S)@Move(S)|Move(E)@Move(E)
+49784300:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(E)@Move(E)
+49908800:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(N)@Move(N)
+50024700:Push(S,E)@Push(S,E)|NoOp@NoOp|Move(E)@Move(E)
+50138000:Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+#end
+#solved
+true
+#numactions
+10
+#time
+50138000
+#end

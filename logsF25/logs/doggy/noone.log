@@ -1,0 +1,54 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+doggy
+#actions
+425117100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+425284300:Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+425316100:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp
+425349000:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp
+425375400:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp
+425401700:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp
+425432600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+425470800:Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)
+425497400:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)
+425523100:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)
+425559500:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+425585900:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+425611200:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+425636400:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+#end
+#solved
+true
+#numactions
+14
+#time
+425636400
+#end

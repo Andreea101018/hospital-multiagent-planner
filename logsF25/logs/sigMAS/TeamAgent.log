@@ -1,0 +1,110 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+176000708:Move(E)|Move(N)|NoOp
+176088833:Push(S,E)|Push(W,N)|NoOp
+176140791:Push(E,E)|Push(N,W)|NoOp
+176169625:Move(S)|Push(W,N)|NoOp
+176196416:Move(E)|Push(N,W)|NoOp
+176220291:NoOp|Push(W,W)|Move(W)
+176239333:NoOp|Push(W,W)|Move(S)
+176257541:NoOp|Push(W,W)|Move(W)
+176278125:NoOp|Push(W,W)|Push(S,S)
+176296500:NoOp|Push(W,W)|Push(S,S)
+176316791:NoOp|Push(W,W)|Push(S,S)
+176335791:NoOp|Push(W,W)|Push(S,S)
+176356791:NoOp|Push(W,W)|Push(S,W)
+176374833:NoOp|Push(W,W)|Push(W,W)
+176392875:NoOp|NoOp|Push(W,N)
+176413041:NoOp|NoOp|Push(N,N)
+176431416:NoOp|NoOp|Push(N,N)
+176449083:NoOp|NoOp|Push(N,N)
+176466416:NoOp|NoOp|Push(N,W)
+176496041:NoOp|NoOp|Move(S)
+176513958:NoOp|NoOp|Move(S)
+176532500:NoOp|NoOp|Move(S)
+176549833:NoOp|NoOp|Move(S)
+176567125:NoOp|NoOp|Move(E)
+176584416:NoOp|NoOp|Move(E)
+176601666:NoOp|NoOp|Move(N)
+176618916:NoOp|NoOp|Move(N)
+176636125:NoOp|NoOp|Move(N)
+176653500:NoOp|NoOp|Move(N)
+176670666:NoOp|NoOp|Move(N)
+176687916:NoOp|NoOp|Move(N)
+176704958:NoOp|NoOp|Move(W)
+176722083:NoOp|NoOp|Move(W)
+176739583:NoOp|NoOp|Move(W)
+176758416:NoOp|NoOp|Move(W)
+176776166:NoOp|NoOp|Move(W)
+176793291:NoOp|NoOp|Move(W)
+176811000:NoOp|NoOp|Move(W)
+176829041:NoOp|NoOp|Move(W)
+176847166:NoOp|NoOp|Move(W)
+176864458:NoOp|NoOp|Move(W)
+176882250:NoOp|NoOp|Move(S)
+176920625:NoOp|NoOp|Move(S)
+176975375:NoOp|NoOp|Move(S)
+177036375:NoOp|NoOp|Move(S)
+177093500:NoOp|NoOp|Move(S)
+177139583:NoOp|NoOp|Move(S)
+177159625:NoOp|NoOp|Move(E)
+177177041:NoOp|NoOp|Move(E)
+177194166:NoOp|NoOp|Move(N)
+177211250:NoOp|NoOp|Move(N)
+177228291:NoOp|NoOp|Move(N)
+177245416:NoOp|NoOp|Move(N)
+177263083:NoOp|NoOp|Move(E)
+177280041:NoOp|NoOp|Move(E)
+177297125:NoOp|NoOp|Move(S)
+177314250:NoOp|NoOp|Move(S)
+177340291:NoOp|NoOp|Move(S)
+177385916:NoOp|NoOp|Move(S)
+177406458:NoOp|NoOp|Move(E)
+177428291:NoOp|NoOp|Move(E)
+177444500:NoOp|NoOp|Move(N)
+177466083:NoOp|NoOp|Move(N)
+177484541:NoOp|NoOp|NoOp
+177500625:NoOp|NoOp|NoOp
+177520041:Pull(S,S)|NoOp|NoOp
+177538958:Pull(S,S)|NoOp|NoOp
+177556916:Pull(S,S)|NoOp|NoOp
+177574916:Pull(S,S)|NoOp|NoOp
+177594208:Pull(W,S)|NoOp|NoOp
+#end
+#solved
+false
+#numactions
+70
+#time
+177594208
+#end

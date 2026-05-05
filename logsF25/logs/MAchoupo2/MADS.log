@@ -1,0 +1,71 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+823181667:Move(E)|NoOp|Move(S)
+823285167:NoOp|Move(E)|Move(S)
+823346542:Move(S)|NoOp|Move(W)
+823391292:Move(E)|Move(E)|NoOp
+823430500:Move(E)|NoOp|Move(S)
+823468875:Move(E)|NoOp|Move(W)
+823508792:NoOp|Move(S)|Move(W)
+823556167:Push(S,S)|Move(S)|NoOp
+823610458:NoOp|Move(S)|Move(W)
+823650583:Push(S,S)|NoOp|Move(W)
+823691333:Push(S,S)|NoOp|Pull(E,E)
+823743417:Push(S,W)|Push(S,E)|NoOp
+823785458:Push(W,W)|Push(E,S)|NoOp
+823822583:Push(W,W)|Push(S,S)|NoOp
+823861458:Push(W,W)|Push(S,S)|NoOp
+823906042:NoOp|Push(S,E)|Pull(E,E)
+823965292:NoOp|NoOp|Pull(E,E)
+824015333:NoOp|Push(E,S)|Pull(E,E)
+824060375:Move(E)|Push(S,S)|NoOp
+824102375:Move(E)|Push(S,W)|NoOp
+824155250:Move(W)|Push(W,W)|NoOp
+824197958:NoOp|Push(W,W)|Push(W,W)
+824238125:NoOp|Push(W,W)|Push(W,W)
+824279958:NoOp|Push(W,W)|Push(W,W)
+824318792:Move(W)|Move(E)|NoOp
+#end
+#solved
+true
+#numactions
+25
+#time
+824318792
+#end

@@ -1,0 +1,77 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+DatzCrazy
+#actions
+92596500:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+92801100:Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp
+92923800:Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)
+93043700:Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp
+93159600:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+93270700:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+93378400:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+93520600:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Move(E)@Move(E)
+93641200:Push(S,E)@Push(S,E)|Move(S)@Move(S)|Move(N)@Move(N)
+93762000:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(N)@Move(N)
+93905000:Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)
+94018200:Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)
+94135000:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+94295000:Move(N)@Move(N)|Move(E)@Move(E)|Move(E)@Move(E)
+94437200:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+94532200:Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)
+94652900:Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+94762000:Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)
+94854500:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)
+94965000:Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+95073700:NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)
+95148700:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+95220000:Move(S)@Move(S)|Move(N)@Move(N)|Push(E,S)@Push(E,S)
+95348300:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+95468800:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+95556500:Move(N)@Move(N)|Move(W)@Move(W)|Move(S)@Move(S)
+95653100:Move(N)@Move(N)|Move(W)@Move(W)|Move(S)@Move(S)
+95736400:NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)
+95823500:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+95903900:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+96135200:Move(N)@Move(N)|Move(W)@Move(W)|Move(E)@Move(E)
+96259500:Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+96377600:NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+96473100:Pull(S,E)@Pull(S,E)|Push(N,N)@Push(N,N)|Move(W)@Move(W)
+96558500:Push(N,W)@Push(N,W)|Push(N,E)@Push(N,E)|Move(N)@Move(N)
+96640200:Move(N)@Move(N)|Pull(S,W)@Pull(S,W)|Push(N,E)@Push(N,E)
+96720800:Move(N)@Move(N)|Move(W)@Move(W)|Pull(W,W)@Pull(W,W)
+#end
+#solved
+true
+#numactions
+37
+#time
+96720800
+#end

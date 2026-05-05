@@ -1,0 +1,163 @@
+#domain
+hospital
+#levelname
+PFarthing
+#colors
+blue: 0 
+red: 1, 5
+green: 2
+purple: 3, 4, A, B
+#initial
+                    +++
+      +++++         +4+
+     +A    +    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++ + +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++B  +++   ++ ++ + 
++5+          +++   + + 
+++++++++++++++    ++++++++++
++0  +             +2       +
++ + +             + ++++++ +
++  1+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       3+
+                  ++++++++++
+#goal
+                    +++
+      +++++         + +
+     +    B+    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++5+ +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++   +++   ++ ++ + 
++ +   4      +++   +A+ 
+++++++++++++++    ++++++++++
++1  +             +3       +
++ + +             + ++++++ +
++  0+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       2+
+                  ++++++++++
+#end
+#clientname
+TheGate
+#actions
+7455213126:Move(E)@Move(E)|Move(N)|Move(E)|Move(W)|Move(S)|Move(N)
+7455393093:Move(E)@Move(E)|NoOp|Move(E)|Move(W)|Move(S)|Move(E)
+7455507359:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|Move(N)
+7456040364:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|Move(E)
+7456279440:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|Move(N)
+7456499937:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(S)|Move(E)
+7456848370:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|Move(N)
+7457114802:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|Move(E)
+7457726168:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(S)|Move(N)
+7458143023:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(S)|NoOp
+7458419515:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|NoOp
+7458626093:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|NoOp
+7458924740:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|NoOp
+7459192855:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|NoOp
+7459757904:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7460032219:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7460163731:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7460347384:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7460549338:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7460709236:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7460840507:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7461031369:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7461142914:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7461362111:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7461484935:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,E)|NoOp
+7461877829:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7461980775:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7462160057:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7462278052:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7462440591:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7462535685:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7462763833:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7462862889:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7462989684:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+7463069335:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,E)|NoOp
+7463485051:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,E)|NoOp
+7463575014:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+7463708572:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+7463811347:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+7463909536:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+7463994398:NoOp@NoOp|Move(S)|NoOp|NoOp|Push(N,E)|NoOp
+7464058567:Move(S)@Move(S)|Move(W)|NoOp|NoOp|Push(E,E)|NoOp
+7464154134:Move(S)@Move(S)|Move(W)|NoOp|NoOp|Move(W)|NoOp
+7464252081:NoOp@NoOp|Move(N)|NoOp|NoOp|Move(N)|NoOp
+7464375909:NoOp@NoOp|Move(N)|NoOp|NoOp|Move(N)|NoOp
+7464705657:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+7464769907:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+7464824036:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7464877368:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7464929612:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7465076487:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7465188757:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7465281119:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7465332426:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7465411634:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7465467567:NoOp@NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+7465611528:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7465688922:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7465740743:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7465792110:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7465987398:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7466042878:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7466174603:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7466248044:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7466460398:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+7466542882:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+7466593998:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+7466649034:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+7466760799:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+7466832044:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+7466884964:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+7466935142:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+7466984473:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+7467035296:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+7467085544:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467134159:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+7467183501:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+7467232297:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467281256:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467329982:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7467378728:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467412748:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7467456787:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467518960:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467588078:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7467639818:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467689099:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467738460:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+7467786874:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467843170:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467903811:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7467956559:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7468105390:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+7468157321:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+94
+#time
+7468157321
+#end

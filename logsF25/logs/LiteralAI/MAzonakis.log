@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+LiteralAI
+#actions
+25718006900:Move(W)@Move(W)|Move(W)@Move(W)
+25718141300:Move(W)@Move(W)|Move(W)@Move(W)
+25718303499:Move(W)@Move(W)|Move(W)@Move(W)
+25718402000:Move(W)@Move(W)|Move(W)@Move(W)
+25718486699:Move(W)@Move(W)|Move(W)@Move(W)
+25718626000:Move(W)@Move(W)|Move(W)@Move(W)
+25718773600:Move(W)@Move(W)|Move(W)@Move(W)
+25718909000:Move(W)@Move(W)|Move(W)@Move(W)
+25719028800:Move(W)@Move(W)|Move(W)@Move(W)
+25719125700:Move(W)@Move(W)|Move(W)@Move(W)
+25719228599:Move(W)@Move(W)|Move(W)@Move(W)
+25719312399:Move(W)@Move(W)|Move(W)@Move(W)
+25719392200:Move(W)@Move(W)|Move(W)@Move(W)
+25719496199:Move(W)@Move(W)|Move(W)@Move(W)
+25719597800:Move(W)@Move(W)|Move(W)@Move(W)
+25719676400:Move(S)@Move(S)|Move(W)@Move(W)
+25719830800:Move(S)@Move(S)|Move(W)@Move(W)
+25719941800:Move(S)@Move(S)|Move(W)@Move(W)
+25720026200:Move(S)@Move(S)|Move(N)@Move(N)
+25720150100:Move(W)@Move(W)|Move(N)@Move(N)
+25720229199:Move(W)@Move(W)|Move(N)@Move(N)
+25720314699:Move(W)@Move(W)|Move(N)@Move(N)
+25720395000:Move(W)@Move(W)|Move(N)@Move(N)
+25720474299:Move(W)@Move(W)|Move(E)@Move(E)
+25720587600:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+25720671400:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+25720750900:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+25720879799:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+25720994599:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+25721072700:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+25721155399:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+25721301800:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+25721368499:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+25721420900:Push(W,N)@Push(W,N)|Move(N)@Move(N)
+25721479400:Move(E)@Move(E)|Move(N)@Move(N)
+25721555400:Move(E)@Move(E)|Move(N)@Move(N)
+25721636399:Move(E)@Move(E)|Move(N)@Move(N)
+25721713699:Move(E)@Move(E)|Move(E)@Move(E)
+25721818000:Move(S)@Move(S)|Move(E)@Move(E)
+25721931200:Move(S)@Move(S)|Move(E)@Move(E)
+25722001000:Move(S)@Move(S)|Move(E)@Move(E)
+25722117999:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+25722273700:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+25722361899:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+25722471900:Pull(W,N)@Pull(W,N)|Move(E)@Move(E)
+25722629799:Pull(W,W)@Pull(W,W)|Move(E)@Move(E)
+25722726200:Pull(W,W)@Pull(W,W)|Move(E)@Move(E)
+25722872500:Pull(N,W)@Pull(N,W)|Move(E)@Move(E)
+25722983000:Push(S,W)@Push(S,W)|Move(E)@Move(E)
+25723073299:NoOp@NoOp|Move(E)@Move(E)
+25723158199:NoOp@NoOp|Move(E)@Move(E)
+25723248300:NoOp@NoOp|Move(E)@Move(E)
+25723340599:NoOp@NoOp|Move(E)@Move(E)
+25723428400:NoOp@NoOp|Move(N)@Move(N)
+25723528300:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+25723625400:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+25723714400:NoOp@NoOp|Push(E,S)@Push(E,S)
+25723803700:NoOp@NoOp|Push(S,W)@Push(S,W)
+25723928500:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724021299:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724119500:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724200900:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724287400:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724354600:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724424200:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724496299:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724571999:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724639400:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724737900:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724815400:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724888300:NoOp@NoOp|Push(W,W)@Push(W,W)
+25724968699:NoOp@NoOp|Push(W,W)@Push(W,W)
+25725052300:NoOp@NoOp|Push(W,W)@Push(W,W)
+25725125800:NoOp@NoOp|Push(W,S)@Push(W,S)
+25725194100:NoOp@NoOp|Push(S,S)@Push(S,S)
+25725266699:NoOp@NoOp|Push(S,S)@Push(S,S)
+25725345200:NoOp@NoOp|Push(S,W)@Push(S,W)
+25725435199:NoOp@NoOp|Push(W,W)@Push(W,W)
+25725524900:NoOp@NoOp|Push(W,W)@Push(W,W)
+25725611599:NoOp@NoOp|Push(W,W)@Push(W,W)
+25725710899:NoOp@NoOp|Push(W,W)@Push(W,W)
+25725841399:NoOp@NoOp|Push(W,W)@Push(W,W)
+25725923300:NoOp@NoOp|Push(W,N)@Push(W,N)
+25726005700:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726071700:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726139499:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726219600:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726334400:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726412800:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726505799:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726581300:NoOp@NoOp|Push(N,N)@Push(N,N)
+25726630900:NoOp@NoOp|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+25726630900
+#end

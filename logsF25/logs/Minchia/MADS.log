@@ -1,0 +1,67 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+Minchia
+#actions
+22999625:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+23059125:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+23094292:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+23155667:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+23178459:Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+23195542:Push(E,N)@Push(E,N)|NoOp@NoOp|Move(W)@Move(W)
+23207375:Pull(S,S)@Pull(S,S)|NoOp@NoOp|Move(W)@Move(W)
+23218042:Pull(S,S)@Pull(S,S)|Move(S)@Move(S)|Move(W)@Move(W)
+23232542:Pull(S,S)@Pull(S,S)|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+23246334:Pull(W,S)@Pull(W,S)|Push(S,E)@Push(S,E)|Pull(E,E)@Pull(E,E)
+23261875:Pull(W,W)@Pull(W,W)|Push(E,S)@Push(E,S)|Pull(N,E)@Pull(N,E)
+23272542:Pull(W,W)@Pull(W,W)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+23282500:Pull(W,W)@Pull(W,W)|Push(S,E)@Push(S,E)|Move(N)@Move(N)
+23298042:Pull(S,W)@Pull(S,W)|Push(E,S)@Push(E,S)|Move(E)@Move(E)
+23309542:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+23324292:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+23334334:NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+23347334:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+23359667:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)
+23371667:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+23383959:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+#end
+#solved
+true
+#numactions
+21
+#time
+23383959
+#end

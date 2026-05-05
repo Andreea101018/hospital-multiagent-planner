@@ -1,0 +1,139 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+DASH
+#actions
+3697401083:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+3697450875:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3697480708:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|Push(N,N)@Push(N,N)
+3697507791:Pull(W,W)@Pull(W,W)|NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp
+3697532041:Push(E,S)@Push(E,S)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+3697548333:Push(S,S)@Push(S,S)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+3697562041:Push(S,S)@Push(S,S)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+3697578000:Push(S,S)@Push(S,S)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+3697591791:Push(S,W)@Push(S,W)|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+3697605666:Push(W,S)@Push(W,S)|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+3697618083:Push(S,W)@Push(S,W)|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+3697644500:Push(W,S)@Push(W,S)|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+3697657625:Push(S,W)@Push(S,W)|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+3697670208:Push(W,S)@Push(W,S)|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+3697683291:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3697695958:Push(S,S)@Push(S,S)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+3697707625:Push(S,E)@Push(S,E)|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+3697719541:NoOp@NoOp|Push(N,E)@Push(N,E)|Push(N,W)@Push(N,W)|Pull(S,S)@Pull(S,S)
+3697733125:NoOp@NoOp|Push(E,N)@Push(E,N)|Pull(S,E)@Pull(S,E)|Pull(E,S)@Pull(E,S)
+3697745041:NoOp@NoOp|Push(N,N)@Push(N,N)|Pull(E,S)@Pull(E,S)|Pull(N,E)@Pull(N,E)
+3697757125:Push(E,S)@Push(E,S)|NoOp@NoOp|Pull(E,E)@Pull(E,E)|Push(S,E)@Push(S,E)
+3697771333:Push(S,E)@Push(S,E)|NoOp@NoOp|Pull(N,E)@Pull(N,E)|Push(E,E)@Push(E,E)
+3697785208:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+3697807333:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)
+3697820708:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+3697833291:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)
+3697845291:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+3697858166:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)
+3697872833:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+3697890416:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+3697911541:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+3697924625:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)
+3697937333:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+3697949333:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)
+3697965625:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+3697979708:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)
+3697992541:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+3698004583:NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)|Push(E,E)@Push(E,E)
+3698019041:NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)|Push(E,E)@Push(E,E)
+3698031166:NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)|Push(E,E)@Push(E,E)
+3698043416:NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)|Push(E,E)@Push(E,E)
+3698057583:NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)|Push(E,E)@Push(E,E)
+3698070458:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+3698083083:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+3698096500:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+3698108500:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+3698123541:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+3698138625:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+3698150583:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+3698164166:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+3698175791:NoOp@NoOp|Push(N,N)@Push(N,N)|Push(S,W)@Push(S,W)|NoOp@NoOp
+3698188166:NoOp@NoOp|Push(N,E)@Push(N,E)|Push(W,S)@Push(W,S)|NoOp@NoOp
+3698200000:NoOp@NoOp|Push(E,N)@Push(E,N)|Push(S,W)@Push(S,W)|NoOp@NoOp
+3698212500:Push(E,S)@Push(E,S)|Push(N,E)@Push(N,E)|Push(W,S)@Push(W,S)|NoOp@NoOp
+3698225625:Push(S,E)@Push(S,E)|Push(E,N)@Push(E,N)|Push(S,W)@Push(S,W)|NoOp@NoOp
+3698238833:Push(E,S)@Push(E,S)|Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|NoOp@NoOp
+3698260041:Push(S,S)@Push(S,S)|Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+3698273708:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+3698285875:Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|NoOp@NoOp
+3698297833:Push(S,S)@Push(S,S)|Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+3698309708:Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|NoOp@NoOp
+3698322083:Push(S,S)@Push(S,S)|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp
+3698334375:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp
+3698346250:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp
+3698358458:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+3698372416:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+3698386375:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+3698398375:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+3698416500:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+3698429041:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+70
+#time
+3698429041
+#end

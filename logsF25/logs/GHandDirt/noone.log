@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+164265625:Move(E)@Move(E)|Move(S)|Move(N)
+164804583:Push(S,S)@Push(S,S)|Move(S)|Move(N)
+165238375:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+165600417:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+165847167:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+166080500:Move(W)@Move(W)|Move(W)|Move(E)
+166633792:Move(S)@Move(S)|Move(W)|Move(E)
+166914000:Move(S)@Move(S)|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+8
+#time
+166914000
+#end

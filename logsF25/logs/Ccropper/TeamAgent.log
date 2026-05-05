@@ -1,0 +1,87 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+Ccropper
+#actions
+708716900:Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)
+708864900:Move(E)@Move(E)|Push(W,N)@Push(W,N)|NoOp@NoOp
+708920300:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+708990800:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+709095400:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+709157700:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+709239800:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+709307300:NoOp@NoOp|Move(W)@Move(W)|Pull(S,S)@Pull(S,S)
+709371500:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+709444000:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)
+709499000:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+709599400:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)
+709647500:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+709687600:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+709724000:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+709766600:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)
+709837900:Move(E)@Move(E)|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+709893000:Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+709940800:Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+709975400:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+710003500:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+710060400:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+710135500:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+710172900:Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp
+710224400:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+710326700:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+710412400:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+710482900:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+710535900:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+710642500:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+710735000:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+710824300:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+710889700:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+711003200:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+711083000:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+711155300:Move(N)@Move(N)|Push(W,W)@Push(W,W)|NoOp@NoOp
+711208400:Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+711244400:Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+711273200:Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+711303200:Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+711332100:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+711377100:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+711431100:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+711503400:Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp
+711554300:Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp
+711589800:Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp
+711626500:Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+47
+#time
+711626500
+#end

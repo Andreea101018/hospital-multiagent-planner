@@ -1,0 +1,96 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+172180917:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)
+172392875:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+172569167:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+172767208:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+172942583:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+173118417:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+173291500:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+173504750:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+173659458:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+173810292:NoOp@NoOp|Push(E,N)|NoOp|Push(S,E)
+173963083:NoOp@NoOp|Push(N,E)|Push(N,W)|Push(E,S)
+174121833:Push(W,S)@Push(W,S)|Push(E,N)|Push(W,N)|Push(S,E)
+174284792:Push(S,W)@Push(S,W)|Push(N,N)|Push(N,W)|Push(E,E)
+174696500:Push(W,S)@Push(W,S)|Push(N,W)|Push(W,W)|Push(E,N)
+174880792:Push(S,S)@Push(S,S)|Push(W,N)|Push(W,S)|Push(N,E)
+175044792:Push(S,E)@Push(S,E)|Push(N,W)|Push(S,W)|Push(E,N)
+175196958:Push(E,S)@Push(E,S)|Push(W,N)|Push(W,S)|Push(N,E)
+175342500:Push(S,E)@Push(S,E)|Push(N,W)|Push(S,W)|Push(E,N)
+175480125:Push(E,S)@Push(E,S)|Push(W,N)|Push(W,S)|Push(N,E)
+175600792:Push(S,E)@Push(S,E)|Push(N,N)|Push(S,W)|Push(E,E)
+175711333:Push(E,S)@Push(E,S)|Push(N,N)|Push(W,W)|Push(E,E)
+175822875:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+175922750:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+176055875:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+176179000:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+176365042:Push(S,S)@Push(S,S)|NoOp|Push(W,W)|NoOp
+176503667:Push(S,S)@Push(S,S)|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+27
+#time
+176503667
+#end

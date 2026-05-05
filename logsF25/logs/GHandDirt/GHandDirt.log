@@ -1,0 +1,118 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+541495041:Move(S)@Move(S)|Move(E)|Move(S)
+541757208:Move(S)@Move(S)|Move(N)|Push(S,S)
+542195750:Move(S)@Move(S)|Move(E)|Push(S,S)
+542381291:Move(S)@Move(S)|Move(N)|Push(S,S)
+542580375:Move(S)@Move(S)|Move(E)|Push(S,W)
+542729000:Push(E,N)@Push(E,N)|Pull(S,S)|Push(W,S)
+542897333:Push(N,N)@Push(N,N)|Push(N,E)|Push(S,W)
+543033500:Push(N,N)@Push(N,N)|Push(E,E)|Push(W,W)
+543166125:Push(N,N)@Push(N,N)|Push(E,E)|Push(W,S)
+543293333:Push(N,N)@Push(N,N)|Push(E,E)|Push(S,W)
+543424041:Push(N,E)@Push(N,E)|Push(E,E)|Push(W,W)
+543604750:Push(E,E)@Push(E,E)|Push(E,E)|Move(N)
+543825000:Push(E,E)@Push(E,E)|Push(E,N)|Move(N)
+544091416:Push(E,E)@Push(E,E)|Push(N,N)|Move(N)
+544371041:Push(E,E)@Push(E,E)|Move(S)|Move(N)
+544511250:Push(E,E)@Push(E,E)|Move(W)|Move(N)
+544681750:Move(W)@Move(W)|Move(W)|Move(E)
+544927291:Move(S)@Move(S)|Move(W)|Move(E)
+545203458:Move(S)@Move(S)|Move(W)|Pull(W,W)
+545378500:Move(S)@Move(S)|Pull(S,S)|Pull(S,W)
+545557583:Move(W)@Move(W)|Push(N,E)|Pull(W,S)
+545708875:Move(S)@Move(S)|Push(E,E)|Pull(S,W)
+545844750:Move(W)@Move(W)|Push(E,E)|Pull(S,S)
+545968416:Push(W,N)@Push(W,N)|Push(E,E)|Pull(S,S)
+546107750:Push(N,N)@Push(N,N)|Push(E,N)|Pull(S,S)
+546358333:Push(N,N)@Push(N,N)|Move(E)|Pull(E,S)
+546466000:Push(N,E)@Push(N,E)|Move(N)|NoOp
+546639125:Push(E,E)@Push(E,E)|Move(N)|NoOp
+546761375:Push(E,E)@Push(E,E)|Push(W,W)|NoOp
+546991208:Push(E,E)@Push(E,E)|Pull(N,N)|NoOp
+547110500:Push(E,E)@Push(E,E)|Move(W)|NoOp
+547212625:Move(N)@Move(N)|Pull(E,N)|NoOp
+547368416:Push(E,E)@Push(E,E)|Push(S,W)|NoOp
+547488833:NoOp@NoOp|Push(W,W)|NoOp
+547593041:NoOp@NoOp|Pull(E,S)|NoOp
+547720583:NoOp@NoOp|Move(S)|NoOp
+547823000:NoOp@NoOp|Move(S)|NoOp
+547936250:NoOp@NoOp|Move(W)|NoOp
+548071666:NoOp@NoOp|Move(W)|NoOp
+548203833:NoOp@NoOp|Move(W)|NoOp
+548341208:NoOp@NoOp|Move(W)|NoOp
+548472541:NoOp@NoOp|Move(N)|NoOp
+548597250:NoOp@NoOp|Push(W,S)|NoOp
+548735166:NoOp@NoOp|Push(S,E)|NoOp
+548862375:NoOp@NoOp|Push(E,E)|NoOp
+549010833:NoOp@NoOp|Push(E,E)|NoOp
+549136916:NoOp@NoOp|Push(E,E)|NoOp
+549274708:NoOp@NoOp|Push(E,E)|NoOp
+549378958:NoOp@NoOp|Push(E,N)|NoOp
+549475875:NoOp@NoOp|Push(N,N)|NoOp
+549791041:NoOp@NoOp|Push(N,N)|NoOp
+549906541:NoOp@NoOp|Push(N,W)|NoOp
+550024125:NoOp@NoOp|Push(W,W)|NoOp
+550161375:NoOp@NoOp|Push(S,E)|NoOp
+550280791:NoOp@NoOp|Push(W,W)|NoOp
+550410000:NoOp@NoOp|Pull(E,S)|NoOp
+550516416:NoOp@NoOp|Pull(N,W)|NoOp
+#end
+#solved
+true
+#numactions
+57
+#time
+550516416
+#end

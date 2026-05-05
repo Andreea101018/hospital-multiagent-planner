@@ -1,0 +1,126 @@
+#domain
+hospital
+#levelname
+EpicfAIl
+#colors
+blue: 0, A
+red: 2, C, X
+purple: I
+green: 3, B
+orange: J
+pink: E
+grey: 1, D, Y
+#initial
+++++++++++++++++++++
++1 +   +  +   +    +
++2   + +  X   Y    +
++3 + +    +   +    +
++++++++++++++++++A++
++0             +B  +
++              +C  +
++              +D  +
++     I        ++ ++
++    III EEE       +
++    III EJE       +
++    IIB EEE       +
++     B   B        +
++     B   B        +
+++++++++++++++++++++
+#goal
+++++++++++++++++++++
++  +   +  +   +    +
++    + +           +
++  + +    +   +    +
++++++++++++++++++ ++
++              +3 D+
++              +2 C+
++              +1 B+
++     I        ++ ++
++    III EEE       +
++    III EJE       +
++    IIB EEE       +
++     B   B       0+
++     B   B       A+
+++++++++++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+396008458:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+396294125:Move(E)@Move(E)|NoOp|Move(E)|NoOp
+396693958:Move(E)@Move(E)|Move(S)|Move(E)|NoOp
+396914958:Move(E)@Move(E)|Move(E)|Move(S)|NoOp
+397172042:Move(E)@Move(E)|Move(E)|NoOp|Move(N)
+397376208:Move(E)@Move(E)|Move(N)|NoOp|Move(E)
+397584667:Move(E)@Move(E)|Move(E)|NoOp|Move(E)
+397759583:Move(E)@Move(E)|Move(E)|NoOp|NoOp
+397923750:Move(E)@Move(E)|Move(S)|NoOp|NoOp
+398075958:Move(E)@Move(E)|Move(S)|NoOp|NoOp
+398224833:Move(E)@Move(E)|Move(E)|NoOp|NoOp
+398378250:Move(E)@Move(E)|Move(E)|NoOp|NoOp
+398542750:Move(E)@Move(E)|Move(E)|NoOp|Move(N)
+398801417:Move(S)@Move(S)|NoOp|NoOp|Move(E)
+398955667:Move(S)@Move(S)|NoOp|NoOp|Move(E)
+399931417:Move(S)@Move(S)|NoOp|NoOp|Move(S)
+400081583:Move(S)@Move(S)|NoOp|NoOp|Move(S)
+400269000:Move(E)@Move(E)|NoOp|NoOp|Move(E)
+400424458:Move(E)@Move(E)|Move(N)|NoOp|Move(E)
+400569792:Move(E)@Move(E)|NoOp|Move(N)|Move(E)
+400741792:Move(N)@Move(N)|NoOp|Move(N)|NoOp
+400916750:Move(N)@Move(N)|NoOp|Move(E)|NoOp
+401075833:Move(N)@Move(N)|NoOp|Move(E)|NoOp
+401233000:Move(N)@Move(N)|NoOp|Move(S)|NoOp
+401381125:Pull(S,S)@Pull(S,S)|NoOp|Move(S)|NoOp
+401602458:Pull(S,S)@Pull(S,S)|NoOp|Move(E)|NoOp
+401743875:Pull(S,S)@Pull(S,S)|NoOp|Move(E)|NoOp
+401873917:Pull(S,S)@Pull(S,S)|Move(N)|Move(N)|NoOp
+402021750:Pull(S,S)@Pull(S,S)|NoOp|Move(E)|NoOp
+402178833:Pull(S,S)@Pull(S,S)|NoOp|Push(E,E)|NoOp
+402357958:Pull(S,S)@Pull(S,S)|Move(S)|Push(E,N)|NoOp
+402515208:Pull(E,S)@Pull(E,S)|Move(E)|Move(E)|NoOp
+402659458:Push(W,S)@Push(W,S)|Move(E)|Move(E)|NoOp
+402800375:Push(S,E)@Push(S,E)|Move(E)|NoOp|Move(N)
+402938792:Move(N)@Move(N)|NoOp|NoOp|Move(E)
+403112958:Move(E)@Move(E)|NoOp|Move(S)|Move(E)
+403245667:NoOp@NoOp|Move(E)|NoOp|NoOp
+403368792:NoOp@NoOp|Push(E,E)|NoOp|Move(E)
+403509958:NoOp@NoOp|Push(E,N)|NoOp|Move(E)
+403631417:NoOp@NoOp|Move(S)|NoOp|Move(E)
+403795167:NoOp@NoOp|Move(E)|NoOp|Move(E)
+403918083:NoOp@NoOp|NoOp|Move(N)|Move(S)
+404045583:NoOp@NoOp|NoOp|Move(E)|NoOp
+404928542:NoOp@NoOp|NoOp|Move(E)|NoOp
+405754750:NoOp@NoOp|Move(E)|Move(E)|NoOp
+405902250:NoOp@NoOp|Move(S)|NoOp|Move(E)
+406042083:NoOp@NoOp|Move(S)|NoOp|NoOp
+406171458:NoOp@NoOp|Move(S)|NoOp|NoOp
+406288500:NoOp@NoOp|Move(S)|NoOp|Move(E)
+406404167:NoOp@NoOp|NoOp|Move(S)|Move(S)
+406543708:NoOp@NoOp|NoOp|Move(E)|Move(S)
+406673083:NoOp@NoOp|NoOp|Move(S)|Pull(S,E)
+406808750:NoOp@NoOp|Pull(S,E)|NoOp|Push(N,E)
+406939125:NoOp@NoOp|Push(N,N)|NoOp|Move(W)
+407064833:NoOp@NoOp|Pull(W,S)|Move(S)|NoOp
+407191542:NoOp@NoOp|NoOp|Move(S)|NoOp
+407306958:NoOp@NoOp|NoOp|Pull(N,E)|NoOp
+407430750:NoOp@NoOp|NoOp|Push(S,E)|NoOp
+407608125:NoOp@NoOp|NoOp|Pull(W,W)|Move(E)
+407721250:NoOp@NoOp|NoOp|NoOp|Push(E,S)
+407847958:NoOp@NoOp|NoOp|NoOp|Push(S,S)
+408134625:NoOp@NoOp|NoOp|NoOp|Move(N)
+408263458:NoOp@NoOp|NoOp|Push(E,E)|Move(W)
+408395667:NoOp@NoOp|NoOp|Move(W)|Move(W)
+408502167:NoOp@NoOp|Push(E,N)|NoOp|NoOp
+408604458:NoOp@NoOp|Push(N,N)|NoOp|NoOp
+408713917:NoOp@NoOp|Push(N,E)|NoOp|NoOp
+408819542:NoOp@NoOp|Move(S)|NoOp|NoOp
+408937875:NoOp@NoOp|Move(S)|NoOp|NoOp
+409068625:NoOp@NoOp|Move(W)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+70
+#time
+409068625
+#end

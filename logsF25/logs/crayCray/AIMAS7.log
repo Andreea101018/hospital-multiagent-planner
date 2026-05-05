@@ -1,0 +1,152 @@
+#domain
+hospital
+#levelname
+AIMAS7
+#colors
+orange: 0,A
+purple: 3,C
+green: 2,B
+blue: 1
+lightblue: F,4
+red: T,Z,5,V
+cyan: D
+grey: X,6,J
+#initial
++++++++++++++++++++++++++++++++++++
++                 0++++++3+++     +
++    A             ++++++ +++     +
++     A            ++++++ +++     +
++      A           ++++++ +++     +
++       A          ++++++C+++     +
++        A         +2   B         +
++ 1       A        ++++++F+++     +
++        A         ++++++ +++     +
++       A          ++++++ +++     +
++      A           ++++++ +++     +
++     A            ++++++4+++     +
++    A             ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++     T        D      X        6  +
++                                 +
++                                 +
++          D           D          +
++  +          D    D        ++    +
++  +         ++++++++       +     +
++  +    Z                   +     +
++  ++                D D    ++    +
++   +         D              +D   +
++    +               D          D +
++  5 +      D                     +
++    ++                           +
++         V      +++++++++     J  +
++                +         D      +
++                                 +
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++F    +
++                  ++++++ +++     +
++                  ++++++ +++C    +
++                  +              +
++            1     ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++    B+
++                  ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++     V               X           +
++                                 +
++                                 +
++  +                       J++    +
++  +         ++++++++       +     +
++ T+                        +     +
++  ++                       ++    +
++   +                        +    +
++    +                            +
++    +                            +
++    ++       Z                   +
++                +++++++++        +
++                +                +
++                                 +
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+crayCray
+#actions
+5826907217:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)
+5827076773:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)
+5827210013:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)|Move(W)@Move(W)
+5827313527:NoOp@NoOp|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)
+5827410199:NoOp@NoOp|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)
+5827469068:NoOp@NoOp|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)
+5827522691:NoOp@NoOp|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(W)@Move(W)
+5827576996:NoOp@NoOp|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|Push(N,E)@Push(N,E)|Move(N)@Move(N)|Move(W)@Move(W)
+5827598959:NoOp@NoOp|Move(E)@Move(E)|Push(E,E)@Push(E,E)|NoOp@NoOp|Push(E,E)@Push(E,E)|Move(N)@Move(N)|Push(W,S)@Push(W,S)
+5827626080:NoOp@NoOp|Move(E)@Move(E)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|Move(N)@Move(N)|Move(E)@Move(E)
+5827653035:NoOp@NoOp|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Move(N)@Move(N)|Move(S)@Move(S)
+5827677640:NoOp@NoOp|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Move(E)@Move(E)|Move(S)@Move(S)
+5827705731:NoOp@NoOp|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(E)@Move(E)
+5827730031:NoOp@NoOp|Move(E)@Move(E)|Push(S,E)@Push(S,E)|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(S)@Move(S)
+5827753959:NoOp@NoOp|Move(S)@Move(S)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp|Push(E,S)@Push(E,S)|Move(S)@Move(S)
+5827786618:NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(S,S)@Push(S,S)|Move(S)@Move(S)
+5827815662:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|Push(S,S)@Push(S,S)|Move(S)@Move(S)
+5827842082:NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Move(S)@Move(S)
+5827866207:NoOp@NoOp|Move(S)@Move(S)|Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+5827891140:NoOp@NoOp|Move(E)@Move(E)|Push(S,E)@Push(S,E)|Pull(S,S)@Pull(S,S)|Pull(N,N)@Pull(N,N)|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+5827920387:NoOp@NoOp|Move(S)@Move(S)|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+5827945276:NoOp@NoOp|Move(E)@Move(E)|Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Move(S)@Move(S)
+5827969067:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+5827993186:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)|Pull(N,N)@Pull(N,N)|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+5828021874:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Push(S,S)@Push(S,S)|Move(N)@Move(N)|Move(S)@Move(S)
+5828047256:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+5828073169:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+5828096773:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+5828123203:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+5828146184:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Push(E,N)@Push(E,N)
+5828172479:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Push(N,N)@Push(N,N)
+5828195794:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Push(N,N)@Push(N,N)
+5828232384:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Push(N,W)@Push(N,W)
+5828257393:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Push(W,W)@Push(W,W)
+5828299966:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|Push(W,W)@Push(W,W)
+5828322586:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(W,N)@Push(W,N)
+5828346389:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)
+5828370279:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(W,N)@Push(W,N)
+5828392382:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)
+5828414419:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|Push(N,N)@Push(N,N)
+5828436303:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)
+5828458214:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+5828480046:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+5828501734:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+5828524221:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+5828548113:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+5828570011:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+5828592204:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+5828614192:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+5828636527:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828658922:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828684423:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828706929:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828729281:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828751539:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828779416:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828805114:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828828799:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828851593:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+5828873964:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+5828895876:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+5828917558:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+5828940851:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+63
+#time
+5828940851
+#end

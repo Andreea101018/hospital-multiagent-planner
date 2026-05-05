@@ -1,0 +1,111 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+pacMAn
+#actions
+1992919900:Move(S)@Move(S)|Move(E)|Move(E)|NoOp
+1993309100:Move(S)@Move(S)|Move(N)|Move(E)|Move(E)
+1993609100:Move(S)@Move(S)|Move(N)|Move(N)|Move(N)
+1993904400:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+1994170900:Move(S)@Move(S)|Move(N)|Move(E)|Move(N)
+1994410700:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+1994683800:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1994941100:Move(S)@Move(S)|Move(E)|Move(E)|Move(E)
+1995184500:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1995404400:Move(S)@Move(S)|Move(E)|Move(E)|Move(E)
+1995622700:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1995835300:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1996059900:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1996262900:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1996458000:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1996739100:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1996999100:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1997268400:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1997517800:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1997797500:Move(E)@Move(E)|Move(E)|Move(S)|Move(E)
+1998055200:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+1998309700:Move(E)@Move(E)|Push(S,E)|Move(S)|Move(E)
+1998577900:Move(E)@Move(E)|Push(E,S)|Move(S)|Move(E)
+1998825700:Move(E)@Move(E)|Push(S,S)|Pull(N,E)|Move(E)
+1999158200:Move(E)@Move(E)|Push(S,S)|Pull(N,N)|Move(N)
+1999443900:Move(E)@Move(E)|Push(S,W)|Pull(N,N)|Move(N)
+1999694600:Pull(E,S)@Pull(E,S)|Push(W,W)|Pull(W,N)|Move(N)
+1999942100:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Pull(N,E)
+2000269800:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2000558200:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2000779400:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2001052700:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2001353100:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2001617200:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2001858600:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2002084800:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,S)
+2002325100:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(S,W)
+2002571800:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(W,W)
+2002811500:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(W,W)
+2003105000:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(W,W)
+2003308700:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(W,W)
+2003547100:Push(W,W)@Push(W,W)|Push(W,W)|Pull(W,W)|Push(W,W)
+2003782200:Push(W,W)@Push(W,W)|Push(W,N)|Pull(W,W)|Push(W,W)
+2004027700:Push(W,W)@Push(W,W)|NoOp|Pull(S,W)|Push(W,W)
+2004251600:Push(W,N)@Push(W,N)|NoOp|Pull(W,S)|Push(W,W)
+2004486800:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(W,W)
+2004724100:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(W,W)
+2004967700:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(W,W)
+2005173200:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(W,W)
+2005407900:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(W,W)
+2005641400:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(W,W)
+2005875700:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(W,W)
+2006079600:Push(N,E)@Push(N,E)|NoOp|NoOp|Push(W,W)
+2006350800:NoOp@NoOp|NoOp|NoOp|Push(W,N)
+#end
+#solved
+true
+#numactions
+54
+#time
+2006350800
+#end

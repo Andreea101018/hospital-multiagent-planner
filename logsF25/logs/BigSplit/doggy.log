@@ -1,0 +1,533 @@
+#domain
+hospital
+#levelname
+doggy
+#colors
+cyan: 3,B,C
+pink: 0,1,D
+red: A,2,4,5
+green: 6,7,8
+#initial
+++++++++++++++++++++
++                B +
++  ++++  6  ++++   +
++  +  +     +8 +   +
++  +  +  3  +  +   +
++  + 0+     +1 +   +
++  + ++  4  ++ +   +
++  + +++++++++ +  7+
++  +     5     +   +
++  +  ++   ++  +   +
++  +  +     +  +   +
++  +    +++    +   +
++  +  +++++++  +   +
++   + +     + +    +
++     + +++ +    D +
++    A+ +2+ +      +
++C                 +
+++++++++++++++++++++
+#goal
+++++++++++++++++++++
++         7        +
++  ++++     ++++   +
++  +C +     +  +   +
++  +  +     +  +   +
++ A+  +     +  +   +
++  + ++ 8   ++ +   +
++  + +++++++++ +   +
++  +     3     +   +
++  +  ++   ++  +   +
++  + D+  2  +  +   +
++  +    +++    +   +
++  + 6+++++++  +   +
++   + + 1 0 + +    +
++     + +++ +      +
++     + +5+ +      +
++B              4  +
+++++++++++++++++++++
+#end
+#clientname
+BigSplit
+#actions
+41701193583:Move(N)@h: 55|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)
+41701566042:Move(N)@h: 54|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+41701698250:Move(W)@h: 53|Move(N)@Move(N)|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp
+41701832542:NoOp@h: 52|Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp
+41701994333:Move(E)@h: 52|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)
+41702108875:Move(W)@h: 52|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)|Move(E)@Move(E)
+41702221125:Move(S)@h: 52|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)
+41702340458:Move(S)@h: 53|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+41702453500:Move(E)@h: 52|NoOp@NoOp|Push(N,W)@Push(N,W)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41702594792:NoOp@h: 51|Move(N)@Move(N)|Push(W,W)@Push(W,W)|Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)
+41702711708:NoOp@h: 51|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)
+41702832458:Move(N)@h: 52|Move(N)@Move(N)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)
+41702963458:Move(W)@h: 51|Move(W)@Move(W)|Push(W,N)@Push(W,N)|Move(N)@Move(N)|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)
+41703106250:Move(N)@h: 51|Move(E)@Move(E)|Push(N,N)@Push(N,N)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41703222833:Move(E)@h: 51|Move(W)@Move(W)|Push(N,E)@Push(N,E)|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp
+41703387083:Move(S)@h: 51|NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)
+41703491417:Move(W)@h: 52|Move(E)@Move(E)|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)
+41703621000:Move(S)@h: 51|Move(W)@Move(W)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)
+41703731958:Move(E)@h: 52|Move(S)@Move(S)|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)
+41703834583:Move(N)@h: 51|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+41703927833:Move(N)@h: 52|Move(N)@Move(N)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Move(S)@Move(S)
+41704021875:Move(S)@h: 51|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+41704136250:Move(W)@h: 52|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+41704243708:Move(N)@h: 52|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|Move(N)@Move(N)
+41704339583:Move(E)@h: 52|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp
+41704462333:NoOp@h: 52|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+41704643208:NoOp@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+41704763792:Move(W)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+41704864583:Move(S)@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)
+41704979292:Move(S)@h: 52|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp
+41705088542:Move(S)@h: 51|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)
+41705207083:Move(S)@h: 52|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+41705301250:Move(S)@h: 52|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+41705396417:NoOp@h: 51|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp
+41705478083:Move(N)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)
+41705552708:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp
+41705643458:NoOp@h: 52|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)
+41705766167:Move(N)@h: 51|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)|Move(N)@Move(N)|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41705834458:Move(S)@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41705897958:Move(S)@h: 51|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41705980708:Move(E)@h: 51|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)
+41706044000:NoOp@h: 51|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+41706110000:Move(S)@h: 51|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+41706167583:Move(N)@h: 51|Move(S)@Move(S)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+41706241750:Move(S)@h: 52|Move(N)@Move(N)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41706327917:NoOp@h: 51|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+41706387333:Move(S)@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)
+41706483458:NoOp@h: 51|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)
+41706538958:Move(N)@h: 51|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41706597417:Move(W)@h: 52|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41706651500:Move(N)@h: 51|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41706715542:NoOp@h: 52|Move(N)@Move(N)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)
+41706772292:Move(N)@h: 51|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41706825042:Move(S)@h: 52|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41706884375:NoOp@h: 51|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41706954042:Move(N)@h: 52|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+41707023542:Move(N)@h: 52|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41707083500:NoOp@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41707140792:NoOp@h: 51|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41707202208:NoOp@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41707257667:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41707310542:NoOp@h: 51|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)
+41707369917:NoOp@h: 51|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41707423208:Move(N)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)
+41707494792:Move(N)@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41707547375:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)
+41707597708:Move(E)@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41707708750:Move(W)@h: 52|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41707763042:NoOp@h: 52|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41707826125:Move(N)@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41707884625:NoOp@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+41707937625:Move(E)@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41707995292:Move(W)@h: 51|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+41708056583:Move(S)@h: 51|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41708096167:Move(S)@h: 51|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+41708143958:Move(E)@h: 51|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41708183958:Move(N)@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41708227208:Move(S)@h: 51|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41708276458:NoOp@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41708320333:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41708358167:NoOp@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+41708397625:NoOp@h: 51|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+41708487208:NoOp@h: 52|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41708532792:NoOp@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41708574083:Move(N)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41708620167:NoOp@h: 52|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41708658750:Move(S)@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+41708722042:Move(N)@h: 51|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41708760875:Move(N)@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41708800042:Move(S)@h: 51|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41708845792:Move(N)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41708899208:Move(W)@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41708946042:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41708984958:NoOp@h: 51|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41709022417:Move(E)@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41709055125:Move(S)@h: 52|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)
+41709102875:Move(N)@h: 51|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41709142833:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41709175292:NoOp@h: 51|Push(S,W)@Push(S,W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41709207250:NoOp@h: 51|Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41709237875:Move(S)@h: 52|Push(S,W)@Push(S,W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41709269500:Move(N)@h: 51|Push(W,S)@Push(W,S)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+41709316542:Move(S)@h: 52|Push(S,W)@Push(S,W)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41709354208:Move(N)@h: 52|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41709384333:Move(S)@h: 53|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41709415500:NoOp@h: 52|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41709450792:Move(W)@h: 51|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)
+41709486583:Move(E)@h: 52|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+41709517000:Move(N)@h: 52|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41709552958:NoOp@h: 53|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+41709587083:Move(S)@h: 52|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41709629667:Move(N)@h: 51|Push(W,W)@Push(W,W)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+41709666792:NoOp@h: 51|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41709698583:NoOp@h: 52|Push(N,N)@Push(N,N)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)
+41709729500:Move(W)@h: 51|Push(N,N)@Push(N,N)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41709777125:Move(S)@h: 51|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41709811083:Move(N)@h: 52|Push(N,N)@Push(N,N)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41709846333:NoOp@h: 53|Push(N,N)@Push(N,N)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41709881417:NoOp@h: 53|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41709914833:Move(S)@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41709950333:NoOp@h: 52|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41709989500:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41710037042:NoOp@h: 52|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41710075500:NoOp@h: 51|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41710114958:Move(E)@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41710154208:Move(W)@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+41710187542:Move(S)@h: 51|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41710232792:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41710266875:Move(S)@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41710300375:Move(S)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41710334000:Move(S)@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41710363167:Move(E)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+41710393208:Move(E)@h: 51|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)
+41710426208:Move(E)@h: 51|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)
+41710459125:Move(E)@h: 51|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)
+41710494750:Move(E)@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+41710527833:Move(E)@h: 51|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41710560542:Move(E)@h: 51|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41710592875:Move(E)@h: 52|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41710625250:Move(E)@h: 52|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)
+41710658333:Move(S)@h: 51|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41710689583:Move(E)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+41710723542:Move(S)@h: 51|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41710759167:Move(S)@h: 51|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41710799208:Move(S)@h: 52|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41710840375:Move(W)@h: 52|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41710872000:Move(S)@h: 51|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+41710912292:Move(S)@h: 51|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41710953500:Move(S)@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)
+41710992333:Move(S)@h: 51|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41711032833:Move(W)@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41711071333:Move(W)@h: 53|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41711112375:Move(N)@h: 53|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41711151250:Move(N)@h: 52|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+41711194458:Move(N)@h: 52|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+41711232083:Move(W)@h: 51|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41711264542:NoOp@h: 51|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+41711303917:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41711343833:NoOp@h: 52|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)
+41711383125:NoOp@h: 51|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+41711421833:NoOp@h: 52|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+41711462750:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41711500000:NoOp@h: 52|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41711533958:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41711572792:NoOp@h: 53|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)
+41711612458:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41711650250:NoOp@h: 53|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41711693000:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+41711731083:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41711769792:NoOp@h: 51|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)
+41711809875:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41711841958:NoOp@h: 53|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41711876292:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+41711937208:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)
+41711972958:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)
+41712005667:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41712032875:NoOp@h: 51|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)
+41712060292:NoOp@h: 52|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41712096000:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41712122792:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41712151000:NoOp@h: 51|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41712187292:NoOp@h: 51|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+41712221125:NoOp@h: 52|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41712252833:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)
+41712284542:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)
+41712313125:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41712346250:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+41712384333:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)
+41712414125:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41712446750:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41712485750:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+41712531042:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41712573792:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41712609667:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41712655833:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+41712694292:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41712739833:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41712777625:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+41712817917:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)
+41712851667:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+41712893833:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+41712932458:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41712966750:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41713007125:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+41713054250:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)
+41713099042:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)
+41713140000:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+41713171750:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+41713204542:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+41713243875:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+41713273042:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)
+41713312625:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713352250:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41713396167:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41713452500:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41713483042:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41713525458:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713557583:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713604583:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41713636917:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713679917:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713756500:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713792375:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713830958:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41713862625:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41713891750:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41713919000:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41713953792:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41713994083:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41714049833:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41714090875:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41714136125:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41714181667:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41714229542:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41714258292:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41714288208:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41714344708:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41714384375:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41714422417:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41714467333:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41714504458:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41714536375:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41714573875:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41714613042:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41714638500:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41714664000:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41714695375:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41714726458:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41714768250:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41714811542:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41714846500:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41714877875:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41714916083:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41714952625:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41714986958:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41715029625:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41715067458:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715096292:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715141083:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41715184458:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715238875:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41715295333:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715336083:NoOp@h: 55|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715390500:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41715455208:NoOp@h: 55|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41715489375:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715519250:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41715551167:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41715589542:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715625000:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715662417:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715703750:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715740667:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715794000:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715838000:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715869833:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715902333:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41715944167:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41715982667:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41716020000:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41716058333:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716088083:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716123750:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716159958:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716205167:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716240792:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716277500:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716312542:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716353250:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716391083:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716435417:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716470333:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716515875:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716552583:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716594625:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716635458:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41716672792:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716713250:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716749000:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716783375:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716817000:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716852625:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716886833:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716920750:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716963125:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41716997125:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41717033250:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41717075167:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+41717113417:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717152625:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717192292:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717226625:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717264958:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717302583:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717336875:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717375458:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717413458:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41717446875:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41717482208:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41717516250:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41717542500:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+41717571250:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41717598917:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+41717634375:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+41717663667:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717699000:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717737875:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717771417:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717808375:NoOp@h: 55|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717847583:NoOp@h: 56|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717882042:NoOp@h: 55|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717926875:NoOp@h: 54|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717957042:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41717993917:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718030667:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718066792:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718102708:NoOp@h: 53|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718135792:NoOp@h: 52|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718172708:NoOp@h: 51|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718208667:NoOp@h: 50|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718244375:NoOp@h: 49|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718280042:NoOp@h: 48|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718318625:NoOp@h: 47|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718352875:NoOp@h: 46|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718387833:NoOp@h: 45|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718422875:NoOp@h: 44|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718456833:NoOp@h: 43|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718491375:NoOp@h: 42|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718537833:NoOp@h: 41|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718587083:NoOp@h: 40|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718625958:NoOp@h: 39|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718655125:NoOp@h: 38|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718680208:NoOp@h: 37|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718707625:NoOp@h: 36|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718740083:NoOp@h: 35|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718770208:NoOp@h: 34|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718798625:NoOp@h: 33|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718827292:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718856625:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718886167:NoOp@h: 30|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718913833:NoOp@h: 29|NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718942458:NoOp@h: 28|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41718973667:NoOp@h: 27|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719002375:NoOp@h: 26|NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719031000:NoOp@h: 25|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719058667:NoOp@h: 24|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719089167:NoOp@h: 23|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719121250:NoOp@h: 22|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719153208:NoOp@h: 21|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719182250:NoOp@h: 22|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719212500:NoOp@h: 23|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719240417:NoOp@h: 24|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719270542:NoOp@h: 25|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719298167:NoOp@h: 26|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719326333:NoOp@h: 27|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719356833:NoOp@h: 28|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719385292:NoOp@h: 29|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719412792:NoOp@h: 30|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719440333:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719468542:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719497417:NoOp@h: 33|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719528375:NoOp@h: 34|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719565833:NoOp@h: 35|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719602625:NoOp@h: 36|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719631167:NoOp@h: 35|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719661500:NoOp@h: 34|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719696458:NoOp@h: 33|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719863208:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719899750:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719941292:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41719977625:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720056042:NoOp@h: 30|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720110000:NoOp@h: 29|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720167750:NoOp@h: 28|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720209625:NoOp@h: 27|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720263750:NoOp@h: 26|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720309417:NoOp@h: 25|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720347583:NoOp@h: 26|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720384042:NoOp@h: 27|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720427625:NoOp@h: 28|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720470833:NoOp@h: 29|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720525542:NoOp@h: 30|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720625583:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720668792:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720734542:NoOp@h: 33|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720767375:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720803833:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720841625:NoOp@h: 30|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720877250:NoOp@h: 29|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720913417:NoOp@h: 28|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720951542:NoOp@h: 27|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41720986125:NoOp@h: 26|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721024583:NoOp@h: 25|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721063583:NoOp@h: 26|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721096083:NoOp@h: 27|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721138958:NoOp@h: 28|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721174125:NoOp@h: 29|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721215750:NoOp@h: 30|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721244667:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721280083:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721331333:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721368167:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721402250:NoOp@h: 33|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721433000:NoOp@h: 34|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721474208:NoOp@h: 35|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721514333:NoOp@h: 36|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721554292:NoOp@h: 35|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721586000:NoOp@h: 34|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721623458:NoOp@h: 33|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721658125:NoOp@h: 32|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721692583:NoOp@h: 31|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721724792:NoOp@h: 30|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721767083:NoOp@h: 29|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721800958:NoOp@h: 28|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721828500:NoOp@h: 27|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721856750:NoOp@h: 26|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721880708:NoOp@h: 25|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721909500:NoOp@h: 24|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721933750:NoOp@h: 23|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721971458:NoOp@h: 22|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41721998250:NoOp@h: 21|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722025833:NoOp@h: 20|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722053417:NoOp@h: 19|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722085500:NoOp@h: 18|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722120292:NoOp@h: 17|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722151167:NoOp@h: 16|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722183042:NoOp@h: 15|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722211042:NoOp@h: 14|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722244000:NoOp@h: 13|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722272958:NoOp@h: 12|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722301750:NoOp@h: 11|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722331500:NoOp@h: 10|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722360250:NoOp@h: 11|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722386500:NoOp@h: 12|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722416500:NoOp@h: 13|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722444375:NoOp@h: 14|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722470750:NoOp@h: 15|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722498875:NoOp@h: 16|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722525375:NoOp@h: 15|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722551833:NoOp@h: 14|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722579250:NoOp@h: 13|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722604333:NoOp@h: 12|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722629667:NoOp@h: 11|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722657167:NoOp@h: 10|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722685333:NoOp@h: 9|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722711833:NoOp@h: 8|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722738375:NoOp@h: 7|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722767583:NoOp@h: 6|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722802542:NoOp@h: 5|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722828792:NoOp@h: 4|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722858458:NoOp@h: 3|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722884750:NoOp@h: 2|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722911500:NoOp@h: 1|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+41722949958:NoOp@h: 0|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+474
+#time
+41722949958
+#end

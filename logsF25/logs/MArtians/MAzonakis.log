@@ -1,0 +1,166 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+MArtians
+#actions
+188842882:Move(W)@Move(W)|Move(W)@Move(W)|
+188987244:Move(W)@Move(W)|Move(W)@Move(W)|
+189065676:Move(S)@Move(S)|Move(N)@Move(N)|
+189144947:Move(W)@Move(W)|Move(W)@Move(W)|
+189219188:Move(W)@Move(W)|Move(W)@Move(W)|
+189319481:Move(W)@Move(W)|Move(W)@Move(W)|
+189398332:Move(W)@Move(W)|Move(W)@Move(W)|
+189466497:Move(W)@Move(W)|Move(W)@Move(W)|
+189538993:Move(W)@Move(W)|Move(W)@Move(W)|
+189619730:Move(W)@Move(W)|Move(W)@Move(W)|
+189681190:Move(W)@Move(W)|Move(W)@Move(W)|
+189728752:Move(W)@Move(W)|Move(W)@Move(W)|
+189799711:Move(W)@Move(W)|Move(W)@Move(W)|
+189866480:Move(W)@Move(W)|Move(W)@Move(W)|
+189920328:Move(W)@Move(W)|Move(W)@Move(W)|
+189988004:Move(W)@Move(W)|Move(W)@Move(W)|
+190044157:Move(S)@Move(S)|Move(W)@Move(W)|
+190110855:Move(S)@Move(S)|Move(W)@Move(W)|
+190176995:Move(S)@Move(S)|Move(W)@Move(W)|
+190241878:Move(W)@Move(W)|Move(N)@Move(N)|
+190311650:Move(W)@Move(W)|Move(N)@Move(N)|
+190365079:Move(W)@Move(W)|Move(N)@Move(N)|
+190450006:Move(W)@Move(W)|Move(N)@Move(N)|
+190522991:Move(W)@Move(W)|Move(E)@Move(E)|
+190582216:Push(N,N)@Push(N,N)|Move(E)@Move(E)|
+190654642:Push(N,W)@Push(N,W)|Move(E)@Move(E)|
+190711912:Push(W,N)@Push(W,N)|Move(E)@Move(E)|
+190776306:Push(N,N)@Push(N,N)|Move(E)@Move(E)|
+190845798:Push(N,N)@Push(N,N)|Move(E)@Move(E)|
+190910122:Push(N,N)@Push(N,N)|Move(E)@Move(E)|
+190969348:Push(N,W)@Push(N,W)|Move(E)@Move(E)|
+191032275:Push(W,W)@Push(W,W)|Move(E)@Move(E)|
+191094085:Push(W,W)@Push(W,W)|Move(E)@Move(E)|
+191161133:Push(W,W)@Push(W,W)|Move(N)@Move(N)|
+191213025:NoOp@NoOp|Move(N)@Move(N)|
+191317578:NoOp@NoOp|Move(N)@Move(N)|
+191388677:NoOp@NoOp|Move(N)@Move(N)|
+191453979:NoOp@NoOp|Move(E)@Move(E)|
+191502588:NoOp@NoOp|Move(E)@Move(E)|
+191541351:NoOp@NoOp|Move(E)@Move(E)|
+191594011:NoOp@NoOp|Move(E)@Move(E)|
+191680196:NoOp@NoOp|Move(E)@Move(E)|
+191736977:NoOp@NoOp|Move(E)@Move(E)|
+191780767:NoOp@NoOp|Move(E)@Move(E)|
+191838457:NoOp@NoOp|Move(E)@Move(E)|
+191893212:NoOp@NoOp|Move(E)@Move(E)|
+191934209:NoOp@NoOp|Move(E)@Move(E)|
+191990991:NoOp@NoOp|Move(E)@Move(E)|
+192030521:NoOp@NoOp|Move(E)@Move(E)|
+192084508:NoOp@NoOp|Move(E)@Move(E)|
+192157563:NoOp@NoOp|Move(E)@Move(E)|
+192224331:NoOp@NoOp|Move(E)@Move(E)|
+192280554:NoOp@NoOp|Move(E)@Move(E)|
+192342084:NoOp@NoOp|Move(N)@Move(N)|
+192398097:NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+192493291:NoOp@NoOp|Pull(W,S)@Pull(W,S)|
+192547628:NoOp@NoOp|Pull(S,W)@Pull(S,W)|
+192604898:NoOp@NoOp|Push(N,W)@Push(N,W)|
+192644847:NoOp@NoOp|Push(W,W)@Push(W,W)|
+192706098:NoOp@NoOp|Push(W,W)@Push(W,W)|
+192770003:NoOp@NoOp|Push(W,W)@Push(W,W)|
+192834816:NoOp@NoOp|Push(W,S)@Push(W,S)|
+192886010:NoOp@NoOp|Push(S,W)@Push(S,W)|
+192946353:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193001528:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193062151:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193126056:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193180043:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193232564:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193304152:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193360374:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193401930:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193477289:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193530718:NoOp@NoOp|Push(W,S)@Push(W,S)|
+193568363:NoOp@NoOp|Push(S,S)@Push(S,S)|
+193610756:NoOp@NoOp|Push(S,S)@Push(S,S)|
+193649518:NoOp@NoOp|Push(S,W)@Push(S,W)|
+193695195:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193732560:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193771113:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193802052:NoOp@NoOp|Push(W,W)@Push(W,W)|
+193838370:NoOp@NoOp|Push(W,N)@Push(W,N)|
+193874199:NoOp@NoOp|Push(N,N)@Push(N,N)|
+193911913:NoOp@NoOp|Push(N,N)@Push(N,N)|
+193957520:NoOp@NoOp|Push(N,N)@Push(N,N)|
+193993698:NoOp@NoOp|Push(N,W)@Push(N,W)|
+194043355:NoOp@NoOp|Push(W,N)@Push(W,N)|
+194088612:NoOp@NoOp|Push(N,N)@Push(N,N)|
+194126257:NoOp@NoOp|Push(N,N)@Push(N,N)|
+194165019:NoOp@NoOp|Push(N,N)@Push(N,N)|
+194211114:NoOp@NoOp|Push(N,N)@Push(N,N)|
+194254416:NoOp@NoOp|Push(N,N)@Push(N,N)|
+194290455:Move(E)@Move(E)|NoOp@NoOp|
+194327680:Move(E)@Move(E)|NoOp@NoOp|
+194362531:Move(S)@Move(S)|NoOp@NoOp|
+194398709:Move(E)@Move(E)|NoOp@NoOp|
+194433909:Move(S)@Move(S)|NoOp@NoOp|
+194484195:Move(S)@Move(S)|NoOp@NoOp|
+194519675:Move(S)@Move(S)|NoOp@NoOp|
+194556202:Pull(E,N)@Pull(E,N)|NoOp@NoOp|
+194592519:Push(W,N)@Push(W,N)|NoOp@NoOp|
+194630094:Push(N,N)@Push(N,N)|NoOp@NoOp|
+194670113:Push(N,N)@Push(N,N)|NoOp@NoOp|
+194703567:Push(N,W)@Push(N,W)|NoOp@NoOp|
+194737999:Push(W,W)@Push(W,W)|NoOp@NoOp|
+194775434:Push(W,W)@Push(W,W)|NoOp@NoOp|
+194810565:Push(W,W)@Push(W,W)|NoOp@NoOp|
+#end
+#solved
+true
+#numactions
+107
+#time
+194810565
+#end

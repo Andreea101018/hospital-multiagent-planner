@@ -1,0 +1,457 @@
+#domain
+hospital
+#levelname
+warehouse
+#colors
+red: 0, A, F 
+blue: 1, B, G  
+green: 2, C, H
+cyan: 3, D, I
+lightblue: 4, E, J  
+#initial
++++++++++++++++++++++
++J   0        B     +
++ + + + + + + + + + +
++                  F+
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   A         1     +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    2         D    +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   G          3    +
++ + + + + + + + + + +
++  H     E          +
++ + + + + + + + + + +
++  4           C    +
++ + + + + + + + + + +
++  I                +
++++++++++++++++++++++
+#goal
++++++++++++++++++++++
++                 I +
++ + + + + + + + + + +
++   B           A   +
++ + + + + + + + + + +
++       G           +
++ + + + + + + + + + +
++               H   +
++ + + + + + + + + + +
++    D              +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++           F       +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    C            J +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++                E  +
++++++++++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+908672791:NoOp|NoOp|Move(S)|NoOp|NoOp
+908760458:NoOp|NoOp|Move(S)|NoOp|NoOp
+908791375:NoOp|NoOp|Move(W)|NoOp|NoOp
+908825125:NoOp|NoOp|Move(W)|NoOp|NoOp
+908865125:NoOp|NoOp|Move(S)|NoOp|NoOp
+908891958:NoOp|NoOp|Move(S)|NoOp|NoOp
+908916958:NoOp|NoOp|Move(S)|NoOp|NoOp
+908953291:NoOp|NoOp|Pull(N,N)|NoOp|NoOp
+908980625:NoOp|NoOp|NoOp|NoOp|Move(N)
+909004041:NoOp|NoOp|NoOp|NoOp|Move(N)
+909026833:NoOp|NoOp|NoOp|NoOp|Move(E)
+909049333:NoOp|NoOp|NoOp|NoOp|Move(E)
+909071875:NoOp|NoOp|NoOp|NoOp|Move(E)
+909101916:NoOp|NoOp|NoOp|NoOp|Move(E)
+909128541:NoOp|NoOp|NoOp|NoOp|Move(E)
+909155125:NoOp|NoOp|NoOp|NoOp|Push(E,S)
+909180500:NoOp|NoOp|NoOp|NoOp|Move(N)
+909206166:NoOp|NoOp|NoOp|NoOp|Move(N)
+909232958:NoOp|NoOp|NoOp|NoOp|Move(N)
+909258625:NoOp|NoOp|NoOp|NoOp|Move(N)
+909283875:NoOp|NoOp|NoOp|NoOp|Move(W)
+909307583:NoOp|NoOp|NoOp|NoOp|Move(W)
+909333500:NoOp|NoOp|NoOp|NoOp|Move(W)
+909356125:NoOp|NoOp|NoOp|NoOp|Move(W)
+909380291:NoOp|NoOp|NoOp|NoOp|Move(N)
+909402750:NoOp|NoOp|NoOp|NoOp|Move(N)
+909425416:NoOp|NoOp|NoOp|NoOp|Move(W)
+909451916:NoOp|NoOp|NoOp|NoOp|Move(W)
+909478625:NoOp|NoOp|NoOp|NoOp|Move(W)
+909502791:NoOp|NoOp|NoOp|NoOp|Move(W)
+909525791:NoOp|NoOp|NoOp|NoOp|Move(N)
+909551375:NoOp|NoOp|NoOp|NoOp|Move(N)
+909575166:NoOp|NoOp|NoOp|NoOp|Move(N)
+909607666:NoOp|NoOp|NoOp|NoOp|Move(N)
+909652708:NoOp|NoOp|NoOp|NoOp|Move(N)
+909678750:NoOp|NoOp|NoOp|NoOp|Move(N)
+909702333:NoOp|NoOp|NoOp|NoOp|Move(N)
+909750458:NoOp|NoOp|NoOp|NoOp|Move(N)
+909796458:NoOp|NoOp|NoOp|NoOp|Move(N)
+909836375:NoOp|NoOp|NoOp|NoOp|Push(N,E)
+909866250:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+909890500:NoOp|NoOp|NoOp|NoOp|NoOp
+909913791:NoOp|NoOp|NoOp|NoOp|NoOp
+909936333:NoOp|NoOp|NoOp|NoOp|NoOp
+909958708:NoOp|NoOp|NoOp|NoOp|NoOp
+909981000:NoOp|NoOp|NoOp|NoOp|NoOp
+910004916:NoOp|NoOp|NoOp|NoOp|NoOp
+910031666:NoOp|NoOp|NoOp|NoOp|NoOp
+910057250:NoOp|NoOp|NoOp|NoOp|NoOp
+910079500:NoOp|NoOp|NoOp|NoOp|NoOp
+910114166:NoOp|NoOp|NoOp|NoOp|NoOp
+910150750:NoOp|NoOp|NoOp|NoOp|NoOp
+910184666:NoOp|NoOp|NoOp|NoOp|NoOp
+910221583:NoOp|NoOp|NoOp|NoOp|NoOp
+910264916:NoOp|NoOp|NoOp|NoOp|NoOp
+910291625:NoOp|NoOp|NoOp|NoOp|NoOp
+910314750:NoOp|NoOp|NoOp|NoOp|NoOp
+910336916:NoOp|NoOp|NoOp|NoOp|NoOp
+910359333:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+910386625:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+910417958:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+910442375:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+910465416:NoOp|NoOp|NoOp|NoOp|Push(E,S)
+910490791:NoOp|NoOp|NoOp|NoOp|Push(S,S)
+910513083:NoOp|NoOp|NoOp|NoOp|Push(S,S)
+910541833:NoOp|NoOp|NoOp|NoOp|Move(E)
+910568166:NoOp|NoOp|NoOp|NoOp|Move(E)
+910593291:NoOp|NoOp|NoOp|NoOp|Move(S)
+910619375:NoOp|NoOp|NoOp|NoOp|Move(S)
+910670958:NoOp|NoOp|NoOp|NoOp|Move(W)
+910695833:NoOp|NoOp|NoOp|NoOp|NoOp
+910718250:NoOp|NoOp|NoOp|NoOp|NoOp
+910740333:NoOp|NoOp|NoOp|NoOp|NoOp
+910761958:NoOp|NoOp|NoOp|NoOp|NoOp
+910784041:NoOp|NoOp|NoOp|NoOp|NoOp
+910808375:NoOp|NoOp|NoOp|NoOp|NoOp
+910832000:NoOp|NoOp|NoOp|NoOp|NoOp
+910854666:NoOp|NoOp|NoOp|NoOp|NoOp
+910876458:NoOp|NoOp|NoOp|NoOp|NoOp
+910898083:NoOp|NoOp|NoOp|NoOp|NoOp
+910920750:NoOp|NoOp|NoOp|NoOp|NoOp
+910943875:NoOp|NoOp|NoOp|NoOp|NoOp
+910965583:NoOp|NoOp|NoOp|NoOp|NoOp
+910987166:NoOp|NoOp|NoOp|NoOp|NoOp
+911015166:NoOp|NoOp|NoOp|NoOp|NoOp
+911062375:NoOp|NoOp|NoOp|NoOp|NoOp
+911092000:NoOp|NoOp|NoOp|NoOp|NoOp
+911116416:NoOp|NoOp|NoOp|NoOp|NoOp
+911139125:NoOp|NoOp|NoOp|NoOp|NoOp
+911165875:NoOp|NoOp|NoOp|NoOp|NoOp
+911195708:NoOp|NoOp|NoOp|NoOp|NoOp
+911219833:NoOp|NoOp|NoOp|NoOp|NoOp
+911242458:Move(S)|Move(W)|NoOp|Move(N)|NoOp
+911265083:Move(S)|Move(N)|NoOp|Move(N)|NoOp
+911287458:Move(S)|Move(N)|NoOp|Move(N)|NoOp
+911310625:Move(S)|Move(N)|NoOp|Push(N,W)|NoOp
+911333666:Move(S)|Move(N)|NoOp|Push(W,W)|NoOp
+911355708:Move(S)|Move(N)|NoOp|Push(W,W)|NoOp
+911378708:Pull(N,E)|Move(N)|NoOp|Push(W,W)|NoOp
+911404041:Pull(N,N)|Pull(W,W)|NoOp|Push(W,W)|NoOp
+911426583:Pull(N,N)|Pull(W,W)|NoOp|Push(W,W)|NoOp
+911459000:Push(S,E)|Pull(S,W)|NoOp|Push(W,W)|NoOp
+911519833:Push(E,E)|Push(N,W)|NoOp|Push(W,W)|NoOp
+911561958:Push(E,N)|Push(W,W)|NoOp|Push(W,W)|NoOp
+911588500:Push(N,N)|Push(W,S)|NoOp|Push(W,W)|NoOp
+911612916:Push(N,E)|Push(S,S)|NoOp|Push(W,N)|NoOp
+911637250:Push(E,E)|Push(S,W)|NoOp|Push(N,N)|NoOp
+911670583:Push(E,E)|Push(W,W)|NoOp|Move(S)|NoOp
+911721250:Push(E,E)|Push(W,W)|NoOp|Move(W)|NoOp
+911747291:Push(E,E)|Push(W,W)|NoOp|Move(W)|NoOp
+911771791:Push(E,E)|Push(W,W)|NoOp|Move(S)|NoOp
+911796875:Push(E,E)|Move(S)|NoOp|Move(S)|NoOp
+911854708:Push(E,E)|Move(S)|NoOp|Move(S)|NoOp
+911889916:Push(E,E)|Move(S)|NoOp|Move(S)|NoOp
+911929208:Move(N)|Move(S)|NoOp|Move(S)|NoOp
+911971166:Move(N)|Move(S)|NoOp|Move(S)|NoOp
+911994875:Move(E)|Move(S)|NoOp|Move(S)|NoOp
+912017541:Move(E)|Move(S)|NoOp|Move(S)|NoOp
+912040708:Move(E)|Move(S)|NoOp|Move(S)|NoOp
+912063125:Move(E)|Move(S)|NoOp|Push(S,E)|NoOp
+912085458:Move(S)|Move(S)|NoOp|Push(E,E)|NoOp
+912108083:Push(S,S)|Move(S)|NoOp|Push(E,N)|NoOp
+912131125:Push(S,S)|Move(S)|NoOp|Push(N,N)|NoOp
+912154416:Push(S,W)|Pull(N,E)|NoOp|Push(N,N)|NoOp
+912177291:Push(W,W)|Pull(N,N)|NoOp|Push(N,N)|NoOp
+912199916:Push(W,W)|Pull(E,N)|NoOp|Push(N,E)|NoOp
+912242333:Push(W,W)|Pull(E,E)|NoOp|Push(E,E)|NoOp
+912306541:Push(W,S)|Pull(E,E)|NoOp|Push(E,N)|NoOp
+912358333:Push(S,S)|Push(W,N)|NoOp|Push(N,N)|NoOp
+912410500:Push(S,S)|Push(N,N)|NoOp|Push(N,E)|NoOp
+912448708:Push(S,S)|Push(N,N)|NoOp|Push(E,E)|NoOp
+912474208:Push(S,S)|Push(N,N)|NoOp|Push(E,E)|NoOp
+912512833:Push(S,S)|Push(N,N)|NoOp|Push(E,E)|NoOp
+912549500:Push(S,W)|Push(N,N)|NoOp|Push(E,N)|NoOp
+912586166:Push(W,W)|Push(N,N)|NoOp|Push(N,N)|NoOp
+912622916:Push(W,S)|Push(N,N)|NoOp|Push(N,N)|NoOp
+912650500:Push(S,S)|Push(N,E)|NoOp|Push(N,N)|NoOp
+912676041:Push(S,W)|NoOp|NoOp|Push(N,E)|NoOp
+912705875:NoOp|NoOp|NoOp|Push(E,E)|NoOp
+912875666:NoOp|NoOp|NoOp|Push(E,E)|NoOp
+912952041:NoOp|NoOp|NoOp|Push(E,E)|NoOp
+913046375:NoOp|NoOp|NoOp|Push(E,N)|NoOp
+913165000:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913257375:NoOp|NoOp|NoOp|Push(N,E)|NoOp
+913403500:NoOp|NoOp|NoOp|Push(E,E)|NoOp
+913474666:NoOp|NoOp|NoOp|Push(E,N)|NoOp
+913540541:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913648958:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913726625:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913842250:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913912750:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913936791:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913960125:NoOp|NoOp|NoOp|Push(N,N)|NoOp
+913985625:NoOp|NoOp|NoOp|Push(N,E)|NoOp
+914023041:NoOp|NoOp|NoOp|NoOp|NoOp
+914046625:NoOp|NoOp|NoOp|NoOp|NoOp
+914069958:NoOp|NoOp|NoOp|NoOp|NoOp
+914092250:NoOp|NoOp|NoOp|NoOp|NoOp
+914132416:NoOp|NoOp|NoOp|NoOp|NoOp
+914167750:NoOp|NoOp|NoOp|NoOp|NoOp
+914192125:NoOp|NoOp|NoOp|NoOp|NoOp
+914213500:NoOp|NoOp|NoOp|NoOp|NoOp
+914235541:NoOp|NoOp|NoOp|NoOp|NoOp
+914256583:NoOp|NoOp|NoOp|NoOp|NoOp
+914280166:NoOp|NoOp|NoOp|NoOp|NoOp
+914309458:NoOp|NoOp|NoOp|NoOp|NoOp
+914337416:NoOp|NoOp|NoOp|NoOp|NoOp
+914361583:NoOp|NoOp|NoOp|NoOp|NoOp
+914428000:NoOp|NoOp|NoOp|NoOp|NoOp
+914459875:NoOp|NoOp|NoOp|NoOp|NoOp
+914496208:NoOp|NoOp|NoOp|NoOp|NoOp
+914524833:NoOp|NoOp|NoOp|NoOp|NoOp
+914564166:NoOp|NoOp|NoOp|NoOp|NoOp
+914594125:NoOp|NoOp|NoOp|NoOp|NoOp
+914629333:NoOp|NoOp|NoOp|NoOp|NoOp
+914650833:NoOp|NoOp|NoOp|NoOp|NoOp
+914677041:NoOp|NoOp|NoOp|NoOp|NoOp
+914728458:NoOp|NoOp|NoOp|NoOp|NoOp
+914764666:NoOp|NoOp|NoOp|NoOp|NoOp
+914792416:NoOp|NoOp|NoOp|NoOp|NoOp
+914822791:NoOp|NoOp|NoOp|NoOp|NoOp
+914845958:NoOp|NoOp|NoOp|NoOp|NoOp
+914869166:NoOp|NoOp|NoOp|NoOp|NoOp
+914891250:NoOp|NoOp|NoOp|NoOp|NoOp
+914912458:NoOp|NoOp|NoOp|NoOp|NoOp
+914936583:NoOp|NoOp|NoOp|NoOp|NoOp
+914957750:NoOp|NoOp|NoOp|NoOp|NoOp
+914978666:NoOp|NoOp|NoOp|NoOp|NoOp
+914999583:NoOp|NoOp|NoOp|NoOp|NoOp
+915026791:NoOp|NoOp|NoOp|NoOp|NoOp
+915051083:NoOp|NoOp|NoOp|NoOp|NoOp
+915106041:NoOp|NoOp|NoOp|NoOp|NoOp
+915146250:NoOp|NoOp|NoOp|NoOp|NoOp
+915180833:NoOp|NoOp|NoOp|NoOp|NoOp
+915214041:NoOp|NoOp|NoOp|NoOp|NoOp
+915241791:NoOp|NoOp|NoOp|NoOp|NoOp
+915277958:NoOp|NoOp|NoOp|NoOp|NoOp
+915301666:NoOp|NoOp|NoOp|NoOp|NoOp
+915324750:NoOp|NoOp|NoOp|NoOp|NoOp
+915347791:NoOp|NoOp|NoOp|NoOp|NoOp
+915369833:NoOp|NoOp|NoOp|NoOp|NoOp
+915391458:NoOp|NoOp|NoOp|NoOp|NoOp
+915415000:NoOp|NoOp|NoOp|NoOp|NoOp
+915438291:NoOp|NoOp|NoOp|NoOp|NoOp
+915459916:NoOp|NoOp|NoOp|NoOp|NoOp
+915496458:NoOp|NoOp|NoOp|NoOp|NoOp
+915539125:NoOp|NoOp|NoOp|NoOp|NoOp
+915575541:NoOp|NoOp|NoOp|NoOp|NoOp
+915597750:NoOp|NoOp|NoOp|NoOp|NoOp
+915632791:NoOp|NoOp|NoOp|NoOp|NoOp
+915657416:NoOp|NoOp|NoOp|NoOp|NoOp
+915686583:NoOp|NoOp|NoOp|NoOp|NoOp
+915736666:NoOp|NoOp|NoOp|NoOp|NoOp
+915760916:NoOp|NoOp|NoOp|NoOp|NoOp
+915783916:NoOp|NoOp|NoOp|NoOp|NoOp
+915809791:NoOp|NoOp|NoOp|NoOp|NoOp
+915844333:NoOp|NoOp|NoOp|NoOp|NoOp
+915868541:NoOp|NoOp|NoOp|NoOp|NoOp
+915905500:NoOp|NoOp|NoOp|NoOp|NoOp
+915925958:NoOp|NoOp|NoOp|NoOp|NoOp
+915964000:NoOp|NoOp|NoOp|NoOp|NoOp
+915981500:NoOp|NoOp|NoOp|NoOp|NoOp
+916002875:NoOp|NoOp|NoOp|NoOp|NoOp
+916037958:NoOp|NoOp|NoOp|NoOp|NoOp
+916058500:NoOp|NoOp|NoOp|NoOp|NoOp
+916079416:NoOp|NoOp|NoOp|NoOp|NoOp
+916099333:NoOp|NoOp|NoOp|NoOp|NoOp
+916143500:NoOp|NoOp|NoOp|NoOp|NoOp
+916166083:NoOp|NoOp|NoOp|NoOp|NoOp
+916233416:NoOp|NoOp|NoOp|NoOp|NoOp
+916289041:NoOp|NoOp|NoOp|NoOp|NoOp
+916313125:NoOp|NoOp|NoOp|NoOp|NoOp
+916336750:NoOp|NoOp|NoOp|NoOp|NoOp
+916365958:NoOp|NoOp|NoOp|NoOp|NoOp
+916392416:NoOp|NoOp|NoOp|NoOp|NoOp
+916418208:NoOp|NoOp|NoOp|NoOp|NoOp
+916463833:NoOp|NoOp|NoOp|NoOp|NoOp
+916497875:NoOp|NoOp|NoOp|NoOp|NoOp
+916532541:NoOp|NoOp|NoOp|NoOp|NoOp
+916562708:NoOp|NoOp|NoOp|NoOp|NoOp
+916593750:NoOp|NoOp|NoOp|NoOp|NoOp
+916615375:NoOp|NoOp|NoOp|NoOp|NoOp
+916647625:NoOp|NoOp|NoOp|NoOp|NoOp
+916671125:NoOp|NoOp|NoOp|NoOp|NoOp
+916692041:NoOp|NoOp|NoOp|NoOp|NoOp
+916711833:NoOp|NoOp|NoOp|NoOp|NoOp
+916731541:NoOp|NoOp|NoOp|NoOp|NoOp
+916751083:NoOp|NoOp|NoOp|NoOp|NoOp
+916770750:NoOp|NoOp|NoOp|NoOp|NoOp
+916790333:NoOp|NoOp|NoOp|NoOp|NoOp
+916810041:NoOp|NoOp|NoOp|NoOp|NoOp
+916829625:NoOp|NoOp|NoOp|NoOp|NoOp
+916848625:NoOp|NoOp|NoOp|NoOp|NoOp
+916868375:NoOp|NoOp|NoOp|NoOp|NoOp
+916900833:NoOp|NoOp|NoOp|NoOp|NoOp
+916924375:NoOp|NoOp|NoOp|NoOp|NoOp
+916945291:NoOp|NoOp|NoOp|NoOp|NoOp
+916966958:NoOp|NoOp|NoOp|NoOp|NoOp
+916989291:NoOp|NoOp|NoOp|NoOp|Move(E)
+917014708:NoOp|NoOp|NoOp|NoOp|Move(S)
+917047833:NoOp|NoOp|NoOp|NoOp|Move(S)
+917083750:NoOp|NoOp|NoOp|NoOp|Move(S)
+917106166:NoOp|NoOp|NoOp|NoOp|Move(S)
+917139375:NoOp|NoOp|NoOp|NoOp|Move(S)
+917185083:NoOp|NoOp|NoOp|NoOp|Move(S)
+917207791:NoOp|NoOp|NoOp|NoOp|Move(S)
+917229916:NoOp|NoOp|NoOp|NoOp|Move(S)
+917253333:NoOp|NoOp|NoOp|NoOp|Move(S)
+917274375:NoOp|NoOp|NoOp|NoOp|Move(S)
+917295791:NoOp|NoOp|NoOp|NoOp|Move(S)
+917318541:NoOp|NoOp|NoOp|NoOp|Move(S)
+917365666:NoOp|NoOp|NoOp|NoOp|Push(S,S)
+917409083:NoOp|NoOp|NoOp|NoOp|Push(S,S)
+917434291:NoOp|NoOp|NoOp|NoOp|Push(S,S)
+917455125:NoOp|NoOp|NoOp|NoOp|Push(S,E)
+917475083:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+917505666:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+917532208:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+917553291:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+917605333:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+917638750:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+917677583:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+917713875:NoOp|NoOp|NoOp|NoOp|Move(W)
+917740750:NoOp|NoOp|NoOp|NoOp|Move(W)
+917762541:NoOp|NoOp|NoOp|NoOp|Move(W)
+917784458:NoOp|NoOp|NoOp|NoOp|Move(W)
+917805916:NoOp|NoOp|NoOp|NoOp|Move(W)
+917826666:NoOp|NoOp|NoOp|NoOp|Move(N)
+917848208:NoOp|NoOp|NoOp|NoOp|Move(N)
+917869250:NoOp|NoOp|NoOp|NoOp|Move(N)
+917891791:NoOp|NoOp|NoOp|NoOp|Move(N)
+917914708:NoOp|NoOp|NoOp|NoOp|Move(W)
+917936750:NoOp|NoOp|NoOp|NoOp|Move(W)
+917974291:NoOp|NoOp|NoOp|NoOp|Move(W)
+917998208:NoOp|NoOp|NoOp|NoOp|Move(W)
+918020250:NoOp|NoOp|NoOp|NoOp|Move(N)
+918057291:NoOp|NoOp|NoOp|NoOp|Move(N)
+918084000:NoOp|NoOp|NoOp|NoOp|Move(N)
+918108416:NoOp|NoOp|NoOp|NoOp|Move(N)
+918129833:NoOp|NoOp|NoOp|NoOp|Move(N)
+918151041:NoOp|NoOp|NoOp|NoOp|Move(N)
+918172333:NoOp|NoOp|NoOp|NoOp|Move(N)
+918194041:NoOp|NoOp|NoOp|NoOp|Move(N)
+918216125:NoOp|NoOp|NoOp|NoOp|Move(N)
+918237875:NoOp|NoOp|NoOp|NoOp|Move(N)
+918259916:NoOp|NoOp|NoOp|NoOp|Move(N)
+918281166:NoOp|NoOp|NoOp|NoOp|Move(N)
+918303833:NoOp|NoOp|NoOp|NoOp|Pull(S,S)
+918340166:NoOp|NoOp|NoOp|NoOp|Push(N,E)
+918362083:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+918382833:NoOp|NoOp|NoOp|NoOp|Push(E,S)
+918428125:NoOp|NoOp|NoOp|NoOp|Push(S,S)
+918453125:NoOp|NoOp|NoOp|NoOp|Push(S,E)
+918474625:NoOp|NoOp|NoOp|NoOp|Push(E,E)
+918513916:NoOp|NoOp|Move(E)|NoOp|Push(E,E)
+918553208:NoOp|NoOp|Move(E)|NoOp|Push(E,E)
+918577708:NoOp|NoOp|Move(E)|NoOp|Push(E,S)
+918599708:NoOp|NoOp|Move(E)|NoOp|Push(S,S)
+918639875:NoOp|NoOp|Move(E)|NoOp|Push(S,S)
+918749125:NoOp|NoOp|Move(E)|NoOp|Push(S,S)
+918825541:NoOp|NoOp|Move(E)|NoOp|Push(S,E)
+918903750:NoOp|NoOp|Move(E)|NoOp|Push(E,E)
+918946541:NoOp|NoOp|Move(E)|NoOp|Push(E,S)
+918998916:NoOp|NoOp|Move(E)|NoOp|Push(S,S)
+919055375:NoOp|NoOp|Move(E)|NoOp|Push(S,S)
+919082125:NoOp|NoOp|Move(E)|NoOp|Push(S,S)
+919120041:NoOp|NoOp|Move(S)|NoOp|Push(S,S)
+919144916:NoOp|NoOp|Move(S)|NoOp|Push(S,S)
+919169708:NoOp|NoOp|Move(S)|NoOp|Push(S,E)
+919194750:NoOp|NoOp|Push(S,W)|NoOp|Push(E,E)
+919258083:NoOp|NoOp|Push(W,W)|NoOp|Push(E,E)
+919282458:NoOp|NoOp|Push(W,W)|NoOp|NoOp
+919307250:NoOp|NoOp|Push(W,W)|NoOp|NoOp
+919330791:NoOp|NoOp|Push(W,W)|NoOp|NoOp
+919353125:NoOp|NoOp|Push(W,W)|NoOp|NoOp
+919374541:NoOp|NoOp|Push(W,W)|NoOp|NoOp
+919443625:NoOp|NoOp|Push(W,W)|NoOp|NoOp
+919495125:NoOp|NoOp|Push(W,N)|NoOp|NoOp
+919520250:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+919557500:NoOp|NoOp|Push(N,W)|NoOp|NoOp
+919579333:NoOp|NoOp|Push(W,W)|NoOp|NoOp
+919602291:NoOp|NoOp|Move(E)|NoOp|NoOp
+919625166:NoOp|NoOp|Move(N)|NoOp|NoOp
+919647958:NoOp|NoOp|Move(N)|NoOp|NoOp
+919670583:NoOp|NoOp|Move(W)|NoOp|NoOp
+919713583:NoOp|NoOp|Move(W)|NoOp|NoOp
+919755500:NoOp|NoOp|Move(W)|NoOp|NoOp
+919792708:NoOp|NoOp|Move(W)|NoOp|NoOp
+919816875:NoOp|NoOp|Pull(W,N)|NoOp|NoOp
+919845041:NoOp|NoOp|Push(E,N)|NoOp|NoOp
+919870625:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+919893458:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+919921000:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+919973000:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+920002375:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+920048625:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+920086958:NoOp|NoOp|Push(N,N)|NoOp|NoOp
+920111708:NoOp|NoOp|Push(N,E)|NoOp|NoOp
+920134083:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920154958:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920176458:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920197791:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920217916:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920238083:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920261666:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920285000:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920307541:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920329000:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920349666:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920371041:NoOp|NoOp|Push(E,E)|NoOp|NoOp
+920390625:NoOp|NoOp|NoOp|NoOp|NoOp
+920410791:NoOp|NoOp|NoOp|NoOp|NoOp
+920431000:NoOp|NoOp|NoOp|NoOp|NoOp
+920451208:NoOp|NoOp|NoOp|NoOp|NoOp
+920471166:NoOp|NoOp|NoOp|NoOp|NoOp
+920490708:NoOp|NoOp|NoOp|NoOp|NoOp
+920509875:NoOp|NoOp|NoOp|NoOp|NoOp
+920529083:NoOp|NoOp|NoOp|NoOp|NoOp
+920548416:NoOp|NoOp|NoOp|NoOp|NoOp
+920567833:NoOp|NoOp|NoOp|NoOp|NoOp
+920587291:NoOp|NoOp|NoOp|NoOp|NoOp
+920606541:NoOp|NoOp|NoOp|NoOp|NoOp
+920633000:NoOp|NoOp|NoOp|NoOp|NoOp
+920663458:NoOp|NoOp|NoOp|NoOp|NoOp
+920685583:NoOp|NoOp|NoOp|NoOp|NoOp
+920707625:NoOp|NoOp|NoOp|NoOp|NoOp
+920729875:NoOp|NoOp|NoOp|NoOp|NoOp
+#end
+#solved
+false
+#numactions
+387
+#time
+920729875
+#end

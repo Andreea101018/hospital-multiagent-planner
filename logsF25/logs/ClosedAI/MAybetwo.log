@@ -1,0 +1,60 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+ClosedAI
+#actions
+2250300800:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+2250388000:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+2250421699:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+2250477800:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+2250509199:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+2250551100:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+2250583199:Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+2250622600:Push(E,S)@Push(E,S)|NoOp@NoOp|Move(N)@Move(N)
+2250668299:Push(S,E)@Push(S,E)|Move(W)@Move(W)|Move(E)@Move(E)
+2250702900:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(E)@Move(E)
+2250745100:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+2250785000:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+2250826800:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+2250870100:NoOp@NoOp|Push(N,E)@Push(N,E)|Move(E)@Move(E)
+2250910300:NoOp@NoOp|Pull(N,W)@Pull(N,W)|Move(S)@Move(S)
+2250949900:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+2250988600:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+2251026700:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+2251066200:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+2251107399:NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)
+#end
+#solved
+true
+#numactions
+20
+#time
+2251107399
+#end

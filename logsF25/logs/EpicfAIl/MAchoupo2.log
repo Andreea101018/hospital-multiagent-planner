@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+EpicfAIl
+#actions
+65197000:Move(E)@Pull(W,N)|Move(W)@Pull(E,S)
+65325000:Pull(W,N)@Pull(W,W)|Pull(E,S)@Pull(E,E)
+65437700:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+65536100:Pull(W,W)@Pull(S,W)|Pull(E,E)@Pull(N,E)
+65627700:Pull(S,W)@Pull(W,S)|Pull(N,E)@Pull(E,N)
+65720900:Pull(W,S)@Pull(W,W)|Pull(E,N)@Pull(E,E)
+65794600:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+65865900:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+65938100:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+66019500:Pull(W,W)@Pull(N,W)|Pull(E,E)@Pull(S,E)
+66113500:Pull(N,W)@Push(S,W)|Pull(S,E)@Push(N,E)
+66216500:Push(S,W)@Push(W,W)|Push(N,E)@Push(E,E)
+66293100:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+66410300:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+66485700:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+66562100:Push(W,W)@Move(E)|Push(E,E)@Move(W)
+66631300:Move(E)@Move(E)|Move(W)@Move(W)
+66701000:Move(E)@Move(E)|Move(W)@Move(W)
+66777300:Move(E)@Move(E)|Move(W)@Move(W)
+66852300:Move(E)@Move(N)|Move(W)@Move(S)
+66965400:Move(N)@Move(N)|Move(S)@Move(S)
+67037600:Move(N)@Move(N)|Move(S)@Move(S)
+67118000:Move(N)@Move(N)|Move(S)@Move(S)
+67187800:Move(N)@Move(N)|Move(S)@Move(S)
+67277800:Move(N)@Move(N)|Move(S)@Move(S)
+67351900:Move(N)@Move(W)|Move(S)@Move(E)
+67419900:Move(W)@Move(W)|Move(E)@NoOp
+67502700:Move(W)@Move(W)|NoOp@NoOp
+67581500:Move(W)@Move(W)|NoOp@NoOp
+67656800:Move(W)@Move(W)|NoOp@NoOp
+67724700:Move(W)@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+67724700
+#end

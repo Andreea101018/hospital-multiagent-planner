@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+31044417:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+31100125:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Pull(E,N)@Pull(E,N)|Pull(S,S)@Pull(S,S)
+31143584:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)
+31164959:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31189875:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31214834:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31236584:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+31256167:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+31273500:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+31285584:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+31297625:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+31307250:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+31317459:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31327125:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+31337000:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+31346584:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+31356209:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+31366042:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+31376084:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+31387917:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31403084:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31413792:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31423625:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31433500:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+31443292:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+31443292
+#end

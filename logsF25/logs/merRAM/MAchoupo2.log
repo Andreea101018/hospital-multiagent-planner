@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+merRAM
+#actions
+209882200:Move(E)@Move(E)|Move(W)
+210786400:Push(S,S)@Push(S,S)|Push(N,N)
+210904100:Push(S,W)@Push(S,W)|Push(N,E)
+210990500:Push(W,W)@Push(W,W)|Push(E,E)
+211078500:Push(W,W)@Push(W,W)|Push(E,E)
+211180100:Push(W,N)@Push(W,N)|Push(E,S)
+211415600:Push(N,W)@Push(N,W)|Push(S,E)
+211532500:Push(W,W)@Push(W,W)|Push(E,E)
+211620600:Push(W,W)@Push(W,W)|Push(E,E)
+211768600:Push(W,W)@Push(W,W)|Push(E,E)
+211900900:Push(W,W)@Push(W,W)|Push(E,E)
+212031500:Push(W,W)@Push(W,W)|Push(E,E)
+212191600:Push(W,W)@Push(W,W)|Push(E,E)
+212307000:Push(W,W)@Push(W,W)|Push(E,E)
+212428800:Push(W,W)@Push(W,W)|Push(E,E)
+212555800:Push(W,W)@Push(W,W)|Push(E,E)
+212681500:Move(E)@Move(E)|Move(W)
+212784400:Move(E)@Move(E)|Move(W)
+212874600:Move(E)@Move(E)|Move(W)
+212963100:Move(E)@Move(E)|Move(W)
+213056900:Move(N)@Move(N)|Move(S)
+213148300:Move(N)@Move(N)|Move(S)
+213277200:Move(N)@Move(N)|Move(S)
+213407600:Move(N)@Move(N)|Move(S)
+213522700:Move(N)@Move(N)|Move(S)
+213643900:Move(N)@Move(N)|Move(S)
+213787600:Move(W)@Move(W)|Move(E)
+213882600:Move(W)@Move(W)|NoOp
+213954900:Move(W)@Move(W)|NoOp
+214035000:Move(W)@Move(W)|NoOp
+214117200:Move(W)@Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+214117200
+#end

@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+jAIl
+#actions
+97608762:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+97721455:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(N)@Move(N)
+97767521:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+97812576:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+97850307:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+97964042:Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)
+98051897:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)
+98101420:Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+#end
+#solved
+true
+#numactions
+8
+#time
+98101420
+#end

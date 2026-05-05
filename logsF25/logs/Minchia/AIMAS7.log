@@ -1,0 +1,148 @@
+#domain
+hospital
+#levelname
+AIMAS7
+#colors
+orange: 0,A
+purple: 3,C
+green: 2,B
+blue: 1
+lightblue: F,4
+red: T,Z,5,V
+cyan: D
+grey: X,6,J
+#initial
++++++++++++++++++++++++++++++++++++
++                 0++++++3+++     +
++    A             ++++++ +++     +
++     A            ++++++ +++     +
++      A           ++++++ +++     +
++       A          ++++++C+++     +
++        A         +2   B         +
++ 1       A        ++++++F+++     +
++        A         ++++++ +++     +
++       A          ++++++ +++     +
++      A           ++++++ +++     +
++     A            ++++++4+++     +
++    A             ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++     T        D      X        6  +
++                                 +
++                                 +
++          D           D          +
++  +          D    D        ++    +
++  +         ++++++++       +     +
++  +    Z                   +     +
++  ++                D D    ++    +
++   +         D              +D   +
++    +               D          D +
++  5 +      D                     +
++    ++                           +
++         V      +++++++++     J  +
++                +         D      +
++                                 +
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++F    +
++                  ++++++ +++     +
++                  ++++++ +++C    +
++                  +              +
++            1     ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++    B+
++                  ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++     V               X           +
++                                 +
++                                 +
++  +                       J++    +
++  +         ++++++++       +     +
++ T+                        +     +
++  ++                       ++    +
++   +                        +    +
++    +                            +
++    +                            +
++    ++       Z                   +
++                +++++++++        +
++                +                +
++                                 +
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+76216917:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(W)@Move(W)
+76271000:Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)
+76301417:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(W)@Move(W)
+76325083:Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(W)@Move(W)
+76346750:Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)|Move(E)@Move(E)|Move(W)@Move(W)
+76363708:Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Move(E)@Move(E)|Move(W)@Move(W)
+76381792:Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|Move(E)@Move(E)|Move(W)@Move(W)
+76394000:Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Move(E)@Move(E)|Move(W)@Move(W)
+76404167:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(E,N)@Push(E,N)|Push(W,N)@Push(W,N)
+76414792:Move(W)@Move(W)|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Pull(S,S)@Pull(S,S)
+76442208:Move(S)@Move(S)|NoOp@NoOp|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Pull(S,S)@Pull(S,S)
+76462917:Move(W)@Move(W)|NoOp@NoOp|Pull(E,S)@Pull(E,S)|Push(E,N)@Push(E,N)|NoOp@NoOp|Push(N,W)@Push(N,W)|Move(S)@Move(S)
+76482833:Move(W)@Move(W)|NoOp@NoOp|Pull(E,E)@Pull(E,E)|Move(E)@Move(E)|NoOp@NoOp|Push(W,N)@Push(W,N)|Move(S)@Move(S)
+76499583:Push(W,S)@Push(W,S)|NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|Move(E)@Move(E)
+76514458:Pull(N,N)@Pull(N,N)|NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|Move(S)@Move(S)
+76538750:Pull(N,N)@Pull(N,N)|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|Move(E)@Move(E)
+76561708:NoOp@NoOp|Move(E)@Move(E)|Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|Move(S)@Move(S)
+76578042:NoOp@NoOp|Move(E)@Move(E)|Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+76593500:NoOp@NoOp|Move(E)@Move(E)|Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(S)@Move(S)
+76604333:NoOp@NoOp|Move(E)@Move(E)|Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+76616083:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(S)@Move(S)
+76626833:NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+76638750:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Move(S)@Move(S)
+76651083:NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+76662542:NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+76674833:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+76686167:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+76697958:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Move(E)@Move(E)
+76709042:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Move(S)@Move(S)
+76720875:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Push(E,N)@Push(E,N)
+76731958:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Push(N,W)@Push(N,W)
+76743542:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Push(W,N)@Push(W,N)
+76753917:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)
+76764458:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Push(W,N)@Push(W,N)
+76775125:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)
+76785542:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(W,N)@Push(W,N)
+76795833:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Push(N,W)@Push(N,W)
+76805958:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Push(W,N)@Push(W,N)
+76816250:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Push(N,N)@Push(N,N)
+76826000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Push(N,N)@Push(N,N)
+76836208:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|Push(N,N)@Push(N,N)
+76846625:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+76858333:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+76867250:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+76877708:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+76887500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+76897875:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp
+76908125:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp
+76918042:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp
+76927792:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp
+76937583:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp
+76947583:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp
+76957292:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp
+76967792:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+76978208:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+76987208:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp
+76997125:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp
+77006542:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp
+77016500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+59
+#time
+77016500
+#end

@@ -1,0 +1,66 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+DASH
+#actions
+150898625:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp
+150942666:Push(S,E)@Push(S,E)|Pull(W,S)@Pull(W,S)|Move(S)@Move(S)
+151002375:Push(E,S)@Push(E,S)|Pull(S,W)@Pull(S,W)|Move(S)@Move(S)
+151031541:Push(S,S)@Push(S,S)|Pull(S,S)@Pull(S,S)|Move(S)@Move(S)
+151063458:Push(S,S)@Push(S,S)|Pull(S,S)@Pull(S,S)|Move(S)@Move(S)
+151086166:Push(S,S)@Push(S,S)|Pull(W,S)@Pull(W,S)|Move(N)@Move(N)
+151102916:Push(S,E)@Push(S,E)|Push(E,N)@Push(E,N)|Move(W)@Move(W)
+151120041:Push(E,S)@Push(E,S)|Push(N,N)@Push(N,N)|Move(W)@Move(W)
+151141500:Move(W)@Move(W)|Push(N,E)@Push(N,E)|Pull(E,S)@Pull(E,S)
+151155458:Move(S)@Move(S)|Push(E,E)@Push(E,E)|Push(W,N)@Push(W,N)
+151177875:NoOp@NoOp|Push(E,N)@Push(E,N)|Pull(S,S)@Pull(S,S)
+151193541:NoOp@NoOp|Push(N,W)@Push(N,W)|Pull(S,S)@Pull(S,S)
+151211666:NoOp@NoOp|Push(W,N)@Push(W,N)|Pull(S,S)@Pull(S,S)
+151226375:NoOp@NoOp|Push(N,N)@Push(N,N)|Pull(W,S)@Pull(W,S)
+151248750:NoOp@NoOp|Push(N,W)@Push(N,W)|Pull(W,W)@Pull(W,W)
+151270708:NoOp@NoOp|Push(W,N)@Push(W,N)|Pull(N,W)@Pull(N,W)
+151284916:NoOp@NoOp|Push(N,W)@Push(N,W)|Pull(N,N)@Pull(N,N)
+151297875:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+151311125:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+151331958:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,N)@Pull(W,N)
+151346125:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,W)@Pull(W,W)
+151359291:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+151375708:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+151388458:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+151408416:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+151437000:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+26
+#time
+151437000
+#end

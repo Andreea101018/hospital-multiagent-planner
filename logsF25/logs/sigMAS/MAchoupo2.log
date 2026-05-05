@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+99433417:Move(E)|Move(W)
+99594417:Pull(E,N)|Pull(E,S)
+99655625:Push(W,W)|Pull(E,E)
+99753292:Push(W,W)|Pull(N,E)
+99815000:Push(W,S)|Push(S,E)
+99872417:Push(S,W)|Push(E,N)
+100017042:Push(W,W)|Push(N,E)
+100118417:Push(W,W)|Push(E,E)
+100164792:Push(W,W)|Push(E,E)
+100199417:Push(W,W)|Push(E,E)
+100270292:Push(W,W)|Push(E,E)
+100389250:Push(W,W)|Push(E,E)
+100479833:Push(W,W)|Push(E,E)
+100569458:Push(W,W)|Push(E,E)
+100633083:Push(W,W)|Push(E,E)
+100679250:Push(W,W)|Push(E,E)
+100808708:Move(E)|Move(W)
+100883583:Move(E)|Move(W)
+100937917:Move(E)|Move(W)
+100975167:Move(E)|Move(W)
+101003708:Move(N)|Move(S)
+101031625:Move(N)|Move(S)
+101057875:Move(N)|Move(S)
+101084917:Move(N)|Move(S)
+101114208:Move(N)|Move(S)
+101207792:Move(W)|Move(E)
+101269875:Move(N)|Move(S)
+101313708:Move(W)|NoOp
+101356125:Move(W)|NoOp
+101396958:Move(W)|NoOp
+101435792:Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+101435792
+#end

@@ -1,0 +1,156 @@
+#domain
+hospital
+#levelname
+warehouse
+#colors
+red: 0, A, F 
+blue: 1, B, G  
+green: 2, C, H
+cyan: 3, D, I
+lightblue: 4, E, J  
+#initial
++++++++++++++++++++++
++J   0        B     +
++ + + + + + + + + + +
++                  F+
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   A         1     +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    2         D    +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   G          3    +
++ + + + + + + + + + +
++  H     E          +
++ + + + + + + + + + +
++  4           C    +
++ + + + + + + + + + +
++  I                +
++++++++++++++++++++++
+#goal
++++++++++++++++++++++
++                 I +
++ + + + + + + + + + +
++   B           A   +
++ + + + + + + + + + +
++       G           +
++ + + + + + + + + + +
++               H   +
++ + + + + + + + + + +
++    D              +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++           F       +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    C            J +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++                E  +
++++++++++++++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+5049997666:Move(S)@Move(S)|Move(W)|Move(W)|Move(N)|Move(E)
+5050326833:Move(S)@Move(S)|Move(N)|Move(W)|Move(N)|Move(E)
+5050628041:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)|Move(E)
+5050878250:Move(S)@Move(S)|Move(N)|Move(S)|Push(N,N)|Move(E)
+5051573958:Move(S)@Move(S)|Move(N)|Move(S)|Push(N,N)|Move(N)
+5051927208:Move(S)@Move(S)|Move(N)|Move(S)|Push(N,W)|Move(N)
+5052189708:Pull(E,E)@Pull(E,E)|Move(N)|Move(S)|Push(W,W)|Move(E)
+5052380333:Push(W,N)@Push(W,N)|Pull(W,W)|Push(S,E)|Push(W,W)|Push(E,E)
+5052559916:Push(N,N)@Push(N,N)|Push(E,S)|Push(E,E)|Push(W,W)|Push(E,E)
+5052757041:Push(N,E)@Push(N,E)|Push(S,S)|Push(E,E)|Push(W,W)|Push(E,S)
+5052965166:Push(E,E)@Push(E,E)|Push(S,W)|Push(E,E)|Push(W,W)|Push(S,S)
+5053165250:Push(E,E)@Push(E,E)|Push(W,W)|Push(E,E)|Push(W,W)|Push(S,S)
+5053350333:Push(E,E)@Push(E,E)|Push(W,W)|Push(E,E)|Push(W,W)|Push(S,S)
+5053502083:Push(E,E)@Push(E,E)|Push(W,W)|Push(E,N)|Push(W,W)|Push(S,E)
+5053644500:Push(E,E)@Push(E,E)|Push(W,W)|Push(N,N)|Push(W,W)|Push(E,E)
+5053775041:Push(E,E)@Push(E,E)|Push(W,W)|Push(N,E)|Move(E)|Push(E,E)
+5053973333:Push(E,E)@Push(E,E)|Push(W,W)|Push(E,E)|Move(S)|Push(E,E)
+5054263875:Push(E,E)@Push(E,E)|Push(W,W)|Push(E,N)|Move(S)|Push(E,E)
+5054418083:Push(E,E)@Push(E,E)|Push(W,W)|Push(N,N)|Move(S)|Push(E,E)
+5054534750:Push(E,N)@Push(E,N)|Move(S)|Push(N,E)|Move(S)|Move(W)
+5054646625:Push(N,N)@Push(N,N)|Move(S)|Push(E,E)|Move(S)|Move(W)
+5054764083:Push(N,E)@Push(N,E)|Move(S)|Push(E,E)|Move(S)|Move(W)
+5054884000:Move(N)@Move(N)|Move(S)|Push(E,E)|Move(S)|Move(N)
+5054984208:Move(N)@Move(N)|Move(W)|Push(E,N)|Move(S)|Move(N)
+5055100625:Move(E)@Move(E)|Move(W)|Push(N,N)|Move(W)|Move(W)
+5055198333:Move(E)@Move(E)|Move(S)|Push(N,N)|Move(W)|Move(W)
+5055285958:Move(S)@Move(S)|Move(S)|Push(N,N)|Move(W)|Move(W)
+5055385458:Move(S)@Move(S)|Move(S)|Push(N,N)|Move(W)|Move(W)
+5055483583:Move(E)@Move(E)|Move(S)|Push(N,N)|Move(S)|Move(N)
+5055657083:Push(E,S)@Push(E,S)|Move(S)|Push(N,E)|Move(S)|Move(N)
+5055761500:Push(S,S)@Push(S,S)|Move(S)|Move(S)|Move(S)|Move(N)
+5055868458:Push(S,W)@Push(S,W)|Move(S)|Move(S)|Push(S,E)|Move(N)
+5055975916:Push(W,W)@Push(W,W)|Move(S)|Move(S)|Push(E,E)|Move(N)
+5056083791:Push(W,W)@Push(W,W)|Push(E,E)|Move(S)|Push(E,E)|Move(N)
+5056197083:Push(W,W)@Push(W,W)|Push(E,E)|Move(S)|Push(E,E)|Move(W)
+5056341458:Push(W,W)@Push(W,W)|Push(E,E)|Move(S)|Push(E,N)|Move(W)
+5056498916:Push(W,W)@Push(W,W)|Push(E,N)|Move(S)|Push(N,N)|Move(W)
+5056618416:Push(W,S)@Push(W,S)|Push(N,N)|Move(S)|Push(N,E)|Move(W)
+5056783583:Push(S,S)@Push(S,S)|Push(N,N)|Move(S)|Push(E,E)|Move(W)
+5056896500:Push(S,S)@Push(S,S)|Push(N,N)|Move(S)|Push(E,N)|Move(W)
+5057021500:Push(S,S)@Push(S,S)|Push(N,N)|Move(S)|Push(N,N)|Move(N)
+5057200833:Push(S,S)@Push(S,S)|Push(N,N)|Push(S,W)|Push(N,N)|Move(N)
+5057307333:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(N,N)|Move(N)
+5057427125:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(N,E)|Move(N)
+5057668791:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)|Move(N)
+5057831666:Push(S,W)@Push(S,W)|Push(N,N)|Push(W,N)|Push(E,N)|Move(N)
+5057977375:NoOp@NoOp|Push(N,E)|Push(N,N)|Push(N,N)|Move(W)
+5058122708:NoOp@NoOp|NoOp|Push(N,W)|Push(N,N)|Move(W)
+5058329583:NoOp@NoOp|NoOp|Push(W,W)|Push(N,N)|Move(N)
+5058435291:NoOp@NoOp|NoOp|Push(W,W)|Push(N,N)|Move(N)
+5058576250:NoOp@NoOp|NoOp|Push(W,W)|Push(N,N)|Move(N)
+5058694375:NoOp@NoOp|NoOp|Push(W,W)|Push(N,E)|Move(N)
+5058829583:NoOp@NoOp|NoOp|Push(W,W)|Push(E,E)|Move(N)
+5058962750:NoOp@NoOp|NoOp|NoOp|Push(E,E)|Push(N,E)
+5059054083:NoOp@NoOp|NoOp|NoOp|Push(E,E)|Push(E,E)
+5059605500:NoOp@NoOp|NoOp|NoOp|Push(E,E)|Push(E,S)
+5059738166:NoOp@NoOp|NoOp|NoOp|Push(E,E)|Push(S,S)
+5059899916:NoOp@NoOp|NoOp|NoOp|Push(E,N)|Push(S,S)
+5060060166:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Push(S,S)
+5060213416:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Push(S,E)
+5060316708:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Push(E,E)
+5060428833:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Push(E,S)
+5060575625:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Push(S,S)
+5060708625:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Push(S,E)
+5060815166:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Push(E,E)
+5060898291:NoOp@NoOp|NoOp|NoOp|Push(N,E)|Push(E,S)
+5061022458:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+5061125583:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+5061382208:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+5061892958:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)
+5062024208:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+5062115625:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)
+5062206333:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+5062340500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)
+5062480416:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+5062577750:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)
+5062679500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+5062813958:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)
+5062941291:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+5063017666:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+5063092666:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+5063204958:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)
+5063319333:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)
+5063402125:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)
+5063479375:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+5063552416:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)
+#end
+#solved
+true
+#numactions
+86
+#time
+5063552416
+#end

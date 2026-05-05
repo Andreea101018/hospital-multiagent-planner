@@ -1,0 +1,49 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+pacMAn
+#actions
+157381600:Move(S)@Move(S)|Move(W)|Move(E)
+157721000:NoOp@NoOp|Move(W)|Move(E)
+158087200:Push(E,S)@Push(E,S)|Move(W)|Move(E)
+158429500:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+158750300:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+159089900:Push(S,S)@Push(S,S)|Move(S)|Move(N)
+159434500:Move(W)@Move(W)|Move(S)|Move(E)
+159779000:Move(S)@Move(S)|NoOp|Move(N)
+160215400:Move(S)@Move(S)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+9
+#time
+160215400
+#end

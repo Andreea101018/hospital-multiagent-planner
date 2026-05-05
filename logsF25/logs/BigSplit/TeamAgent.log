@@ -1,0 +1,60 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+BigSplit
+#actions
+136435833:NoOp@h: 8|Move(W)@h: 29|Move(S)@h: 20
+136521958:NoOp@h: 8|Push(N,N)@h: 28|NoOp@h: 20
+136622458:NoOp@h: 8|Push(N,N)@h: 27|Move(S)@h: 19
+136700875:Move(E)@h: 7|NoOp@h: 27|Move(W)@h: 18
+136752208:NoOp@h: 7|NoOp@h: 27|Push(W,S)@h: 17
+136821792:NoOp@h: 7|NoOp@h: 27|Push(S,S)@h: 16
+136877625:Push(S,S)@h: 6|NoOp@h: 27|Push(S,S)@h: 15
+136946083:Push(S,E)@h: 5|Push(N,W)@h: 26|Push(S,S)@h: 14
+137019625:Push(E,S)@h: 4|Push(W,W)@h: 25|Push(S,E)@h: 15
+137105458:Push(S,S)@h: 3|Push(W,W)@h: 24|Pull(W,W)@h: 14
+137189208:Push(S,S)@h: 2|Push(W,W)@h: 23|Pull(W,W)@h: 13
+137248167:Push(S,S)@h: 1|Push(W,W)@h: 22|Pull(N,W)@h: 12
+137326042:Push(S,E)@h: 0|Push(W,W)@h: 21|Pull(N,N)@h: 11
+137419833:NoOp@NoOp|Push(W,W)@h: 20|Pull(N,N)@h: 10
+137496292:NoOp@NoOp|Push(W,W)@h: 19|Pull(N,N)@h: 9
+137540958:NoOp@NoOp|Push(W,W)@h: 18|Pull(W,N)@h: 8
+137593667:NoOp@NoOp|Push(W,W)@h: 17|Pull(W,W)@h: 9
+137642458:NoOp@NoOp|Push(W,W)@h: 16|Move(S)@h: 10
+137729917:NoOp@NoOp|NoOp@NoOp|Move(S)@h: 11
+137800208:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+20
+#time
+137800208
+#end

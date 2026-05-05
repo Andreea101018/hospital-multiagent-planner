@@ -1,0 +1,65 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+donkeyK
+#actions
+578747600:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+578809100:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+578837900:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+578874600:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp
+578908800:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+578936300:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+578962800:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+579010100:Push(E,E)@Push(E,E)|Move(E)@Move(E)|Move(E)@Move(E)
+579040300:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Move(E)@Move(E)
+579067500:Push(S,S)@Push(S,S)|Move(N)@Move(N)|Move(N)@Move(N)
+579094100:NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)
+579120300:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+579146000:NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)
+579172200:NoOp@NoOp|Move(W)@Move(W)|Push(E,S)@Push(E,S)
+579199000:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579224600:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579250400:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579278200:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579304300:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579330200:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579356100:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579408600:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+579454900:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+579488200:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+579535200:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+25
+#time
+579535200
+#end

@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+donkeyK
+#actions
+540238100:Move(W)@Move(W)|Move(W)@Move(W)
+540365800:Move(S)@Move(S)|Move(N)@Move(N)
+540421600:Move(W)@Move(W)|Move(W)@Move(W)
+540452400:Move(W)@Move(W)|Move(W)@Move(W)
+540483700:Move(W)@Move(W)|Move(W)@Move(W)
+540509000:Move(W)@Move(W)|Move(W)@Move(W)
+540538300:Move(W)@Move(W)|Move(W)@Move(W)
+540646200:Move(W)@Move(W)|Move(W)@Move(W)
+540688300:Move(W)@Move(W)|Move(W)@Move(W)
+540715900:Move(W)@Move(W)|Move(W)@Move(W)
+540744900:Move(W)@Move(W)|Move(W)@Move(W)
+540773700:Move(W)@Move(W)|Move(W)@Move(W)
+540801700:Move(W)@Move(W)|Move(W)@Move(W)
+540829600:Move(W)@Move(W)|Move(W)@Move(W)
+540857600:Move(W)@Move(W)|Move(W)@Move(W)
+540885600:Move(W)@Move(W)|Move(W)@Move(W)
+540913600:Move(S)@Move(S)|Move(W)@Move(W)
+540942100:Move(S)@Move(S)|Move(W)@Move(W)
+540970900:Move(S)@Move(S)|Move(W)@Move(W)
+541066200:Move(W)@Move(W)|Move(N)@Move(N)
+541107100:Move(W)@Move(W)|Move(N)@Move(N)
+541137700:Move(W)@Move(W)|Move(N)@Move(N)
+541167200:Move(W)@Move(W)|Move(N)@Move(N)
+541224400:Move(W)@Move(W)|Move(E)@Move(E)
+541269500:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+541312900:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+541440300:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+541490900:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+541520900:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+541567800:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+541596200:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+541622400:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+541649300:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+541745300:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+541776200:Move(S)@Move(S)|Move(N)@Move(N)
+541828900:Move(E)@Move(E)|Move(N)@Move(N)
+541856400:Move(E)@Move(E)|Move(N)@Move(N)
+541882500:Move(E)@Move(E)|Move(E)@Move(E)
+541908400:Move(S)@Move(S)|Move(E)@Move(E)
+541936900:Move(S)@Move(S)|Move(E)@Move(E)
+541962800:Move(S)@Move(S)|Move(E)@Move(E)
+541990400:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+542018000:Pull(E,N)@Pull(E,N)|Move(E)@Move(E)
+542052700:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+542079700:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+542106200:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+542132000:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+542158300:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+542184000:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+542210500:NoOp@NoOp|Move(E)@Move(E)
+542236600:NoOp@NoOp|Move(E)@Move(E)
+542262400:NoOp@NoOp|Move(E)@Move(E)
+542288200:NoOp@NoOp|Move(E)@Move(E)
+542313700:NoOp@NoOp|Move(N)@Move(N)
+542347000:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+542374100:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+542406200:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+542438400:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+542470100:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+542497000:NoOp@NoOp|Push(S,W)@Push(S,W)
+542523000:NoOp@NoOp|Push(W,W)@Push(W,W)
+542548900:NoOp@NoOp|Push(W,W)@Push(W,W)
+542574900:NoOp@NoOp|Push(W,W)@Push(W,W)
+542600700:NoOp@NoOp|Push(W,W)@Push(W,W)
+542626500:NoOp@NoOp|Push(W,W)@Push(W,W)
+542652300:NoOp@NoOp|Push(W,W)@Push(W,W)
+542678700:NoOp@NoOp|Push(W,W)@Push(W,W)
+542704500:NoOp@NoOp|Push(W,W)@Push(W,W)
+542730300:NoOp@NoOp|Push(W,W)@Push(W,W)
+542756000:NoOp@NoOp|Push(W,W)@Push(W,W)
+542781700:NoOp@NoOp|Push(W,W)@Push(W,W)
+542807900:NoOp@NoOp|Push(W,W)@Push(W,W)
+542834500:NoOp@NoOp|Push(W,W)@Push(W,W)
+542871600:NoOp@NoOp|Push(W,S)@Push(W,S)
+542908600:NoOp@NoOp|Push(S,S)@Push(S,S)
+542954700:NoOp@NoOp|Push(S,S)@Push(S,S)
+542986900:NoOp@NoOp|Push(S,W)@Push(S,W)
+543013900:NoOp@NoOp|Push(W,W)@Push(W,W)
+543040000:NoOp@NoOp|Push(W,W)@Push(W,W)
+543078700:NoOp@NoOp|Push(W,W)@Push(W,W)
+543110100:NoOp@NoOp|Push(W,W)@Push(W,W)
+543136400:NoOp@NoOp|Push(W,N)@Push(W,N)
+543161700:NoOp@NoOp|Push(N,W)@Push(N,W)
+543193800:NoOp@NoOp|Push(W,N)@Push(W,N)
+543226100:NoOp@NoOp|Push(N,N)@Push(N,N)
+543267300:NoOp@NoOp|Push(N,N)@Push(N,N)
+543298300:NoOp@NoOp|Push(N,N)@Push(N,N)
+543341800:NoOp@NoOp|Push(N,N)@Push(N,N)
+543369700:NoOp@NoOp|Push(N,N)@Push(N,N)
+543396200:NoOp@NoOp|Push(N,N)@Push(N,N)
+543422100:NoOp@NoOp|Push(N,N)@Push(N,N)
+543448200:NoOp@NoOp|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+543448200
+#end

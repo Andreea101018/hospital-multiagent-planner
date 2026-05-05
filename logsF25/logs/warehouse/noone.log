@@ -1,0 +1,50 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+warehouse
+#actions
+223756791:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+223805291:Push(S,W)@Push(S,W)|Move(W)@Move(W)|Move(E)@Move(E)
+223832916:Pull(S,E)@Pull(S,E)|Move(W)@Move(W)|Move(E)@Move(E)
+223856916:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+223878041:Pull(W,S)@Pull(W,S)|Move(W)@Move(W)|Move(E)@Move(E)
+223898083:Push(E,S)@Push(E,S)|Move(S)@Move(S)|Move(N)@Move(N)
+223914083:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(E)@Move(E)
+223928166:Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+223941500:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+223954500:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+10
+#time
+223954500
+#end

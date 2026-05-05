@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+warehouse
+#actions
+50919833:Move(W)@Move(W)|Move(W)@Move(W)
+50974583:Move(W)@Move(W)|Move(N)@Move(N)
+51002958:Move(W)@Move(W)|Move(W)@Move(W)
+51028708:Move(S)@Move(S)|Move(W)@Move(W)
+51055208:Move(W)@Move(W)|Move(W)@Move(W)
+51071041:Move(W)@Move(W)|Move(W)@Move(W)
+51091125:Move(W)@Move(W)|Move(W)@Move(W)
+51108833:Move(W)@Move(W)|Move(W)@Move(W)
+51122500:Move(W)@Move(W)|Move(W)@Move(W)
+51134750:Move(W)@Move(W)|Move(W)@Move(W)
+51147166:Move(W)@Move(W)|Move(W)@Move(W)
+51159333:Move(W)@Move(W)|Move(W)@Move(W)
+51182416:Move(W)@Move(W)|Move(W)@Move(W)
+51198666:Move(W)@Move(W)|Move(W)@Move(W)
+51211041:Move(W)@Move(W)|Move(W)@Move(W)
+51222916:Move(W)@Move(W)|Move(W)@Move(W)
+51239708:Move(S)@Move(S)|Move(W)@Move(W)
+51253625:Move(S)@Move(S)|Move(W)@Move(W)
+51266458:Move(S)@Move(S)|Move(W)@Move(W)
+51278541:Move(W)@Move(W)|Move(N)@Move(N)
+51290458:Move(W)@Move(W)|Move(N)@Move(N)
+51302625:Move(W)@Move(W)|Move(N)@Move(N)
+51314125:Move(W)@Move(W)|Move(N)@Move(N)
+51325791:Move(W)@Move(W)|Move(E)@Move(E)
+51339666:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51358000:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+51370583:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51382291:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51394958:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51406958:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+51419083:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+51431500:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+51443750:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+51455375:Move(E)@Move(E)|Move(N)@Move(N)
+51466958:Move(E)@Move(E)|Move(N)@Move(N)
+51478375:Move(E)@Move(E)|Move(N)@Move(N)
+51491666:Move(S)@Move(S)|Move(E)@Move(E)
+51504041:Move(S)@Move(S)|Move(E)@Move(E)
+51515750:Move(S)@Move(S)|Move(N)@Move(N)
+51529541:Pull(S,W)@Pull(S,W)|Move(E)@Move(E)
+51551666:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51564541:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51576041:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51588083:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+51600166:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+51618583:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+51637041:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+51656916:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+51669375:NoOp@NoOp|Move(E)@Move(E)
+51680833:NoOp@NoOp|Move(E)@Move(E)
+51692333:NoOp@NoOp|Move(E)@Move(E)
+51703666:NoOp@NoOp|Move(E)@Move(E)
+51714708:NoOp@NoOp|Move(E)@Move(E)
+51728250:NoOp@NoOp|Move(N)@Move(N)
+51748625:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+51767916:NoOp@NoOp|Pull(E,S)@Pull(E,S)
+51781958:NoOp@NoOp|Push(W,S)@Push(W,S)
+51795750:NoOp@NoOp|Push(S,W)@Push(S,W)
+51807333:NoOp@NoOp|Push(W,W)@Push(W,W)
+51818666:NoOp@NoOp|Push(W,W)@Push(W,W)
+51830333:NoOp@NoOp|Push(W,W)@Push(W,W)
+51842375:NoOp@NoOp|Push(W,W)@Push(W,W)
+51854416:NoOp@NoOp|Push(W,W)@Push(W,W)
+51865708:NoOp@NoOp|Push(W,W)@Push(W,W)
+51878083:NoOp@NoOp|Push(W,W)@Push(W,W)
+51890791:NoOp@NoOp|Push(W,W)@Push(W,W)
+51902250:NoOp@NoOp|Push(W,W)@Push(W,W)
+51913708:NoOp@NoOp|Push(W,W)@Push(W,W)
+51924625:NoOp@NoOp|Push(W,W)@Push(W,W)
+51935791:NoOp@NoOp|Push(W,W)@Push(W,W)
+51946958:NoOp@NoOp|Push(W,W)@Push(W,W)
+51958541:NoOp@NoOp|Push(W,W)@Push(W,W)
+51969541:NoOp@NoOp|Push(W,W)@Push(W,W)
+51981875:NoOp@NoOp|Push(W,S)@Push(W,S)
+51993333:NoOp@NoOp|Push(S,S)@Push(S,S)
+52004083:NoOp@NoOp|Push(S,S)@Push(S,S)
+52015666:NoOp@NoOp|Push(S,W)@Push(S,W)
+52026500:NoOp@NoOp|Push(W,W)@Push(W,W)
+52037875:NoOp@NoOp|Push(W,W)@Push(W,W)
+52049291:NoOp@NoOp|Push(W,W)@Push(W,W)
+52060291:NoOp@NoOp|Push(W,W)@Push(W,W)
+52072208:NoOp@NoOp|Push(W,N)@Push(W,N)
+52084541:NoOp@NoOp|Push(N,N)@Push(N,N)
+52095833:NoOp@NoOp|Push(N,N)@Push(N,N)
+52107041:NoOp@NoOp|Push(N,W)@Push(N,W)
+52118500:NoOp@NoOp|Push(W,N)@Push(W,N)
+52129875:NoOp@NoOp|Push(N,N)@Push(N,N)
+52140791:NoOp@NoOp|Push(N,N)@Push(N,N)
+52152125:NoOp@NoOp|Push(N,N)@Push(N,N)
+52164166:NoOp@NoOp|Push(N,N)@Push(N,N)
+52176208:NoOp@NoOp|Push(N,N)@Push(N,N)
+52187791:NoOp@NoOp|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+52187791
+#end

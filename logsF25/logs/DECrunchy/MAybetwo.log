@@ -1,0 +1,81 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+DECrunchy
+#actions
+65739039:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+66113376:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+66154149:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+66183409:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+66408766:NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)
+66565374:NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)
+66725164:NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)
+66822681:NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)
+66910876:NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)
+66931645:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+66953522:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+66973456:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+66993980:Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)
+67015277:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+67036771:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+67058583:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Move(E)@Move(E)
+67086950:Push(E,S)@Push(E,S)|Move(S)@Move(S)|Move(E)@Move(E)
+67113101:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+67134830:NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)
+67154278:NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)
+67177940:NoOp@NoOp|Move(N)@Move(N)|Move(W)@Move(W)
+67197925:NoOp@NoOp|Move(N)@Move(N)|Move(N)@Move(N)
+67217598:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+67236626:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+67255902:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+67273799:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+67292011:NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)
+67312735:NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+67332992:NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+67352118:NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)
+67372550:NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)
+67391393:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+67410849:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+67434717:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+67454499:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+67477334:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+67505478:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+67523979:NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+67543450:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(S)@Move(S)
+67563459:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+67582161:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+#end
+#solved
+true
+#numactions
+41
+#time
+67582161
+#end

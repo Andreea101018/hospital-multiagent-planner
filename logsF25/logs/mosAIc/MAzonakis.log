@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+mosAIc
+#actions
+93898291:Move(S)@Move(S)|Move(N)
+93957958:Move(W)@Move(W)|Move(W)
+93995208:Move(W)@Move(W)|Move(W)
+94067125:Move(W)@Move(W)|Move(W)
+94122833:Move(W)@Move(W)|Move(W)
+94168416:Move(W)@Move(W)|Move(W)
+94215916:Move(W)@Move(W)|Move(W)
+94256125:Move(W)@Move(W)|Move(W)
+94281583:Move(W)@Move(W)|Move(W)
+94315583:Move(W)@Move(W)|Move(W)
+94348666:Move(W)@Move(W)|Move(W)
+94380375:Move(W)@Move(W)|Move(W)
+94427166:Move(W)@Move(W)|Move(W)
+94457208:Move(W)@Move(W)|Move(W)
+94485250:Move(W)@Move(W)|Move(W)
+94515041:Move(W)@Move(W)|Move(W)
+94545000:Move(S)@Move(S)|Move(W)
+94587041:Move(S)@Move(S)|Move(W)
+94619458:Move(S)@Move(S)|Move(W)
+94730375:Move(W)@Move(W)|Move(N)
+94794625:Move(W)@Move(W)|Move(N)
+94826666:Move(W)@Move(W)|Move(N)
+94864041:Move(W)@Move(W)|Move(N)
+94888500:Move(W)@Move(W)|Move(E)
+94939250:Push(N,N)@Push(N,N)|Move(E)
+94985458:Push(W,N)@Push(W,N)|Move(E)
+95015041:Push(N,N)@Push(N,N)|Move(E)
+95042791:Push(E,N)@Push(E,N)|Move(E)
+95099875:Push(N,N)@Push(N,N)|Move(E)
+95184708:Push(N,W)@Push(N,W)|Move(E)
+95230208:Push(W,N)@Push(W,N)|Move(E)
+95318833:Push(N,N)@Push(N,N)|Move(E)
+95368666:Move(S)@Move(S)|Move(E)
+95488333:Pull(N,N)@Pull(N,N)|Move(N)
+95539625:Pull(E,N)@Pull(E,N)|Move(N)
+95603666:Push(W,W)@Push(W,W)|Move(N)
+95668666:Push(N,W)@Push(N,W)|Move(N)
+95742916:Push(W,W)@Push(W,W)|Move(E)
+95817916:Push(S,W)@Push(S,W)|Move(E)
+95957416:Push(W,W)@Push(W,W)|Move(E)
+96052083:Push(W,W)@Push(W,W)|Move(E)
+96114208:Move(N)@Move(N)|Move(E)
+96201208:Pull(S,W)@Pull(S,W)|Move(E)
+96264416:Push(N,W)@Push(N,W)|Move(E)
+96428250:NoOp@NoOp|Move(E)
+96499208:NoOp@NoOp|Move(E)
+96547583:NoOp@NoOp|Move(E)
+96589083:NoOp@NoOp|Move(E)
+96618166:NoOp@NoOp|Move(E)
+96651166:NoOp@NoOp|Move(E)
+96681583:NoOp@NoOp|Move(E)
+96712041:NoOp@NoOp|Move(E)
+96742625:NoOp@NoOp|Move(E)
+96771875:NoOp@NoOp|Move(N)
+96802208:NoOp@NoOp|Pull(S,S)
+96832958:NoOp@NoOp|Pull(E,S)
+96871458:NoOp@NoOp|Push(W,W)
+96909291:NoOp@NoOp|Push(W,W)
+96954083:NoOp@NoOp|Push(W,W)
+96995250:NoOp@NoOp|Push(W,W)
+97046708:NoOp@NoOp|Push(W,W)
+97075166:NoOp@NoOp|Push(W,W)
+97126583:NoOp@NoOp|Push(W,W)
+97180750:NoOp@NoOp|Push(W,W)
+97218583:NoOp@NoOp|Push(W,W)
+97278208:NoOp@NoOp|Push(W,W)
+97322083:NoOp@NoOp|Push(W,W)
+97361333:NoOp@NoOp|Push(W,W)
+97403375:NoOp@NoOp|Push(W,W)
+97444208:NoOp@NoOp|Push(W,W)
+97473791:NoOp@NoOp|Push(W,W)
+97504375:NoOp@NoOp|Push(W,W)
+97551791:NoOp@NoOp|Push(W,S)
+97596833:NoOp@NoOp|Push(S,S)
+97650125:NoOp@NoOp|Push(S,S)
+97685041:NoOp@NoOp|Push(S,S)
+97730541:NoOp@NoOp|Push(S,W)
+97757875:NoOp@NoOp|Push(W,W)
+97801083:NoOp@NoOp|Push(W,W)
+97837041:NoOp@NoOp|Push(W,W)
+97864500:NoOp@NoOp|Push(W,W)
+97903916:NoOp@NoOp|Push(W,W)
+97939625:NoOp@NoOp|Push(W,N)
+97973291:NoOp@NoOp|Push(N,N)
+98004125:NoOp@NoOp|Push(N,N)
+98035750:NoOp@NoOp|Push(N,N)
+98077333:NoOp@NoOp|Push(N,N)
+98110625:NoOp@NoOp|Push(N,N)
+98140666:NoOp@NoOp|Push(N,N)
+98173750:NoOp@NoOp|Push(N,N)
+98208375:NoOp@NoOp|Push(N,N)
+98250666:NoOp@NoOp|Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+98250666
+#end

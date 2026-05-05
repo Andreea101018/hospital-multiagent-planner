@@ -1,0 +1,172 @@
+#domain
+hospital
+#levelname
+warehouse
+#colors
+red: 0, A, F 
+blue: 1, B, G  
+green: 2, C, H
+cyan: 3, D, I
+lightblue: 4, E, J  
+#initial
++++++++++++++++++++++
++J   0        B     +
++ + + + + + + + + + +
++                  F+
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   A         1     +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    2         D    +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   G          3    +
++ + + + + + + + + + +
++  H     E          +
++ + + + + + + + + + +
++  4           C    +
++ + + + + + + + + + +
++  I                +
++++++++++++++++++++++
+#goal
++++++++++++++++++++++
++                 I +
++ + + + + + + + + + +
++   B           A   +
++ + + + + + + + + + +
++       G           +
++ + + + + + + + + + +
++               H   +
++ + + + + + + + + + +
++    D              +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++           F       +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    C            J +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++                E  +
++++++++++++++++++++++
+#end
+#clientname
+DECrunchy
+#actions
+9945715315:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+9945973895:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+9946056820:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+9946078182:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Push(N,W)@Push(N,W)|Move(N)@Move(N)
+9946173134:Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946183588:Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946200436:Pull(E,E)@Pull(E,E)|Move(N)@Move(N)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946219705:Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946305892:Push(N,N)@Push(N,N)|Push(W,S)@Push(W,S)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946316005:Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946325189:Push(N,N)@Push(N,N)|Push(S,W)@Push(S,W)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946333883:Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946342554:Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+9946355164:Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(W,N)@Push(W,N)|Move(N)@Move(N)
+9946364399:Pull(N,W)@Pull(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946373383:Pull(N,N)@Pull(N,N)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946381803:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946389821:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946397304:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946404774:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946413214:Push(S,E)@Push(S,E)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946421144:Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+9946428927:Push(E,E)@Push(E,E)|Move(E)@Move(E)|Move(E)@Move(E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)
+9946436970:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+9946444753:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+9946452778:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Pull(W,W)@Pull(W,W)|Move(S)@Move(S)|Move(N)@Move(N)
+9946461046:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Pull(S,W)@Pull(S,W)|Move(S)@Move(S)|Move(N)@Move(N)
+9946469321:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Push(N,W)@Push(N,W)|Move(S)@Move(S)|Pull(S,S)@Pull(S,S)
+9946477652:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Pull(S,S)@Pull(S,S)
+9946485842:Move(N)@Move(N)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Push(N,E)@Push(N,E)
+9946493715:Move(N)@Move(N)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Push(E,E)@Push(E,E)
+9946501645:Move(E)@Move(E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Push(E,S)@Push(E,S)
+9946509924:Move(E)@Move(E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)
+9946517822:Move(E)@Move(E)|Move(S)@Move(S)|Push(W,N)@Push(W,N)|Move(S)@Move(S)|Push(S,E)@Push(S,E)
+9946525727:Move(E)@Move(E)|Move(S)@Move(S)|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Push(E,E)@Push(E,E)
+9946533752:Move(S)@Move(S)|Move(W)@Move(W)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+9946542044:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+9946554644:Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)|Push(W,N)@Push(W,N)|Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)
+9946564183:Push(S,S)@Push(S,S)|Push(W,N)@Push(W,N)|Pull(W,S)@Pull(W,S)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+9946573002:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)
+9946581891:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+9946589893:NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp
+9946597591:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp
+9946605188:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp
+9946613926:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp
+9946621569:NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp
+9946628818:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+9946636475:NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp
+9946644930:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Pull(W,S)@Pull(W,S)|Push(E,E)@Push(E,E)
+9946653601:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+9946662020:Push(S,S)@Push(S,S)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+9946670260:Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)
+9946678535:Push(S,S)@Push(S,S)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+9946687409:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+9946695652:Push(S,W)@Push(S,W)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+9946704133:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(E,S)@Push(E,S)
+9946712536:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946720875:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946729204:Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946737720:Push(W,W)@Push(W,W)|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946745623:Push(W,W)@Push(W,W)|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946753605:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946763635:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946771480:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946779486:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp
+9946787281:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp
+9946795119:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+9946802552:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+9946810261:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+9946817783:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+9946825148:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+9946832480:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+9946839961:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|Push(S,S)@Push(S,S)
+9946847842:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+9946855911:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|Pull(E,N)@Pull(E,N)|NoOp@NoOp
+9946863734:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+9946871730:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+9946879451:NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|Push(W,N)@Push(W,N)|NoOp@NoOp
+9946887218:NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|NoOp@NoOp
+9946895094:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|Push(N,N)@Push(N,N)|NoOp@NoOp
+9946902837:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+9946909280:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(S,S)@Push(S,S)
+9946917100:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(S,E)@Push(S,E)
+9946924973:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|Move(W)@Move(W)
+9946932842:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+9946940288:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+9946947846:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+9946955115:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+9946962494:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+9946969759:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+9946977398:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+9946985008:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+9946992444:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)
+9946999991:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+9947007549:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+9947015170:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+9947022605:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+9947030620:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+9947037924:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+9947045336:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+9947052681:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+9947059948:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)
+#end
+#solved
+true
+#numactions
+102
+#time
+9947059948
+#end

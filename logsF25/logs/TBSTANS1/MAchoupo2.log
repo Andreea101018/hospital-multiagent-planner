@@ -1,0 +1,109 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+TBSTANS1
+#actions
+65179666:Move(E)@Move(E)|Move(E)@Move(E)
+65268791:Pull(N,N)@Pull(N,N)|Move(W)@Move(W)
+65373916:Push(S,W)@Push(S,W)|NoOp
+65472666:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+65560375:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+65638416:Push(W,S)@Push(W,S)|Move(E)@Move(E)
+65744208:Push(S,W)@Push(S,W)|Pull(W,S)@Pull(W,S)
+65815208:Push(W,W)@Push(W,W)|Push(E,S)@Push(E,S)
+65878083:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+65942291:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+66006000:Push(W,W)@Push(W,W)|NoOp
+66064625:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+66126958:Push(W,W)@Push(W,W)|NoOp
+66178875:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+66276250:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+66343791:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+66403000:Move(E)@Move(E)|Move(S)@Move(S)
+66464750:Move(N)@Move(N)|Move(E)@Move(E)
+66502125:Move(S)@Move(S)|Pull(W,N)@Pull(W,N)
+66559958:Move(E)@Move(E)|Push(E,E)@Push(E,E)
+66618166:NoOp|Push(E,E)@Push(E,E)
+66667416:Move(N)@Move(N)|Push(E,N)@Push(E,N)
+66724166:Move(N)@Move(N)|Push(N,E)@Push(N,E)
+66758458:Move(W)@Move(W)|Push(E,E)@Push(E,E)
+66818041:NoOp|Push(E,E)@Push(E,E)
+66901125:Move(S)@Move(S)|Push(E,E)@Push(E,E)
+66945875:NoOp|Push(E,E)@Push(E,E)
+67003875:NoOp|Push(E,E)@Push(E,E)
+67056666:Move(E)@Move(E)|Push(E,E)@Push(E,E)
+67103500:Move(W)@Move(W)|Push(E,E)@Push(E,E)
+67170041:Move(S)@Move(S)|Push(E,E)@Push(E,E)
+67247083:NoOp|Push(E,E)@Push(E,E)
+67305291:Move(N)@Move(N)|Push(E,E)@Push(E,E)
+67344416:Move(E)@Move(E)|Move(W)@Move(W)
+67409291:Move(S)@Move(S)|Move(W)@Move(W)
+67441833:Move(E)@Move(E)|Move(E)@Move(E)
+67473833:Move(E)@Move(E)|Move(S)@Move(S)
+67514666:Move(N)@Move(N)|Move(S)@Move(S)
+67570666:Move(N)@Move(N)|Move(S)@Move(S)
+67625875:Move(N)@Move(N)|Move(W)@Move(W)
+67657916:Move(N)@Move(N)|NoOp
+67688791:Move(N)@Move(N)|Move(N)@Move(N)
+67728833:Move(N)@Move(N)|Move(E)@Move(E)
+67759125:Move(W)@Move(W)|Move(W)@Move(W)
+67793416:Move(W)@Move(W)|Move(N)@Move(N)
+67828000:Move(W)@Move(W)|Move(S)@Move(S)
+67868000:Move(W)@Move(W)|NoOp
+67923541:Move(W)@Move(W)|Move(N)@Move(N)
+67956500:NoOp|Move(N)@Move(N)
+67987541:NoOp|Move(W)@Move(W)
+68029916:NoOp|Move(W)@Move(W)
+68062250:NoOp|Move(S)@Move(S)
+68093625:NoOp|Move(S)@Move(S)
+68126166:NoOp|Move(S)@Move(S)
+68159750:NoOp|Move(S)@Move(S)
+68191916:NoOp|Move(S)@Move(S)
+68223208:NoOp|Move(E)@Move(E)
+68319166:NoOp|Move(S)@Move(S)
+#end
+#solved
+true
+#numactions
+58
+#time
+68319166
+#end

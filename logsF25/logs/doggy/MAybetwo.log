@@ -1,0 +1,66 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+doggy
+#actions
+242985600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+243165200:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+243274500:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+243315900:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+243426500:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+243459000:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp
+243578100:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+243691700:Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)
+243722200:NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+243836900:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+243864800:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+243890100:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+243915400:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+243940100:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+243964600:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+243989300:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+244018400:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+244043100:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+244067600:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+244114000:Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp
+244161000:Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp
+244190600:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp
+244220900:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+244251000:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+244276800:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+244301800:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+26
+#time
+244301800
+#end

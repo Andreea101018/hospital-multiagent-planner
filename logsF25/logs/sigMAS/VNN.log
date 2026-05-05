@@ -1,0 +1,116 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+222087209:Move(S)|Move(E)|Move(E)|NoOp
+222153375:Move(S)|Move(N)|Move(S)|NoOp
+222248834:Move(E)|Move(N)|Move(S)|NoOp
+222311167:Move(S)|Move(N)|Move(S)|NoOp
+222340917:Move(E)|Move(E)|Move(E)|NoOp
+222371125:Move(E)|Move(E)|Move(E)|NoOp
+222411084:Move(S)|Move(E)|Move(E)|Move(E)
+222454709:Move(E)|Move(E)|Move(E)|Move(N)
+222525459:Move(E)|Move(E)|Move(E)|Move(N)
+222578459:Move(E)|Move(E)|Move(E)|Move(E)
+222614459:Move(E)|Move(E)|Move(E)|Move(N)
+222643334:Move(E)|Move(E)|Move(E)|Move(N)
+222680625:Move(E)|Move(E)|Move(E)|Move(E)
+222721125:Move(E)|Move(E)|Move(E)|Move(E)
+222760292:Move(E)|Move(E)|Move(E)|Move(E)
+222801334:Move(E)|Move(E)|Move(E)|Move(E)
+222838917:Move(E)|Move(E)|Move(E)|Move(E)
+222877917:Move(E)|Move(E)|Move(E)|Move(E)
+222903417:Move(E)|Move(E)|Move(E)|Move(E)
+222957459:Move(E)|Move(E)|Move(E)|Move(E)
+222994542:Move(E)|Move(E)|Move(E)|Move(E)
+223028292:Move(E)|Pull(W,N)|Pull(E,S)|Move(E)
+223063542:Move(E)|Pull(W,W)|Push(W,W)|Move(E)
+223096417:Move(S)|Pull(W,W)|Push(W,W)|Move(E)
+223137709:Move(S)|Pull(W,W)|Push(W,W)|Move(E)
+223164709:Move(S)|Pull(W,W)|Push(W,W)|Move(E)
+223204000:Pull(S,E)|Pull(S,W)|Push(W,W)|Move(E)
+223242542:Push(N,N)|Push(N,W)|Push(W,W)|Move(E)
+223289625:Push(N,N)|Push(W,W)|Push(W,W)|Move(E)
+223320459:Push(N,N)|Push(W,W)|Push(W,W)|Move(N)
+223348584:Push(N,N)|Push(W,W)|Push(W,W)|Move(N)
+223375500:Push(N,N)|Push(W,W)|Push(W,W)|Move(N)
+223411084:Push(N,N)|Push(W,W)|Push(W,W)|Pull(E,E)
+223453167:Push(N,N)|Push(W,W)|Push(W,W)|Push(W,S)
+223489959:Push(N,N)|Push(W,W)|Push(W,W)|Push(S,S)
+223527500:Push(N,W)|Push(W,W)|Push(W,W)|Push(S,S)
+223680375:Push(W,W)|Push(W,W)|Push(W,W)|Push(S,S)
+223779292:Push(W,W)|Push(W,W)|Push(W,W)|Push(S,S)
+223837042:Push(W,W)|Push(W,S)|Push(W,W)|Push(S,S)
+223882209:Push(W,W)|Push(S,W)|Push(W,N)|Push(S,S)
+223932709:Push(W,W)|Push(W,S)|Push(N,N)|Push(S,S)
+223964042:Push(W,W)|Push(S,S)|Push(N,N)|Push(S,W)
+224007250:Push(W,W)|Push(S,E)|Push(N,E)|Push(W,W)
+224040000:Push(W,W)|NoOp|NoOp|Push(W,W)
+224150792:Push(W,W)|NoOp|NoOp|Push(W,W)
+224213709:Push(W,W)|NoOp|NoOp|Push(W,W)
+224269459:Push(W,W)|NoOp|NoOp|Push(W,W)
+224327292:Push(W,W)|NoOp|NoOp|Push(W,W)
+224368500:Push(W,W)|NoOp|NoOp|Push(W,W)
+224457834:Push(W,W)|NoOp|NoOp|Push(W,W)
+224573334:Push(W,W)|NoOp|NoOp|Push(W,W)
+224649542:Push(W,W)|NoOp|NoOp|Push(W,W)
+224716167:Push(W,S)|NoOp|NoOp|Push(W,W)
+224785000:NoOp|NoOp|NoOp|Push(W,W)
+224885459:NoOp|NoOp|NoOp|Push(W,W)
+224960500:NoOp|NoOp|NoOp|Push(W,W)
+224998334:NoOp|NoOp|NoOp|Push(W,W)
+225036834:NoOp|NoOp|NoOp|Push(W,W)
+225095209:NoOp|NoOp|NoOp|Push(W,N)
+#end
+#solved
+true
+#numactions
+59
+#time
+225095209
+#end

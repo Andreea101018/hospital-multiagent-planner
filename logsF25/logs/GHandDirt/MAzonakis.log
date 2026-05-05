@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+488894125:Move(S)@Move(S)|Move(N)
+489234000:Move(W)@Move(W)|Move(W)
+489457834:Move(W)@Move(W)|Move(W)
+489629709:Move(W)@Move(W)|Move(W)
+489932917:Move(W)@Move(W)|Move(W)
+490124125:Move(W)@Move(W)|Move(W)
+490216375:Move(W)@Move(W)|Move(W)
+490545375:Move(W)@Move(W)|Move(W)
+490645625:Move(W)@Move(W)|Move(W)
+490877084:Move(W)@Move(W)|Move(W)
+491079875:Move(W)@Move(W)|Move(W)
+491188209:Move(W)@Move(W)|Move(W)
+491275959:Move(W)@Move(W)|Move(W)
+491371625:Move(W)@Move(W)|Move(W)
+491479459:Move(W)@Move(W)|Move(W)
+491565750:Move(W)@Move(W)|Move(W)
+491660875:Move(S)@Move(S)|Move(W)
+491750084:Move(S)@Move(S)|Move(W)
+491838334:Move(S)@Move(S)|Move(W)
+491938417:Move(W)@Move(W)|Move(N)
+492057375:Move(W)@Move(W)|Move(N)
+492165375:Move(W)@Move(W)|Move(N)
+492245500:Move(W)@Move(W)|Move(N)
+492329459:Move(W)@Move(W)|Move(E)
+492415250:Push(N,N)@Push(N,N)|Move(E)
+492540667:Push(N,N)@Push(N,N)|Move(E)
+492668667:Push(N,N)@Push(N,N)|Move(E)
+492828084:Push(N,N)@Push(N,N)|Move(E)
+492909042:Push(N,N)@Push(N,N)|Move(E)
+493017584:Push(N,W)@Push(N,W)|Move(E)
+498580084:Push(W,W)@Push(W,W)|Move(E)
+498782292:Push(W,W)@Push(W,W)|Move(E)
+499193417:Move(S)@Move(S)|Move(E)
+499288459:Move(E)@Move(E)|Move(N)
+499391375:Move(S)@Move(S)|Move(N)
+499626084:Move(S)@Move(S)|Move(N)
+499772542:Move(S)@Move(S)|Move(N)
+499918459:Pull(N,N)@Pull(N,N)|Move(E)
+500077625:Pull(N,N)@Pull(N,N)|Move(E)
+500201750:Pull(N,N)@Pull(N,N)|Move(E)
+500312667:Pull(N,N)@Pull(N,N)|Move(E)
+500401709:Push(S,W)@Push(S,W)|Move(E)
+500503792:Push(W,W)@Push(W,W)|Move(E)
+500643375:Push(W,W)@Push(W,W)|Move(E)
+500759709:Push(N,W)@Push(N,W)|Move(E)
+500928792:Push(W,W)@Push(W,W)|Move(E)
+501022375:Push(S,W)@Push(S,W)|Move(E)
+501162792:NoOp@NoOp|Move(E)
+501429917:NoOp@NoOp|Move(E)
+501891000:NoOp@NoOp|Move(E)
+502120459:NoOp@NoOp|Move(E)
+502378834:NoOp@NoOp|Move(E)
+502530375:NoOp@NoOp|Move(E)
+504326792:NoOp@NoOp|Move(N)
+504572709:NoOp@NoOp|Pull(S,S)
+505061459:NoOp@NoOp|Pull(S,S)
+505259625:NoOp@NoOp|Push(N,W)
+505669875:NoOp@NoOp|Push(W,S)
+505906750:NoOp@NoOp|Push(S,W)
+506012000:NoOp@NoOp|Push(W,W)
+506114292:NoOp@NoOp|Push(W,W)
+506193209:NoOp@NoOp|Push(W,W)
+506269959:NoOp@NoOp|Push(W,W)
+506461042:NoOp@NoOp|Push(W,W)
+506571875:NoOp@NoOp|Push(W,W)
+506654959:NoOp@NoOp|Push(W,W)
+506757334:NoOp@NoOp|Push(W,W)
+506834084:NoOp@NoOp|Push(W,W)
+506910250:NoOp@NoOp|Push(W,W)
+507030292:NoOp@NoOp|Push(W,W)
+507326250:NoOp@NoOp|Push(W,W)
+507532792:NoOp@NoOp|Push(W,W)
+507871625:NoOp@NoOp|Push(W,W)
+508193542:NoOp@NoOp|Push(W,S)
+508569917:NoOp@NoOp|Push(S,S)
+508703167:NoOp@NoOp|Push(S,S)
+508796250:NoOp@NoOp|Push(S,W)
+508874000:NoOp@NoOp|Push(W,W)
+508996125:NoOp@NoOp|Push(W,W)
+509112709:NoOp@NoOp|Push(W,W)
+509192667:NoOp@NoOp|Push(W,W)
+509292584:NoOp@NoOp|Push(W,N)
+509369625:NoOp@NoOp|Push(N,N)
+509440584:NoOp@NoOp|Push(N,N)
+509510792:NoOp@NoOp|Push(N,N)
+509602334:NoOp@NoOp|Push(N,N)
+509673375:NoOp@NoOp|Push(N,N)
+509752167:NoOp@NoOp|Push(N,N)
+509822959:NoOp@NoOp|Push(N,N)
+509897875:NoOp@NoOp|Push(N,N)
+509969792:NoOp@NoOp|Push(N,N)
+510058375:NoOp@NoOp|Push(N,W)
+#end
+#solved
+true
+#numactions
+92
+#time
+510058375
+#end

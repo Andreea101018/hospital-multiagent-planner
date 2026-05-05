@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+PokeNOM
+#actions
+118182700:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+118623000:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+118987200:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+119224000:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+119585900:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+119809300:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+119982600:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+120227900:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+120433600:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+120625400:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+120903900:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+121093600:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+121386800:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+121609800:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+121916600:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+122095300:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+122302600:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+122462300:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+122711100:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+122995200:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+123200400:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+123415900:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+123584200:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+123871100:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+124134300:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+124134300
+#end

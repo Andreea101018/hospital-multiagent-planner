@@ -1,0 +1,153 @@
+#domain
+hospital
+#levelname
+PFarthing
+#colors
+blue: 0 
+red: 1, 5
+green: 2
+purple: 3, 4, A, B
+#initial
+                    +++
+      +++++         +4+
+     +A    +    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++ + +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++B  +++   ++ ++ + 
++5+          +++   + + 
+++++++++++++++    ++++++++++
++0  +             +2       +
++ + +             + ++++++ +
++  1+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       3+
+                  ++++++++++
+#goal
+                    +++
+      +++++         + +
+     +    B+    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++5+ +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++   +++   ++ ++ + 
++ +   4      +++   +A+ 
+++++++++++++++    ++++++++++
++1  +             +3       +
++ + +             + ++++++ +
++  0+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       2+
+                  ++++++++++
+#end
+#clientname
+pacMAn
+#actions
+444840600:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)|Move(S)|Move(N)
+445533000:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)|Move(S)|Move(E)
+446135800:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)|Move(W)|Move(N)
+446585600:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)|Move(W)|Move(E)
+447046000:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|Move(N)
+447474300:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(S)|Move(E)
+447918900:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|Move(N)
+448413500:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|Move(E)
+448800300:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(S)|Move(N)
+449156100:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(S)|NoOp
+449555500:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+449971900:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+450695700:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+451066500:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+451422700:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+451951100:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+452446300:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+453195500:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+453989300:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+454671600:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+455232100:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+455895900:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+456441000:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+456784300:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+457188500:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(E,E)|NoOp
+457698600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(W,N)|NoOp
+458050100:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+458493500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+458945900:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+459540000:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+459976300:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+460488400:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+460950000:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+461420200:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+461947600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,E)|NoOp
+462467800:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+462824900:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+463177400:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+463792800:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+464475000:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(E,E)|NoOp
+464861100:NoOp@NoOp|NoOp|NoOp|NoOp|Push(W,S)|NoOp
+465262600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+465598600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+465962200:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+466316000:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+466690000:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+467096500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+467474200:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+467828800:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+468256600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+468627700:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+468955300:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+469283400:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+469804500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+470183600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+470768400:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+471197100:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+471700500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+472117100:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+472489600:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+472779800:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+473077500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+473361000:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+473727100:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+474047900:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+474398000:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+474683500:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+474996900:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+475273400:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+475572400:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+475890100:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+476179900:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+476524200:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+476868200:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+477177700:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+477685500:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+478043400:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+478322100:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+478587600:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+478826200:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+479074100:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+479326400:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+479586700:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+479865400:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+84
+#time
+479865400
+#end

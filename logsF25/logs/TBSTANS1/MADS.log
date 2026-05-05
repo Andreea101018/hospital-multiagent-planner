@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+TBSTANS1
+#actions
+990907250:Move(N)@Move(N)|Move(S)@Move(S)|Move(W)@Move(W)
+991020375:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+991109500:Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+991176458:Move(N)@Move(N)|Move(S)@Move(S)|Move(S)@Move(S)
+991234375:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+991293625:Move(W)@Move(W)|Push(E,E)@Push(E,E)|Move(N)@Move(N)
+991393833:NoOp|Push(E,S)@Push(E,S)|Move(S)@Move(S)
+991480333:Move(E)@Move(E)|Push(S,S)@Push(S,S)|Move(S)@Move(S)
+991552208:Move(W)@Move(W)|Push(S,S)@Push(S,S)|Move(W)@Move(W)
+991610250:Move(E)@Move(E)|Push(S,E)@Push(S,E)|Move(W)@Move(W)
+991669375:Move(W)@Move(W)|Push(E,S)@Push(E,S)|Pull(E,E)@Pull(E,E)
+991752916:Move(W)@Move(W)|Move(E)@Move(E)|Pull(E,E)@Pull(E,E)
+991840041:Move(S)@Move(S)|Move(S)@Move(S)|Pull(E,E)@Pull(E,E)
+991890500:Move(S)@Move(S)|NoOp|Pull(E,E)@Pull(E,E)
+991937875:Move(S)@Move(S)|Push(W,S)@Push(W,S)|Pull(N,E)@Pull(N,E)
+992004583:Move(E)@Move(E)|Push(S,W)@Push(S,W)|Pull(N,N)@Pull(N,N)
+992077208:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+992136875:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Pull(E,N)@Pull(E,N)
+992200083:Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|Push(W,S)@Push(W,S)
+992271583:NoOp|Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)
+992337166:Pull(S,S)@Pull(S,S)|NoOp|Push(W,W)@Push(W,W)
+992435500:Pull(W,S)@Pull(W,S)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+992505333:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(N)@Move(N)
+992559250:Push(S,S)@Push(S,S)|Move(E)@Move(E)|Move(S)@Move(S)
+992638666:Push(S,W)@Push(S,W)|NoOp|Pull(W,N)@Pull(W,N)
+992702083:Push(W,W)@Push(W,W)|Move(E)@Move(E)|NoOp
+992759166:Push(W,W)@Push(W,W)|NoOp|Pull(N,W)@Pull(N,W)
+992828083:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+992890041:Move(S)@Move(S)|NoOp|Pull(N,E)@Pull(N,E)
+992953708:Move(N)@Move(N)|NoOp|Push(S,E)@Push(S,E)
+993011083:Move(S)@Move(S)|Move(E)@Move(E)|Push(E,S)@Push(E,S)
+993076083:NoOp|NoOp|Push(S,E)@Push(S,E)
+993131583:NoOp|Move(W)@Move(W)|Push(E,S)@Push(E,S)
+993202833:Move(W)@Move(W)|Move(W)@Move(W)|Push(S,W)@Push(S,W)
+993253000:Move(E)@Move(E)|Move(W)@Move(W)|Push(W,W)@Push(W,W)
+993310833:Move(E)@Move(E)|Move(W)@Move(W)|Push(W,W)@Push(W,W)
+#end
+#solved
+true
+#numactions
+36
+#time
+993310833
+#end

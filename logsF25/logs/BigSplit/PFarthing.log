@@ -1,0 +1,163 @@
+#domain
+hospital
+#levelname
+PFarthing
+#colors
+blue: 0 
+red: 1, 5
+green: 2
+purple: 3, 4, A, B
+#initial
+                    +++
+      +++++         +4+
+     +A    +    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++ + +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++B  +++   ++ ++ + 
++5+          +++   + + 
+++++++++++++++    ++++++++++
++0  +             +2       +
++ + +             + ++++++ +
++  1+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       3+
+                  ++++++++++
+#goal
+                    +++
+      +++++         + +
+     +    B+    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++5+ +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++   +++   ++ ++ + 
++ +   4      +++   +A+ 
+++++++++++++++    ++++++++++
++1  +             +3       +
++ + +             + ++++++ +
++  0+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       2+
+                  ++++++++++
+#end
+#clientname
+BigSplit
+#actions
+113074416:Move(E)@h: 3|Move(W)@Move(W)|Move(E)@h: 13|Move(N)@Move(N)|Move(S)@h: 67|Move(N)@h: 8
+113498208:Move(E)@h: 2|Move(W)@Move(W)|Move(E)@h: 12|Move(N)@Move(N)|Move(S)@h: 66|Move(E)@h: 7
+113632166:Move(S)@h: 1|Move(N)@Move(N)|Move(E)@h: 13|Move(S)@Move(S)|Move(W)@h: 65|Move(N)@h: 6
+113885166:NoOp@h: 1|Move(N)@Move(N)|Move(E)@h: 13|NoOp@NoOp|Move(W)@h: 64|Move(E)@h: 5
+113988958:Move(S)@h: 0|NoOp@NoOp|Move(E)@h: 14|Move(S)@Move(S)|Move(W)@h: 63|Move(N)@h: 4
+114087833:NoOp@done|NoOp@done|Move(E)@h: 13|Move(N)@Move(N)|Move(S)@h: 62|Move(E)@h: 3
+114191708:NoOp@done|NoOp@done|Move(E)@h: 13|NoOp@NoOp|Move(W)@h: 61|Move(N)@h: 2
+114302458:NoOp@done|NoOp@done|Move(S)@h: 13|NoOp@NoOp|Move(S)@h: 60|Move(E)@h: 1
+114502875:NoOp@done|NoOp@done|Move(S)@h: 12|Move(N)@Move(N)|Move(S)@h: 59|Move(N)@h: 0
+114639458:NoOp@done|NoOp@done|Move(S)@h: 13|Move(S)@Move(S)|Move(W)@h: 58|NoOp@done
+114741666:NoOp@done|NoOp@done|Move(S)@h: 14|Move(S)@Move(S)|Move(W)@h: 57|NoOp@done
+114867208:NoOp@done|NoOp@done|Move(S)@h: 13|Move(W)@Move(W)|Move(W)@h: 56|NoOp@done
+114981916:NoOp@done|NoOp@done|Move(S)@h: 12|Move(W)@Move(W)|Move(W)@h: 55|NoOp@done
+115099000:NoOp@done|NoOp@done|Move(S)@h: 13|Move(E)@Move(E)|Move(W)@h: 54|NoOp@done
+115203708:NoOp@done|NoOp@done|NoOp@h: 12|Move(W)@Move(W)|Move(W)@h: 53|NoOp@done
+115293041:NoOp@done|NoOp@done|NoOp@h: 11|Move(W)@Move(W)|Move(W)@h: 52|NoOp@done
+115405583:NoOp@done|NoOp@done|NoOp@h: 10|Move(W)@Move(W)|Move(W)@h: 51|NoOp@done
+115493750:NoOp@done|NoOp@done|NoOp@h: 9|Move(W)@Move(W)|Move(W)@h: 50|NoOp@done
+115578166:NoOp@done|NoOp@done|NoOp@h: 8|Move(W)@Move(W)|Move(W)@h: 49|NoOp@done
+115667375:NoOp@done|NoOp@done|NoOp@h: 7|Move(W)@Move(W)|Move(N)@h: 48|NoOp@done
+115777541:NoOp@done|NoOp@done|NoOp@h: 6|Move(N)@Move(N)|Move(N)@h: 47|NoOp@done
+115874375:NoOp@done|NoOp@done|NoOp@h: 5|Move(N)@Move(N)|Move(N)@h: 46|NoOp@done
+115967083:NoOp@done|NoOp@done|NoOp@h: 4|Move(N)@Move(N)|Move(N)@h: 45|NoOp@done
+116072291:NoOp@done|NoOp@done|NoOp@h: 3|Move(N)@Move(N)|Pull(E,E)@h: 44|NoOp@done
+116186416:NoOp@done|NoOp@done|NoOp@h: 2|Move(N)@Move(N)|Push(W,S)@h: 43|NoOp@done
+116344125:NoOp@done|NoOp@done|NoOp@h: 1|Move(N)@Move(N)|Push(S,S)@h: 42|NoOp@done
+116504750:NoOp@done|NoOp@done|NoOp@h: 0|Move(N)@Move(N)|Push(S,S)@h: 41|NoOp@done
+116652500:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(S,S)@h: 40|NoOp@done
+116749458:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(S,E)@h: 39|NoOp@done
+116888125:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 38|NoOp@done
+116996166:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 37|NoOp@done
+117071416:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 36|NoOp@done
+117265500:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 35|NoOp@done
+117363000:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 36|NoOp@done
+117443833:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 37|NoOp@done
+117695458:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 38|NoOp@done
+117827250:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 39|NoOp@done
+117958083:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 40|NoOp@done
+118055458:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,S)@h: 41|NoOp@done
+118173000:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(S,S)@h: 42|NoOp@done
+118268041:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(S,E)@h: 41|NoOp@done
+118381791:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 42|NoOp@done
+118500208:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,S)@h: 43|NoOp@done
+118640250:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(S,S)@h: 44|NoOp@done
+118760833:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(S,E)@h: 45|NoOp@done
+118854333:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,S)@h: 46|NoOp@done
+118943750:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(S,S)@h: 47|NoOp@done
+119012416:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(N)@h: 46|NoOp@done
+119072333:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 45|NoOp@done
+119128041:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(N)@h: 44|NoOp@done
+119189250:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(N)@h: 43|NoOp@done
+119244916:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 42|NoOp@done
+119292750:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 41|NoOp@done
+119345541:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 40|NoOp@done
+119394875:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 39|NoOp@done
+119453041:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 38|NoOp@done
+119565375:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 37|NoOp@done
+119647791:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 36|NoOp@done
+119703375:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 35|NoOp@done
+119746083:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 34|NoOp@done
+119792041:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 33|NoOp@done
+119839208:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 32|NoOp@done
+119894833:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 31|NoOp@done
+120006208:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 30|NoOp@done
+120048666:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 29|NoOp@done
+120101541:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 28|NoOp@done
+120148083:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(N)@h: 27|NoOp@done
+120199083:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 26|NoOp@done
+120257833:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Pull(N,E)@h: 25|NoOp@done
+120293458:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Pull(N,N)@h: 24|NoOp@done
+120331166:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Pull(N,N)@h: 23|NoOp@done
+120379625:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Pull(N,N)@h: 22|NoOp@done
+120423500:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Pull(N,N)@h: 21|NoOp@done
+120476291:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Pull(E,N)@h: 20|NoOp@done
+120512166:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(W,N)@h: 19|NoOp@done
+120560208:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(N,N)@h: 18|NoOp@done
+120596291:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(N,N)@h: 17|NoOp@done
+120634958:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(N,N)@h: 16|NoOp@done
+120670625:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(N,E)@h: 15|NoOp@done
+120707041:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 14|NoOp@done
+120749125:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Push(E,E)@h: 13|NoOp@done
+120782916:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 12|NoOp@done
+120824458:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 11|NoOp@done
+120863875:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 10|NoOp@done
+120900708:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 9|NoOp@done
+120966333:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 8|NoOp@done
+121011125:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 7|NoOp@done
+121054708:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 6|NoOp@done
+121107375:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 5|NoOp@done
+121161625:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 4|NoOp@done
+121204750:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 3|NoOp@done
+121246750:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 2|NoOp@done
+121282458:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(S)@h: 1|NoOp@done
+121331958:NoOp@done|NoOp@done|NoOp@done|NoOp@done|Move(W)@h: 0|NoOp@done
+#end
+#solved
+true
+#numactions
+94
+#time
+121331958
+#end

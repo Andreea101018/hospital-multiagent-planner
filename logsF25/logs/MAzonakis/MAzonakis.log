@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+223621041:Move(S)@Move(S)|Move(N)
+223765916:Move(W)@Move(W)|Move(W)
+223861666:Move(W)@Move(W)|Move(W)
+223945000:Move(W)@Move(W)|Move(W)
+224057625:Move(W)@Move(W)|Move(W)
+224162125:Move(W)@Move(W)|Move(W)
+224249458:Move(W)@Move(W)|Move(W)
+224332583:Move(W)@Move(W)|Move(W)
+224430125:Move(W)@Move(W)|Move(W)
+224517416:Move(W)@Move(W)|Move(W)
+224635250:Move(W)@Move(W)|Move(W)
+224723958:Move(W)@Move(W)|Move(W)
+224863041:Move(W)@Move(W)|Move(W)
+224982708:Move(W)@Move(W)|Move(W)
+225112208:Move(W)@Move(W)|Move(W)
+225209375:Move(W)@Move(W)|Move(W)
+225333708:Move(S)@Move(S)|Move(W)
+225422208:Move(S)@Move(S)|Move(W)
+225513333:Move(S)@Move(S)|Move(W)
+225602708:Move(W)@Move(W)|Move(N)
+225716708:Move(W)@Move(W)|Move(N)
+225825166:Move(W)@Move(W)|Move(N)
+225928708:Move(W)@Move(W)|Move(E)
+226022208:Move(W)@Move(W)|Move(N)
+226119625:Push(N,N)@Push(N,N)|Move(E)
+226238250:Push(N,W)@Push(N,W)|Move(E)
+226337583:Push(W,N)@Push(W,N)|Move(E)
+226468750:Push(N,N)@Push(N,N)|Move(E)
+226576666:Push(N,N)@Push(N,N)|Move(E)
+226663958:Push(N,N)@Push(N,N)|Move(E)
+227028750:Push(N,W)@Push(N,W)|Move(E)
+227127875:Push(W,W)@Push(W,W)|Move(E)
+227210791:Push(W,W)@Push(W,W)|Move(E)
+227314375:Push(W,W)@Push(W,W)|Move(N)
+227396541:Move(E)@Move(E)|Move(N)
+227493166:Move(S)@Move(S)|Move(N)
+227571375:Move(E)@Move(E)|Move(E)
+227646333:Move(E)@Move(E)|Move(N)
+227751416:Move(S)@Move(S)|Move(E)
+227829666:Move(S)@Move(S)|Move(E)
+227901541:Move(S)@Move(S)|Move(E)
+227993833:Pull(E,N)@Pull(E,N)|Move(E)
+228105208:Push(W,N)@Push(W,N)|Move(E)
+228203333:Push(N,N)@Push(N,N)|Move(E)
+228309541:Push(N,N)@Push(N,N)|Move(E)
+228409875:Push(N,W)@Push(N,W)|Move(E)
+228512625:Push(W,W)@Push(W,W)|Move(E)
+228620000:Push(W,W)@Push(W,W)|Move(E)
+228741500:Push(W,W)@Push(W,W)|Move(E)
+228834083:NoOp@NoOp|Move(E)
+228904875:NoOp@NoOp|Move(E)
+228970208:NoOp@NoOp|Move(E)
+229033791:NoOp@NoOp|Move(E)
+229100583:NoOp@NoOp|Move(N)
+229168875:NoOp@NoOp|Pull(S,S)
+229258416:NoOp@NoOp|Pull(E,S)
+229335208:NoOp@NoOp|Push(W,W)
+229422291:NoOp@NoOp|Push(W,S)
+229504583:NoOp@NoOp|Push(S,W)
+229602625:NoOp@NoOp|Push(W,W)
+229684375:NoOp@NoOp|Push(W,W)
+229754208:NoOp@NoOp|Push(W,W)
+229864541:NoOp@NoOp|Push(W,W)
+229949625:NoOp@NoOp|Push(W,W)
+230029666:NoOp@NoOp|Push(W,W)
+230092875:NoOp@NoOp|Push(W,W)
+230184708:NoOp@NoOp|Push(W,W)
+230242125:NoOp@NoOp|Push(W,W)
+230317500:NoOp@NoOp|Push(W,W)
+230372541:NoOp@NoOp|Push(W,W)
+230465458:NoOp@NoOp|Push(W,W)
+230519916:NoOp@NoOp|Push(W,W)
+230580000:NoOp@NoOp|Push(W,W)
+230633750:NoOp@NoOp|Push(W,S)
+230695041:NoOp@NoOp|Push(S,S)
+230773250:NoOp@NoOp|Push(S,S)
+230835666:NoOp@NoOp|Push(S,W)
+230918666:NoOp@NoOp|Push(W,W)
+231002000:NoOp@NoOp|Push(W,W)
+231064583:NoOp@NoOp|Push(W,W)
+231129083:NoOp@NoOp|Push(W,W)
+231218375:NoOp@NoOp|Push(W,N)
+231280583:NoOp@NoOp|Push(N,N)
+231341291:NoOp@NoOp|Push(N,W)
+231404708:NoOp@NoOp|Push(W,N)
+231467000:NoOp@NoOp|Push(N,N)
+231551125:NoOp@NoOp|Push(N,N)
+231663166:NoOp@NoOp|Push(N,N)
+231753291:NoOp@NoOp|Push(N,N)
+231823416:NoOp@NoOp|Push(N,N)
+231889666:NoOp@NoOp|Push(N,N)
+231950416:NoOp@NoOp|Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+231950416
+#end

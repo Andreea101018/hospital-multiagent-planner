@@ -1,0 +1,68 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+LiteralAI
+#actions
+2377894701:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+2378015401:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+2378105801:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+2378187700:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+2378265701:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+2378342801:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+2378420001:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+2378497901:Push(E,E)@Push(E,E)|Move(W)@Move(W)|Move(E)@Move(E)
+2378612801:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(E)@Move(E)
+2378702301:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+2378787001:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+2378852500:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+2378915601:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+2378977901:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+2379065900:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+2379136801:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+2379207301:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+2379277401:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+2379347201:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+2379418300:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+2379479400:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+2379542901:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+2379599001:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+2379659701:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+2379724700:NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)
+2379811801:NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+2379873801:NoOp@NoOp|Move(N)@Move(N)|Move(S)@Move(S)
+2379936801:NoOp@NoOp|Push(N,N)@Push(N,N)|Push(E,S)@Push(E,S)
+#end
+#solved
+true
+#numactions
+28
+#time
+2379936801
+#end

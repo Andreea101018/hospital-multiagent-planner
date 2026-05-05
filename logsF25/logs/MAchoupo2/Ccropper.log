@@ -1,0 +1,128 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+418297250:NoOp|NoOp|Move(S)|Move(N)
+418368708:Move(E)|NoOp|Pull(W,N)|NoOp
+418431625:NoOp|Move(W)|NoOp|Pull(E,S)
+418490791:NoOp|Pull(S,E)|Pull(S,W)|NoOp
+418530666:Push(E,S)|Push(N,N)|NoOp|NoOp
+418565333:NoOp|Push(N,N)|NoOp|Pull(S,E)
+418614541:Push(S,W)|NoOp|Push(N,W)|NoOp
+418652916:Push(W,S)|Push(N,N)|NoOp|NoOp
+418687916:Push(S,S)|NoOp|NoOp|Push(N,E)
+418721333:Push(S,S)|Push(N,N)|NoOp|NoOp
+418770166:Push(S,W)|Push(N,W)|NoOp|NoOp
+418804291:Push(W,S)|NoOp|Push(W,W)|NoOp
+418835916:NoOp|NoOp|Push(W,W)|Push(E,E)
+418872458:NoOp|Push(W,N)|Push(W,N)|NoOp
+418905250:NoOp|Push(N,W)|NoOp|Push(E,E)
+418945916:NoOp|NoOp|Push(N,W)|Push(E,N)
+418995041:NoOp|Push(W,N)|Push(W,N)|NoOp
+419025666:Push(S,W)|NoOp|Push(N,W)|NoOp
+419075416:Push(W,S)|NoOp|Push(W,N)|NoOp
+419116708:NoOp|NoOp|Push(N,W)|Pull(W,S)
+419163000:Push(S,W)|NoOp|NoOp|Push(E,S)
+419205625:NoOp|Pull(E,S)|Push(W,W)|NoOp
+419238541:NoOp|NoOp|Push(W,S)|Push(S,E)
+419281541:Push(W,S)|NoOp|Push(S,W)|NoOp
+419344833:NoOp|Pull(S,E)|Push(W,S)|NoOp
+419374916:NoOp|Pull(E,S)|NoOp|Push(E,S)
+419406000:Push(S,S)|NoOp|NoOp|Push(S,E)
+419434708:Push(S,E)|NoOp|Push(S,W)|NoOp
+419464500:NoOp|NoOp|Push(W,S)|NoOp
+419488291:NoOp|NoOp|Push(S,W)|NoOp
+419511958:NoOp|NoOp|Push(W,W)|NoOp
+419539791:NoOp|NoOp|Push(W,W)|NoOp
+419586416:NoOp|NoOp|Push(W,W)|NoOp
+419635875:NoOp|NoOp|Push(W,W)|NoOp
+419667208:NoOp|NoOp|Push(W,W)|NoOp
+419702708:NoOp|Pull(S,E)|Push(W,W)|NoOp
+419738625:NoOp|Push(N,E)|NoOp|Push(E,S)
+419769500:Push(E,S)|Push(E,N)|NoOp|NoOp
+419826250:NoOp|Push(N,E)|NoOp|Push(S,E)
+419869791:Push(S,E)|NoOp|NoOp|Push(E,E)
+419913125:Push(E,S)|Push(E,N)|NoOp|NoOp
+419948583:NoOp|Push(N,E)|NoOp|Push(E,N)
+420003083:Push(S,E)|NoOp|NoOp|Push(N,E)
+420044541:Push(E,S)|Push(E,N)|NoOp|NoOp
+420079625:Push(S,S)|Push(N,N)|NoOp|NoOp
+420118791:Push(S,S)|NoOp|NoOp|Push(E,N)
+420157875:NoOp|Push(N,W)|NoOp|Push(N,E)
+420195625:Push(S,S)|Push(W,N)|NoOp|NoOp
+420232458:NoOp|Push(N,W)|NoOp|Push(E,N)
+420266208:NoOp|Push(W,N)|NoOp|Push(N,E)
+420300291:Push(S,S)|NoOp|NoOp|Push(E,E)
+420330125:Push(S,S)|Push(N,W)|NoOp|NoOp
+420359000:Push(S,S)|Push(W,N)|NoOp|NoOp
+420386458:NoOp|Push(N,N)|NoOp|Push(E,E)
+420411916:NoOp|Push(N,N)|NoOp|Push(E,E)
+420438166:NoOp|Push(N,N)|NoOp|Push(E,E)
+420464625:NoOp|Push(N,N)|NoOp|Push(E,E)
+420491041:NoOp|Push(N,N)|NoOp|Push(E,E)
+420534875:NoOp|Push(N,N)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+59
+#time
+420534875
+#end

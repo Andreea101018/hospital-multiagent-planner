@@ -1,0 +1,165 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+1103676500:NoOp|Move(N)|NoOp|Move(E)
+1103746667:NoOp|Move(E)|Move(E)|NoOp
+1103790834:Move(S)|Move(N)|NoOp|NoOp
+1103845917:NoOp|Move(E)|NoOp|Move(N)
+1103899084:Move(S)|Move(N)|NoOp|NoOp
+1103944792:Move(E)|Move(E)|NoOp|NoOp
+1103988625:Move(S)|Move(E)|NoOp|NoOp
+1104028792:Move(E)|Move(E)|NoOp|NoOp
+1104076667:Move(E)|Move(E)|NoOp|NoOp
+1104115917:Move(E)|Move(E)|NoOp|NoOp
+1104148000:Move(E)|Move(E)|NoOp|NoOp
+1104186000:Move(E)|Move(E)|NoOp|NoOp
+1104218709:Move(E)|Move(E)|NoOp|NoOp
+1104253959:Move(S)|Move(E)|NoOp|NoOp
+1104287875:Move(E)|Move(E)|NoOp|NoOp
+1104319917:Move(E)|Move(E)|NoOp|NoOp
+1104352000:Move(E)|Move(E)|NoOp|NoOp
+1104380709:Move(E)|Move(E)|NoOp|NoOp
+1104415125:Move(E)|Move(E)|NoOp|NoOp
+1104444667:Move(E)|Move(E)|NoOp|NoOp
+1104477917:Move(E)|Move(E)|NoOp|NoOp
+1104508250:Move(E)|Push(S,E)|NoOp|NoOp
+1104541000:Move(E)|Push(E,S)|NoOp|NoOp
+1104578125:Move(E)|Push(S,S)|NoOp|NoOp
+1104612959:Move(E)|Push(S,W)|NoOp|NoOp
+1104644875:Move(E)|Push(W,S)|NoOp|NoOp
+1104674875:Move(S)|Push(S,W)|NoOp|NoOp
+1104706959:Move(S)|Push(W,W)|NoOp|NoOp
+1104736625:Move(S)|Push(W,W)|NoOp|NoOp
+1104762000:Pull(N,E)|Push(W,W)|NoOp|NoOp
+1104788917:Pull(N,N)|Push(W,W)|NoOp|NoOp
+1104817959:Pull(N,N)|Push(W,W)|NoOp|NoOp
+1104848209:Pull(E,N)|Push(W,W)|NoOp|NoOp
+1104881375:Push(W,N)|Push(W,W)|NoOp|NoOp
+1104915292:Push(N,N)|Push(W,W)|NoOp|NoOp
+1104948459:Push(N,N)|Push(W,W)|NoOp|NoOp
+1104980375:Push(N,N)|Push(W,W)|NoOp|NoOp
+1105009459:Push(N,N)|Push(W,W)|NoOp|NoOp
+1105034250:Push(N,W)|Push(W,W)|NoOp|NoOp
+1105063375:Push(W,W)|Push(W,W)|NoOp|NoOp
+1105088292:Push(W,W)|Push(W,W)|NoOp|NoOp
+1105116917:Push(W,W)|Push(W,W)|NoOp|NoOp
+1105145709:Push(W,W)|Push(W,N)|NoOp|NoOp
+1105170917:Push(W,W)|Move(S)|NoOp|NoOp
+1105205209:Push(W,W)|Move(E)|NoOp|NoOp
+1105241125:Push(W,W)|Move(E)|NoOp|NoOp
+1105270125:Push(W,W)|Move(W)|NoOp|NoOp
+1105346417:Push(W,W)|Move(W)|NoOp|NoOp
+1105374834:Push(W,W)|Move(S)|NoOp|NoOp
+1105399375:Push(W,W)|Move(W)|NoOp|NoOp
+1105424500:Push(W,W)|Move(W)|NoOp|NoOp
+1105454834:Push(W,W)|Move(S)|NoOp|NoOp
+1105487667:Push(W,W)|Move(S)|NoOp|NoOp
+1105513125:Push(W,W)|Move(N)|NoOp|NoOp
+1105541167:Push(W,W)|Move(S)|NoOp|NoOp
+1105572750:Push(W,S)|NoOp|Move(N)|NoOp
+1105593834:NoOp|NoOp|Move(E)|Move(N)
+1105616125:NoOp|NoOp|Move(E)|Move(N)
+1105643000:NoOp|NoOp|Move(E)|Move(E)
+1105666542:NoOp|NoOp|Move(E)|Move(E)
+1105686209:NoOp|NoOp|Move(E)|Move(N)
+1105714542:NoOp|NoOp|Move(E)|Move(E)
+1105739334:NoOp|NoOp|Move(E)|Move(E)
+1105770084:NoOp|NoOp|Move(E)|Move(E)
+1105791292:NoOp|NoOp|Move(E)|Move(E)
+1105811375:NoOp|NoOp|Move(E)|Move(E)
+1105853167:NoOp|NoOp|Move(E)|Move(E)
+1105880750:NoOp|NoOp|Move(E)|Move(E)
+1105921625:NoOp|NoOp|Move(E)|Move(E)
+1105952459:NoOp|NoOp|Move(E)|Move(E)
+1105977459:NoOp|NoOp|Move(E)|Move(E)
+1106002875:NoOp|NoOp|Move(E)|Move(E)
+1106027875:NoOp|NoOp|Move(E)|Move(E)
+1106052542:NoOp|NoOp|Move(S)|Move(E)
+1106078000:NoOp|NoOp|Move(E)|Move(E)
+1106105000:NoOp|NoOp|Move(S)|Move(E)
+1106135459:NoOp|NoOp|Move(S)|Move(E)
+1106165209:NoOp|NoOp|Pull(E,E)|Move(N)
+1106194834:NoOp|NoOp|Push(W,N)|Move(N)
+1106233542:NoOp|NoOp|Push(N,N)|Move(N)
+1106261750:NoOp|NoOp|Push(N,W)|Push(W,N)
+1106287459:NoOp|NoOp|Push(W,N)|Push(N,W)
+1106312209:NoOp|NoOp|Push(N,W)|Push(W,W)
+1106337792:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106362084:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106386917:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106420084:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106448875:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106469417:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106490334:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106510792:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106534084:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106576959:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106606250:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106631209:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106655709:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106686000:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106717000:NoOp|NoOp|Push(W,W)|Push(W,W)
+1106744750:NoOp|NoOp|Push(W,S)|Push(W,S)
+1106772625:NoOp|Move(S)|NoOp|Push(S,S)
+1106805750:NoOp|NoOp|NoOp|Push(S,S)
+1106832459:NoOp|Move(S)|NoOp|Push(S,S)
+1106858042:Move(W)|NoOp|NoOp|Push(S,S)
+1106884625:Move(S)|NoOp|NoOp|Push(S,S)
+1106909709:Move(S)|NoOp|NoOp|Push(S,S)
+1106942042:Move(S)|NoOp|NoOp|Push(S,S)
+1106966542:NoOp|Move(E)|NoOp|Push(S,E)
+1107005000:NoOp|Move(S)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+108
+#time
+1107005000
+#end

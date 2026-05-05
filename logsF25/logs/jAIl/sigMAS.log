@@ -1,0 +1,286 @@
+#domain
+hospital
+#levelname
+sigMAS
+#colors
+red: G,B,0,C,H,E,F
+blue: 1,D,A,N,M,R,K
+#initial
++++++++++++++++
+++G ++B0C+H+E++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++ F ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++  +++    +++ +
++  +++    +++ +
++  +++    +++ +
++  ++++++++++ +
++      1      +
++   NMRDAKA   +
++             +
++++++++++++++++
+#goal
++++++++++++++++
+++  ++   + + ++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++   ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++01+++B CE+++ +
++  +++    +++ +
++  +++F GH+++ +
++  ++++++++++ +
++             +
++             +
++   DANMARK   +
++++++++++++++++
+#end
+#clientname
+jAIl
+#actions
+965004198:Pull(S,E)@Pull(S,E)|Push(S,S)@Push(S,S)
+965059602:Pull(S,S)@Pull(S,S)|Push(E,S)@Push(E,S)
+965085080:Pull(S,S)@Pull(S,S)|Pull(W,W)@Pull(W,W)
+965108314:Pull(S,S)@Pull(S,S)|Push(W,N)@Push(W,N)
+965130465:Pull(S,S)@Pull(S,S)|Push(W,N)@Push(W,N)
+965158919:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+965180620:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+965200818:NoOp@NoOp|Push(W,S)@Push(W,S)
+965226486:NoOp@NoOp|Push(N,E)@Push(N,E)
+965246504:NoOp@NoOp|Push(E,E)@Push(E,E)
+965270859:NoOp@NoOp|Push(E,E)@Push(E,E)
+965290606:NoOp@NoOp|Push(E,S)@Push(E,S)
+965312608:NoOp@NoOp|Push(S,S)@Push(S,S)
+965332746:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+965352693:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+965371479:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+965390394:NoOp@NoOp|Pull(S,W)@Pull(S,W)
+965409650:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+965428706:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+965447371:NoOp@NoOp|Pull(S,W)@Pull(S,W)
+965466056:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+965491304:NoOp@NoOp|Move(N)@Move(N)
+965515399:NoOp@NoOp|Move(E)@Move(E)
+965538473:NoOp@NoOp|Pull(E,S)@Pull(E,S)
+965560805:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+965596963:NoOp@NoOp|Push(E,E)@Push(E,E)
+965620958:NoOp@NoOp|Push(E,E)@Push(E,E)
+965641647:NoOp@NoOp|Push(E,S)@Push(E,S)
+965665371:NoOp@NoOp|Move(W)@Move(W)
+965691040:NoOp@NoOp|Move(W)@Move(W)
+965710857:NoOp@NoOp|Move(W)@Move(W)
+965766181:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+965788152:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+965809202:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+965833227:NoOp@NoOp|Pull(S,W)@Pull(S,W)
+965854387:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+965872371:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+965890845:NoOp@NoOp|Push(E,S)@Push(E,S)
+965915762:NoOp@NoOp|Move(E)@Move(E)
+965944196:NoOp@NoOp|Push(E,E)@Push(E,E)
+965964193:NoOp@NoOp|Push(E,S)@Push(E,S)
+965982798:NoOp@NoOp|Move(W)@Move(W)
+966004479:NoOp@NoOp|Move(W)@Move(W)
+966023104:NoOp@NoOp|Move(W)@Move(W)
+966053141:NoOp@NoOp|Move(W)@Move(W)
+966075683:NoOp@NoOp|Move(W)@Move(W)
+966095390:NoOp@NoOp|Move(N)@Move(N)
+966114797:NoOp@NoOp|Move(N)@Move(N)
+966133071:NoOp@NoOp|Move(N)@Move(N)
+966151185:NoOp@NoOp|Move(N)@Move(N)
+966169570:NoOp@NoOp|Move(N)@Move(N)
+966188655:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+966207641:Push(E,S)@Push(E,S)|NoOp@NoOp
+966226036:Push(S,S)@Push(S,S)|NoOp@NoOp
+966244210:Push(S,S)@Push(S,S)|NoOp@NoOp
+966262544:Push(S,S)@Push(S,S)|NoOp@NoOp
+966281029:Push(S,W)@Push(S,W)|NoOp@NoOp
+966299444:Move(N)@Move(N)|NoOp@NoOp
+966317849:Move(N)@Move(N)|NoOp@NoOp
+966335872:Move(N)@Move(N)|NoOp@NoOp
+966354658:Move(N)@Move(N)|NoOp@NoOp
+966373694:Move(W)@Move(W)|NoOp@NoOp
+966392599:Move(W)@Move(W)|NoOp@NoOp
+966422686:Move(W)@Move(W)|NoOp@NoOp
+966442333:Move(W)@Move(W)|NoOp@NoOp
+966461368:Move(W)@Move(W)|NoOp@NoOp
+966480064:Move(N)@Move(N)|NoOp@NoOp
+966497927:Move(N)@Move(N)|NoOp@NoOp
+966527333:Pull(S,W)@Pull(S,W)|NoOp@NoOp
+966543854:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+966564202:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+966579280:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+966593507:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+966607503:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+966622211:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+966637941:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+966652668:Push(W,N)@Push(W,N)|NoOp@NoOp
+966669069:Push(N,N)@Push(N,N)|NoOp@NoOp
+966683807:Push(N,N)@Push(N,N)|NoOp@NoOp
+966697703:Push(N,N)@Push(N,N)|NoOp@NoOp
+966712721:Push(N,N)@Push(N,N)|NoOp@NoOp
+966727249:Push(N,W)@Push(N,W)|NoOp@NoOp
+966743349:Pull(S,W)@Pull(S,W)|NoOp@NoOp
+966757505:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+966772243:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+966787271:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+966801558:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+966815695:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+966830493:Push(W,S)@Push(W,S)|NoOp@NoOp
+966852845:Push(S,S)@Push(S,S)|NoOp@NoOp
+966867302:Push(S,S)@Push(S,S)|NoOp@NoOp
+966881298:Push(S,S)@Push(S,S)|NoOp@NoOp
+966895505:Push(S,E)@Push(S,E)|NoOp@NoOp
+966910092:Move(N)@Move(N)|NoOp@NoOp
+966937133:Move(N)@Move(N)|NoOp@NoOp
+966951550:Move(N)@Move(N)|NoOp@NoOp
+966965617:Move(N)@Move(N)|NoOp@NoOp
+966979503:Move(N)@Move(N)|NoOp@NoOp
+966993950:Move(N)@Move(N)|NoOp@NoOp
+967008227:Move(N)@Move(N)|NoOp@NoOp
+967023225:Move(N)@Move(N)|NoOp@NoOp
+967038163:Move(N)@Move(N)|NoOp@NoOp
+967052240:Pull(S,E)@Pull(S,E)|NoOp@NoOp
+967066797:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+967081535:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+967095551:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+967109638:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+967123875:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+967138442:Push(W,S)@Push(W,S)|NoOp@NoOp
+967153430:Push(S,S)@Push(S,S)|NoOp@NoOp
+967167607:Push(S,S)@Push(S,S)|NoOp@NoOp
+967182475:Push(S,S)@Push(S,S)|NoOp@NoOp
+967196732:Push(S,S)@Push(S,S)|NoOp@NoOp
+967211640:Push(S,S)@Push(S,S)|NoOp@NoOp
+967225846:Push(S,W)@Push(S,W)|NoOp@NoOp
+967239933:Move(N)@Move(N)|NoOp@NoOp
+967254610:Move(N)@Move(N)|NoOp@NoOp
+967268557:Move(N)@Move(N)|NoOp@NoOp
+967282473:Move(N)@Move(N)|NoOp@NoOp
+967296459:Move(N)@Move(N)|NoOp@NoOp
+967310766:Move(N)@Move(N)|NoOp@NoOp
+967324863:Move(E)@Move(E)|NoOp@NoOp
+967338809:Move(E)@Move(E)|NoOp@NoOp
+967352715:Move(E)@Move(E)|NoOp@NoOp
+967366671:Move(E)@Move(E)|NoOp@NoOp
+967382281:Move(N)@Move(N)|NoOp@NoOp
+967397609:Move(N)@Move(N)|NoOp@NoOp
+967421234:Move(W)@Move(W)|NoOp@NoOp
+967439418:Move(N)@Move(N)|NoOp@NoOp
+967469164:Move(N)@Move(N)|NoOp@NoOp
+967488270:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+967505873:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+967527253:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+967545518:Pull(S,E)@Pull(S,E)|NoOp@NoOp
+967562750:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+967584691:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+967601853:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+967618745:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+967635968:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+967653641:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+967672917:Push(E,S)@Push(E,S)|NoOp@NoOp
+967687905:Push(S,S)@Push(S,S)|NoOp@NoOp
+967705208:Push(S,S)@Push(S,S)|NoOp@NoOp
+967719064:Push(S,S)@Push(S,S)|NoOp@NoOp
+967732820:Push(S,S)@Push(S,S)|NoOp@NoOp
+967747177:Push(S,E)@Push(S,E)|NoOp@NoOp
+967761614:Push(E,E)@Push(E,E)|NoOp@NoOp
+967777123:Push(E,S)@Push(E,S)|NoOp@NoOp
+967791149:Move(W)@Move(W)|NoOp@NoOp
+967804975:Move(W)@Move(W)|NoOp@NoOp
+967819222:Move(N)@Move(N)|NoOp@NoOp
+967846233:Move(N)@Move(N)|NoOp@NoOp
+967862784:Move(N)@Move(N)|NoOp@NoOp
+967878654:Move(N)@Move(N)|NoOp@NoOp
+967894985:Move(N)@Move(N)|NoOp@NoOp
+967911326:Move(W)@Move(W)|NoOp@NoOp
+967931193:Move(W)@Move(W)|NoOp@NoOp
+967948716:Move(W)@Move(W)|NoOp@NoOp
+967965908:Move(W)@Move(W)|NoOp@NoOp
+967979784:Move(W)@Move(W)|NoOp@NoOp
+967994632:Move(N)@Move(N)|NoOp@NoOp
+968008568:Move(N)@Move(N)|NoOp@NoOp
+968022615:Move(N)@Move(N)|NoOp@NoOp
+968036421:Move(N)@Move(N)|NoOp@NoOp
+968050076:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968064754:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968078480:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968091995:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968105541:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+968118976:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+968136158:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+968149564:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+968163119:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+968177456:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+968195029:Push(W,S)@Push(W,S)|NoOp@NoOp
+968211500:Push(S,S)@Push(S,S)|NoOp@NoOp
+968227310:Push(S,S)@Push(S,S)|NoOp@NoOp
+968242739:Push(S,S)@Push(S,S)|NoOp@NoOp
+968259330:Push(S,S)@Push(S,S)|NoOp@NoOp
+968276062:Push(S,E)@Push(S,E)|NoOp@NoOp
+968291451:Push(E,S)@Push(E,S)|NoOp@NoOp
+968303714:Move(W)@Move(W)|NoOp@NoOp
+968317389:Move(N)@Move(N)|NoOp@NoOp
+968331867:Move(N)@Move(N)|NoOp@NoOp
+968346875:Move(N)@Move(N)|NoOp@NoOp
+968365059:Move(N)@Move(N)|NoOp@NoOp
+968379035:Move(E)@Move(E)|NoOp@NoOp
+968392430:Move(E)@Move(E)|NoOp@NoOp
+968405635:Move(E)@Move(E)|NoOp@NoOp
+968418940:Move(E)@Move(E)|NoOp@NoOp
+968432175:Move(N)@Move(N)|NoOp@NoOp
+968445270:Move(N)@Move(N)|NoOp@NoOp
+968458354:Move(N)@Move(N)|NoOp@NoOp
+968472481:Move(E)@Move(E)|NoOp@NoOp
+968486477:Move(N)@Move(N)|NoOp@NoOp
+968500383:Move(N)@Move(N)|NoOp@NoOp
+968514400:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968528927:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968543535:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+968561418:Pull(S,W)@Pull(S,W)|NoOp@NoOp
+968576517:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968592076:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+968611673:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+968628765:Push(W,W)@Push(W,W)|NoOp@NoOp
+968642972:Push(W,W)@Push(W,W)|NoOp@NoOp
+968656637:Push(W,W)@Push(W,W)|NoOp@NoOp
+968671435:Push(W,W)@Push(W,W)|NoOp@NoOp
+968702904:Push(W,S)@Push(W,S)|NoOp@NoOp
+968722121:Push(S,S)@Push(S,S)|NoOp@NoOp
+968738010:Push(S,S)@Push(S,S)|NoOp@NoOp
+968755333:Push(S,S)@Push(S,S)|NoOp@NoOp
+968771844:Push(S,E)@Push(S,E)|NoOp@NoOp
+968787754:Push(E,E)@Push(E,E)|NoOp@NoOp
+968818973:Push(E,N)@Push(E,N)|NoOp@NoOp
+968837197:Move(W)@Move(W)|NoOp@NoOp
+968857896:Move(W)@Move(W)|NoOp@NoOp
+968879416:Move(N)@Move(N)|NoOp@NoOp
+968902871:Move(N)@Move(N)|NoOp@NoOp
+968927276:Move(N)@Move(N)|NoOp@NoOp
+968952173:Move(N)@Move(N)|NoOp@NoOp
+968971219:Move(W)@Move(W)|NoOp@NoOp
+968989754:Move(W)@Move(W)|NoOp@NoOp
+969008159:Move(W)@Move(W)|NoOp@NoOp
+969026142:Move(W)@Move(W)|NoOp@NoOp
+969045058:Move(W)@Move(W)|NoOp@NoOp
+969062511:Move(W)@Move(W)|NoOp@NoOp
+969080555:Move(S)@Move(S)|NoOp@NoOp
+969098999:Move(S)@Move(S)|NoOp@NoOp
+969117013:Move(S)@Move(S)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+229
+#time
+969117013
+#end

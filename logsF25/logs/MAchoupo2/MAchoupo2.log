@@ -1,0 +1,91 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+240976542:Move(W)|Move(W)
+241067417:Move(E)|Pull(E,S)
+241123334:NoOp|Pull(E,E)
+241176375:Move(E)|Pull(E,E)
+241211834:Pull(W,N)|Pull(N,E)
+241255292:Pull(W,W)|Pull(E,N)
+241291542:Pull(W,W)|Pull(E,E)
+241333917:Pull(S,W)|Pull(E,E)
+241366875:Pull(W,S)|Pull(S,E)
+241410834:Pull(W,W)|Move(S)
+241440417:Pull(W,W)|Move(N)
+241467625:Pull(W,W)|Move(E)
+241502084:Pull(W,W)|NoOp
+241533584:Pull(N,W)|Move(N)
+241578042:NoOp|Pull(E,E)
+241612250:Push(S,W)|Pull(S,E)
+241649000:Push(W,W)|Move(S)
+241702667:Push(W,W)|Move(S)
+241742750:Push(W,W)|Move(S)
+241779542:Push(W,W)|Move(S)
+241819875:Move(E)|Move(N)
+241859167:Move(E)|Move(N)
+241894459:Move(E)|Move(N)
+241933500:Move(E)|Move(N)
+241974625:Move(N)|Push(N,E)
+242019584:Move(N)|Push(E,E)
+242057917:Move(N)|Push(E,E)
+242087584:Move(N)|Push(E,E)
+242113625:Move(N)|Push(E,E)
+242152542:Move(N)|Move(W)
+242180375:Move(W)|Move(W)
+242211375:Move(W)|Move(W)
+242237209:Move(W)|Move(W)
+242261500:Move(W)|Move(S)
+242307709:Move(W)|Move(S)
+242338375:NoOp|Move(S)
+242363709:NoOp|Move(S)
+242400042:NoOp|Move(S)
+242442625:NoOp|Move(E)
+242469209:NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+40
+#time
+242469209
+#end

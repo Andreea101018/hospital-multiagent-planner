@@ -1,0 +1,55 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+EpicfAIl
+#actions
+83011800:Move(S)@NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+83126000:NoOp@Pull(S,W)|Move(S)@Move(W)|Move(E)@Move(E)
+83211200:Pull(S,W)@Pull(S,S)|Move(W)@NoOp|Move(E)@NoOp
+83307900:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+83392800:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+83476700:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@Move(W)
+83555200:Pull(S,S)@Push(N,E)|NoOp@Move(W)|Move(W)@Move(W)
+83644300:Push(N,E)@Move(S)|Move(W)@Move(W)|Move(W)@Move(N)
+83760100:Move(S)@NoOp|Move(W)@Move(W)|Move(N)@Move(N)
+83843600:NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(E)
+83928900:NoOp@NoOp|Move(W)@NoOp|Move(E)@Move(E)
+84005000:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+84094300:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+84168000:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+84255500:NoOp@NoOp|NoOp@NoOp|Move(E)@NoOp
+#end
+#solved
+true
+#numactions
+15
+#time
+84255500
+#end

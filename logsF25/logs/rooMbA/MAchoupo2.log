@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+rooMbA
+#actions
+14055250:Move(E)@Move(E)|Move(W)@Move(W)
+14305708:Pull(E,N)@Pull(E,N)|Pull(W,S)@Pull(W,S)
+14338500:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14363291:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14383208:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14407166:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+14430416:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+14451291:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14470791:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14491250:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14508916:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14527666:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14548791:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14571958:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14603708:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+14898416:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+23198750:Move(E)@Move(E)|Move(W)@Move(W)
+23236500:Move(E)@Move(E)|Move(W)@Move(W)
+23251583:Move(E)@Move(E)|Move(W)@Move(W)
+23264916:Move(E)@Move(E)|Move(W)@Move(W)
+23278208:Move(N)@Move(N)|Move(S)@Move(S)
+23291041:Move(N)@Move(N)|Move(S)@Move(S)
+23303416:Move(N)@Move(N)|Move(S)@Move(S)
+23315500:Move(N)@Move(N)|Move(S)@Move(S)
+23327416:Move(N)@Move(N)|Move(S)@Move(S)
+23339458:Move(N)@Move(N)|Move(E)@Move(E)
+23351208:Move(W)@Move(W)|Move(S)@Move(S)
+23364750:Move(W)@Move(W)|NoOp@NoOp
+23377583:Move(W)@Move(W)|NoOp@NoOp
+23391500:Move(W)@Move(W)|NoOp@NoOp
+23403666:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+23403666
+#end

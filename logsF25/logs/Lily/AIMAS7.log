@@ -1,0 +1,146 @@
+#domain
+hospital
+#levelname
+AIMAS7
+#colors
+orange: 0,A
+purple: 3,C
+green: 2,B
+blue: 1
+lightblue: F,4
+red: T,Z,5,V
+cyan: D
+grey: X,6,J
+#initial
++++++++++++++++++++++++++++++++++++
++                 0++++++3+++     +
++    A             ++++++ +++     +
++     A            ++++++ +++     +
++      A           ++++++ +++     +
++       A          ++++++C+++     +
++        A         +2   B         +
++ 1       A        ++++++F+++     +
++        A         ++++++ +++     +
++       A          ++++++ +++     +
++      A           ++++++ +++     +
++     A            ++++++4+++     +
++    A             ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++     T        D      X        6  +
++                                 +
++                                 +
++          D           D          +
++  +          D    D        ++    +
++  +         ++++++++       +     +
++  +    Z                   +     +
++  ++                D D    ++    +
++   +         D              +D   +
++    +               D          D +
++  5 +      D                     +
++    ++                           +
++         V      +++++++++     J  +
++                +         D      +
++                                 +
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++F    +
++                  ++++++ +++     +
++                  ++++++ +++C    +
++                  +              +
++            1     ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++    B+
++                  ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++     V               X           +
++                                 +
++                                 +
++  +                       J++    +
++  +         ++++++++       +     +
++ T+                        +     +
++  ++                       ++    +
++   +                        +    +
++    +                            +
++    +                            +
++    ++       Z                   +
++                +++++++++        +
++                +                +
++                                 +
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+Lily
+#actions
+2509041542:NoOp@NoOp|Move(E)|Move(E)|Move(S)|Move(N)|Move(S)|Move(W)
+2509189084:NoOp@NoOp|Move(E)|Move(E)|Move(S)|Move(N)|Move(S)|Move(W)
+2509298500:NoOp@NoOp|Move(N)|Move(E)|Move(S)|Move(N)|Move(E)|Move(W)
+2509409667:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|NoOp|Move(E)|Move(W)
+2509534250:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|NoOp|Move(E)|Move(W)
+2509632542:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|NoOp|Move(E)|Move(W)
+2509765542:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|Push(N,N)|Move(E)|Move(W)
+2509938875:NoOp@NoOp|Move(N)|Push(E,E)|NoOp|Push(N,E)|Move(E)|Move(W)
+2510062167:NoOp@NoOp|Move(E)|Push(E,E)|NoOp|Push(E,E)|Pull(W,W)|Push(W,S)
+2510182959:NoOp@NoOp|Move(E)|Push(E,E)|Push(S,S)|Push(E,E)|Push(E,N)|Move(E)
+2510281084:NoOp@NoOp|Move(S)|Push(E,E)|Push(S,E)|Push(E,E)|Push(N,W)|Move(E)
+2510379917:NoOp@NoOp|Move(E)|Push(E,E)|Push(E,E)|Push(E,N)|Push(W,W)|Move(E)
+2510478167:NoOp@NoOp|Move(E)|Push(E,S)|Push(E,E)|Push(N,N)|Push(W,N)|Move(E)
+2510809875:NoOp@NoOp|Move(E)|Push(S,S)|Push(E,E)|Push(N,N)|Push(N,W)|Move(E)
+2510942500:NoOp@NoOp|Move(E)|Push(S,S)|Push(E,N)|NoOp|Push(W,N)|Move(S)
+2511085000:NoOp@NoOp|Move(S)|Push(S,S)|NoOp|NoOp|Push(N,N)|Move(S)
+2511191000:NoOp@NoOp|Move(S)|Push(S,S)|NoOp|NoOp|Push(N,N)|Move(E)
+2511282917:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(N,N)|Move(S)
+2511365500:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(N,N)|Move(E)
+2511456125:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(N,N)|Move(E)
+2511539167:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(N,N)|Move(S)
+2511888625:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(N,N)|Move(E)
+2511982834:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(N,N)|Move(S)
+2512063000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Move(S)
+2512168250:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(S)
+2512269917:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(S)
+2512375042:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|Move(S)
+2512448250:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|Move(S)
+2512538834:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|Move(S)
+2512611000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,S)|Pull(E,N)
+2512680792:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Push(W,N)
+2512749750:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,W)|Push(N,N)
+2512829042:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,S)|Push(N,W)
+2512898875:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Push(W,W)
+2512999750:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Push(W,W)
+2513148292:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Push(W,W)
+2513218834:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(W,N)
+2513299584:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(N,N)
+2513366167:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+2513438042:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+2513502292:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Push(N,N)
+2513573125:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+2513847625:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+2514012542:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+2514129625:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+2514294959:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+2514378000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+2514460500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+2514548667:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+2514652209:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+2514794459:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+2514897459:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+2514951750:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+2515046500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+2515124792:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+2515220500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+2515297875:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+#end
+#solved
+true
+#numactions
+57
+#time
+2515297875
+#end

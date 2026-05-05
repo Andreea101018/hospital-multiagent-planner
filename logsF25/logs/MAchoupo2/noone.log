@@ -1,0 +1,52 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+24667375:Move(S)|Move(W)|NoOp
+24831500:NoOp|Move(W)|Move(E)
+24972375:NoOp|Move(W)|Move(E)
+25053333:NoOp|Move(W)|Move(E)
+25098125:NoOp|Move(W)|Move(E)
+25158625:Pull(S,W)|NoOp|Move(E)
+25216416:Pull(S,S)|NoOp|Move(E)
+25313291:Pull(S,S)|NoOp|Move(N)
+25375875:Pull(S,S)|Move(S)|NoOp
+25432250:Pull(S,S)|Move(S)|NoOp
+25480250:Push(N,E)|NoOp|Move(N)
+25526791:Move(S)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+12
+#time
+25526791
+#end

@@ -1,0 +1,292 @@
+#domain
+hospital
+#levelname
+MAGiC
+#colors
+green: A,1
+blue: B,2
+red: C,3
+purple: D,4
+lightblue: J,0
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                ++++++++++++++                  +
++               +              +                 +
++              +                +                +
++             +                  +               +
++            +                    +              +
++           +                      +             +
++          +                        +            +
++         +                          +           +
++        +                            +          +
++       +                              +         +
++      +                                +        +
++     +                                  +       +
++    +                                    +      +
++   +               ++++                   +     +
++  +               +    +                   +    +
++ +               +      +                   +   +
+++               +                            +  +
++               +    ++    +                   + +
++              +    +  +    +                   ++
++             +    +    +    +                   +
++            +    +      +    +                  +
++           +    +        +    +                 +
++          +    +    ++    +                     +
++         +    +    +  +    +    +               +
++        +    +    +    +    +    +              +
++       +    +    +      +         +             +
++      +    +    +        +    +    +            +
++     +    +    +    ++    +    +    +           +
++         +    +    +  +    +    +    +          +
++   +    +    +    +    +    +    +    +         +
++  +++++++++ +++++++++++++++++ +  ++++++         +
++ +  1A                   +    +    +  +         +
+++  ++++++++ +++++++++    +    +    +   +        +
++  +                  + 0J+    +    +    +       +
++ +                   +  +    +    +     +       +
+++  2B++++   ++++++++++ +    +    +      +       +
++  +                   ++    +    +       +      +
++ + 3C                  +    +    +        +     +
+++  ++++++++ ++++++++++ +    +    +         +    +
++  +4D                 ++    +    +          +   +
++ +                     +    +    +           +  +
++++++++++++++++++++++++++   +     ++++++++++++++++
++                                                +
++       +++++++ +++++ +++++ +++  ++++            +
++       +  +  + +   + +      +  +                +
++       +  +  + +++++ + +++  +  +                +
++       +     + +   + +++++ +++  ++++            +
++                                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                ++++++++++++++                  +
++               +              +                 +
++              +                +                +
++             +                  +               +
++            +                    +              +
++           +                      +             +
++          +                        +            +
++         +             C            +           +
++        +                            +          +
++       +               D              +         +
++      +                                +        +
++     +                                  +       +
++    +                                    +      +
++   +               ++++                   +     +
++  +               +    +                   +    +
++ +               +  B   +                   +   +
+++               +                            +  +
++               +    ++    +                   + +
++              +    +  +    +                   ++
++             +    +    +    +                   +
++            +    +      +    +                  +
++           +    +        +    +                 +
++          +    +    ++    +                     +
++         +    +    +  +    +    +               +
++        +  A +    +    +    +    +              +
++       +    +    +      +         +             +
++      +    +    +        +    +    +            +
++     +    +    +    ++    +    +    +           +
++         +    +    +  +    +    +    +          +
++   +    +    +    +    +    +    +    +         +
++  +++++++++ +++++++++++++++++ +  ++++++         +
++ +                       +    +    +  +         +
+++  ++++++++ +++++++++    +    +    +   +        +
++  +                  +   +    +    +    +       +
++ +                   +  +    +    +     +       +
+++    ++++   ++++++++++ +    +    +      +       +
++  +                   ++    +    +       +      +
++ +                     +    +    +        +     +
+++  ++++++++ ++++++++++ +    +    +         +    +
++  +                   ++    +    +          +   +
++ +                     +    +    +           +  +
++++++++++++++++++++++++++   +J    ++++++++++++++++
++       0   1   2       3    4                   +
++       +++++++ +++++ +++++ +++  ++++            +
++       +  +  + +   + +      +  +                +
++       +  +  + +++++ + +++  +  +                +
++       +     + +   + +++++ +++  ++++            +
++                                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+Lily
+#actions
+7960899667:Pull(S,W)@Pull(S,W)|Push(E,E)|Push(E,N)|Push(E,N)|Push(E,E)
+7961074500:Push(N,N)@Push(N,N)|Push(E,E)|Push(N,E)|Push(N,E)|Push(E,E)
+7961182125:Push(N,W)@Push(N,W)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,E)
+7961294000:Push(W,N)@Push(W,N)|Push(E,E)|Push(E,N)|Push(E,E)|Push(E,E)
+7961389875:Push(N,W)@Push(N,W)|Push(E,E)|Push(N,E)|Push(E,E)|Push(E,E)
+7961471750:Push(W,W)@Push(W,W)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,E)
+7961548500:Push(W,W)@Push(W,W)|Push(E,N)|Push(E,E)|Push(E,N)|Push(E,E)
+7961637584:Push(W,W)@Push(W,W)|Push(N,N)|Push(E,E)|Push(N,N)|Push(E,N)
+7961742334:Push(W,W)@Push(W,W)|Push(N,E)|Push(E,E)|Push(N,E)|Push(N,N)
+7961866292:Push(W,W)@Push(W,W)|Push(E,N)|Push(E,N)|Push(E,E)|NoOp
+7961949792:Push(W,W)@Push(W,W)|Push(N,E)|Push(N,N)|NoOp|Push(N,N)
+7962046500:Push(W,W)@Push(W,W)|Push(E,N)|Push(N,N)|Push(E,N)|Push(N,N)
+7962106042:Push(W,W)@Push(W,W)|Push(N,N)|Push(N,N)|Push(N,N)|NoOp
+7962182125:Push(W,W)@Push(W,W)|Push(N,N)|Push(N,N)|Push(N,N)|Push(N,N)
+7962258542:NoOp@NoOp|Push(N,E)|Push(N,N)|Push(N,N)|Push(N,N)
+7962328500:NoOp@NoOp|Push(E,E)|Push(N,E)|Push(N,N)|Push(N,N)
+7962388750:NoOp@NoOp|Push(E,N)|Push(E,E)|Push(N,E)|Push(N,N)
+7962455959:NoOp@NoOp|Push(N,E)|Push(E,E)|Push(E,N)|Push(N,N)
+7962528334:NoOp@NoOp|Push(E,N)|Push(E,N)|Push(N,N)|Push(N,N)
+7962606500:Push(W,W)@Push(W,W)|Push(N,E)|Push(N,E)|Push(N,N)|Push(N,E)
+7962668000:Push(W,N)@Push(W,N)|Push(E,N)|Push(E,N)|Push(N,E)|Push(E,N)
+7962740584:Push(N,N)@Push(N,N)|Push(N,E)|Push(N,N)|Push(E,E)|Push(N,E)
+7962810542:Push(N,E)@Push(N,E)|Push(E,N)|Push(N,E)|Push(E,N)|Push(E,N)
+7962893709:Push(E,N)@Push(E,N)|Push(N,E)|Push(E,N)|Push(N,N)|Push(N,N)
+7963004167:Push(N,N)@Push(N,N)|Push(E,E)|Push(N,E)|Push(N,E)|Push(N,E)
+7963080292:Push(N,E)@Push(N,E)|Push(E,E)|Push(E,N)|Push(E,N)|Push(E,E)
+7963139917:Push(E,E)@Push(E,E)|Push(E,E)|Push(N,N)|Push(N,E)|Push(E,N)
+7963207792:Push(E,N)@Push(E,N)|Push(E,S)|Push(N,E)|Push(E,E)|Push(N,N)
+7963288334:Push(N,N)@Push(N,N)|Push(S,E)|Push(E,E)|Push(E,N)|Push(N,N)
+7963370334:Push(N,N)@Push(N,N)|Push(E,E)|Push(E,E)|Push(N,E)|Push(N,E)
+7963445834:Push(N,E)@Push(N,E)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,N)
+7963509792:Push(E,N)@Push(E,N)|Push(E,S)|Push(E,E)|Push(E,N)|Push(N,E)
+7963577334:Push(N,E)@Push(N,E)|Push(S,S)|Push(E,S)|Push(N,E)|Push(E,E)
+7963654125:Push(E,N)@Push(E,N)|Push(S,E)|Push(S,E)|Push(E,E)|Push(E,E)
+7963734542:Push(N,E)@Push(N,E)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,N)
+7963801625:Push(E,N)@Push(E,N)|Push(E,S)|Push(E,S)|Push(E,S)|Push(N,E)
+7963874417:Push(N,E)@Push(N,E)|Push(S,E)|Push(S,S)|Push(S,E)|Push(E,E)
+7963975334:Push(E,E)@Push(E,E)|Push(E,E)|Push(S,E)|Push(E,E)|Push(E,E)
+7964036875:Push(E,E)@Push(E,E)|Push(E,N)|Push(E,E)|Push(E,E)|Push(E,S)
+7964101459:Push(E,E)@Push(E,E)|Push(N,N)|Push(E,E)|Push(E,S)|Push(S,E)
+7964160875:Push(E,E)@Push(E,E)|Push(N,W)|Push(E,S)|Push(S,S)|Push(E,S)
+7964234792:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,E)|Push(S,E)|Push(S,E)
+7964326625:Push(S,E)@Push(S,E)|Push(N,N)|Push(E,E)|Push(E,E)|Push(E,E)
+7964408875:Push(E,E)@Push(E,E)|Push(N,W)|Push(E,N)|Push(E,S)|Push(E,S)
+7964486209:Push(E,S)@Push(E,S)|Push(W,N)|Push(N,N)|Push(S,E)|Push(S,S)
+7964620750:Push(S,S)@Push(S,S)|Push(N,W)|Push(N,W)|Push(E,E)|Push(S,E)
+7964679334:Push(S,E)@Push(S,E)|Push(W,N)|Push(W,N)|Push(E,N)|Push(E,E)
+7964736250:Push(E,S)@Push(E,S)|Push(N,N)|Push(N,N)|Push(N,N)|Push(E,E)
+7964791834:Push(S,E)@Push(S,E)|Push(N,W)|Push(N,N)|Push(N,N)|Push(E,E)
+7964855125:Push(E,E)@Push(E,E)|Push(W,W)|Push(N,W)|Push(N,W)|Push(E,N)
+7964989625:Push(E,S)@Push(E,S)|Push(W,W)|Push(W,N)|Push(W,N)|Push(N,N)
+7965047792:Push(S,S)@Push(S,S)|Push(W,N)|Push(N,W)|Push(N,W)|Push(N,N)
+7965102500:Push(S,E)@Push(S,E)|Push(N,W)|Push(W,W)|Push(W,N)|Push(N,W)
+7965156084:Push(E,E)@Push(E,E)|Push(W,N)|Push(W,N)|Push(N,W)|Push(W,N)
+7965209917:Push(E,S)@Push(E,S)|Push(N,W)|Push(N,N)|Push(W,N)|Push(N,N)
+7965266084:Push(S,E)@Push(S,E)|Push(W,W)|Push(N,N)|Push(N,N)|Push(N,W)
+7965322084:Push(E,S)@Push(E,S)|Push(W,W)|Push(N,W)|Push(N,W)|Push(W,W)
+7965390084:Push(S,E)@Push(S,E)|Push(W,S)|Push(W,W)|Push(W,N)|Push(W,N)
+7965465792:Push(E,S)@Push(E,S)|Push(S,W)|Push(W,N)|Push(N,N)|Push(N,N)
+7965508917:Push(S,S)@Push(S,S)|Push(W,S)|Push(N,W)|Push(N,N)|Push(N,W)
+7965567250:Push(S,S)@Push(S,S)|Push(S,W)|Push(W,W)|Push(N,N)|Push(W,N)
+7965618459:Push(S,S)@Push(S,S)|Push(W,S)|Push(W,W)|Push(N,W)|Push(N,N)
+7965690375:Push(S,S)@Push(S,S)|Push(S,W)|Move(S)|Push(W,N)|Push(N,N)
+7965744167:Push(S,S)@Push(S,S)|Push(W,S)|Move(E)|Push(N,N)|Push(N,N)
+7965784334:Push(S,S)@Push(S,S)|Push(S,W)|Move(E)|Push(N,W)|Push(N,W)
+7965832167:Push(S,W)@Push(S,W)|Push(W,W)|Move(S)|Push(W,N)|Push(W,N)
+7965883834:Push(W,W)@Push(W,W)|Push(W,S)|Move(E)|Push(N,N)|Push(N,W)
+7965928875:Push(W,S)@Push(W,S)|Push(S,W)|Move(E)|Push(N,N)|Push(W,N)
+7965970417:Push(S,S)@Push(S,S)|Push(W,W)|Move(S)|Push(N,N)|Push(N,N)
+7966015459:Push(S,S)@Push(S,S)|Push(W,S)|Move(S)|Push(N,N)|Push(N,N)
+7966072667:Push(S,S)@Push(S,S)|Push(S,W)|Move(S)|Move(E)|Push(N,N)
+7966112834:Push(S,S)@Push(S,S)|Push(W,S)|Move(E)|Move(E)|Move(S)
+7966162542:Push(S,W)@Push(S,W)|Push(S,S)|Move(S)|Move(E)|Move(S)
+7966207042:Move(S)@Move(S)|Move(E)|Move(E)|Move(E)|Move(S)
+7966245959:Move(E)@Move(E)|Move(E)|Move(S)|Move(S)|Move(E)
+7966291709:Move(S)@Move(S)|Move(N)|Move(E)|Move(S)|Move(S)
+7966342792:Move(S)@Move(S)|Move(E)|Move(S)|Move(S)|Move(E)
+7966386667:Move(S)@Move(S)|Move(N)|Move(E)|Move(S)|Move(S)
+7966437834:Move(S)@Move(S)|Move(N)|Move(S)|Move(S)|Move(S)
+7966513209:Move(S)@Move(S)|Move(N)|Move(S)|Move(W)|Move(S)
+7966549500:Move(W)@Move(W)|Move(E)|Move(W)|Move(S)|Move(S)
+7966586042:Move(W)@Move(W)|Move(N)|Move(S)|Move(W)|Move(E)
+7966620292:Move(W)@Move(W)|Move(E)|Move(S)|Move(S)|Move(S)
+7966664125:Move(W)@Move(W)|Move(N)|Move(E)|Move(S)|Move(E)
+7966708125:Move(W)@Move(W)|Move(E)|Move(S)|Move(S)|Move(S)
+7966752875:Move(W)@Move(W)|Move(N)|Move(S)|Move(S)|Move(S)
+7966798334:Move(W)@Move(W)|Move(E)|Move(S)|Move(E)|Move(E)
+7966837209:Move(W)@Move(W)|Move(E)|Move(S)|Move(S)|Move(E)
+7966879584:Move(W)@Move(W)|Move(E)|Move(W)|Move(S)|Move(S)
+7966914375:Move(W)@Move(W)|Move(E)|Move(S)|Move(S)|Move(S)
+7966949042:Move(W)@Move(W)|Move(E)|Move(W)|Move(E)|Move(S)
+7966987334:Move(W)@Move(W)|Move(S)|Move(S)|Move(S)|Move(S)
+7967034000:Move(N)@Move(N)|Move(E)|Move(S)|Move(E)|Move(S)
+7967069875:Move(W)@Move(W)|Move(S)|Move(S)|Move(E)|Move(S)
+7967110209:Move(W)@Move(W)|Move(E)|Move(S)|NoOp|Move(S)
+7967163167:Move(S)@Move(S)|Move(E)|Move(W)|Move(S)|Move(S)
+7967198459:Move(W)@Move(W)|Move(S)|Move(S)|Move(S)|Move(S)
+7967230834:Move(W)@Move(W)|Move(E)|Move(W)|Move(S)|Move(S)
+7967271959:Move(N)@Move(N)|Move(S)|Move(W)|Move(S)|Move(S)
+7967305584:Move(N)@Move(N)|Move(E)|Move(S)|Move(S)|Move(S)
+7967337750:Move(N)@Move(N)|Move(W)|Move(S)|Move(S)|Move(W)
+7967378584:Move(N)@Move(N)|Move(W)|Move(S)|Move(S)|Move(W)
+7967411709:Move(N)@Move(N)|Move(N)|Move(S)|Move(S)|Move(S)
+7967449542:Move(W)@Move(W)|Move(N)|Move(S)|Move(S)|Move(S)
+7967484084:Move(W)@Move(W)|Move(N)|Move(W)|Move(W)|Move(W)
+7967516334:Move(W)@Move(W)|Move(N)|Move(W)|Move(W)|Move(S)
+7967554625:Move(W)@Move(W)|Move(E)|Move(W)|Move(S)|Move(W)
+7967588584:Move(W)@Move(W)|Move(E)|Move(W)|Move(S)|Move(S)
+7967624459:Move(W)@Move(W)|Move(S)|Move(S)|Move(W)|Move(S)
+7967656375:Move(W)@Move(W)|Move(E)|Move(S)|Move(S)|Move(S)
+7967688542:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(S)
+7967721084:NoOp@NoOp|Move(E)|Move(S)|Move(E)|Move(S)
+7967753459:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(E)
+7967785625:NoOp@NoOp|Move(E)|Move(W)|Move(S)|Move(S)
+7967827917:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+7967859125:NoOp@NoOp|Move(E)|Move(W)|Move(W)|Move(S)
+7967890750:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+7967926667:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+7967984875:NoOp@NoOp|Move(S)|Move(W)|Move(W)|Move(S)
+7968047542:NoOp@NoOp|Move(S)|Move(N)|Move(S)|Move(E)
+7968105834:NoOp@NoOp|Move(W)|Move(N)|Move(S)|Move(E)
+7968150334:NoOp@NoOp|Move(W)|Move(N)|Move(W)|Move(E)
+7968182625:NoOp@NoOp|Move(S)|Move(N)|Move(W)|Move(E)
+7968221125:NoOp@NoOp|Move(S)|Move(N)|NoOp|Move(E)
+7968272000:NoOp@NoOp|Move(S)|Move(E)|NoOp|Move(E)
+7968303792:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(E)
+7968358209:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(E)
+7968409834:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(E)
+7968451667:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(E)
+7968487834:NoOp@NoOp|Move(W)|NoOp|NoOp|Move(E)
+7968535125:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(N)
+7968571917:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(E)
+7968599584:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(N)
+7968626834:NoOp@NoOp|Move(W)|NoOp|NoOp|Move(E)
+7968653917:NoOp@NoOp|Move(W)|NoOp|NoOp|Move(N)
+7968679625:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(N)
+7968707584:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(N)
+7968734500:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7968766875:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7968810959:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7968858459:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7968884084:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7968916792:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7968947584:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7968990167:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7969017042:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7969061542:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7969111667:NoOp@NoOp|Move(S)|NoOp|NoOp|Move(W)
+7969167292:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969215500:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969268417:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969307000:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969348792:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969374042:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969401167:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969448750:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969473792:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969502625:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969528209:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969551667:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969575000:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+7969599584:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+7969629375:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+7969652792:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+7969676292:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+7969705334:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969728625:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+7969764042:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+168
+#time
+7969764042
+#end

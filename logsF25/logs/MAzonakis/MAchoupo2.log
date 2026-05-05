@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+180765958:Move(E)@Move(E)|Move(W)
+180935417:Pull(W,N)@Pull(W,N)|Pull(E,S)
+181064042:Pull(W,W)@Pull(W,W)|Pull(E,E)
+181211625:Pull(W,W)@Pull(W,W)|Pull(E,E)
+181360000:Pull(S,W)@Pull(S,W)|Pull(N,E)
+181475167:Pull(W,S)@Pull(W,S)|Pull(E,N)
+181608667:Pull(W,W)@Pull(W,W)|Pull(E,E)
+181732792:Pull(N,W)@Pull(N,W)|Pull(S,E)
+181866083:Push(S,W)@Push(S,W)|Push(N,E)
+182001667:Push(W,W)@Push(W,W)|Push(E,E)
+182119458:Push(W,W)@Push(W,W)|Push(E,E)
+182229917:Push(W,W)@Push(W,W)|Push(E,E)
+182321042:Push(W,W)@Push(W,W)|Push(E,E)
+182451833:Push(W,W)@Push(W,W)|Push(E,E)
+182569458:Push(W,W)@Push(W,W)|Push(E,E)
+182676000:Push(W,W)@Push(W,W)|Push(E,E)
+182777292:Move(E)@Move(E)|Move(W)
+182944042:Move(E)@Move(E)|Move(W)
+183066500:Move(E)@Move(E)|Move(W)
+183168000:Move(E)@Move(E)|Move(W)
+183277333:Move(N)@Move(N)|Move(S)
+183412250:Move(N)@Move(N)|Move(S)
+183502292:Move(N)@Move(N)|Move(S)
+183611167:Move(N)@Move(N)|Move(S)
+183751833:Move(N)@Move(N)|Move(S)
+183835750:Move(N)@Move(N)|Move(S)
+183931583:Move(W)@Move(W)|Move(E)
+184048208:Move(W)@Move(W)|NoOp
+184153333:Move(W)@Move(W)|NoOp
+184230917:Move(W)@Move(W)|NoOp
+184312583:Move(W)@Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+184312583
+#end

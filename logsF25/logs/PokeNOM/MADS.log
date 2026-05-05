@@ -1,0 +1,68 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+PokeNOM
+#actions
+676503100:Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+676993200:Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)
+677225700:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+677434800:Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)
+677799500:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+678001900:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(S)@Move(S)
+678360500:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(W)@Move(W)
+678758000:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(W)@Move(W)
+679069100:Push(S,W)@Push(S,W)|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+679324100:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|Pull(E,E)@Pull(E,E)
+679605500:Push(W,W)@Push(W,W)|Push(E,S)@Push(E,S)|Pull(E,E)@Pull(E,E)
+679764700:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)
+679922400:NoOp@NoOp|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+680125300:NoOp@NoOp|Push(S,E)@Push(S,E)|Move(E)@Move(E)
+680300900:NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+680454900:NoOp@NoOp|Push(S,S)@Push(S,S)|Move(W)@Move(W)
+680631900:NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+680826900:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+681065600:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+681187400:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+681410000:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+681652400:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+#end
+#solved
+true
+#numactions
+22
+#time
+681652400
+#end

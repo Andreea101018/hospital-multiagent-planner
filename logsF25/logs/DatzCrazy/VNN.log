@@ -1,0 +1,201 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+DatzCrazy
+#actions
+597553199:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+597746200:Move(N)@Move(N)|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+597847800:Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)
+597945500:NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)
+598053400:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|NoOp@NoOp
+598226900:Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)
+598330600:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+598462199:Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)|Move(E)@Move(E)
+598629699:Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+598737499:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)
+598828199:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+598926800:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+599013600:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+599106500:NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+599234399:Move(W)@Move(W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+599319800:Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+599404800:Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)
+599489000:Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+599577999:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+599701600:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+599777599:Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+599906699:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+600023000:NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)
+600110600:Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+600188899:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)
+600269900:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+600335799:Move(N)@Move(N)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+600430800:Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+600520900:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+600586699:Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)
+600687700:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)
+600786900:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)
+600860300:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+600942200:Move(N)@Move(N)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)
+601078400:Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+601185600:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Pull(E,S)@Pull(E,S)
+601262600:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+601333000:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+601395600:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+601460800:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+601519799:Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+601587100:Move(E)@Move(E)|Pull(E,N)@Pull(E,N)|NoOp@NoOp|Move(W)@Move(W)
+601651300:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Pull(E,S)@Pull(E,S)
+601711499:Move(W)@Move(W)|Pull(S,E)@Pull(S,E)|NoOp@NoOp|Push(W,S)@Push(W,S)
+601791700:Move(N)@Move(N)|Push(N,E)@Push(N,E)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+601858900:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Push(W,W)@Push(W,W)
+601928900:Move(W)@Move(W)|Push(E,S)@Push(E,S)|Move(E)@Move(E)|NoOp@NoOp
+601991200:Move(E)@Move(E)|Push(S,S)@Push(S,S)|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+602050600:Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)
+602108999:Move(E)@Move(E)|Push(S,E)@Push(S,E)|Move(W)@Move(W)|Move(N)@Move(N)
+602165800:Move(E)@Move(E)|Push(E,S)@Push(E,S)|Move(W)@Move(W)|Pull(S,S)@Pull(S,S)
+602226200:Move(E)@Move(E)|Push(S,W)@Push(S,W)|NoOp@NoOp|Push(N,N)@Push(N,N)
+602343700:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Pull(S,S)@Pull(S,S)
+602419300:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+602574899:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp|Push(N,W)@Push(N,W)
+602717400:Move(E)@Move(E)|Pull(W,S)@Pull(W,S)|Move(E)@Move(E)|Push(W,W)@Push(W,W)
+602787200:NoOp@NoOp|Pull(W,W)@Pull(W,W)|Move(E)@Move(E)|Pull(E,E)@Pull(E,E)
+602857699:Move(S)@Move(S)|Pull(S,W)@Pull(S,W)|NoOp@NoOp|Push(W,N)@Push(W,N)
+602919299:NoOp@NoOp|Push(N,W)@Push(N,W)|Move(W)@Move(W)|Pull(E,S)@Pull(E,S)
+602982500:Move(S)@Move(S)|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp
+603046700:Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(N)@Move(N)|Pull(S,E)@Pull(S,E)
+603105200:Pull(S,E)@Pull(S,E)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Push(N,N)@Push(N,N)
+603262799:Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+603390100:Move(W)@Move(W)|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(W,W)@Push(W,W)
+603460400:Move(E)@Move(E)|Push(W,N)@Push(W,N)|NoOp@NoOp|Push(W,W)@Push(W,W)
+603548200:NoOp@NoOp|Push(N,W)@Push(N,W)|Move(N)@Move(N)|NoOp@NoOp
+603628400:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)|NoOp@NoOp
+603713899:NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp|Push(W,N)@Push(W,N)
+603820799:Push(E,N)@Push(E,N)|Move(W)@Move(W)|Move(E)@Move(E)|Push(N,W)@Push(N,W)
+603930500:Pull(W,S)@Pull(W,S)|Move(S)@Move(S)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+604010100:Pull(N,W)@Pull(N,W)|Move(S)@Move(S)|NoOp@NoOp|Push(S,W)@Push(S,W)
+604068000:Pull(N,N)@Pull(N,N)|Move(S)@Move(S)|Move(E)@Move(E)|Push(W,W)@Push(W,W)
+604138300:Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+604242500:Pull(S,E)@Pull(S,E)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)
+604324899:Push(N,W)@Push(N,W)|Move(W)@Move(W)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+604393799:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(N,E)@Push(N,E)|NoOp@NoOp
+604493299:Move(N)@Move(N)|Move(N)@Move(N)|Push(E,N)@Push(E,N)|Push(S,W)@Push(S,W)
+604556700:Move(W)@Move(W)|Pull(N,W)@Pull(N,W)|Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)
+604638299:Pull(E,N)@Pull(E,N)|Move(E)@Move(E)|Push(E,N)@Push(E,N)|Pull(E,E)@Pull(E,E)
+604704100:NoOp@NoOp|Move(W)@Move(W)|Push(N,N)@Push(N,N)|NoOp@NoOp
+604756500:NoOp@NoOp|Move(E)@Move(E)|Push(N,W)@Push(N,W)|NoOp@NoOp
+604808800:Pull(N,E)@Pull(N,E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Pull(N,E)@Pull(N,E)
+604897200:Push(S,E)@Push(S,E)|Move(N)@Move(N)|Push(W,W)@Push(W,W)|Pull(E,N)@Pull(E,N)
+604993700:Push(E,N)@Push(E,N)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|NoOp@NoOp
+605058599:Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Pull(N,E)@Pull(N,E)|Push(W,N)@Push(W,N)
+605114300:Push(W,S)@Push(W,S)|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(N,W)@Push(N,W)
+605229900:Move(N)@Move(N)|Push(W,S)@Push(W,S)|Push(S,W)@Push(S,W)|Push(W,W)@Push(W,W)
+605304499:NoOp@NoOp|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)
+605384500:NoOp@NoOp|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+605471999:Move(E)@Move(E)|Pull(E,E)@Pull(E,E)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+605544800:Move(N)@Move(N)|Push(W,N)@Push(W,N)|Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)
+605607200:Move(S)@Move(S)|NoOp@NoOp|Push(N,W)@Push(N,W)|Pull(N,E)@Pull(N,E)
+605718300:Move(S)@Move(S)|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Pull(W,N)@Pull(W,N)
+605793899:Move(W)@Move(W)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|NoOp@NoOp
+605864200:Move(N)@Move(N)|Push(W,W)@Push(W,W)|Pull(W,S)@Pull(W,S)|Push(E,S)@Push(E,S)
+605918300:Move(N)@Move(N)|Push(W,W)@Push(W,W)|Pull(N,W)@Pull(N,W)|Push(S,E)@Push(S,E)
+605971300:Move(N)@Move(N)|Push(W,W)@Push(W,W)|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+606045499:NoOp@NoOp|Push(W,N)@Push(W,N)|Push(S,S)@Push(S,S)|Pull(W,W)@Pull(W,W)
+606124300:NoOp@NoOp|Move(S)@Move(S)|Push(S,W)@Push(S,W)|Move(W)@Move(W)
+606185100:Move(N)@Move(N)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+606250200:NoOp@NoOp|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Pull(S,W)@Pull(S,W)
+606311300:Move(W)@Move(W)|Move(W)@Move(W)|Pull(S,E)@Pull(S,E)|Push(N,W)@Push(N,W)
+606371600:Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Push(W,S)@Push(W,S)
+606518599:Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)|Push(S,W)@Push(S,W)
+606610000:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)
+606692200:Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Push(W,W)@Push(W,W)
+606814900:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)
+606957600:Move(S)@Move(S)|Move(N)@Move(N)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+607080700:Move(W)@Move(W)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|NoOp@NoOp
+607229699:Move(W)@Move(W)|Move(N)@Move(N)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+607357600:NoOp@NoOp|Move(N)@Move(N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+607465700:NoOp@NoOp|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+607550100:Move(N)@Move(N)|NoOp@NoOp|Push(W,S)@Push(W,S)|Move(E)@Move(E)
+607621000:Move(E)@Move(E)|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+607721000:Move(W)@Move(W)|Move(N)@Move(N)|NoOp@NoOp|Push(S,S)@Push(S,S)
+607805300:Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Push(S,S)@Push(S,S)
+607883700:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Push(S,S)@Push(S,S)
+607971699:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|Push(S,E)@Push(S,E)
+608026900:Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+608116699:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp
+608185699:Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+608252700:Push(S,W)@Push(S,W)|Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)
+608346799:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp
+608394800:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp
+608449700:Push(W,W)@Push(W,W)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)
+608496300:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+608549800:Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)
+608648000:Push(W,W)@Push(W,W)|Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+608694800:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(E)@Move(E)|NoOp@NoOp
+608742700:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+608795100:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)
+608838800:Push(W,W)@Push(W,W)|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+608890100:Push(W,W)@Push(W,W)|Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+608932900:Push(W,W)@Push(W,W)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+608974000:Push(W,W)@Push(W,W)|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)
+609032200:Push(W,N)@Push(W,N)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+609077300:Push(N,W)@Push(N,W)|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)
+609119800:Push(W,W)@Push(W,W)|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)
+609163899:Push(W,W)@Push(W,W)|Move(E)@Move(E)|NoOp@NoOp|Move(E)@Move(E)
+609206400:Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(W)@Move(W)|Move(W)@Move(W)
+609248799:Push(W,N)@Push(W,N)|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)
+609289700:Push(N,N)@Push(N,N)|Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+609332799:Push(N,N)@Push(N,N)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)
+609376200:Push(N,E)@Push(N,E)|NoOp@NoOp|Move(S)@Move(S)|Move(N)@Move(N)
+#end
+#solved
+true
+#numactions
+144
+#time
+609376200
+#end

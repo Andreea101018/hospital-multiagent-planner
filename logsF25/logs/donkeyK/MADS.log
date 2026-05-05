@@ -1,0 +1,80 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+donkeyK
+#actions
+4291258700:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)
+4291327400:Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)
+4291357600:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)
+4291385500:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+4291418500:NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)
+4291452700:NoOp@NoOp|Push(S,E)@Push(S,E)|Move(S)@Move(S)
+4291486700:Move(E)@Move(E)|Push(E,S)@Push(E,S)|Move(W)@Move(W)
+4291522100:NoOp@NoOp|Push(S,S)@Push(S,S)|Move(W)@Move(W)
+4291558300:Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)
+4291586400:Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)|NoOp@NoOp
+4291612600:Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)|NoOp@NoOp
+4291647200:Push(S,W)@Push(S,W)|Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)
+4291674700:Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)|Push(W,W)@Push(W,W)
+4291701400:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|NoOp@NoOp
+4291727900:Push(W,W)@Push(W,W)|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+4291763200:NoOp@NoOp|Pull(N,E)@Pull(N,E)|Pull(E,E)@Pull(E,E)
+4291794700:NoOp@NoOp|Pull(E,N)@Pull(E,N)|Pull(E,E)@Pull(E,E)
+4291826000:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+4291853000:NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)
+4291879300:NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+4291905300:NoOp@NoOp|Push(E,S)@Push(E,S)|Pull(E,E)@Pull(E,E)
+4291932100:NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)
+4292082900:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4292139300:NoOp@NoOp|Push(S,W)@Push(S,W)|Move(N)@Move(N)
+4292172400:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4292233900:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4292298600:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+4292330900:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+4292372000:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+4292403200:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+4292431300:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+4292468700:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+4292497200:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)
+4292526000:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+#end
+#solved
+true
+#numactions
+34
+#time
+4292526000
+#end

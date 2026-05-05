@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+MADS
+#actions
+8644135400:Move(E)@Move(E)|Move(W)|Move(E)
+8644271000:Move(E)@Move(E)|Move(W)|Move(N)
+8644406500:Move(E)@Move(E)|Move(W)|Move(E)
+8644493500:Move(E)@Move(E)|Move(W)|Move(N)
+8644597500:Move(E)@Move(E)|Move(W)|Move(N)
+8644676600:Move(E)@Move(E)|Move(W)|Move(N)
+8644832800:Move(E)@Move(E)|Move(W)|Move(N)
+8644951500:Push(E,E)@Push(E,E)|Move(W)|Move(N)
+8645057900:Push(E,S)@Push(E,S)|Move(N)|Move(E)
+8645172900:Push(S,S)@Push(S,S)|Move(N)|Move(E)
+8645252000:NoOp@NoOp|Push(N,N)|Move(E)
+8645341100:NoOp@NoOp|NoOp|Move(E)
+8645452900:NoOp@NoOp|NoOp|Move(E)
+8645542900:NoOp@NoOp|NoOp|Move(E)
+8645619600:NoOp@NoOp|NoOp|Move(S)
+8645695300:NoOp@NoOp|NoOp|Move(S)
+8645804200:NoOp@NoOp|NoOp|Move(S)
+8645889300:NoOp@NoOp|NoOp|Push(E,S)
+#end
+#solved
+true
+#numactions
+18
+#time
+8645889300
+#end

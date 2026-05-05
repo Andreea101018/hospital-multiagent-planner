@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+MArtians
+#actions
+188669070:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|
+188769851:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|
+188843743:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|
+188909464:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|
+188980492:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|
+189044327:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|
+189134493:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|
+190228139:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Move(N)@Move(N)|
+190328362:Push(S,E)@Push(S,E)|Move(W)@Move(W)|Move(E)@Move(E)|
+190417130:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Move(E)@Move(E)|
+190550038:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)|
+190616527:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|
+190679943:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|
+190745315:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|
+190808591:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|
+190873613:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|
+190936610:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|
+191001004:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|
+#end
+#solved
+true
+#numactions
+18
+#time
+191001004
+#end

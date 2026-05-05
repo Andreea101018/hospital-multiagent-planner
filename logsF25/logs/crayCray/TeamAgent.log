@@ -1,0 +1,78 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+crayCray
+#actions
+122796551978:Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+122796784379:Push(S,E)@Push(S,E)|Pull(S,E)@Pull(S,E)|NoOp@NoOp
+122796900921:Push(E,S)@Push(E,S)|Push(N,N)@Push(N,N)|Move(W)@Move(W)
+122796982274:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Move(S)@Move(S)
+122797058198:Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)
+122797160184:Push(S,E)@Push(S,E)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)
+122797258069:Push(E,S)@Push(E,S)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)
+122797322573:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+122797393252:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(S,W)@Pull(S,W)
+122797459912:Move(W)@Move(W)|Push(W,W)@Push(W,W)|Pull(W,S)@Pull(W,S)
+122797528179:Move(S)@Move(S)|Push(W,W)@Push(W,W)|Pull(W,W)@Pull(W,W)
+122797594382:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,W)@Pull(N,W)
+122797669261:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+122797734414:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+122797803147:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+122797864895:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,N)@Pull(W,N)
+122797928229:Move(W)@Move(W)|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+122798021988:Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+122798178193:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+122798239097:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798295058:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798353262:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798414164:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798480578:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798560898:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798618799:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798703869:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798783210:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798837399:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798928675:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122798984327:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122799091105:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122799149306:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122799224445:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+122799279103:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+122799335498:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+122799389112:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+122799443537:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+38
+#time
+122799443537
+#end

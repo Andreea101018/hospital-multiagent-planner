@@ -1,0 +1,85 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+DECrunchy
+#actions
+409393640:Move(E)@Move(E)|Move(W)@Move(W)
+409515924:Push(S,S)@Push(S,S)|Pull(E,S)@Pull(E,S)
+409530649:Pull(N,N)@Pull(N,N)|Pull(S,E)@Pull(S,E)
+409555308:Pull(W,N)@Pull(W,N)|NoOp@NoOp
+409671898:Pull(N,W)@Pull(N,W)|Push(N,E)@Push(N,E)
+409681221:NoOp@NoOp|Push(E,E)@Push(E,E)
+409692666:Push(S,W)@Push(S,W)|Push(E,N)@Push(E,N)
+409708446:Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)
+409724022:Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+409730856:Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+409737575:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+409744171:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+409750457:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+409756801:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+409763112:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+409769478:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+409775928:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+409782488:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+409789020:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+409795620:Move(E)@Move(E)|Move(W)@Move(W)
+409802173:Move(E)@Move(E)|Move(W)@Move(W)
+409808431:Move(E)@Move(E)|Move(S)@Move(S)
+409814940:Move(E)@Move(E)|Move(S)@Move(S)
+409821478:Move(N)@Move(N)|Move(S)@Move(S)
+409827762:Move(N)@Move(N)|Move(S)@Move(S)
+409834295:Move(N)@Move(N)|Move(S)@Move(S)
+409840588:Move(N)@Move(N)|Move(S)@Move(S)
+409846857:Move(N)@Move(N)|Move(E)@Move(E)
+409853377:Move(W)@Move(W)|NoOp@NoOp
+409859686:Move(W)@Move(W)|NoOp@NoOp
+409865908:Move(W)@Move(W)|NoOp@NoOp
+409872259:Move(W)@Move(W)|NoOp@NoOp
+409878450:Move(W)@Move(W)|NoOp@NoOp
+409884673:Move(N)@Move(N)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+34
+#time
+409884673
+#end

@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+mosAIc
+#actions
+42882292:Move(E)@Move(E)|Move(S)|Move(N)
+42962667:Push(S,S)@Push(S,S)|Move(S)|Move(N)
+43026875:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+43081125:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+43130792:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+43211875:Move(W)@Move(W)|Move(W)|Move(E)
+43263333:Move(S)@Move(S)|Move(W)|Move(E)
+43397417:Move(S)@Move(S)|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+8
+#time
+43397417
+#end

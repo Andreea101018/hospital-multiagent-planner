@@ -1,0 +1,63 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+crayCray
+#actions
+212961241:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+213154435:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+213286723:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+213404905:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp
+213458653:Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)
+213542571:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+213632362:Move(E)@Move(E)|Move(W)@Move(W)|NoOp@NoOp
+213725922:Push(E,S)@Push(E,S)|Move(W)@Move(W)|NoOp@NoOp
+213757274:Push(S,S)@Push(S,S)|Move(N)@Move(N)|Move(S)@Move(S)
+213809840:Push(S,E)@Push(S,E)|Move(N)@Move(N)|Move(E)@Move(E)
+213836657:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+213863526:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+213893586:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+213919172:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+213948518:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+213975074:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+214000486:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+214025911:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+214050834:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+214089265:NoOp@NoOp|Pull(S,S)@Pull(S,S)|Pull(S,S)@Pull(S,S)
+214117457:NoOp@NoOp|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)
+214143508:NoOp@NoOp|Pull(W,S)@Pull(W,S)|Pull(W,W)@Pull(W,W)
+214183256:NoOp@NoOp|Push(E,N)@Push(E,N)|Move(S)@Move(S)
+#end
+#solved
+true
+#numactions
+23
+#time
+214183256
+#end

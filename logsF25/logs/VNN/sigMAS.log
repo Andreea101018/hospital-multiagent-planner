@@ -1,0 +1,228 @@
+#domain
+hospital
+#levelname
+sigMAS
+#colors
+red: G,B,0,C,H,E,F
+blue: 1,D,A,N,M,R,K
+#initial
++++++++++++++++
+++G ++B0C+H+E++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++ F ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++  +++    +++ +
++  +++    +++ +
++  +++    +++ +
++  ++++++++++ +
++      1      +
++   NMRDAKA   +
++             +
++++++++++++++++
+#goal
++++++++++++++++
+++  ++   + + ++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++   ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++01+++B CE+++ +
++  +++    +++ +
++  +++F GH+++ +
++  ++++++++++ +
++             +
++             +
++   DANMARK   +
++++++++++++++++
+#end
+#clientname
+VNN
+#actions
+181824958:Pull(S,E)@Pull(S,E)|Push(S,S)
+181990416:Pull(S,S)@Pull(S,S)|Push(E,S)
+182151208:Pull(S,S)@Pull(S,S)|Push(E,S)
+182290125:Pull(S,S)@Pull(S,S)|Push(S,E)
+182382583:Pull(S,S)@Pull(S,S)|Move(N)
+182489125:Pull(S,S)@Pull(S,S)|Pull(W,W)
+182577916:Pull(E,S)@Pull(E,S)|Pull(W,W)
+182675416:Push(W,S)@Push(W,S)|Push(S,W)
+182864083:Push(S,S)@Push(S,S)|Move(N)
+182961166:Push(S,S)@Push(S,S)|Pull(S,W)
+183050416:Push(S,W)@Push(S,W)|Push(W,W)
+183128208:Move(N)@Move(N)|Push(W,W)
+183244000:Move(N)@Move(N)|Push(N,N)
+183351166:Move(N)@Move(N)|Push(E,N)
+183456000:Move(N)@Move(N)|Pull(W,W)
+183535291:Move(N)@Move(N)|Pull(S,W)
+183629458:Move(N)@Move(N)|Pull(E,S)
+183721666:Move(N)@Move(N)|Move(N)
+183811666:Move(N)@Move(N)|Move(W)
+183933916:Move(N)@Move(N)|Pull(E,E)
+184051916:Pull(S,W)@Pull(S,W)|Pull(S,E)
+184153750:Pull(S,S)@Pull(S,S)|Pull(E,S)
+184247208:Pull(S,S)@Pull(S,S)|Move(N)
+184330916:Pull(S,S)@Pull(S,S)|Move(N)
+184429750:Pull(S,S)@Pull(S,S)|Push(W,S)
+184510291:Pull(W,S)@Pull(W,S)|Pull(E,E)
+184608791:Push(E,S)@Push(E,S)|Pull(S,E)
+184706166:Push(S,S)@Push(S,S)|Pull(E,S)
+184823166:Push(S,S)@Push(S,S)|Push(W,S)
+184932000:Push(S,S)@Push(S,S)|Pull(N,E)
+185014166:Push(S,E)@Push(S,E)|Push(S,E)
+185096458:Move(N)@Move(N)|Push(E,E)
+185178041:Move(N)@Move(N)|Push(E,S)
+185250833:Move(N)@Move(N)|Move(W)
+185349250:Move(N)@Move(N)|Move(W)
+185432500:Move(E)@Move(E)|Move(W)
+185498333:Move(E)@Move(E)|Move(W)
+185563958:Move(E)@Move(E)|Move(N)
+185615666:Move(E)@Move(E)|Move(W)
+185682708:Move(N)@Move(N)|Move(W)
+185761458:Move(N)@Move(N)|Move(W)
+185844875:Move(E)@Move(E)|Move(N)
+185912291:Move(N)@Move(N)|Move(N)
+186005708:Move(N)@Move(N)|Move(N)
+186084833:Pull(S,S)@Pull(S,S)|Move(N)
+186182458:Pull(S,S)@Pull(S,S)|NoOp
+186259000:Pull(W,S)@Pull(W,S)|NoOp
+186347375:Pull(S,W)@Pull(S,W)|NoOp
+186428916:Pull(S,S)@Pull(S,S)|NoOp
+186491791:Pull(S,S)@Pull(S,S)|NoOp
+186594625:Pull(W,S)@Pull(W,S)|NoOp
+186669000:Pull(W,W)@Pull(W,W)|NoOp
+186747166:Pull(W,W)@Pull(W,W)|NoOp
+186802875:Pull(W,W)@Pull(W,W)|NoOp
+186868166:Pull(S,W)@Pull(S,W)|NoOp
+186931708:Pull(S,S)@Pull(S,S)|NoOp
+187007500:Pull(S,S)@Pull(S,S)|NoOp
+187076500:Pull(S,S)@Pull(S,S)|NoOp
+187131166:Pull(E,S)@Pull(E,S)|NoOp
+187216166:Pull(E,E)@Pull(E,E)|NoOp
+187289291:Pull(S,E)@Pull(S,E)|NoOp
+187382125:Push(N,N)@Push(N,N)|NoOp
+187474125:Move(W)@Move(W)|NoOp
+187544458:Move(W)@Move(W)|NoOp
+187604333:Move(N)@Move(N)|NoOp
+187660375:Move(N)@Move(N)|NoOp
+187722041:Move(N)@Move(N)|NoOp
+187780416:Move(N)@Move(N)|NoOp
+187838250:Move(N)@Move(N)|NoOp
+187941250:Move(W)@Move(W)|NoOp
+188006291:Move(W)@Move(W)|NoOp
+188074166:Move(W)@Move(W)|NoOp
+188161250:Move(W)@Move(W)|NoOp
+188240875:Move(W)@Move(W)|NoOp
+188294125:Move(N)@Move(N)|NoOp
+188362083:Move(N)@Move(N)|NoOp
+188428958:Pull(S,W)@Pull(S,W)|NoOp
+188489541:Pull(S,S)@Pull(S,S)|NoOp
+188563375:Pull(S,S)@Pull(S,S)|NoOp
+188627750:Pull(W,S)@Pull(W,S)|NoOp
+188688791:Push(E,E)@Push(E,E)|NoOp
+188769000:Push(E,E)@Push(E,E)|NoOp
+188831958:Push(E,E)@Push(E,E)|NoOp
+188924375:Push(E,E)@Push(E,E)|NoOp
+189001041:Push(E,E)@Push(E,E)|NoOp
+189062500:Push(E,S)@Push(E,S)|NoOp
+189124458:Push(S,S)@Push(S,S)|NoOp
+189254541:Push(S,S)@Push(S,S)|NoOp
+189340916:Push(S,S)@Push(S,S)|NoOp
+189416500:Push(S,W)@Push(S,W)|NoOp
+189471000:Push(W,S)@Push(W,S)|NoOp
+189541875:Move(E)@Move(E)|NoOp
+189619875:Move(N)@Move(N)|NoOp
+189675666:Move(N)@Move(N)|NoOp
+189735416:Move(N)@Move(N)|NoOp
+189781791:Move(N)@Move(N)|NoOp
+189836541:Move(W)@Move(W)|NoOp
+189898041:Move(N)@Move(N)|NoOp
+189963666:Move(W)@Move(W)|NoOp
+190040291:Move(W)@Move(W)|NoOp
+190110416:Move(W)@Move(W)|NoOp
+190175708:Move(W)@Move(W)|NoOp
+190242250:Move(N)@Move(N)|NoOp
+190302041:Move(N)@Move(N)|NoOp
+190355958:Move(N)@Move(N)|NoOp
+190418750:Move(N)@Move(N)|NoOp
+190476583:Pull(S,S)@Pull(S,S)|NoOp
+190541541:Pull(S,S)@Pull(S,S)|NoOp
+190600250:Pull(S,S)@Pull(S,S)|NoOp
+190674041:Pull(S,S)@Pull(S,S)|NoOp
+190734708:Pull(S,S)@Pull(S,S)|NoOp
+190814333:Pull(E,S)@Pull(E,S)|NoOp
+190868208:Pull(N,E)@Pull(N,E)|NoOp
+190921291:Push(S,E)@Push(S,E)|NoOp
+190969666:Push(E,E)@Push(E,E)|NoOp
+191042750:Push(E,E)@Push(E,E)|NoOp
+191105666:Push(E,E)@Push(E,E)|NoOp
+191179000:Push(E,S)@Push(E,S)|NoOp
+191323333:Push(S,S)@Push(S,S)|NoOp
+191402208:Push(S,S)@Push(S,S)|NoOp
+191470875:Push(S,S)@Push(S,S)|NoOp
+191525125:Push(S,S)@Push(S,S)|NoOp
+191584916:Push(S,E)@Push(S,E)|NoOp
+191650333:Move(N)@Move(N)|NoOp
+191796666:Move(N)@Move(N)|NoOp
+191888666:Move(N)@Move(N)|NoOp
+191940916:Move(N)@Move(N)|NoOp
+191991000:Move(N)@Move(N)|NoOp
+192054958:Move(E)@Move(E)|NoOp
+192107500:Move(N)@Move(N)|NoOp
+192222666:Move(E)@Move(E)|NoOp
+192285000:Move(E)@Move(E)|NoOp
+192336333:Move(E)@Move(E)|NoOp
+192388500:Move(N)@Move(N)|NoOp
+192440625:Move(N)@Move(N)|NoOp
+192500958:Move(W)@Move(W)|NoOp
+192555000:Move(N)@Move(N)|NoOp
+192604791:Move(N)@Move(N)|NoOp
+192666958:Pull(S,S)@Pull(S,S)|NoOp
+192715208:Pull(S,S)@Pull(S,S)|NoOp
+192762958:Pull(E,S)@Pull(E,S)|NoOp
+192809083:Pull(E,E)@Pull(E,E)|NoOp
+192860000:Push(W,S)@Push(W,S)|NoOp
+192918166:Push(S,S)@Push(S,S)|NoOp
+192968458:Push(S,S)@Push(S,S)|NoOp
+193023375:Push(S,W)@Push(S,W)|NoOp
+193150916:Push(W,W)@Push(W,W)|NoOp
+193223958:Push(W,W)@Push(W,W)|NoOp
+193274958:Push(W,W)@Push(W,W)|NoOp
+193320458:Push(W,S)@Push(W,S)|NoOp
+193376541:Push(S,S)@Push(S,S)|NoOp
+193427458:Push(S,S)@Push(S,S)|NoOp
+193472541:Push(S,S)@Push(S,S)|NoOp
+193526791:Push(S,E)@Push(S,E)|NoOp
+193584875:Push(E,E)@Push(E,E)|NoOp
+193677333:Push(E,S)@Push(E,S)|NoOp
+193774166:Move(W)@Move(W)|NoOp
+193830541:Move(W)@Move(W)|NoOp
+193907041:Move(N)@Move(N)|NoOp
+193957583:Move(N)@Move(N)|NoOp
+194004916:Move(N)@Move(N)|NoOp
+194044958:Move(N)@Move(N)|NoOp
+194102083:Move(W)@Move(W)|NoOp
+194150833:Move(W)@Move(W)|NoOp
+194196291:Move(W)@Move(W)|NoOp
+194240000:Move(W)@Move(W)|NoOp
+194292791:Move(W)@Move(W)|NoOp
+194344958:Move(W)@Move(W)|NoOp
+194408958:Move(S)@Move(S)|NoOp
+194466666:Move(S)@Move(S)|NoOp
+194514833:Move(S)@Move(S)|NoOp
+#end
+#solved
+true
+#numactions
+171
+#time
+194514833
+#end

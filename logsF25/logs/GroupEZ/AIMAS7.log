@@ -1,0 +1,145 @@
+#domain
+hospital
+#levelname
+AIMAS7
+#colors
+orange: 0,A
+purple: 3,C
+green: 2,B
+blue: 1
+lightblue: F,4
+red: T,Z,5,V
+cyan: D
+grey: X,6,J
+#initial
++++++++++++++++++++++++++++++++++++
++                 0++++++3+++     +
++    A             ++++++ +++     +
++     A            ++++++ +++     +
++      A           ++++++ +++     +
++       A          ++++++C+++     +
++        A         +2   B         +
++ 1       A        ++++++F+++     +
++        A         ++++++ +++     +
++       A          ++++++ +++     +
++      A           ++++++ +++     +
++     A            ++++++4+++     +
++    A             ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++     T        D      X        6  +
++                                 +
++                                 +
++          D           D          +
++  +          D    D        ++    +
++  +         ++++++++       +     +
++  +    Z                   +     +
++  ++                D D    ++    +
++   +         D              +D   +
++    +               D          D +
++  5 +      D                     +
++    ++                           +
++         V      +++++++++     J  +
++                +         D      +
++                                 +
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++F    +
++                  ++++++ +++     +
++                  ++++++ +++C    +
++                  +              +
++            1     ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++    B+
++                  ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++     V               X           +
++                                 +
++                                 +
++  +                       J++    +
++  +         ++++++++       +     +
++ T+                        +     +
++  ++                       ++    +
++   +                        +    +
++    +                            +
++    +                            +
++    ++       Z                   +
++                +++++++++        +
++                +                +
++                                 +
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+2064859900:Move(W)@Move(W)|Move(E)|Move(E)|Move(S)|Move(N)|Move(S)|Move(W)
+2065457100:Move(W)@Move(W)|NoOp|Move(E)|Move(S)|Move(N)|Move(S)|Move(W)
+2065827000:Move(W)@Move(W)|Move(E)|NoOp|Move(S)|Move(S)|Move(E)|Move(W)
+2066928400:Move(W)@Move(W)|Move(E)|Move(E)|Push(S,S)|Move(N)|Move(E)|Move(W)
+2067293700:Move(W)@Move(W)|Move(E)|Move(W)|Push(S,E)|NoOp|Move(E)|Move(W)
+2067558400:Move(W)@Move(W)|Move(E)|Move(W)|Push(E,E)|Move(N)|Move(E)|Move(W)
+2067848400:Move(W)@Move(W)|Move(E)|Move(W)|Push(E,E)|Push(N,N)|Move(E)|Move(W)
+2068099700:Move(W)@Move(W)|Move(E)|NoOp|Push(E,E)|Push(N,E)|Move(E)|Move(W)
+2068360400:Move(S)@Move(S)|NoOp|Move(E)|Push(E,N)|Push(E,E)|Pull(N,W)|Push(W,S)
+2068631000:Move(S)@Move(S)|NoOp|NoOp|Move(E)|Push(E,E)|Pull(N,N)|Move(E)
+2068865200:Move(S)@Move(S)|NoOp|Move(E)|Move(S)|Push(E,E)|Push(S,W)|Move(E)
+2069347700:Move(S)@Move(S)|NoOp|Move(E)|Move(W)|NoOp|Push(W,N)|Move(S)
+2069620300:Move(S)@Move(S)|NoOp|Push(E,E)|Move(E)|Move(W)|Push(N,N)|Move(S)
+2069878400:Pull(N,N)@Pull(N,N)|NoOp|Push(E,E)|Move(W)|Move(E)|Push(N,N)|Move(S)
+2070169000:Move(W)@Move(W)|Move(E)|Push(E,E)|Move(E)|Push(E,E)|Push(N,N)|Move(S)
+2070476800:Push(S,W)@Push(S,W)|Move(E)|Push(E,E)|Move(W)|Push(E,N)|Push(N,W)|Move(S)
+2070763000:Pull(S,E)@Pull(S,E)|Move(E)|Push(E,E)|Move(E)|Push(N,N)|Pull(E,S)|Move(S)
+2071029200:Push(N,N)@Push(N,N)|Move(E)|Push(E,E)|Move(E)|Push(N,N)|Pull(N,E)|Move(E)
+2071285600:NoOp@NoOp|NoOp|Push(E,S)|Move(N)|Push(N,W)|Push(S,E)|Move(S)
+2071512400:NoOp@NoOp|NoOp|Push(S,S)|Move(N)|Move(S)|Push(E,S)|Move(S)
+2071722500:NoOp@NoOp|NoOp|Push(S,S)|Move(N)|NoOp|Push(S,S)|Move(E)
+2071953300:NoOp@NoOp|NoOp|Push(S,S)|Move(N)|Move(W)|Push(S,S)|Move(S)
+2072198300:NoOp@NoOp|NoOp|Push(S,S)|Move(N)|Move(E)|Push(S,E)|Move(S)
+2072407800:NoOp@NoOp|NoOp|Push(S,E)|Move(S)|NoOp|Push(E,S)|Move(E)
+2072685000:NoOp@NoOp|NoOp|Push(E,E)|Move(E)|Move(W)|Push(S,E)|Move(S)
+2072930800:NoOp@NoOp|NoOp|Push(E,E)|Move(S)|Move(E)|Push(E,E)|Move(E)
+2073188400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|Move(S)
+2073467700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(E)
+2073677700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(E)
+2073935600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(E,N)
+2074237500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(N,N)
+2074503100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Push(N,W)
+2074783200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(W,N)
+2075046900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Push(N,W)
+2075294900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(W,W)
+2075700800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Push(W,W)
+2075994200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|Push(W,N)
+2076295100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,N)|Push(N,N)
+2076565100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|Push(N,N)
+2076841900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|Push(N,N)
+2077125700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|Push(N,N)
+2077443600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+2077689800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+2077946200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+2078242200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+2078537400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+2078825500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+2079108300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+2079419600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+2079696700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,S)|NoOp
+2080003200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+2080448200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,W)|NoOp
+2080703600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,S)|NoOp
+2080926700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+2081127300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+2081298100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+#end
+#solved
+true
+#numactions
+56
+#time
+2081298100
+#end

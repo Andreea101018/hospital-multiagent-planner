@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+289582166:Move(S)@Move(S)|Move(W)|Move(E)
+289740916:Move(S)@Move(S)|Move(W)|Move(E)
+289868583:Move(E)@Move(E)|Move(W)|Move(E)
+290000125:Pull(S,S)@Pull(S,S)|Move(W)|Move(E)
+290153375:Pull(S,S)@Pull(S,S)|Move(W)|Move(E)
+290303791:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)
+290483500:Pull(W,S)@Pull(W,S)|Move(S)|Move(E)
+290619666:Move(S)@Move(S)|NoOp|Move(N)
+#end
+#solved
+true
+#numactions
+8
+#time
+290619666
+#end

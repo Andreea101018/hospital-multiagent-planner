@@ -1,0 +1,49 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+BigSplit
+#actions
+76621250:Move(S)@h: 5|Move(W)@h: 10|Move(E)@h: 5
+76719917:NoOp@h: 5|Move(W)@h: 9|Move(E)@h: 6
+76808625:Pull(N,W)@h: 6|Move(W)@h: 8|Move(E)@h: 7
+76899000:Push(S,S)@h: 5|Move(W)@h: 7|Move(E)@h: 8
+76946375:Push(S,S)@h: 4|Move(S)@h: 6|Move(E)@h: 9
+77032875:Push(S,S)@h: 3|Move(W)@h: 5|Move(N)@h: 10
+77078542:Push(S,S)@h: 2|Move(S)@h: 4|Move(E)@h: 11
+77151458:Push(S,E)@h: 1|NoOp@NoOp|Move(N)@h: 12
+77209000:Move(S)@h: 0|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+9
+#time
+77209000
+#end

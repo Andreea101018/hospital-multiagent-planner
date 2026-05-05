@@ -1,0 +1,62 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+61692250:Move(E)|Move(W)|NoOp
+61967875:Move(E)|Move(W)|NoOp
+62046291:Move(E)|Move(W)|NoOp
+62092291:Move(E)|Move(W)|NoOp
+62140708:Move(E)|Move(W)|NoOp
+62239750:Move(E)|Move(W)|NoOp
+62449208:Move(E)|Move(W)|NoOp
+62569833:Push(E,E)|Move(W)|NoOp
+62721833:Push(E,S)|Move(N)|NoOp
+62836000:Push(S,S)|Move(N)|NoOp
+62931791:NoOp|Push(N,N)|Move(E)
+63026291:NoOp|NoOp|Move(E)
+63134458:NoOp|NoOp|Move(E)
+63249458:NoOp|NoOp|Move(E)
+63374250:NoOp|NoOp|Move(E)
+63501541:NoOp|NoOp|Move(E)
+63608708:NoOp|NoOp|Move(E)
+63710041:NoOp|NoOp|Move(E)
+63800541:NoOp|NoOp|Move(E)
+63862041:NoOp|NoOp|Move(N)
+63936916:NoOp|NoOp|Move(N)
+64039000:NoOp|NoOp|Pull(S,S)
+#end
+#solved
+true
+#numactions
+22
+#time
+64039000
+#end

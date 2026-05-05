@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+PokeNOM
+#actions
+163332100:Move(E)@Move(E)|Move(W)@Move(W)
+163697300:Pull(W,N)@Pull(W,N)|Pull(E,S)@Pull(E,S)
+163893800:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+164188600:Pull(S,W)@Pull(S,W)|Pull(N,E)@Pull(N,E)
+164488500:Pull(W,S)@Pull(W,S)|Pull(E,N)@Pull(E,N)
+164710800:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+164972400:Pull(W,W)@Pull(W,W)|Pull(E,E)@Pull(E,E)
+165214800:Pull(N,W)@Pull(N,W)|Pull(S,E)@Pull(S,E)
+165395500:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+165659200:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+165907800:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+166158300:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+166393300:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+166689500:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+166865400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+167080400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+167324600:Move(E)@Move(E)|Move(W)@Move(W)
+167508600:Move(E)@Move(E)|Move(W)@Move(W)
+167677200:Move(E)@Move(E)|Move(W)@Move(W)
+167868800:Move(E)@Move(E)|Move(W)@Move(W)
+168003400:Move(N)@Move(N)|Move(S)@Move(S)
+168223400:Move(N)@Move(N)|Move(S)@Move(S)
+168358700:Move(N)@Move(N)|Move(S)@Move(S)
+168481900:Move(N)@Move(N)|Move(S)@Move(S)
+168665500:Move(N)@Move(N)|Move(S)@Move(S)
+168776500:Move(N)@Move(N)|Move(S)@Move(S)
+168924900:Move(W)@Move(W)|Move(E)@Move(E)
+169039600:Move(W)@Move(W)|NoOp@NoOp
+169169900:Move(W)@Move(W)|NoOp@NoOp
+169270100:Move(W)@Move(W)|NoOp@NoOp
+169377200:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+169377200
+#end

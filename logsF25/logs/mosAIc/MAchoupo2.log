@@ -1,0 +1,84 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+mosAIc
+#actions
+48520625:Move(E)@Move(E)|Move(W)
+48587208:Pull(W,N)@Pull(W,N)|Pull(E,S)
+48632125:Pull(W,W)@Pull(W,W)|Pull(E,E)
+48698083:Pull(N,W)@Pull(N,W)|Pull(S,E)
+48746708:Push(S,W)@Push(S,W)|Push(N,E)
+48792916:Push(W,S)@Push(W,S)|Push(E,N)
+48848791:Push(S,W)@Push(S,W)|Push(N,E)
+48886583:Push(W,W)@Push(W,W)|Push(E,E)
+48924958:Push(W,W)@Push(W,W)|Push(E,E)
+48984791:Push(W,W)@Push(W,W)|Push(E,E)
+49022250:Push(W,W)@Push(W,W)|Push(E,E)
+49058250:Push(W,W)@Push(W,W)|Push(E,E)
+49095000:Push(W,W)@Push(W,W)|Push(E,E)
+49130625:Push(W,W)@Push(W,W)|Push(E,E)
+49159625:Push(W,W)@Push(W,W)|Push(E,E)
+49193583:Push(W,W)@Push(W,W)|Push(E,E)
+49232958:Move(E)@Move(E)|Move(S)
+49270000:Move(E)@Move(E)|Move(S)
+49303000:Move(E)@Move(E)|Move(S)
+49336625:Move(E)@Move(E)|Move(W)
+49375291:Move(N)@Move(N)|Move(W)
+49408208:Move(N)@Move(N)|Move(N)
+49452375:Move(N)@Move(N)|Move(N)
+49483333:Move(N)@Move(N)|Move(N)
+49510500:Move(N)@Move(N)|Move(W)
+49549000:Move(N)@Move(N)|Move(W)
+49592208:Move(W)@Move(W)|Move(S)
+49633541:Move(W)@Move(W)|Move(S)
+49660916:Move(W)@Move(W)|Move(S)
+49691166:Move(W)@Move(W)|Move(S)
+49730875:Move(W)@Move(W)|Move(S)
+49836416:NoOp@NoOp|Move(S)
+49890458:NoOp@NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+33
+#time
+49890458
+#end

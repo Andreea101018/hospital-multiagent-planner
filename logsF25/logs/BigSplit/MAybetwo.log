@@ -1,0 +1,59 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+BigSplit
+#actions
+93482625:Move(E)@h: 9|Move(W)@h: 10|Move(N)@h: 11
+93635709:Move(E)@h: 8|Move(W)@h: 9|Move(E)@h: 10
+93876959:Move(E)@h: 7|Move(W)@h: 8|Move(E)@h: 9
+94041250:Move(E)@h: 6|Move(W)@h: 7|Move(N)@h: 8
+94193125:Move(E)@h: 5|Move(W)@h: 6|Move(N)@h: 7
+94322834:Move(E)@h: 4|NoOp@h: 6|NoOp@h: 7
+94447709:Move(E)@h: 3|Move(W)@h: 5|Move(N)@h: 8
+94602000:Push(E,S)@h: 2|NoOp@h: 5|Move(N)@h: 9
+94822750:Push(S,E)@h: 1|Move(W)@h: 4|Move(N)@h: 10
+94973250:Push(E,S)@h: 0|Move(W)@h: 3|Move(E)@h: 9
+95117084:NoOp@NoOp|Move(N)@h: 2|Move(E)@h: 8
+95293459:NoOp@NoOp|Move(N)@h: 1|Move(E)@h: 7
+95478209:NoOp@NoOp|Push(N,N)@h: 0|Move(E)@h: 6
+95715750:NoOp@NoOp|NoOp@NoOp|Move(E)@h: 5
+95824042:NoOp@NoOp|NoOp@NoOp|Move(E)@h: 4
+95953375:NoOp@NoOp|NoOp@NoOp|Move(S)@h: 3
+96095667:NoOp@NoOp|NoOp@NoOp|Move(S)@h: 2
+96290500:NoOp@NoOp|NoOp@NoOp|Move(S)@h: 1
+96410250:NoOp@NoOp|NoOp@NoOp|Push(E,S)@h: 0
+#end
+#solved
+true
+#numactions
+19
+#time
+96410250
+#end

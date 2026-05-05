@@ -1,0 +1,102 @@
+#domain
+hospital
+#levelname
+DASH
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+purple:3, D,K
+orange:4, E
+cyan:5, F
+pink:6, G
+brown:7, H
+grey:8, I
+lightblue:9,S
+#initial
++++++++++++++++++++++
++0   3     2   7 + +
++  A   ++ ++++++ +D +
++++ 9+ G+E    H     +
++1 B   +++++++++ + 5+
++++C +6 +4     8   K+
+++   S   F  I       +
+++++ ++    ++  +++  + 
+   +          ++ + +
+   +++++++++++++ + +
+                 +++
+#goal
++++++++++++++++++++++
++                + +
++ B    ++ ++++++ +  +
++++  +  +    E      +
++      +++++++++ +  +
++++  +  +    I      +
+++C        G       K+
+++++ ++    ++  +++  + 
+   +   DASH   ++ + +
+   +++++++++++++ +F+   
+                 +++     
+#end             
+#clientname
+MArtians
+#actions
+3925960658:Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|
+3926099014:Move(E)@Move(E)|Push(E,N)@Push(E,N)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|
+3926233180:Pull(W,N)@Pull(W,N)|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Pull(N,W)@Pull(N,W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|
+3926341644:Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)|Push(S,S)@Push(S,S)|Move(W)@Move(W)|Pull(S,E)@Pull(S,E)|Pull(W,W)@Pull(W,W)|
+3926446545:Push(E,S)@Push(E,S)|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)|NoOp@NoOp|Push(E,S)@Push(E,S)|
+3926544603:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)|Push(S,S)@Push(S,S)|Pull(N,E)@Pull(N,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|
+3926643638:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Push(S,W)@Push(S,W)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|
+3926726051:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|
+3926807067:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|
+3926875093:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Push(S,W)@Push(S,W)|NoOp@NoOp|Push(E,E)@Push(E,E)|
+3926944655:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(E,E)@Push(E,E)|
+3927045646:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp|Pull(N,E)@Pull(N,E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(E,N)@Push(E,N)|
+3927128897:Push(S,E)@Push(S,E)|NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|NoOp@NoOp|Pull(W,N)@Pull(W,N)|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)|
+3927198459:Push(E,E)@Push(E,E)|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(E,E)@Push(E,E)|
+3927265158:Push(E,E)@Push(E,E)|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|Push(E,S)@Push(E,S)|
+3927352879:Push(E,E)@Push(E,E)|NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp|
+3927428657:Move(W)@Move(W)|NoOp@NoOp|Push(W,S)@Push(W,S)|Pull(W,S)@Pull(W,S)|Move(W)@Move(W)|Push(E,S)@Push(E,S)|Push(E,E)@Push(E,E)|Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|
+3927518333:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|
+3927584613:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3927651032:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|Move(N)@Move(N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3927715845:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|Move(W)@Move(W)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3927785896:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3927860207:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Move(N)@Move(N)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3927943877:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Move(N)@Move(N)|Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928023147:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Move(N)@Move(N)|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928098786:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Move(N)@Move(N)|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928166672:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928233929:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928304469:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928368933:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928432139:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928505263:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928569168:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928634470:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928699423:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928761931:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928824369:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928885899:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3928961328:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929037036:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929101430:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929164287:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929226027:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929287977:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929351952:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929414320:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929478644:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929541152:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929614067:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929673083:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+3929732937:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|
+#end
+#solved
+true
+#numactions
+51
+#time
+3929732937
+#end

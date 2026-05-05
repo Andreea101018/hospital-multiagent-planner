@@ -1,0 +1,318 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+donkeyK
+#actions
+9440642600:NoOp@NoOp|Move(E)@Move(E)
+9440731400:NoOp@NoOp|Move(E)@Move(E)
+9440762600:NoOp@NoOp|Move(S)@Move(S)
+9440790600:NoOp@NoOp|Move(E)@Move(E)
+9440823600:NoOp@NoOp|Move(E)@Move(E)
+9440851300:NoOp@NoOp|Move(E)@Move(E)
+9440879700:NoOp@NoOp|Move(E)@Move(E)
+9440908600:NoOp@NoOp|Move(E)@Move(E)
+9440936000:NoOp@NoOp|Move(E)@Move(E)
+9440962400:NoOp@NoOp|Move(S)@Move(S)
+9440989000:NoOp@NoOp|Move(S)@Move(S)
+9441015600:NoOp@NoOp|Move(W)@Move(W)
+9441042200:NoOp@NoOp|Move(S)@Move(S)
+9441068900:NoOp@NoOp|Move(S)@Move(S)
+9441097200:NoOp@NoOp|Move(S)@Move(S)
+9441125000:NoOp@NoOp|Move(S)@Move(S)
+9441151800:NoOp@NoOp|Move(S)@Move(S)
+9441178400:NoOp@NoOp|Move(S)@Move(S)
+9441205900:NoOp@NoOp|Move(E)@Move(E)
+9441232700:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+9441261200:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+9441299800:NoOp@NoOp|Push(E,N)@Push(E,N)
+9441330100:NoOp@NoOp|Push(N,N)@Push(N,N)
+9441356600:NoOp@NoOp|Push(N,N)@Push(N,N)
+9441383600:NoOp@NoOp|Push(N,N)@Push(N,N)
+9441410100:NoOp@NoOp|Push(N,N)@Push(N,N)
+9441436600:NoOp@NoOp|Push(N,N)@Push(N,N)
+9441465600:NoOp@NoOp|Push(N,E)@Push(N,E)
+9441496600:NoOp@NoOp|Push(E,N)@Push(E,N)
+9441638700:NoOp@NoOp|Push(N,N)@Push(N,N)
+9441686000:NoOp@NoOp|Push(N,W)@Push(N,W)
+9441725700:NoOp@NoOp|Push(W,W)@Push(W,W)
+9441764900:NoOp@NoOp|Push(W,W)@Push(W,W)
+9441813900:NoOp@NoOp|Push(W,S)@Push(W,S)
+9441845300:NoOp@NoOp|Push(S,W)@Push(S,W)
+9441875000:NoOp@NoOp|Push(W,W)@Push(W,W)
+9441916200:NoOp@NoOp|Push(W,S)@Push(W,S)
+9441947100:NoOp@NoOp|Push(S,S)@Push(S,S)
+9441972500:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442000000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442026700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442052900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442092200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442122200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442151000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442179600:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442208400:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442237100:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442266300:NoOp@NoOp|Push(S,E)@Push(S,E)
+9442295000:NoOp@NoOp|Push(E,S)@Push(E,S)
+9442323000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442351000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442378900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9442426200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443036900:NoOp@NoOp|Push(S,E)@Push(S,E)
+9443085100:NoOp@NoOp|Push(E,E)@Push(E,E)
+9443120300:NoOp@NoOp|Push(E,S)@Push(E,S)
+9443149200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443177700:NoOp@NoOp|Push(S,E)@Push(S,E)
+9443206100:NoOp@NoOp|Push(E,S)@Push(E,S)
+9443237200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443265900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443293900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443321900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443349900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443378100:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443406000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443434400:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443462400:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443490300:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443519600:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443550700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443579200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443607500:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443635700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443707500:NoOp@NoOp|Push(S,S)@Push(S,S)
+9443785700:NoOp@NoOp|Move(N)@Move(N)
+9443814200:NoOp@NoOp|Move(N)@Move(N)
+9443840800:NoOp@NoOp|Move(N)@Move(N)
+9443866500:NoOp@NoOp|Move(N)@Move(N)
+9443892000:NoOp@NoOp|Move(N)@Move(N)
+9443918300:NoOp@NoOp|Move(N)@Move(N)
+9443956600:NoOp@NoOp|Move(N)@Move(N)
+9444013700:NoOp@NoOp|Move(N)@Move(N)
+9444056300:NoOp@NoOp|Move(W)@Move(W)
+9444089400:NoOp@NoOp|Move(W)@Move(W)
+9444123800:NoOp@NoOp|Move(W)@Move(W)
+9444158600:NoOp@NoOp|Move(W)@Move(W)
+9444195100:NoOp@NoOp|Move(N)@Move(N)
+9444228300:NoOp@NoOp|Move(N)@Move(N)
+9444368800:NoOp@NoOp|Move(N)@Move(N)
+9444468800:NoOp@NoOp|Move(N)@Move(N)
+9444514000:NoOp@NoOp|Move(N)@Move(N)
+9444559800:NoOp@NoOp|Move(N)@Move(N)
+9444601000:NoOp@NoOp|Move(N)@Move(N)
+9444638100:NoOp@NoOp|Move(N)@Move(N)
+9444674000:NoOp@NoOp|Move(N)@Move(N)
+9444708000:NoOp@NoOp|Move(N)@Move(N)
+9444768900:NoOp@NoOp|Move(N)@Move(N)
+9444823400:NoOp@NoOp|Move(N)@Move(N)
+9444855100:NoOp@NoOp|Move(N)@Move(N)
+9444884000:NoOp@NoOp|Move(N)@Move(N)
+9444912000:NoOp@NoOp|Move(N)@Move(N)
+9444940000:NoOp@NoOp|Move(N)@Move(N)
+9444967800:NoOp@NoOp|Move(N)@Move(N)
+9444995800:NoOp@NoOp|Move(N)@Move(N)
+9445024200:NoOp@NoOp|Move(N)@Move(N)
+9445052000:NoOp@NoOp|Move(N)@Move(N)
+9445079700:NoOp@NoOp|Move(N)@Move(N)
+9445108200:NoOp@NoOp|Move(N)@Move(N)
+9445139200:NoOp@NoOp|Move(N)@Move(N)
+9445168600:NoOp@NoOp|Move(N)@Move(N)
+9445196500:NoOp@NoOp|Move(N)@Move(N)
+9445224400:NoOp@NoOp|Move(N)@Move(N)
+9445252100:NoOp@NoOp|Move(N)@Move(N)
+9445283500:NoOp@NoOp|Move(E)@Move(E)
+9445311700:NoOp@NoOp|Move(N)@Move(N)
+9445340400:NoOp@NoOp|Move(E)@Move(E)
+9445368000:NoOp@NoOp|Move(E)@Move(E)
+9445395700:NoOp@NoOp|Move(E)@Move(E)
+9445423400:NoOp@NoOp|Move(E)@Move(E)
+9445451100:NoOp@NoOp|Move(E)@Move(E)
+9445479200:NoOp@NoOp|Move(S)@Move(S)
+9445507200:NoOp@NoOp|Move(E)@Move(E)
+9445535700:NoOp@NoOp|Move(E)@Move(E)
+9445566200:NoOp@NoOp|Move(S)@Move(S)
+9445593900:NoOp@NoOp|Move(E)@Move(E)
+9445621500:NoOp@NoOp|Move(E)@Move(E)
+9445649000:NoOp@NoOp|Move(E)@Move(E)
+9445676700:NoOp@NoOp|Move(E)@Move(E)
+9445704700:NoOp@NoOp|Move(E)@Move(E)
+9445732300:NoOp@NoOp|Move(S)@Move(S)
+9445759900:NoOp@NoOp|Move(S)@Move(S)
+9445787600:NoOp@NoOp|Move(S)@Move(S)
+9445814900:NoOp@NoOp|Move(S)@Move(S)
+9445842400:NoOp@NoOp|Move(S)@Move(S)
+9445870400:NoOp@NoOp|Push(S,W)@Push(S,W)
+9445899100:NoOp@NoOp|Push(W,W)@Push(W,W)
+9445926800:NoOp@NoOp|Push(W,W)@Push(W,W)
+9445954900:NoOp@NoOp|Push(W,W)@Push(W,W)
+9445983000:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446011400:NoOp@NoOp|Push(W,N)@Push(W,N)
+9446039600:NoOp@NoOp|Push(N,N)@Push(N,N)
+9446067600:NoOp@NoOp|Push(N,N)@Push(N,N)
+9446097500:NoOp@NoOp|Push(N,N)@Push(N,N)
+9446128800:NoOp@NoOp|Push(N,N)@Push(N,N)
+9446156700:NoOp@NoOp|Push(N,N)@Push(N,N)
+9446184500:NoOp@NoOp|Push(N,N)@Push(N,N)
+9446212100:NoOp@NoOp|Push(N,N)@Push(N,N)
+9446240600:NoOp@NoOp|Push(N,W)@Push(N,W)
+9446269300:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446297100:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446324500:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446352200:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446381500:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446409800:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446437600:NoOp@NoOp|Push(W,W)@Push(W,W)
+9446465700:NoOp@NoOp|Push(W,S)@Push(W,S)
+9446493700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446521300:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446548900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446576700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446605000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446633000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446660900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446688800:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446716500:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446744800:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446772500:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446800200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446828600:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446856400:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446884000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446911800:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446939800:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446967700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9446995700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447023700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447051600:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447079300:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447109500:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447140200:NoOp@NoOp|Push(S,W)@Push(S,W)
+9447168100:NoOp@NoOp|Push(W,W)@Push(W,W)
+9447195900:NoOp@NoOp|Push(W,S)@Push(W,S)
+9447223600:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447251700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447279200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447307000:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447334700:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447362600:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447390500:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447418200:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447447400:NoOp@NoOp|Push(S,W)@Push(S,W)
+9447475200:NoOp@NoOp|Push(W,S)@Push(W,S)
+9447502900:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447530600:NoOp@NoOp|Push(S,S)@Push(S,S)
+9447558500:NoOp@NoOp|Push(S,S)@Push(S,S)
+#end
+#solved
+true
+#numactions
+197
+#time
+9447558500
+#end

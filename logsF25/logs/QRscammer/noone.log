@@ -1,0 +1,50 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+QRscammer
+#actions
+35685300:Move(S)@Move(S)|Move(S)@Move(S)|NoOp@NoOp
+35834300:Push(E,S)@Push(E,S)|Move(S)@Move(S)|NoOp@NoOp
+35943500:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(N)@Move(N)
+36039000:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(N)@Move(N)
+36137700:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+36240200:Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)
+36332800:Move(S)@Move(S)|Move(W)@Move(W)|Move(E)@Move(E)
+36428800:Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+36519700:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+36608700:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+#end
+#solved
+true
+#numactions
+10
+#time
+36608700
+#end

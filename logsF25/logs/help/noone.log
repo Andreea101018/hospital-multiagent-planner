@@ -1,0 +1,57 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+help
+#actions
+56852055:Move(S)@Move(S)|NoOp|NoOp
+57015311:Push(E,S)@Push(E,S)|NoOp|NoOp
+57127592:Push(S,S)@Push(S,S)|NoOp|NoOp
+57211559:Push(S,S)@Push(S,S)|NoOp|NoOp
+57297220:Push(S,S)@Push(S,S)|NoOp|NoOp
+57412066:Move(W)@Move(W)|Move(W)|Move(N)
+57496203:Move(S)@Move(S)|Move(W)|Move(N)
+57595690:Move(S)@Move(S)|Move(W)|Move(E)
+57700597:NoOp@NoOp|NoOp|Move(S)
+57788291:NoOp@NoOp|Move(W)|NoOp
+57873832:NoOp@NoOp|Move(W)|NoOp
+57958130:NoOp@NoOp|Move(S)|Move(N)
+58039673:NoOp@NoOp|Move(S)|Move(E)
+58121837:NoOp@NoOp|NoOp|Move(E)
+58213178:NoOp@NoOp|NoOp|Move(E)
+58340367:NoOp@NoOp|NoOp|Move(E)
+58438050:NoOp@NoOp|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+17
+#time
+58438050
+#end

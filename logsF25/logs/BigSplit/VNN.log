@@ -1,0 +1,117 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+BigSplit
+#actions
+593023042:Move(S)@h: 50|Move(E)@h: 40|Move(S)@h: 40|Move(E)@h: 50
+593121042:Move(E)@h: 49|Move(E)@h: 39|Move(S)@h: 39|Move(N)@h: 49
+593195292:Move(S)@h: 48|NoOp@h: 39|Move(E)@h: 38|Move(N)@h: 48
+593264208:Move(S)@h: 47|NoOp@h: 39|Move(E)@h: 37|Move(N)@h: 47
+593330917:Move(E)@h: 46|NoOp@h: 39|Move(S)@h: 38|Move(N)@h: 46
+593389125:Move(S)@h: 45|Move(W)@h: 40|Move(E)@h: 37|Move(N)@h: 45
+593450667:Move(E)@h: 44|Move(N)@h: 39|Move(E)@h: 36|Move(N)@h: 44
+593510458:Move(E)@h: 43|Move(N)@h: 38|Move(E)@h: 35|Move(N)@h: 43
+593592083:Move(E)@h: 42|Move(E)@h: 37|Move(E)@h: 34|Move(E)@h: 42
+593661208:Move(E)@h: 41|Move(N)@h: 38|Move(E)@h: 33|Move(N)@h: 43
+593751250:Move(E)@h: 40|Move(E)@h: 37|Move(E)@h: 32|Move(E)@h: 42
+593817292:Move(E)@h: 39|Move(E)@h: 36|Move(N)@h: 31|Move(E)@h: 41
+593882958:Move(E)@h: 38|Move(E)@h: 35|Move(E)@h: 30|Move(E)@h: 40
+593942750:Move(E)@h: 37|Move(E)@h: 34|Move(E)@h: 29|Move(E)@h: 39
+593998208:Move(E)@h: 36|Move(E)@h: 33|Move(E)@h: 28|Move(E)@h: 38
+594057417:Move(E)@h: 35|Move(S)@h: 32|Move(E)@h: 27|Move(E)@h: 37
+594116875:Move(E)@h: 34|Move(E)@h: 31|Move(E)@h: 26|Move(E)@h: 36
+594178500:Move(E)@h: 33|Move(E)@h: 30|Move(S)@h: 27|Move(E)@h: 35
+594231958:Move(E)@h: 32|Move(E)@h: 29|Move(E)@h: 26|Move(E)@h: 34
+594279958:Move(E)@h: 31|Move(E)@h: 28|Move(E)@h: 25|Move(E)@h: 33
+594359792:Move(E)@h: 30|Move(E)@h: 27|Move(E)@h: 24|Move(E)@h: 32
+594422375:Move(E)@h: 29|Move(E)@h: 26|Move(E)@h: 23|Move(E)@h: 31
+594469417:Move(E)@h: 30|Move(N)@h: 27|Move(E)@h: 22|Move(E)@h: 30
+594534958:Move(S)@h: 29|Move(E)@h: 26|Pull(E,S)@h: 21|Move(E)@h: 29
+594606917:Move(S)@h: 28|Move(E)@h: 25|Push(W,W)@h: 20|Move(E)@h: 28
+594674292:Move(S)@h: 27|Move(E)@h: 24|Push(W,W)@h: 19|Move(E)@h: 27
+594736542:Pull(E,E)@h: 26|Move(E)@h: 23|Push(W,W)@h: 18|Push(S,E)@h: 26
+594786417:Push(W,N)@h: 25|Move(E)@h: 22|Push(W,W)@h: 17|Push(E,E)@h: 27
+594833917:NoOp@h: 25|Pull(E,N)@h: 21|Push(W,W)@h: 16|Push(E,S)@h: 26
+594877000:NoOp@h: 25|Push(W,W)@h: 20|Push(W,W)@h: 15|Push(S,S)@h: 25
+594965708:Push(N,N)@h: 24|Push(W,W)@h: 19|Push(W,W)@h: 14|Push(S,S)@h: 24
+595057917:Push(N,N)@h: 23|Push(W,W)@h: 18|Push(W,W)@h: 13|Push(S,S)@h: 23
+595119708:Push(N,N)@h: 22|Push(W,W)@h: 17|Push(W,W)@h: 12|Push(S,S)@h: 22
+595194417:Push(N,N)@h: 21|Push(W,W)@h: 16|Push(W,W)@h: 11|Push(S,S)@h: 21
+595238500:Push(N,N)@h: 20|Push(W,W)@h: 15|Push(W,W)@h: 10|Push(S,W)@h: 20
+595301833:Push(N,N)@h: 19|Push(W,W)@h: 14|Push(W,W)@h: 9|Push(W,S)@h: 19
+595355208:Push(N,N)@h: 18|Push(W,W)@h: 13|Push(W,W)@h: 8|Push(S,S)@h: 18
+595418917:Push(N,W)@h: 17|Push(W,W)@h: 12|Push(W,W)@h: 7|Push(S,W)@h: 17
+595471708:Push(W,W)@h: 16|Push(W,W)@h: 11|Push(W,W)@h: 6|Push(W,W)@h: 16
+595526833:Push(W,W)@h: 15|Push(W,W)@h: 10|Push(W,W)@h: 5|Push(W,W)@h: 15
+595593125:Push(W,W)@h: 14|Push(W,W)@h: 9|Push(W,W)@h: 4|Push(W,W)@h: 14
+595644042:Push(W,W)@h: 13|Push(W,W)@h: 8|Push(W,N)@h: 3|Push(W,W)@h: 13
+595727208:Push(W,W)@h: 12|Push(W,W)@h: 7|Push(N,N)@h: 2|Push(W,W)@h: 12
+595785833:Push(W,W)@h: 11|Push(W,W)@h: 6|Push(N,N)@h: 1|Push(W,W)@h: 11
+595837292:Push(W,W)@h: 10|Push(W,W)@h: 5|Push(N,E)@h: 0|Push(W,W)@h: 10
+595884917:Push(W,W)@h: 9|Push(W,W)@h: 4|NoOp@NoOp|Push(W,W)@h: 9
+595947208:Push(W,W)@h: 8|Push(W,S)@h: 3|NoOp@NoOp|Push(W,W)@h: 8
+596017167:Push(W,W)@h: 7|Push(S,S)@h: 2|NoOp@NoOp|Push(W,W)@h: 7
+596062958:Push(W,W)@h: 6|Push(S,S)@h: 1|NoOp@NoOp|Push(W,W)@h: 6
+596172583:Push(W,W)@h: 5|Push(S,E)@h: 0|NoOp@NoOp|Push(W,W)@h: 5
+596244042:Push(W,W)@h: 4|NoOp@NoOp|NoOp@NoOp|Push(W,W)@h: 4
+596303750:Push(W,W)@h: 3|NoOp@NoOp|NoOp@NoOp|Push(W,W)@h: 3
+596352875:Push(W,W)@h: 2|NoOp@NoOp|NoOp@NoOp|Push(W,W)@h: 2
+596427625:Push(W,W)@h: 1|NoOp@NoOp|NoOp@NoOp|Push(W,W)@h: 1
+596476167:Push(W,S)@h: 0|NoOp@NoOp|NoOp@NoOp|Push(W,N)@h: 0
+596524833:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+596577750:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+596653875:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+596760167:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+596810875:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+60
+#time
+596810875
+#end

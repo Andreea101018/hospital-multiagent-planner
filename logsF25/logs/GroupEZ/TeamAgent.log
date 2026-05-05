@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+222428500:Move(E)@Move(E)|Move(W)|Move(S)
+222708400:Pull(E,N)@Pull(E,N)|Push(N,N)|Move(S)
+222925700:Pull(E,E)@Pull(E,E)|NoOp|Move(S)
+223102900:Pull(S,E)@Pull(S,E)|NoOp|Move(W)
+223469600:Pull(S,S)@Pull(S,S)|Push(N,W)|Move(W)
+223702800:Pull(S,S)@Pull(S,S)|Push(W,N)|Pull(S,S)
+224026600:Pull(S,S)@Pull(S,S)|Push(N,W)|Pull(S,S)
+224208800:Pull(W,S)@Pull(W,S)|Push(W,W)|Pull(S,S)
+224461100:Push(E,S)@Push(E,S)|Push(W,W)|Pull(W,S)
+224642800:Push(S,S)@Push(S,S)|Push(W,W)|Pull(W,W)
+224810300:Move(W)@Move(W)|Push(W,W)|Pull(N,W)
+225036800:Move(S)@Move(S)|Push(W,W)|Pull(N,N)
+225257900:NoOp@NoOp|Push(W,W)|Pull(N,N)
+225578300:NoOp@NoOp|Push(W,W)|Pull(N,N)
+225799400:NoOp@NoOp|Push(W,W)|Pull(W,N)
+225993400:NoOp@NoOp|Push(W,W)|Pull(W,W)
+226270300:NoOp@NoOp|NoOp|Move(S)
+226531100:NoOp@NoOp|NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+18
+#time
+226531100
+#end

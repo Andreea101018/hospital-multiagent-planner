@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+BigSplit
+#actions
+1111133167:Move(S)@h: 16|Move(E)@Move(E)|NoOp@NoOp
+1111230459:Move(N)@h: 15|Move(E)@Move(E)|Move(S)@Move(S)
+1111294542:Move(S)@h: 14|Move(S)@Move(S)|Move(S)@Move(S)
+1111358584:Move(S)@h: 13|Move(S)@Move(S)|NoOp@NoOp
+1111432709:Move(E)@h: 12|Move(S)@Move(S)|Move(E)@Move(E)
+1111497375:Move(E)@h: 11|Push(S,E)@Push(S,E)|Move(S)@Move(S)
+1111571084:Move(E)@h: 10|Push(E,S)@Push(E,S)|NoOp@NoOp
+1111648709:Pull(N,W)@h: 9|Push(S,S)@Push(S,S)|Move(N)@Move(N)
+1111710792:NoOp@h: 8|Push(S,E)@Push(S,E)|NoOp@NoOp
+1111766417:Move(W)@h: 9|Push(E,E)@Push(E,E)|NoOp@NoOp
+1111838000:Move(S)@h: 8|Push(E,S)@Push(E,S)|Move(W)@Move(W)
+1111920250:Push(E,S)@h: 7|Push(S,S)@Push(S,S)|Move(N)@Move(N)
+1111987125:Push(S,E)@h: 6|Push(S,S)@Push(S,S)|Move(W)@Move(W)
+1112076667:Move(N)@h: 7|Pull(W,N)@Pull(W,N)|Move(W)@Move(W)
+1112181334:Move(S)@h: 6|Pull(S,W)@Pull(S,W)|Move(W)@Move(W)
+1112250500:Push(E,S)@h: 5|Pull(W,S)@Pull(W,S)|Move(W)@Move(W)
+1112313709:Push(S,S)@h: 6|Push(E,N)@Push(E,N)|NoOp@NoOp
+1112385875:Push(S,W)@h: 7|Move(W)@Move(W)|Move(E)@Move(E)
+1112453250:Push(W,W)@h: 6|Move(E)@Move(E)|Move(W)@Move(W)
+1112523792:Push(W,W)@h: 7|Push(N,N)@Push(N,N)|NoOp@NoOp
+1112586042:Push(W,W)@h: 8|Push(N,N)@Push(N,N)|Move(N)@Move(N)
+1112643459:NoOp@h: 7|Pull(S,S)@Pull(S,S)|Move(N)@Move(N)
+1112699792:NoOp@h: 6|Pull(S,S)@Pull(S,S)|NoOp@NoOp
+1112758792:NoOp@h: 5|Pull(E,S)@Pull(E,S)|Move(N)@Move(N)
+1112814459:NoOp@h: 4|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+1112870250:NoOp@h: 3|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+1112928209:NoOp@h: 3|NoOp@NoOp|Move(E)@Move(E)
+1112983000:NoOp@h: 4|Pull(E,E)@Pull(E,E)|Move(S)@Move(S)
+1113049000:NoOp@h: 5|Pull(E,E)@Pull(E,E)|Move(S)@Move(S)
+1113104792:NoOp@h: 6|Pull(N,E)@Pull(N,E)|NoOp@NoOp
+1113159542:NoOp@h: 7|Push(S,E)@Push(S,E)|Move(S)@Move(S)
+1113232334:NoOp@h: 6|Pull(N,W)@Pull(N,W)|Move(W)@Move(W)
+1113281125:NoOp@h: 5|Push(S,W)@Push(S,W)|Move(W)@Move(W)
+1113352334:NoOp@h: 6|Pull(E,E)@Pull(E,E)|Pull(E,E)@Pull(E,E)
+1113414750:NoOp@h: 6|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+1113474084:NoOp@h: 6|NoOp@NoOp|Pull(N,E)@Pull(N,E)
+1113560542:NoOp@h: 6|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+1113624834:NoOp@h: 5|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+1113682042:NoOp@h: 4|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+1113749417:NoOp@h: 3|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+1113796709:NoOp@h: 2|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+1113855625:NoOp@h: 1|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+1113921334:NoOp@h: 5|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+1113979584:NoOp@h: 4|NoOp@NoOp|Move(E)@Move(E)
+1114046834:NoOp@h: 3|NoOp@NoOp|Move(E)@Move(E)
+1114103084:NoOp@h: 2|NoOp@NoOp|Push(S,S)@Push(S,S)
+1114154667:NoOp@h: 1|NoOp@NoOp|Push(S,W)@Push(S,W)
+1114216125:NoOp@h: 0|NoOp@NoOp|Push(W,W)@Push(W,W)
+#end
+#solved
+true
+#numactions
+48
+#time
+1114216125
+#end

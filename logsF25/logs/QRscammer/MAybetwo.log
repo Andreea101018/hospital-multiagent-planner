@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+QRscammer
+#actions
+38762200:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+38885700:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+39008300:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+39152000:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+39250500:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+39358400:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+39454600:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+39552100:Push(E,E)@Push(E,E)|Move(N)@Move(N)|Move(N)@Move(N)
+39646700:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Move(E)@Move(E)
+39740400:Push(S,S)@Push(S,S)|Move(N)@Move(N)|Move(E)@Move(E)
+39830800:Move(N)@Move(N)|Push(W,N)@Push(W,N)|Move(E)@Move(E)
+39920800:NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+40016800:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+40114100:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+40211900:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+40301600:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+40395100:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+40491600:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+#end
+#solved
+true
+#numactions
+18
+#time
+40491600
+#end

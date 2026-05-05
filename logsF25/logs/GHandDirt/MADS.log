@@ -1,0 +1,65 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+1170113417:Move(S)@Move(S)|Move(S)|Move(S)
+1170264417:Move(S)@Move(S)|Move(E)|Move(S)
+1170351750:NoOp@NoOp|Move(S)|Move(S)
+1170425000:Move(E)@Move(E)|Move(S)|Move(W)
+1170513584:NoOp@NoOp|Move(S)|Move(W)
+1170593625:Move(E)@Move(E)|Push(E,E)|Move(W)
+1170664084:Move(E)@Move(E)|Push(E,S)|Move(W)
+1170731875:NoOp@NoOp|Push(S,S)|Move(W)
+1170830834:Push(E,S)@Push(E,S)|Push(S,S)|Pull(E,E)
+1170935750:Push(S,S)@Push(S,S)|Push(S,E)|NoOp
+1171024625:Push(S,S)@Push(S,S)|Push(E,E)|Pull(E,E)
+1171124917:Push(S,W)@Push(S,W)|Push(E,S)|Pull(N,E)
+1171214000:Push(W,W)@Push(W,W)|Push(S,S)|Pull(N,N)
+1171301459:Push(W,W)@Push(W,W)|Push(S,W)|NoOp
+1171391042:Push(W,W)@Push(W,W)|Push(W,W)|NoOp
+1171473709:NoOp@NoOp|Push(W,W)|NoOp
+1171555084:NoOp@NoOp|Push(W,W)|Push(S,S)
+1171653875:NoOp@NoOp|Push(W,W)|Push(S,W)
+1171768042:NoOp@NoOp|Push(W,W)|Push(W,W)
+#end
+#solved
+true
+#numactions
+19
+#time
+1171768042
+#end

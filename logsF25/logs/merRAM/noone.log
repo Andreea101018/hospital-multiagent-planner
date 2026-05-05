@@ -1,0 +1,52 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+merRAM
+#actions
+142433400:Move(S)@Move(S)|NoOp|NoOp
+143487900:Push(E,S)@Push(E,S)|NoOp|NoOp
+143655400:Push(S,S)@Push(S,S)|NoOp|NoOp
+143818700:Push(S,S)@Push(S,S)|NoOp|NoOp
+143935200:Push(S,S)@Push(S,S)|Move(S)|Move(N)
+144126200:Move(W)@Move(W)|Move(S)|Move(N)
+144278500:Move(S)@Move(S)|Move(W)|Move(E)
+144420800:Move(S)@Move(S)|Move(W)|Move(E)
+144540300:NoOp@NoOp|Move(W)|Move(E)
+144673900:NoOp@NoOp|Move(W)|Move(E)
+144791400:NoOp@NoOp|Move(W)|Move(E)
+144901400:NoOp@NoOp|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+12
+#time
+144901400
+#end

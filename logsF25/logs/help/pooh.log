@@ -1,0 +1,217 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+help
+#actions
+143427391:Move(E)@Move(E)|Move(S)
+143576140:Move(E)@Move(E)|Move(E)
+143652925:Move(E)@Move(E)|Move(E)
+143732544:Move(E)@Move(E)|Move(E)
+143807194:Move(E)@Move(E)|Move(E)
+143893476:Move(E)@Move(E)|Move(E)
+143981151:Move(E)@Move(E)|Move(E)
+144058617:Move(E)@Move(E)|Move(E)
+144144929:Move(E)@Move(E)|Move(E)
+144222314:Move(E)@Move(E)|Move(E)
+144303406:Move(S)@Move(S)|Move(E)
+144401831:Move(S)@Move(S)|Move(E)
+144509253:Move(S)@Move(S)|Move(E)
+144633827:Move(W)@Move(W)|Move(S)
+144741289:Move(S)@Move(S)|Move(E)
+144857206:Move(S)@Move(S)|Move(E)
+144991479:Move(S)@Move(S)|Move(S)
+145092408:Move(S)@Move(S)|Move(E)
+145200912:Move(S)@Move(S)|Move(S)
+145307392:Move(S)@Move(S)|Move(E)
+145406057:Move(E)@Move(E)|Move(S)
+145512407:Pull(W,W)@Pull(W,W)|Move(S)
+145621191:Pull(N,W)@Pull(N,W)|Move(S)
+145721891:Pull(N,N)@Pull(N,N)|Move(S)
+145832438:Pull(N,N)@Pull(N,N)|Pull(N,N)
+145931785:Pull(N,N)@Pull(N,N)|Pull(N,N)
+146027164:Pull(N,N)@Pull(N,N)|Pull(N,N)
+146119577:Pull(N,N)@Pull(N,N)|Pull(N,N)
+146215498:Pull(E,N)@Pull(E,N)|Pull(W,N)
+146378814:Pull(N,E)@Pull(N,E)|Push(E,N)
+146512686:Pull(N,N)@Pull(N,N)|Push(N,W)
+146593357:Pull(W,N)@Pull(W,N)|Push(W,W)
+146673077:Pull(W,W)@Pull(W,W)|Push(W,W)
+146755512:Pull(W,W)@Pull(W,W)|Push(W,N)
+146836464:Pull(S,W)@Pull(S,W)|Push(N,W)
+146916073:Pull(W,S)@Pull(W,S)|Push(W,W)
+147002526:Pull(S,W)@Pull(S,W)|Push(W,W)
+147081975:Pull(W,S)@Pull(W,S)|Push(W,N)
+147161474:Pull(S,W)@Pull(S,W)|Push(N,W)
+147243408:Pull(S,S)@Pull(S,S)|Push(W,W)
+147387629:Pull(S,S)@Pull(S,S)|Push(W,W)
+147504629:Pull(S,S)@Pull(S,S)|Push(W,W)
+147583928:Pull(S,S)@Pull(S,S)|Push(W,W)
+147658518:Pull(S,S)@Pull(S,S)|Push(W,W)
+147732637:Pull(S,S)@Pull(S,S)|Push(W,S)
+147820532:Pull(S,S)@Pull(S,S)|Push(S,S)
+147910631:Pull(S,S)@Pull(S,S)|Push(S,W)
+148014867:Pull(S,S)@Pull(S,S)|Push(W,S)
+148128150:Pull(S,S)@Pull(S,S)|Push(S,S)
+148218900:Pull(S,S)@Pull(S,S)|Push(S,S)
+148318828:Pull(S,S)@Pull(S,S)|Push(S,S)
+148417674:Pull(S,S)@Pull(S,S)|Push(S,S)
+148502603:Pull(S,S)@Pull(S,S)|Push(S,S)
+148568226:Pull(S,S)@Pull(S,S)|Push(S,S)
+148632307:Pull(S,S)@Pull(S,S)|Push(S,S)
+148695826:Pull(S,S)@Pull(S,S)|Push(S,S)
+148778411:Pull(S,S)@Pull(S,S)|Push(S,S)
+148864322:Pull(S,S)@Pull(S,S)|Push(S,S)
+148975561:Pull(S,S)@Pull(S,S)|Push(S,E)
+149047196:Pull(W,S)@Pull(W,S)|Push(E,S)
+149120403:Pull(S,W)@Pull(S,W)|Push(S,S)
+149197949:Pull(S,S)@Pull(S,S)|Push(S,S)
+149308266:Pull(S,S)@Pull(S,S)|Push(S,S)
+149413173:Pull(S,S)@Pull(S,S)|Push(S,S)
+149505266:Pull(S,S)@Pull(S,S)|Push(S,E)
+149611386:Pull(S,S)@Pull(S,S)|Push(E,S)
+149722564:Pull(W,S)@Pull(W,S)|Push(S,S)
+149829205:Pull(S,W)@Pull(S,W)|Push(S,S)
+149919043:Pull(S,S)@Pull(S,S)|Push(S,S)
+150017198:Pull(S,S)@Pull(S,S)|Push(S,S)
+150100845:Pull(S,S)@Pull(S,S)|Push(S,S)
+150283838:Pull(S,S)@Pull(S,S)|Push(S,S)
+150379789:Pull(W,S)@Pull(W,S)|Push(S,S)
+150450572:Pull(S,W)@Pull(S,W)|Push(S,S)
+150555579:Pull(W,S)@Pull(W,S)|Push(S,S)
+150655426:Push(E,S)@Push(E,S)|Push(S,S)
+150717062:Push(S,S)@Push(S,S)|Push(S,S)
+150775221:Move(E)@Move(E)|NoOp
+150865952:Move(N)@Move(N)|NoOp
+150929651:Move(N)@Move(N)|NoOp
+150987460:Move(N)@Move(N)|NoOp
+151310837:Move(N)@Move(N)|NoOp
+151403141:Move(N)@Move(N)|NoOp
+151528716:Move(N)@Move(N)|NoOp
+151612804:Move(E)@Move(E)|NoOp
+151727490:Move(E)@Move(E)|NoOp
+151842185:Move(E)@Move(E)|NoOp
+151940480:Push(E,E)@Push(E,E)|NoOp
+152030188:Push(E,E)@Push(E,E)|NoOp
+152117132:Push(E,S)@Push(E,S)|NoOp
+152204926:Push(S,S)@Push(S,S)|NoOp
+152292471:Push(S,S)@Push(S,S)|NoOp
+152401976:Push(S,S)@Push(S,S)|NoOp
+152555455:Push(S,S)@Push(S,S)|NoOp
+152733199:Push(S,S)@Push(S,S)|NoOp
+152835931:Push(S,S)@Push(S,S)|NoOp
+#end
+#solved
+true
+#numactions
+96
+#time
+152835931
+#end

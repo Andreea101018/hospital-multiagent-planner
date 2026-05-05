@@ -1,0 +1,228 @@
+#domain
+hospital
+#levelname
+sigMAS
+#colors
+red: G,B,0,C,H,E,F
+blue: 1,D,A,N,M,R,K
+#initial
++++++++++++++++
+++G ++B0C+H+E++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++ F ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++  +++    +++ +
++  +++    +++ +
++  +++    +++ +
++  ++++++++++ +
++      1      +
++   NMRDAKA   +
++             +
++++++++++++++++
+#goal
++++++++++++++++
+++  ++   + + ++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++   ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++01+++B CE+++ +
++  +++    +++ +
++  +++F GH+++ +
++  ++++++++++ +
++             +
++             +
++   DANMARK   +
++++++++++++++++
+#end
+#clientname
+DASH
+#actions
+3714365959:Pull(S,E)@Pull(S,E)|Push(S,S)@Push(S,S)
+3714440417:Pull(S,S)@Pull(S,S)|Push(S,W)@Push(S,W)
+3714477209:Pull(S,S)@Pull(S,S)|Push(W,W)@Push(W,W)
+3714518584:Pull(S,S)@Pull(S,S)|Push(W,W)@Push(W,W)
+3714588084:Pull(S,S)@Pull(S,S)|Pull(E,S)@Pull(E,S)
+3714614584:Pull(W,S)@Pull(W,S)|Push(N,E)@Push(N,E)
+3714640875:Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)
+3714658375:Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+3714674250:Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+3714691709:Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+3714714250:Push(S,W)@Push(S,W)|Move(W)@Move(W)
+3714741792:Move(N)@Move(N)|Move(E)@Move(E)
+3714759292:Move(N)@Move(N)|Move(W)@Move(W)
+3714779709:Move(N)@Move(N)|Pull(W,N)@Pull(W,N)
+3714799084:Move(N)@Move(N)|Push(E,S)@Push(E,S)
+3714814917:Move(N)@Move(N)|Move(N)@Move(N)
+3714830834:Move(N)@Move(N)|Move(S)@Move(S)
+3714856792:Move(N)@Move(N)|Move(N)@Move(N)
+3714874709:Move(N)@Move(N)|Move(W)@Move(W)
+3714888500:Move(N)@Move(N)|Move(W)@Move(W)
+3714905542:Pull(S,W)@Pull(S,W)|Move(S)@Move(S)
+3714922209:Pull(S,S)@Pull(S,S)|Pull(N,N)@Pull(N,N)
+3714937167:Pull(S,S)@Pull(S,S)|Push(S,W)@Push(S,W)
+3714952000:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3714966417:Pull(S,S)@Pull(S,S)|Pull(E,E)@Pull(E,E)
+3714980792:Pull(W,S)@Pull(W,S)|Pull(E,E)@Pull(E,E)
+3714996417:Push(E,S)@Push(E,S)|Pull(E,N)@Pull(E,N)
+3715016209:Push(S,S)@Push(S,S)|NoOp@NoOp
+3715032459:Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)
+3715057084:Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)
+3715071459:Push(S,E)@Push(S,E)|Push(S,E)@Push(S,E)
+3715088500:Move(N)@Move(N)|Pull(N,E)@Pull(N,E)
+3715102667:Move(N)@Move(N)|Push(W,S)@Push(W,S)
+3715121875:Move(N)@Move(N)|Move(W)@Move(W)
+3715165625:Move(N)@Move(N)|Move(W)@Move(W)
+3715181084:Move(W)@Move(W)|Move(S)@Move(S)
+3715193209:Move(W)@Move(W)|Move(W)@Move(W)
+3715207000:Move(W)@Move(W)|Push(W,N)@Push(W,N)
+3715219667:Move(W)@Move(W)|Push(N,E)@Push(N,E)
+3715231417:Move(W)@Move(W)|Push(E,S)@Push(E,S)
+3715243125:Move(N)@Move(N)|Push(S,E)@Push(S,E)
+3715254792:Move(N)@Move(N)|Move(N)@Move(N)
+3715282709:Pull(N,W)@Pull(N,W)|Move(E)@Move(E)
+3715300584:Push(S,S)@Push(S,S)|Move(E)@Move(E)
+3715317500:Push(S,S)@Push(S,S)|Move(E)@Move(E)
+3715333042:Push(S,S)@Push(S,S)|Move(E)@Move(E)
+3715347750:Push(S,E)@Push(S,E)|Move(E)@Move(E)
+3715362542:Push(E,E)@Push(E,E)|Pull(W,N)@Pull(W,N)
+3715387709:Push(E,E)@Push(E,E)|Pull(W,W)@Pull(W,W)
+3715402042:Push(E,E)@Push(E,E)|Pull(N,W)@Pull(N,W)
+3715416042:Push(E,E)@Push(E,E)|Push(S,W)@Push(S,W)
+3715430584:Push(E,S)@Push(E,S)|Push(W,W)@Push(W,W)
+3715445834:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)
+3715468709:Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)
+3715490959:Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)
+3715509542:Push(S,S)@Push(S,S)|Move(N)@Move(N)
+3715529167:Push(S,W)@Push(S,W)|Move(W)@Move(W)
+3715544209:Move(N)@Move(N)|Pull(E,E)@Pull(E,E)
+3715558000:Move(N)@Move(N)|Pull(N,E)@Pull(N,E)
+3715575750:Move(N)@Move(N)|Push(S,S)@Push(S,S)
+3715592084:Move(N)@Move(N)|Move(N)@Move(N)
+3715610792:Move(N)@Move(N)|Move(W)@Move(W)
+3715625625:Move(E)@Move(E)|Move(W)@Move(W)
+3715637792:Move(N)@Move(N)|Move(W)@Move(W)
+3715649209:Move(E)@Move(E)|Move(W)@Move(W)
+3715660625:Move(E)@Move(E)|Move(N)@Move(N)
+3715672500:Move(E)@Move(E)|Move(N)@Move(N)
+3715684084:Move(N)@Move(N)|Move(N)@Move(N)
+3715695459:Move(N)@Move(N)|Move(N)@Move(N)
+3715709875:Move(E)@Move(E)|NoOp@NoOp
+3715721459:Move(N)@Move(N)|NoOp@NoOp
+3715732709:Move(N)@Move(N)|NoOp@NoOp
+3715746250:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3715760834:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3715773084:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+3715785167:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+3715811417:Push(E,S)@Push(E,S)|NoOp@NoOp
+3715831125:Push(S,S)@Push(S,S)|NoOp@NoOp
+3715845167:Push(S,S)@Push(S,S)|NoOp@NoOp
+3715863834:Push(S,W)@Push(S,W)|NoOp@NoOp
+3715881959:Push(W,W)@Push(W,W)|NoOp@NoOp
+3715896167:Push(W,W)@Push(W,W)|NoOp@NoOp
+3715909834:Push(W,W)@Push(W,W)|NoOp@NoOp
+3715927125:Push(W,S)@Push(W,S)|NoOp@NoOp
+3715947542:Push(S,S)@Push(S,S)|NoOp@NoOp
+3715961209:Push(S,S)@Push(S,S)|NoOp@NoOp
+3715975209:Push(S,S)@Push(S,S)|NoOp@NoOp
+3715993542:Push(S,E)@Push(S,E)|NoOp@NoOp
+3716011834:Push(E,E)@Push(E,E)|NoOp@NoOp
+3716037959:Push(E,N)@Push(E,N)|NoOp@NoOp
+3716058584:Move(W)@Move(W)|NoOp@NoOp
+3716073042:Move(W)@Move(W)|NoOp@NoOp
+3716094584:Move(N)@Move(N)|NoOp@NoOp
+3716108917:Move(N)@Move(N)|NoOp@NoOp
+3716122042:Move(N)@Move(N)|NoOp@NoOp
+3716136417:Move(N)@Move(N)|NoOp@NoOp
+3716150292:Move(W)@Move(W)|NoOp@NoOp
+3716168334:Move(N)@Move(N)|NoOp@NoOp
+3716183500:Move(W)@Move(W)|NoOp@NoOp
+3716196709:Move(W)@Move(W)|NoOp@NoOp
+3716210542:Move(W)@Move(W)|NoOp@NoOp
+3716223584:Move(W)@Move(W)|NoOp@NoOp
+3716237042:Move(N)@Move(N)|NoOp@NoOp
+3716250125:Move(N)@Move(N)|NoOp@NoOp
+3716263334:Move(N)@Move(N)|NoOp@NoOp
+3716277167:Move(N)@Move(N)|NoOp@NoOp
+3716295334:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3716312000:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3716326209:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3716339959:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3716355292:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3716378250:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+3716393292:Push(E,E)@Push(E,E)|NoOp@NoOp
+3716406792:Push(E,E)@Push(E,E)|NoOp@NoOp
+3716421209:Push(E,E)@Push(E,E)|NoOp@NoOp
+3716434084:Push(E,E)@Push(E,E)|NoOp@NoOp
+3716457084:Push(E,E)@Push(E,E)|NoOp@NoOp
+3716472209:Push(E,S)@Push(E,S)|NoOp@NoOp
+3716483709:Push(S,S)@Push(S,S)|NoOp@NoOp
+3716495167:Push(S,S)@Push(S,S)|NoOp@NoOp
+3716510792:Push(S,S)@Push(S,S)|NoOp@NoOp
+3716524375:Push(S,S)@Push(S,S)|NoOp@NoOp
+3716564000:Push(S,E)@Push(S,E)|NoOp@NoOp
+3716598334:Move(N)@Move(N)|NoOp@NoOp
+3716619959:Move(N)@Move(N)|NoOp@NoOp
+3716637167:Move(N)@Move(N)|NoOp@NoOp
+3716652750:Move(N)@Move(N)|NoOp@NoOp
+3716664667:Move(N)@Move(N)|NoOp@NoOp
+3716676500:Move(N)@Move(N)|NoOp@NoOp
+3716697292:Move(E)@Move(E)|NoOp@NoOp
+3716716167:Move(E)@Move(E)|NoOp@NoOp
+3716741042:Move(E)@Move(E)|NoOp@NoOp
+3716755500:Move(E)@Move(E)|NoOp@NoOp
+3716770292:Move(N)@Move(N)|NoOp@NoOp
+3716787750:Move(N)@Move(N)|NoOp@NoOp
+3716805875:Move(W)@Move(W)|NoOp@NoOp
+3716818000:Move(N)@Move(N)|NoOp@NoOp
+3716841292:Move(N)@Move(N)|NoOp@NoOp
+3716860042:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3716874667:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3716891250:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+3716925750:Pull(S,E)@Pull(S,E)|NoOp@NoOp
+3716976792:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+3717007417:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+3717043542:Pull(S,W)@Pull(S,W)|NoOp@NoOp
+3717065084:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+3717079959:Push(W,W)@Push(W,W)|NoOp@NoOp
+3717094417:Push(W,W)@Push(W,W)|NoOp@NoOp
+3717115709:Push(W,W)@Push(W,W)|NoOp@NoOp
+3717134125:Push(W,S)@Push(W,S)|NoOp@NoOp
+3717153792:Push(S,S)@Push(S,S)|NoOp@NoOp
+3717169334:Push(S,S)@Push(S,S)|NoOp@NoOp
+3717184875:Push(S,S)@Push(S,S)|NoOp@NoOp
+3717204792:Push(S,E)@Push(S,E)|NoOp@NoOp
+3717218917:Push(E,E)@Push(E,E)|NoOp@NoOp
+3717234917:Push(E,S)@Push(E,S)|NoOp@NoOp
+3717248792:Move(W)@Move(W)|NoOp@NoOp
+3717263125:Move(W)@Move(W)|NoOp@NoOp
+3717276875:Move(N)@Move(N)|NoOp@NoOp
+3717290834:Move(N)@Move(N)|NoOp@NoOp
+3717304709:Move(N)@Move(N)|NoOp@NoOp
+3717317875:Move(N)@Move(N)|NoOp@NoOp
+3717331375:Move(W)@Move(W)|NoOp@NoOp
+3717344334:Move(W)@Move(W)|NoOp@NoOp
+3717357750:Move(W)@Move(W)|NoOp@NoOp
+3717381500:Move(W)@Move(W)|NoOp@NoOp
+3717430459:Move(W)@Move(W)|NoOp@NoOp
+3717467625:Move(S)@Move(S)|NoOp@NoOp
+3717485375:Move(W)@Move(W)|NoOp@NoOp
+3717499042:Move(S)@Move(S)|NoOp@NoOp
+3717513792:Move(S)@Move(S)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+171
+#time
+3717513792
+#end

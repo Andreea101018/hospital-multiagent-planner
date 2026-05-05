@@ -1,0 +1,129 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+BigSplit
+#actions
+228679292:Move(E)@h: 14|Move(E)@h: 16|Move(W)@h: 11
+228790459:Move(S)@h: 13|Move(E)@h: 15|Move(S)@h: 10
+228875500:Move(S)@h: 12|Move(N)@h: 14|Push(S,W)@h: 9
+228939292:Move(E)@h: 11|Move(E)@h: 13|Push(W,W)@h: 8
+228987584:Move(S)@h: 10|Move(E)@h: 12|Push(W,S)@h: 7
+229033375:Pull(W,N)@h: 9|Move(N)@h: 11|Push(S,W)@h: 6
+229098375:Push(E,N)@h: 8|Pull(S,S)@h: 10|Push(W,W)@h: 5
+229162750:Push(N,N)@h: 7|Push(N,E)@h: 9|Push(W,S)@h: 4
+229262750:Push(N,E)@h: 6|Push(E,E)@h: 8|Push(S,S)@h: 3
+229369167:Push(E,E)@h: 5|Push(E,E)@h: 7|Push(S,S)@h: 2
+229430625:Push(E,E)@h: 4|Push(E,E)@h: 6|Push(S,S)@h: 1
+229476875:Push(E,E)@h: 3|Push(E,E)@h: 5|Move(E)@h: 2
+229521417:Push(E,E)@h: 2|Push(E,N)@h: 4|Move(S)@h: 1
+229569875:Move(W)@h: 3|Push(N,N)@h: 3|Pull(E,E)@h: 2
+229633542:Move(W)@h: 4|Push(N,W)@h: 2|Move(N)@h: 3
+229686750:Move(S)@h: 5|Push(W,W)@h: 1|Move(E)@h: 4
+229734375:Move(W)@h: 6|Move(E)@h: 2|Move(E)@h: 5
+229793375:Move(W)@h: 7|Move(S)@h: 3|Move(N)@h: 6
+229841667:Move(S)@h: 8|Move(S)@h: 4|Move(E)@h: 7
+229890667:Move(W)@h: 9|Move(W)@h: 5|Move(N)@h: 8
+229948584:Move(S)@h: 10|Move(W)@h: 6|Move(N)@h: 9
+229987459:Pull(E,N)@h: 9|Move(W)@h: 7|Pull(S,S)@h: 8
+230040084:Pull(N,E)@h: 8|Move(W)@h: 8|Pull(S,S)@h: 7
+230090042:Pull(E,N)@h: 7|Pull(S,S)@h: 7|Pull(W,S)@h: 6
+230142000:Pull(E,E)@h: 6|Push(N,E)@h: 6|Pull(S,W)@h: 5
+230217042:Pull(N,E)@h: 5|Push(E,E)@h: 5|Pull(W,S)@h: 4
+230304792:Pull(E,N)@h: 4|Push(E,E)@h: 4|Pull(W,W)@h: 3
+230362292:Pull(S,E)@h: 5|Push(E,E)@h: 3|Pull(N,W)@h: 4
+230427709:Push(N,N)@h: 4|Push(E,N)@h: 2|Push(S,W)@h: 3
+230492125:Push(N,E)@h: 3|Push(N,N)@h: 1|Push(W,W)@h: 2
+230541042:Push(E,N)@h: 2|Push(N,W)@h: 2|Push(W,S)@h: 3
+230607375:Push(N,E)@h: 1|Push(W,N)@h: 2|Move(E)@h: 2
+230658292:Push(E,E)@h: 0|Push(W,W)@h: 3|Move(E)@h: 1
+230709167:NoOp@done|Pull(N,E)@h: 2|Move(S)@h: 0
+230750292:NoOp@done|Push(E,S)@h: 2|NoOp@done
+230789667:NoOp@done|Move(W)@h: 1|NoOp@done
+230831625:NoOp@done|Push(S,W)@h: 1|NoOp@done
+230908209:NoOp@done|Move(N)@h: 2|NoOp@done
+230970209:NoOp@done|Move(W)@h: 1|NoOp@done
+231036292:NoOp@done|Push(S,E)@h: 1|NoOp@done
+231076167:NoOp@done|Push(E,N)@h: 3|NoOp@done
+231142750:NoOp@done|Pull(W,W)@h: 2|NoOp@done
+231191542:NoOp@done|Pull(N,W)@h: 3|NoOp@done
+231238625:NoOp@done|Push(E,S)@h: 1|NoOp@done
+231277167:NoOp@done|Move(E)@h: 2|NoOp@done
+231330500:NoOp@done|Move(S)@h: 1|NoOp@done
+231397709:NoOp@done|Pull(E,E)@h: 1|NoOp@done
+231446625:NoOp@done|Move(S)@h: 2|NoOp@done
+231491000:NoOp@done|Move(S)@h: 3|NoOp@done
+231555667:NoOp@done|Move(W)@h: 4|NoOp@done
+231592459:NoOp@done|Move(W)@h: 5|NoOp@done
+231654875:NoOp@done|Move(W)@h: 6|NoOp@done
+231704542:NoOp@done|Move(W)@h: 7|NoOp@done
+231748459:NoOp@done|Move(W)@h: 8|NoOp@done
+231835500:NoOp@done|Move(N)@h: 9|NoOp@done
+231892500:NoOp@done|Pull(E,E)@h: 8|NoOp@done
+231934375:NoOp@done|Pull(S,E)@h: 7|NoOp@done
+232185959:NoOp@done|Pull(E,S)@h: 6|NoOp@done
+232330625:NoOp@done|Pull(E,E)@h: 5|NoOp@done
+232391334:NoOp@done|Pull(E,E)@h: 4|NoOp@done
+232442167:NoOp@done|Pull(S,E)@h: 5|NoOp@done
+232518125:NoOp@done|Push(N,E)@h: 4|NoOp@done
+232569084:NoOp@done|Push(E,N)@h: 3|NoOp@done
+232625750:NoOp@done|Push(N,N)@h: 2|NoOp@done
+232677584:NoOp@done|Push(N,N)@h: 1|NoOp@done
+232715292:NoOp@done|Push(N,W)@h: 2|NoOp@done
+232766709:NoOp@done|Push(W,W)@h: 1|NoOp@done
+232817959:NoOp@done|Push(W,S)@h: 0|NoOp@done
+#end
+#solved
+true
+#numactions
+68
+#time
+232817959
+#end

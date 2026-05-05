@@ -1,0 +1,59 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+help
+#actions
+79295255:Move(E)@Move(E)|Move(W)|Move(N)
+79452600:Move(E)@Move(E)|Move(W)|Move(N)
+79607651:Move(E)@Move(E)|Move(W)|Move(E)
+79717307:Move(E)@Move(E)|Move(W)|Move(E)
+79831050:Move(E)@Move(E)|Move(W)|NoOp
+79959421:Move(E)@Move(E)|Move(W)|Move(S)
+80093482:Move(E)@Move(E)|Move(W)|Move(W)
+80217816:Push(E,E)@Push(E,E)|Move(N)|Move(S)
+80370222:Push(E,S)@Push(E,S)|Move(N)|Move(E)
+80498422:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+80616624:NoOp@NoOp|Push(N,N)|Move(E)
+80746588:NoOp@NoOp|NoOp|Move(E)
+80873586:NoOp@NoOp|NoOp|Move(E)
+80990025:NoOp@NoOp|NoOp|Move(E)
+81149664:NoOp@NoOp|NoOp|Move(E)
+81311337:NoOp@NoOp|NoOp|Move(N)
+81468703:NoOp@NoOp|NoOp|Move(E)
+81591473:NoOp@NoOp|NoOp|Move(N)
+81713712:NoOp@NoOp|NoOp|Pull(E,S)
+#end
+#solved
+true
+#numactions
+19
+#time
+81713712
+#end

@@ -1,0 +1,317 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+DASH
+#actions
+6522349084:NoOp@NoOp|Move(S)@Move(S)
+6522387084:NoOp@NoOp|Move(E)@Move(E)
+6522411709:NoOp@NoOp|Move(E)@Move(E)
+6522440792:NoOp@NoOp|Move(E)@Move(E)
+6522463250:NoOp@NoOp|Move(E)@Move(E)
+6522483667:NoOp@NoOp|Move(E)@Move(E)
+6522497334:NoOp@NoOp|Move(E)@Move(E)
+6522511084:NoOp@NoOp|Move(E)@Move(E)
+6522526417:NoOp@NoOp|Move(E)@Move(E)
+6522541584:NoOp@NoOp|Move(S)@Move(S)
+6522554292:NoOp@NoOp|Move(S)@Move(S)
+6522565750:NoOp@NoOp|Move(W)@Move(W)
+6522579709:NoOp@NoOp|Move(S)@Move(S)
+6522597875:NoOp@NoOp|Move(S)@Move(S)
+6522610792:NoOp@NoOp|Move(S)@Move(S)
+6522623709:NoOp@NoOp|Move(S)@Move(S)
+6522637542:NoOp@NoOp|Move(S)@Move(S)
+6522650542:NoOp@NoOp|Move(S)@Move(S)
+6522663792:NoOp@NoOp|Move(E)@Move(E)
+6522677959:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+6522691209:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+6522705334:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+6522721750:NoOp@NoOp|Push(E,N)@Push(E,N)
+6522733750:NoOp@NoOp|Push(N,N)@Push(N,N)
+6522747584:NoOp@NoOp|Push(N,N)@Push(N,N)
+6522760834:NoOp@NoOp|Push(N,N)@Push(N,N)
+6522775250:NoOp@NoOp|Push(N,N)@Push(N,N)
+6522791209:NoOp@NoOp|Push(N,E)@Push(N,E)
+6522804209:NoOp@NoOp|Push(E,N)@Push(E,N)
+6522818834:NoOp@NoOp|Push(N,N)@Push(N,N)
+6522831334:NoOp@NoOp|Push(N,W)@Push(N,W)
+6522845542:NoOp@NoOp|Push(W,W)@Push(W,W)
+6522858375:NoOp@NoOp|Push(W,W)@Push(W,W)
+6522870084:NoOp@NoOp|Push(W,W)@Push(W,W)
+6522887042:NoOp@NoOp|Push(W,W)@Push(W,W)
+6522898875:NoOp@NoOp|Push(W,S)@Push(W,S)
+6522911250:NoOp@NoOp|Push(S,S)@Push(S,S)
+6522924042:NoOp@NoOp|Push(S,S)@Push(S,S)
+6522937584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6522949000:NoOp@NoOp|Push(S,S)@Push(S,S)
+6522961209:NoOp@NoOp|Push(S,S)@Push(S,S)
+6522973584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6522986667:NoOp@NoOp|Push(S,S)@Push(S,S)
+6522999750:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523012042:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523024417:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523035625:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523048584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523061375:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523074750:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523086959:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523100584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523113209:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523125209:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523138959:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523151875:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523164709:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523177875:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523190125:NoOp@NoOp|Push(S,W)@Push(S,W)
+6523202417:NoOp@NoOp|Push(W,S)@Push(W,S)
+6523214709:NoOp@NoOp|Push(S,W)@Push(S,W)
+6523227875:NoOp@NoOp|Push(W,S)@Push(W,S)
+6523240125:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523253459:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523265709:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523277750:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523291042:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523303209:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523315459:NoOp@NoOp|Push(S,W)@Push(S,W)
+6523327625:NoOp@NoOp|Push(W,S)@Push(W,S)
+6523341042:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523353500:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523366459:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523378792:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523391000:NoOp@NoOp|Push(S,S)@Push(S,S)
+6523405250:NoOp@NoOp|Move(N)@Move(N)
+6523418292:NoOp@NoOp|Move(E)@Move(E)
+6523430709:NoOp@NoOp|Move(N)@Move(N)
+6523444000:NoOp@NoOp|Move(N)@Move(N)
+6523456125:NoOp@NoOp|Move(N)@Move(N)
+6523468334:NoOp@NoOp|Move(N)@Move(N)
+6523480625:NoOp@NoOp|Move(E)@Move(E)
+6523497209:NoOp@NoOp|Move(N)@Move(N)
+6523508084:NoOp@NoOp|Move(N)@Move(N)
+6523519667:NoOp@NoOp|Move(N)@Move(N)
+6523530709:NoOp@NoOp|Move(N)@Move(N)
+6523543542:NoOp@NoOp|Move(N)@Move(N)
+6523564792:NoOp@NoOp|Move(N)@Move(N)
+6523576125:NoOp@NoOp|Move(E)@Move(E)
+6523590834:NoOp@NoOp|Move(N)@Move(N)
+6523603042:NoOp@NoOp|Move(N)@Move(N)
+6523616209:NoOp@NoOp|Move(N)@Move(N)
+6523628667:NoOp@NoOp|Move(N)@Move(N)
+6523641542:NoOp@NoOp|Move(N)@Move(N)
+6523653959:NoOp@NoOp|Move(N)@Move(N)
+6523666542:NoOp@NoOp|Move(N)@Move(N)
+6523679459:NoOp@NoOp|Move(N)@Move(N)
+6523690167:NoOp@NoOp|Move(N)@Move(N)
+6523702959:NoOp@NoOp|Move(N)@Move(N)
+6523734375:NoOp@NoOp|Move(N)@Move(N)
+6523745334:NoOp@NoOp|Move(N)@Move(N)
+6523771584:NoOp@NoOp|Move(N)@Move(N)
+6523790125:NoOp@NoOp|Move(N)@Move(N)
+6523803875:NoOp@NoOp|Move(N)@Move(N)
+6523814750:NoOp@NoOp|Move(N)@Move(N)
+6523827250:NoOp@NoOp|Move(N)@Move(N)
+6523846417:NoOp@NoOp|Move(N)@Move(N)
+6523858375:NoOp@NoOp|Move(N)@Move(N)
+6523870667:NoOp@NoOp|Move(N)@Move(N)
+6523906917:NoOp@NoOp|Move(N)@Move(N)
+6523985750:NoOp@NoOp|Move(N)@Move(N)
+6524009125:NoOp@NoOp|Move(N)@Move(N)
+6524036042:NoOp@NoOp|Move(N)@Move(N)
+6524085334:NoOp@NoOp|Move(E)@Move(E)
+6524110667:NoOp@NoOp|Move(N)@Move(N)
+6524136959:NoOp@NoOp|Move(E)@Move(E)
+6524151250:NoOp@NoOp|Move(E)@Move(E)
+6524175792:NoOp@NoOp|Move(E)@Move(E)
+6524199167:NoOp@NoOp|Move(E)@Move(E)
+6524214459:NoOp@NoOp|Move(E)@Move(E)
+6524228750:NoOp@NoOp|Move(S)@Move(S)
+6524241125:NoOp@NoOp|Move(S)@Move(S)
+6524255292:NoOp@NoOp|Move(E)@Move(E)
+6524269667:NoOp@NoOp|Move(E)@Move(E)
+6524288209:NoOp@NoOp|Move(S)@Move(S)
+6524302500:NoOp@NoOp|Move(S)@Move(S)
+6524315334:NoOp@NoOp|Move(S)@Move(S)
+6524328625:NoOp@NoOp|Move(S)@Move(S)
+6524341167:NoOp@NoOp|Move(S)@Move(S)
+6524354792:NoOp@NoOp|Move(E)@Move(E)
+6524369834:NoOp@NoOp|Move(S)@Move(S)
+6524386167:NoOp@NoOp|Move(E)@Move(E)
+6524398334:NoOp@NoOp|Move(E)@Move(E)
+6524414459:NoOp@NoOp|Move(E)@Move(E)
+6524427500:NoOp@NoOp|Push(E,N)@Push(E,N)
+6524441584:NoOp@NoOp|Push(N,N)@Push(N,N)
+6524461584:NoOp@NoOp|Push(N,N)@Push(N,N)
+6524477375:NoOp@NoOp|Push(N,N)@Push(N,N)
+6524495500:NoOp@NoOp|Push(N,N)@Push(N,N)
+6524507125:NoOp@NoOp|Push(N,N)@Push(N,N)
+6524521209:NoOp@NoOp|Push(N,N)@Push(N,N)
+6524533667:NoOp@NoOp|Push(N,N)@Push(N,N)
+6524551459:NoOp@NoOp|Push(N,W)@Push(N,W)
+6524563125:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524576500:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524590000:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524608875:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524621042:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524635084:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524648250:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524661125:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524673125:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524687000:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524700709:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524713959:NoOp@NoOp|Push(W,W)@Push(W,W)
+6524727625:NoOp@NoOp|Push(W,S)@Push(W,S)
+6524741875:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524753750:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524766750:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524780917:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524797625:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524809375:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524826042:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524840417:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524854084:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524867584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524879334:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524891750:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524905167:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524917584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524930375:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524942500:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524955792:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524973084:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524984250:NoOp@NoOp|Push(S,S)@Push(S,S)
+6524995417:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525008584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525021125:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525033125:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525045167:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525059084:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525071250:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525083834:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525096584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525112334:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525125334:NoOp@NoOp|Push(S,E)@Push(S,E)
+6525136875:NoOp@NoOp|Push(E,E)@Push(E,E)
+6525149209:NoOp@NoOp|Push(E,E)@Push(E,E)
+6525161667:NoOp@NoOp|Push(E,S)@Push(E,S)
+6525174750:NoOp@NoOp|Push(S,E)@Push(S,E)
+6525188417:NoOp@NoOp|Push(E,S)@Push(E,S)
+6525201167:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525213917:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525225875:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525237584:NoOp@NoOp|Push(S,S)@Push(S,S)
+6525250042:NoOp@NoOp|Push(S,S)@Push(S,S)
+#end
+#solved
+true
+#numactions
+196
+#time
+6525250042
+#end

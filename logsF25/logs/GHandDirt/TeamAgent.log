@@ -1,0 +1,59 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+715420500:Move(E)@Move(E)|Move(N)|Move(S)
+715583708:NoOp@NoOp|Push(W,N)|NoOp
+715693791:Pull(E,N)@Pull(E,N)|NoOp|Move(S)
+715795083:Pull(E,E)@Pull(E,E)|NoOp|Move(S)
+715913375:Pull(S,E)@Pull(S,E)|Push(N,W)|Move(W)
+716017541:Pull(S,S)@Pull(S,S)|Push(W,N)|Move(W)
+716125791:Pull(S,S)@Pull(S,S)|Push(N,W)|Pull(S,S)
+716210375:Pull(S,S)@Pull(S,S)|Push(W,W)|Pull(S,S)
+716334125:Pull(S,S)@Pull(S,S)|Push(W,W)|Pull(S,S)
+716455291:Pull(S,S)@Pull(S,S)|Push(W,W)|Pull(W,S)
+716552791:Pull(W,S)@Pull(W,S)|Push(W,W)|Pull(W,W)
+716653541:NoOp@NoOp|Push(W,W)|Pull(N,W)
+716737333:NoOp@NoOp|Push(W,W)|Pull(N,N)
+716821166:NoOp@NoOp|Push(W,W)|Pull(N,N)
+716898166:NoOp@NoOp|Push(W,W)|Pull(N,N)
+716980000:NoOp@NoOp|Push(W,W)|Pull(W,N)
+717065416:NoOp@NoOp|NoOp|Pull(W,W)
+717147791:NoOp@NoOp|NoOp|Move(S)
+717467375:NoOp@NoOp|NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+19
+#time
+717467375
+#end

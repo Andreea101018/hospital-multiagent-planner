@@ -1,0 +1,56 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+DASH
+#actions
+37020542:Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+37062125:Pull(S,W)@Pull(S,W)|Move(S)@Move(S)|Move(E)@Move(E)
+37091708:Pull(E,S)@Pull(E,S)|NoOp@NoOp|Move(E)@Move(E)
+37115000:Pull(S,E)@Pull(S,E)|NoOp@NoOp|Move(E)@Move(E)
+37131958:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+37146750:Pull(W,S)@Pull(W,S)|Move(S)@Move(S)|Move(S)@Move(S)
+37161208:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Move(N)@Move(N)
+37174917:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(W)@Move(W)
+37187625:Move(W)@Move(W)|Move(W)@Move(W)|Move(E)@Move(E)
+37200458:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+37219292:Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+37233250:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+37246000:NoOp@NoOp|Move(W)@Move(W)|Move(N)@Move(N)
+37264167:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+37276042:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+37287708:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+16
+#time
+37287708
+#end

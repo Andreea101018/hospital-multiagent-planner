@@ -1,0 +1,94 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+pacMAn
+#actions
+338527400:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)
+339279700:Pull(S,W)@Pull(S,W)|Pull(N,E)|Pull(W,N)|Pull(W,S)
+339995500:Pull(W,S)@Pull(W,S)|Pull(N,N)|Pull(W,W)|Push(E,E)
+340728600:Push(E,S)@Push(E,S)|Pull(N,N)|Pull(W,W)|Push(E,E)
+341448000:Push(S,S)@Push(S,S)|Pull(N,N)|Pull(W,W)|Push(E,E)
+342189400:Push(S,S)@Push(S,S)|Pull(E,N)|Pull(N,W)|Push(E,E)
+343037800:Push(S,W)@Push(S,W)|Pull(N,E)|Pull(W,N)|Push(E,S)
+343819100:Push(W,S)@Push(W,S)|Pull(E,N)|Pull(N,W)|Push(S,E)
+344656800:Push(S,W)@Push(S,W)|Pull(N,E)|Pull(W,N)|Push(E,S)
+345535900:Push(W,S)@Push(W,S)|Pull(E,N)|Pull(N,W)|Push(S,E)
+346425500:Push(S,W)@Push(S,W)|Pull(N,E)|Pull(W,N)|Push(E,S)
+347135300:Push(W,S)@Push(W,S)|Pull(N,N)|Pull(W,W)|Push(S,E)
+347923200:Push(S,S)@Push(S,S)|Pull(W,N)|Pull(S,W)|Push(E,E)
+349085000:Push(S,E)@Push(S,E)|Pull(N,W)|Pull(W,S)|Push(E,N)
+349663800:Push(E,S)@Push(E,S)|Pull(W,N)|Pull(S,W)|Push(N,E)
+350279300:Push(S,E)@Push(S,E)|Pull(N,W)|Pull(W,S)|Push(E,N)
+350768800:Push(E,S)@Push(E,S)|Pull(W,N)|Pull(S,W)|Push(N,E)
+351321700:Push(S,E)@Push(S,E)|Pull(N,W)|Pull(W,S)|Push(E,N)
+352023500:Push(E,S)@Push(E,S)|Pull(N,N)|Pull(W,W)|Push(N,E)
+352678200:Push(S,S)@Push(S,S)|Pull(N,N)|Pull(W,W)|Push(E,E)
+353209400:Push(S,S)@Push(S,S)|Pull(N,N)|Pull(S,W)|Push(E,E)
+353786800:Push(S,S)@Push(S,S)|Pull(N,N)|Push(N,W)|Push(E,E)
+354360800:Push(S,S)@Push(S,S)|Pull(N,N)|Push(W,W)|Push(E,E)
+354942200:Push(S,S)@Push(S,S)|Pull(E,N)|Push(W,W)|Push(E,E)
+355540800:Push(S,S)@Push(S,S)|Push(W,N)|Push(W,W)|Push(E,E)
+#end
+#solved
+true
+#numactions
+25
+#time
+355540800
+#end

@@ -1,0 +1,228 @@
+#domain
+hospital
+#levelname
+sigMAS
+#colors
+red: G,B,0,C,H,E,F
+blue: 1,D,A,N,M,R,K
+#initial
++++++++++++++++
+++G ++B0C+H+E++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++ F ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++  +++    +++ +
++  +++    +++ +
++  +++    +++ +
++  ++++++++++ +
++      1      +
++   NMRDAKA   +
++             +
++++++++++++++++
+#goal
++++++++++++++++
+++  ++   + + ++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++   ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++01+++B CE+++ +
++  +++    +++ +
++  +++F GH+++ +
++  ++++++++++ +
++             +
++             +
++   DANMARK   +
++++++++++++++++
+#end
+#clientname
+LiteralAI
+#actions
+53191006100:Pull(S,W)@Pull(S,W)|Push(S,S)@Push(S,S)
+53191205800:Pull(S,S)@Pull(S,S)|Push(S,W)@Push(S,W)
+53191340700:Pull(S,S)@Pull(S,S)|Push(W,W)@Push(W,W)
+53191480100:Pull(S,S)@Pull(S,S)|Push(W,W)@Push(W,W)
+53191608300:Pull(S,S)@Pull(S,S)|Move(E)@Move(E)
+53191734900:Pull(W,S)@Pull(W,S)|Move(E)@Move(E)
+53191839100:Push(E,S)@Push(E,S)|Move(E)@Move(E)
+53191958300:Push(S,S)@Push(S,S)|Move(E)@Move(E)
+53192058600:Push(S,S)@Push(S,S)|Pull(W,S)@Pull(W,S)
+53192229900:Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+53192561600:Push(S,E)@Push(S,E)|Move(N)@Move(N)
+53192752500:Move(N)@Move(N)|Push(W,S)@Push(W,S)
+53192842300:Move(N)@Move(N)|Push(S,W)@Push(S,W)
+53192970300:Move(N)@Move(N)|Push(W,W)@Push(W,W)
+53193059300:Move(W)@Move(W)|Push(W,W)@Push(W,W)
+53193140100:Move(W)@Move(W)|Push(N,E)@Push(N,E)
+53193220300:Move(W)@Move(W)|Push(E,E)@Push(E,E)
+53193317300:Move(W)@Move(W)|Push(E,E)@Push(E,E)
+53193415300:Move(W)@Move(W)|Push(E,S)@Push(E,S)
+53193583300:Move(N)@Move(N)|Pull(W,W)@Pull(W,W)
+53193652600:Move(N)@Move(N)|Pull(W,W)@Pull(W,W)
+53193756900:Move(N)@Move(N)|Push(E,S)@Push(E,S)
+53193829100:Pull(N,W)@Pull(N,W)|Move(W)@Move(W)
+53193929200:Push(S,S)@Push(S,S)|Move(W)@Move(W)
+53194018000:Push(S,S)@Push(S,S)|Move(N)@Move(N)
+53194090700:Push(S,E)@Push(S,E)|Move(W)@Move(W)
+53194159400:Push(E,E)@Push(E,E)|Move(W)@Move(W)
+53194237200:Push(E,E)@Push(E,E)|Pull(W,N)@Pull(W,N)
+53194316300:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+53194398000:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+53194480600:Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)
+53194558600:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+53194663800:Push(S,S)@Push(S,S)|Pull(N,E)@Pull(N,E)
+53194739000:Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+53194814200:Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+53194927600:Push(W,S)@Push(W,S)|Move(W)@Move(W)
+53195008000:Push(S,S)@Push(S,S)|Move(W)@Move(W)
+53195085800:Move(N)@Move(N)|Move(W)@Move(W)
+53195161300:Move(E)@Move(E)|Move(W)@Move(W)
+53195232900:Move(N)@Move(N)|Move(W)@Move(W)
+53195304000:Move(N)@Move(N)|Move(N)@Move(N)
+53195375000:Move(N)@Move(N)|Move(N)@Move(N)
+53195647200:Move(N)@Move(N)|Move(N)@Move(N)
+53195718700:Move(N)@Move(N)|Move(N)@Move(N)
+53195790100:Move(N)@Move(N)|Move(N)@Move(N)
+53195861900:Move(N)@Move(N)|NoOp@NoOp
+53195932500:Move(N)@Move(N)|NoOp@NoOp
+53196006200:Move(N)@Move(N)|NoOp@NoOp
+53196092300:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+53196241400:Push(W,S)@Push(W,S)|NoOp@NoOp
+53196315800:Push(S,S)@Push(S,S)|NoOp@NoOp
+53196386200:Push(S,S)@Push(S,S)|NoOp@NoOp
+53196579800:Push(S,S)@Push(S,S)|NoOp@NoOp
+53196650900:Push(S,S)@Push(S,S)|NoOp@NoOp
+53196721000:Push(S,S)@Push(S,S)|NoOp@NoOp
+53196790800:Push(S,S)@Push(S,S)|NoOp@NoOp
+53196861000:Push(S,S)@Push(S,S)|NoOp@NoOp
+53196952100:Push(S,S)@Push(S,S)|NoOp@NoOp
+53197089300:Push(S,W)@Push(S,W)|NoOp@NoOp
+53197174700:Move(N)@Move(N)|NoOp@NoOp
+53197262600:Move(N)@Move(N)|NoOp@NoOp
+53197354800:Move(N)@Move(N)|NoOp@NoOp
+53197440500:Move(W)@Move(W)|NoOp@NoOp
+53197535100:Move(W)@Move(W)|NoOp@NoOp
+53197618900:Move(W)@Move(W)|NoOp@NoOp
+53197696800:Move(W)@Move(W)|NoOp@NoOp
+53197777400:Move(W)@Move(W)|NoOp@NoOp
+53197849600:Move(N)@Move(N)|NoOp@NoOp
+53197924500:Move(N)@Move(N)|NoOp@NoOp
+53198003200:Move(N)@Move(N)|NoOp@NoOp
+53198074500:Move(N)@Move(N)|NoOp@NoOp
+53198243500:Move(N)@Move(N)|NoOp@NoOp
+53198372000:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+53198466500:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+53198573100:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+53198668300:Push(W,S)@Push(W,S)|NoOp@NoOp
+53198771600:Push(S,S)@Push(S,S)|NoOp@NoOp
+53198852100:Push(S,E)@Push(S,E)|NoOp@NoOp
+53198936300:Push(E,E)@Push(E,E)|NoOp@NoOp
+53199021800:Push(E,E)@Push(E,E)|NoOp@NoOp
+53199107900:Push(E,E)@Push(E,E)|NoOp@NoOp
+53199191900:Push(E,E)@Push(E,E)|NoOp@NoOp
+53199297200:Push(E,S)@Push(E,S)|NoOp@NoOp
+53199379300:Push(S,S)@Push(S,S)|NoOp@NoOp
+53199463900:Push(S,S)@Push(S,S)|NoOp@NoOp
+53199539000:Push(S,S)@Push(S,S)|NoOp@NoOp
+53199647000:Push(S,S)@Push(S,S)|NoOp@NoOp
+53199770000:Push(S,E)@Push(S,E)|NoOp@NoOp
+53199956400:Push(E,S)@Push(E,S)|NoOp@NoOp
+53200056200:Move(W)@Move(W)|NoOp@NoOp
+53201273300:Move(N)@Move(N)|NoOp@NoOp
+53201513000:Move(N)@Move(N)|NoOp@NoOp
+53201635900:Move(N)@Move(N)|NoOp@NoOp
+53201756200:Move(N)@Move(N)|NoOp@NoOp
+53201887000:Move(N)@Move(N)|NoOp@NoOp
+53201961400:Move(E)@Move(E)|NoOp@NoOp
+53202033000:Move(E)@Move(E)|NoOp@NoOp
+53202127800:Move(E)@Move(E)|NoOp@NoOp
+53202241000:Move(E)@Move(E)|NoOp@NoOp
+53202359500:Move(N)@Move(N)|NoOp@NoOp
+53202489300:Move(N)@Move(N)|NoOp@NoOp
+53202620400:Move(E)@Move(E)|NoOp@NoOp
+53202730000:Move(N)@Move(N)|NoOp@NoOp
+53202790800:Move(N)@Move(N)|NoOp@NoOp
+53202849700:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+53202907600:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+53203020100:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+53203105800:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+53203223700:Push(E,S)@Push(E,S)|NoOp@NoOp
+53203333800:Push(S,S)@Push(S,S)|NoOp@NoOp
+53203476900:Push(S,W)@Push(S,W)|NoOp@NoOp
+53203587400:Push(W,W)@Push(W,W)|NoOp@NoOp
+53203697900:Push(W,W)@Push(W,W)|NoOp@NoOp
+53203807400:Push(W,W)@Push(W,W)|NoOp@NoOp
+53203917900:Push(W,S)@Push(W,S)|NoOp@NoOp
+53203995800:Push(S,S)@Push(S,S)|NoOp@NoOp
+53204107300:Push(S,S)@Push(S,S)|NoOp@NoOp
+53204176500:Push(S,S)@Push(S,S)|NoOp@NoOp
+53204232200:Push(S,S)@Push(S,S)|NoOp@NoOp
+53204287500:Push(S,E)@Push(S,E)|NoOp@NoOp
+53204342700:Push(E,E)@Push(E,E)|NoOp@NoOp
+53204397500:Push(E,N)@Push(E,N)|NoOp@NoOp
+53204452800:Move(W)@Move(W)|NoOp@NoOp
+53204507300:Move(W)@Move(W)|NoOp@NoOp
+53204561900:Move(N)@Move(N)|NoOp@NoOp
+53204616200:Move(N)@Move(N)|NoOp@NoOp
+53204671100:Move(N)@Move(N)|NoOp@NoOp
+53204725900:Move(N)@Move(N)|NoOp@NoOp
+53204780200:Move(N)@Move(N)|NoOp@NoOp
+53204836900:Move(E)@Move(E)|NoOp@NoOp
+53204891400:Move(E)@Move(E)|NoOp@NoOp
+53204946200:Move(E)@Move(E)|NoOp@NoOp
+53205012800:Move(E)@Move(E)|NoOp@NoOp
+53205085800:Move(N)@Move(N)|NoOp@NoOp
+53205140900:Move(N)@Move(N)|NoOp@NoOp
+53205196000:Move(W)@Move(W)|NoOp@NoOp
+53205250400:Move(N)@Move(N)|NoOp@NoOp
+53205304700:Move(N)@Move(N)|NoOp@NoOp
+53205359100:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+53205413800:Pull(S,S)@Pull(S,S)|NoOp@NoOp
+53205468600:Pull(E,S)@Pull(E,S)|NoOp@NoOp
+53205523300:Pull(E,E)@Pull(E,E)|NoOp@NoOp
+53205578300:Push(W,S)@Push(W,S)|NoOp@NoOp
+53205633100:Push(S,S)@Push(S,S)|NoOp@NoOp
+53205688000:Push(S,W)@Push(S,W)|NoOp@NoOp
+53205743100:Push(W,W)@Push(W,W)|NoOp@NoOp
+53205798100:Push(W,W)@Push(W,W)|NoOp@NoOp
+53205857300:Push(W,W)@Push(W,W)|NoOp@NoOp
+53205915500:Push(W,S)@Push(W,S)|NoOp@NoOp
+53205982500:Push(S,S)@Push(S,S)|NoOp@NoOp
+53206056600:Push(S,S)@Push(S,S)|NoOp@NoOp
+53206111600:Push(S,S)@Push(S,S)|NoOp@NoOp
+53206185200:Push(S,S)@Push(S,S)|NoOp@NoOp
+53206275600:Push(S,E)@Push(S,E)|NoOp@NoOp
+53206362200:Push(E,E)@Push(E,E)|NoOp@NoOp
+53206453900:Push(E,S)@Push(E,S)|NoOp@NoOp
+53206546800:Move(W)@Move(W)|NoOp@NoOp
+53206636700:Move(W)@Move(W)|NoOp@NoOp
+53206727000:Move(N)@Move(N)|NoOp@NoOp
+53206816100:Move(N)@Move(N)|NoOp@NoOp
+53206907900:Move(N)@Move(N)|NoOp@NoOp
+53207008800:Move(N)@Move(N)|NoOp@NoOp
+53207100100:Move(W)@Move(W)|NoOp@NoOp
+53207155600:Move(W)@Move(W)|NoOp@NoOp
+53207230100:Move(W)@Move(W)|NoOp@NoOp
+53207288400:Move(W)@Move(W)|NoOp@NoOp
+53207343700:Move(W)@Move(W)|NoOp@NoOp
+53207408400:Move(W)@Move(W)|NoOp@NoOp
+53207483000:Move(S)@Move(S)|NoOp@NoOp
+53207537800:Move(S)@Move(S)|NoOp@NoOp
+53207595100:Move(S)@Move(S)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+171
+#time
+53207595100
+#end

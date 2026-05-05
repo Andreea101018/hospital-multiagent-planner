@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+rooMbA
+#actions
+8681025417:Move(W)@Move(W)|Move(N)@Move(N)
+8681118667:Move(W)@Move(W)|Move(W)@Move(W)
+8681145334:Move(S)@Move(S)|Move(W)@Move(W)
+8681178334:Move(W)@Move(W)|Move(W)@Move(W)
+8681215250:Move(W)@Move(W)|Move(W)@Move(W)
+8681239042:Move(W)@Move(W)|Move(W)@Move(W)
+8681262250:Move(W)@Move(W)|Move(W)@Move(W)
+8681294417:Move(W)@Move(W)|Move(W)@Move(W)
+8681321417:Move(W)@Move(W)|Move(W)@Move(W)
+8681343375:Move(W)@Move(W)|Move(W)@Move(W)
+8681369000:Move(W)@Move(W)|Move(W)@Move(W)
+8681392834:Move(W)@Move(W)|Move(W)@Move(W)
+8681415500:Move(W)@Move(W)|Move(W)@Move(W)
+8681438167:Move(W)@Move(W)|Move(W)@Move(W)
+8681460709:Move(W)@Move(W)|Move(W)@Move(W)
+8681481125:Move(W)@Move(W)|Move(W)@Move(W)
+8681500542:Move(S)@Move(S)|Move(W)@Move(W)
+8681519917:Move(S)@Move(S)|Move(W)@Move(W)
+8681546292:Move(S)@Move(S)|Move(W)@Move(W)
+8681566417:Move(W)@Move(W)|Move(N)@Move(N)
+8681584459:Move(W)@Move(W)|Move(N)@Move(N)
+8681602459:Move(W)@Move(W)|Move(N)@Move(N)
+8681622750:Move(W)@Move(W)|Move(E)@Move(E)
+8681644250:Move(W)@Move(W)|Move(N)@Move(N)
+8681663792:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+8681698667:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+8681722250:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+8681741459:Push(E,N)@Push(E,N)|Move(E)@Move(E)
+8681759042:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+8681781667:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+8681800375:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+8681822584:Pull(E,N)@Pull(E,N)|Move(E)@Move(E)
+8681926417:Move(N)@Move(N)|Move(E)@Move(E)
+8681943709:Push(W,N)@Push(W,N)|Move(N)@Move(N)
+8681961334:Pull(E,N)@Pull(E,N)|Move(N)@Move(N)
+8681981959:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+8682002667:Push(N,W)@Push(N,W)|Move(N)@Move(N)
+8682020209:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+8682041667:Push(S,W)@Push(S,W)|Move(E)@Move(E)
+8682060292:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+8682084750:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+8682103500:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+8682120542:Push(S,W)@Push(S,W)|Move(E)@Move(E)
+8682140000:NoOp@NoOp|Move(E)@Move(E)
+8682158125:NoOp@NoOp|Move(E)@Move(E)
+8682175542:NoOp@NoOp|Move(E)@Move(E)
+8682194125:NoOp@NoOp|Move(E)@Move(E)
+8682211500:NoOp@NoOp|Move(E)@Move(E)
+8682229625:NoOp@NoOp|Move(E)@Move(E)
+8682246292:NoOp@NoOp|Move(E)@Move(E)
+8682270292:NoOp@NoOp|Move(E)@Move(E)
+8682290542:NoOp@NoOp|Move(E)@Move(E)
+8682308959:NoOp@NoOp|Move(E)@Move(E)
+8682329292:NoOp@NoOp|Move(N)@Move(N)
+8682349792:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+8682369167:NoOp@NoOp|Pull(E,S)@Pull(E,S)
+8682388542:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682407917:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682425459:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682443125:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682460417:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682553375:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682579125:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682604917:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682629417:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682653625:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682672625:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682692709:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682717250:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682739459:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682759917:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682777250:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682799584:NoOp@NoOp|Push(W,S)@Push(W,S)
+8682822750:NoOp@NoOp|Push(S,S)@Push(S,S)
+8682844334:NoOp@NoOp|Push(S,S)@Push(S,S)
+8682863959:NoOp@NoOp|Push(S,S)@Push(S,S)
+8682881959:NoOp@NoOp|Push(S,W)@Push(S,W)
+8682900000:NoOp@NoOp|Push(W,W)@Push(W,W)
+8682917459:NoOp@NoOp|Push(W,W)@Push(W,W)
+8683775834:NoOp@NoOp|Push(W,W)@Push(W,W)
+8683805875:NoOp@NoOp|Push(W,W)@Push(W,W)
+8683823875:NoOp@NoOp|Push(W,W)@Push(W,W)
+8683844709:NoOp@NoOp|Push(W,N)@Push(W,N)
+8683865334:NoOp@NoOp|Push(N,N)@Push(N,N)
+8683884167:NoOp@NoOp|Push(N,N)@Push(N,N)
+8683901250:NoOp@NoOp|Push(N,N)@Push(N,N)
+8683918417:NoOp@NoOp|Push(N,N)@Push(N,N)
+8683936167:NoOp@NoOp|Push(N,N)@Push(N,N)
+8683958542:NoOp@NoOp|Push(N,N)@Push(N,N)
+8683977500:NoOp@NoOp|Push(N,N)@Push(N,N)
+8684070917:NoOp@NoOp|Push(N,N)@Push(N,N)
+8684089292:NoOp@NoOp|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+8684089292
+#end

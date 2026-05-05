@@ -1,0 +1,140 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+doggy
+#actions
+582201600:NoOp@NoOp|NoOp@NoOp
+582552900:Move(E)@Move(E)|Move(W)@Move(W)
+582632600:NoOp@NoOp|NoOp@NoOp
+582686500:Move(W)@Move(W)|NoOp@NoOp
+582736800:Move(W)@Move(W)|NoOp@NoOp
+582766800:Move(W)@Move(W)|NoOp@NoOp
+582809000:Move(S)@Move(S)|NoOp@NoOp
+582838900:Move(W)@Move(W)|NoOp@NoOp
+582871300:Move(W)@Move(W)|NoOp@NoOp
+582983900:Move(N)@Move(N)|NoOp@NoOp
+583025800:Move(N)@Move(N)|NoOp@NoOp
+583125900:Move(N)@Move(N)|NoOp@NoOp
+583198100:Move(N)@Move(N)|NoOp@NoOp
+583254400:Move(N)@Move(N)|NoOp@NoOp
+583292600:Move(N)@Move(N)|NoOp@NoOp
+583340400:Move(W)@Move(W)|NoOp@NoOp
+583463800:Move(W)@Move(W)|NoOp@NoOp
+583528600:Move(W)@Move(W)|NoOp@NoOp
+583569500:Move(W)@Move(W)|NoOp@NoOp
+583617200:Move(W)@Move(W)|NoOp@NoOp
+583665500:Move(W)@Move(W)|NoOp@NoOp
+583778800:Move(W)@Move(W)|NoOp@NoOp
+583841700:Move(W)@Move(W)|NoOp@NoOp
+583905800:NoOp@NoOp|Pull(E,S)@Pull(E,S)
+584038700:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584095200:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584140700:NoOp@NoOp|Pull(N,E)@Pull(N,E)
+584247800:NoOp@NoOp|Pull(E,N)@Pull(E,N)
+584286500:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584321700:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584368800:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584409000:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584439100:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584463400:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584488200:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584617500:NoOp@NoOp|Pull(E,E)@Pull(E,E)
+584682500:NoOp@NoOp|Pull(S,E)@Pull(S,E)
+584729300:NoOp@NoOp|Push(N,E)@Push(N,E)
+584768400:Move(S)@Move(S)|NoOp@NoOp
+584818600:Move(E)@Move(E)|NoOp@NoOp
+584845000:Move(E)@Move(E)|NoOp@NoOp
+584881400:Move(E)@Move(E)|NoOp@NoOp
+584917300:Move(E)@Move(E)|NoOp@NoOp
+584947700:Move(E)@Move(E)|NoOp@NoOp
+584994100:Move(S)@Move(S)|NoOp@NoOp
+585043600:Move(S)@Move(S)|NoOp@NoOp
+585079200:Move(S)@Move(S)|NoOp@NoOp
+585120500:Move(S)@Move(S)|NoOp@NoOp
+585165600:Move(S)@Move(S)|NoOp@NoOp
+585193600:Move(E)@Move(E)|NoOp@NoOp
+585220500:Move(E)@Move(E)|NoOp@NoOp
+585258400:Move(E)@Move(E)|NoOp@NoOp
+585294000:Move(E)@Move(E)|NoOp@NoOp
+585329500:Move(E)@Move(E)|NoOp@NoOp
+585365100:Move(N)@Move(N)|NoOp@NoOp
+585400300:Move(E)@Move(E)|NoOp@NoOp
+585435400:Move(E)@Move(E)|NoOp@NoOp
+585466800:Move(E)@Move(E)|NoOp@NoOp
+585499400:Pull(W,N)@Pull(W,N)|NoOp@NoOp
+585529800:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585556400:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585600100:Pull(S,W)@Pull(S,W)|NoOp@NoOp
+585631200:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+585657100:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585682100:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585720200:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585755600:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585791400:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585827300:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585862700:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585898600:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+585938200:Pull(N,W)@Pull(N,W)|NoOp@NoOp
+586037600:Push(S,W)@Push(S,W)|NoOp@NoOp
+586150500:NoOp@NoOp|NoOp@NoOp
+586194700:Move(E)@Move(E)|Move(W)@Move(W)
+586246400:Move(E)@Move(E)|Move(W)@Move(W)
+586354900:Move(E)@Move(E)|Move(W)@Move(W)
+586456400:Move(E)@Move(E)|Move(W)@Move(W)
+586499100:Move(N)@Move(N)|Move(S)@Move(S)
+586545700:Move(N)@Move(N)|Move(S)@Move(S)
+586577600:Move(N)@Move(N)|Move(S)@Move(S)
+586625500:Move(N)@Move(N)|Move(S)@Move(S)
+586729300:Move(N)@Move(N)|Move(S)@Move(S)
+586890700:Move(N)@Move(N)|Move(S)@Move(S)
+587050000:Move(W)@Move(W)|Move(E)@Move(E)
+587157200:Move(W)@Move(W)|NoOp@NoOp
+587362000:Move(W)@Move(W)|NoOp@NoOp
+587484100:Move(W)@Move(W)|NoOp@NoOp
+587563000:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+89
+#time
+587563000
+#end

@@ -1,0 +1,372 @@
+#domain
+hospital
+#levelname
+crayCray
+#colors
+brown: B,A,1
+blue: 0,G
+grey: L,6
+red: 2,H
+pink: K,5
+cyan: 3,I
+purple: J,4
+#initial
+++++++++++++++++++
+++++    B    +++++
+++++ +++A+++ +++++
+++++ +++1+++ +++++
++ 0             L+
+++++ +++ +++ +++++
++ 2             K+
+++++ +++ +++ +++++
++ 3             J+
+++++ +++ +++ +++++
++ 4             I+
+++++ +++ +++ +++++
++ 5             H+
+++++ +++ +++ +++++
++ 6             G+
+++++ +++ +++ +++++
+++++ +++ +++ +++++
+++++         +++++
+++++++++++++++++++
+#goal
+++++++++++++++++++
+++++         +++++
+++++ +++ +++ +++++
+++++ +++ +++ +++++
++G               +
+++++ +++ +++ +++++
++H               +
+++++ +++ +++ +++++
++I               +
+++++ +++ +++ +++++
++J               +
+++++ +++ +++ +++++
++K               +
+++++ +++ +++ +++++
++L               +
+++++ +++ +++ +++++
+++++ +++A+++ +++++
+++++    B    +++++
+++++++++++++++++++
+#end
+#clientname
+merRAM
+#actions
+39825779800:Move(E)@Move(E)|Pull(S,S)|Move(E)|Move(E)|Move(E)|Move(E)|Move(E)
+39826046800:Move(E)@Move(E)|Pull(S,S)|Move(E)|Move(E)|Move(E)|Move(E)|Move(E)
+39826173300:Move(E)@Move(E)|Pull(S,S)|Move(S)|Move(S)|Move(E)|Move(E)|Move(E)
+39826295200:Move(E)@Move(E)|Pull(S,S)|Move(S)|Move(S)|Move(E)|Move(E)|Move(E)
+39826430800:Move(E)@Move(E)|Pull(S,S)|Move(E)|Move(E)|Move(E)|Move(E)|Move(E)
+39826572500:Move(E)@Move(E)|Pull(W,S)|Move(E)|Move(E)|Move(E)|Move(E)|Move(E)
+39826686600:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39826803800:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39826942400:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39827078100:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+39827235100:Move(S)@Move(S)|Move(E)|Move(S)|Move(E)|Move(E)|Move(N)|Move(N)
+39827444700:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39827590800:Move(S)@Move(S)|Push(E,S)|Move(E)|Move(E)|Move(E)|Move(N)|Move(N)
+39827720500:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39827833100:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39827940600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39828041300:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39828180500:Move(S)@Move(S)|Move(S)|Move(E)|Move(E)|Move(E)|Move(N)|Move(E)
+39828316400:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39828445900:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39828570200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39828678000:Move(E)@Move(E)|Move(S)|Move(E)|Move(E)|Move(E)|Move(N)|Move(E)
+39828782400:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39828882100:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39828986600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39829078900:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39829181000:Move(E)@Move(E)|Move(S)|Move(E)|Move(E)|Move(N)|Move(N)|Move(E)
+39829278300:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+39829373200:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+39829468400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39829562100:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39829655300:Move(E)@Move(E)|Move(W)|Move(E)|Move(E)|Move(N)|Move(N)|Move(E)
+39829774400:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+39829891800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39829980400:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39830099500:NoOp@NoOp|Move(W)|Move(N)|NoOp|NoOp|NoOp|NoOp
+39830199400:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+39830310800:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+39830415500:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39830515600:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39830609300:Move(E)@Move(E)|Move(E)|Move(S)|Move(E)|Move(E)|Move(N)|Move(N)
+39830709500:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39830809100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39830899600:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39830998400:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39831094200:Move(S)@Move(S)|Move(S)|Move(S)|Move(E)|Move(E)|Move(N)|Move(N)
+39831189900:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39831283300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39831381600:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39831468900:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp
+39831553400:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+39831654900:Move(S)@Move(S)|Move(W)|Move(E)|Move(E)|Move(E)|Move(N)|Move(N)
+39831755300:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39831839200:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39831934000:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39832012900:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39832130800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39832238900:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39832333700:Move(S)@Move(S)|Move(S)|Move(E)|Move(E)|Pull(W,W)|Move(N)|Move(N)
+39832417300:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39832521100:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39832629100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39832785700:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39832966100:Move(S)@Move(S)|Move(S)|Move(E)|Move(E)|Pull(W,W)|Move(N)|Move(N)
+39833088300:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39833219800:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39833328300:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39833439800:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39833548000:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39833648100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39833751700:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39833855600:Move(S)@Move(S)|Move(S)|Move(E)|Move(E)|Pull(W,W)|Move(N)|Move(N)
+39833964200:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39834091500:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39834197100:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39834296500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39834394600:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39834500700:Move(S)@Move(S)|Move(S)|Move(E)|Move(E)|Pull(W,W)|Move(N)|Move(N)
+39834605200:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39834705200:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39834787900:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39834932300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39835046900:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp
+39835157100:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39835267300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39835377600:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39835513200:Move(W)@Move(W)|Move(S)|Move(E)|Move(E)|Pull(W,W)|Move(E)|Move(N)
+39835615200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39835707200:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39835821600:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39835920700:Move(S)@Move(S)|Move(S)|Move(E)|Move(E)|Pull(W,W)|Move(E)|Move(N)
+39836011500:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39836097800:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39836190800:NoOp@NoOp|Move(N)|NoOp|Move(S)|NoOp|NoOp|NoOp
+39836290400:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp
+39836387700:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39836511700:Move(S)@Move(S)|Move(S)|Move(E)|Move(N)|Pull(W,W)|Move(E)|Move(N)
+39836625400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39836729300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39836840800:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39836952800:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39837056500:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+39837171300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39837298900:Move(S)@Move(S)|Move(N)|Move(E)|Move(E)|Pull(W,W)|Move(E)|Move(N)
+39837444900:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39837561700:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39837679000:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39837804300:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39837924100:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39838031400:Move(S)@Move(S)|Move(N)|Move(W)|Move(E)|Move(S)|Move(N)|Move(N)
+39838160700:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39838284700:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39838407200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39838517100:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39838634500:Move(S)@Move(S)|Move(N)|Move(W)|Move(E)|Move(S)|Move(N)|Move(N)
+39838751600:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39838832000:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39838949400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39839116400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)
+39839232200:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39839466100:Move(S)@Move(S)|Pull(S,S)|Move(W)|Move(E)|Move(S)|Move(N)|Move(E)
+39839607500:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39839745200:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)
+39839887600:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39840005100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39840176800:Move(S)@Move(S)|Pull(S,S)|Move(W)|Move(E)|Move(S)|Move(N)|Move(E)
+39840327500:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39840476700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39840618300:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39840752500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39840904900:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39841015200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+39841154400:Move(S)@Move(S)|Pull(S,S)|Move(W)|Move(E)|Move(S)|Move(N)|Move(N)
+39841244400:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39841337400:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39841414400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39841481100:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39841557600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39841657400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39841730500:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39841843800:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39841930300:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39842015600:Move(W)@Move(W)|Pull(S,S)|Move(W)|Move(E)|Move(S)|Move(N)|Move(N)
+39842142900:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39842235000:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39842317800:Move(W)@Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39842400500:Move(W)@Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39842478300:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39842628000:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39842728600:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39842822200:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39842908600:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+39842996600:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39843081200:Move(W)@Move(W)|Move(W)|Move(W)|Pull(W,W)|Move(S)|Move(N)|Move(S)
+39843173100:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39843274000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39843361900:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+39843441200:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39843524400:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39843606500:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|Move(N)|NoOp
+39843687700:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39843769500:NoOp@NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39843885400:Move(W)@Move(W)|Move(W)|Move(S)|Pull(W,W)|Move(S)|Move(S)|Move(S)
+39843971900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39844050700:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+39844130200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39844212600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)
+39844292800:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39844374700:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp
+39844465200:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp
+39844544600:Move(W)@Move(W)|Pull(S,S)|Move(S)|Pull(W,W)|Move(E)|Move(E)|Move(E)
+39844628200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39844772700:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39844906800:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp
+39845087300:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp
+39845212800:NoOp@NoOp|Push(S,S)|NoOp|NoOp|NoOp|NoOp|NoOp
+39845327000:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp
+39845416000:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39845550100:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39845638300:Move(W)@Move(W)|Push(S,S)|Move(S)|Move(N)|Move(E)|Move(E)|Move(N)
+39845734600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)
+39845815200:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39845906500:Move(W)@Move(W)|Push(S,S)|Move(S)|Pull(W,W)|Pull(N,W)|Move(E)|Move(N)
+39846003500:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39846090300:Move(W)@Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39846193200:Move(W)@Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39846322600:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39846420600:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39846524600:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39846606000:Move(S)@Move(S)|Push(S,S)|Move(S)|Pull(W,W)|Push(S,S)|Pull(W,W)|Move(S)
+39846684000:Move(S)@Move(S)|Push(S,S)|Move(S)|Pull(W,W)|Push(S,S)|Pull(W,W)|Move(E)
+39846814700:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp
+39846915000:Move(S)@Move(S)|Push(S,S)|Move(S)|Pull(W,W)|Push(S,W)|Pull(W,W)|Move(E)
+39847011800:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp
+39847141800:Move(S)@Move(S)|Push(S,S)|Move(S)|Pull(W,W)|Push(W,W)|Pull(S,W)|Move(E)
+39847275000:Move(S)@Move(S)|Move(N)|Move(S)|Pull(W,W)|Push(W,W)|Push(N,W)|Pull(W,W)
+39847405300:Move(S)@Move(S)|Move(N)|Move(E)|Pull(W,W)|Push(W,W)|Push(W,W)|Pull(W,W)
+39847509900:Move(S)@Move(S)|Move(N)|Move(E)|Pull(W,W)|Push(W,W)|Push(W,W)|Pull(W,W)
+39847594900:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+39847675500:Move(S)@Move(S)|Move(N)|Move(E)|Pull(W,W)|Push(W,W)|Move(W)|Pull(N,W)
+39847755300:Move(N)@Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39847852500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+39847947600:Move(S)@Move(S)|Move(N)|Pull(W,W)|Pull(W,W)|Push(W,W)|Move(W)|Push(S,S)
+39848041400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+39848153000:Move(S)@Move(S)|Move(N)|Pull(W,W)|Pull(S,W)|NoOp|Move(W)|Push(S,S)
+39848268300:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+39848374800:Move(E)@Move(E)|Move(N)|Pull(W,W)|Push(N,N)|NoOp|Move(W)|Push(S,S)
+39848474400:Move(E)@Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39848572400:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+39848669200:Move(E)@Move(E)|Move(N)|Pull(N,W)|Push(N,N)|NoOp|Move(W)|Push(S,S)
+39848796000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+39848901400:Pull(W,W)@Pull(W,W)|Pull(S,S)|Pull(N,N)|Push(N,W)|NoOp|Move(W)|Push(S,S)
+39849003100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39849122600:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39849233700:Pull(W,W)@Pull(W,W)|Pull(W,S)|Move(W)|Push(W,W)|NoOp|Push(W,W)|Move(S)
+39849309400:Move(W)@Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39849369300:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39849427900:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39849509000:Move(E)@Move(E)|Push(E,S)|Move(W)|Push(W,W)|NoOp|Push(W,S)|Push(S,S)
+39849605100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)
+39849681500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+39849752500:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39849832400:Pull(W,W)@Pull(W,W)|Push(S,S)|Move(W)|NoOp|NoOp|Move(S)|Move(S)
+39849906200:NoOp@NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|NoOp
+39849997000:Pull(N,W)@Pull(N,W)|Push(S,S)|Move(W)|NoOp|NoOp|Push(S,S)|Push(S,W)
+39850076700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)
+39850154700:Pull(N,N)@Pull(N,N)|Push(S,S)|Move(W)|NoOp|NoOp|Push(S,S)|Push(W,W)
+39850237500:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+39850374100:Pull(E,N)@Pull(E,N)|Push(S,S)|Pull(W,N)|NoOp|NoOp|Move(S)|Push(W,W)
+39850494600:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+39850589600:Push(W,N)@Push(W,N)|Push(S,S)|Pull(W,W)|NoOp|NoOp|Move(S)|Push(W,S)
+39850659100:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)
+39850719200:NoOp@NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|NoOp
+39850789200:NoOp@NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|NoOp
+39850849000:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39850911500:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39850972800:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+39851034000:Move(N)@Move(N)|Push(S,W)|Move(S)|NoOp|NoOp|Move(S)|Move(W)
+39851097300:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39851158800:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39851221200:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(E)
+39851283200:Move(N)@Move(N)|Push(W,W)|Move(E)|NoOp|NoOp|Move(S)|Move(W)
+39851343400:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39851405200:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39851467700:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+39851533500:Move(N)@Move(N)|Push(W,W)|Move(E)|NoOp|NoOp|Move(S)|Push(S,S)
+39851654200:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39851743700:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39851853000:Move(N)@Move(N)|Push(W,W)|Move(E)|NoOp|NoOp|Push(S,S)|Push(S,S)
+39851981400:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39852107300:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39852214500:Move(N)@Move(N)|Push(W,S)|Move(E)|NoOp|NoOp|Push(S,S)|Push(S,S)
+39852331500:NoOp@NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp
+39852444300:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39852560000:Move(N)@Move(N)|Push(S,S)|Move(E)|NoOp|NoOp|Push(S,S)|Push(S,W)
+39852677300:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39852800400:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39852887800:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39852965800:Push(N,N)@Push(N,N)|Push(S,S)|Move(S)|NoOp|NoOp|Push(S,W)|Push(W,W)
+39853051400:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39853133100:Move(N)@Move(N)|Push(S,E)|Move(S)|NoOp|NoOp|Push(W,W)|Push(W,W)
+39853235200:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39853321800:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39853409600:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39853497300:Move(N)@Move(N)|Push(E,E)|Move(S)|NoOp|NoOp|Push(W,W)|Push(W,W)
+39853598200:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39853700600:Push(N,N)@Push(N,N)|Push(E,E)|Move(S)|NoOp|NoOp|Push(W,W)|Push(W,W)
+39853819700:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39853923000:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39854022100:Move(N)@Move(N)|Push(E,E)|Move(S)|NoOp|NoOp|Push(W,W)|Push(W,W)
+39854112000:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39854192400:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39854287300:Move(N)@Move(N)|NoOp|Move(S)|NoOp|NoOp|Push(W,W)|Push(W,W)
+39854370400:Move(S)@Move(S)|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39854441100:Move(N)@Move(N)|NoOp|Move(S)|NoOp|NoOp|Push(W,W)|NoOp
+39854507900:Move(S)@Move(S)|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39854570200:Move(N)@Move(N)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39854635200:Move(S)@Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+39854701900:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39854761300:Move(N)@Move(N)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39854833400:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39854918900:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39855038800:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39855138200:Push(N,N)@Push(N,N)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39855218900:Push(N,W)@Push(N,W)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39855301700:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39855380800:NoOp@NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp
+39855459300:Push(W,W)@Push(W,W)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39855543300:Push(W,W)@Push(W,W)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39855629600:Push(W,W)@Push(W,W)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39855761700:Push(W,W)@Push(W,W)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39855872600:Push(W,W)@Push(W,W)|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp
+39855999700:Push(W,W)@Push(W,W)|NoOp|Pull(W,W)|NoOp|NoOp|NoOp|NoOp
+39856146800:Push(W,W)@Push(W,W)|NoOp|Push(E,N)|NoOp|NoOp|NoOp|NoOp
+39856284700:Push(W,N)@Push(W,N)|NoOp|Push(N,N)|NoOp|NoOp|NoOp|NoOp
+39856406900:Push(N,N)@Push(N,N)|NoOp|Push(N,W)|NoOp|NoOp|NoOp|NoOp
+39856513100:Push(N,N)@Push(N,N)|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39856636900:Push(N,N)@Push(N,N)|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39856748400:Push(N,W)@Push(N,W)|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39856865900:Push(W,W)@Push(W,W)|NoOp|Push(W,N)|NoOp|NoOp|NoOp|NoOp
+39856984100:Push(W,W)@Push(W,W)|NoOp|Push(N,N)|NoOp|NoOp|NoOp|NoOp
+39857076700:NoOp@NoOp|NoOp|Push(N,W)|NoOp|NoOp|NoOp|NoOp
+39857162500:NoOp@NoOp|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39857286500:NoOp@NoOp|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39857403000:NoOp@NoOp|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39857496100:NoOp@NoOp|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39857615400:NoOp@NoOp|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+39857683500:NoOp@NoOp|NoOp|Push(W,W)|NoOp|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+308
+#time
+39857683500
+#end

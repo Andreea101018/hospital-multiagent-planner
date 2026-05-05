@@ -1,0 +1,95 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+TheGate
+#actions
+179719727:Move(E)@Move(E)|Move(E)
+179858246:Pull(W,N)@Pull(W,N)|Move(E)
+180078709:Pull(W,W)@Pull(W,W)|Move(W)
+180351062:Pull(W,W)@Pull(W,W)|Move(E)
+180489882:Pull(S,W)@Pull(S,W)|Move(W)
+180611697:Pull(W,S)@Pull(W,S)|Move(N)
+180895700:Pull(W,W)@Pull(W,W)|Move(S)
+181030178:Pull(W,W)@Pull(W,W)|Move(N)
+181159681:Pull(N,W)@Pull(N,W)|Move(E)
+181285687:Push(S,W)@Push(S,W)|NoOp
+181382415:Push(W,W)@Push(W,W)|Move(E)
+181601299:Push(W,W)@Push(W,W)|Move(W)
+181731265:Push(W,W)@Push(W,W)|NoOp
+181866638:Push(W,W)@Push(W,W)|Move(N)
+182004835:Push(W,W)@Push(W,W)|NoOp
+182254183:Push(W,W)@Push(W,W)|Move(W)
+182380822:Move(E)@Move(E)|Move(W)
+182652030:Move(E)@Move(E)|Move(W)
+182922977:Move(E)@Move(E)|Pull(E,N)
+183149127:Move(E)@Move(E)|Pull(E,E)
+183274781:Move(N)@Move(N)|Pull(E,E)
+183684086:Move(N)@Move(N)|Pull(S,E)
+183808504:Move(N)@Move(N)|Pull(E,S)
+183922288:Move(N)@Move(N)|Pull(E,E)
+184323461:Move(N)@Move(N)|Pull(E,E)
+184457323:Move(N)@Move(N)|Pull(E,E)
+184701760:Move(W)@Move(W)|Pull(E,E)
+184830308:Move(W)@Move(W)|Pull(S,E)
+185071605:Move(W)@Move(W)|Push(N,E)
+185181007:Move(W)@Move(W)|Push(E,E)
+185406632:Move(W)@Move(W)|Push(E,E)
+185656375:NoOp@NoOp|Push(E,E)
+185758591:NoOp@NoOp|Push(E,E)
+185825036:NoOp@NoOp|Move(W)
+185943082:NoOp@NoOp|Move(W)
+186052323:NoOp@NoOp|Move(W)
+186156689:NoOp@NoOp|Move(W)
+186333361:NoOp@NoOp|Move(S)
+186479488:NoOp@NoOp|Move(S)
+186713840:NoOp@NoOp|Move(S)
+186818427:NoOp@NoOp|Move(S)
+186913598:NoOp@NoOp|Move(S)
+187035292:NoOp@NoOp|Move(E)
+187250055:NoOp@NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+44
+#time
+187250055
+#end

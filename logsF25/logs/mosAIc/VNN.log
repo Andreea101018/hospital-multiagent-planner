@@ -1,0 +1,114 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+mosAIc
+#actions
+105501750:Move(E)@Move(E)|Move(N)|Move(E)|Move(N)
+105591917:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)
+105631917:Move(S)@Move(S)|Move(E)|Move(S)|Move(N)
+105666833:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+105694625:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)
+105724458:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+105755708:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+105789125:Move(S)@Move(S)|Move(E)|Move(E)|Move(E)
+105819667:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+105851042:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+105891125:Move(E)@Move(E)|Move(S)|Move(N)|Move(E)
+105920167:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+105946958:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+105972042:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+106000708:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+106025708:Move(N)@Move(N)|Move(E)|Move(E)|Move(S)
+106053542:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+106075667:Move(E)@Move(E)|Move(N)|Move(S)|Move(E)
+106102167:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+106138083:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+106160000:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+106183208:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+106213917:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+106246625:Move(E)@Move(E)|Push(S,E)|Pull(W,S)|Move(E)
+106284000:Move(E)@Move(E)|Push(E,S)|Pull(W,W)|Move(E)
+106312167:Move(E)@Move(E)|Push(S,S)|Pull(W,W)|Move(E)
+106342958:Move(E)@Move(E)|Push(S,W)|Pull(W,W)|Move(E)
+106370167:Move(E)@Move(E)|Push(W,S)|Pull(W,W)|Move(E)
+106400333:Push(N,E)@Push(N,E)|Push(S,W)|Pull(N,W)|Pull(W,N)
+106427333:Push(E,N)@Push(E,N)|Push(W,W)|Push(S,W)|Pull(W,W)
+106454792:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Pull(W,W)
+106480708:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Pull(W,W)
+106507500:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Pull(W,W)
+106556083:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Pull(S,W)
+106585542:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(N,W)
+106625625:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+106648042:Push(N,W)@Push(N,W)|Push(W,W)|Push(W,W)|Push(W,W)
+106692667:Push(W,N)@Push(W,N)|Push(W,W)|Push(W,W)|Push(W,W)
+106799042:Push(N,W)@Push(N,W)|Push(W,W)|Push(W,W)|Push(W,W)
+106893458:Push(W,W)@Push(W,W)|Push(W,W)|Push(W,W)|Push(W,W)
+106964042:Push(W,W)@Push(W,W)|Push(W,W)|Push(W,N)|Push(W,W)
+106999833:Push(W,W)@Push(W,W)|Push(W,W)|Push(N,W)|Push(W,W)
+107027042:Push(W,W)@Push(W,W)|Push(W,W)|Push(W,N)|Push(W,W)
+107049250:Push(W,W)@Push(W,W)|Push(W,W)|Push(N,N)|Push(W,W)
+107082458:Push(W,W)@Push(W,W)|Push(W,N)|Push(N,E)|Push(W,W)
+107411792:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(W,S)
+107513083:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,W)
+107599417:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(W,S)
+107711042:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+107792708:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+107874000:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+107949500:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,W)
+108013167:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(W,S)
+108080333:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+108186708:Push(W,S)@Push(W,S)|NoOp|NoOp|Push(S,S)
+108280750:NoOp@NoOp|NoOp|NoOp|Push(S,E)
+108325292:NoOp@NoOp|NoOp|NoOp|Push(E,E)
+#end
+#solved
+true
+#numactions
+57
+#time
+108325292
+#end

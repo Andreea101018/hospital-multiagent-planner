@@ -1,0 +1,63 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+TheGate
+#actions
+158380283:Move(E)@Move(E)|Move(W)|Move(S)
+158671251:Push(S,E)@Push(S,E)|NoOp|Move(S)
+158885313:Push(E,E)@Push(E,E)|NoOp|Move(S)
+159033300:Push(E,S)@Push(E,S)|Move(W)|NoOp
+159266366:NoOp@NoOp|NoOp|Move(W)
+159439190:Push(S,S)@Push(S,S)|NoOp|Move(S)
+159565852:Push(S,S)@Push(S,S)|Move(E)|Move(W)
+159692331:Push(S,S)@Push(S,S)|Push(N,N)|NoOp
+159976123:Push(S,S)@Push(S,S)|Push(N,N)|NoOp
+160093922:Move(W)@Move(W)|Push(N,W)|Move(N)
+160171968:Move(S)@Move(S)|Push(W,W)|Pull(S,S)
+160444991:NoOp@NoOp|Push(W,W)|Pull(S,S)
+160687995:NoOp@NoOp|Push(W,W)|Pull(S,S)
+161080426:NoOp@NoOp|Push(W,W)|Pull(W,S)
+161351551:NoOp@NoOp|Push(W,W)|Pull(W,W)
+161512274:NoOp@NoOp|Push(W,W)|Pull(N,W)
+161753364:NoOp@NoOp|Push(W,W)|Pull(N,N)
+161869842:NoOp@NoOp|Push(W,W)|Pull(N,N)
+162099336:NoOp@NoOp|Push(W,W)|Pull(N,N)
+162521223:NoOp@NoOp|Push(W,W)|Pull(W,N)
+162706724:NoOp@NoOp|NoOp|Pull(W,W)
+162869375:NoOp@NoOp|NoOp|Move(S)
+162987044:NoOp@NoOp|NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+23
+#time
+162987044
+#end

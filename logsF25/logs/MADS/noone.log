@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+MADS
+#actions
+63756700:Move(S)@Move(S)|Move(W)|Move(E)
+63905100:Pull(S,W)@Pull(S,W)|Move(W)|Move(E)
+64031400:Pull(E,S)@Pull(E,S)|Move(W)|Move(E)
+64171100:Pull(S,E)@Pull(S,E)|Move(W)|Move(E)
+64286800:Pull(S,S)@Pull(S,S)|Move(W)|Move(E)
+64407100:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)
+64649800:Pull(W,S)@Pull(W,S)|Move(S)|Move(N)
+64766900:Move(S)@Move(S)|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+8
+#time
+64766900
+#end

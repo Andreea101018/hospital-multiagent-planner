@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+29347250:Move(E)@Move(E)|Move(W)@Move(W)
+29386958:Pull(N,N)@Pull(N,N)|Pull(S,S)@Pull(S,S)
+29413792:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+29434583:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29445958:Push(W,W)@Push(W,W)|Push(E,N)@Push(E,N)
+29458083:Push(W,S)@Push(W,S)|Push(N,E)@Push(N,E)
+29469542:Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+29479667:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29489542:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29498917:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29507667:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29516583:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29525292:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29534167:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29542958:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29551625:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+29560917:Move(E)@Move(E)|Move(W)@Move(W)
+29573208:Move(E)@Move(E)|Move(W)@Move(W)
+29588292:Move(E)@Move(E)|Move(W)@Move(W)
+29598167:Move(E)@Move(E)|Move(W)@Move(W)
+29607167:Move(N)@Move(N)|Move(S)@Move(S)
+29615708:Move(N)@Move(N)|Move(S)@Move(S)
+29624583:Move(N)@Move(N)|Move(S)@Move(S)
+29633500:Move(N)@Move(N)|Move(S)@Move(S)
+29642375:Move(N)@Move(N)|Move(S)@Move(S)
+29651083:Move(W)@Move(W)|Move(E)@Move(E)
+29671875:Move(N)@Move(N)|Move(S)@Move(S)
+29686333:Move(W)@Move(W)|NoOp@NoOp
+29696375:Move(W)@Move(W)|NoOp@NoOp
+29705167:Move(W)@Move(W)|NoOp@NoOp
+29716292:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+29716292
+#end

@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+PokeNOM
+#actions
+204893400:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+205483400:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+205804400:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+206202400:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+206608400:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+206945500:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+207426200:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+207924100:Push(E,E)@Push(E,E)|Move(N)@Move(N)|Move(E)@Move(E)
+208251700:Push(E,S)@Push(E,S)|Move(N)@Move(N)|Move(E)@Move(E)
+208618200:Push(S,S)@Push(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+208883000:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+209204600:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+209608900:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+209991900:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+210366600:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+210828300:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+211227500:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+211662100:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)
+#end
+#solved
+true
+#numactions
+18
+#time
+211662100
+#end

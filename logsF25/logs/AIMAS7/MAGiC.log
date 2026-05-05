@@ -1,0 +1,278 @@
+#domain
+hospital
+#levelname
+MAGiC
+#colors
+green: A,1
+blue: B,2
+red: C,3
+purple: D,4
+lightblue: J,0
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                ++++++++++++++                  +
++               +              +                 +
++              +                +                +
++             +                  +               +
++            +                    +              +
++           +                      +             +
++          +                        +            +
++         +                          +           +
++        +                            +          +
++       +                              +         +
++      +                                +        +
++     +                                  +       +
++    +                                    +      +
++   +               ++++                   +     +
++  +               +    +                   +    +
++ +               +      +                   +   +
+++               +                            +  +
++               +    ++    +                   + +
++              +    +  +    +                   ++
++             +    +    +    +                   +
++            +    +      +    +                  +
++           +    +        +    +                 +
++          +    +    ++    +                     +
++         +    +    +  +    +    +               +
++        +    +    +    +    +    +              +
++       +    +    +      +         +             +
++      +    +    +        +    +    +            +
++     +    +    +    ++    +    +    +           +
++         +    +    +  +    +    +    +          +
++   +    +    +    +    +    +    +    +         +
++  +++++++++ +++++++++++++++++ +  ++++++         +
++ +  1A                   +    +    +  +         +
+++  ++++++++ +++++++++    +    +    +   +        +
++  +                  + 0J+    +    +    +       +
++ +                   +  +    +    +     +       +
+++  2B++++   ++++++++++ +    +    +      +       +
++  +                   ++    +    +       +      +
++ + 3C                  +    +    +        +     +
+++  ++++++++ ++++++++++ +    +    +         +    +
++  +4D                 ++    +    +          +   +
++ +                     +    +    +           +  +
++++++++++++++++++++++++++   +     ++++++++++++++++
++                                                +
++       +++++++ +++++ +++++ +++  ++++            +
++       +  +  + +   + +      +  +                +
++       +  +  + +++++ + +++  +  +                +
++       +     + +   + +++++ +++  ++++            +
++                                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                ++++++++++++++                  +
++               +              +                 +
++              +                +                +
++             +                  +               +
++            +                    +              +
++           +                      +             +
++          +                        +            +
++         +             C            +           +
++        +                            +          +
++       +               D              +         +
++      +                                +        +
++     +                                  +       +
++    +                                    +      +
++   +               ++++                   +     +
++  +               +    +                   +    +
++ +               +  B   +                   +   +
+++               +                            +  +
++               +    ++    +                   + +
++              +    +  +    +                   ++
++             +    +    +    +                   +
++            +    +      +    +                  +
++           +    +        +    +                 +
++          +    +    ++    +                     +
++         +    +    +  +    +    +               +
++        +  A +    +    +    +    +              +
++       +    +    +      +         +             +
++      +    +    +        +    +    +            +
++     +    +    +    ++    +    +    +           +
++         +    +    +  +    +    +    +          +
++   +    +    +    +    +    +    +    +         +
++  +++++++++ +++++++++++++++++ +  ++++++         +
++ +                       +    +    +  +         +
+++  ++++++++ +++++++++    +    +    +   +        +
++  +                  +   +    +    +    +       +
++ +                   +  +    +    +     +       +
+++    ++++   ++++++++++ +    +    +      +       +
++  +                   ++    +    +       +      +
++ +                     +    +    +        +     +
+++  ++++++++ ++++++++++ +    +    +         +    +
++  +                   ++    +    +          +   +
++ +                     +    +    +           +  +
++++++++++++++++++++++++++   +J    ++++++++++++++++
++       0   1   2       3    4                   +
++       +++++++ +++++ +++++ +++  ++++            +
++       +  +  + +   + +      +  +                +
++       +  +  + +++++ + +++  +  +                +
++       +     + +   + +++++ +++  ++++            +
++                                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+AIMAS7
+#actions
+3974940900:Pull(W,W)@Pull(W,W)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3975130100:Pull(N,W)@Pull(N,W)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3975216300:Pull(N,N)@Pull(N,N)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3975300600:Pull(W,N)@Pull(W,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3975364600:Pull(S,W)@Pull(S,W)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3975411400:Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)
+3975463200:Push(W,W)@Push(W,W)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)
+3975514300:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(E,N)@Push(E,N)
+3975567500:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3975618100:Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)
+3975712700:Push(W,W)@Push(W,W)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|Push(N,N)@Push(N,N)
+3975837100:Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|NoOp@NoOp
+3975913200:Push(W,W)@Push(W,W)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|NoOp@NoOp
+3976037300:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3976118300:NoOp@NoOp|Push(N,E)@Push(N,E)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3976238400:NoOp@NoOp|Push(E,N)@Push(E,N)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3976358400:NoOp@NoOp|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)
+3976506400:NoOp@NoOp|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)
+3976626900:NoOp@NoOp|Push(E,N)@Push(E,N)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3976694400:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)
+3976767300:Push(W,N)@Push(W,N)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)
+3976872000:Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)
+3976998300:Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)
+3977115400:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)
+3977179300:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)
+3977253700:Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)
+3977353600:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3977406000:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(E,N)@Push(E,N)
+3977469600:Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(N,E)@Push(N,E)
+3977540100:Push(E,N)@Push(E,N)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)
+3977600700:Push(N,N)@Push(N,N)|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)
+3977645300:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)
+3977701600:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Push(N,E)@Push(N,E)
+3977744700:Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3977793800:Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)
+3977844800:Push(E,N)@Push(E,N)|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)|Push(N,E)@Push(N,E)
+3977911100:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)
+3977994200:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3978066000:Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)|Push(E,E)@Push(E,E)
+3978120000:Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+3978175400:Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Push(S,E)@Push(S,E)|Push(S,E)@Push(S,E)|Push(S,E)@Push(S,E)
+3978231400:Push(E,E)@Push(E,E)|Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)
+3978287500:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+3978353500:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(S,E)@Push(S,E)
+3978405200:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3978461000:Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)
+3978527700:Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(E,N)@Push(E,N)|Push(E,S)@Push(E,S)
+3978589500:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)|Push(S,E)@Push(S,E)
+3978643100:Push(S,E)@Push(S,E)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+3978700700:Push(E,S)@Push(E,S)|Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)
+3978781000:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)
+3978850700:Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)
+3978933500:Push(S,E)@Push(S,E)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)
+3979018800:Push(E,E)@Push(E,E)|Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(W,N)@Push(W,N)
+3979082300:Push(E,E)@Push(E,E)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)
+3979138400:Push(E,S)@Push(E,S)|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)
+3979186100:Push(S,E)@Push(S,E)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Push(N,W)@Push(N,W)
+3979232800:Push(E,S)@Push(E,S)|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)
+3979319200:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)
+3979401900:Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3979473700:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3979546800:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)
+3979600900:Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)|Move(E)@Move(E)|Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)
+3979652700:Push(S,W)@Push(S,W)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)
+3979702300:Push(W,S)@Push(W,S)|Push(W,S)@Push(W,S)|Move(S)@Move(S)|Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)
+3979784200:Push(S,W)@Push(S,W)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)
+3979861600:Push(W,S)@Push(W,S)|Push(S,W)@Push(S,W)|Move(S)@Move(S)|Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)
+3979921800:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)
+3979988200:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)
+3980047600:Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)|Move(E)@Move(E)|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)
+3980117700:Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)|Move(S)@Move(S)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)
+3980172800:Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)|Move(E)@Move(E)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)
+3980223600:Push(S,W)@Push(S,W)|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(E)@Move(E)|Push(W,N)@Push(W,N)
+3980277200:Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)
+3980330500:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3980396000:Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+3980448300:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3980502200:Move(W)@Move(W)|Move(N)@Move(N)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3980557900:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3980606900:Move(W)@Move(W)|Move(N)@Move(N)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)
+3980658900:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3980710400:Move(W)@Move(W)|Move(N)@Move(N)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3980761700:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3980825900:Move(W)@Move(W)|Move(N)@Move(N)|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)
+3980904800:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3980964300:Move(W)@Move(W)|Move(N)@Move(N)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3981018000:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)
+3981095800:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3981174000:Move(W)@Move(W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)
+3981227800:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3981289000:Move(W)@Move(W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)
+3981348000:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3981404100:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)
+3981462500:Move(W)@Move(W)|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3981521700:Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3981577200:Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3981634700:NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3981691400:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3981751200:NoOp@NoOp|Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+3981808000:NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)
+3981859400:NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3981915900:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3981988700:NoOp@NoOp|Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3982048900:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|Move(S)@Move(S)
+3982118700:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3982172400:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3982225800:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3982292700:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(W)@Move(W)|Move(S)@Move(S)
+3982354900:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3982415800:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3982463600:NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+3982520700:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)
+3982582400:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)
+3982640100:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)
+3982699500:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|Move(W)@Move(W)
+3982754900:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(S)@Move(S)|Move(W)@Move(W)
+3982814500:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+3982875000:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+3982933300:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+3982979500:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+3983042800:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983100700:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983157800:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983215000:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983270800:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983333200:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983388600:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983442600:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983490300:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983539100:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983585800:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983635900:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983684000:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983738000:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983789400:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983838100:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983888100:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983937700:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3983988800:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984037400:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984088300:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984136800:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984184100:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984234600:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984286300:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984349800:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984418700:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984472800:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984521500:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984571100:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984618800:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984669200:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984717400:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+3984764600:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+154
+#time
+3984764600
+#end

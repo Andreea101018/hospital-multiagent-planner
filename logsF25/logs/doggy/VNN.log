@@ -1,0 +1,237 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+doggy
+#actions
+1092159000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1092573500:Move(E)@Move(E)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)
+1092607900:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)
+1092637700:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+1092666900:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1092695200:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)|Move(N)@Move(N)
+1092727600:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1092763400:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1092789700:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1092816500:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1092842900:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+1092872000:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1092901800:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093063300:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093132500:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093175600:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093206200:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093234500:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093264400:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093292300:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093328400:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093354500:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)
+1093380900:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1093406500:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1093431800:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1093458500:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1093483200:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1093509100:NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp|NoOp@NoOp
+1093812500:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1093841900:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1093869200:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1093904100:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1093930200:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1093957100:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1093983000:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094008400:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094034700:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094060400:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094088100:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094114100:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094139700:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094169700:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094206100:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094232000:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+1094259100:NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp|NoOp@NoOp
+1094285800:NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+1094694600:NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+1094739700:NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+1094767700:NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp
+1094797700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)
+1094823500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1094850000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1094875100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1094900500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1094926400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1094951500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1094978200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095003200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095028200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095349400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095377600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095428500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095456500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095482500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095508800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095535400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+1095562200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)
+1095588400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1095614000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1095640800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1095676300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1095701800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1095970600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1095998700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1096025900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)
+1096053500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+1096080100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1096116000:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+1096141400:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+1096832600:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+1096865600:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+1096892600:Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1096919500:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1096945800:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1096972100:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1096998800:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097025200:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097051300:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097076900:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097102700:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097128300:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097335000:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097363000:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097389300:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097415200:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097450800:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097477200:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097502900:Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097530000:Pull(N,W)@Pull(N,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097556600:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097583100:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097610400:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097635900:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097661500:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097686900:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097713600:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097740000:Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097766300:Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1097793200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+1098036200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098065200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098309900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098339000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098364700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098390300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098828700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098859300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098885400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1098912000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1098937400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1098962800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1098988800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099014100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099040500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099065800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099091100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099117600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099142800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099168300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099194700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099220000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099247700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099273200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099298500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099325000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099352300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1099384100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+1099410400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1099442900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1099469700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1099495100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+1100069400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100098000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100123600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100149100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100176200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100380300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100440600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100581800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100731600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100855200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1100971200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1101092300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1101142400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1101172200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1101203600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1101229300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1101258300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+1101351600:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|NoOp@NoOp
+1101397200:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101443700:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101532400:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101574500:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101609400:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101702700:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101753500:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101786400:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101817400:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101862700:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1101969600:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1102071900:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1102233700:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1102308900:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1102386500:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1102579400:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+1102638100:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+1102680000:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+1102712500:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+1102741900:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+1102768000:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+180
+#time
+1102768000
+#end

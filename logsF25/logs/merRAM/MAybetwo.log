@@ -1,0 +1,65 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+merRAM
+#actions
+458168100:Move(E)@Move(E)|Move(W)|Move(E)
+459003000:Move(E)@Move(E)|Move(W)|Move(E)
+459110700:Move(E)@Move(E)|Move(W)|Move(E)
+459266900:Move(E)@Move(E)|Move(W)|Move(E)
+459395300:Move(E)@Move(E)|NoOp|NoOp
+459495800:Move(E)@Move(E)|NoOp|NoOp
+459611100:Move(E)@Move(E)|NoOp|NoOp
+459718100:Push(E,E)@Push(E,E)|NoOp|NoOp
+459820400:Push(E,S)@Push(E,S)|NoOp|NoOp
+459922700:Push(S,S)@Push(S,S)|NoOp|Move(W)
+460037800:Move(E)@Move(E)|Move(W)|Move(W)
+460155000:Move(N)@Move(N)|Move(W)|Move(W)
+460262700:NoOp@NoOp|Move(W)|NoOp
+460356000:NoOp@NoOp|Move(N)|NoOp
+460451100:NoOp@NoOp|Move(N)|Move(E)
+460571200:NoOp@NoOp|Move(N)|Move(E)
+460669100:NoOp@NoOp|Push(W,N)|Move(E)
+460787000:NoOp@NoOp|NoOp|Move(E)
+460871500:NoOp@NoOp|NoOp|Move(E)
+460958500:NoOp@NoOp|NoOp|Move(E)
+461054700:NoOp@NoOp|NoOp|Move(E)
+461143700:NoOp@NoOp|NoOp|Move(N)
+461231300:NoOp@NoOp|NoOp|Move(N)
+461337800:NoOp@NoOp|NoOp|Move(N)
+461429400:NoOp@NoOp|NoOp|Push(E,S)
+#end
+#solved
+true
+#numactions
+25
+#time
+461429400
+#end

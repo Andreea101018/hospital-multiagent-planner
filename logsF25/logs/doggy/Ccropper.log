@@ -1,0 +1,253 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+doggy
+#actions
+876731300:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+877012700:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+877149500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+877290200:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+877412800:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+877542100:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+877662100:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+877847100:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+877965500:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+878087500:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+878121000:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+878299500:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+878346400:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+878379700:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+878417300:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+878521900:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+878630000:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+878738400:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+878843100:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+878962200:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+879070600:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+879266800:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+879453600:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+879663200:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+879830500:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+880007300:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+880086400:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+880153900:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp|NoOp@NoOp
+880389100:Pull(S,W)@Pull(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880492100:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880542800:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880580800:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880615600:Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880647700:Pull(S,W)@Pull(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880679600:Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880711500:Pull(S,W)@Pull(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880782000:Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880833800:Pull(S,W)@Pull(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880881700:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880935700:Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+880988300:Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881032600:Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881078900:Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881125600:Pull(E,S)@Pull(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881180400:Pull(S,E)@Pull(S,E)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881227900:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881267100:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881324400:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881363300:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881409000:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881471000:Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881519900:Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881581600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+881627400:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+881761000:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+881942200:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+882145600:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+882352100:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+882571900:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+882737700:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+883083200:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+883170700:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+883359200:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+883466600:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+883569900:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+883674500:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+883780100:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+883886500:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+883993400:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+884104300:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+884145700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+884200700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+884253700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+884296900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+884367900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+884441200:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+884605400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+884644800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+884704700:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+884753400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+884803100:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+884850400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)
+884902600:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)
+884946900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)
+884999000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)
+885044800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)
+885096500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)
+885141000:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+885183900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+885227400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+885269800:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+885312400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+885365900:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+885426400:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+885603400:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+885652900:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+885701100:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+885744500:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+885801900:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+885850200:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+885892100:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+885933300:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+885976400:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+886016900:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+886069300:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+886112100:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+886154400:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+886196500:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+886237700:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+886280400:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+886327700:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+886369900:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+886420500:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp
+886463000:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+886505500:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+886547600:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+886588200:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp
+886623800:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+886710300:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp
+886950100:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+887083400:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp
+887184000:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+887239200:NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp
+887290700:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|NoOp@NoOp
+887342300:NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp
+887392800:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|NoOp@NoOp
+887442000:NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp
+887491300:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|NoOp@NoOp
+887629500:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+887732100:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+887828700:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+887885400:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+887930100:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+888005900:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+888092300:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+888206300:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+888271500:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+888361100:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+888410800:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+888533600:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+888591300:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+888768200:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+888846300:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+888923300:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+889002400:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+889069000:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+889182100:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+889253400:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+889329700:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+889415400:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+889531200:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+889596900:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+889685200:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+889764300:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+889878600:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+890172900:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+890256800:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+890306700:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+890366900:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+890413000:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+890618700:NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp|NoOp@NoOp
+890782700:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+890932900:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+891062100:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+891233500:NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp
+891401100:NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp|NoOp@NoOp
+891471600:NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp
+891521200:NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp|NoOp@NoOp
+891570300:NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp
+891616200:NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp|NoOp@NoOp
+891663200:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+891708400:NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp|NoOp@NoOp
+891754000:NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp|NoOp@NoOp
+891800500:NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp|NoOp@NoOp
+891844000:NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp|NoOp@NoOp
+891889200:NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp|NoOp@NoOp
+892036800:NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp|NoOp@NoOp
+892134100:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+892181600:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+892217200:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+892250600:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+892284900:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp|NoOp@NoOp
+892317100:NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp|NoOp@NoOp
+892350000:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+184
+#time
+892350000
+#end

@@ -1,0 +1,60 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+AIMAS7
+#actions
+331364700:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+331496600:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+331563300:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+331613100:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+331665700:Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+331707700:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+331748900:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+331815200:Push(E,S)@Push(E,S)|Move(W)@Move(W)|Move(N)@Move(N)
+331922300:Push(S,S)@Push(S,S)|Move(N)@Move(N)|Move(E)@Move(E)
+331979000:Push(S,E)@Push(S,E)|Move(W)@Move(W)|Move(E)@Move(E)
+332024300:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)
+332066900:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+332107900:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+332152700:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+332191000:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+332233900:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+332272800:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+332310700:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+332349000:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+332388000:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+#end
+#solved
+true
+#numactions
+20
+#time
+332388000
+#end

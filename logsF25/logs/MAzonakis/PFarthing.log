@@ -1,0 +1,173 @@
+#domain
+hospital
+#levelname
+PFarthing
+#colors
+blue: 0 
+red: 1, 5
+green: 2
+purple: 3, 4, A, B
+#initial
+                    +++
+      +++++         +4+
+     +A    +    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++ + +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++B  +++   ++ ++ + 
++5+          +++   + + 
+++++++++++++++    ++++++++++
++0  +             +2       +
++ + +             + ++++++ +
++  1+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       3+
+                  ++++++++++
+#goal
+                    +++
+      +++++         + +
+     +    B+    +++++ +
+     +  +++     ++    +
+      + +      +   ++++
+      + +++++++   +    
+     +            ++   
+   ++5+ +++++++++  ++  
+  ++  + +       +   +  
+ ++  ++ +    +++  + ++ 
+++  +++ +  +++   ++  + 
++  +++   +++   ++ ++ + 
++ +   4      +++   +A+ 
+++++++++++++++    ++++++++++
++1  +             +3       +
++ + +             + ++++++ +
++  0+             + ++++++ +
++++++             + ++++++ +       
+                  + ++++++ + 
+                  + ++++++ +
+                  + ++++++ + 
+                  +       2+
+                  ++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+329595583:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)|Move(S)|Move(N)
+329863375:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)|Move(S)|Move(E)
+330034333:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)|Move(W)|Move(N)
+330195375:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)|Move(W)|Move(E)
+330362625:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|Move(N)
+330495541:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(S)|Move(E)
+330936333:NoOp@NoOp|NoOp|Move(S)|Move(N)|Move(W)|Move(N)
+331115208:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|Move(E)
+331320333:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(S)|Move(N)
+331478583:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(S)|NoOp
+331648250:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+331782750:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+332257625:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+332464375:NoOp@NoOp|NoOp|Move(E)|Move(W)|Move(W)|NoOp
+332757583:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+333160791:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+333312666:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+333444708:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+333638666:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+333834583:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+334011000:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+334116083:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+334250041:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+334366166:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+334510166:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,E)|NoOp
+334699083:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+334869083:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335025291:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335138208:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335267625:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335420666:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335610000:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335729958:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335851791:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+335971708:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,E)|NoOp
+336117708:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,E)|NoOp
+336293166:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+336431625:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+336565750:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+336674083:NoOp@NoOp|NoOp|NoOp|NoOp|Pull(S,S)|NoOp
+336769458:NoOp@NoOp|NoOp|NoOp|NoOp|Push(N,E)|NoOp
+336855291:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+336940500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+337025708:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+337109375:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+337217458:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+337401333:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+337544791:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+337787000:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+337903166:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+338029083:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+338185666:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+338366500:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+338477166:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+338596333:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+338736750:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+338898458:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+339654791:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+339825333:NoOp@NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+340468875:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+340626458:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+340783708:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+340934375:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+341218625:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+341382041:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+341508625:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+341664166:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+341771041:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+341881208:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+341980375:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+342102083:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+342231916:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+342517500:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+342689166:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+342815750:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+342924958:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+343026791:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+343209000:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+343349916:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+343488666:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+343622125:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+343727583:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+343848291:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+343942000:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+344060416:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+344193750:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+344286458:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+344366333:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+344438125:NoOp@NoOp|NoOp|NoOp|NoOp|Move(N)|NoOp
+344555875:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+344646583:NoOp@NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+344736333:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+344826208:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+344975291:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+345126208:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+345269291:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+345474291:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+345675666:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+345831958:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+345934875:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+346040541:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+346141625:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+346227291:NoOp@NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+346339916:NoOp@NoOp|NoOp|NoOp|NoOp|Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+104
+#time
+346339916
+#end

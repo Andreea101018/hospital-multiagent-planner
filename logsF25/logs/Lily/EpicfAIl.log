@@ -1,0 +1,105 @@
+#domain
+hospital
+#levelname
+EpicfAIl
+#colors
+blue: 0, A
+red: 2, C, X
+purple: I
+green: 3, B
+orange: J
+pink: E
+grey: 1, D, Y
+#initial
+++++++++++++++++++++
++1 +   +  +   +    +
++2   + +  X   Y    +
++3 + +    +   +    +
++++++++++++++++++A++
++0             +B  +
++              +C  +
++              +D  +
++     I        ++ ++
++    III EEE       +
++    III EJE       +
++    IIB EEE       +
++     B   B        +
++     B   B        +
+++++++++++++++++++++
+#goal
+++++++++++++++++++++
++  +   +  +   +    +
++    + +           +
++  + +    +   +    +
++++++++++++++++++ ++
++              +3 D+
++              +2 C+
++              +1 B+
++     I        ++ ++
++    III EEE       +
++    III EJE       +
++    IIB EEE       +
++     B   B       0+
++     B   B       A+
+++++++++++++++++++++
+#end
+#clientname
+Lily
+#actions
+2348647750:Move(S)@Move(S)|Move(E)|Move(E)|NoOp
+2348802709:Move(E)@Move(E)|NoOp|Move(E)|Move(N)
+2348905584:Move(S)@Move(S)|Move(S)|Move(E)|NoOp
+2349036167:Move(E)@Move(E)|Move(E)|Move(N)|NoOp
+2349138500:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+2349229250:Move(E)@Move(E)|Move(N)|Move(E)|Move(E)
+2349327959:Move(E)@Move(E)|Move(E)|Move(S)|Move(E)
+2349388917:Move(E)@Move(E)|Move(E)|Move(S)|Move(N)
+2349455834:Move(E)@Move(E)|Move(S)|Move(E)|Move(E)
+2349511750:Move(E)@Move(E)|Move(S)|Move(E)|Move(E)
+2349570959:Move(E)@Move(E)|Move(E)|Move(N)|Move(S)
+2349629042:Move(S)@Move(S)|Move(E)|Move(E)|Move(S)
+2349703959:Move(E)@Move(E)|Move(N)|Push(E,E)|Move(E)
+2349791792:Move(E)@Move(E)|Move(E)|Push(E,N)|Move(E)
+2349907667:Move(E)@Move(E)|Move(E)|Pull(E,S)|Move(E)
+2349992250:Move(E)@Move(E)|Move(W)|Pull(E,E)|Move(W)
+2350054792:Move(S)@Move(S)|NoOp|Pull(S,E)|Move(N)
+2350122292:Move(E)@Move(E)|NoOp|Push(N,N)|NoOp
+2350176042:Move(E)@Move(E)|Move(E)|NoOp|NoOp
+2350227709:Move(E)@Move(E)|NoOp|NoOp|Move(E)
+2350284375:Move(N)@Move(N)|Move(E)|Push(N,W)|NoOp
+2350340959:Move(N)@Move(N)|Move(S)|NoOp|Move(E)
+2350390959:Move(N)@Move(N)|Move(E)|NoOp|Move(E)
+2350444625:Move(N)@Move(N)|NoOp|NoOp|NoOp
+2350518834:Pull(S,S)@Pull(S,S)|Move(E)|NoOp|Move(E)
+2350583959:Pull(S,S)@Pull(S,S)|Move(N)|NoOp|Move(W)
+2350635917:Pull(S,S)@Pull(S,S)|Push(E,E)|NoOp|Move(E)
+2350688125:Pull(S,S)@Pull(S,S)|Push(E,N)|Pull(S,E)|NoOp
+2350766042:Pull(E,S)@Pull(E,S)|Pull(S,S)|Move(E)|NoOp
+2350874375:Push(W,S)@Push(W,S)|Pull(E,S)|NoOp|Move(E)
+2350947625:Push(S,E)@Push(S,E)|Move(E)|Move(E)|NoOp
+2351001334:Push(E,S)@Push(E,S)|Move(S)|Move(E)|Move(E)
+2351054625:Push(S,S)@Push(S,S)|Move(S)|Move(S)|Move(E)
+2351103667:Push(S,S)@Push(S,S)|Move(S)|NoOp|Move(E)
+2351153667:NoOp@NoOp|Move(S)|Move(E)|Move(E)
+2351217209:NoOp@NoOp|Pull(N,E)|Move(E)|NoOp
+2351298042:NoOp@NoOp|Pull(E,N)|NoOp|Move(S)
+2351356459:NoOp@NoOp|Pull(S,E)|NoOp|Move(S)
+2351406459:NoOp@NoOp|Push(N,N)|Move(W)|Move(S)
+2351451959:NoOp@NoOp|Move(S)|Move(S)|Pull(S,E)
+2351503000:NoOp@NoOp|Move(W)|NoOp|Pull(E,S)
+2351551167:NoOp@NoOp|Move(W)|Move(S)|Pull(S,E)
+2351607292:NoOp@NoOp|NoOp|Move(W)|Pull(W,S)
+2351654167:NoOp@NoOp|NoOp|Push(S,E)|NoOp
+2351699584:NoOp@NoOp|NoOp|Push(E,E)|NoOp
+2351772334:NoOp@NoOp|NoOp|Move(W)|NoOp
+2351828084:NoOp@NoOp|NoOp|NoOp|Move(N)
+2351875375:NoOp@NoOp|NoOp|NoOp|Move(N)
+2351932334:NoOp@NoOp|NoOp|NoOp|Move(W)
+#end
+#solved
+true
+#numactions
+49
+#time
+2351932334
+#end

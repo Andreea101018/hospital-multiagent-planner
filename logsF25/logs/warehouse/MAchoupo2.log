@@ -1,0 +1,84 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+warehouse
+#actions
+35302375:Move(E)@Move(E)|Move(W)@Move(W)
+35364167:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)
+35382667:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+35401292:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35424458:Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+35444833:Push(N,W)@Push(N,W)|Push(E,S)@Push(E,S)
+35461250:Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+35473583:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35482667:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35491167:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35500000:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35518083:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35545250:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35571375:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35596500:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35622125:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+35649167:Move(E)@Move(E)|Move(S)@Move(S)
+35675208:Move(E)@Move(E)|Move(S)@Move(S)
+35700542:Move(E)@Move(E)|Move(W)@Move(W)
+35734792:Move(E)@Move(E)|Move(W)@Move(W)
+35749958:Move(N)@Move(N)|Move(N)@Move(N)
+35758542:Move(N)@Move(N)|Move(N)@Move(N)
+35766750:Move(N)@Move(N)|Move(W)@Move(W)
+35774750:Move(N)@Move(N)|Move(W)@Move(W)
+35782708:Move(N)@Move(N)|Move(S)@Move(S)
+35790750:Move(W)@Move(W)|Move(S)@Move(S)
+35798667:Move(N)@Move(N)|Move(S)@Move(S)
+35806125:Move(W)@Move(W)|Move(S)@Move(S)
+35813583:Move(W)@Move(W)|Move(W)@Move(W)
+35821583:Move(W)@Move(W)|Move(S)@Move(S)
+35830125:Move(W)@Move(W)|Move(E)@Move(E)
+35838625:NoOp@NoOp|Move(E)@Move(E)
+35846625:NoOp@NoOp|Move(S)@Move(S)
+#end
+#solved
+true
+#numactions
+33
+#time
+35846625
+#end

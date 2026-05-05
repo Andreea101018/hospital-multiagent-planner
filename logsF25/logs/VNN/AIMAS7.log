@@ -1,0 +1,146 @@
+#domain
+hospital
+#levelname
+AIMAS7
+#colors
+orange: 0,A
+purple: 3,C
+green: 2,B
+blue: 1
+lightblue: F,4
+red: T,Z,5,V
+cyan: D
+grey: X,6,J
+#initial
++++++++++++++++++++++++++++++++++++
++                 0++++++3+++     +
++    A             ++++++ +++     +
++     A            ++++++ +++     +
++      A           ++++++ +++     +
++       A          ++++++C+++     +
++        A         +2   B         +
++ 1       A        ++++++F+++     +
++        A         ++++++ +++     +
++       A          ++++++ +++     +
++      A           ++++++ +++     +
++     A            ++++++4+++     +
++    A             ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++     T        D      X        6  +
++                                 +
++                                 +
++          D           D          +
++  +          D    D        ++    +
++  +         ++++++++       +     +
++  +    Z                   +     +
++  ++                D D    ++    +
++   +         D              +D   +
++    +               D          D +
++  5 +      D                     +
++    ++                           +
++         V      +++++++++     J  +
++                +         D      +
++                                 +
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++F    +
++                  ++++++ +++     +
++                  ++++++ +++C    +
++                  +              +
++            1     ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++    B+
++                  ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++     V               X           +
++                                 +
++                                 +
++  +                       J++    +
++  +         ++++++++       +     +
++ T+                        +     +
++  ++                       ++    +
++   +                        +    +
++    +                            +
++    +                            +
++    ++       Z                   +
++                +++++++++        +
++                +                +
++                                 +
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+VNN
+#actions
+3695271083:NoOp@NoOp|Move(N)|Move(E)|Move(S)|Move(N)|Move(E)|Move(W)
+3695376791:NoOp@NoOp|Move(N)|Move(E)|Move(S)|Move(N)|Move(S)|Move(W)
+3695436458:NoOp@NoOp|Move(E)|Move(E)|Move(N)|Move(N)|Move(S)|Move(W)
+3695488791:NoOp@NoOp|Move(N)|Push(E,E)|Move(S)|Pull(S,S)|Move(E)|Move(W)
+3695539041:NoOp@NoOp|Move(N)|Push(E,E)|Move(S)|Push(N,N)|Move(E)|Move(W)
+3695599458:NoOp@NoOp|Move(E)|Push(E,E)|Move(N)|Pull(S,S)|Move(E)|Move(W)
+3695643875:NoOp@NoOp|Move(N)|Push(E,E)|Move(N)|Push(N,N)|Move(E)|Move(W)
+3695686500:NoOp@NoOp|Move(N)|Push(E,E)|Move(S)|Push(N,N)|Move(E)|Move(W)
+3695734833:NoOp@NoOp|Move(E)|Push(E,E)|Move(S)|Push(N,E)|Pull(N,W)|Push(W,S)
+3695809666:NoOp@NoOp|Move(E)|Push(E,S)|Move(N)|Push(E,E)|Pull(N,N)|Move(E)
+3695854541:NoOp@NoOp|Move(S)|Push(S,S)|Move(S)|Push(E,E)|Pull(N,N)|Move(E)
+3695898666:NoOp@NoOp|Move(E)|Push(S,E)|Push(S,S)|Push(E,E)|Pull(E,N)|Move(S)
+3695941791:NoOp@NoOp|Move(S)|Push(E,S)|Push(S,E)|Push(E,N)|Push(W,N)|Move(S)
+3695985958:NoOp@NoOp|Move(E)|Push(S,S)|Push(E,E)|Push(N,N)|Push(N,W)|Move(S)
+3696029041:NoOp@NoOp|Move(S)|Push(S,E)|Push(E,E)|Push(N,N)|Push(W,W)|Move(S)
+3696071875:NoOp@NoOp|Move(E)|Push(E,S)|Push(E,E)|NoOp|Push(W,N)|Move(S)
+3696123333:NoOp@NoOp|Move(S)|Push(S,E)|Push(E,N)|NoOp|Push(N,N)|Move(E)
+3696175208:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(N,N)|Move(S)
+3696221333:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(N,W)|Move(S)
+3696270833:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(W,N)|Move(S)
+3696322041:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|Push(N,N)|Move(S)
+3696372875:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(N,N)|Move(E)
+3696422708:NoOp@NoOp|Move(E)|NoOp|NoOp|NoOp|Push(N,N)|Move(S)
+3696477041:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(S)
+3696534125:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(E)
+3696591416:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Move(E)
+3696636458:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(S,W)|Move(S)
+3696689791:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(S,S)|Move(E)
+3696731333:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(S,S)|Move(E)
+3696778791:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(W,S)|Pull(S,W)
+3696819916:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(W,W)|Push(N,W)
+3696869458:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(W,W)|Push(W,W)
+3696912583:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Pull(W,W)|Push(W,N)
+3696959625:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|Push(N,N)
+3696999666:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Push(N,W)
+3697045000:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Push(W,N)
+3697087708:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(N,N)
+3697150791:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(N)|Push(N,N)
+3697196750:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+3697243250:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+3697283666:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+3697325083:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3697367208:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3697406666:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+3697460750:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3697517416:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+3697558208:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+3697596833:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+3697637916:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+3697685166:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+3697732625:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+3697771625:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+3697809666:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+3697852166:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+3697891125:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+3697932833:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+3697970750:NoOp@NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+#end
+#solved
+true
+#numactions
+57
+#time
+3697970750
+#end

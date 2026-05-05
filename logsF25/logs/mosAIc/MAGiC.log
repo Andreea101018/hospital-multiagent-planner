@@ -1,0 +1,282 @@
+#domain
+hospital
+#levelname
+MAGiC
+#colors
+green: A,1
+blue: B,2
+red: C,3
+purple: D,4
+lightblue: J,0
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                ++++++++++++++                  +
++               +              +                 +
++              +                +                +
++             +                  +               +
++            +                    +              +
++           +                      +             +
++          +                        +            +
++         +                          +           +
++        +                            +          +
++       +                              +         +
++      +                                +        +
++     +                                  +       +
++    +                                    +      +
++   +               ++++                   +     +
++  +               +    +                   +    +
++ +               +      +                   +   +
+++               +                            +  +
++               +    ++    +                   + +
++              +    +  +    +                   ++
++             +    +    +    +                   +
++            +    +      +    +                  +
++           +    +        +    +                 +
++          +    +    ++    +                     +
++         +    +    +  +    +    +               +
++        +    +    +    +    +    +              +
++       +    +    +      +         +             +
++      +    +    +        +    +    +            +
++     +    +    +    ++    +    +    +           +
++         +    +    +  +    +    +    +          +
++   +    +    +    +    +    +    +    +         +
++  +++++++++ +++++++++++++++++ +  ++++++         +
++ +  1A                   +    +    +  +         +
+++  ++++++++ +++++++++    +    +    +   +        +
++  +                  + 0J+    +    +    +       +
++ +                   +  +    +    +     +       +
+++  2B++++   ++++++++++ +    +    +      +       +
++  +                   ++    +    +       +      +
++ + 3C                  +    +    +        +     +
+++  ++++++++ ++++++++++ +    +    +         +    +
++  +4D                 ++    +    +          +   +
++ +                     +    +    +           +  +
++++++++++++++++++++++++++   +     ++++++++++++++++
++                                                +
++       +++++++ +++++ +++++ +++  ++++            +
++       +  +  + +   + +      +  +                +
++       +  +  + +++++ + +++  +  +                +
++       +     + +   + +++++ +++  ++++            +
++                                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                ++++++++++++++                  +
++               +              +                 +
++              +                +                +
++             +                  +               +
++            +                    +              +
++           +                      +             +
++          +                        +            +
++         +             C            +           +
++        +                            +          +
++       +               D              +         +
++      +                                +        +
++     +                                  +       +
++    +                                    +      +
++   +               ++++                   +     +
++  +               +    +                   +    +
++ +               +  B   +                   +   +
+++               +                            +  +
++               +    ++    +                   + +
++              +    +  +    +                   ++
++             +    +    +    +                   +
++            +    +      +    +                  +
++           +    +        +    +                 +
++          +    +    ++    +                     +
++         +    +    +  +    +    +               +
++        +  A +    +    +    +    +              +
++       +    +    +      +         +             +
++      +    +    +        +    +    +            +
++     +    +    +    ++    +    +    +           +
++         +    +    +  +    +    +    +          +
++   +    +    +    +    +    +    +    +         +
++  +++++++++ +++++++++++++++++ +  ++++++         +
++ +                       +    +    +  +         +
+++  ++++++++ +++++++++    +    +    +   +        +
++  +                  +   +    +    +    +       +
++ +                   +  +    +    +     +       +
+++    ++++   ++++++++++ +    +    +      +       +
++  +                   ++    +    +       +      +
++ +                     +    +    +        +     +
+++  ++++++++ ++++++++++ +    +    +         +    +
++  +                   ++    +    +          +   +
++ +                     +    +    +           +  +
++++++++++++++++++++++++++   +J    ++++++++++++++++
++       0   1   2       3    4                   +
++       +++++++ +++++ +++++ +++  ++++            +
++       +  +  + +   + +      +  +                +
++       +  +  + +++++ + +++  +  +                +
++       +     + +   + +++++ +++  ++++            +
++                                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+mosAIc
+#actions
+5759097750:Move(N)@Move(N)|Push(E,E)|Push(E,N)|Push(E,E)|Push(E,E)
+5759198209:Move(E)@Move(E)|Push(E,E)|Push(N,E)|Push(E,E)|Push(E,E)
+5759267167:Pull(W,N)@Pull(W,N)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,E)
+5759372417:Pull(W,W)@Pull(W,W)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,E)
+5759508667:Pull(W,W)@Pull(W,W)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,E)
+5759562709:Pull(N,W)@Pull(N,W)|Push(E,E)|Push(E,E)|Push(E,E)|Push(E,E)
+5759606959:Pull(W,N)@Pull(W,N)|Push(E,N)|Push(E,E)|Push(E,E)|Push(E,E)
+5759650000:Pull(W,W)@Pull(W,W)|Push(N,N)|Push(E,E)|Push(E,N)|Push(E,E)
+5759694000:Pull(W,W)@Pull(W,W)|Push(N,N)|Push(E,E)|Push(N,N)|Pull(N,W)
+5759766959:Pull(W,W)@Pull(W,W)|Push(N,N)|Push(E,N)|Push(N,W)|Pull(N,N)
+5759824000:Pull(W,W)@Pull(W,W)|Push(N,E)|Push(N,W)|Pull(N,E)|Pull(E,N)
+5759913125:Pull(W,W)@Pull(W,W)|Push(E,E)|Push(W,N)|Pull(E,N)|Pull(E,E)
+5759963667:Pull(W,W)@Pull(W,W)|Push(E,N)|Push(N,N)|Pull(E,E)|Pull(E,E)
+5760187917:Pull(W,W)@Pull(W,W)|Push(N,N)|Push(N,N)|Pull(E,E)|Pull(E,E)
+5760351750:Pull(W,W)@Pull(W,W)|Push(N,E)|Push(N,N)|Pull(E,E)|Pull(E,E)
+5760419792:Pull(W,W)@Pull(W,W)|Push(E,N)|Push(N,N)|Pull(E,E)|Pull(E,E)
+5760470125:Pull(S,W)@Pull(S,W)|Pull(E,S)|Move(E)|Pull(E,E)|Push(W,N)
+5760561084:Push(N,N)@Push(N,N)|Pull(S,E)|Move(N)|Pull(E,E)|Push(N,W)
+5760649709:Push(N,N)@Push(N,N)|Push(N,N)|Pull(S,E)|Pull(E,E)|Push(W,W)
+5760696917:Push(N,N)@Push(N,N)|Push(N,W)|Push(N,E)|Pull(E,E)|Push(W,W)
+5760738667:Move(W)@Move(W)|Pull(E,E)|Push(E,N)|Push(W,N)|Push(W,W)
+5760814375:Move(N)@Move(N)|Pull(E,E)|Push(N,E)|Push(N,E)|Push(W,W)
+5760885542:Push(E,E)@Push(E,E)|Pull(N,E)|Push(E,N)|Pull(W,W)|Push(W,N)
+5760971667:Push(E,E)@Push(E,E)|Pull(E,N)|Push(N,E)|Pull(W,W)|Push(N,N)
+5761036209:Move(N)@Move(N)|Pull(N,E)|Push(E,N)|Pull(W,W)|Push(N,N)
+5761116042:Move(E)@Move(E)|Pull(N,N)|Push(N,N)|Pull(W,W)|Push(N,N)
+5761165417:Pull(W,N)@Pull(W,N)|Pull(E,N)|Push(N,N)|Pull(W,W)|Push(N,N)
+5761208125:Pull(W,W)@Pull(W,W)|Pull(E,E)|Push(N,E)|Pull(W,W)|Push(N,N)
+5761245000:Push(E,N)@Push(E,N)|Pull(E,E)|Push(E,E)|Pull(W,W)|Push(N,N)
+5761293792:Push(N,E)@Push(N,E)|Pull(E,E)|Push(E,N)|Pull(W,W)|Push(N,N)
+5761335250:Push(E,N)@Push(E,N)|Pull(S,E)|Push(N,N)|Pull(S,W)|Move(E)
+5761384209:Push(N,E)@Push(N,E)|Pull(E,S)|Push(N,E)|Push(N,N)|Move(N)
+5761423750:Push(E,E)@Push(E,E)|Pull(S,E)|Push(E,E)|Push(N,N)|Pull(S,E)
+5761444292:Push(E,S)@Push(E,S)|Pull(E,S)|Push(E,N)|Push(N,N)|Push(N,E)
+5761472500:Pull(E,N)@Pull(E,N)|Pull(S,E)|Push(N,N)|Push(N,N)|Push(E,N)
+5761501167:Pull(N,E)@Pull(N,E)|Pull(E,S)|Push(N,E)|Push(N,E)|Push(N,E)
+5761526000:Pull(N,N)@Pull(N,N)|Pull(E,E)|Push(E,N)|Push(E,N)|Push(E,N)
+5761549959:Pull(W,N)@Pull(W,N)|Pull(E,E)|Pull(E,S)|Push(N,E)|Push(N,E)
+5761574459:Push(E,N)@Push(E,N)|Pull(S,E)|Pull(E,E)|Push(E,N)|Push(E,N)
+5761608709:Push(N,E)@Push(N,E)|Pull(S,S)|Pull(S,E)|Push(N,E)|Push(N,E)
+5761636084:Push(E,E)@Push(E,E)|Push(N,E)|Pull(E,S)|Push(E,N)|Push(E,N)
+5761661917:Push(E,E)@Push(E,E)|Push(E,E)|Pull(S,E)|Push(N,E)|Push(N,E)
+5761687542:Push(E,N)@Push(E,N)|Push(E,N)|Pull(E,S)|Push(E,N)|Push(E,N)
+5761710917:Push(N,E)@Push(N,E)|Push(N,N)|Pull(S,E)|Push(N,E)|Push(N,E)
+5761734459:Push(E,E)@Push(E,E)|Push(N,W)|Pull(E,S)|Push(E,N)|Push(E,N)
+5761758042:Push(E,E)@Push(E,E)|Push(W,N)|Pull(S,E)|Push(N,E)|Push(N,E)
+5761781167:Push(E,E)@Push(E,E)|Push(N,W)|Pull(S,S)|Push(E,N)|Push(E,N)
+5761805209:Pull(S,W)@Pull(S,W)|Push(W,N)|Pull(W,S)|Push(N,E)|Push(N,E)
+5761829084:Pull(E,S)@Pull(E,S)|Push(N,W)|Push(E,S)|Push(E,N)|Push(E,E)
+5761851334:Pull(S,E)@Pull(S,E)|Push(W,N)|Push(S,E)|Push(N,E)|Push(E,E)
+5761875292:Pull(E,S)@Pull(E,S)|Push(N,W)|Push(E,S)|Push(E,N)|Push(E,E)
+5761898667:Pull(S,E)@Pull(S,E)|Push(W,N)|Push(S,E)|Push(N,E)|Push(E,N)
+5761921834:Pull(E,S)@Pull(E,S)|Push(N,W)|Push(E,S)|Push(E,E)|Pull(S,S)
+5761944959:Pull(S,E)@Pull(S,E)|Push(W,N)|Push(S,E)|Push(E,E)|Pull(S,S)
+5761968209:Pull(E,S)@Pull(E,S)|Push(N,W)|Push(E,E)|Push(E,E)|Pull(E,S)
+5761990000:Pull(S,E)@Pull(S,E)|Push(W,N)|Push(E,N)|Push(E,N)|Pull(S,E)
+5762013084:Pull(E,S)@Pull(E,S)|Push(N,W)|Push(N,N)|Pull(S,S)|Pull(E,S)
+5762031000:Pull(S,E)@Pull(S,E)|Push(W,N)|Push(N,N)|Pull(S,S)|Pull(S,E)
+5762053042:Pull(E,S)@Pull(E,S)|Push(N,W)|Push(N,N)|Pull(E,S)|Pull(E,S)
+5762084292:Pull(S,E)@Pull(S,E)|Push(W,W)|Push(N,W)|Pull(E,E)|Pull(E,E)
+5762126334:Pull(E,S)@Pull(E,S)|Push(W,W)|Push(W,N)|Pull(S,E)|Pull(E,E)
+5762167417:Pull(S,E)@Pull(S,E)|Push(W,W)|Push(N,W)|Pull(S,S)|Pull(S,E)
+5762199917:Pull(S,S)@Pull(S,S)|Push(W,W)|Push(W,N)|Pull(E,S)|Push(N,E)
+5762225625:Pull(S,S)@Pull(S,S)|Push(W,S)|Push(N,W)|Pull(S,E)|Push(E,N)
+5762249084:Pull(S,S)@Pull(S,S)|Push(S,S)|Push(W,N)|Push(N,E)|Push(N,N)
+5762273292:Pull(S,S)@Pull(S,S)|Push(S,S)|Push(N,W)|Push(E,E)|Push(N,N)
+5762298042:Pull(W,S)@Pull(W,S)|Push(S,W)|Push(W,N)|Push(E,E)|Move(W)
+5762322834:Pull(S,W)@Pull(S,W)|Push(W,W)|Push(N,W)|Push(E,N)|Move(N)
+5762345334:Pull(W,S)@Pull(W,S)|Push(W,W)|Push(W,N)|Push(N,N)|Pull(S,W)
+5762368209:Pull(S,W)@Pull(S,W)|Push(W,S)|Push(N,W)|Push(N,N)|Push(N,N)
+5762390375:Pull(S,S)@Pull(S,S)|Push(S,S)|Push(W,N)|Move(W)|Push(N,N)
+5762413625:Pull(S,S)@Pull(S,S)|Push(S,S)|Push(N,W)|Move(N)|Push(N,W)
+5762435959:Pull(S,S)@Pull(S,S)|Push(S,W)|Push(W,N)|Pull(S,W)|Push(W,W)
+5762458584:Pull(S,S)@Pull(S,S)|Push(W,W)|Push(N,W)|Push(N,W)|Push(W,W)
+5762481625:Pull(S,S)@Pull(S,S)|Push(W,W)|Push(W,W)|Push(W,N)|Push(W,N)
+5762503542:Pull(W,S)@Pull(W,S)|Push(W,S)|Push(W,N)|Push(N,W)|Push(N,N)
+5762525959:Pull(S,W)@Pull(S,W)|Push(S,S)|Move(E)|Push(W,N)|Push(N,N)
+5762549959:Pull(S,S)@Pull(S,S)|Move(E)|Move(E)|Push(N,W)|Push(N,N)
+5762572209:Pull(W,S)@Pull(W,S)|Move(E)|Move(S)|Push(W,N)|Push(N,N)
+5762595042:Push(E,E)@Push(E,E)|Move(N)|Move(E)|Push(N,W)|Push(N,N)
+5762616959:Push(E,E)@Push(E,E)|Move(E)|Move(E)|Push(W,N)|Push(N,N)
+5762639667:Push(E,N)@Push(E,N)|Move(N)|Move(E)|Push(N,W)|Push(N,N)
+5762662792:Move(W)@Move(W)|Move(N)|Move(S)|Push(W,N)|Push(N,N)
+5762685792:Move(W)@Move(W)|Move(E)|Move(S)|Push(N,N)|Push(N,N)
+5762707584:Move(W)@Move(W)|Move(N)|Move(S)|Push(N,E)|Push(N,N)
+5762729584:Move(W)@Move(W)|Move(E)|Move(E)|Push(E,E)|Push(N,W)
+5762752125:Move(W)@Move(W)|Move(N)|Move(S)|Push(E,N)|Push(W,W)
+5762774000:Move(W)@Move(W)|Move(E)|Move(E)|Push(N,N)|Move(S)
+5762795834:Move(W)@Move(W)|Move(N)|Move(S)|Push(N,W)|Move(S)
+5762817375:Move(W)@Move(W)|Move(E)|Move(E)|Push(W,N)|Move(S)
+5762839000:Move(W)@Move(W)|Move(N)|Move(S)|Push(N,W)|Move(E)
+5762867250:Move(W)@Move(W)|Move(E)|Move(E)|Push(W,N)|Move(S)
+5762895125:Move(W)@Move(W)|Move(E)|Move(S)|Push(N,N)|Move(S)
+5762922000:Move(W)@Move(W)|Move(E)|Move(S)|Push(N,N)|Move(S)
+5762947584:Move(W)@Move(W)|Move(E)|Move(S)|Push(N,E)|Move(S)
+5762974125:Move(W)@Move(W)|Move(S)|Move(S)|Push(E,N)|Move(S)
+5763002084:Move(W)@Move(W)|Move(E)|Move(S)|Push(N,N)|Move(S)
+5763048500:Move(W)@Move(W)|Move(S)|Move(S)|Push(N,N)|Move(S)
+5763076917:Move(W)@Move(W)|Move(E)|Move(S)|Push(N,W)|Move(S)
+5763100625:Move(W)@Move(W)|Move(S)|Move(S)|Move(S)|Move(E)
+5763197292:Move(W)@Move(W)|Move(E)|Move(S)|Move(S)|Move(S)
+5763259667:Move(W)@Move(W)|Move(S)|Move(S)|Move(S)|Move(E)
+5763316167:Move(W)@Move(W)|Move(E)|Move(W)|Move(S)|Move(S)
+5763471292:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(E)
+5763540750:NoOp@NoOp|Move(E)|Move(W)|Move(S)|Move(S)
+5763582084:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(E)
+5763614792:NoOp@NoOp|Move(E)|Move(S)|Move(E)|Move(S)
+5763662875:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(S)
+5763693084:NoOp@NoOp|Move(E)|Move(S)|Move(S)|Move(S)
+5763729875:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(S)
+5763762750:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(S)
+5763795084:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+5763832417:NoOp@NoOp|Move(S)|Move(S)|Move(S)|Move(S)
+5763871500:NoOp@NoOp|Move(S)|Move(S)|Move(E)|Move(S)
+5763909042:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+5763941417:NoOp@NoOp|Move(S)|Move(W)|Move(E)|Move(S)
+5763983167:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(W)
+5764021417:NoOp@NoOp|Move(S)|Move(W)|Move(E)|Move(S)
+5764051417:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(W)
+5764085750:NoOp@NoOp|Move(W)|Move(W)|Move(E)|Move(S)
+5764134084:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+5764180250:NoOp@NoOp|Move(W)|Move(W)|Move(S)|Move(S)
+5764222042:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+5764331125:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+5764389667:NoOp@NoOp|Move(S)|Move(W)|Move(S)|Move(S)
+5764460334:NoOp@NoOp|Move(S)|NoOp|Move(S)|Move(W)
+5764567000:NoOp@NoOp|Move(S)|NoOp|Move(S)|Move(S)
+5764650875:NoOp@NoOp|Move(S)|NoOp|Move(S)|Move(S)
+5764783625:NoOp@NoOp|Move(W)|NoOp|Move(S)|Move(E)
+5764936209:NoOp@NoOp|Move(S)|NoOp|Move(S)|Move(E)
+5765022500:NoOp@NoOp|Move(S)|NoOp|Move(W)|NoOp
+5765123000:NoOp@NoOp|Move(W)|NoOp|Move(S)|NoOp
+5765248000:NoOp@NoOp|Move(W)|NoOp|Move(W)|NoOp
+5765405209:NoOp@NoOp|Move(W)|NoOp|Move(S)|NoOp
+5765575917:NoOp@NoOp|Move(W)|NoOp|Move(S)|NoOp
+5765700709:NoOp@NoOp|Move(W)|NoOp|Move(S)|NoOp
+5765824209:NoOp@NoOp|Move(W)|NoOp|Move(S)|NoOp
+5765911709:NoOp@NoOp|Move(S)|NoOp|Move(S)|NoOp
+5766039709:NoOp@NoOp|Move(S)|NoOp|Move(S)|NoOp
+5766162375:NoOp@NoOp|Move(S)|NoOp|Move(W)|NoOp
+5766226792:NoOp@NoOp|Move(S)|NoOp|Move(S)|NoOp
+5766284292:NoOp@NoOp|Move(S)|NoOp|Move(S)|NoOp
+5766342000:NoOp@NoOp|Move(W)|NoOp|Move(W)|NoOp
+5766423667:NoOp@NoOp|Move(W)|NoOp|Move(W)|NoOp
+5766491625:NoOp@NoOp|Move(N)|NoOp|Move(W)|NoOp
+5766569209:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+5766647375:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+5766726459:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp
+5766801084:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+5766868084:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+5766927167:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+5766988792:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+5767044542:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+5767101417:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+5767156167:NoOp@NoOp|Move(N)|NoOp|NoOp|NoOp
+5767202209:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+5767256375:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+5767386417:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+158
+#time
+5767386417
+#end

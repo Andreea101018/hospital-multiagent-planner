@@ -1,0 +1,75 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+rooMbA
+#actions
+421255750:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+421332375:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+421371958:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+421403041:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+421434250:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+421484833:NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+421525000:NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+421559875:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+421588083:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+421616250:NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+421642750:NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+421671250:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+421703750:NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+421737541:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+421765291:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+421827708:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+421866458:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+421909083:Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+421942458:Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)
+421972791:Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+422001125:Move(S)@Move(S)|NoOp@NoOp|Move(S)@Move(S)
+422029500:Move(E)@Move(E)|NoOp@NoOp|Move(S)@Move(S)
+422058125:Push(E,S)@Push(E,S)|NoOp@NoOp|Move(W)@Move(W)
+422097833:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(W)@Move(W)
+422128708:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(W)@Move(W)
+422198541:Push(S,W)@Push(S,W)|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+422244500:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp
+422279291:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp
+422310833:Push(W,W)@Push(W,W)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+false
+#numactions
+29
+#time
+422310833
+#end

@@ -1,0 +1,317 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+QRscammer
+#actions
+4726703200:NoOp@NoOp|Move(E)@Move(E)
+4726823600:Move(N)@Move(N)|Move(E)@Move(E)
+4726915000:NoOp@NoOp|Move(E)@Move(E)
+4727003400:NoOp@NoOp|Move(E)@Move(E)
+4727092600:NoOp@NoOp|Move(E)@Move(E)
+4727184000:NoOp@NoOp|Move(S)@Move(S)
+4727271800:NoOp@NoOp|Move(E)@Move(E)
+4727357500:NoOp@NoOp|Move(E)@Move(E)
+4727446100:NoOp@NoOp|Move(E)@Move(E)
+4727532400:NoOp@NoOp|Move(S)@Move(S)
+4727621000:NoOp@NoOp|Move(S)@Move(S)
+4727708000:NoOp@NoOp|Move(W)@Move(W)
+4727795800:NoOp@NoOp|Move(S)@Move(S)
+4727894100:NoOp@NoOp|Move(S)@Move(S)
+4728005400:NoOp@NoOp|Move(S)@Move(S)
+4728109000:NoOp@NoOp|Move(S)@Move(S)
+4728197700:NoOp@NoOp|Move(S)@Move(S)
+4728287100:NoOp@NoOp|Move(S)@Move(S)
+4728388500:NoOp@NoOp|Move(E)@Move(E)
+4728488100:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4728584400:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+4728686200:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4728774300:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4728873900:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4728958000:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4729058500:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+4729157400:NoOp@NoOp|Push(E,N)@Push(E,N)
+4729241600:NoOp@NoOp|Push(N,E)@Push(N,E)
+4729334300:NoOp@NoOp|Push(E,N)@Push(E,N)
+4729421100:NoOp@NoOp|Push(N,N)@Push(N,N)
+4729509400:NoOp@NoOp|Push(N,W)@Push(N,W)
+4729605900:NoOp@NoOp|Push(W,W)@Push(W,W)
+4729689000:NoOp@NoOp|Push(W,W)@Push(W,W)
+4729777500:NoOp@NoOp|Push(W,W)@Push(W,W)
+4729862000:NoOp@NoOp|Push(W,W)@Push(W,W)
+4729950200:NoOp@NoOp|Push(W,S)@Push(W,S)
+4730034200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730116400:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730197800:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730277700:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730361900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730447500:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730532300:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730613200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730694400:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730774700:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730857900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4730936700:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731025600:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731116900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731198900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731285000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731367300:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731449000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731527400:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731607400:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731686600:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731765100:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731848600:NoOp@NoOp|Push(S,S)@Push(S,S)
+4731967100:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732060200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732156600:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732277300:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732361200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732446200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732536600:NoOp@NoOp|Push(S,W)@Push(S,W)
+4732617100:NoOp@NoOp|Push(W,W)@Push(W,W)
+4732698600:NoOp@NoOp|Push(W,S)@Push(W,S)
+4732777900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732862100:NoOp@NoOp|Push(S,S)@Push(S,S)
+4732943100:NoOp@NoOp|Push(S,S)@Push(S,S)
+4733023000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4733105900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4733187600:NoOp@NoOp|Push(S,S)@Push(S,S)
+4733267200:NoOp@NoOp|Push(S,W)@Push(S,W)
+4733347300:NoOp@NoOp|Move(N)@Move(N)
+4733426700:NoOp@NoOp|Move(N)@Move(N)
+4733505800:NoOp@NoOp|Move(N)@Move(N)
+4733584500:NoOp@NoOp|Move(N)@Move(N)
+4733663700:NoOp@NoOp|Move(N)@Move(N)
+4733742300:NoOp@NoOp|Move(N)@Move(N)
+4733822800:NoOp@NoOp|Move(E)@Move(E)
+4733937400:NoOp@NoOp|Move(N)@Move(N)
+4734049700:NoOp@NoOp|Move(N)@Move(N)
+4734144600:NoOp@NoOp|Move(N)@Move(N)
+4734232700:NoOp@NoOp|Move(N)@Move(N)
+4734331700:NoOp@NoOp|Move(N)@Move(N)
+4734414300:NoOp@NoOp|Move(N)@Move(N)
+4734494400:NoOp@NoOp|Move(N)@Move(N)
+4734574200:NoOp@NoOp|Move(N)@Move(N)
+4734657400:NoOp@NoOp|Move(E)@Move(E)
+4734737300:NoOp@NoOp|Move(N)@Move(N)
+4734818700:NoOp@NoOp|Move(N)@Move(N)
+4734903000:NoOp@NoOp|Move(N)@Move(N)
+4734983700:NoOp@NoOp|Move(N)@Move(N)
+4735064000:NoOp@NoOp|Move(N)@Move(N)
+4735144000:NoOp@NoOp|Move(N)@Move(N)
+4735242500:NoOp@NoOp|Move(N)@Move(N)
+4735323600:NoOp@NoOp|Move(N)@Move(N)
+4735410500:NoOp@NoOp|Move(N)@Move(N)
+4735496200:NoOp@NoOp|Move(N)@Move(N)
+4735577700:NoOp@NoOp|Move(N)@Move(N)
+4735657300:NoOp@NoOp|Move(N)@Move(N)
+4735737000:NoOp@NoOp|Move(N)@Move(N)
+4735830500:NoOp@NoOp|Move(N)@Move(N)
+4735919800:NoOp@NoOp|Move(N)@Move(N)
+4736000000:NoOp@NoOp|Move(N)@Move(N)
+4736078900:NoOp@NoOp|Move(N)@Move(N)
+4736175800:NoOp@NoOp|Move(N)@Move(N)
+4736254000:NoOp@NoOp|Move(N)@Move(N)
+4736331600:NoOp@NoOp|Move(N)@Move(N)
+4736408800:NoOp@NoOp|Move(N)@Move(N)
+4736487000:NoOp@NoOp|Move(E)@Move(E)
+4736565000:NoOp@NoOp|Move(N)@Move(N)
+4736648800:NoOp@NoOp|Move(E)@Move(E)
+4736726800:NoOp@NoOp|Move(N)@Move(N)
+4736803800:NoOp@NoOp|Move(E)@Move(E)
+4736893900:NoOp@NoOp|Move(E)@Move(E)
+4736986100:NoOp@NoOp|Move(E)@Move(E)
+4737065100:NoOp@NoOp|Move(S)@Move(S)
+4737144000:NoOp@NoOp|Move(S)@Move(S)
+4737221500:NoOp@NoOp|Move(E)@Move(E)
+4737297200:NoOp@NoOp|Move(E)@Move(E)
+4737376400:NoOp@NoOp|Move(E)@Move(E)
+4737453700:NoOp@NoOp|Move(S)@Move(S)
+4737562200:NoOp@NoOp|Move(S)@Move(S)
+4737644000:NoOp@NoOp|Move(S)@Move(S)
+4737721200:NoOp@NoOp|Move(S)@Move(S)
+4737799200:NoOp@NoOp|Move(S)@Move(S)
+4737917000:NoOp@NoOp|Move(S)@Move(S)
+4737998600:NoOp@NoOp|Move(E)@Move(E)
+4738084100:NoOp@NoOp|Move(E)@Move(E)
+4738162200:NoOp@NoOp|Move(E)@Move(E)
+4738239700:NoOp@NoOp|Move(E)@Move(E)
+4738317400:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4738394000:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4738469700:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4738544900:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4738620600:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+4738695900:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4738771500:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4738855800:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4738935800:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4739020700:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4739105500:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+4739195100:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4739284800:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4739378200:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+4739461200:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+4739537800:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+4739614100:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4739690200:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4739765800:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+4739848600:NoOp@NoOp|Push(E,S)@Push(E,S)
+4739935200:NoOp@NoOp|Push(S,W)@Push(S,W)
+4740011700:NoOp@NoOp|Push(W,S)@Push(W,S)
+4740087400:NoOp@NoOp|Push(S,W)@Push(S,W)
+4740163000:NoOp@NoOp|Push(W,S)@Push(W,S)
+4740238200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740313300:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740388900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740464300:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740540700:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740618200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740694000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740771000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740848400:NoOp@NoOp|Push(S,S)@Push(S,S)
+4740923300:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741023500:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741113200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741192500:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741272400:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741349300:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741425500:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741501100:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741577400:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741655100:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741746500:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741826200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741903200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4741978100:NoOp@NoOp|Push(S,S)@Push(S,S)
+4742057200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4742133000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4742209200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4742283900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4742363700:NoOp@NoOp|Push(S,E)@Push(S,E)
+4742439000:NoOp@NoOp|Push(E,E)@Push(E,E)
+4742514300:NoOp@NoOp|Push(E,E)@Push(E,E)
+4742589500:NoOp@NoOp|Push(E,E)@Push(E,E)
+4742678700:NoOp@NoOp|Push(E,S)@Push(E,S)
+4742758900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4742838000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4742914900:NoOp@NoOp|Push(S,S)@Push(S,S)
+4743002000:NoOp@NoOp|Push(S,S)@Push(S,S)
+4743077200:NoOp@NoOp|Push(S,S)@Push(S,S)
+4743152100:NoOp@NoOp|Push(S,S)@Push(S,S)
+#end
+#solved
+true
+#numactions
+196
+#time
+4743152100
+#end

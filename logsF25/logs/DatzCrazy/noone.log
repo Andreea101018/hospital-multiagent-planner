@@ -1,0 +1,64 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+DatzCrazy
+#actions
+69259499:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+69387400:Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)
+69493600:Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+69566699:Move(W)@Move(W)|Move(W)@Move(W)|Move(S)@Move(S)
+69644000:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+69788800:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+69913600:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+70072800:Move(W)@Move(W)|NoOp@NoOp|Move(N)@Move(N)
+70257300:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+70374400:Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+70476099:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(E)@Move(E)
+70586900:Move(W)@Move(W)|NoOp@NoOp|Move(E)@Move(E)
+70675600:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+70741100:Move(E)@Move(E)|NoOp@NoOp|Move(N)@Move(N)
+70811199:Move(N)@Move(N)|NoOp@NoOp|Move(N)@Move(N)
+70906200:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+71009899:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp
+71085500:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp
+71201999:Push(S,S)@Push(S,S)|Move(N)@Move(N)|NoOp@NoOp
+71301599:Move(W)@Move(W)|Move(S)@Move(S)|Move(S)@Move(S)
+71399100:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)
+71499199:Pull(S,W)@Pull(S,W)|Move(N)@Move(N)|NoOp@NoOp
+71629899:Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp
+71745099:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+24
+#time
+71745099
+#end

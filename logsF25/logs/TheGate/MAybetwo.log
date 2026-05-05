@@ -1,0 +1,65 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+TheGate
+#actions
+194129790:Move(E)@Move(E)|Move(W)|Move(E)
+194341325:Move(E)@Move(E)|Move(W)|Move(E)
+194671377:Move(E)@Move(E)|Move(W)|Move(E)
+194827475:Move(E)@Move(E)|Move(W)|Move(E)
+194951098:Move(E)@Move(E)|NoOp|NoOp
+195199204:Move(E)@Move(E)|NoOp|NoOp
+195300846:Move(E)@Move(E)|NoOp|NoOp
+195425591:Push(E,S)@Push(E,S)|NoOp|NoOp
+195746118:Push(S,E)@Push(S,E)|NoOp|NoOp
+195847790:Push(E,S)@Push(E,S)|NoOp|Move(W)
+195978803:Move(E)@Move(E)|Move(W)|Move(W)
+196119300:NoOp@NoOp|Move(W)|Move(W)
+196498089:Move(W)@Move(W)|Move(W)|NoOp
+196870820:Move(N)@Move(N)|Move(N)|NoOp
+196982776:Move(W)@Move(W)|Move(W)|Move(E)
+197191768:Move(S)@Move(S)|Move(N)|Move(E)
+197535148:Move(S)@Move(S)|Push(N,N)|Move(E)
+197728408:NoOp@NoOp|Move(W)|Move(E)
+198033003:Move(N)@Move(N)|Move(E)|Move(E)
+198540703:Move(E)@Move(E)|NoOp|Move(E)
+198707486:Move(E)@Move(E)|Move(W)|Move(E)
+198821826:Move(S)@Move(S)|NoOp|Move(N)
+198987027:Move(S)@Move(S)|Move(S)|Move(N)
+199361751:Move(S)@Move(S)|Move(N)|Move(N)
+199526140:NoOp@NoOp|Move(S)|Push(E,S)
+#end
+#solved
+true
+#numactions
+25
+#time
+199526140
+#end

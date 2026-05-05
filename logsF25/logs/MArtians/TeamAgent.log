@@ -1,0 +1,78 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+MArtians
+#actions
+254171786:NoOp@NoOp|Move(W)@Move(W)|Move(S)@Move(S)|
+254275360:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|
+254354909:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(S)@Move(S)|
+254421678:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)|
+254514776:Move(E)@Move(E)|NoOp@NoOp|Push(W,S)@Push(W,S)|
+254586852:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|
+254647824:Push(S,S)@Push(S,S)|NoOp@NoOp|Push(S,S)@Push(S,S)|
+254702649:Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)|
+254760827:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)|
+254823265:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|
+254880046:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|
+254936757:Push(S,E)@Push(S,E)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|
+255009322:Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|
+255063170:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|
+255118484:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|
+255171912:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|
+255221989:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|
+255331360:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|
+255374173:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|
+255426693:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+255476700:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+255525379:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+255583766:NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|
+255641385:NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)|
+255691462:NoOp@NoOp|NoOp@NoOp|Pull(N,E)@Pull(N,E)|
+255739233:NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)|
+255803138:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|
+255851538:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|
+255906922:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|
+255953995:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|
+255997576:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)|
+256058617:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)|
+256103525:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)|
+256165474:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)|
+256209754:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)|
+256262693:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)|
+256325690:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|
+256381144:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)|
+#end
+#solved
+true
+#numactions
+38
+#time
+256381144
+#end

@@ -1,0 +1,96 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+TourDeDTU
+#actions
+444817800:Move(E)@Move(E)|Move(E)@Move(E)
+444909600:Pull(E,N)@Pull(E,N)|Move(E)@Move(E)
+444960900:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+444999600:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+445035400:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+445074600:Push(W,S)@Push(W,S)|Move(W)@Move(W)
+445109500:Push(S,W)@Push(S,W)|Move(W)@Move(W)
+445137100:Push(W,W)@Push(W,W)|Pull(W,N)@Pull(W,N)
+445171500:Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+445205600:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+445240100:Push(N,N)@Push(N,N)|Push(E,S)@Push(E,S)
+445274000:Push(N,N)@Push(N,N)|Push(S,E)@Push(S,E)
+445308400:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+445342200:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)
+445376500:Push(N,W)@Push(N,W)|Push(E,S)@Push(E,S)
+445410900:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)
+445444900:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)
+445479900:Push(W,S)@Push(W,S)|Push(S,S)@Push(S,S)
+445514100:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+445547900:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+445581100:Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+445615000:Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+445648900:Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+445682900:Push(S,W)@Push(S,W)|Push(E,N)@Push(E,N)
+445717300:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)
+445750900:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)
+445784300:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)
+445818600:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)
+445852500:Move(E)@Move(E)|Push(N,N)@Push(N,N)
+445886700:Move(E)@Move(E)|Push(N,E)@Push(N,E)
+445920700:Move(E)@Move(E)|Push(E,E)@Push(E,E)
+445954700:Move(E)@Move(E)|Push(E,E)@Push(E,E)
+445988500:Move(N)@Move(N)|Push(E,E)@Push(E,E)
+446022000:Move(N)@Move(N)|Push(E,E)@Push(E,E)
+446056200:Move(N)@Move(N)|Move(W)@Move(W)
+446090200:Move(N)@Move(N)|Move(W)@Move(W)
+446124000:Move(N)@Move(N)|Move(W)@Move(W)
+446158200:Move(W)@Move(W)|Move(W)@Move(W)
+446191900:Move(W)@Move(W)|Move(S)@Move(S)
+446226600:Move(N)@Move(N)|Move(S)@Move(S)
+446262100:Move(W)@Move(W)|Move(S)@Move(S)
+446295800:Move(W)@Move(W)|Move(S)@Move(S)
+446331900:Move(W)@Move(W)|Move(S)@Move(S)
+446367400:NoOp@NoOp|Move(E)@Move(E)
+446401700:NoOp@NoOp|Move(S)@Move(S)
+#end
+#solved
+true
+#numactions
+45
+#time
+446401700
+#end

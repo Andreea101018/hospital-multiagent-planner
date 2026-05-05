@@ -1,0 +1,59 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+TeamAgent
+#actions
+41236432083:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+41236622500:Push(S,E)@Push(S,E)|Move(S)@Move(S)|Move(S)@Move(S)
+41236664583:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Move(S)@Move(S)
+41236695250:Push(E,S)@Push(E,S)|NoOp@NoOp|Move(W)@Move(W)
+41236746375:Push(S,S)@Push(S,S)|Move(N)@Move(N)|Move(W)@Move(W)
+41236790083:Push(S,S)@Push(S,S)|Move(N)@Move(N)|Pull(S,S)@Pull(S,S)
+41236823166:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Pull(S,S)@Pull(S,S)
+41236851000:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Pull(S,S)@Pull(S,S)
+41236879416:Move(W)@Move(W)|Push(N,W)@Push(N,W)|Pull(W,S)@Pull(W,S)
+41236907125:Move(S)@Move(S)|Push(W,W)@Push(W,W)|Pull(W,W)@Pull(W,W)
+41236931666:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,W)@Pull(N,W)
+41236962416:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+41236989041:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+41237014000:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(N,N)@Pull(N,N)
+41237056916:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,N)@Pull(W,N)
+41237093250:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,W)@Pull(W,W)
+41237120208:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+41237144791:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+41237171291:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+19
+#time
+41237171291
+#end

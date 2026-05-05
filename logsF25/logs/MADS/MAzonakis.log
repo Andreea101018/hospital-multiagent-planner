@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+MADS
+#actions
+198247300:Move(W)@Move(W)|Move(W)
+198362200:Move(W)@Move(W)|Move(W)
+198476200:Move(W)@Move(W)|Move(W)
+198875400:Move(W)@Move(W)|Move(W)
+199110500:Move(W)@Move(W)|Move(W)
+199263100:Move(W)@Move(W)|Move(W)
+199434100:Move(W)@Move(W)|Move(W)
+199590600:Move(W)@Move(W)|Move(W)
+199694200:Move(W)@Move(W)|Move(W)
+199780500:Move(W)@Move(W)|Move(W)
+199921400:Move(W)@Move(W)|Move(W)
+200097800:Move(W)@Move(W)|Move(W)
+200176100:Move(W)@Move(W)|Move(W)
+200289800:Move(W)@Move(W)|Move(W)
+200354300:Move(W)@Move(W)|Move(W)
+200413900:Move(S)@Move(S)|Move(W)
+200500600:Move(S)@Move(S)|Move(W)
+200595800:Move(S)@Move(S)|Move(W)
+200684800:Move(S)@Move(S)|Move(N)
+200766700:Move(W)@Move(W)|Move(N)
+200876300:Move(W)@Move(W)|Move(N)
+200977900:Move(W)@Move(W)|Move(N)
+201102500:Move(W)@Move(W)|Move(E)
+201203000:Move(W)@Move(W)|Move(N)
+201293300:Push(N,N)@Push(N,N)|Move(E)
+201402600:Push(W,N)@Push(W,N)|Move(E)
+201535600:Push(N,N)@Push(N,N)|Move(E)
+201636400:Push(E,N)@Push(E,N)|Move(E)
+201818900:Push(N,N)@Push(N,N)|Move(E)
+201906400:Push(W,N)@Push(W,N)|Move(E)
+202056400:Push(N,N)@Push(N,N)|Move(E)
+202247500:Push(E,N)@Push(E,N)|Move(E)
+202350000:Push(N,N)@Push(N,N)|Move(E)
+202445600:Push(N,W)@Push(N,W)|Move(N)
+202500100:Push(W,W)@Push(W,W)|Move(N)
+202552600:Push(S,W)@Push(S,W)|Move(N)
+202610300:Push(W,W)@Push(W,W)|Move(E)
+202707800:Push(N,W)@Push(N,W)|Move(N)
+202793400:Push(W,W)@Push(W,W)|Move(E)
+202910500:Push(S,W)@Push(S,W)|Move(E)
+202989500:Push(W,W)@Push(W,W)|Move(E)
+203043000:Push(N,W)@Push(N,W)|Move(E)
+203148900:NoOp@NoOp|Move(E)
+203232300:NoOp@NoOp|Move(E)
+203286800:NoOp@NoOp|Move(E)
+203389600:NoOp@NoOp|Move(E)
+203496900:NoOp@NoOp|Move(E)
+203613800:NoOp@NoOp|Move(E)
+203664400:NoOp@NoOp|Move(E)
+203713300:NoOp@NoOp|Move(E)
+203828500:NoOp@NoOp|Move(E)
+203943300:NoOp@NoOp|Move(E)
+204020400:NoOp@NoOp|Move(E)
+204109600:NoOp@NoOp|Move(N)
+204162900:NoOp@NoOp|Pull(S,S)
+204213300:NoOp@NoOp|Pull(E,S)
+204274000:NoOp@NoOp|Push(W,W)
+204325100:NoOp@NoOp|Push(W,S)
+204374500:NoOp@NoOp|Push(S,W)
+204422800:NoOp@NoOp|Push(W,W)
+204501600:NoOp@NoOp|Push(W,W)
+204705200:NoOp@NoOp|Push(W,W)
+204852400:NoOp@NoOp|Push(W,W)
+205247700:NoOp@NoOp|Push(W,W)
+205413600:NoOp@NoOp|Push(W,W)
+205524500:NoOp@NoOp|Push(W,W)
+205589900:NoOp@NoOp|Push(W,W)
+205646300:NoOp@NoOp|Push(W,W)
+205705500:NoOp@NoOp|Push(W,W)
+205761900:NoOp@NoOp|Push(W,W)
+205854200:NoOp@NoOp|Push(W,W)
+205964000:NoOp@NoOp|Push(W,W)
+206035800:NoOp@NoOp|Push(W,W)
+206080400:NoOp@NoOp|Push(W,S)
+206136000:NoOp@NoOp|Push(S,S)
+206179200:NoOp@NoOp|Push(S,S)
+206309300:NoOp@NoOp|Push(S,W)
+206389200:NoOp@NoOp|Push(W,W)
+206467000:NoOp@NoOp|Push(W,W)
+206521600:NoOp@NoOp|Push(W,W)
+206589100:NoOp@NoOp|Push(W,W)
+206657500:NoOp@NoOp|Push(W,W)
+206732800:NoOp@NoOp|Push(W,N)
+206779300:NoOp@NoOp|Push(N,N)
+206821500:NoOp@NoOp|Push(N,N)
+206918400:NoOp@NoOp|Push(N,N)
+207017300:NoOp@NoOp|Push(N,N)
+207095700:NoOp@NoOp|Push(N,N)
+207146300:NoOp@NoOp|Push(N,N)
+207190300:NoOp@NoOp|Push(N,N)
+207254500:NoOp@NoOp|Push(N,N)
+207310800:NoOp@NoOp|Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+207310800
+#end

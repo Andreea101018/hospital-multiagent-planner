@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+mosAIc
+#actions
+369881500:Move(E)@Move(E)|Move(N)|Move(S)
+369968250:Push(S,E)@Push(S,E)|Pull(S,E)|Move(S)
+370019125:Push(E,E)@Push(E,E)|Push(N,N)|Move(W)
+370062958:Push(E,S)@Push(E,S)|Push(N,N)|Push(W,N)
+370097000:Push(S,S)@Push(S,S)|Push(N,W)|Pull(S,S)
+370120291:Push(S,S)@Push(S,S)|Push(W,W)|Pull(S,S)
+370136958:Push(S,S)@Push(S,S)|Push(W,W)|Pull(S,S)
+370152875:Push(S,S)@Push(S,S)|Push(W,W)|Pull(S,S)
+370174291:Move(W)@Move(W)|Push(W,W)|Pull(W,S)
+370197333:Move(S)@Move(S)|Push(W,W)|Pull(W,W)
+370320750:NoOp@NoOp|Push(W,W)|Pull(N,W)
+370378500:NoOp@NoOp|Push(W,W)|Pull(N,N)
+370439416:NoOp@NoOp|Push(W,W)|Pull(N,N)
+370480458:NoOp@NoOp|Push(W,W)|Pull(N,N)
+370513250:NoOp@NoOp|Push(W,W)|Pull(W,N)
+370543125:NoOp@NoOp|Push(W,W)|Pull(W,W)
+370572750:NoOp@NoOp|NoOp|Move(S)
+370596666:NoOp@NoOp|NoOp|Move(S)
+#end
+#solved
+false
+#numactions
+18
+#time
+370596666
+#end

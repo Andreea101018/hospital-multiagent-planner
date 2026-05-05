@@ -1,0 +1,66 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+MArtians
+#actions
+556883995:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|
+557018160:Move(E)@Move(E)|Move(S)@Move(S)|Move(S)@Move(S)|
+557089817:Move(E)@Move(E)|Move(E)@Move(E)|Move(S)@Move(S)|
+557160636:Move(S)@Move(S)|Move(S)@Move(S)|Move(W)@Move(W)|
+557219652:Move(E)@Move(E)|NoOp@NoOp|Move(W)@Move(W)|
+557275804:Push(E,S)@Push(E,S)|NoOp@NoOp|Move(W)@Move(W)|
+557330141:Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(W)@Move(W)|
+557380357:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(W)@Move(W)|
+557431620:Push(S,W)@Push(S,W)|Push(S,E)@Push(S,E)|Pull(E,E)@Pull(E,E)|
+557497900:Push(W,W)@Push(W,W)|Push(E,S)@Push(E,S)|Pull(E,E)@Pull(E,E)|
+557543297:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)|
+557587087:Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Pull(E,E)@Pull(E,E)|
+557628573:NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp|
+557671106:NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp|
+557709868:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp|
+557760293:NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp|
+557812255:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp|
+557870922:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|
+557921627:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|
+557980224:NoOp@NoOp|Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|
+#end
+#solved
+true
+#numactions
+20
+#time
+557980224
+#end

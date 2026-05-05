@@ -1,0 +1,211 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+954322167:Move(S)@Move(S)|Move(S)
+955081125:Move(S)@Move(S)|Move(S)
+955259042:Move(S)@Move(S)|Move(S)
+955385375:Move(S)@Move(S)|Move(E)
+955654834:Move(S)@Move(S)|Move(E)
+956040709:Move(E)@Move(E)|Move(E)
+956159250:Move(E)@Move(E)|Move(E)
+957017917:Move(E)@Move(E)|Move(N)
+957153375:Move(E)@Move(E)|Move(E)
+957304959:Move(E)@Move(E)|Move(N)
+957460250:Move(N)@Move(N)|Move(E)
+957694625:Move(N)@Move(N)|Move(E)
+957793959:Move(E)@Move(E)|Move(E)
+957877084:Move(N)@Move(N)|Move(S)
+957966959:Move(E)@Move(E)|Move(S)
+958127375:Move(N)@Move(N)|Move(E)
+958246459:Move(E)@Move(E)|Move(E)
+958391000:Move(E)@Move(E)|Move(E)
+958542875:Move(E)@Move(E)|Move(S)
+958781709:Move(S)@Move(S)|Move(S)
+958897917:Move(S)@Move(S)|Move(S)
+959020084:Move(W)@Move(W)|Move(S)
+959111959:Move(S)@Move(S)|Move(S)
+959279792:Move(S)@Move(S)|Move(S)
+959426500:Move(S)@Move(S)|Move(E)
+959586750:Move(S)@Move(S)|Move(E)
+959703959:Move(S)@Move(S)|Move(E)
+960010875:Move(S)@Move(S)|Move(E)
+960116375:Move(E)@Move(E)|Push(E,N)
+960196209:Pull(W,W)@Pull(W,W)|Push(N,N)
+960301834:Pull(N,W)@Pull(N,W)|Push(N,N)
+960376875:Pull(N,N)@Pull(N,N)|Push(N,N)
+960461000:Pull(N,N)@Pull(N,N)|Push(N,N)
+960594042:Pull(N,N)@Pull(N,N)|Push(N,N)
+960672000:Pull(N,N)@Pull(N,N)|Push(N,W)
+960768209:Pull(N,N)@Pull(N,N)|Push(W,N)
+960851209:Pull(E,N)@Pull(E,N)|Push(N,W)
+960940459:Pull(N,E)@Pull(N,E)|Push(W,N)
+961047084:Pull(N,N)@Pull(N,N)|Push(N,W)
+961157000:Pull(N,N)@Pull(N,N)|Push(W,W)
+961248542:Push(S,W)@Push(S,W)|Push(W,W)
+961345250:Push(W,W)@Push(W,W)|Push(W,W)
+961438792:Push(W,W)@Push(W,W)|Push(W,W)
+961520709:Push(W,N)@Push(W,N)|Push(W,W)
+961617792:Push(N,W)@Push(N,W)|Push(W,W)
+961752042:Push(W,W)@Push(W,W)|Push(W,W)
+961849792:Push(W,W)@Push(W,W)|Push(W,W)
+962017500:Push(W,S)@Push(W,S)|Push(W,S)
+962136542:Push(S,S)@Push(S,S)|Push(S,W)
+962229500:Push(S,S)@Push(S,S)|Push(W,S)
+962321792:Push(S,S)@Push(S,S)|Push(S,W)
+962405500:Push(S,S)@Push(S,S)|Push(W,S)
+962494584:Push(S,S)@Push(S,S)|Push(S,S)
+962651500:Push(S,S)@Push(S,S)|Push(S,S)
+962778375:Push(S,S)@Push(S,S)|Push(S,S)
+962846375:Push(S,S)@Push(S,S)|Push(S,S)
+962922292:Push(S,S)@Push(S,S)|Push(S,S)
+962997292:Push(S,S)@Push(S,S)|Push(S,S)
+963075750:Push(S,S)@Push(S,S)|Push(S,S)
+963161792:Push(S,S)@Push(S,S)|Push(S,S)
+963232084:Push(S,S)@Push(S,S)|Push(S,S)
+963304917:Push(S,S)@Push(S,S)|Push(S,S)
+963353084:Push(S,S)@Push(S,S)|Push(S,S)
+963425709:Push(S,S)@Push(S,S)|Push(S,S)
+963489417:Push(S,S)@Push(S,S)|Push(S,S)
+963575084:Push(S,S)@Push(S,S)|Push(S,S)
+963671667:Push(S,E)@Push(S,E)|Push(S,E)
+963742834:Push(E,S)@Push(E,S)|Push(E,S)
+963810000:Push(S,S)@Push(S,S)|Push(S,S)
+963890875:Push(S,S)@Push(S,S)|Push(S,S)
+963956917:Push(S,S)@Push(S,S)|Push(S,S)
+964036334:Push(S,S)@Push(S,S)|Push(S,S)
+964100167:Push(S,S)@Push(S,S)|Push(S,S)
+964202792:Push(S,S)@Push(S,S)|Push(S,S)
+964292167:Push(S,S)@Push(S,S)|Push(S,S)
+964374334:Push(S,S)@Push(S,S)|Push(S,S)
+964483292:Push(S,S)@Push(S,S)|Push(S,S)
+964560709:Push(S,S)@Push(S,S)|Push(S,S)
+964643209:Push(S,S)@Push(S,S)|Push(S,S)
+964738375:Push(S,W)@Push(S,W)|Push(S,S)
+964848250:Push(W,S)@Push(W,S)|Push(S,E)
+964958875:Push(S,W)@Push(S,W)|Push(E,E)
+965049584:Push(W,S)@Push(W,S)|Push(E,S)
+965134834:Push(S,S)@Push(S,S)|Push(S,E)
+965225667:Push(S,S)@Push(S,S)|Push(E,S)
+965488792:Push(S,S)@Push(S,S)|Push(S,S)
+965621250:Push(S,S)@Push(S,S)|Push(S,S)
+965747125:Push(S,S)@Push(S,S)|Push(S,S)
+965847167:Push(S,W)@Push(S,W)|Push(S,S)
+965956542:NoOp@NoOp|Push(S,S)
+#end
+#solved
+true
+#numactions
+90
+#time
+965956542
+#end

@@ -1,0 +1,80 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+72996709:NoOp|NoOp|Move(W)
+73077542:NoOp|NoOp|Move(S)
+73136375:NoOp|NoOp|Move(W)
+73195834:NoOp|NoOp|Move(S)
+73236542:NoOp|NoOp|Move(S)
+73304125:NoOp|NoOp|Move(W)
+73346209:NoOp|NoOp|Move(W)
+73412042:NoOp|NoOp|Move(W)
+73448375:NoOp|NoOp|Pull(E,E)
+73480834:NoOp|NoOp|Pull(E,E)
+73527459:NoOp|NoOp|Pull(N,E)
+73624125:NoOp|NoOp|Push(S,E)
+73658500:NoOp|NoOp|Move(N)
+73686875:NoOp|NoOp|Move(E)
+73720750:NoOp|Move(S)|NoOp
+73767875:NoOp|Move(S)|NoOp
+73812167:NoOp|Move(E)|NoOp
+73854917:Move(E)|Move(E)|NoOp
+73897459:Move(S)|Move(S)|NoOp
+73942292:Move(E)|Push(S,E)|NoOp
+74068417:Move(S)|Push(E,S)|NoOp
+74119084:Move(E)|Push(S,S)|NoOp
+74168709:Push(E,S)|Push(S,E)|NoOp
+74283459:Push(S,S)|Push(E,S)|NoOp
+74443084:Push(S,S)|Push(S,S)|NoOp
+74532334:Push(S,W)|Push(S,S)|NoOp
+74610292:Push(W,W)|Push(S,W)|NoOp
+74659750:Push(W,W)|Push(W,W)|NoOp
+74698625:Push(W,W)|Push(W,W)|NoOp
+74743542:NoOp|Push(W,W)|NoOp
+74781584:NoOp|Push(W,W)|NoOp
+74815292:NoOp|NoOp|Push(S,W)
+74869250:NoOp|NoOp|Push(W,W)
+74898375:NoOp|NoOp|Push(W,W)
+#end
+#solved
+true
+#numactions
+34
+#time
+74898375
+#end

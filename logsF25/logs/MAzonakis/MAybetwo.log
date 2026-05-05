@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+263914917:Move(E)@Move(E)|Move(W)|Move(E)
+265062417:Move(E)@Move(E)|Move(W)|Move(N)
+265302375:Move(E)@Move(E)|Move(W)|Move(E)
+265535333:Move(E)@Move(E)|Move(W)|Move(N)
+265999833:Move(E)@Move(E)|Move(W)|Move(N)
+266313542:Move(E)@Move(E)|Move(W)|Move(N)
+266485000:Move(E)@Move(E)|Move(W)|Move(N)
+266676583:Push(E,E)@Push(E,E)|Move(N)|Move(N)
+266929458:Push(E,S)@Push(E,S)|Move(W)|Move(E)
+267208500:Push(S,S)@Push(S,S)|Move(N)|Move(E)
+267448625:NoOp@NoOp|Push(N,N)|Move(E)
+267587333:NoOp@NoOp|NoOp|Move(E)
+267748208:NoOp@NoOp|NoOp|Move(E)
+267938125:NoOp@NoOp|NoOp|Move(E)
+268142292:NoOp@NoOp|NoOp|Move(S)
+268356208:NoOp@NoOp|NoOp|Move(S)
+268558125:NoOp@NoOp|NoOp|Move(S)
+268772167:NoOp@NoOp|NoOp|Push(E,S)
+#end
+#solved
+true
+#numactions
+18
+#time
+268772167
+#end

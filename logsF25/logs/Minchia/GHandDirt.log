@@ -1,0 +1,118 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+42255167:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)
+42290208:Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+42323042:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+42346875:Move(E)@Move(E)|Move(N)@Move(N)|Push(W,W)@Push(W,W)
+42366292:Move(S)@Move(S)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+42388417:Pull(E,N)@Pull(E,N)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+42403167:Push(W,N)@Push(W,N)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+42415292:Push(N,E)@Push(N,E)|Pull(W,S)@Pull(W,S)|Push(S,S)@Push(S,S)
+42426458:Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+42436458:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+42447208:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Move(E)@Move(E)
+42457083:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Move(E)@Move(E)
+42467125:Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Move(E)@Move(E)
+42477375:Move(S)@Move(S)|Push(N,N)@Push(N,N)|Move(N)@Move(N)
+42487333:Move(W)@Move(W)|Push(N,W)@Push(N,W)|Move(E)@Move(E)
+42497042:Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+42506583:Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+42516417:Move(S)@Move(S)|Move(E)@Move(E)|Push(N,W)@Push(N,W)
+42526958:Move(W)@Move(W)|Move(E)@Move(E)|Push(W,W)@Push(W,W)
+42537625:Move(S)@Move(S)|Move(S)@Move(S)|Push(W,W)@Push(W,W)
+42546958:Move(W)@Move(W)|Move(S)@Move(S)|Push(W,S)@Push(W,S)
+42556333:Push(W,N)@Push(W,N)|Move(W)@Move(W)|Push(S,W)@Push(S,W)
+42566208:Push(N,E)@Push(N,E)|Move(W)@Move(W)|Push(W,S)@Push(W,S)
+42575667:Push(E,N)@Push(E,N)|Move(W)@Move(W)|Push(S,S)@Push(S,S)
+42585125:Push(N,E)@Push(N,E)|Move(W)@Move(W)|Push(S,W)@Push(S,W)
+42594708:Push(E,N)@Push(E,N)|Move(N)@Move(N)|Push(W,S)@Push(W,S)
+42604083:Push(N,E)@Push(N,E)|Push(W,S)@Push(W,S)|Push(S,S)@Push(S,S)
+42614000:Push(E,N)@Push(E,N)|Push(S,E)@Push(S,E)|Move(E)@Move(E)
+42623708:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Move(E)@Move(E)
+42635958:Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Move(S)@Move(S)
+42645542:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|NoOp@NoOp
+42655000:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp
+42664583:Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|NoOp@NoOp
+42674083:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+42682875:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+42692083:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+42701292:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+42709958:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+42718708:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+42728083:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+42736667:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+42745792:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+42754958:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+42764167:NoOp@NoOp|Move(N)@Move(N)|NoOp@NoOp
+42773667:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+42782583:NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+42791875:NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+42800708:NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp
+42812583:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+42826917:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+42838042:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+42847750:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+42857083:NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+42866583:NoOp@NoOp|Pull(N,E)@Pull(N,E)|NoOp@NoOp
+42876833:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+42886417:NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp
+42895417:NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+57
+#time
+42895417
+#end

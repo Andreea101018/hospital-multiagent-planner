@@ -1,0 +1,192 @@
+#domain
+hospital
+#levelname
+ClosedAI
+#colors
+blue: A,0
+red: B,1
+green: C,D,E,2,3
+purple: 4,5,6,F,G
+cyan: 7,8,9,H,I,J,K
+#initial
+++++++++++++++++++++++++++++++++
++  +++ +KK +    +6  FFGGF+ + + +
++  +++ + JJ+    +        + + + +
++  +A+ +++ +++  ++++++         +
++  +A  +  K+HI8 I+   3   + + +C+
+++ +++ +++ ++++++++      +E+D+C+
+++     +   K  9+F +EEE   +D+D+C+
+++ +++ +++ +++++  ++++++++++++++
+++    A +   C 2+ G4            +
+++ +++ +++++++++    ++++       +
+++B0        1A +               +
++              +              ++
++7       JHIIJH+5             ++
+++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++
++ A+++ +   +  IH+        +C+C+C+
++A +++ +K  +   I+GFGFF   +D+D+D+
++  + + +++ +++  ++++++         +
++A + A +JJ +     +E  3   + + + +
+++ +++ +++ ++++++++      + + + +
+++     +KKK    +  +      +E+E+E+
+++ +++ +++ +++++  ++++++++++++++
+++  B   +C     +             G +
+++ +++ +++++++++    ++++       +
+++             +      5        +
++              +            F ++
++HHIIJJ       7+           4  ++
+++++++++++++++++++++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+2190798000:Move(E)@Move(E)|Move(W)|Move(W)|Move(S)|Move(S)|Move(N)|Move(E)|Move(E)|Pull(N,E)|Move(W)
+2191206400:Move(E)@Move(E)|Move(W)|Push(W,W)|Move(W)|Move(W)|Move(N)|Move(E)|Move(E)|Pull(N,N)|Move(W)
+2191550300:Move(E)@Move(E)|Move(W)|Push(W,W)|Pull(E,N)|Move(W)|Move(E)|Push(E,S)|Move(E)|Pull(W,N)|Push(W,W)
+2191847200:Move(N)@Move(N)|Move(W)|Push(W,W)|Push(W,N)|Move(N)|Move(N)|Push(E,S)|Move(E)|Push(E,N)|Push(W,W)
+2192167300:Push(N,W)@Push(N,W)|Move(W)|NoOp|Push(N,W)|Move(N)|Push(N,E)|Pull(W,W)|Move(E)|Move(S)|Move(N)
+2192512200:Push(W,W)@Push(W,W)|Move(W)|NoOp|Push(W,W)|Pull(E,S)|Push(E,E)|Pull(W,W)|Move(E)|Move(S)|Push(N,W)
+2192815400:Push(W,W)@Push(W,W)|Move(W)|NoOp|Move(S)|Push(W,S)|Push(E,E)|Pull(W,W)|Move(E)|Move(W)|Move(N)
+2193094400:Push(W,W)@Push(W,W)|Move(W)|NoOp|Pull(E,N)|Push(S,S)|Push(E,E)|Push(E,S)|Pull(N,W)|Pull(E,E)|Pull(S,S)
+2193352200:Push(W,N)@Push(W,N)|Move(W)|NoOp|Pull(E,E)|Push(S,S)|Push(E,E)|Push(S,W)|Push(S,W)|Pull(E,E)|Push(W,W)
+2193618200:Push(N,N)@Push(N,N)|Push(W,N)|NoOp|Pull(N,N)|Push(S,E)|Push(E,E)|Pull(N,W)|Push(W,W)|Push(W,N)|Move(E)
+2193883800:Push(N,N)@Push(N,N)|Push(N,N)|NoOp|Pull(W,N)|Push(E,E)|Push(E,E)|Move(W)|Move(E)|Push(N,N)|Pull(S,S)
+2194163800:Push(N,N)@Push(N,N)|Push(N,E)|NoOp|Push(E,E)|Push(E,S)|Push(E,E)|Push(S,W)|Move(E)|Push(N,E)|Push(N,W)
+2194408800:Push(N,W)@Push(N,W)|Push(E,E)|NoOp|Push(E,N)|Push(S,E)|Push(E,E)|Pull(N,W)|Pull(W,W)|Push(E,N)|Move(N)
+2194688700:Push(W,N)@Push(W,N)|NoOp|NoOp|Push(N,E)|Push(E,E)|Push(E,E)|Move(E)|Pull(N,W)|Move(S)|Move(N)
+2194947700:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(E,E)|Push(E,E)|Push(E,E)|Move(E)|Push(S,W)|Move(S)|Pull(N,E)
+2195219400:Move(S)@Move(S)|NoOp|NoOp|Push(E,E)|Push(E,E)|Push(E,E)|Move(E)|Move(E)|Pull(W,W)|Push(W,S)
+2195488200:Move(E)@Move(E)|NoOp|NoOp|Push(E,E)|Push(E,E)|Move(W)|Move(E)|Move(E)|Push(E,N)|Push(W,S)
+2195773100:Move(S)@Move(S)|NoOp|NoOp|Push(E,E)|Push(E,E)|Move(S)|Pull(S,W)|Pull(N,W)|Push(N,N)|Move(E)
+2196021700:Move(S)@Move(S)|NoOp|NoOp|Push(E,E)|Push(E,E)|Move(S)|Push(N,W)|Push(S,W)|NoOp|Move(E)
+2196254800:Move(E)@Move(E)|NoOp|NoOp|Push(E,E)|Push(E,E)|Move(W)|Push(W,W)|Push(W,W)|NoOp|Pull(W,N)
+2196522200:Move(E)@Move(E)|NoOp|NoOp|Move(S)|Push(E,E)|Move(W)|Push(W,S)|Move(N)|NoOp|Push(S,E)
+2196759900:Move(E)@Move(E)|NoOp|NoOp|Pull(N,N)|Push(E,E)|Move(W)|Push(S,W)|Move(W)|NoOp|Push(E,S)
+2196979200:Move(E)@Move(E)|NoOp|NoOp|Pull(W,N)|Move(S)|Move(W)|Pull(N,W)|Move(W)|NoOp|Push(S,S)
+2197216200:Move(N)@Move(N)|NoOp|NoOp|Push(E,N)|NoOp|Move(W)|Move(E)|Move(W)|NoOp|Push(S,S)
+2197432900:Move(N)@Move(N)|NoOp|NoOp|Pull(W,W)|NoOp|NoOp|Move(E)|Push(S,W)|NoOp|Push(S,S)
+2197834600:Move(W)@Move(W)|NoOp|NoOp|Push(E,S)|NoOp|NoOp|Move(E)|Pull(N,W)|NoOp|Move(N)
+2198056200:Pull(E,E)@Pull(E,E)|NoOp|NoOp|Pull(E,S)|NoOp|NoOp|Pull(W,W)|Move(E)|NoOp|Pull(N,E)
+2198277300:Move(S)@Move(S)|NoOp|NoOp|Move(E)|NoOp|NoOp|Push(E,S)|Move(S)|NoOp|Push(S,S)
+2198471800:Move(S)@Move(S)|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|Push(S,W)|Pull(N,W)|NoOp|Move(W)
+2198684800:Move(S)@Move(S)|NoOp|NoOp|Push(W,W)|NoOp|NoOp|Push(W,W)|Move(E)|NoOp|Pull(E,E)
+2198897800:Move(S)@Move(S)|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|Move(E)|NoOp|Pull(N,E)
+2199214400:Move(S)@Move(S)|NoOp|NoOp|Pull(W,W)|NoOp|NoOp|NoOp|Move(E)|NoOp|Pull(N,N)
+2199415000:Move(S)@Move(S)|NoOp|NoOp|Push(S,S)|NoOp|NoOp|NoOp|Move(E)|NoOp|Pull(W,N)
+2199573100:Move(E)@Move(E)|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|Move(E)|NoOp|Pull(N,W)
+2199704600:Move(E)@Move(E)|NoOp|NoOp|Pull(S,W)|NoOp|NoOp|NoOp|Push(S,W)|NoOp|Push(E,S)
+2199851000:Move(E)@Move(E)|NoOp|NoOp|Push(N,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|Push(S,S)
+2200003700:Move(E)@Move(E)|NoOp|NoOp|Pull(E,E)|NoOp|NoOp|NoOp|Push(W,N)|NoOp|Push(S,S)
+2200217700:Move(E)@Move(E)|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|Push(N,W)|NoOp|Push(S,W)
+2200377200:Move(E)@Move(E)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|Push(W,W)
+2200627100:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|Move(E)
+2200778400:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|Pull(N,N)
+2200915600:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Push(E,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|Push(S,W)
+2201091300:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Push(N,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|Move(S)
+2201223300:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Push(W,S)|NoOp|Push(S,S)
+2201377000:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(E)|NoOp|Push(W,W)
+2201563300:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(E)|NoOp|Move(E)
+2201701800:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|Pull(N,N)
+2201827700:Pull(W,W)@Pull(W,W)|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Pull(W,N)|NoOp|Move(N)
+2201949600:Pull(S,W)@Pull(S,W)|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|NoOp|Pull(W,W)|NoOp|Move(N)
+2202081000:Push(N,W)@Push(N,W)|NoOp|NoOp|Push(W,W)|NoOp|NoOp|NoOp|Pull(W,W)|NoOp|Move(N)
+2202217700:Push(W,N)@Push(W,N)|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|Pull(W,W)|NoOp|Pull(S,E)
+2202347300:Push(N,N)@Push(N,N)|NoOp|NoOp|Pull(W,W)|NoOp|NoOp|NoOp|Pull(S,W)|NoOp|Pull(S,S)
+2202501700:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(N,N)|NoOp|NoOp|NoOp|Pull(W,S)|NoOp|Pull(S,S)
+2202640000:Push(N,N)@Push(N,N)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(N)|NoOp|Push(S,W)
+2202782700:Push(N,N)@Push(N,N)|NoOp|NoOp|Pull(S,E)|NoOp|NoOp|NoOp|Move(E)|NoOp|Move(N)
+2202914800:Push(N,N)@Push(N,N)|NoOp|NoOp|Push(N,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|Pull(S,S)
+2203093300:Push(N,W)@Push(N,W)|NoOp|NoOp|Pull(W,W)|NoOp|NoOp|NoOp|Move(E)|NoOp|Pull(S,S)
+2203297300:Move(S)@Move(S)|NoOp|NoOp|Pull(W,W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2203454700:Move(S)@Move(S)|NoOp|NoOp|Pull(W,W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2203614600:Move(E)@Move(E)|NoOp|NoOp|Push(E,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2203740700:Move(E)@Move(E)|NoOp|NoOp|Push(N,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2203882100:Move(E)@Move(E)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2204048000:Move(E)@Move(E)|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2204212900:Move(N)@Move(N)|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2204373900:Move(N)@Move(N)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2204497500:Pull(S,E)@Pull(S,E)|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Push(S,W)|NoOp|NoOp
+2204622100:Push(N,N)@Push(N,N)|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|NoOp|Push(E,N)|NoOp|NoOp
+2204758700:Pull(W,S)@Pull(W,S)|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|Push(N,W)|NoOp|NoOp
+2204904500:Move(W)@Move(W)|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2205047700:Pull(E,S)@Pull(E,S)|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2205296900:Push(E,S)@Push(E,S)|NoOp|NoOp|Pull(E,S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2205421700:Move(W)@Move(W)|NoOp|NoOp|Push(E,S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2205565900:Pull(E,E)@Pull(E,E)|NoOp|NoOp|Push(S,S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2205728100:Push(S,S)@Push(S,S)|NoOp|NoOp|Push(S,S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2205868100:Push(S,W)@Push(S,W)|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2206003600:Push(W,W)@Push(W,W)|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2206190500:Push(W,W)@Push(W,W)|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2206315500:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(W,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2206443600:Push(W,N)@Push(W,N)|NoOp|NoOp|Pull(W,S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2206599900:Push(N,N)@Push(N,N)|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Push(W,S)|NoOp|NoOp
+2206752600:Push(N,N)@Push(N,N)|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2206875200:Push(N,N)@Push(N,N)|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2207012300:Push(N,N)@Push(N,N)|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2207128700:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2207232800:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Pull(E,N)|NoOp|NoOp
+2207398900:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Pull(E,E)|NoOp|NoOp
+2207547300:NoOp@NoOp|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2207673800:NoOp@NoOp|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2207776400:NoOp@NoOp|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2207879800:NoOp@NoOp|NoOp|NoOp|Push(E,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2208001200:NoOp@NoOp|NoOp|NoOp|Pull(W,W)|NoOp|NoOp|NoOp|Push(S,W)|NoOp|NoOp
+2208200300:NoOp@NoOp|NoOp|NoOp|Push(E,S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2208318600:NoOp@NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2208446500:NoOp@NoOp|NoOp|NoOp|Push(E,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2208576300:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2208691900:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2208808700:NoOp@NoOp|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Push(N,W)|NoOp|NoOp
+2208938600:NoOp@NoOp|NoOp|NoOp|Pull(N,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2209055400:NoOp@NoOp|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2209170700:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2209284100:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2209402100:NoOp@NoOp|NoOp|NoOp|Push(E,N)|NoOp|NoOp|NoOp|Push(W,W)|NoOp|NoOp
+2209530700:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Push(W,S)|NoOp|NoOp
+2209651300:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2209799900:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2209942500:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2210082000:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2210255000:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2210390100:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2210528000:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2210696600:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp
+2210820400:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2210965300:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2211132800:NoOp@NoOp|NoOp|NoOp|Pull(E,E)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2211281300:NoOp@NoOp|NoOp|NoOp|Pull(N,E)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2211417200:NoOp@NoOp|NoOp|NoOp|Pull(W,N)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2211537600:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|Move(E)|NoOp|NoOp
+2211665700:NoOp@NoOp|NoOp|NoOp|Push(E,N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2211782200:NoOp@NoOp|NoOp|NoOp|Push(N,E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2211901300:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2212025900:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2212156300:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2212316300:NoOp@NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2212450300:NoOp@NoOp|NoOp|NoOp|Push(E,S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2212571200:NoOp@NoOp|NoOp|NoOp|Push(S,S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2212706700:NoOp@NoOp|NoOp|NoOp|Push(S,S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2212954500:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2213194900:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2213344200:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2213523100:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2213649800:NoOp@NoOp|NoOp|NoOp|Push(S,S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2213776000:NoOp@NoOp|NoOp|NoOp|Push(S,S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2213927500:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2214090000:NoOp@NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2214269800:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2214398100:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2214498200:NoOp@NoOp|NoOp|NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2214594700:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2214688200:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+2214781900:NoOp@NoOp|NoOp|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+140
+#time
+2214781900
+#end

@@ -1,0 +1,75 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+23799562209:NoOp|Move(W)|Move(W)
+23799674250:Move(E)|NoOp|Move(S)
+23799730542:Pull(E,N)|Push(N,E)|NoOp
+23799783250:NoOp|NoOp|Move(W)
+23799828125:Pull(S,E)|NoOp|Push(S,S)
+23799888834:NoOp|NoOp|Push(S,S)
+23799938542:NoOp|Pull(W,W)|Push(S,S)
+23799994792:NoOp|Pull(N,W)|Push(S,S)
+23800057125:Pull(S,S)|NoOp|Push(S,W)
+23800102917:Pull(S,S)|Pull(N,N)|NoOp
+23800139584:Pull(S,S)|NoOp|Push(W,W)
+23800177959:Pull(S,S)|NoOp|Push(W,N)
+23800223000:Pull(S,S)|NoOp|Push(N,N)
+23800268209:Push(N,E)|Pull(E,N)|NoOp
+23800310375:Push(E,S)|Push(W,W)|NoOp
+23800347250:Move(N)|Push(W,W)|NoOp
+23800381334:NoOp|Push(W,W)|NoOp
+23800419375:NoOp|Push(W,W)|Pull(S,S)
+23800459250:NoOp|Push(W,W)|NoOp
+23800497709:NoOp|Push(W,W)|Pull(E,S)
+23800535375:Move(S)|Push(W,W)|NoOp
+23800567834:NoOp|Push(W,W)|NoOp
+23800598792:NoOp|Push(W,W)|Pull(E,E)
+23800632584:NoOp|Push(W,W)|Pull(E,E)
+23800675209:Move(W)|NoOp|Push(W,N)
+23800714417:Move(S)|NoOp|Pull(W,S)
+23800759084:NoOp|NoOp|Pull(W,W)
+23800799209:NoOp|NoOp|Pull(N,W)
+23800835000:NoOp|NoOp|Pull(N,N)
+23800872042:NoOp|NoOp|Pull(N,N)
+23800915000:NoOp|NoOp|Pull(N,N)
+23800964167:NoOp|NoOp|Pull(W,N)
+23801006417:NoOp|NoOp|Pull(W,W)
+23801048125:NoOp|NoOp|Move(S)
+23801086334:NoOp|NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+35
+#time
+23801086334
+#end

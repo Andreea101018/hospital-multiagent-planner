@@ -1,0 +1,74 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+TBSTANS1
+#actions
+62052583:Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)
+62197958:Move(N)@Move(N)|Move(W)@Move(W)|NoOp
+62304333:Move(S)@Move(S)|Move(W)@Move(W)|NoOp
+62383166:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+62474291:Move(N)@Move(N)|Move(W)@Move(W)|NoOp
+62581541:NoOp|Move(W)@Move(W)|Move(S)@Move(S)
+62675625:Move(E)@Move(E)|Move(W)@Move(W)|NoOp
+62772958:NoOp|Move(N)@Move(N)|Move(N)@Move(N)
+62847416:Move(S)@Move(S)|Move(N)@Move(N)|NoOp
+62910708:NoOp|Move(N)@Move(N)|Move(W)@Move(W)
+62973958:Move(S)@Move(S)|Push(W,N)@Push(W,N)|Move(S)@Move(S)
+63038666:Move(N)@Move(N)|NoOp|NoOp
+63104041:Move(N)@Move(N)|Move(S)@Move(S)|Move(E)@Move(E)
+63172375:Move(E)@Move(E)|Move(N)@Move(N)|NoOp
+63226250:Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+63315750:Move(E)@Move(E)|Move(N)@Move(N)|Move(S)@Move(S)
+63384583:Move(E)@Move(E)|NoOp|Move(N)@Move(N)
+63472541:Move(E)@Move(E)|NoOp|Move(W)@Move(W)
+63526125:Push(E,S)@Push(E,S)|NoOp|NoOp
+63586000:Push(S,S)@Push(S,S)|Move(N)@Move(N)|Move(S)@Move(S)
+63654750:Push(S,E)@Push(S,E)|Move(W)@Move(W)|Move(N)@Move(N)
+63727416:NoOp|Move(W)@Move(W)|Move(E)@Move(E)
+63778750:Move(S)@Move(S)|Move(N)@Move(N)|Move(E)@Move(E)
+63833916:NoOp|Move(S)@Move(S)|Move(S)@Move(S)
+63909708:NoOp|Move(S)@Move(S)|Move(E)@Move(E)
+63962833:Move(N)@Move(N)|Move(N)@Move(N)|Move(E)@Move(E)
+64028208:Move(N)@Move(N)|NoOp|Move(E)@Move(E)
+64089750:Move(N)@Move(N)|Move(S)@Move(S)|Move(E)@Move(E)
+64156833:Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)
+64214333:NoOp|NoOp|Move(E)@Move(E)
+64289291:NoOp|NoOp|Move(E)@Move(E)
+64347708:NoOp|Move(S)@Move(S)|Move(N)@Move(N)
+64410500:Move(W)@Move(W)|NoOp|Move(N)@Move(N)
+64475875:Move(W)@Move(W)|NoOp|Pull(W,S)@Pull(W,S)
+#end
+#solved
+true
+#numactions
+34
+#time
+64475875
+#end

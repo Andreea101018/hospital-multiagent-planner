@@ -1,0 +1,57 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+TheGate
+#actions
+148516658:Move(S)@Move(S)|Move(S)|Move(E)
+148748173:Move(S)@Move(S)|Move(S)|Move(E)
+149027810:Move(E)@Move(E)|Move(W)|Move(E)
+149194380:Pull(S,S)@Pull(S,S)|NoOp|NoOp
+149507363:Pull(S,S)@Pull(S,S)|NoOp|NoOp
+149631183:Pull(W,S)@Pull(W,S)|NoOp|NoOp
+149774011:Push(E,S)@Push(E,S)|Move(E)|NoOp
+149972879:Move(W)@Move(W)|NoOp|Move(E)
+150121129:Move(S)@Move(S)|Move(E)|NoOp
+150269249:Move(S)@Move(S)|NoOp|Move(E)
+150413955:NoOp@NoOp|NoOp|Move(N)
+150644351:NoOp@NoOp|Move(W)|Move(N)
+150930408:NoOp@NoOp|Move(W)|Move(E)
+151056274:NoOp@NoOp|Move(W)|NoOp
+151408593:NoOp@NoOp|Move(W)|NoOp
+151733647:NoOp@NoOp|Move(W)|NoOp
+151808106:NoOp@NoOp|Move(W)|NoOp
+#end
+#solved
+true
+#numactions
+17
+#time
+151808106
+#end

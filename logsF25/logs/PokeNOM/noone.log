@@ -1,0 +1,49 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+PokeNOM
+#actions
+147754200:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+148130300:Pull(S,W)@Pull(S,W)|Move(S)@Move(S)|NoOp@NoOp
+148371100:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|Move(N)@Move(N)
+148647600:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|Move(N)@Move(N)
+148866200:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+149086900:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|Move(E)@Move(E)
+149411300:Push(N,E)@Push(N,E)|Move(W)@Move(W)|Move(E)@Move(E)
+149837300:Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+150203800:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+#end
+#solved
+true
+#numactions
+9
+#time
+150203800
+#end

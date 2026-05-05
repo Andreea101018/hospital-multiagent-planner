@@ -1,0 +1,51 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+Lily
+#actions
+132897709:Move(E)@Move(E)|Move(W)|Move(E)
+133020917:NoOp@NoOp|Move(W)|Move(E)
+133127792:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+133224875:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+133460167:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+133603084:Push(S,S)@Push(S,S)|Move(S)|Move(N)
+133712500:Move(E)@Move(E)|Move(S)|Move(E)
+134159542:Move(S)@Move(S)|NoOp|Move(N)
+134278167:Move(S)@Move(S)|NoOp|NoOp
+134409792:Move(W)@Move(W)|NoOp|NoOp
+134595334:Move(W)@Move(W)|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+11
+#time
+134595334
+#end

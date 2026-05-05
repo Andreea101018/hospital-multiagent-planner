@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+715376167:Move(S)|Move(N)
+715467167:Move(W)|Move(W)
+715513333:Move(W)|Move(W)
+715560250:Move(W)|Move(W)
+715608333:Move(W)|Move(W)
+715655792:Move(W)|Move(W)
+715697875:Move(W)|Move(W)
+715734875:Move(W)|Move(W)
+715784458:Move(W)|Move(W)
+715834125:Move(W)|Move(W)
+715883625:Move(W)|Move(W)
+715915167:Move(W)|Move(W)
+715952708:Move(W)|Move(W)
+715987750:Move(W)|Move(W)
+716020792:Move(W)|Move(W)
+716051500:Move(W)|Move(W)
+716090292:Move(S)|Move(W)
+716120417:Move(S)|Move(W)
+716153000:Move(S)|Move(W)
+716187833:Move(W)|Move(N)
+716216667:Move(W)|Move(N)
+716242792:Move(W)|Move(N)
+716277417:Move(W)|Move(E)
+716308500:Move(W)|Move(N)
+716344042:Push(N,N)|Move(E)
+716380750:Push(W,N)|Move(E)
+716419458:Push(N,N)|Move(E)
+716455417:Push(E,N)|Move(E)
+716495458:Push(N,N)|Move(E)
+716531333:Push(W,N)|Move(E)
+716572708:Push(N,N)|Move(E)
+716606417:NoOp|Move(E)
+716643375:Push(E,N)|Move(E)
+716732917:Push(N,N)|Move(N)
+716768958:Push(N,W)|Move(N)
+716801458:Push(W,W)|Move(N)
+716844417:Push(S,W)|Move(N)
+716877708:Push(W,W)|Move(E)
+716914792:Push(W,W)|Move(E)
+716952375:Push(W,W)|Move(E)
+716977167:Move(N)|Move(E)
+716998875:Move(E)|Move(E)
+717037000:Pull(S,W)|Move(E)
+717077083:Push(N,W)|Move(E)
+717115625:Push(W,W)|Move(E)
+717148167:Move(S)|Move(E)
+717177708:NoOp|Move(E)
+717215208:Move(E)|Move(E)
+717245458:Move(W)|Move(E)
+717275750:Move(N)|Move(E)
+717300583:NoOp|Move(E)
+717325500:NoOp|Move(E)
+717365583:Move(E)|Move(E)
+717393417:NoOp|Move(N)
+717424625:Move(E)|Pull(S,S)
+717462042:Move(E)|Pull(W,S)
+717552625:Move(E)|Pull(W,W)
+717580833:Move(E)|Pull(W,W)
+717608125:Move(E)|Pull(W,W)
+717632583:Move(E)|Pull(W,W)
+717656917:Move(E)|Pull(W,W)
+717690125:NoOp|Pull(W,W)
+717716208:Move(W)|Pull(S,W)
+717741875:Move(W)|Pull(W,S)
+717771625:Move(W)|Pull(W,W)
+717802542:Move(E)|Pull(W,W)
+717841917:Move(S)|Pull(W,W)
+717879875:Move(W)|Pull(W,W)
+717907167:Move(W)|Pull(W,W)
+717931125:Move(S)|Pull(W,W)
+717956083:Move(S)|Pull(W,W)
+717979542:NoOp|Pull(W,W)
+718011000:Move(W)|Pull(S,W)
+718047375:Move(S)|Pull(S,S)
+718074167:Move(S)|Pull(S,S)
+718114375:Move(S)|Pull(W,S)
+718147375:Move(E)|Pull(W,W)
+718178250:NoOp|Pull(W,W)
+718211375:Move(N)|Pull(W,W)
+718244000:Move(N)|Pull(W,W)
+718273958:Move(N)|Pull(N,W)
+718301458:Move(N)|Pull(N,N)
+718324792:Move(N)|Pull(N,N)
+718349042:Move(N)|Pull(N,N)
+718374458:Move(N)|Pull(N,N)
+718398667:Move(N)|Pull(N,N)
+718424417:Move(N)|Pull(W,N)
+718447833:Move(W)|Pull(N,W)
+718471042:Move(N)|Pull(N,N)
+718494667:NoOp|Pull(N,N)
+718519083:Move(E)|Pull(E,N)
+718543250:NoOp|Push(W,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+718543250
+#end

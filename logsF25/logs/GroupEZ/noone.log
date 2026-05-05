@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+95267100:Move(E)@Move(E)|Move(S)|Move(N)
+95514100:Push(S,S)@Push(S,S)|Move(S)|Move(N)
+95990200:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+96423100:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+96595800:Push(S,S)@Push(S,S)|Move(W)|Move(E)
+96871200:Move(W)@Move(W)|Move(W)|Move(E)
+97113300:Move(S)@Move(S)|Move(W)|Move(E)
+97386100:Move(S)@Move(S)|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+8
+#time
+97386100
+#end

@@ -1,0 +1,120 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+donkeyK
+#actions
+149190000:Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)
+149252000:Move(E)@Move(E)|Push(S,S)@Push(S,S)|Move(N)@Move(N)
+149283700:Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+149314100:Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+149347700:Move(S)@Move(S)|Push(S,W)@Push(S,W)|Move(N)@Move(N)
+149397100:Pull(N,N)@Pull(N,N)|Push(W,S)@Push(W,S)|Pull(E,S)@Pull(E,S)
+149429200:Pull(E,N)@Pull(E,N)|Push(S,W)@Push(S,W)|Pull(S,S)@Pull(S,S)
+149462200:Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Push(N,E)@Push(N,E)
+149573700:Push(N,E)@Push(N,E)|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+149611000:Push(E,E)@Push(E,E)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+149640600:Push(E,N)@Push(E,N)|Move(N)@Move(N)|Push(E,E)@Push(E,E)
+149670300:Push(N,E)@Push(N,E)|Move(E)@Move(E)|Push(E,E)@Push(E,E)
+149699500:Push(E,E)@Push(E,E)|Move(E)@Move(E)|Push(E,N)@Push(E,N)
+149728900:Push(E,E)@Push(E,E)|Move(N)@Move(N)|Push(N,N)@Push(N,N)
+149757800:Push(E,E)@Push(E,E)|Move(E)@Move(E)|Push(N,W)@Push(N,W)
+149786100:Move(S)@Move(S)|Move(N)@Move(N)|Push(W,W)@Push(W,W)
+149815100:Move(W)@Move(W)|Move(N)@Move(N)|Move(E)@Move(E)
+149841500:Move(S)@Move(S)|Move(N)@Move(N)|Move(S)@Move(S)
+149867900:Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+149901400:Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+149964200:Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+149998700:Move(W)@Move(W)|Push(W,S)@Push(W,S)|Move(W)@Move(W)
+150074500:Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(W)@Move(W)
+150145000:Move(W)@Move(W)|Push(S,S)@Push(S,S)|Pull(S,S)@Pull(S,S)
+150193000:Move(W)@Move(W)|Push(S,S)@Push(S,S)|Push(N,E)@Push(N,E)
+150239900:Push(S,E)@Push(S,E)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+150300300:Push(E,N)@Push(E,N)|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+150342100:Push(N,E)@Push(N,E)|Move(E)@Move(E)|Push(E,E)@Push(E,E)
+150374600:Push(E,E)@Push(E,E)|Move(E)@Move(E)|Push(E,N)@Push(E,N)
+150402600:Push(E,N)@Push(E,N)|Move(S)@Move(S)|Push(N,N)@Push(N,N)
+150432100:Push(N,N)@Push(N,N)|NoOp@NoOp|Push(N,W)@Push(N,W)
+150460700:Push(N,E)@Push(N,E)|NoOp@NoOp|Move(S)@Move(S)
+150488100:Push(E,E)@Push(E,E)|NoOp@NoOp|Move(S)@Move(S)
+150515100:Push(E,N)@Push(E,N)|NoOp@NoOp|Move(W)@Move(W)
+150542900:Push(N,E)@Push(N,E)|NoOp@NoOp|Move(W)@Move(W)
+150570200:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+150596200:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+150622200:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+150648400:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+150678400:NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+150708600:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+150739500:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+150810000:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+150839300:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+150866400:NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)
+150892100:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)
+150917800:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+150944300:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+150971100:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+150998700:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+151024500:NoOp@NoOp|NoOp@NoOp|Move(W)@Move(W)
+151050500:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+151076200:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)
+151103400:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)
+151129700:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)
+151155300:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+151181800:NoOp@NoOp|NoOp@NoOp|Move(E)@Move(E)
+151219300:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+151256300:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)
+#end
+#solved
+false
+#numactions
+59
+#time
+151256300
+#end

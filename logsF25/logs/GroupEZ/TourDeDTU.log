@@ -1,0 +1,157 @@
+#domain
+hospital
+#levelname
+TourDeDTU
+#colors
+red: 8,1,Y,G
+blue: 3,5,D,T,U
+cyan: 6,7,2,C,B,S
+pink: N,O,V,0,4
+#initial
+++++++++++++++++++++++++++++++
++++++++++++++++++++++     ++++
++++++++++++++++         + ++++
+++++++++      Y  ++++++ + ++++
++++++      ++++  +      + ++++
++++++8+++++++++  ++++++G+ ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +      O+  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ + 0 +    +  +    + ++ +++
+++++ +  ++    +  +   1   + +++
+++++ +   NV   +  + + + + + +++
+++++ +        +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ + 4+++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++3 + +++++  + ++
++++ +                     + ++
+++                          ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++ U++  + +  + ++
+++ ++++ ++   ++  +  6+    + ++
+++ +5T+++    ++  + +   ++ + ++
+++ +             + + C ++ + ++
+++ +    ++++ ++  +     ++ + ++
+++ +    +        + + + ++ +  +
+++ + ++++        + + + ++ ++ +
++  +      +++++  +   + ++  + +
++ ++ D+ + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +    B7+  + +
++ + +   +++ +++  + + ++ +  + +
++                +   ++   +  +
++  ++++++++++++  +S+ ++  +   +
++                 2          +
+++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++
++++++++++++++++++++++ 8YG ++++
++++++++++++++++         + ++++
+++++++++         ++++++ + ++++
++++++      ++++  +      + ++++
++++++ +++++++++  ++++++ + ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +       +  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ +   +    +  +    + ++ +++
+++++ +  ++    +  +       + +++
+++++ +        +  + + + + + +++
+++++ + NOV0   +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ +  +++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++  + +++++  + ++
++++ +      4        1     + ++
+++         3        2       ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++  ++  + +  + ++
+++ ++++ ++   ++  +   +    + ++
+++ + 5+++    ++  + +   ++ + ++
+++ +   DTU       + +   ++ + ++
+++ +    ++++ ++  + 6   ++ + ++
+++ +    +        + + +C++ +  +
+++ + ++++        + + +B++ ++ +
++  +      +++++  +   +S++  + +
++ ++  + + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +      +  + +
++ + +   +++ +++  + + ++ + 7+ +
++                +   ++   +  +
++  ++++++++++++  + + ++  +   +
++                            +
+++++++++++++++++++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+1776093300:Move(S)@Move(S)|Move(E)|Push(N,N)|Move(S)|Move(S)|Push(E,S)|Move(S)|Push(W,N)|Move(N)
+1776408300:Move(S)@Move(S)|Move(E)|Push(N,N)|Move(S)|Move(S)|Push(S,E)|Move(S)|Push(N,N)|Move(E)
+1776783300:Move(E)@Move(E)|Move(N)|Push(N,N)|Move(S)|Move(S)|Push(E,E)|Push(E,E)|Push(N,N)|Move(E)
+1777013300:Push(E,S)@Push(E,S)|Move(N)|Push(N,E)|Move(S)|Move(E)|Push(E,E)|Push(E,S)|Push(N,N)|Move(E)
+1777243800:Push(S,W)@Push(S,W)|Move(N)|Push(E,E)|Move(S)|Move(S)|Move(W)|Push(S,S)|Move(S)|Move(N)
+1777511300:Push(W,W)@Push(W,W)|Move(N)|Push(E,E)|Pull(N,W)|Move(S)|Move(W)|Move(W)|Move(S)|Move(E)
+1777773400:Move(E)@Move(E)|Move(N)|Push(E,E)|Push(S,S)|Move(S)|Move(W)|Move(W)|Move(E)|Move(E)
+1778029100:Move(E)@Move(E)|Push(N,N)|Push(E,N)|Push(S,S)|Move(E)|Move(S)|Move(W)|Move(E)|Move(E)
+1778242100:Pull(W,S)@Pull(W,S)|Push(N,N)|Push(N,N)|Push(S,S)|NoOp|Move(S)|NoOp|Move(E)|Move(E)
+1778460600:Pull(N,W)@Pull(N,W)|Push(N,N)|Push(N,N)|Push(S,W)|NoOp|Move(S)|NoOp|Move(E)|Move(E)
+1778659200:Move(E)@Move(E)|Push(N,N)|Move(S)|Push(W,W)|NoOp|Move(S)|NoOp|Move(S)|Push(E,E)
+1778916900:Move(E)@Move(E)|Push(N,E)|Move(E)|Push(W,W)|NoOp|Move(E)|NoOp|Move(S)|Push(E,N)
+1779173500:Move(N)@Move(N)|Move(S)|Move(E)|Push(W,W)|NoOp|Pull(W,N)|NoOp|NoOp|Push(N,E)
+1779388800:Move(E)@Move(E)|Move(S)|Move(E)|Push(W,W)|NoOp|Pull(N,W)|NoOp|NoOp|Push(E,E)
+1779567500:Move(N)@Move(N)|Move(S)|Move(N)|Push(W,W)|NoOp|Pull(N,N)|NoOp|NoOp|Push(E,E)
+1779772600:Move(E)@Move(E)|Move(S)|Move(N)|Move(N)|NoOp|Pull(N,N)|NoOp|NoOp|Push(E,E)
+1779985600:Move(N)@Move(N)|Move(S)|Move(N)|Move(N)|NoOp|Pull(E,N)|NoOp|NoOp|Push(E,E)
+1780180100:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(E)|NoOp|Pull(N,E)|NoOp|NoOp|Push(E,E)
+1780375500:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(N)|NoOp|Pull(N,N)|NoOp|NoOp|Push(E,E)
+1780644400:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(N)|NoOp|Push(S,E)|NoOp|NoOp|Push(E,E)
+1780870700:Pull(W,S)@Pull(W,S)|Move(S)|Move(N)|Move(E)|NoOp|Push(E,E)|NoOp|NoOp|Push(E,N)
+1781092000:Pull(W,W)@Pull(W,W)|Move(S)|Move(N)|Move(E)|NoOp|Move(W)|NoOp|NoOp|Move(W)
+1781325300:Pull(W,W)@Pull(W,W)|Move(E)|Move(N)|Move(E)|NoOp|Move(N)|NoOp|NoOp|Move(N)
+1781545100:Pull(S,W)@Pull(S,W)|Move(S)|Move(N)|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+1781716600:Push(N,W)@Push(N,W)|Move(S)|Move(N)|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+1781901600:Push(W,W)@Push(W,W)|Move(S)|Move(N)|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+1782116800:Push(W,S)@Push(W,S)|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+1782498900:Move(E)@Move(E)|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+1782741900:Move(E)@Move(E)|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+1782982000:Move(S)@Move(S)|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+1783145700:NoOp@NoOp|Move(S)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1783361000:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1783512200:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1783715600:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1783969300:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1784148300:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1784332200:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1784495300:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1784640600:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1784775300:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1784959000:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+1785108400:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+42
+#time
+1785108400
+#end

@@ -1,0 +1,147 @@
+#domain
+hospital
+#levelname
+warehouse
+#colors
+red: 0, A, F 
+blue: 1, B, G  
+green: 2, C, H
+cyan: 3, D, I
+lightblue: 4, E, J  
+#initial
++++++++++++++++++++++
++J   0        B     +
++ + + + + + + + + + +
++                  F+
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   A         1     +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    2         D    +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++   G          3    +
++ + + + + + + + + + +
++  H     E          +
++ + + + + + + + + + +
++  4           C    +
++ + + + + + + + + + +
++  I                +
++++++++++++++++++++++
+#goal
++++++++++++++++++++++
++                 I +
++ + + + + + + + + + +
++   B           A   +
++ + + + + + + + + + +
++       G           +
++ + + + + + + + + + +
++               H   +
++ + + + + + + + + + +
++    D              +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++           F       +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++    C            J +
++ + + + + + + + + + +
++                   +
++ + + + + + + + + + +
++                E  +
++++++++++++++++++++++
+#end
+#clientname
+VNN
+#actions
+821184250:Move(S)@Move(S)|Move(W)|Move(S)|Move(W)|Move(W)
+821321250:Move(S)@Move(S)|Move(N)|Move(S)|Move(W)|Move(W)
+821404417:Move(S)@Move(S)|Move(N)|Move(S)|Move(W)|Move(N)
+821498667:Move(S)@Move(S)|Move(N)|Move(S)|Move(W)|Move(N)
+821570292:Move(S)@Move(S)|Move(N)|Move(S)|Move(S)|Move(N)
+821750375:Move(S)@Move(S)|Move(N)|Move(S)|Move(S)|Move(N)
+821837709:Pull(E,E)@Pull(E,E)|Move(N)|Move(W)|Move(S)|Move(N)
+821955125:Pull(E,E)@Pull(E,E)|Pull(S,W)|Pull(E,E)|Move(S)|Move(N)
+822047084:Pull(E,E)@Pull(E,E)|Pull(S,S)|Pull(E,E)|Move(S)|Move(N)
+822133459:Pull(E,E)@Pull(E,E)|Pull(W,S)|Pull(E,E)|Move(S)|Move(N)
+822264000:Pull(E,E)@Pull(E,E)|Pull(W,W)|Pull(N,E)|Move(W)|Move(N)
+822334084:Pull(E,E)@Pull(E,E)|Pull(W,W)|Pull(N,N)|Move(W)|Move(N)
+822405834:Pull(N,E)@Pull(N,E)|Pull(W,W)|Pull(N,N)|Move(W)|Move(N)
+822479917:Pull(N,N)@Pull(N,N)|Pull(N,W)|Pull(N,N)|Move(W)|Move(N)
+822610459:Pull(N,N)@Pull(N,N)|Push(S,W)|Pull(N,N)|Move(W)|Move(N)
+822711292:Push(S,E)@Push(S,E)|Push(W,W)|Pull(N,N)|Move(W)|Move(N)
+822800584:Push(E,E)@Push(E,E)|Push(W,W)|Pull(N,N)|Move(W)|Move(N)
+822886292:Push(E,E)@Push(E,E)|Push(W,W)|Pull(N,N)|Pull(E,E)|Move(N)
+823107375:Push(E,E)@Push(E,E)|Push(W,W)|Pull(N,N)|Pull(N,E)|Move(N)
+823217750:Push(E,N)@Push(E,N)|Move(S)|Pull(N,N)|Pull(N,N)|Pull(S,S)
+823344125:Push(N,N)@Push(N,N)|Move(S)|Pull(N,N)|Pull(E,N)|Pull(S,S)
+823447000:Push(N,E)@Push(N,E)|Move(S)|Push(S,E)|Pull(E,E)|Pull(S,S)
+823535209:Move(N)@Move(N)|Move(S)|Push(E,E)|Pull(N,E)|Pull(S,S)
+823636167:Move(N)@Move(N)|Move(S)|Push(E,E)|Pull(N,N)|Pull(S,S)
+823713375:Move(E)@Move(E)|Move(S)|Push(E,E)|Pull(N,N)|Pull(S,S)
+823831125:Move(E)@Move(E)|Move(S)|Push(E,E)|Pull(N,N)|Pull(S,S)
+823905334:Move(S)@Move(S)|Move(S)|Push(E,E)|Pull(N,N)|Pull(E,S)
+823995750:Move(S)@Move(S)|Move(S)|Push(E,E)|Pull(N,N)|Pull(E,E)
+824095000:Move(E)@Move(E)|Move(S)|Push(E,E)|Pull(N,N)|Pull(S,E)
+824176875:Pull(W,W)@Pull(W,W)|Move(S)|Push(E,E)|Pull(N,N)|Pull(S,S)
+824282917:Pull(S,W)@Pull(S,W)|Move(S)|Move(S)|Pull(N,N)|Pull(E,S)
+824347250:Pull(S,S)@Pull(S,S)|Pull(N,E)|Move(S)|Pull(N,N)|Pull(E,E)
+824403334:Pull(W,S)@Pull(W,S)|Pull(N,N)|Move(W)|Pull(N,N)|Pull(E,E)
+824475375:Pull(W,W)@Pull(W,W)|Pull(N,N)|Move(W)|Pull(N,N)|Pull(E,E)
+824581000:Pull(W,W)@Pull(W,W)|Pull(N,N)|Move(S)|Pull(N,N)|Pull(E,E)
+824650834:Pull(W,W)@Pull(W,W)|Pull(E,N)|Move(S)|Pull(N,N)|Pull(E,E)
+824710250:Pull(W,W)@Pull(W,W)|Pull(E,E)|Move(S)|Pull(N,N)|Pull(S,E)
+824798834:Push(E,S)@Push(E,S)|Pull(N,E)|Move(S)|Pull(N,N)|Pull(S,S)
+824851792:Push(S,S)@Push(S,S)|Pull(N,N)|Move(S)|Pull(N,N)|Pull(S,S)
+824917250:Push(S,S)@Push(S,S)|Pull(W,N)|Move(S)|Pull(N,N)|Pull(S,S)
+824978625:Push(S,S)@Push(S,S)|Push(E,N)|Move(S)|Pull(E,N)|Pull(E,S)
+825023709:Push(S,S)@Push(S,S)|Push(N,N)|Move(S)|Pull(E,E)|Pull(E,E)
+825163292:Push(S,S)@Push(S,S)|Push(N,N)|Move(S)|Pull(E,E)|Pull(E,E)
+825245375:Push(S,S)@Push(S,S)|Push(N,N)|Move(S)|Pull(E,E)|Push(W,S)
+825300584:Push(S,S)@Push(S,S)|Push(N,E)|Move(E)|Pull(E,E)|Push(S,S)
+825382542:Push(S,W)@Push(S,W)|NoOp|Pull(W,W)|Pull(E,E)|Push(S,E)
+825424667:NoOp@NoOp|NoOp|Pull(W,W)|Pull(E,E)|Push(E,E)
+825475667:NoOp@NoOp|NoOp|Pull(W,W)|Pull(E,E)|Push(E,E)
+825569417:NoOp@NoOp|NoOp|Pull(W,W)|Pull(E,E)|Push(E,E)
+825638792:NoOp@NoOp|NoOp|Pull(W,W)|Pull(E,E)|Push(E,E)
+825698709:NoOp@NoOp|NoOp|Pull(W,W)|Pull(E,E)|Push(E,E)
+825763084:NoOp@NoOp|NoOp|Pull(W,W)|Pull(E,E)|Push(E,E)
+825821167:NoOp@NoOp|NoOp|Pull(N,W)|Move(S)|Move(W)
+825884334:NoOp@NoOp|NoOp|Push(S,W)|Move(S)|Move(W)
+825939959:NoOp@NoOp|NoOp|Push(W,W)|Move(S)|Move(W)
+825992875:NoOp@NoOp|NoOp|Push(W,N)|Move(S)|Move(W)
+826061209:NoOp@NoOp|NoOp|Push(N,N)|Move(S)|Move(W)
+826113792:NoOp@NoOp|NoOp|NoOp|Move(S)|Move(W)
+826185709:NoOp@NoOp|NoOp|NoOp|Move(S)|Move(W)
+826232500:NoOp@NoOp|NoOp|NoOp|Move(S)|Pull(E,E)
+826281459:NoOp@NoOp|NoOp|NoOp|Move(S)|Pull(S,E)
+826345584:NoOp@NoOp|NoOp|NoOp|Move(S)|Pull(S,S)
+826400959:NoOp@NoOp|NoOp|NoOp|Move(W)|Pull(E,S)
+826440750:NoOp@NoOp|NoOp|NoOp|Move(W)|Pull(E,E)
+826492542:NoOp@NoOp|NoOp|NoOp|Move(W)|Pull(E,E)
+826541875:NoOp@NoOp|NoOp|NoOp|Push(W,N)|Pull(E,E)
+826602334:NoOp@NoOp|NoOp|NoOp|Push(N,N)|Pull(E,E)
+826649209:NoOp@NoOp|NoOp|NoOp|Push(N,W)|Pull(E,E)
+826694875:NoOp@NoOp|NoOp|NoOp|Push(W,W)|Pull(E,E)
+826740500:NoOp@NoOp|NoOp|NoOp|Push(W,W)|Push(W,S)
+826787750:NoOp@NoOp|NoOp|NoOp|Push(W,W)|Push(S,S)
+826823875:NoOp@NoOp|NoOp|NoOp|Push(W,W)|NoOp
+826859750:NoOp@NoOp|NoOp|NoOp|Push(W,W)|NoOp
+826896375:NoOp@NoOp|NoOp|NoOp|Push(W,W)|NoOp
+826934417:NoOp@NoOp|NoOp|NoOp|Push(W,W)|NoOp
+826987500:NoOp@NoOp|NoOp|NoOp|Push(W,W)|NoOp
+827037875:NoOp@NoOp|NoOp|NoOp|Push(W,W)|NoOp
+#end
+#solved
+true
+#numactions
+77
+#time
+827037875
+#end

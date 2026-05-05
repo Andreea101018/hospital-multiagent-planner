@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+DatzCrazy
+#actions
+82402300:Move(S)@Move(S)|Move(N)@Move(N)
+82507700:Move(W)@Move(W)|Move(W)@Move(W)
+82585700:Move(W)@Move(W)|Move(W)@Move(W)
+82674700:Move(W)@Move(W)|Move(W)@Move(W)
+82743200:Move(W)@Move(W)|Move(W)@Move(W)
+82810000:Move(W)@Move(W)|Move(W)@Move(W)
+82885100:Move(W)@Move(W)|Move(W)@Move(W)
+82949800:Move(W)@Move(W)|Move(W)@Move(W)
+83004200:Move(W)@Move(W)|Move(W)@Move(W)
+83075400:Move(W)@Move(W)|Move(W)@Move(W)
+83137700:Move(W)@Move(W)|Move(W)@Move(W)
+83198700:Move(W)@Move(W)|Move(W)@Move(W)
+83254000:Move(W)@Move(W)|Move(W)@Move(W)
+83328400:Move(W)@Move(W)|Move(W)@Move(W)
+83408900:Move(W)@Move(W)|Move(W)@Move(W)
+83513300:Move(W)@Move(W)|Move(W)@Move(W)
+83573700:Move(S)@Move(S)|Move(W)@Move(W)
+83652300:Move(S)@Move(S)|Move(W)@Move(W)
+83708200:Move(S)@Move(S)|Move(W)@Move(W)
+83935700:Move(W)@Move(W)|Move(N)@Move(N)
+84002000:Move(W)@Move(W)|Move(N)@Move(N)
+84060200:Move(W)@Move(W)|Move(N)@Move(N)
+84225700:Move(W)@Move(W)|Move(E)@Move(E)
+84318300:Move(W)@Move(W)|Move(E)@Move(E)
+84419000:Push(N,N)@Push(N,N)|Move(N)@Move(N)
+84525000:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+84614800:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+84676400:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+84741900:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+84823900:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+84880800:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+84999900:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+85118300:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+85233100:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+85311300:Move(E)@Move(E)|Move(N)@Move(N)
+85391100:Move(S)@Move(S)|Move(N)@Move(N)
+85469400:Move(E)@Move(E)|Move(E)@Move(E)
+85547400:Move(E)@Move(E)|Move(E)@Move(E)
+85603500:Move(S)@Move(S)|Move(N)@Move(N)
+85659100:Move(S)@Move(S)|Move(E)@Move(E)
+85717800:Move(S)@Move(S)|Move(E)@Move(E)
+85781000:Pull(E,N)@Pull(E,N)|Move(E)@Move(E)
+85828600:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+85875700:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+85920700:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+85966800:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+86018900:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+86066400:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+86111600:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+86158600:Move(E)@Move(E)|Move(E)@Move(E)
+86204600:Move(W)@Move(W)|Move(E)@Move(E)
+86249100:Move(E)@Move(E)|Move(E)@Move(E)
+86293000:Move(W)@Move(W)|Move(E)@Move(E)
+86338800:Move(N)@Move(N)|Move(N)@Move(N)
+86396200:Move(E)@Move(E)|Pull(S,S)@Pull(S,S)
+86441000:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+86482300:Move(W)@Move(W)|Pull(W,W)@Pull(W,W)
+86543200:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+86591000:Move(E)@Move(E)|Pull(W,W)@Pull(W,W)
+86641700:Move(W)@Move(W)|Push(E,S)@Push(E,S)
+86694000:Move(E)@Move(E)|Push(S,W)@Push(S,W)
+86759300:Move(S)@Move(S)|Push(W,W)@Push(W,W)
+86815700:Move(N)@Move(N)|Push(W,W)@Push(W,W)
+86872900:Move(W)@Move(W)|Push(W,W)@Push(W,W)
+86916400:Move(E)@Move(E)|Push(W,W)@Push(W,W)
+86963200:Move(S)@Move(S)|Push(W,W)@Push(W,W)
+87022300:Move(E)@Move(E)|Push(W,W)@Push(W,W)
+87070800:Move(W)@Move(W)|Push(W,W)@Push(W,W)
+87118900:Move(E)@Move(E)|Push(W,W)@Push(W,W)
+87159700:NoOp@NoOp|Push(W,W)@Push(W,W)
+87201600:Move(E)@Move(E)|Push(W,W)@Push(W,W)
+87273100:Move(N)@Move(N)|Push(W,W)@Push(W,W)
+87348700:Move(S)@Move(S)|Push(W,W)@Push(W,W)
+87400100:Move(E)@Move(E)|Push(W,S)@Push(W,S)
+87455100:Move(E)@Move(E)|Push(S,S)@Push(S,S)
+87511400:Move(N)@Move(N)|Push(S,S)@Push(S,S)
+87563000:NoOp@NoOp|Push(S,W)@Push(S,W)
+87613600:NoOp@NoOp|Push(W,W)@Push(W,W)
+87661900:Move(E)@Move(E)|Push(W,W)@Push(W,W)
+87704800:Move(E)@Move(E)|Push(W,W)@Push(W,W)
+87749900:Move(W)@Move(W)|Push(W,W)@Push(W,W)
+87790400:Move(W)@Move(W)|Push(W,W)@Push(W,W)
+87833300:Move(W)@Move(W)|Push(W,N)@Push(W,N)
+87927500:Move(S)@Move(S)|Push(N,N)@Push(N,N)
+87968600:Move(N)@Move(N)|Push(N,N)@Push(N,N)
+88040800:Move(E)@Move(E)|Push(N,N)@Push(N,N)
+88079000:NoOp@NoOp|Push(N,N)@Push(N,N)
+88128700:Move(E)@Move(E)|Push(N,N)@Push(N,N)
+88172500:Move(E)@Move(E)|Push(N,N)@Push(N,N)
+88213100:Move(S)@Move(S)|Push(N,N)@Push(N,N)
+88267900:Move(E)@Move(E)|Push(N,N)@Push(N,N)
+88312400:Move(W)@Move(W)|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+88312400
+#end

@@ -1,0 +1,78 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+warehouse
+#actions
+420885000:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)
+420941791:Push(S,E)@Push(S,E)|Pull(W,S)@Pull(W,S)|Move(S)@Move(S)
+420979375:Push(E,N)@Push(E,N)|Pull(S,W)@Pull(S,W)|Move(W)@Move(W)
+421012500:Push(N,E)@Push(N,E)|Pull(S,S)@Pull(S,S)|Pull(E,E)@Pull(E,E)
+421036333:Push(E,S)@Push(E,S)|Pull(S,S)@Pull(S,S)|Push(W,S)@Push(W,S)
+421058166:Push(S,S)@Push(S,S)|Pull(W,S)@Pull(W,S)|Push(S,W)@Push(S,W)
+421076833:Push(S,S)@Push(S,S)|Pull(W,W)@Pull(W,W)|Push(W,S)@Push(W,S)
+421103000:Push(S,S)@Push(S,S)|Pull(N,W)@Pull(N,W)|Push(S,S)@Push(S,S)
+421120750:Push(S,S)@Push(S,S)|Pull(N,N)@Pull(N,N)|Push(S,S)@Push(S,S)
+421139125:Push(S,S)@Push(S,S)|Pull(N,N)@Pull(N,N)|Push(S,E)@Push(S,E)
+421155083:Move(W)@Move(W)|Pull(N,N)@Pull(N,N)|Pull(W,W)@Pull(W,W)
+421175041:Move(S)@Move(S)|Pull(W,N)@Pull(W,N)|Pull(W,W)@Pull(W,W)
+421190041:NoOp@NoOp|Pull(W,W)@Pull(W,W)|Pull(N,W)@Pull(N,W)
+421206375:NoOp@NoOp|Pull(S,W)@Pull(S,W)|Pull(N,N)@Pull(N,N)
+421224125:NoOp@NoOp|Pull(S,S)@Pull(S,S)|Pull(N,N)@Pull(N,N)
+421239000:NoOp@NoOp|Pull(S,S)@Pull(S,S)|Pull(N,N)@Pull(N,N)
+421253666:NoOp@NoOp|Pull(S,S)@Pull(S,S)|Pull(W,N)@Pull(W,N)
+421266541:NoOp@NoOp|Pull(W,S)@Pull(W,S)|Pull(W,W)@Pull(W,W)
+421280458:NoOp@NoOp|Pull(W,W)@Pull(W,W)|Move(S)@Move(S)
+421293708:NoOp@NoOp|Pull(N,W)@Pull(N,W)|Move(S)@Move(S)
+421308250:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421321583:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421335208:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421348166:NoOp@NoOp|Pull(W,N)@Pull(W,N)|NoOp@NoOp
+421360375:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+421373000:NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp
+421385916:NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp
+421398791:NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp
+421410916:NoOp@NoOp|Pull(S,S)@Pull(S,S)|NoOp@NoOp
+421423125:NoOp@NoOp|Pull(W,S)@Pull(W,S)|NoOp@NoOp
+421435208:NoOp@NoOp|Pull(W,W)@Pull(W,W)|NoOp@NoOp
+421447666:NoOp@NoOp|Pull(N,W)@Pull(N,W)|NoOp@NoOp
+421459625:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421472583:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421484750:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421496875:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421508375:NoOp@NoOp|Pull(N,N)@Pull(N,N)|NoOp@NoOp
+421521625:NoOp@NoOp|Pull(E,N)@Pull(E,N)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+38
+#time
+421521625
+#end

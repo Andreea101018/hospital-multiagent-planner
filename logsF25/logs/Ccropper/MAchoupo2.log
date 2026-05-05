@@ -1,0 +1,110 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+Ccropper
+#actions
+58229141400:Move(W)@Move(W)|Move(E)@Move(E)
+58230023600:Move(W)@Move(W)|Move(E)@Move(E)
+58230096900:Move(S)@Move(S)|Move(N)@Move(N)
+58230179000:Move(W)@Move(W)|Move(S)@Move(S)
+58230216500:Move(W)@Move(W)|Move(W)@Move(W)
+58230249100:Move(W)@Move(W)|Move(W)@Move(W)
+58230315500:Move(W)@Move(W)|Move(W)@Move(W)
+58230419000:Move(N)@Move(N)|Pull(E,S)@Pull(E,S)
+58230491400:Move(N)@Move(N)|Pull(E,E)@Pull(E,E)
+58230539700:Move(N)@Move(N)|Pull(E,E)@Pull(E,E)
+58230588900:Move(S)@Move(S)|Pull(N,E)@Pull(N,E)
+58230623200:Move(S)@Move(S)|Pull(E,N)@Pull(E,N)
+58230652800:Move(E)@Move(E)|Pull(E,E)@Pull(E,E)
+58230683300:Move(E)@Move(E)|Pull(E,E)@Pull(E,E)
+58230724800:Move(S)@Move(S)|Pull(E,E)@Pull(E,E)
+58230756700:Move(E)@Move(E)|Pull(E,E)@Pull(E,E)
+58230833600:NoOp@NoOp|Pull(S,E)@Pull(S,E)
+58230902300:Move(E)@Move(E)|Move(S)@Move(S)
+58230971800:Move(E)@Move(E)|Move(S)@Move(S)
+58231068500:Move(N)@Move(N)|Move(S)@Move(S)
+58231104000:Move(E)@Move(E)|Move(S)@Move(S)
+58231142100:Move(E)@Move(E)|Move(E)@Move(E)
+58231172100:Pull(W,N)@Pull(W,N)|Move(S)@Move(S)
+58231205200:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+58231237200:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+58231365900:Pull(S,W)@Pull(S,W)|NoOp@NoOp
+58231423700:Pull(W,S)@Pull(W,S)|NoOp@NoOp
+58231470800:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+58231505100:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+58231540200:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+58231582300:Pull(W,W)@Pull(W,W)|NoOp@NoOp
+58231617700:Pull(N,W)@Pull(N,W)|NoOp@NoOp
+58231672000:Push(S,W)@Push(S,W)|NoOp@NoOp
+58231736400:Push(W,W)@Push(W,W)|NoOp@NoOp
+58231806700:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+58231845000:Push(W,W)@Push(W,W)|Move(W)@Move(W)
+58231879500:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+58231915400:Move(E)@Move(E)|Move(N)@Move(N)
+58231947700:Move(E)@Move(E)|Move(N)@Move(N)
+58231979700:Move(E)@Move(E)|Move(N)@Move(N)
+58232009200:Move(E)@Move(E)|Push(N,E)@Push(N,E)
+58232044500:Move(N)@Move(N)|NoOp@NoOp
+58232130800:Move(N)@Move(N)|Push(E,E)@Push(E,E)
+58232188800:Move(N)@Move(N)|Push(E,E)@Push(E,E)
+58232232200:Move(N)@Move(N)|Move(W)@Move(W)
+58232280400:Move(N)@Move(N)|Move(E)@Move(E)
+58232322600:Move(N)@Move(N)|Push(E,E)@Push(E,E)
+58232355300:Move(W)@Move(W)|Push(E,E)@Push(E,E)
+58232384400:Move(W)@Move(W)|Move(W)@Move(W)
+58232419400:Move(W)@Move(W)|Move(W)@Move(W)
+58232459100:Move(W)@Move(W)|Move(W)@Move(W)
+58232488200:Move(W)@Move(W)|Move(W)@Move(W)
+58232533100:NoOp@NoOp|Move(S)@Move(S)
+58232600000:NoOp@NoOp|Move(S)@Move(S)
+58232639500:NoOp@NoOp|Move(S)@Move(S)
+58232678400:NoOp@NoOp|Move(S)@Move(S)
+58232717500:NoOp@NoOp|Move(S)@Move(S)
+58232751500:NoOp@NoOp|Move(S)@Move(S)
+58232786600:NoOp@NoOp|Move(E)@Move(E)
+#end
+#solved
+true
+#numactions
+59
+#time
+58232786600
+#end

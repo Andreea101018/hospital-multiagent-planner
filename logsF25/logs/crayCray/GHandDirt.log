@@ -1,0 +1,120 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+crayCray
+#actions
+406794413:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)
+406940145:Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+407020691:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+407107570:Move(S)@Move(S)|Move(N)@Move(N)|Push(W,W)@Push(W,W)
+407203173:Move(E)@Move(E)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+407279595:Push(E,N)@Push(E,N)|Pull(W,S)@Pull(W,S)|Push(S,W)@Push(S,W)
+407307548:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(W,S)@Push(W,S)
+407378876:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+407404300:Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+407427311:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(S,W)@Push(S,W)
+407451473:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Push(W,S)@Push(W,S)
+407475175:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|Move(N)@Move(N)
+407518395:Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Move(N)@Move(N)
+407543130:Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)
+407565239:Push(E,E)@Push(E,E)|Push(N,N)@Push(N,N)|Move(E)@Move(E)
+407590091:Move(S)@Move(S)|Push(N,W)@Push(N,W)|Move(N)@Move(N)
+407614689:Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+407636879:Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(E)@Move(E)
+407663739:Move(W)@Move(W)|Push(W,S)@Push(W,S)|Move(E)@Move(E)
+407687811:Move(S)@Move(S)|Move(E)@Move(E)|Push(E,S)@Push(E,S)
+407710352:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)
+407732754:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,S)@Push(S,S)
+407754971:Move(W)@Move(W)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+407776949:Move(S)@Move(S)|Move(S)@Move(S)|Push(W,S)@Push(W,S)
+407799042:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,W)@Push(S,W)
+407821289:Push(W,N)@Push(W,N)|Move(W)@Move(W)|Push(W,W)@Push(W,W)
+407843679:Push(N,N)@Push(N,N)|Move(W)@Move(W)|Push(W,S)@Push(W,S)
+407866171:Push(N,N)@Push(N,N)|Move(W)@Move(W)|Push(S,W)@Push(S,W)
+407890966:Push(N,N)@Push(N,N)|Move(W)@Move(W)|NoOp@NoOp
+407913525:Push(N,E)@Push(N,E)|Move(W)@Move(W)|NoOp@NoOp
+407942205:Push(E,E)@Push(E,E)|Pull(W,S)@Pull(W,S)|NoOp@NoOp
+407970257:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp
+407993421:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp
+408016171:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp
+408038357:Push(E,E)@Push(E,E)|Push(E,E)@Push(E,E)|NoOp@NoOp
+408063376:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+408107659:NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp
+408129170:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+408149319:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+408169352:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+408189327:NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+408209044:NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+408229044:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+408248996:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+408269816:NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+408289953:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+408311038:NoOp@NoOp|Move(S)@Move(S)|NoOp@NoOp
+408331452:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+408351536:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+408371340:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+408390879:NoOp@NoOp|Move(W)@Move(W)|NoOp@NoOp
+408410480:NoOp@NoOp|Pull(W,S)@Pull(W,S)|NoOp@NoOp
+408430746:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+408452548:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+408472523:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+408492804:NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+408512689:NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp
+408532417:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+408559388:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+59
+#time
+408559388
+#end

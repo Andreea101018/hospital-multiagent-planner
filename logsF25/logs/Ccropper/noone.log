@@ -1,0 +1,53 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+Ccropper
+#actions
+138696000:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+138845200:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+138921600:Move(S)@Move(S)|NoOp@NoOp|Move(E)@Move(E)
+138984200:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)
+139018400:Move(E)@Move(E)|Move(W)@Move(W)|Move(E)@Move(E)
+139045500:NoOp@NoOp|NoOp@NoOp|Move(N)@Move(N)
+139075300:Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+139098700:Move(N)@Move(N)|Move(W)@Move(W)|Move(E)@Move(E)
+139124400:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|NoOp@NoOp
+139184200:Pull(S,S)@Pull(S,S)|NoOp@NoOp|NoOp@NoOp
+139240100:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|NoOp@NoOp
+139283700:Pull(S,S)@Pull(S,S)|Move(W)@Move(W)|NoOp@NoOp
+139329400:Move(W)@Move(W)|NoOp@NoOp|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+13
+#time
+139329400
+#end

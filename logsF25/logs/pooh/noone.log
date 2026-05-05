@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+pooh
+#actions
+26594042:Move(S)@Move(S)|Move(W)|Move(E)
+26657000:Pull(S,W)@Pull(S,W)|Move(W)|Move(E)
+26678875:Pull(S,S)@Pull(S,S)|Move(W)|Move(E)
+26725667:Pull(S,S)@Pull(S,S)|Move(W)|Move(E)
+26740875:Pull(S,S)@Pull(S,S)|Move(W)|Move(E)
+26771500:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)
+26803792:Push(N,E)@Push(N,E)|Move(S)|Move(E)
+26830917:Move(S)@Move(S)|NoOp|Move(N)
+#end
+#solved
+true
+#numactions
+8
+#time
+26830917
+#end

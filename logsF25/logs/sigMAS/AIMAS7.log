@@ -1,0 +1,178 @@
+#domain
+hospital
+#levelname
+AIMAS7
+#colors
+orange: 0,A
+purple: 3,C
+green: 2,B
+blue: 1
+lightblue: F,4
+red: T,Z,5,V
+cyan: D
+grey: X,6,J
+#initial
++++++++++++++++++++++++++++++++++++
++                 0++++++3+++     +
++    A             ++++++ +++     +
++     A            ++++++ +++     +
++      A           ++++++ +++     +
++       A          ++++++C+++     +
++        A         +2   B         +
++ 1       A        ++++++F+++     +
++        A         ++++++ +++     +
++       A          ++++++ +++     +
++      A           ++++++ +++     +
++     A            ++++++4+++     +
++    A             ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++     T        D      X        6  +
++                                 +
++                                 +
++          D           D          +
++  +          D    D        ++    +
++  +         ++++++++       +     +
++  +    Z                   +     +
++  ++                D D    ++    +
++   +         D              +D   +
++    +               D          D +
++  5 +      D                     +
++    ++                           +
++         V      +++++++++     J  +
++                +         D      +
++                                 +
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++F    +
++                  ++++++ +++     +
++                  ++++++ +++C    +
++                  +              +
++            1     ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++     +
++                  ++++++ +++    B+
++                  ++++++++++++++++
++++++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++     V               X           +
++                                 +
++                                 +
++  +                       J++    +
++  +         ++++++++       +     +
++ T+                        +     +
++  ++                       ++    +
++   +                        +    +
++    +                            +
++    +                            +
++    ++       Z                   +
++                +++++++++        +
++                +                +
++                                 +
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+259072792:Move(S)|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+259165208:Move(W)|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+259223333:Move(W)|NoOp|NoOp|NoOp|Move(N)|NoOp|NoOp
+259278750:Move(S)|NoOp|NoOp|NoOp|Push(N,N)|NoOp|NoOp
+259319000:Move(S)|NoOp|NoOp|NoOp|Push(N,E)|NoOp|NoOp
+259374000:Move(S)|NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp
+259430625:Move(S)|NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp
+259473417:Move(W)|NoOp|NoOp|NoOp|Push(E,E)|NoOp|NoOp
+259501292:Move(S)|NoOp|NoOp|NoOp|Push(E,N)|NoOp|NoOp
+259529167:Move(W)|NoOp|NoOp|NoOp|Push(N,N)|NoOp|NoOp
+259555375:Move(W)|NoOp|NoOp|NoOp|Push(N,N)|NoOp|NoOp
+259585417:Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+259649042:Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+259706833:Push(W,S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+259772083:Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+259825583:Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+259858625:Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+259901208:Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+259944625:NoOp|Move(E)|Move(E)|Move(S)|NoOp|Move(W)|Move(W)
+259986583:NoOp|Move(E)|Move(E)|NoOp|NoOp|Move(N)|Move(W)
+260018375:NoOp|Move(E)|Move(E)|NoOp|NoOp|Move(N)|Move(W)
+260051792:NoOp|Move(E)|Push(E,E)|Move(S)|NoOp|Move(N)|Move(W)
+260119333:NoOp|Move(E)|Push(E,E)|NoOp|NoOp|Move(N)|Move(W)
+260157042:NoOp|Move(E)|Push(E,E)|Move(S)|NoOp|Move(N)|Move(W)
+260227792:NoOp|Move(E)|Push(E,E)|Push(S,S)|NoOp|Move(N)|Move(W)
+260298500:NoOp|Move(E)|Push(E,E)|Push(S,E)|NoOp|Move(N)|Move(W)
+260385250:NoOp|Move(E)|Push(E,E)|Push(E,E)|NoOp|Move(N)|Push(W,S)
+260440083:NoOp|Move(E)|Push(E,E)|Push(E,E)|NoOp|Move(E)|Move(E)
+260473875:NoOp|Move(E)|Push(E,S)|Push(E,E)|NoOp|Move(N)|Move(E)
+260515667:NoOp|NoOp|Push(S,S)|Push(E,N)|NoOp|Move(N)|Move(E)
+260569583:NoOp|NoOp|Push(S,S)|NoOp|NoOp|Move(E)|Move(E)
+260611333:NoOp|NoOp|Push(S,S)|NoOp|NoOp|Move(E)|Move(S)
+260641708:NoOp|NoOp|Push(S,E)|NoOp|NoOp|Pull(S,W)|Move(E)
+260684792:NoOp|NoOp|Push(E,S)|NoOp|NoOp|Push(N,W)|Move(S)
+260712000:NoOp|NoOp|Push(S,E)|NoOp|NoOp|Push(W,S)|Move(S)
+260738917:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Move(S)
+260765292:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Move(S)
+260790583:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,W)|Move(S)
+260822875:NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|Move(S)
+260852875:NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,S)|Move(S)
+260878500:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Move(S)
+260904000:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|Move(E)
+260929458:NoOp|NoOp|NoOp|NoOp|NoOp|Move(W)|Move(S)
+260956667:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Move(E)
+260982583:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Move(S)
+261009333:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Move(E)
+261057583:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Move(E)
+261106958:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Push(S,W)
+261289625:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(W,W)
+261412000:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(W,W)
+261494333:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Push(W,W)
+261539583:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(W,N)
+261583000:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|Push(N,N)
+261623125:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+261673208:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+261713875:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+261746167:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+261801458:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|Push(N,N)
+261832250:NoOp|NoOp|NoOp|NoOp|NoOp|Pull(N,W)|Push(N,N)
+261869000:NoOp|NoOp|NoOp|NoOp|NoOp|Pull(N,N)|NoOp
+261912000:NoOp|NoOp|NoOp|NoOp|NoOp|Pull(E,N)|NoOp
+262035583:NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+262133292:NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+262216792:NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,W)|NoOp
+262278333:NoOp|NoOp|NoOp|NoOp|NoOp|Push(W,N)|NoOp
+262332083:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262374958:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262417125:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262457208:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262495792:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262547667:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262593208:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262630375:NoOp|NoOp|NoOp|NoOp|NoOp|Push(N,N)|NoOp
+262677708:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+262718458:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+262745250:NoOp|NoOp|NoOp|NoOp|NoOp|Move(E)|NoOp
+262799458:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+262859042:NoOp|NoOp|NoOp|NoOp|NoOp|Move(S)|NoOp
+262900333:NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+262939875:NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+262979917:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+263018375:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+263070375:NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+263127125:NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,S)|NoOp
+263179042:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+263205375:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,S)|NoOp
+263230583:NoOp|NoOp|NoOp|NoOp|NoOp|Push(S,E)|NoOp
+263296250:NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+263348875:NoOp|NoOp|NoOp|NoOp|NoOp|Push(E,E)|NoOp
+#end
+#solved
+true
+#numactions
+89
+#time
+263348875
+#end

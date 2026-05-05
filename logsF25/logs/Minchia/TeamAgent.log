@@ -1,0 +1,66 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+30879042:Move(E)@Move(E)|Move(N)@Move(N)|NoOp@NoOp
+30927542:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+30953959:Move(S)@Move(S)|NoOp@NoOp|NoOp@NoOp
+30980875:Move(E)@Move(E)|NoOp@NoOp|NoOp@NoOp
+30997042:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+31010959:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+31036250:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+31052042:Move(W)@Move(W)|Push(W,W)@Push(W,W)|NoOp@NoOp
+31065209:Pull(S,E)@Pull(S,E)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+31084584:Pull(S,S)@Pull(S,S)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+31106500:Pull(E,S)@Pull(E,S)|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+31126625:Pull(S,E)@Pull(S,E)|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+31144209:Pull(S,S)@Pull(S,S)|Push(W,W)@Push(W,W)|Pull(S,W)@Pull(S,W)
+31163000:Pull(S,S)@Pull(S,S)|Push(W,W)@Push(W,W)|Pull(S,S)@Pull(S,S)
+31191209:Pull(W,S)@Pull(W,S)|Push(W,W)@Push(W,W)|Pull(S,S)@Pull(S,S)
+31203500:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(S,S)@Pull(S,S)
+31217792:NoOp@NoOp|Push(W,W)@Push(W,W)|Pull(W,S)@Pull(W,S)
+31236084:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+31252292:NoOp@NoOp|NoOp@NoOp|Pull(N,W)@Pull(N,W)
+31264709:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+31275917:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+31287334:NoOp@NoOp|NoOp@NoOp|Pull(N,N)@Pull(N,N)
+31297750:NoOp@NoOp|NoOp@NoOp|Pull(W,N)@Pull(W,N)
+31308625:NoOp@NoOp|NoOp@NoOp|Pull(W,W)@Pull(W,W)
+31324709:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+31341250:NoOp@NoOp|NoOp@NoOp|Move(S)@Move(S)
+#end
+#solved
+true
+#numactions
+26
+#time
+31341250
+#end

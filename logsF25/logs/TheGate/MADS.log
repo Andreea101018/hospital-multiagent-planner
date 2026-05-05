@@ -1,0 +1,68 @@
+#domain
+hospital
+#levelname
+MADS
+#colors
+red: 1,A
+blue: 0,B
+pink: 2,C
+#initial
+++++++++++++
++ 1   ++++++
++0    ++++++
++     ++++++
++    B++++++
++   A ++++++
++++++ ++++++
++        2 +
++          +
+++++++     +
++  C       +
+++++++++++++
+#goal
+++++++++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++     ++++++
++++++ ++++++
++B         +
++          +
+++++++     +
++A  C      +
+++++++++++++
+#end
+#clientname
+TheGate
+#actions
+3585661412:Move(E)@Move(E)|Move(E)|Move(S)
+3586165856:Move(E)@Move(E)|Move(E)|Move(W)
+3586428098:Move(S)@Move(S)|Move(S)|Move(W)
+3586539493:Move(S)@Move(S)|Move(S)|Move(S)
+3586751663:Move(E)@Move(E)|NoOp|Move(S)
+3586915508:Push(E,S)@Push(E,S)|NoOp|Move(W)
+3587028046:Push(S,S)@Push(S,S)|Move(S)|Move(W)
+3587206293:Push(S,S)@Push(S,S)|NoOp|Move(W)
+3587377016:Push(S,W)@Push(S,W)|Push(S,E)|Pull(E,E)
+3587478984:Push(W,W)@Push(W,W)|Push(E,S)|Move(E)
+3587550120:Push(W,W)@Push(W,W)|Push(S,S)|Move(N)
+3587651180:Push(W,W)@Push(W,W)|Push(S,S)|Move(S)
+3587720652:Move(E)@Move(E)|Push(S,E)|Move(W)
+3587788086:Move(E)@Move(E)|Push(E,S)|Pull(E,E)
+3587880523:Move(E)@Move(E)|Move(E)|Pull(E,E)
+3588047877:Move(N)@Move(N)|Move(S)|Pull(E,E)
+3588171762:Move(S)@Move(S)|Push(W,S)|NoOp
+3588271703:Move(W)@Move(W)|Push(S,W)|NoOp
+3588372975:Move(W)@Move(W)|Push(W,W)|NoOp
+3588647875:Move(W)@Move(W)|Push(W,W)|Push(W,W)
+3588763661:NoOp@NoOp|Push(W,W)|Push(W,W)
+3588892024:Move(E)@Move(E)|Push(W,W)|Push(W,W)
+#end
+#solved
+true
+#numactions
+22
+#time
+3588892024
+#end

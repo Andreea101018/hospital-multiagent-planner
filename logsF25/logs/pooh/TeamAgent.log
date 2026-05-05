@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+TeamAgent
+#colors
+red: 0, A
+green: 1, B
+blue: 2, C
+#initial
++++++++++++++++
++         0  2+
++ +++++++++A  +
++ +   +   +CB +
++ + + + + +  1+
++ + + + + +   +
++ + + + + +   +
++   +   +     +
++++++++++++++++
+#goal
++++++++++++++++
++B1           +
++ +++++++++   +
++ +   + C +   +
++ + + + + +   +
++ + + +2+ +   +
++ + + + + +   +
++   +   +   0A+
++++++++++++++++
+#end
+#clientname
+pooh
+#actions
+33855709:Move(E)@Move(E)|Move(N)|Move(S)
+33952167:Move(E)@Move(E)|Pull(S,E)|Move(W)
+33980084:NoOp@NoOp|Push(N,N)|Move(S)
+34025084:Move(S)@Move(S)|Push(N,N)|Push(W,S)
+34052834:Pull(S,E)@Pull(S,E)|Push(N,W)|Push(S,S)
+34105542:Pull(S,S)@Pull(S,S)|Push(W,W)|Push(S,S)
+34149000:Pull(S,S)@Pull(S,S)|Push(W,W)|Push(S,S)
+34186709:Pull(S,S)@Pull(S,S)|Push(W,W)|Push(S,E)
+34226084:Pull(W,S)@Pull(W,S)|Push(W,W)|Pull(W,W)
+34318667:Push(E,S)@Push(E,S)|Push(W,W)|Pull(W,W)
+34346625:Push(S,E)@Push(S,E)|Push(W,W)|Pull(N,W)
+34396167:NoOp@NoOp|Push(W,W)|Pull(N,N)
+34443084:NoOp@NoOp|Push(W,W)|Pull(N,N)
+34493292:NoOp@NoOp|Push(W,W)|Pull(N,N)
+34517584:NoOp@NoOp|Push(W,W)|Pull(W,N)
+34591625:NoOp@NoOp|Push(W,W)|Pull(W,W)
+34629042:NoOp@NoOp|NoOp|Move(S)
+34665459:NoOp@NoOp|NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+18
+#time
+34665459
+#end

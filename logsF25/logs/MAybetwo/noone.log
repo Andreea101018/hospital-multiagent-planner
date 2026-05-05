@@ -1,0 +1,48 @@
+#domain
+hospital
+#levelname
+noone
+#colors
+blue:  0, A
+red:   1, B
+green: 2
+#initial
++++++++++
++0    1 +
++ A+++  +
++2      +
++  ++  ++
++       +
++   B   +
++       +
++++++++++
+#goal
++++++++++
++      2+
++  +++  +
++1      +
++  ++  ++
++       +
++ A B   +
++0      +
++++++++++
+#end
+#clientname
+MAybetwo
+#actions
+26661750:Move(E)|Move(S)|Move(N)
+26719125:Push(S,S)|Move(S)|Move(N)
+26794209:Push(S,S)|Move(W)|Move(E)
+26865542:Push(S,S)|Move(W)|Move(E)
+26962125:Push(S,S)|Move(W)|Move(E)
+27010042:Move(W)|Move(W)|Move(E)
+27038959:Move(S)|Move(W)|Move(E)
+27074667:Move(S)|NoOp|Move(E)
+#end
+#solved
+true
+#numactions
+8
+#time
+27074667
+#end

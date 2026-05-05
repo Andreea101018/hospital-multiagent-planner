@@ -1,0 +1,228 @@
+#domain
+hospital
+#levelname
+sigMAS
+#colors
+red: G,B,0,C,H,E,F
+blue: 1,D,A,N,M,R,K
+#initial
++++++++++++++++
+++G ++B0C+H+E++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++ F ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++  +++    +++ +
++  +++    +++ +
++  +++    +++ +
++  ++++++++++ +
++      1      +
++   NMRDAKA   +
++             +
++++++++++++++++
+#goal
++++++++++++++++
+++  ++   + + ++
+++ + ++ ++ + ++
+++ + ++ ++ + ++
+++   ++ ++   ++
+++ ++++ +++ +++
++             +
++             +
++  ++++ +++++ +
++  ++++ +++++ +
++01+++B CE+++ +
++  +++    +++ +
++  +++F GH+++ +
++  ++++++++++ +
++             +
++             +
++   DANMARK   +
++++++++++++++++
+#end
+#clientname
+Lily
+#actions
+383768417:Pull(S,W)@Pull(S,W)|Push(S,S)
+383971209:Pull(S,S)@Pull(S,S)|Push(E,S)
+384086542:Pull(S,S)@Pull(S,S)|Push(E,S)
+384209000:Pull(S,S)@Pull(S,S)|Pull(N,W)
+384313750:Pull(S,S)@Pull(S,S)|Push(S,W)
+384514959:Pull(E,S)@Pull(E,S)|Push(W,W)
+384595459:Push(W,S)@Push(W,S)|Move(E)
+384660584:Push(S,S)@Push(S,S)|Push(S,E)
+384722250:Push(S,S)@Push(S,S)|Move(N)
+384829000:Push(S,S)@Push(S,S)|Move(W)
+384986792:Push(S,E)@Push(S,E)|Move(N)
+385106459:Move(N)@Move(N)|Move(W)
+385209542:Move(N)@Move(N)|Move(W)
+385569375:Move(N)@Move(N)|Push(S,S)
+385650000:Move(N)@Move(N)|Push(W,S)
+385773709:Move(N)@Move(N)|Pull(N,E)
+385867750:Move(N)@Move(N)|Push(S,E)
+385969875:Move(N)@Move(N)|Push(E,N)
+386064792:Move(N)@Move(N)|Pull(W,W)
+386152834:Move(N)@Move(N)|Pull(N,W)
+386249875:Pull(S,E)@Pull(S,E)|Push(E,S)
+386525750:Pull(S,S)@Pull(S,S)|Move(W)
+386645834:Pull(S,S)@Pull(S,S)|Move(W)
+386719959:Pull(S,S)@Pull(S,S)|Move(S)
+386779125:Pull(S,S)@Pull(S,S)|Move(S)
+386944959:Pull(W,S)@Pull(W,S)|Pull(N,W)
+387017292:Push(E,S)@Push(E,S)|Push(E,S)
+387085167:Push(S,S)@Push(S,S)|Move(W)
+387148709:Push(S,S)@Push(S,S)|Pull(E,N)
+387243084:Push(S,S)@Push(S,S)|Pull(N,E)
+387349292:Push(S,W)@Push(S,W)|Pull(W,N)
+387417834:Move(N)@Move(N)|Push(E,E)
+387516167:Move(N)@Move(N)|Push(E,E)
+387782667:Move(N)@Move(N)|Push(E,S)
+388165750:Move(N)@Move(N)|Move(W)
+388505959:Move(W)@Move(W)|Move(W)
+388583834:Move(W)@Move(W)|Move(S)
+388749250:Move(W)@Move(W)|Push(S,W)
+388815959:Move(W)@Move(W)|Pull(N,W)
+388943084:Move(W)@Move(W)|Push(E,S)
+389007000:Move(N)@Move(N)|Move(W)
+389071750:Move(N)@Move(N)|Pull(N,N)
+389127875:Pull(N,W)@Pull(N,W)|Push(S,E)
+389184334:Push(S,S)@Push(S,S)|Move(S)
+389474875:Push(S,S)@Push(S,S)|Pull(N,E)
+389551042:Push(S,E)@Push(S,E)|Push(E,N)
+389640459:Push(E,S)@Push(E,S)|Push(N,E)
+389750375:Push(S,E)@Push(S,E)|Push(E,E)
+390262084:Push(E,E)@Push(E,E)|Push(E,E)
+390466667:Push(E,E)@Push(E,E)|Push(E,S)
+390537084:Push(E,E)@Push(E,E)|Push(S,S)
+390810709:Push(E,S)@Push(E,S)|Move(W)
+391352584:Push(S,S)@Push(S,S)|Move(N)
+391424542:Push(S,S)@Push(S,S)|Move(W)
+391518792:Push(S,S)@Push(S,S)|Move(W)
+391600667:Push(S,W)@Push(S,W)|Move(S)
+391679084:Push(W,S)@Push(W,S)|Move(W)
+391774542:Move(E)@Move(E)|Push(S,W)
+391912125:Move(N)@Move(N)|Push(E,N)
+392408459:Move(N)@Move(N)|Pull(W,W)
+392550709:Move(N)@Move(N)|Pull(N,W)
+392664167:Move(N)@Move(N)|Push(E,S)
+393130542:Move(N)@Move(N)|Push(E,S)
+393223667:Move(W)@Move(W)|Move(W)
+393298709:Move(W)@Move(W)|Move(W)
+393371209:Move(W)@Move(W)|Pull(W,N)
+393443125:Move(W)@Move(W)|Pull(W,W)
+393514792:Move(W)@Move(W)|Move(S)
+393598250:Move(N)@Move(N)|Push(E,E)
+393695292:Move(N)@Move(N)|Pull(W,S)
+393764792:Move(N)@Move(N)|Move(N)
+393833042:Move(N)@Move(N)|Move(N)
+393896167:Pull(S,S)@Pull(S,S)|Move(W)
+393974042:Pull(S,S)@Pull(S,S)|Move(N)
+394128625:Pull(S,S)@Pull(S,S)|Move(N)
+394219084:Pull(S,S)@Pull(S,S)|Move(N)
+394300167:Pull(S,S)@Pull(S,S)|Move(N)
+394386834:Pull(S,S)@Pull(S,S)|NoOp
+394670667:Push(N,E)@Push(N,E)|NoOp
+394776959:Push(E,E)@Push(E,E)|NoOp
+394892042:Push(E,E)@Push(E,E)|NoOp
+394965875:Push(E,E)@Push(E,E)|NoOp
+395048250:Push(E,E)@Push(E,E)|NoOp
+395118834:Push(E,S)@Push(E,S)|NoOp
+395525125:Push(S,S)@Push(S,S)|NoOp
+395617792:Push(S,S)@Push(S,S)|NoOp
+395942834:Push(S,S)@Push(S,S)|NoOp
+396024792:Push(S,S)@Push(S,S)|NoOp
+396092375:Push(S,E)@Push(S,E)|NoOp
+396159792:Move(N)@Move(N)|NoOp
+396226542:Move(N)@Move(N)|NoOp
+396293584:Move(N)@Move(N)|NoOp
+396382125:Move(N)@Move(N)|NoOp
+396462167:Move(N)@Move(N)|NoOp
+396528792:Move(N)@Move(N)|NoOp
+396596792:Move(E)@Move(E)|NoOp
+396662834:Move(E)@Move(E)|NoOp
+396996417:Move(E)@Move(E)|NoOp
+397081625:Move(E)@Move(E)|NoOp
+397167250:Move(N)@Move(N)|NoOp
+397304292:Move(N)@Move(N)|NoOp
+397371750:Move(W)@Move(W)|NoOp
+397458542:Move(N)@Move(N)|NoOp
+397529250:Move(N)@Move(N)|NoOp
+397604709:Pull(S,S)@Pull(S,S)|NoOp
+397698042:Pull(S,S)@Pull(S,S)|NoOp
+397776125:Pull(E,S)@Pull(E,S)|NoOp
+397842459:Pull(S,E)@Pull(S,E)|NoOp
+397907042:Pull(S,S)@Pull(S,S)|NoOp
+397970167:Pull(E,S)@Pull(E,S)|NoOp
+398033084:Push(W,S)@Push(W,S)|NoOp
+398096750:Push(S,W)@Push(S,W)|NoOp
+398160959:Push(W,W)@Push(W,W)|NoOp
+398225209:Push(W,W)@Push(W,W)|NoOp
+398282625:Push(W,W)@Push(W,W)|NoOp
+398339792:Push(W,S)@Push(W,S)|NoOp
+398403584:Push(S,S)@Push(S,S)|NoOp
+398493709:Push(S,S)@Push(S,S)|NoOp
+398564125:Push(S,S)@Push(S,S)|NoOp
+398620834:Push(S,E)@Push(S,E)|NoOp
+398676834:Push(E,E)@Push(E,E)|NoOp
+398736000:Push(E,S)@Push(E,S)|NoOp
+398764625:Move(W)@Move(W)|NoOp
+399065167:Move(W)@Move(W)|NoOp
+399126292:Move(N)@Move(N)|NoOp
+399269209:Move(N)@Move(N)|NoOp
+399328209:Move(N)@Move(N)|NoOp
+399383875:Move(N)@Move(N)|NoOp
+399435584:Move(N)@Move(N)|NoOp
+399483792:Move(E)@Move(E)|NoOp
+399536000:Move(E)@Move(E)|NoOp
+399582292:Move(E)@Move(E)|NoOp
+399632084:Move(E)@Move(E)|NoOp
+399677334:Move(N)@Move(N)|NoOp
+399727917:Move(N)@Move(N)|NoOp
+399772292:Move(E)@Move(E)|NoOp
+399816917:Move(N)@Move(N)|NoOp
+399867834:Move(N)@Move(N)|NoOp
+400099625:Pull(S,S)@Pull(S,S)|NoOp
+400161584:Pull(S,S)@Pull(S,S)|NoOp
+400263084:Pull(W,S)@Pull(W,S)|NoOp
+400350292:Pull(S,W)@Pull(S,W)|NoOp
+400420584:Pull(S,S)@Pull(S,S)|NoOp
+400531250:Pull(S,S)@Pull(S,S)|NoOp
+400635834:Pull(E,S)@Pull(E,S)|NoOp
+400708000:Push(W,W)@Push(W,W)|NoOp
+400754750:Push(W,W)@Push(W,W)|NoOp
+400778959:Push(W,W)@Push(W,W)|NoOp
+400816625:Push(W,W)@Push(W,W)|NoOp
+400867875:Push(W,S)@Push(W,S)|NoOp
+400918250:Push(S,S)@Push(S,S)|NoOp
+401193167:Push(S,S)@Push(S,S)|NoOp
+401254750:Push(S,S)@Push(S,S)|NoOp
+401279709:Push(S,E)@Push(S,E)|NoOp
+401302042:Push(E,E)@Push(E,E)|NoOp
+401323667:Push(E,N)@Push(E,N)|NoOp
+401345250:Move(W)@Move(W)|NoOp
+401421750:Move(W)@Move(W)|NoOp
+401473167:Move(N)@Move(N)|NoOp
+401500959:Move(N)@Move(N)|NoOp
+401522375:Move(N)@Move(N)|NoOp
+401543375:Move(N)@Move(N)|NoOp
+401564250:Move(W)@Move(W)|NoOp
+401585125:Move(W)@Move(W)|NoOp
+401606125:Move(W)@Move(W)|NoOp
+401627292:Move(W)@Move(W)|NoOp
+401648250:Move(W)@Move(W)|NoOp
+401678834:Move(W)@Move(W)|NoOp
+401699875:Move(S)@Move(S)|NoOp
+401721125:Move(S)@Move(S)|NoOp
+401747709:Move(S)@Move(S)|NoOp
+#end
+#solved
+true
+#numactions
+171
+#time
+401747709
+#end

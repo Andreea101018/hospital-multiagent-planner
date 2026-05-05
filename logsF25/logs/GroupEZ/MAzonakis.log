@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+GroupEZ
+#actions
+279776700:Move(W)@Move(W)|Move(W)
+280003700:Move(W)@Move(W)|Move(W)
+280153100:Move(W)@Move(W)|Move(W)
+280307100:Move(W)@Move(W)|Move(W)
+280443400:Move(W)@Move(W)|Move(W)
+280735100:Move(W)@Move(W)|Move(W)
+280948600:Move(W)@Move(W)|Move(W)
+281107100:Move(W)@Move(W)|Move(W)
+281237200:Move(W)@Move(W)|Move(W)
+281339200:Move(W)@Move(W)|Move(W)
+281464700:Move(W)@Move(W)|Move(W)
+281604100:Move(W)@Move(W)|Move(W)
+281719200:Move(W)@Move(W)|Move(W)
+281853800:Move(W)@Move(W)|Move(W)
+281964000:Move(W)@Move(W)|Move(W)
+282061000:Move(S)@Move(S)|Move(W)
+282214200:Move(S)@Move(S)|Move(W)
+282349300:Move(S)@Move(S)|Move(N)
+282471600:Move(S)@Move(S)|Move(W)
+282613900:Move(W)@Move(W)|Move(N)
+282758000:Move(W)@Move(W)|Move(N)
+282881200:Move(W)@Move(W)|Move(N)
+283137300:Move(W)@Move(W)|Move(E)
+283258100:Move(W)@Move(W)|Move(E)
+283374600:Push(N,N)@Push(N,N)|Move(E)
+283497500:Push(N,N)@Push(N,N)|Move(E)
+283624200:Push(N,W)@Push(N,W)|Move(E)
+283752500:Push(W,N)@Push(W,N)|Move(E)
+283857300:Push(N,N)@Push(N,N)|Move(E)
+283989000:Push(N,W)@Push(N,W)|Move(E)
+284111500:Push(W,W)@Push(W,W)|Move(E)
+284258300:Push(W,W)@Push(W,W)|Move(E)
+284382900:Push(W,W)@Push(W,W)|Move(N)
+284526900:Push(W,N)@Push(W,N)|Move(N)
+284647900:Move(E)@Move(E)|Move(N)
+284735400:Move(E)@Move(E)|Move(N)
+284815700:Move(E)@Move(E)|Move(E)
+284920400:Move(E)@Move(E)|Move(E)
+285012600:Move(S)@Move(S)|Move(E)
+285095200:Move(S)@Move(S)|Move(E)
+285207000:Move(S)@Move(S)|Move(E)
+285313400:Pull(E,N)@Pull(E,N)|Move(E)
+285432500:Push(W,N)@Push(W,N)|Move(E)
+285541600:Push(N,N)@Push(N,N)|Move(E)
+285648300:Push(N,N)@Push(N,N)|Move(E)
+285779200:Push(N,W)@Push(N,W)|Move(E)
+285863400:Push(W,W)@Push(W,W)|Move(E)
+285942200:Push(W,W)@Push(W,W)|Move(E)
+286051600:Push(W,W)@Push(W,W)|Move(E)
+286280000:NoOp@NoOp|Move(E)
+286507000:NoOp@NoOp|Move(E)
+286596100:NoOp@NoOp|Move(E)
+286729900:NoOp@NoOp|Move(N)
+286832000:NoOp@NoOp|Move(N)
+286927000:NoOp@NoOp|Pull(S,S)
+287031600:NoOp@NoOp|Pull(W,S)
+287109900:NoOp@NoOp|Push(E,S)
+287199200:NoOp@NoOp|Push(S,W)
+287280800:NoOp@NoOp|Push(W,W)
+287378700:NoOp@NoOp|Push(W,W)
+287519900:NoOp@NoOp|Push(W,W)
+287671800:NoOp@NoOp|Push(W,W)
+287817000:NoOp@NoOp|Push(W,W)
+287936900:NoOp@NoOp|Push(W,W)
+288083400:NoOp@NoOp|Push(W,W)
+288191400:NoOp@NoOp|Push(W,W)
+288320800:NoOp@NoOp|Push(W,W)
+288398700:NoOp@NoOp|Push(W,W)
+288473900:NoOp@NoOp|Push(W,W)
+288543300:NoOp@NoOp|Push(W,W)
+288634600:NoOp@NoOp|Push(W,W)
+288717000:NoOp@NoOp|Push(W,W)
+288784300:NoOp@NoOp|Push(W,W)
+288853900:NoOp@NoOp|Push(W,S)
+288921200:NoOp@NoOp|Push(S,S)
+288989300:NoOp@NoOp|Push(S,S)
+289057200:NoOp@NoOp|Push(S,W)
+289123400:NoOp@NoOp|Push(W,W)
+289190700:NoOp@NoOp|Push(W,W)
+289253800:NoOp@NoOp|Push(W,W)
+289328800:NoOp@NoOp|Push(W,W)
+289407600:NoOp@NoOp|Push(W,W)
+289502100:NoOp@NoOp|Push(W,N)
+289575200:NoOp@NoOp|Push(N,N)
+289682600:NoOp@NoOp|Push(N,N)
+289762400:NoOp@NoOp|Push(N,N)
+289834200:NoOp@NoOp|Push(N,N)
+289905800:NoOp@NoOp|Push(N,N)
+289985700:NoOp@NoOp|Push(N,N)
+290123700:NoOp@NoOp|Push(N,N)
+290221900:NoOp@NoOp|Push(N,N)
+290290100:NoOp@NoOp|Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+290290100
+#end

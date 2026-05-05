@@ -1,0 +1,122 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+help
+#actions
+221505130:Move(E)@Move(E)|Move(E)|Move(S)
+221694416:Move(S)@Move(S)|Move(E)|Pull(W,N)
+221848795:Move(E)@Move(E)|Move(N)|Push(S,W)
+221968089:Move(S)@Move(S)|Move(N)|Push(W,W)
+222089908:Move(S)@Move(S)|Move(E)|Push(W,S)
+222250560:Pull(N,N)@Pull(N,N)|Pull(E,S)|Push(S,W)
+222376106:Pull(E,N)@Pull(E,N)|Pull(E,S)|Push(W,S)
+222485361:Pull(S,E)@Pull(S,E)|Pull(E,S)|Push(S,S)
+222625213:Push(N,E)@Push(N,E)|Pull(E,E)|Push(S,S)
+222769164:Push(E,E)@Push(E,E)|Pull(E,E)|Push(S,W)
+222886073:Push(E,N)@Push(E,N)|Pull(E,E)|Push(W,S)
+223011749:Push(N,N)@Push(N,N)|Pull(N,E)|Move(E)
+223151672:Push(N,E)@Push(N,E)|Pull(N,N)|Move(E)
+223319697:Push(E,E)@Push(E,E)|Pull(W,N)|Move(E)
+223529852:Push(E,E)@Push(E,E)|Pull(W,W)|Move(E)
+223691936:Move(S)@Move(S)|Move(N)|Move(N)
+223864420:Move(W)@Move(W)|Move(E)|Move(E)
+224017307:Move(W)@Move(W)|Move(E)|Move(N)
+224211642:Move(S)@Move(S)|Move(S)|Move(N)
+224491057:Move(S)@Move(S)|Move(S)|Move(N)
+224668099:Move(W)@Move(W)|Move(S)|Pull(W,S)
+224807972:Move(W)@Move(W)|Move(W)|Pull(W,W)
+224929460:Move(S)@Move(S)|Move(W)|Pull(W,W)
+225042672:Move(W)@Move(W)|Move(W)|Pull(W,W)
+225176864:Move(W)@Move(W)|Move(W)|Pull(S,W)
+225307961:Pull(N,N)@Pull(N,N)|Pull(E,E)|Pull(S,S)
+225428787:Pull(E,N)@Pull(E,N)|Pull(E,E)|Pull(S,S)
+225551468:Pull(E,E)@Pull(E,E)|Pull(E,E)|Pull(S,S)
+225669419:Pull(N,E)@Pull(N,E)|Pull(E,E)|Pull(W,S)
+225790406:Pull(N,N)@Pull(N,N)|Pull(N,E)|Push(E,S)
+225971356:Pull(E,N)@Pull(E,N)|Pull(N,N)|NoOp
+226134402:Pull(N,E)@Pull(N,E)|Pull(N,N)|NoOp
+226274255:Push(S,E)@Push(S,E)|Pull(E,N)|NoOp
+226417273:Push(E,E)@Push(E,E)|Push(W,W)|NoOp
+226536818:Push(E,E)@Push(E,E)|Push(W,W)|NoOp
+226690937:NoOp@NoOp|Push(W,S)|NoOp
+226880523:NoOp@NoOp|Move(E)|NoOp
+227014575:NoOp@NoOp|Move(E)|NoOp
+227135302:NoOp@NoOp|Move(S)|NoOp
+227297686:NoOp@NoOp|Move(S)|NoOp
+227438711:NoOp@NoOp|Move(S)|NoOp
+227589164:NoOp@NoOp|Move(W)|NoOp
+227730319:NoOp@NoOp|Move(W)|NoOp
+227865202:NoOp@NoOp|Move(W)|NoOp
+228020053:NoOp@NoOp|Move(W)|NoOp
+228176196:NoOp@NoOp|Move(W)|NoOp
+228315417:NoOp@NoOp|Pull(E,E)|NoOp
+228445381:NoOp@NoOp|Pull(E,E)|NoOp
+228585064:NoOp@NoOp|Pull(E,E)|NoOp
+228709567:NoOp@NoOp|Pull(E,E)|NoOp
+228854560:NoOp@NoOp|Pull(E,E)|NoOp
+228974785:NoOp@NoOp|Pull(N,E)|NoOp
+229122092:NoOp@NoOp|Pull(N,N)|NoOp
+229258789:NoOp@NoOp|Pull(N,N)|NoOp
+229391548:NoOp@NoOp|Pull(W,N)|NoOp
+229504410:NoOp@NoOp|Pull(W,W)|NoOp
+229669991:NoOp@NoOp|Pull(N,W)|NoOp
+229784997:NoOp@NoOp|Push(S,W)|NoOp
+229893761:NoOp@NoOp|Push(W,S)|NoOp
+230023064:NoOp@NoOp|NoOp|Move(E)
+230152817:NoOp@NoOp|NoOp|Move(S)
+#end
+#solved
+true
+#numactions
+61
+#time
+230152817
+#end

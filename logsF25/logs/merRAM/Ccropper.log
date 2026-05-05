@@ -1,0 +1,123 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+merRAM
+#actions
+1451499600:Move(E)@Move(E)|Move(W)|Move(S)|Move(N)
+1452105300:Push(E,S)@Push(E,S)|Push(W,N)|Push(S,W)|Push(N,E)
+1452317300:Push(S,W)@Push(S,W)|Push(N,E)|Push(W,N)|Push(E,S)
+1452532200:Push(W,S)@Push(W,S)|Push(E,N)|Push(N,W)|Push(S,E)
+1452739600:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+1452909700:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|Push(E,E)
+1453074300:Push(S,E)@Push(S,E)|Push(N,E)|Push(W,N)|Push(E,N)
+1453246600:Push(E,S)@Push(E,S)|Push(E,N)|Push(N,W)|Push(N,E)
+1453558500:Push(S,E)@Push(S,E)|Push(N,E)|NoOp|Push(E,N)
+1453736400:NoOp@NoOp|Push(E,N)|NoOp|Push(N,E)
+1453896000:NoOp@NoOp|Push(N,E)|NoOp|Push(E,N)
+1454116300:NoOp@NoOp|NoOp|NoOp|Push(N,E)
+1454306800:NoOp@NoOp|NoOp|Pull(S,E)|Push(E,E)
+1454460300:Push(E,S)@Push(E,S)|NoOp|NoOp|NoOp
+1454626800:NoOp@NoOp|NoOp|Pull(E,S)|Push(E,S)
+1454748600:Push(S,E)@Push(S,E)|NoOp|NoOp|NoOp
+1454921300:NoOp@NoOp|NoOp|Pull(E,E)|Push(S,E)
+1455089200:Push(E,S)@Push(E,S)|NoOp|NoOp|NoOp
+1455229700:NoOp@NoOp|Pull(S,W)|NoOp|Push(E,S)
+1455384900:Push(S,S)@Push(S,S)|NoOp|NoOp|NoOp
+1455561700:NoOp@NoOp|Pull(W,S)|NoOp|Push(S,E)
+1455752600:Push(S,W)@Push(S,W)|NoOp|NoOp|NoOp
+1455982700:NoOp@NoOp|Pull(S,W)|Push(W,W)|NoOp
+1456193100:Push(W,S)@Push(W,S)|NoOp|NoOp|NoOp
+1456437700:NoOp@NoOp|Pull(W,S)|Push(W,S)|NoOp
+1456594600:Push(S,W)@Push(S,W)|NoOp|NoOp|NoOp
+1456792000:NoOp@NoOp|NoOp|Push(S,W)|NoOp
+1456997600:NoOp@NoOp|NoOp|NoOp|Push(E,S)
+1457152000:NoOp@NoOp|NoOp|NoOp|Push(S,E)
+1457277600:NoOp@NoOp|NoOp|NoOp|Push(E,E)
+1457431500:NoOp@NoOp|NoOp|NoOp|Push(E,E)
+1457539100:NoOp@NoOp|NoOp|NoOp|Push(E,E)
+1457633800:NoOp@NoOp|NoOp|NoOp|Push(E,E)
+1457724900:NoOp@NoOp|NoOp|NoOp|Push(E,E)
+1457818300:NoOp@NoOp|Pull(S,W)|NoOp|Push(E,E)
+1457912900:Push(W,S)@Push(W,S)|Push(N,W)|NoOp|NoOp
+1458005700:NoOp@NoOp|Push(W,N)|Push(W,S)|NoOp
+1458127700:Push(S,W)@Push(S,W)|Push(N,W)|NoOp|NoOp
+1458229600:Push(W,S)@Push(W,S)|Push(W,N)|Push(S,W)|NoOp
+1458332000:Push(S,S)@Push(S,S)|Push(N,W)|Push(W,S)|NoOp
+1458428200:Push(S,S)@Push(S,S)|Push(W,N)|Push(S,W)|NoOp
+1458526700:Push(S,S)@Push(S,S)|Push(N,N)|Push(W,W)|NoOp
+1458755900:Push(S,S)@Push(S,S)|Push(N,E)|Push(W,N)|NoOp
+1458867200:Push(S,S)@Push(S,S)|Push(E,N)|Push(N,W)|NoOp
+1458982400:Push(S,S)@Push(S,S)|Push(N,E)|Push(W,N)|NoOp
+1459097200:NoOp@NoOp|Push(E,N)|Push(N,W)|NoOp
+1459276100:NoOp@NoOp|Push(N,E)|Push(W,N)|NoOp
+1459468800:NoOp@NoOp|Push(E,N)|Push(N,W)|NoOp
+1459594400:NoOp@NoOp|Push(N,N)|Push(W,W)|NoOp
+1459749100:NoOp@NoOp|Push(N,N)|Push(W,W)|NoOp
+1459882600:NoOp@NoOp|Push(N,N)|Push(W,W)|NoOp
+1459985500:NoOp@NoOp|Push(N,N)|Push(W,W)|NoOp
+1460096100:NoOp@NoOp|Push(N,N)|Push(W,W)|NoOp
+1460193900:NoOp@NoOp|Push(N,N)|Push(W,W)|NoOp
+#end
+#solved
+true
+#numactions
+54
+#time
+1460193900
+#end

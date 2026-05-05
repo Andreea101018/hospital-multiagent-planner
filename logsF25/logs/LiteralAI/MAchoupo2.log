@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+LiteralAI
+#actions
+190456599:Move(E)@Move(E)|Move(W)@Move(W)
+190569999:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)
+190662999:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+190737700:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+190827900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+190911100:Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+191012800:Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+191110800:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191203900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191279400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191361300:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191438000:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191513900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191592400:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191677900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191760500:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+191832599:Move(E)@Move(E)|Move(W)@Move(W)
+191907200:Move(E)@Move(E)|Move(W)@Move(W)
+191988800:Move(E)@Move(E)|Move(W)@Move(W)
+192056600:Move(E)@Move(E)|Move(W)@Move(W)
+192129899:Move(N)@Move(N)|Move(S)@Move(S)
+192196700:Move(N)@Move(N)|Move(S)@Move(S)
+192270400:Move(N)@Move(N)|Move(S)@Move(S)
+192425000:Move(N)@Move(N)|Move(S)@Move(S)
+192507300:Move(N)@Move(N)|Move(S)@Move(S)
+192564200:Move(W)@Move(W)|Move(E)@Move(E)
+192615600:Move(W)@Move(W)|Move(S)@Move(S)
+192677800:Move(W)@Move(W)|NoOp@NoOp
+192731700:Move(W)@Move(W)|NoOp@NoOp
+192791000:Move(W)@Move(W)|NoOp@NoOp
+192844000:Move(N)@Move(N)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+192844000
+#end

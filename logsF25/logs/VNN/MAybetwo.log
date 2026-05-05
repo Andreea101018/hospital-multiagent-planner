@@ -1,0 +1,58 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+VNN
+#actions
+80585500:Move(E)@Move(E)|Move(W)|Move(N)
+80886250:Move(E)@Move(E)|Move(W)|Move(N)
+81034583:Move(E)@Move(E)|Move(W)|Move(N)
+81149292:Move(E)@Move(E)|Move(W)|Move(N)
+81251333:Move(E)@Move(E)|Move(W)|Move(E)
+81358208:Move(E)@Move(E)|Move(E)|Move(E)
+81445667:Move(E)@Move(E)|Move(W)|Move(N)
+81549750:Push(E,S)@Push(E,S)|Move(W)|Move(N)
+81652917:Push(S,E)@Push(S,E)|Move(W)|Move(E)
+81772333:Push(E,S)@Push(E,S)|Move(N)|Move(E)
+81878625:NoOp@NoOp|Move(N)|Move(E)
+82026667:NoOp@NoOp|Move(N)|Move(E)
+82134542:NoOp@NoOp|Push(W,N)|Move(E)
+82213208:NoOp@NoOp|NoOp|Move(E)
+82306125:NoOp@NoOp|NoOp|Move(S)
+82395167:NoOp@NoOp|NoOp|Move(S)
+82501083:NoOp@NoOp|NoOp|Move(S)
+82629667:NoOp@NoOp|NoOp|Push(E,S)
+#end
+#solved
+true
+#numactions
+18
+#time
+82629667
+#end

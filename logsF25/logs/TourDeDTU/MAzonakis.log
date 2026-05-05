@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+TourDeDTU
+#actions
+292162900:Move(W)@Move(W)|Move(N)@Move(N)
+292324200:Move(W)@Move(W)|Move(W)@Move(W)
+292436700:Move(W)@Move(W)|Move(W)@Move(W)
+292484700:Move(S)@Move(S)|Move(W)@Move(W)
+292592200:Move(W)@Move(W)|Move(W)@Move(W)
+292633900:Move(W)@Move(W)|Move(W)@Move(W)
+292748000:Move(W)@Move(W)|Move(W)@Move(W)
+292786900:Move(W)@Move(W)|Move(W)@Move(W)
+292821500:Move(W)@Move(W)|Move(W)@Move(W)
+292855600:Move(W)@Move(W)|Move(W)@Move(W)
+292894300:Move(W)@Move(W)|Move(W)@Move(W)
+292928300:Move(W)@Move(W)|Move(W)@Move(W)
+292961900:Move(W)@Move(W)|Move(W)@Move(W)
+292995900:Move(W)@Move(W)|Move(W)@Move(W)
+293029300:Move(W)@Move(W)|Move(W)@Move(W)
+293063000:Move(W)@Move(W)|Move(W)@Move(W)
+293096500:Move(S)@Move(S)|Move(W)@Move(W)
+293130300:Move(S)@Move(S)|Move(W)@Move(W)
+293164300:Move(S)@Move(S)|Move(W)@Move(W)
+293211200:Move(W)@Move(W)|Move(N)@Move(N)
+293433700:Move(W)@Move(W)|Move(N)@Move(N)
+293664700:Move(W)@Move(W)|Move(N)@Move(N)
+293823000:Move(W)@Move(W)|Move(N)@Move(N)
+293930800:Move(W)@Move(W)|Move(E)@Move(E)
+293994600:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+294056100:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+294132800:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+294179500:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+294218400:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+294256100:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+294297500:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+294331800:Push(W,N)@Push(W,N)|Move(E)@Move(E)
+294365500:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+294404200:Push(W,W)@Push(W,W)|Move(N)@Move(N)
+294439100:Move(E)@Move(E)|Move(N)@Move(N)
+294478300:Move(S)@Move(S)|Move(N)@Move(N)
+294512400:Move(E)@Move(E)|Move(E)@Move(E)
+294546000:Move(E)@Move(E)|Move(N)@Move(N)
+294579500:Move(S)@Move(S)|Move(E)@Move(E)
+294615500:Move(S)@Move(S)|Move(E)@Move(E)
+294653500:Move(S)@Move(S)|Move(E)@Move(E)
+294695300:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+294729900:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+294764200:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+294804000:Pull(E,N)@Pull(E,N)|Move(E)@Move(E)
+294838600:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+294872400:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+294905100:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+294939300:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+294979000:NoOp@NoOp|Move(E)@Move(E)
+295013200:NoOp@NoOp|Move(E)@Move(E)
+295046400:NoOp@NoOp|Move(E)@Move(E)
+295079500:NoOp@NoOp|Move(E)@Move(E)
+295112900:NoOp@NoOp|Move(N)@Move(N)
+295151300:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+295190100:NoOp@NoOp|Pull(E,S)@Pull(E,S)
+295223800:NoOp@NoOp|Push(W,W)@Push(W,W)
+295257200:NoOp@NoOp|Push(W,W)@Push(W,W)
+295290200:NoOp@NoOp|Push(W,W)@Push(W,W)
+295323100:NoOp@NoOp|Push(W,W)@Push(W,W)
+295355900:NoOp@NoOp|Push(W,W)@Push(W,W)
+295393400:NoOp@NoOp|Push(W,S)@Push(W,S)
+295566600:NoOp@NoOp|Push(S,W)@Push(S,W)
+295616500:NoOp@NoOp|Push(W,W)@Push(W,W)
+295651600:NoOp@NoOp|Push(W,W)@Push(W,W)
+295685800:NoOp@NoOp|Push(W,W)@Push(W,W)
+295719000:NoOp@NoOp|Push(W,W)@Push(W,W)
+295753200:NoOp@NoOp|Push(W,W)@Push(W,W)
+295786700:NoOp@NoOp|Push(W,W)@Push(W,W)
+295820300:NoOp@NoOp|Push(W,W)@Push(W,W)
+295854100:NoOp@NoOp|Push(W,W)@Push(W,W)
+295887500:NoOp@NoOp|Push(W,W)@Push(W,W)
+295921900:NoOp@NoOp|Push(W,W)@Push(W,W)
+295955300:NoOp@NoOp|Push(W,S)@Push(W,S)
+295994900:NoOp@NoOp|Push(S,S)@Push(S,S)
+296028900:NoOp@NoOp|Push(S,S)@Push(S,S)
+296062500:NoOp@NoOp|Push(S,W)@Push(S,W)
+296096400:NoOp@NoOp|Push(W,W)@Push(W,W)
+296129800:NoOp@NoOp|Push(W,W)@Push(W,W)
+296163400:NoOp@NoOp|Push(W,W)@Push(W,W)
+296196600:NoOp@NoOp|Push(W,W)@Push(W,W)
+296230600:NoOp@NoOp|Push(W,N)@Push(W,N)
+296275400:NoOp@NoOp|Push(N,N)@Push(N,N)
+296312300:NoOp@NoOp|Push(N,N)@Push(N,N)
+296349000:NoOp@NoOp|Push(N,N)@Push(N,N)
+296382400:NoOp@NoOp|Push(N,N)@Push(N,N)
+296414600:NoOp@NoOp|Push(N,N)@Push(N,N)
+296448000:NoOp@NoOp|Push(N,W)@Push(N,W)
+296566400:NoOp@NoOp|Push(W,N)@Push(W,N)
+296647100:NoOp@NoOp|Push(N,N)@Push(N,N)
+296695700:NoOp@NoOp|Push(N,N)@Push(N,N)
+296740900:NoOp@NoOp|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+296740900
+#end

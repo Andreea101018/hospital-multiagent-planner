@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+DASH
+#actions
+307877250:Move(E)@Move(E)|Move(W)@Move(W)
+307922917:Pull(N,N)@Pull(N,N)|Pull(W,S)@Pull(W,S)
+307958750:Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+307987875:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308003417:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308017500:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+308033542:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+308051875:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308079292:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308095292:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308110584:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308127709:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308139584:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308152500:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308166042:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308177750:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+308190334:Move(E)@Move(E)|Move(W)@Move(W)
+308202917:Move(E)@Move(E)|Move(W)@Move(W)
+308218584:Move(E)@Move(E)|Move(W)@Move(W)
+308232209:Move(E)@Move(E)|Move(W)@Move(W)
+308244167:Move(N)@Move(N)|Move(S)@Move(S)
+308257209:Move(N)@Move(N)|Move(S)@Move(S)
+308270667:Move(N)@Move(N)|Move(S)@Move(S)
+308283667:Move(N)@Move(N)|Move(S)@Move(S)
+308298750:Move(N)@Move(N)|Move(S)@Move(S)
+308311625:Move(N)@Move(N)|Move(E)@Move(E)
+308323750:Move(W)@Move(W)|Move(S)@Move(S)
+308341000:Move(W)@Move(W)|NoOp@NoOp
+308352667:Move(W)@Move(W)|NoOp@NoOp
+308365042:Move(W)@Move(W)|NoOp@NoOp
+308381959:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+308381959
+#end

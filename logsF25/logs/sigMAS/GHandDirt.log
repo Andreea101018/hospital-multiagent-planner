@@ -1,0 +1,96 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+sigMAS
+#actions
+185304208:Move(S)|Move(E)|Move(W)
+185369833:Move(E)|Move(E)|Move(S)
+185427625:Move(S)|Move(N)|Push(S,S)
+185472208:Move(E)|Move(N)|Push(S,W)
+185525458:Move(S)|Move(E)|Push(W,W)
+185576375:Pull(W,N)|Move(E)|Push(W,W)
+185629666:Push(E,E)|Move(E)|Push(W,W)
+185659291:Push(E,N)|Push(N,N)|Push(W,S)
+185684708:Push(N,N)|Push(N,E)|Push(S,S)
+185708208:Push(N,E)|Move(W)|Push(S,S)
+185733125:Push(E,E)|Move(W)|Push(S,S)
+185755666:Push(E,N)|Pull(N,N)|Push(S,E)
+185779000:Push(N,E)|Pull(N,N)|Move(N)
+185808625:Push(E,E)|Push(S,E)|Move(E)
+185876250:Push(E,E)|Push(E,E)|Move(E)
+185905791:Move(W)|Push(E,E)|Move(S)
+185932041:Move(W)|Push(E,E)|NoOp
+185956375:Move(W)|Push(E,S)|NoOp
+185979625:Move(S)|Move(W)|NoOp
+186003083:Move(S)|Pull(W,N)|NoOp
+186027083:Move(W)|Push(E,E)|NoOp
+186067041:Move(S)|Push(E,E)|NoOp
+186091541:Move(S)|Push(E,S)|NoOp
+186117833:Move(S)|NoOp|NoOp
+186141083:Move(W)|NoOp|NoOp
+186163875:Pull(N,E)|NoOp|NoOp
+186187000:Pull(N,N)|NoOp|NoOp
+186235541:Pull(E,N)|NoOp|NoOp
+186261458:Push(W,N)|NoOp|NoOp
+186299750:Push(N,E)|NoOp|NoOp
+186336625:Push(E,N)|NoOp|NoOp
+186371500:Push(N,E)|NoOp|NoOp
+186450458:Push(E,E)|NoOp|NoOp
+186571750:Push(E,E)|NoOp|NoOp
+186636333:Push(E,E)|NoOp|NoOp
+#end
+#solved
+false
+#numactions
+35
+#time
+186636333
+#end

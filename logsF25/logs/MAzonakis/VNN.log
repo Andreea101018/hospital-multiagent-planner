@@ -1,0 +1,110 @@
+#domain
+hospital
+#levelname
+VNN
+#colors
+blue: 0,D
+cyan: C,1
+orange: A,3
+green: 2,B
+#initial
++++++++++++++++++++++++
++                     +
++0  ++++       ++++C  +
++  +++++++++++++++++  +
++1  ++++       ++++   +
++                     +
++                     +
++   ++++       ++++A  +
++  +++++++++++++++++  +
++   ++++       ++++D  +
++                     +
++                     +
++2  ++++       ++++   +
++  +++++++++++++++++  +
++3  ++++       ++++B  +
++                     +
++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++
++                     +
++  D++++       ++++   +
++  +++++++++++++++++  +
++  C++++       ++++   +
++                     +
++                     +
++   ++++       ++++   +
++  +++++++++++++++++  +
++   ++++       ++++   +
++                     +
++                     +
++  B++++       ++++   +
++  +++++++++++++++++  +
++  A++++       ++++   +
++                     +
++++++++++++++++++++++++
+#end
+#clientname
+MAzonakis
+#actions
+4541229750:Move(S)@Move(S)|Move(E)|Move(E)|Move(N)
+4541454000:Move(S)@Move(S)|Move(N)|Move(S)|Move(N)
+4541632000:Move(E)@Move(E)|Move(N)|Move(S)|Move(N)
+4541797791:Move(E)@Move(E)|Move(E)|Move(S)|Move(N)
+4541973166:Move(S)@Move(S)|Move(N)|Move(E)|Move(N)
+4542192875:Move(S)@Move(S)|Move(E)|Move(E)|Move(E)
+4542373166:Move(E)@Move(E)|Move(E)|Move(E)|Move(N)
+4542762500:Move(E)@Move(E)|Move(E)|Move(E)|Move(N)
+4542935041:Move(E)@Move(E)|Move(E)|Move(E)|Move(N)
+4543059208:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4543176000:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4543286208:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4543442041:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4543666333:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4543824208:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4543964041:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4544150875:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4544431166:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4544632208:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4544835875:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4545162125:Move(E)@Move(E)|Move(E)|Move(E)|Move(E)
+4545371291:Move(E)@Move(E)|Pull(W,N)|Push(N,E)|Move(E)
+4545557416:Move(E)@Move(E)|Pull(W,W)|Push(E,N)|Move(E)
+4546154958:Move(S)@Move(S)|Pull(W,W)|Push(N,N)|Move(E)
+4546388083:Move(S)@Move(S)|Pull(W,W)|Push(N,N)|Move(E)
+4546612500:Move(S)@Move(S)|Pull(W,W)|Push(N,W)|Move(E)
+4546887125:Pull(S,E)@Pull(S,E)|Pull(S,W)|Push(W,W)|Pull(N,N)
+4547127750:Push(N,N)@Push(N,N)|Push(N,W)|Push(W,W)|Push(S,W)
+4547363166:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+4547552625:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+4547743916:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+4548006916:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+4548211125:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+4548391291:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+4549004583:Push(N,N)@Push(N,N)|Push(W,W)|Push(W,W)|Push(W,W)
+4549223416:Push(N,W)@Push(N,W)|Push(W,W)|Push(W,W)|Push(W,W)
+4549544750:Push(W,W)@Push(W,W)|Push(W,W)|Push(W,W)|Push(W,W)
+4549693333:Push(W,W)@Push(W,W)|Push(W,W)|Push(W,W)|Push(W,W)
+4549939125:Push(W,W)@Push(W,W)|Push(W,W)|Push(W,W)|Push(W,W)
+4550090458:Push(W,W)@Push(W,W)|Push(W,S)|Push(W,W)|Push(W,W)
+4550287416:Push(W,W)@Push(W,W)|Push(S,S)|Push(W,W)|Push(W,W)
+4550390708:Push(W,W)@Push(W,W)|Push(S,S)|Push(W,W)|Push(W,W)
+4550486416:Push(W,W)@Push(W,W)|Push(S,E)|Push(W,S)|Push(W,W)
+4550810083:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(W,W)
+4551012166:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(W,S)
+4551200250:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+4551301750:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+4551479875:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+4551582750:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+4551741541:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+4551826666:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+4551936375:Push(W,W)@Push(W,W)|NoOp|NoOp|Push(S,S)
+4552026541:Push(W,S)@Push(W,S)|NoOp|NoOp|Push(S,E)
+#end
+#solved
+true
+#numactions
+53
+#time
+4552026541
+#end

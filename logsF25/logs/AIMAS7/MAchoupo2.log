@@ -1,0 +1,82 @@
+#domain
+hospital
+#levelname
+MAchoupo2
+#colors
+green: 0,C
+pink: B,1
+#initial
++++++++++++++++++++++++++++
++            +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +  0  +    +    +
++           B+C           +
++    +    +  1  +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +            +
++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++
++0           +            +
++            +            +
+++++++       +       ++++++
++    +      +++      +    +
+++   +     +   +     +   ++
++    +    +     +    +    +
++C           +           B+
++    +    +     +    +    +
+++   +     +   +     +   ++
++    +      +++      +    +
+++++++       +       ++++++
++            +            +
++            +       1    +
++++++++++++++++++++++++++++
+#end
+#clientname
+AIMAS7
+#actions
+715984700:Move(E)@Move(E)|Move(W)@Move(W)
+716122900:Pull(N,N)@Pull(N,N)|Pull(W,S)@Pull(W,S)
+716254200:Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+716372600:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716467200:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716511800:Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+716555400:Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+716592600:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716626900:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716661800:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716694200:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716757600:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716838000:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+716917800:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+717000100:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+717071800:Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+717139900:Move(E)@Move(E)|Move(W)@Move(W)
+717193000:Move(E)@Move(E)|Move(W)@Move(W)
+717231600:Move(E)@Move(E)|Move(W)@Move(W)
+717290400:Move(E)@Move(E)|Move(W)@Move(W)
+717358700:Move(N)@Move(N)|Move(S)@Move(S)
+717412200:Move(N)@Move(N)|Move(S)@Move(S)
+717488500:Move(N)@Move(N)|Move(S)@Move(S)
+717587000:Move(N)@Move(N)|Move(S)@Move(S)
+717695800:Move(N)@Move(N)|Move(S)@Move(S)
+717793200:Move(N)@Move(N)|Move(E)@Move(E)
+717880000:Move(W)@Move(W)|Move(S)@Move(S)
+717954400:Move(W)@Move(W)|NoOp@NoOp
+718086500:Move(W)@Move(W)|NoOp@NoOp
+718125800:Move(W)@Move(W)|NoOp@NoOp
+718169500:Move(W)@Move(W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+31
+#time
+718169500
+#end

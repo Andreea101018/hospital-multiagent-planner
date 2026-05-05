@@ -1,0 +1,155 @@
+#domain
+hospital
+#levelname
+Ccropper
+#colors
+blue: 0, A
+red: 1, B
+green: 2, C
+purple: 3, D
+#initial
++++++++++++++++++++++++++
+++++++++++++ ++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++ 0 A ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +D ++  +++  ++ 2+ +++
+++        +++++        ++
++++ +3 ++  +++  ++ C+ +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++ B 1 ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++ ++++++++++++
++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++
+++++++++++++B++++++++++++
++++++++++ +   + +++++++++
++++++++++  + +  +++++++++
+++++++++++     ++++++++++
++++++++++++   +++++++++++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++  ++++++   ++++++  +++
+++++  ++++  +  ++++  ++++
++++ +  ++  +++  ++  + +++
+++C       +++++       D++
++++ +  ++  +++  ++  + +++
+++++  ++++  +  ++++  ++++
++++  ++++++   ++++++  +++
+++++++++++++ ++++++++++++
+++++++++++++ ++++++++++++
++++++++++++   +++++++++++
+++++++++++     ++++++++++
++++++++++  + +  +++++++++
++++++++++ +   + +++++++++
+++++++++++++A++++++++++++
++++++++++++++++++++++++++
+#end
+#clientname
+DECrunchy
+#actions
+2599930002:Move(E)@Move(E)|Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)
+2600202338:Push(E,S)@Push(E,S)|Pull(N,E)@Pull(N,E)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+2600397877:Push(S,W)@Push(S,W)|Pull(E,N)@Pull(E,N)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)
+2600561780:Push(W,S)@Push(W,S)|Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Push(S,E)@Push(S,E)
+2600720536:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+2600857015:Push(S,S)@Push(S,S)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+2600952445:Push(S,E)@Push(S,E)|Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,N)@Push(E,N)
+2601081916:Push(E,S)@Push(E,S)|Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Push(N,E)@Push(N,E)
+2601117914:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|NoOp@NoOp
+2601244529:Push(S,E)@Push(S,E)|NoOp@NoOp|Pull(E,S)@Pull(E,S)|NoOp@NoOp
+2601391136:Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601411255:Push(S,E)@Push(S,E)|NoOp@NoOp|Pull(E,E)@Pull(E,E)|NoOp@NoOp
+2601537702:Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601556268:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601575757:Push(S,W)@Push(S,W)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601594653:Push(W,S)@Push(W,S)|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2601615960:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+2601634812:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+2601652459:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+2601668945:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+2601686120:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp
+2601703619:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+2601720745:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2601738279:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+2601756809:NoOp@NoOp|Pull(W,S)@Pull(W,S)|NoOp@NoOp|NoOp@NoOp
+2601775787:Push(S,W)@Push(S,W)|Pull(W,W)@Pull(W,W)|NoOp@NoOp|NoOp@NoOp
+2601797059:Push(W,S)@Push(W,S)|Pull(N,W)@Pull(N,W)|NoOp@NoOp|NoOp@NoOp
+2601818248:Push(S,W)@Push(S,W)|Pull(W,N)@Pull(W,N)|NoOp@NoOp|NoOp@NoOp
+2601839584:Push(W,S)@Push(W,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601857487:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601874620:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601912712:Push(S,S)@Push(S,S)|NoOp@NoOp|NoOp@NoOp|NoOp@NoOp
+2601930457:Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)|NoOp@NoOp|NoOp@NoOp
+2601949334:Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)|NoOp@NoOp|NoOp@NoOp
+2601967368:Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|NoOp@NoOp|NoOp@NoOp
+2601985556:NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp
+2602002000:NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp
+2602018862:NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp
+2602041666:NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp|NoOp@NoOp
+2602059881:NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp|NoOp@NoOp
+2602078673:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+2602095896:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp
+2602112759:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp
+2602129810:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp
+2602147198:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp
+2602172133:NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp|NoOp@NoOp
+2602187861:NoOp@NoOp|Push(W,N)@Push(W,N)|NoOp@NoOp|NoOp@NoOp
+2602204578:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+2602220589:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+2602236523:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+2602252121:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+2602267924:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+2602283139:NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp|NoOp@NoOp
+2602300884:NoOp@NoOp|NoOp@NoOp|Pull(E,N)@Pull(E,N)|Pull(S,W)@Pull(S,W)
+2602319877:NoOp@NoOp|NoOp@NoOp|Pull(E,E)@Pull(E,E)|Pull(W,S)@Pull(W,S)
+2602338851:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|Push(E,S)@Push(E,S)
+2602357024:NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|Push(S,E)@Push(S,E)
+2602374892:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|Push(E,S)@Push(E,S)
+2602393595:NoOp@NoOp|NoOp@NoOp|Pull(E,S)@Pull(E,S)|Push(S,E)@Push(S,E)
+2602412152:NoOp@NoOp|NoOp@NoOp|Pull(S,E)@Pull(S,E)|Push(E,S)@Push(E,S)
+2602432206:NoOp@NoOp|NoOp@NoOp|Pull(S,S)@Pull(S,S)|Push(S,E)@Push(S,E)
+2602451201:NoOp@NoOp|NoOp@NoOp|Pull(W,S)@Pull(W,S)|Push(E,E)@Push(E,E)
+2602469708:NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|Push(E,N)@Push(E,N)
+2602502535:NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)|NoOp@NoOp
+2602522479:NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)
+2602541336:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+2602560436:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|Push(E,N)@Push(E,N)
+2602579470:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|Push(N,E)@Push(N,E)
+2602599228:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|Push(E,N)@Push(E,N)
+2602617808:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(N,E)@Push(N,E)
+2602635500:NoOp@NoOp|NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)
+2602652938:NoOp@NoOp|NoOp@NoOp|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+2602676949:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)
+2602695074:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+2602713290:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+2602731954:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+2602748782:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+2602764700:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+2602779351:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+2602806241:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+2602823684:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2602839190:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2602853217:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2602867799:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2602881764:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+2602895993:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+86
+#time
+2602895993
+#end

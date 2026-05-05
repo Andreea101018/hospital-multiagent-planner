@@ -1,0 +1,317 @@
+#domain
+hospital
+#levelname
+pooh
+#colors
+orange: 0,1,H
+red: S
+#initial
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++       0 1                                      +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +SS+ ++ + +   + +   +      +
++             +   +++ +SS+ ++++ +++ +++   +      +
++             +   + + +SS+ + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++   H      H              ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +        + +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++SS+         +SS+                   +
++ +S+        +++         +SSS+                   +
++ ++S+                 ++SS++                    +
++   +S          +++++++SSSSS+                    +
++  +S+S+    ++++SSSSSSS++++++                    +
++  +SSS+ +++SSSSSSS++++SSS+                      +
++ +SSSSS+SSSSSSSSS+SSSS+SS+                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++++++++++++++++++++++
++                                                +
++                                                +
++                                                +
++               ++                     ++        +
++              +                         +       +
++             +   + +  ++  +  + +++ + +   +      +
++             +   + + +  + ++ + +   + +   +      +
++             +   +++ +  + ++++ +++ +++   +      +
++             +   + + +  + + ++ +    +    +      +
++             ++  + +  ++  +  + +++  +   ++      +
++             ++                         ++      +
++              +++++++++++++++++++++++++++       +
++               +++++++++++++++++++++++++        +
++                                        +++++++++
+++                                     ++        +
++++++                              ++++          +
++   ++                           +++             +
++    ++++                       ++               +
++    +   +                    +++                +
++   +     +                  ++                  +
++   ++    +                 ++                   +
++   +     +++      ++   +++++                    +
++   +                + +    +                    +
++    +  +             +     +                    +
++    + +   ++               +                    +
++     +   ++       ++       +                    +
++    +   +          ++      +                    +
++    +                +  + +                     +
++    +                   ++                      +
++    +                   +                       +
++   ++   ++              +                       +
++  +    +++        ++    +                       +
++ +      ++        ++    +                       +
++++          +++   +++   +                       +
+++          +++++         +                      +
+++          +++++         +                      +
+++     ++    +++           +                     +
++ +     +         +        +                     +
++ +      +         +       +                     +
++ +      +H      H+ +      +                     +
++  +      ++++++++        +++                    +
++  ++      +++  +         +  +                   +
++ + +        +++         +   +                   +
++ ++ +                 ++  ++                    +
++   +           +++++++     +                    +
++  + + +    ++++       ++++++                    +
++  +   + +++       ++++   +                      +
++ +     +         +    +  +                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+ClosedAI
+#actions
+2718235000:NoOp@NoOp|Move(E)@Move(E)
+2718313100:NoOp@NoOp|Move(S)@Move(S)
+2718350900:NoOp@NoOp|Move(E)@Move(E)
+2718387700:NoOp@NoOp|Move(E)@Move(E)
+2718422300:NoOp@NoOp|Move(E)@Move(E)
+2718457400:NoOp@NoOp|Move(E)@Move(E)
+2718496300:NoOp@NoOp|Move(E)@Move(E)
+2718530300:NoOp@NoOp|Move(E)@Move(E)
+2718565900:NoOp@NoOp|Move(E)@Move(E)
+2718599900:NoOp@NoOp|Move(S)@Move(S)
+2718633900:NoOp@NoOp|Move(S)@Move(S)
+2718668600:NoOp@NoOp|Move(W)@Move(W)
+2718709000:NoOp@NoOp|Move(S)@Move(S)
+2718747900:NoOp@NoOp|Move(S)@Move(S)
+2718783800:NoOp@NoOp|Move(S)@Move(S)
+2718816800:NoOp@NoOp|Move(S)@Move(S)
+2718849400:NoOp@NoOp|Move(S)@Move(S)
+2718884400:NoOp@NoOp|Move(S)@Move(S)
+2718916900:NoOp@NoOp|Move(E)@Move(E)
+2718951200:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+2718989200:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+2719023700:NoOp@NoOp|Push(E,N)@Push(E,N)
+2719059300:NoOp@NoOp|Push(N,N)@Push(N,N)
+2719094000:NoOp@NoOp|Push(N,N)@Push(N,N)
+2719129900:NoOp@NoOp|Push(N,N)@Push(N,N)
+2719165700:NoOp@NoOp|Push(N,N)@Push(N,N)
+2719200800:NoOp@NoOp|Push(N,N)@Push(N,N)
+2719236300:NoOp@NoOp|Push(N,E)@Push(N,E)
+2719271900:NoOp@NoOp|Push(E,N)@Push(E,N)
+2719307100:NoOp@NoOp|Push(N,N)@Push(N,N)
+2719342600:NoOp@NoOp|Push(N,W)@Push(N,W)
+2719406800:NoOp@NoOp|Push(W,W)@Push(W,W)
+2719450000:NoOp@NoOp|Push(W,W)@Push(W,W)
+2719488100:NoOp@NoOp|Push(W,W)@Push(W,W)
+2719524800:NoOp@NoOp|Push(W,W)@Push(W,W)
+2719558600:NoOp@NoOp|Push(W,S)@Push(W,S)
+2719594200:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719627700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719664200:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719697800:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719731600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719765200:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719798400:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719832100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719866700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719900500:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719935700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2719969500:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720004800:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720038600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720072300:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720106500:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720139700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720174300:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720207800:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720241200:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720275100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720308700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720342300:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720376100:NoOp@NoOp|Push(S,W)@Push(S,W)
+2720409700:NoOp@NoOp|Push(W,W)@Push(W,W)
+2720443200:NoOp@NoOp|Push(W,S)@Push(W,S)
+2720478100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720512000:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720545200:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720579600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720613100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720646600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720681600:NoOp@NoOp|Push(S,W)@Push(S,W)
+2720715600:NoOp@NoOp|Push(W,S)@Push(W,S)
+2720749100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720782500:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720815800:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720849400:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720882700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2720916400:NoOp@NoOp|Move(N)@Move(N)
+2720950200:NoOp@NoOp|Move(E)@Move(E)
+2720983900:NoOp@NoOp|Move(N)@Move(N)
+2721017000:NoOp@NoOp|Move(N)@Move(N)
+2721050300:NoOp@NoOp|Move(N)@Move(N)
+2721084100:NoOp@NoOp|Move(N)@Move(N)
+2721117400:NoOp@NoOp|Move(E)@Move(E)
+2721150500:NoOp@NoOp|Move(N)@Move(N)
+2721184000:NoOp@NoOp|Move(E)@Move(E)
+2721216800:NoOp@NoOp|Move(N)@Move(N)
+2721250100:NoOp@NoOp|Move(N)@Move(N)
+2721282900:NoOp@NoOp|Move(N)@Move(N)
+2721316100:NoOp@NoOp|Move(N)@Move(N)
+2721348700:NoOp@NoOp|Move(N)@Move(N)
+2721381600:NoOp@NoOp|Move(N)@Move(N)
+2721417300:NoOp@NoOp|Move(N)@Move(N)
+2721451200:NoOp@NoOp|Move(N)@Move(N)
+2721483900:NoOp@NoOp|Move(N)@Move(N)
+2721517200:NoOp@NoOp|Move(N)@Move(N)
+2721551000:NoOp@NoOp|Move(N)@Move(N)
+2721585000:NoOp@NoOp|Move(N)@Move(N)
+2721617900:NoOp@NoOp|Move(N)@Move(N)
+2721650500:NoOp@NoOp|Move(N)@Move(N)
+2721686000:NoOp@NoOp|Move(N)@Move(N)
+2721721600:NoOp@NoOp|Move(N)@Move(N)
+2721755200:NoOp@NoOp|Move(N)@Move(N)
+2721790300:NoOp@NoOp|Move(N)@Move(N)
+2721824600:NoOp@NoOp|Move(N)@Move(N)
+2721862900:NoOp@NoOp|Move(N)@Move(N)
+2721897700:NoOp@NoOp|Move(N)@Move(N)
+2721932700:NoOp@NoOp|Move(N)@Move(N)
+2721970600:NoOp@NoOp|Move(N)@Move(N)
+2722005600:NoOp@NoOp|Move(N)@Move(N)
+2722040000:NoOp@NoOp|Move(N)@Move(N)
+2722072800:NoOp@NoOp|Move(N)@Move(N)
+2722105700:NoOp@NoOp|Move(N)@Move(N)
+2722138100:NoOp@NoOp|Move(N)@Move(N)
+2722173000:NoOp@NoOp|Move(E)@Move(E)
+2722205400:NoOp@NoOp|Move(N)@Move(N)
+2722238200:NoOp@NoOp|Move(N)@Move(N)
+2722271000:NoOp@NoOp|Move(E)@Move(E)
+2722303600:NoOp@NoOp|Move(E)@Move(E)
+2722336900:NoOp@NoOp|Move(E)@Move(E)
+2722370200:NoOp@NoOp|Move(E)@Move(E)
+2722405200:NoOp@NoOp|Move(S)@Move(S)
+2722439000:NoOp@NoOp|Move(S)@Move(S)
+2722472100:NoOp@NoOp|Move(E)@Move(E)
+2722506900:NoOp@NoOp|Move(E)@Move(E)
+2722540400:NoOp@NoOp|Move(E)@Move(E)
+2722573300:NoOp@NoOp|Move(E)@Move(E)
+2722606300:NoOp@NoOp|Move(E)@Move(E)
+2722660200:NoOp@NoOp|Move(E)@Move(E)
+2722713700:NoOp@NoOp|Move(E)@Move(E)
+2722756100:NoOp@NoOp|Move(E)@Move(E)
+2722811500:NoOp@NoOp|Move(S)@Move(S)
+2722859100:NoOp@NoOp|Move(S)@Move(S)
+2722901700:NoOp@NoOp|Move(S)@Move(S)
+2722945800:NoOp@NoOp|Move(S)@Move(S)
+2722981900:NoOp@NoOp|Move(S)@Move(S)
+2723016700:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+2723052800:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+2723086400:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+2723119800:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+2723153400:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+2723186600:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+2723220100:NoOp@NoOp|Pull(N,N)@Pull(N,N)
+2723253700:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+2723287000:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+2723352300:NoOp@NoOp|Pull(W,N)@Pull(W,N)
+2723396500:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+2723432800:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+2723467800:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+2723503900:NoOp@NoOp|Pull(N,W)@Pull(N,W)
+2723538200:NoOp@NoOp|Push(S,W)@Push(S,W)
+2723587100:NoOp@NoOp|Push(W,W)@Push(W,W)
+2723641500:NoOp@NoOp|Push(W,W)@Push(W,W)
+2723690700:NoOp@NoOp|Push(W,W)@Push(W,W)
+2723741300:NoOp@NoOp|Push(W,W)@Push(W,W)
+2723780300:NoOp@NoOp|Push(W,S)@Push(W,S)
+2723815500:NoOp@NoOp|Push(S,W)@Push(S,W)
+2723849800:NoOp@NoOp|Push(W,W)@Push(W,W)
+2723883300:NoOp@NoOp|Push(W,S)@Push(W,S)
+2723917300:NoOp@NoOp|Push(S,S)@Push(S,S)
+2723951000:NoOp@NoOp|Push(S,S)@Push(S,S)
+2723984100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724017600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724053800:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724089600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724123500:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724157400:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724190700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724224500:NoOp@NoOp|Push(S,E)@Push(S,E)
+2724258900:NoOp@NoOp|Push(E,E)@Push(E,E)
+2724292700:NoOp@NoOp|Push(E,S)@Push(E,S)
+2724326100:NoOp@NoOp|Push(S,E)@Push(S,E)
+2724360100:NoOp@NoOp|Push(E,E)@Push(E,E)
+2724393700:NoOp@NoOp|Push(E,S)@Push(E,S)
+2724427100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724462100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724495900:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724531600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724566000:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724599400:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724633300:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724667300:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724702700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724738700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724772700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724806600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724840400:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724874600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724909600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724944100:NoOp@NoOp|Push(S,S)@Push(S,S)
+2724978500:NoOp@NoOp|Push(S,S)@Push(S,S)
+2725011700:NoOp@NoOp|Push(S,S)@Push(S,S)
+2725044900:NoOp@NoOp|Push(S,S)@Push(S,S)
+2725079800:NoOp@NoOp|Push(S,S)@Push(S,S)
+2725115600:NoOp@NoOp|Push(S,S)@Push(S,S)
+2725150400:NoOp@NoOp|Push(S,S)@Push(S,S)
+2725184900:NoOp@NoOp|Push(S,S)@Push(S,S)
+2725220800:NoOp@NoOp|Push(S,S)@Push(S,S)
+#end
+#solved
+true
+#numactions
+196
+#time
+2725220800
+#end

@@ -1,0 +1,630 @@
+#domain
+hospital
+#levelname
+merRAM
+#colors
+blue: 0, A, E, I, M
+red: 1, B, F, J, N
+cyan: 2, C, G, K, O
+purple: 3, D, H, L, P
+#initial
++++++++++++++++++++++++++++++++++++++++++
++                          +  C        ++
++     ++ +++          ++++           ++ +
++    +      ++                       K+ +
++   +     L   +++           +++         +
++   +  H++       ++         +  +        +
++    +++  +++++++            + +        +
++                         ++ +          +
++                       ++    +        O+
++                              +  ++    +
++                            +  +   +   +
++        +                  +    ++ +   +
++      ++P++               +       ++   +
++    ++     ++            +      +   ++++
++  ++   +++   ++                 +      +
++ +    + D +    +               +     + +
++ +     + +     +           +   +     + +
++ +             +          +++        + +
++ +    ++ ++    +         + + +       + +
++ +    +   +                +     ++    +
++ +    + + +    +          + ++   ++    +
++G+ 0  + + +  1 +          +            +
+++++++++++++++++++     ++++++++++++++++++
++  + +                             + +  +
++  + +                             + +  +
++           +                           +
++          ++    +++ +++                +
++         +E+    +     +                +
++        +        ++ ++       +     +   +
++       +   +                  + + +    +
++      ++++++                   +++     +
++         +              +++    +++     +
++     ++++++++             ++++++++++++++
++      +    +     + +        +       +  +
++       ++ +     + + +        ++++ ++   +
++                                       +
++                           + +         +
++                          + +F+        +
++      +     +                        N +
++       + +2+                  +     +  +
++        +++           + +      + +3+   +
++         I           +B+A+      +++    +
++         M                       J     +
++++++++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++++++++
++                          +           ++
++     ++ +++          ++++           ++ +
++    +      ++                        + +
++   +         +++           +++         +
++   +   ++       ++         +FA+        +
++    +++  +++++++            + +        +
++                         ++ +          +
++                       ++    +         +
++                              +  ++    +
++                            +  +  E+   +
++        +                  +    ++B+   +
++      ++ ++               +       ++   +
++    ++     ++            +      +   ++++
++  ++   +++   ++                 +      +
++ +    +   +    +               +     + +
++ +     + +     +           +   +     + +
++ +             +          +++        + +
++ +    ++ ++    +         + + +       + +
++ +    +   +                +     ++    +
++ +    +N+I+    +          + ++   ++    +
++ +    +J+M+    +          +            +
+++++++++++++++++++     ++++++++++++++++++
++  + +                             + +  +
++  + +                             + +  +
++           +                           +
++          ++    +++ +++                +
++         + +    +     +                +
++        +        ++ ++       +     +   +
++       +LP +                  + + +    +
++      ++++++                   +++     +
++         +              +++    +++     +
++     ++++++++             ++++++++++++++
++      +CH  +     + +        +OK   GD+  +
++       ++ +     + + +        ++++ ++   +
++                                       +
++                           + +         +
++                          + + +        +
++      +     +                          +
++       + + +                  +     +  +
++        +++           + +      + + +   +
++                     + + +      +++    +
++                                       +
++++++++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+Minchia
+#actions
+4128999791:Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+4129038791:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+4129071666:Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)|Move(N)@Move(N)
+4129088458:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+4129115166:Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129134833:Move(N)@Move(N)|Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)
+4129147916:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4129160083:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+4129170375:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4129180416:Move(E)@Move(E)|Move(E)@Move(E)|Move(E)@Move(E)|Move(W)@Move(W)
+4129189541:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129201958:Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129211250:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129220458:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4129230125:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129239500:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129249666:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4129258625:Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129267375:Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+4129276583:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)
+4129286208:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129295375:Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)
+4129307041:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4129321458:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129334083:Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+4129345791:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)
+4129355208:Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129365250:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)
+4129375250:Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129385083:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)
+4129393791:Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129403666:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)
+4129412958:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129421750:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129431333:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4129445958:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129462875:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129472583:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129481208:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4129490875:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+4129500166:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4129509500:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129518291:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4129527708:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+4129537541:Move(W)@Move(W)|Pull(W,W)@Pull(W,W)|Move(E)@Move(E)|Move(W)@Move(W)
+4129548833:Move(S)@Move(S)|Pull(W,W)@Pull(W,W)|Move(N)@Move(N)|Move(W)@Move(W)
+4129558458:Move(W)@Move(W)|Push(E,N)@Push(E,N)|Move(E)@Move(E)|Move(W)@Move(W)
+4129568666:Move(S)@Move(S)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|Move(W)@Move(W)
+4129579375:Move(W)@Move(W)|Push(W,N)@Push(W,N)|Move(E)@Move(E)|Move(W)@Move(W)
+4129589041:Move(S)@Move(S)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|Move(N)@Move(N)
+4129599833:Pull(E,E)@Pull(E,E)|Push(W,N)@Push(W,N)|Move(E)@Move(E)|Pull(S,S)@Pull(S,S)
+4129610291:Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|Pull(S,S)@Pull(S,S)
+4129620375:Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Move(E)@Move(E)|Push(N,E)@Push(N,E)
+4129631875:Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|Push(E,E)@Push(E,E)
+4129643416:Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|Move(E)@Move(E)|Push(E,E)@Push(E,E)
+4129652750:Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|Move(N)@Move(N)|Push(E,S)@Push(E,S)
+4129662833:Push(N,E)@Push(N,E)|Push(W,N)@Push(W,N)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4129673125:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(S,W)@Push(S,W)|Push(S,E)@Push(S,E)
+4129683166:Push(N,E)@Push(N,E)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+4129693958:Push(E,N)@Push(E,N)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+4129704083:Push(N,E)@Push(N,E)|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+4129734833:Push(E,N)@Push(E,N)|Push(W,N)@Push(W,N)|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+4129752375:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+4129765708:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(S,S)@Push(S,S)
+4129777208:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(S,E)@Push(S,E)
+4129786625:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+4129798500:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Push(W,S)@Push(W,S)|Push(S,E)@Push(S,E)
+4129808916:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+4129819125:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)
+4129828875:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Push(W,S)@Push(W,S)|Push(E,S)@Push(E,S)
+4129838541:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+4129848583:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+4129858375:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(W,S)@Push(W,S)|Push(S,E)@Push(S,E)
+4129868625:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+4129879041:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+4129889500:Push(N,E)@Push(N,E)|Push(N,W)@Push(N,W)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+4129899541:Push(E,N)@Push(E,N)|Push(W,N)@Push(W,N)|Push(W,S)@Push(W,S)|Push(S,S)@Push(S,S)
+4129910750:Push(N,N)@Push(N,N)|NoOp@NoOp|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4129919875:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4129929041:Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4129937958:Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4129949041:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4129958625:Push(N,W)@Push(N,W)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+4129968750:Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+4129978916:Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+4129990541:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+4130000416:Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+4130009500:Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+4130019333:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+4130028958:Push(W,W)@Push(W,W)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4130038875:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4130048041:Push(W,W)@Push(W,W)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4130057083:Push(W,S)@Push(W,S)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4130067333:Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4130077166:Push(S,E)@Push(S,E)|Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+4130087083:Push(E,S)@Push(E,S)|Push(W,S)@Push(W,S)|Push(W,S)@Push(W,S)|Push(E,N)@Push(E,N)
+4130095708:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)|Push(N,N)@Push(N,N)
+4130105833:Move(N)@Move(N)|Push(S,W)@Push(S,W)|Push(W,S)@Push(W,S)|Push(N,E)@Push(N,E)
+4130116583:NoOp@NoOp|Push(W,S)@Push(W,S)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)
+4130127291:Move(W)@Move(W)|Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)|Move(W)@Move(W)
+4130137750:Move(N)@Move(N)|Move(N)@Move(N)|Push(S,W)@Push(S,W)|Move(S)@Move(S)
+4130147458:Move(N)@Move(N)|Move(E)@Move(E)|Push(W,S)@Push(W,S)|Move(S)@Move(S)
+4130156791:Move(E)@Move(E)|Move(N)@Move(N)|Push(S,W)@Push(S,W)|Move(W)@Move(W)
+4130167000:Move(E)@Move(E)|Move(N)@Move(N)|Push(W,S)@Push(W,S)|Move(W)@Move(W)
+4130177416:Move(E)@Move(E)|Move(E)@Move(E)|Push(S,W)@Push(S,W)|Move(W)@Move(W)
+4130193458:Move(S)@Move(S)|Move(E)@Move(E)|Push(W,S)@Push(W,S)|Move(W)@Move(W)
+4130204458:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,W)@Push(S,W)|Move(W)@Move(W)
+4130214416:Move(E)@Move(E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+4130223458:Move(E)@Move(E)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+4130233041:Move(E)@Move(E)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(N)@Move(N)
+4130244666:Move(E)@Move(E)|Move(E)@Move(E)|Push(W,N)@Push(W,N)|Move(W)@Move(W)
+4130258750:Move(E)@Move(E)|Move(E)@Move(E)|Push(N,N)@Push(N,N)|Move(W)@Move(W)
+4130270541:Move(S)@Move(S)|Move(E)@Move(E)|Push(N,W)@Push(N,W)|Move(N)@Move(N)
+4130280500:Move(S)@Move(S)|Move(E)@Move(E)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+4130290250:Move(E)@Move(E)|Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)
+4130300583:Move(S)@Move(S)|Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)
+4130310208:Move(S)@Move(S)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+4130319333:Move(W)@Move(W)|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)
+4130328208:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4130337041:Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130347125:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4130357458:Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130367500:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(W)@Move(W)
+4130377791:Move(W)@Move(W)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130387708:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4130397541:Move(S)@Move(S)|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)
+4130407166:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4130416375:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4130425291:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4130435083:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130444750:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(W)@Move(W)
+4130454041:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130464125:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130475958:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4130485833:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130494916:Move(S)@Move(S)|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4130505208:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130514000:Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130522916:Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130532541:Move(W)@Move(W)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+4130542625:Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130553000:Move(W)@Move(W)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130563541:Pull(S,E)@Pull(S,E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130573166:Push(N,E)@Push(N,E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130583333:Push(E,N)@Push(E,N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130595208:Push(N,E)@Push(N,E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(N)@Move(N)
+4130606208:Push(E,N)@Push(E,N)|Move(S)@Move(S)|Move(N)@Move(N)|Move(N)@Move(N)
+4130615750:Push(N,E)@Push(N,E)|Move(S)@Move(S)|Move(W)@Move(W)|Move(N)@Move(N)
+4130624750:Push(E,N)@Push(E,N)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+4130634166:Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+4130643166:Push(N,E)@Push(N,E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+4130653666:Push(E,N)@Push(E,N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(N)@Move(N)
+4130662708:Push(N,E)@Push(N,E)|Move(E)@Move(E)|Move(N)@Move(N)|Move(W)@Move(W)
+4130673333:Push(E,N)@Push(E,N)|Pull(N,W)@Pull(N,W)|Move(W)@Move(W)|Move(N)@Move(N)
+4130683083:Push(N,N)@Push(N,N)|Push(S,W)@Push(S,W)|Move(N)@Move(N)|Move(W)@Move(W)
+4130693666:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(W)@Move(W)
+4130702750:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(W)@Move(W)
+4130714458:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(W)@Move(W)
+4130724333:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(W)@Move(W)
+4130735250:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(W)@Move(W)
+4130744250:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Move(W)@Move(W)
+4130753791:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(W)@Move(W)
+4130763333:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(S)@Move(S)
+4130772625:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Move(S)@Move(S)
+4130782458:Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Move(E)@Move(E)
+4130793291:Push(E,N)@Push(E,N)|Push(W,N)@Push(W,N)|Move(W)@Move(W)|Move(S)@Move(S)
+4130802750:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(S)@Move(S)|Push(E,N)@Push(E,N)
+4130813958:Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Move(W)@Move(W)|Push(N,W)@Push(N,W)
+4130825083:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Move(W)@Move(W)|Push(W,W)@Push(W,W)
+4130835541:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Move(S)@Move(S)|Push(W,N)@Push(W,N)
+4130845500:Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Move(W)@Move(W)|Push(N,N)@Push(N,N)
+4130855625:Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Move(S)@Move(S)|Push(N,E)@Push(N,E)
+4130866041:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Move(S)@Move(S)|Push(E,E)@Push(E,E)
+4130876166:Push(N,W)@Push(N,W)|Push(N,W)@Push(N,W)|Move(S)@Move(S)|Push(E,E)@Push(E,E)
+4130886750:Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Move(S)@Move(S)|Push(E,E)@Push(E,E)
+4130897041:Push(W,N)@Push(W,N)|Push(N,W)@Push(N,W)|Move(S)@Move(S)|Push(E,S)@Push(E,S)
+4130907125:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Move(S)@Move(S)|Push(S,E)@Push(S,E)
+4130917250:Push(N,W)@Push(N,W)|Push(N,W)@Push(N,W)|Pull(N,N)@Pull(N,N)|Push(E,E)@Push(E,E)
+4130926708:Push(W,W)@Push(W,W)|Push(W,N)@Push(W,N)|Pull(N,N)@Pull(N,N)|Push(E,S)@Push(E,S)
+4130936541:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Pull(N,N)@Pull(N,N)|Push(S,E)@Push(S,E)
+4130946250:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Pull(N,N)@Pull(N,N)|Push(E,E)@Push(E,E)
+4130962041:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Pull(N,N)@Pull(N,N)|Push(E,E)@Push(E,E)
+4130973791:Push(W,W)@Push(W,W)|Push(N,N)@Push(N,N)|Pull(N,N)@Pull(N,N)|Push(E,S)@Push(E,S)
+4130983583:Push(W,S)@Push(W,S)|Push(N,N)@Push(N,N)|Pull(E,N)@Pull(E,N)|Push(S,E)@Push(S,E)
+4130993500:Push(S,S)@Push(S,S)|Push(N,W)@Push(N,W)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)
+4131004416:Push(S,E)@Push(S,E)|Push(W,N)@Push(W,N)|Push(N,E)@Push(N,E)|Push(E,S)@Push(E,S)
+4131015416:Push(E,S)@Push(E,S)|Push(N,W)@Push(N,W)|Push(E,N)@Push(E,N)|Push(S,S)@Push(S,S)
+4131027041:Move(W)@Move(W)|Push(W,N)@Push(W,N)|Push(N,E)@Push(N,E)|Push(S,W)@Push(S,W)
+4131038708:Move(N)@Move(N)|Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Push(W,S)@Push(W,S)
+4131052000:Move(N)@Move(N)|Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Push(S,S)@Push(S,S)
+4131064666:Move(E)@Move(E)|Push(N,W)@Push(N,W)|Push(E,N)@Push(E,N)|Push(S,S)@Push(S,S)
+4131075666:Move(E)@Move(E)|Push(W,N)@Push(W,N)|Push(N,E)@Push(N,E)|Push(S,S)@Push(S,S)
+4131091958:Move(E)@Move(E)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4131107625:Move(S)@Move(S)|Push(N,W)@Push(N,W)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4131119250:Move(S)@Move(S)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4131130708:Move(E)@Move(E)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4131141875:Move(E)@Move(E)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4131151875:Move(E)@Move(E)|Push(N,W)@Push(N,W)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4131161625:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+4131172250:Move(E)@Move(E)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4131181791:Move(N)@Move(N)|Push(W,W)@Push(W,W)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4131192916:Move(N)@Move(N)|Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+4131203291:Move(N)@Move(N)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4131213291:Move(E)@Move(E)|Push(W,S)@Push(W,S)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4131223416:Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+4131233750:Move(E)@Move(E)|Push(S,W)@Push(S,W)|Push(E,E)@Push(E,E)|Push(S,W)@Push(S,W)
+4131244041:Move(S)@Move(S)|Push(W,S)@Push(W,S)|Push(E,S)@Push(E,S)|Push(W,S)@Push(W,S)
+4131254541:Move(E)@Move(E)|Move(E)@Move(E)|Push(S,E)@Push(S,E)|Push(S,W)@Push(S,W)
+4131264458:Move(S)@Move(S)|Move(N)@Move(N)|Push(E,S)@Push(E,S)|Push(W,S)@Push(W,S)
+4131275375:Move(S)@Move(S)|Move(N)@Move(N)|Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)
+4131285833:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,E)@Push(S,E)|Push(W,S)@Push(W,S)
+4131297458:Move(S)@Move(S)|Move(E)@Move(E)|Push(E,S)@Push(E,S)|Push(S,W)@Push(S,W)
+4131308208:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,E)@Push(S,E)|Push(W,S)@Push(W,S)
+4131320750:Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Push(S,W)@Push(S,W)
+4131333583:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Push(W,S)@Push(W,S)
+4131344416:Move(S)@Move(S)|Move(E)@Move(E)|Push(E,S)@Push(E,S)|Push(S,W)@Push(S,W)
+4131354625:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)
+4131364250:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)
+4131373541:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)
+4131383541:Move(E)@Move(E)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Push(W,W)@Push(W,W)
+4131393875:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(N)@Move(N)
+4131409416:Move(E)@Move(E)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+4131422125:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+4131432166:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)
+4131442958:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Move(N)@Move(N)
+4131453583:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Move(N)@Move(N)
+4131464250:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,E)@Push(S,E)|Move(E)@Move(E)
+4131475125:Move(W)@Move(W)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Move(N)@Move(N)
+4131485083:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(E)@Move(E)
+4131496375:Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Move(N)@Move(N)
+4131506958:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(E)@Move(E)
+4131518583:Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Move(N)@Move(N)
+4131527666:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(E)@Move(E)
+4131536750:Move(S)@Move(S)|Move(E)@Move(E)|Push(E,S)@Push(E,S)|Move(E)@Move(E)
+4131546583:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(N)@Move(N)
+4131555958:Move(E)@Move(E)|Move(E)@Move(E)|Push(E,S)@Push(E,S)|Move(N)@Move(N)
+4131567041:Move(E)@Move(E)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(W)@Move(W)
+4131576958:Move(E)@Move(E)|Move(E)@Move(E)|Push(E,S)@Push(E,S)|Move(N)@Move(N)
+4131586208:Move(E)@Move(E)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Move(N)@Move(N)
+4131596916:Pull(W,S)@Pull(W,S)|Move(E)@Move(E)|Push(E,E)@Push(E,E)|Move(W)@Move(W)
+4131608250:Push(E,E)@Push(E,E)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|Move(W)@Move(W)
+4131620541:Push(E,E)@Push(E,E)|Move(E)@Move(E)|Push(E,E)@Push(E,E)|Move(N)@Move(N)
+4131637083:Push(E,N)@Push(E,N)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|Move(N)@Move(N)
+4131659125:Push(N,N)@Push(N,N)|Move(E)@Move(E)|Push(E,E)@Push(E,E)|Move(W)@Move(W)
+4131672000:Push(N,W)@Push(N,W)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|Move(N)@Move(N)
+4131683083:Push(W,N)@Push(W,N)|Move(S)@Move(S)|Push(E,E)@Push(E,E)|Move(W)@Move(W)
+4131701291:NoOp@NoOp|Move(S)@Move(S)|Push(E,N)@Push(E,N)|Move(N)@Move(N)
+4131712291:NoOp@NoOp|Move(S)@Move(S)|Push(N,N)@Push(N,N)|Move(W)@Move(W)
+4131723166:NoOp@NoOp|Move(E)@Move(E)|Push(N,E)@Push(N,E)|Move(N)@Move(N)
+4131735458:Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(S)@Move(S)|Move(W)@Move(W)
+4131747625:Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(S)@Move(S)|Move(N)@Move(N)
+4131758791:Push(N,N)@Push(N,N)|Move(E)@Move(E)|Move(W)@Move(W)|Move(W)@Move(W)
+4131769291:Push(N,N)@Push(N,N)|Pull(E,S)@Pull(E,S)|Move(W)@Move(W)|Move(W)@Move(W)
+4131779875:Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Pull(E,S)@Pull(E,S)
+4131791750:Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Pull(E,E)@Pull(E,E)
+4131804750:Push(W,N)@Push(W,N)|Push(W,W)@Push(W,W)|Move(W)@Move(W)|Pull(S,E)@Pull(S,E)
+4131819833:Push(N,W)@Push(N,W)|Push(W,W)@Push(W,W)|Move(N)@Move(N)|Pull(E,S)@Pull(E,S)
+4131830375:Push(W,N)@Push(W,N)|Push(W,N)@Push(W,N)|Move(W)@Move(W)|Pull(S,E)@Pull(S,E)
+4131847833:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(S,S)@Pull(S,S)
+4131862625:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Move(W)@Move(W)|Pull(E,S)@Pull(E,S)
+4131881875:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Move(W)@Move(W)|Pull(S,E)@Pull(S,E)
+4131900375:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|Pull(E,S)@Pull(E,S)
+4131912666:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Move(W)@Move(W)|Pull(S,E)@Pull(S,E)
+4131922250:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+4131932666:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|Pull(S,E)@Pull(S,E)
+4131943666:Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)|NoOp@NoOp|Pull(E,S)@Pull(E,S)
+4131954458:Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|NoOp@NoOp|Pull(E,E)@Pull(E,E)
+4131964708:Push(N,W)@Push(N,W)|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Pull(S,E)@Pull(S,E)
+4131977791:Push(W,N)@Push(W,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(S,S)@Pull(S,S)
+4131991000:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(E,S)@Pull(E,S)
+4132004875:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(S,E)@Pull(S,E)
+4132018708:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(S,S)@Pull(S,S)
+4132029458:Push(E,N)@Push(E,N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|Pull(W,S)@Pull(W,S)
+4132039291:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Move(N)@Move(N)|Pull(S,W)@Pull(S,W)
+4132049958:Push(N,N)@Push(N,N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)|Pull(W,S)@Pull(W,S)
+4132060458:Push(N,N)@Push(N,N)|Push(W,N)@Push(W,N)|Move(W)@Move(W)|Pull(S,W)@Pull(S,W)
+4132077083:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(W,S)@Pull(W,S)
+4132093375:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Pull(S,W)@Pull(S,W)
+4132104708:Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|Pull(W,S)@Pull(W,S)
+4132115041:Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Move(N)@Move(N)|Pull(S,W)@Pull(S,W)
+4132125166:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(W,S)@Pull(W,S)
+4132134833:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Pull(S,W)@Pull(S,W)
+4132144791:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(W,S)@Pull(W,S)
+4132154625:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(W,W)@Pull(W,W)
+4132164083:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(S,W)@Pull(S,W)
+4132174875:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(W,S)@Pull(W,S)
+4132184958:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Pull(N,W)@Pull(N,W)
+4132199833:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(E)@Move(E)
+4132209833:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(E)@Move(E)
+4132219000:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(E)@Move(E)
+4132230166:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(N)@Move(N)
+4132245916:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(N)@Move(N)
+4132262125:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|Move(E)@Move(E)
+4132273333:Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|Move(N)@Move(N)
+4132283125:Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Move(N)@Move(N)|Move(E)@Move(E)
+4132293166:Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|Move(N)@Move(N)
+4132302458:Push(E,E)@Push(E,E)|Push(E,N)@Push(E,N)|Move(E)@Move(E)|Move(E)@Move(E)
+4132312458:Push(E,E)@Push(E,E)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|Move(N)@Move(N)
+4132322583:Push(E,S)@Push(E,S)|Push(E,N)@Push(E,N)|Move(E)@Move(E)|Move(E)@Move(E)
+4132333000:Push(S,E)@Push(S,E)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|Move(E)@Move(E)
+4132343666:Push(E,S)@Push(E,S)|Push(E,N)@Push(E,N)|Move(E)@Move(E)|Move(N)@Move(N)
+4132353875:Push(S,S)@Push(S,S)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|Move(N)@Move(N)
+4132363208:Push(S,E)@Push(S,E)|Push(E,E)@Push(E,E)|Move(E)@Move(E)|Move(E)@Move(E)
+4132373250:Push(E,S)@Push(E,S)|Push(E,E)@Push(E,E)|Move(N)@Move(N)|Move(N)@Move(N)
+4132383666:Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)|Move(E)@Move(E)|Move(N)@Move(N)
+4132394375:Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)|Move(E)@Move(E)|Move(N)@Move(N)
+4132405083:Push(W,W)@Push(W,W)|Push(S,E)@Push(S,E)|Move(E)@Move(E)|Move(N)@Move(N)
+4132416375:NoOp@NoOp|Push(E,S)@Push(E,S)|Move(E)@Move(E)|Move(N)@Move(N)
+4132426291:NoOp@NoOp|Push(S,S)@Push(S,S)|Move(S)@Move(S)|Move(N)@Move(N)
+4132436666:NoOp@NoOp|Push(S,S)@Push(S,S)|Move(E)@Move(E)|Move(N)@Move(N)
+4132446541:NoOp@NoOp|Push(S,W)@Push(S,W)|Move(S)@Move(S)|Move(N)@Move(N)
+4132456750:NoOp@NoOp|Push(W,W)@Push(W,W)|Move(S)@Move(S)|Move(N)@Move(N)
+4132466208:NoOp@NoOp|Push(W,N)@Push(W,N)|Move(E)@Move(E)|Move(N)@Move(N)
+4132476208:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(S)@Move(S)|Move(N)@Move(N)
+4132486458:NoOp@NoOp|Push(N,W)@Push(N,W)|Move(E)@Move(E)|Move(N)@Move(N)
+4132496583:NoOp@NoOp|Move(S)@Move(S)|Move(S)@Move(S)|Move(N)@Move(N)
+4132506375:NoOp@NoOp|Move(S)@Move(S)|Move(E)@Move(E)|Move(N)@Move(N)
+4132516041:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4132525875:NoOp@NoOp|Move(E)@Move(E)|Move(E)@Move(E)|Move(N)@Move(N)
+4132536083:Push(W,N)@Push(W,N)|Move(N)@Move(N)|Move(E)@Move(E)|Move(N)@Move(N)
+4132546625:Push(N,W)@Push(N,W)|Move(N)@Move(N)|Push(E,N)@Push(E,N)|Move(W)@Move(W)
+4132556500:Push(W,N)@Push(W,N)|Move(N)@Move(N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)
+4132566458:Push(N,N)@Push(N,N)|Move(W)@Move(W)|Push(W,N)@Push(W,N)|Move(W)@Move(W)
+4132576541:Move(S)@Move(S)|Move(N)@Move(N)|Push(N,W)@Push(N,W)|Move(N)@Move(N)
+4132586291:Move(E)@Move(E)|Move(W)@Move(W)|Push(W,N)@Push(W,N)|Move(W)@Move(W)
+4132597083:Move(E)@Move(E)|Move(W)@Move(W)|Push(N,W)@Push(N,W)|Move(N)@Move(N)
+4132607458:Move(N)@Move(N)|Move(W)@Move(W)|Push(W,N)@Push(W,N)|Move(W)@Move(W)
+4132617500:Move(N)@Move(N)|Move(W)@Move(W)|Push(N,W)@Push(N,W)|Move(W)@Move(W)
+4132627125:Move(N)@Move(N)|Move(S)@Move(S)|Push(W,N)@Push(W,N)|Move(W)@Move(W)
+4132636708:Move(W)@Move(W)|Move(S)@Move(S)|Push(N,W)@Push(N,W)|Move(W)@Move(W)
+4132646375:Move(N)@Move(N)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+4132657458:Move(W)@Move(W)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+4132668041:Move(W)@Move(W)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+4132677916:Move(W)@Move(W)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+4132688458:Move(W)@Move(W)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+4132698500:Move(S)@Move(S)|Move(W)@Move(W)|Push(W,W)@Push(W,W)|Move(S)@Move(S)
+4132708250:Move(S)@Move(S)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Move(W)@Move(W)
+4132718041:Move(W)@Move(W)|Move(S)@Move(S)|Push(W,S)@Push(W,S)|Move(S)@Move(S)
+4132727333:Move(S)@Move(S)|Move(W)@Move(W)|Push(S,S)@Push(S,S)|Pull(W,N)@Pull(W,N)
+4132741875:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,W)@Push(S,W)|Push(E,N)@Push(E,N)
+4132752833:Move(S)@Move(S)|Move(S)@Move(S)|Push(W,S)@Push(W,S)|Push(N,E)@Push(N,E)
+4132762666:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,W)@Push(S,W)|Push(E,N)@Push(E,N)
+4132776833:Move(W)@Move(W)|Move(S)@Move(S)|Push(W,S)@Push(W,S)|Push(N,N)@Push(N,N)
+4132791833:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,W)@Push(S,W)|Push(N,E)@Push(N,E)
+4132806958:Move(S)@Move(S)|Move(S)@Move(S)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)
+4132822000:Move(W)@Move(W)|Move(S)@Move(S)|Push(W,S)@Push(W,S)|Push(E,E)@Push(E,E)
+4132835375:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4132846166:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,W)@Push(S,W)|Push(E,S)@Push(E,S)
+4132855833:Move(S)@Move(S)|Move(S)@Move(S)|Push(W,S)@Push(W,S)|Push(S,E)@Push(S,E)
+4132867833:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4132878291:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+4132888875:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+4132900875:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4132910125:Move(W)@Move(W)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4132919916:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+4132930041:Move(S)@Move(S)|Move(E)@Move(E)|Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)
+4132939416:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,E)@Push(E,E)
+4132949583:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(E,S)@Push(E,S)
+4132959125:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4132970250:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,W)@Push(S,W)
+4132980791:Move(S)@Move(S)|Move(W)@Move(W)|Push(S,S)@Push(S,S)|Push(W,S)@Push(W,S)
+4132991833:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133002791:Move(S)@Move(S)|Move(W)@Move(W)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+4133014000:Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4133025083:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+4133035250:Move(S)@Move(S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4133045541:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133056125:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133066500:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133076125:Move(S)@Move(S)|Move(W)@Move(W)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133086208:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133095541:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133105833:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)
+4133116166:Move(S)@Move(S)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+4133126166:Move(W)@Move(W)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4133136416:Move(W)@Move(W)|Move(S)@Move(S)|Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)
+4133146083:Pull(S,S)@Pull(S,S)|Move(S)@Move(S)|Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)
+4133155833:Push(N,E)@Push(N,E)|Move(E)@Move(E)|Push(S,E)@Push(S,E)|Push(S,W)@Push(S,W)
+4133165708:Push(E,E)@Push(E,E)|Move(E)@Move(E)|Push(E,S)@Push(E,S)|Push(W,S)@Push(W,S)
+4133175375:Push(E,N)@Push(E,N)|Pull(E,S)@Pull(E,S)|Push(S,E)@Push(S,E)|Push(S,W)@Push(S,W)
+4133188083:Push(N,E)@Push(N,E)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|Push(W,S)@Push(W,S)
+4133201166:Push(E,E)@Push(E,E)|Push(W,W)@Push(W,W)|Push(E,E)@Push(E,E)|Push(S,W)@Push(S,W)
+4133218291:Push(E,E)@Push(E,E)|Push(W,N)@Push(W,N)|Push(E,E)@Push(E,E)|Push(W,S)@Push(W,S)
+4133229833:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(E,E)@Push(E,E)|Push(S,W)@Push(S,W)
+4133240291:Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Push(W,S)@Push(W,S)
+4133250750:Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Push(S,S)@Push(S,S)
+4133261958:Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(S,S)@Push(S,S)
+4133271750:Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(S,S)@Push(S,S)
+4133282291:Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Push(N,W)@Push(N,W)|Push(S,S)@Push(S,S)
+4133297625:Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)
+4133309708:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(S,S)@Push(S,S)
+4133320250:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Push(W,W)@Push(W,W)|Push(S,W)@Push(S,W)
+4133330666:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+4133340875:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Push(S,W)@Push(S,W)
+4133351166:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(E)@Move(E)|Push(W,S)@Push(W,S)
+4133362041:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(S)@Move(S)|Push(S,W)@Push(S,W)
+4133372750:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(S)@Move(S)|Push(W,W)@Push(W,W)
+4133383333:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Push(W,N)@Push(W,N)
+4133393291:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Push(N,N)@Push(N,N)
+4133402833:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(W)@Move(W)|Push(N,W)@Push(N,W)
+4133413083:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(W)@Move(W)|NoOp@NoOp
+4133423166:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(W)@Move(W)|NoOp@NoOp
+4133433916:NoOp@NoOp|Push(N,W)@Push(N,W)|Move(N)@Move(N)|NoOp@NoOp
+4133443458:NoOp@NoOp|Push(W,N)@Push(W,N)|Move(W)@Move(W)|NoOp@NoOp
+4133454416:NoOp@NoOp|Push(N,W)@Push(N,W)|Move(N)@Move(N)|NoOp@NoOp
+4133464250:NoOp@NoOp|Push(W,N)@Push(W,N)|Move(W)@Move(W)|NoOp@NoOp
+4133473125:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(W)@Move(W)|NoOp@NoOp
+4133482916:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133493916:NoOp@NoOp|Push(N,E)@Push(N,E)|Move(W)@Move(W)|NoOp@NoOp
+4133503416:NoOp@NoOp|Push(E,N)@Push(E,N)|Move(W)@Move(W)|NoOp@NoOp
+4133513125:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133522666:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133532916:NoOp@NoOp|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133546083:Push(N,E)@Push(N,E)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133558458:Push(E,N)@Push(E,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133568666:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133578541:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133590500:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(W)@Move(W)|NoOp@NoOp
+4133601041:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133613291:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(W)@Move(W)|NoOp@NoOp
+4133625416:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133639291:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133648708:Push(N,N)@Push(N,N)|Push(N,N)@Push(N,N)|Move(N)@Move(N)|NoOp@NoOp
+4133659916:Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Move(E)@Move(E)|NoOp@NoOp
+4133670375:Push(N,N)@Push(N,N)|Push(E,N)@Push(E,N)|Move(N)@Move(N)|NoOp@NoOp
+4133680500:Push(N,N)@Push(N,N)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|NoOp@NoOp
+4133690041:Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Move(N)@Move(N)|NoOp@NoOp
+4133699708:Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|NoOp@NoOp
+4133709708:Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Move(N)@Move(N)|NoOp@NoOp
+4133719833:Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|NoOp@NoOp
+4133729458:Push(N,E)@Push(N,E)|Push(E,N)@Push(E,N)|Move(N)@Move(N)|NoOp@NoOp
+4133738875:Push(E,N)@Push(E,N)|Push(N,E)@Push(N,E)|Move(N)@Move(N)|NoOp@NoOp
+4133748500:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Move(N)@Move(N)|NoOp@NoOp
+4133757833:Push(E,N)@Push(E,N)|Push(E,E)@Push(E,E)|Move(N)@Move(N)|NoOp@NoOp
+4133767791:Push(N,E)@Push(N,E)|Push(E,E)@Push(E,E)|Move(N)@Move(N)|NoOp@NoOp
+4133778041:Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)|Move(N)@Move(N)|NoOp@NoOp
+4133788208:Push(E,E)@Push(E,E)|Push(S,E)@Push(S,E)|Move(N)@Move(N)|NoOp@NoOp
+4133798541:Push(E,E)@Push(E,E)|Push(E,S)@Push(E,S)|Move(N)@Move(N)|NoOp@NoOp
+4133808583:Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)|Move(E)@Move(E)|NoOp@NoOp
+4133819000:Push(S,E)@Push(S,E)|Push(S,E)@Push(S,E)|Move(N)@Move(N)|NoOp@NoOp
+4133830208:Push(E,S)@Push(E,S)|Push(E,S)@Push(E,S)|Move(E)@Move(E)|NoOp@NoOp
+4133840333:Push(S,S)@Push(S,S)|Push(S,S)@Push(S,S)|Move(N)@Move(N)|NoOp@NoOp
+4133849791:Push(S,E)@Push(S,E)|Push(S,S)@Push(S,S)|Move(E)@Move(E)|NoOp@NoOp
+4133861750:Push(E,S)@Push(E,S)|Push(S,S)@Push(S,S)|Move(N)@Move(N)|NoOp@NoOp
+4133873083:Push(S,S)@Push(S,S)|Push(S,E)@Push(S,E)|Move(E)@Move(E)|NoOp@NoOp
+4133883958:NoOp@NoOp|Push(E,E)@Push(E,E)|Move(N)@Move(N)|NoOp@NoOp
+4133893375:NoOp@NoOp|Push(E,S)@Push(E,S)|Move(E)@Move(E)|NoOp@NoOp
+4133903583:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp
+4133912958:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp
+4133922541:NoOp@NoOp|Move(N)@Move(N)|Move(E)@Move(E)|NoOp@NoOp
+4133932375:NoOp@NoOp|Move(W)@Move(W)|Move(E)@Move(E)|NoOp@NoOp
+4133942291:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+4133952500:Push(S,S)@Push(S,S)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+4133961958:Push(S,E)@Push(S,E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+4133972291:Push(E,E)@Push(E,E)|NoOp@NoOp|Move(E)@Move(E)|NoOp@NoOp
+4133982208:NoOp@NoOp|NoOp@NoOp|Pull(S,W)@Pull(S,W)|NoOp@NoOp
+4133992833:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+4134002166:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134011708:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134021083:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134030708:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134040958:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134051583:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134061250:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134070291:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134079750:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+4134089541:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134099125:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+4134110791:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+4134124708:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+4134135791:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+4134147958:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+4134162875:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134174000:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+4134183458:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134192083:NoOp@NoOp|NoOp@NoOp|Push(S,W)@Push(S,W)|NoOp@NoOp
+4134201166:NoOp@NoOp|NoOp@NoOp|Push(W,S)@Push(W,S)|NoOp@NoOp
+4134213166:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134221833:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134230958:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134240625:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134250041:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134260500:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134269833:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134279708:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134289208:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134298833:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134307833:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134319166:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134332000:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134342083:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+4134351000:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+4134359875:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+4134370916:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+4134382833:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134393583:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134404041:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134413916:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134422958:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134432541:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134441958:NoOp@NoOp|NoOp@NoOp|Push(S,S)@Push(S,S)|NoOp@NoOp
+4134453166:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+4134465000:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+4134473916:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+4134482708:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+4134491708:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+4134501875:NoOp@NoOp|NoOp@NoOp|Push(E,S)@Push(E,S)|NoOp@NoOp
+4134510875:NoOp@NoOp|NoOp@NoOp|Push(S,E)@Push(S,E)|NoOp@NoOp
+4134519625:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+4134529583:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+4134539375:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+4134548708:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+4134557583:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+4134567250:NoOp@NoOp|NoOp@NoOp|Push(E,E)@Push(E,E)|NoOp@NoOp
+4134578500:NoOp@NoOp|NoOp@NoOp|Push(E,N)@Push(E,N)|NoOp@NoOp
+4134588333:NoOp@NoOp|NoOp@NoOp|Push(N,N)@Push(N,N)|NoOp@NoOp
+4134598291:NoOp@NoOp|NoOp@NoOp|Push(N,W)@Push(N,W)|NoOp@NoOp
+4134609208:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+4134619416:NoOp@NoOp|NoOp@NoOp|Push(W,W)@Push(W,W)|NoOp@NoOp
+#end
+#solved
+true
+#numactions
+519
+#time
+4134619416
+#end

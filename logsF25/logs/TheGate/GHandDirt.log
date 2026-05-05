@@ -1,0 +1,145 @@
+#domain
+hospital
+#levelname
+GHandDirt
+#colors
+blue: 0,A
+purple: 1,B
+green: 2,C
+brown: W
+#initial
++++++++++++++++++++
++0        W   W   +
++        W   W  W +
++       W   W  W  +
++      W   W  W   +
++  A  W   W  W   W+
++ A  W   W  W   W +
++    W  W  W   W  +
++    W W  W   W   +
++   WWW  W   W    +
++  W  2WW   W     +
++ W     WW W      +
++W   CC  WW       +
++   A    WWW      +
++  AAA  WBBBWWW   +
++   A  W          +
++     W           +
++   WW1           +
++++++++++++++++++++
+#goal
++++++++++++++++++++
++        A        +
++       A         +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++                 +
++   A       BBB   +
++  AAA            +
++   A             +
++                 +
++CC2              +
++++++++++++++++++++
+#end
+#clientname
+TheGate
+#actions
+8687108688:Move(E)@Move(E)|Move(E)|Move(S)
+8687308032:Move(S)@Move(S)|Move(E)|Push(S,S)
+8687562573:Move(S)@Move(S)|Move(E)|Push(W,S)
+8688025425:Move(S)@Move(S)|Move(N)|NoOp
+8688176575:Move(S)@Move(S)|Move(N)|NoOp
+8688418066:Pull(W,N)@Pull(W,N)|NoOp|NoOp
+8688580179:Push(E,N)@Push(E,N)|NoOp|NoOp
+8688736771:Push(E,N)@Push(E,N)|NoOp|NoOp
+8688896123:Push(N,E)@Push(N,E)|NoOp|NoOp
+8689093839:Pull(N,E)@Pull(N,E)|NoOp|NoOp
+8689287066:Pull(E,N)@Pull(E,N)|NoOp|NoOp
+8689426090:Pull(N,N)@Pull(N,N)|NoOp|NoOp
+8689621134:Pull(W,N)@Pull(W,N)|NoOp|NoOp
+8689727524:Push(S,E)@Push(S,E)|NoOp|NoOp
+8689973246:Push(E,E)@Push(E,E)|NoOp|NoOp
+8690138885:Push(N,E)@Push(N,E)|NoOp|NoOp
+8690356969:Push(E,E)@Push(E,E)|NoOp|NoOp
+8690543989:Push(S,E)@Push(S,E)|NoOp|NoOp
+8690711515:Push(E,E)@Push(E,E)|NoOp|NoOp
+8690977605:Push(N,E)@Push(N,E)|NoOp|NoOp
+8691140761:Push(E,N)@Push(E,N)|NoOp|NoOp
+8691381766:Pull(E,N)@Pull(E,N)|NoOp|NoOp
+8691493003:Pull(N,E)@Pull(N,E)|NoOp|NoOp
+8691612423:Pull(E,E)@Pull(E,E)|NoOp|Move(E)
+8691960155:NoOp@NoOp|NoOp|Push(S,S)
+8692253685:NoOp@NoOp|NoOp|Push(S,S)
+8692369540:NoOp@NoOp|NoOp|Push(S,W)
+8692871858:NoOp@NoOp|NoOp|Push(W,S)
+8693017129:NoOp@NoOp|NoOp|Push(S,W)
+8693129855:NoOp@NoOp|NoOp|Push(W,W)
+8693345525:NoOp@NoOp|NoOp|Push(W,S)
+8693466168:NoOp@NoOp|NoOp|Push(S,W)
+8693675959:NoOp@NoOp|NoOp|Push(W,W)
+8693810146:NoOp@NoOp|Pull(E,S)|Move(E)
+8694006292:NoOp@NoOp|Pull(S,E)|Move(N)
+8694154056:NoOp@NoOp|Push(N,E)|Move(S)
+8694360560:NoOp@NoOp|Push(E,E)|Move(N)
+8694591803:NoOp@NoOp|Push(E,E)|Move(E)
+8694691570:NoOp@NoOp|Move(W)|Move(E)
+8694789876:NoOp@NoOp|Pull(W,S)|Move(N)
+8694899951:NoOp@NoOp|Push(E,E)|Move(E)
+8694994484:NoOp@NoOp|Move(N)|Move(N)
+8695093436:NoOp@NoOp|Pull(S,E)|Move(N)
+8695197076:NoOp@NoOp|NoOp|Pull(S,E)
+8695303248:NoOp@NoOp|NoOp|Pull(S,S)
+8695405199:NoOp@NoOp|NoOp|Pull(W,S)
+8695668588:NoOp@NoOp|NoOp|Pull(S,W)
+8695766230:NoOp@NoOp|NoOp|Pull(W,S)
+8695932544:NoOp@NoOp|Pull(W,S)|Pull(W,W)
+8696127280:NoOp@NoOp|Push(E,S)|Pull(W,W)
+8696211376:NoOp@NoOp|Push(S,E)|Move(S)
+8696301240:NoOp@NoOp|Push(E,E)|Pull(E,E)
+8696488330:NoOp@NoOp|Push(E,E)|Push(N,W)
+8696606320:NoOp@NoOp|Push(N,E)|Push(W,W)
+8696751501:NoOp@NoOp|Push(E,E)|Push(W,S)
+8696865210:NoOp@NoOp|Move(W)|Move(E)
+8696961551:NoOp@NoOp|Pull(E,E)|Move(E)
+8697131350:NoOp@NoOp|Push(E,N)|Move(S)
+8697272112:NoOp@NoOp|Push(N,N)|NoOp
+8697363566:NoOp@NoOp|Push(N,W)|NoOp
+8697468418:NoOp@NoOp|Push(W,W)|NoOp
+8697653362:Push(W,W)@Push(W,W)|Push(W,W)|NoOp
+8697732622:Push(W,S)@Push(W,S)|Move(E)|NoOp
+8697822178:Pull(W,N)@Pull(W,N)|Move(W)|NoOp
+8697944558:Push(E,E)@Push(E,E)|Move(E)|NoOp
+8698039279:Push(E,E)@Push(E,E)|Move(E)|NoOp
+8698124945:NoOp@NoOp|Move(S)|NoOp
+8698322174:NoOp@NoOp|Move(S)|NoOp
+8698415803:NoOp@NoOp|Move(S)|NoOp
+8698648376:NoOp@NoOp|Push(W,N)|NoOp
+8698742492:Move(W)@Move(W)|Push(N,E)|NoOp
+8698820182:Move(S)@Move(S)|Push(E,N)|NoOp
+8698895310:Move(S)@Move(S)|Move(W)|NoOp
+8698988423:Move(W)@Move(W)|Pull(E,E)|NoOp
+8699061852:Move(S)@Move(S)|Push(N,N)|NoOp
+8699134984:NoOp@NoOp|Push(N,W)|NoOp
+8699222833:Move(W)@Move(W)|Push(W,W)|NoOp
+8699309848:Move(E)@Move(E)|Move(E)|NoOp
+8699446885:Move(W)@Move(W)|Move(S)|NoOp
+8699536761:Move(W)@Move(W)|Move(S)|NoOp
+8699610687:NoOp@NoOp|Pull(S,E)|NoOp
+8699683432:Move(S)@Move(S)|Push(N,N)|NoOp
+8699767309:Move(E)@Move(E)|Push(N,N)|NoOp
+8699895835:Move(W)@Move(W)|Push(N,W)|NoOp
+#end
+#solved
+true
+#numactions
+84
+#time
+8699895835
+#end

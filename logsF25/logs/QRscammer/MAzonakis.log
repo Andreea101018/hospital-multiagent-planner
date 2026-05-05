@@ -1,0 +1,151 @@
+#domain
+hospital
+#levelname
+MAzonakis
+#colors
+blue: 0,B,C
+red: A,1
+#initial
++++++++++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++          ++++++++++++++++A+++++++
++          ++++++++++++++++ +++++++
++++++  ++++               0       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++BC++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                  1              +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#goal
++++++++++++++++++++++++++++++++++++
++++++A ++++++++++++++++++++++++++++
++++++  ++++++++++++++++++++++++++++
++++++  ++++                       +
++++++  ++++                       +
++C         ++++++++++++++++ +++++++
++B         ++++++++++++++++ +++++++
++++++  ++++                       +
++++++  ++++                       +
++++++  ++++ +++++++++++++++++++++++
++++++  ++++ +++++++++++++++++++++++
++                                 +
++                                 +
++ +++++++++++++++++++++++++++++++++
++ +++++++++++++++++++++++++++++++++
++                                 +
++                                 +
++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
+#end
+#clientname
+QRscammer
+#actions
+334521200:Move(S)@Move(S)|Move(N)@Move(N)
+334652600:Move(W)@Move(W)|Move(W)@Move(W)
+334746600:Move(W)@Move(W)|Move(W)@Move(W)
+334845500:Move(W)@Move(W)|Move(W)@Move(W)
+334959100:Move(W)@Move(W)|Move(W)@Move(W)
+335057900:Move(W)@Move(W)|Move(W)@Move(W)
+335147700:Move(W)@Move(W)|Move(W)@Move(W)
+335252600:Move(W)@Move(W)|Move(W)@Move(W)
+335368700:Move(W)@Move(W)|Move(W)@Move(W)
+335479600:Move(W)@Move(W)|Move(W)@Move(W)
+335585000:Move(W)@Move(W)|Move(W)@Move(W)
+335704500:Move(W)@Move(W)|Move(W)@Move(W)
+335822100:Move(W)@Move(W)|Move(W)@Move(W)
+335972400:Move(W)@Move(W)|Move(W)@Move(W)
+336077600:Move(W)@Move(W)|Move(W)@Move(W)
+336183700:Move(W)@Move(W)|Move(W)@Move(W)
+336290000:Move(S)@Move(S)|Move(W)@Move(W)
+336400300:Move(S)@Move(S)|Move(W)@Move(W)
+336508900:Move(S)@Move(S)|Move(W)@Move(W)
+336609700:Move(W)@Move(W)|Move(N)@Move(N)
+336698400:Move(W)@Move(W)|Move(N)@Move(N)
+336784700:Move(W)@Move(W)|Move(N)@Move(N)
+336904700:Move(W)@Move(W)|Move(N)@Move(N)
+337016700:Move(W)@Move(W)|Move(E)@Move(E)
+337140000:Move(W)@Move(W)|Move(E)@Move(E)
+337250700:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+337358300:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+337459300:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+337563800:Push(N,N)@Push(N,N)|Move(E)@Move(E)
+337669900:Push(N,W)@Push(N,W)|Move(E)@Move(E)
+337773500:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+337880900:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+337982800:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+338090300:Move(E)@Move(E)|Move(N)@Move(N)
+338208400:Move(E)@Move(E)|Move(N)@Move(N)
+338314100:Move(E)@Move(E)|Move(N)@Move(N)
+338426000:Move(S)@Move(S)|Move(E)@Move(E)
+338521400:Move(E)@Move(E)|Move(E)@Move(E)
+338630900:Move(S)@Move(S)|Move(E)@Move(E)
+338726000:Move(S)@Move(S)|Move(N)@Move(N)
+338820900:Pull(W,N)@Pull(W,N)|Move(E)@Move(E)
+339047200:Pull(N,W)@Pull(N,W)|Move(E)@Move(E)
+339141900:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+339226300:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+339307900:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+339393500:Pull(N,N)@Pull(N,N)|Move(E)@Move(E)
+339498200:Push(S,W)@Push(S,W)|Move(E)@Move(E)
+339610100:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+339707900:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+339837000:Push(W,W)@Push(W,W)|Move(E)@Move(E)
+339934300:Move(E)@Move(E)|Move(E)@Move(E)
+340032200:NoOp@NoOp|Move(E)@Move(E)
+340148200:NoOp@NoOp|Move(E)@Move(E)
+340242400:NoOp@NoOp|Move(N)@Move(N)
+340332200:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+340415300:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+340496900:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+340577600:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+340657600:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+340739500:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+340823000:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+340905900:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341033900:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341137000:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341227400:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341308900:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341391400:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341472000:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341552000:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341632100:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341713300:NoOp@NoOp|Pull(W,W)@Pull(W,W)
+341793800:NoOp@NoOp|Pull(S,W)@Pull(S,W)
+341886400:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+341980000:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+342070900:NoOp@NoOp|Pull(S,S)@Pull(S,S)
+342166100:NoOp@NoOp|Pull(W,S)@Pull(W,S)
+342245700:NoOp@NoOp|Pull(S,W)@Pull(S,W)
+342329300:NoOp@NoOp|Push(N,W)@Push(N,W)
+342408600:NoOp@NoOp|Push(W,W)@Push(W,W)
+342487200:NoOp@NoOp|Push(W,W)@Push(W,W)
+342565900:NoOp@NoOp|Push(W,W)@Push(W,W)
+342644200:NoOp@NoOp|Push(W,W)@Push(W,W)
+342731500:NoOp@NoOp|Push(W,N)@Push(W,N)
+342835900:NoOp@NoOp|Push(N,N)@Push(N,N)
+342934100:NoOp@NoOp|Push(N,N)@Push(N,N)
+343013600:NoOp@NoOp|Push(N,N)@Push(N,N)
+343093700:NoOp@NoOp|Push(N,N)@Push(N,N)
+343173400:NoOp@NoOp|Push(N,N)@Push(N,N)
+343251900:NoOp@NoOp|Push(N,N)@Push(N,N)
+343337600:NoOp@NoOp|Push(N,N)@Push(N,N)
+343418800:NoOp@NoOp|Push(N,N)@Push(N,N)
+343499100:NoOp@NoOp|Push(N,N)@Push(N,N)
+#end
+#solved
+true
+#numactions
+92
+#time
+343499100
+#end

@@ -1,0 +1,62 @@
+#domain
+hospital
+#levelname
+MAybetwo
+#colors
+red:   0, A
+green: 1, B
+blue:  2, C
+#initial
++++++++++++++
++0       A  +
++   +++++   +
++   +   +   +
++ B +   + C +
++   +   +   +
++   +++++   +
++2        1 +
++++++++++++++
+#goal
++++++++++++++
++           +
++   +++++   +
++ B +   + A +
++   +   +   +
++   +   + C +
++   +++++   +
++           +
++++++++++++++
+#end
+#clientname
+MAchoupo2
+#actions
+93161208:Move(E)|NoOp|Move(E)
+93467333:Move(E)|Move(W)|NoOp
+93558375:Move(E)|Move(W)|NoOp
+93663083:NoOp|Move(W)|Move(E)
+93739666:Move(E)|Move(W)|NoOp
+93817125:Move(E)|Move(W)|NoOp
+93894166:Move(E)|Move(W)|NoOp
+93976708:Move(E)|NoOp|Move(N)
+94094833:Push(E,S)|Move(W)|NoOp
+94216750:Push(S,E)|Move(W)|NoOp
+94301458:Push(E,S)|Move(N)|NoOp
+94390791:NoOp|Move(N)|Move(S)
+94518583:NoOp|Push(N,N)|Move(E)
+94604250:NoOp|Move(S)|Move(E)
+94687041:NoOp|Move(S)|Move(E)
+94794750:NoOp|NoOp|Move(E)
+94882125:NoOp|Move(E)|Move(E)
+95001541:NoOp|Move(N)|Move(E)
+95099875:NoOp|Move(W)|Move(N)
+95196083:NoOp|Move(N)|Move(N)
+95310125:Move(N)|NoOp|Move(E)
+95409333:Move(S)|NoOp|Pull(E,S)
+#end
+#solved
+true
+#numactions
+22
+#time
+95409333
+#end

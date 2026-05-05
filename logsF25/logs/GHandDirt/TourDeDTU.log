@@ -1,0 +1,157 @@
+#domain
+hospital
+#levelname
+TourDeDTU
+#colors
+red: 8,1,Y,G
+blue: 3,5,D,T,U
+cyan: 6,7,2,C,B,S
+pink: N,O,V,0,4
+#initial
+++++++++++++++++++++++++++++++
++++++++++++++++++++++     ++++
++++++++++++++++         + ++++
+++++++++      Y  ++++++ + ++++
++++++      ++++  +      + ++++
++++++8+++++++++  ++++++G+ ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +      O+  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ + 0 +    +  +    + ++ +++
+++++ +  ++    +  +   1   + +++
+++++ +   NV   +  + + + + + +++
+++++ +        +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ + 4+++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++3 + +++++  + ++
++++ +                     + ++
+++                          ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++ U++  + +  + ++
+++ ++++ ++   ++  +  6+    + ++
+++ +5T+++    ++  + +   ++ + ++
+++ +             + + C ++ + ++
+++ +    ++++ ++  +     ++ + ++
+++ +    +        + + + ++ +  +
+++ + ++++        + + + ++ ++ +
++  +      +++++  +   + ++  + +
++ ++ D+ + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +    B7+  + +
++ + +   +++ +++  + + ++ +  + +
++                +   ++   +  +
++  ++++++++++++  +S+ ++  +   +
++                 2          +
+++++++++++++++++++++++++++++++
+#goal
+++++++++++++++++++++++++++++++
++++++++++++++++++++++ 8YG ++++
++++++++++++++++         + ++++
+++++++++         ++++++ + ++++
++++++      ++++  +      + ++++
++++++ +++++++++  ++++++ + ++++
++++++                   + ++++
++++++ +++++++++  + ++++ + ++++
+++++  +       +  +    + + ++++
+++++ ++ ++    +  + ++ + +  +++
+++++ +   +    +  +    + ++ +++
+++++ +  ++    +  +       + +++
+++++ +        +  + + + + + +++
+++++ + NOV0   +  + + + + + +++
+++++ ++++++++++  + + + + + +++
+++++ +           +       + +++
+++++ + +++ + ++  + +++++ + +++
+++++ + +   +     +     + + +++
+++++ + +++ + ++  +     + + +++
++++  +           + +++++ + +++
++++ ++ +  +++++  +       + +++
++++ +  +  +      + +++++ + +++
++++ +     +++++  + +     +  ++
++++ + +++   +++  + +     ++ ++
++++ +       +++  + +++++  + ++
++++ + +++  ++++  + +++++  + ++
++++ +      4        1     + ++
+++         3        2       ++
+++  +++++++++++  ++++++++ + ++
+++ ++            ++    +  + ++
+++ +         ++  ++  + +  + ++
+++ ++++ ++   ++  +   +    + ++
+++ + 5+++    ++  + +   ++ + ++
+++ +   DTU       + +   ++ + ++
+++ +    ++++ ++  + 6   ++ + ++
+++ +    +        + + +C++ +  +
+++ + ++++        + + +B++ ++ +
++  +      +++++  +   +S++  + +
++ ++  + + +      + + + ++  + +
++ +   + +   +++  + +       + +
++ + +++          +      +  + +
++ + +   +++ +++  + + ++ + 7+ +
++                +   ++   +  +
++  ++++++++++++  + + ++  +   +
++                            +
+++++++++++++++++++++++++++++++
+#end
+#clientname
+GHandDirt
+#actions
+882623333:Move(S)@Move(S)|Move(E)|Push(N,N)|Move(S)|Move(S)|Push(E,S)|Move(S)|Push(W,N)|Move(N)
+883245416:Move(S)@Move(S)|Move(E)|Push(N,E)|Move(S)|Move(S)|Push(S,E)|Move(S)|Push(N,N)|Move(E)
+883767916:Move(E)@Move(E)|Move(N)|Push(E,E)|Move(S)|Move(S)|Push(E,E)|Push(E,S)|Push(N,N)|Move(E)
+884393166:Push(E,S)@Push(E,S)|Move(N)|Push(E,N)|Move(S)|Move(S)|Push(E,E)|Push(S,E)|Push(N,N)|Move(E)
+884788416:Push(S,W)@Push(S,W)|Move(N)|Push(N,N)|Move(S)|Move(S)|Move(W)|Push(E,S)|Move(S)|Move(N)
+885103125:Move(N)@Move(N)|Move(N)|Push(N,N)|Pull(N,W)|Move(S)|Move(W)|Move(W)|Move(S)|Move(E)
+885571083:Pull(S,W)@Pull(S,W)|Move(N)|Push(N,E)|Pull(N,N)|Move(E)|Move(S)|Move(W)|Move(E)|Move(E)
+885767125:Push(W,W)@Push(W,W)|Push(N,N)|Push(E,E)|Push(S,W)|Move(E)|Move(S)|Move(W)|Move(E)|Move(E)
+886039666:Move(E)@Move(E)|Push(N,N)|Push(E,N)|Push(W,W)|NoOp|Move(W)|NoOp|Move(E)|Move(E)
+886575083:Pull(E,S)@Pull(E,S)|Push(N,N)|Push(N,N)|Push(W,W)|NoOp|Move(S)|NoOp|Move(S)|Move(E)
+887792125:Move(N)@Move(N)|Push(N,N)|Move(S)|Push(W,S)|NoOp|Move(S)|NoOp|Move(S)|Push(E,E)
+888191416:Move(N)@Move(N)|Push(N,E)|Move(E)|Push(S,S)|NoOp|Move(E)|NoOp|Move(E)|Push(E,N)
+888529500:Move(N)@Move(N)|Move(S)|Move(E)|Push(S,S)|NoOp|Pull(W,N)|NoOp|NoOp|Push(N,E)
+888894958:Move(N)@Move(N)|Move(S)|Move(E)|Push(S,W)|NoOp|Pull(N,W)|NoOp|NoOp|Push(E,E)
+889210625:Move(N)@Move(N)|Move(S)|Move(N)|Push(W,W)|NoOp|Pull(N,N)|NoOp|NoOp|Push(E,E)
+889556666:Move(E)@Move(E)|Move(S)|Move(N)|Push(W,W)|NoOp|Pull(N,N)|NoOp|NoOp|Push(E,E)
+889895208:Move(E)@Move(E)|Move(S)|Move(N)|Push(W,S)|NoOp|Pull(N,N)|NoOp|NoOp|Push(E,E)
+890204583:Pull(S,W)@Pull(S,W)|Move(S)|Move(N)|Move(E)|NoOp|Pull(E,N)|NoOp|NoOp|Push(E,E)
+890518583:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(N)|NoOp|Pull(N,E)|NoOp|NoOp|Push(E,N)
+890881750:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(N)|NoOp|Push(S,E)|NoOp|NoOp|Push(N,E)
+891292166:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(N)|NoOp|Push(E,E)|NoOp|NoOp|Push(E,E)
+891581583:Pull(S,S)@Pull(S,S)|Move(S)|Move(N)|Move(E)|NoOp|Move(W)|NoOp|NoOp|NoOp
+891865000:Pull(W,S)@Pull(W,S)|Move(E)|Move(N)|Move(E)|NoOp|Move(N)|NoOp|NoOp|NoOp
+892127458:Pull(N,W)@Pull(N,W)|Move(S)|Move(N)|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+892378875:Push(S,W)@Push(S,W)|Move(S)|Move(N)|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+892847791:Push(W,N)@Push(W,N)|Move(S)|Move(N)|Move(E)|NoOp|NoOp|NoOp|NoOp|NoOp
+893760250:Push(N,W)@Push(N,W)|Move(S)|Move(W)|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+895683916:Push(W,W)@Push(W,W)|Move(S)|Move(W)|Move(N)|NoOp|NoOp|NoOp|NoOp|NoOp
+895942791:Push(W,S)@Push(W,S)|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+896542666:Move(E)@Move(E)|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+896693083:Move(E)@Move(E)|Move(S)|Move(W)|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+896873541:Move(S)@Move(S)|Move(S)|NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp
+897285083:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+897432416:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+897846875:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+898117916:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+898288666:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+898589083:NoOp@NoOp|Move(S)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+898818333:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+898949083:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+899100916:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+899197416:NoOp@NoOp|Move(W)|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp|NoOp
+#end
+#solved
+true
+#numactions
+42
+#time
+899197416
+#end
