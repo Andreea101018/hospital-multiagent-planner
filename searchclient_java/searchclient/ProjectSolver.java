@@ -296,7 +296,7 @@ private static final Action[] MOVE_ACTIONS = {
             }
         }
 
-        PocketResult pocketResult = isTbStansColumnCandidate(groupState)
+        PocketResult pocketResult = (isTbStansColumnCandidate(groupState) || isTightManyColorCorridorCandidate(groupState))
                 ? null
                 : tryBoundaryPocketPlanner(
                         groupState,
@@ -435,7 +435,9 @@ State cleanedState = copyState(bestNode.state);
 AgentGoalPlanner agentGoalPlanner = new AgentGoalPlanner();
 boolean triedMixedGoalRoomRepair = false;
 
-if (countUnsolvedBoxGoals(cleanedState) == 1 && System.nanoTime() < deadline) {
+if (countUnsolvedBoxGoals(cleanedState) == 1
+        && isTightCorridorMap(cleanedState)
+        && System.nanoTime() < deadline) {
     triedMixedGoalRoomRepair = true;
     System.err.println("Trying mixed-color goal-room repair before parking agents.");
 
@@ -727,6 +729,10 @@ while (agentCleanupProgress && !cleanedState.isGoalState()) {
             : agentCleanupOrder(cleanedState);
 
     for (int agent : cleanupOrder) {
+        if (countUnsolvedBoxGoals(cleanedState) > 0 && agentOwnsRemainingBoxColor(cleanedState, agent)) {
+            continue;
+        }
+
         List<Action> agentPlan = agentGoalPlanner.planAgentToGoal(cleanedState, agent);
 
         if (agentPlan != null && !agentPlan.isEmpty()
@@ -779,6 +785,84 @@ if (cleanedState.isGoalState()) {
 
 System.err.println("Cleanup failed.");
 printUnsolvedGoals(cleanedState);
+
+if (countUnsolvedBoxGoals(cleanedState) > 0
+        && countUnsolvedBoxGoals(cleanedState) <= 2
+        && System.nanoTime() < deadline) {
+    System.err.println("Trying bounded small-remaining-box repair.");
+
+    PocketResult smallBoxRepair = trySmallRemainingBoxRepair(
+            cleanedState,
+            cleanedPlan,
+            analyzer,
+            deadline
+    );
+
+    if (smallBoxRepair != null && countSolvedGoals(smallBoxRepair.state) > countSolvedGoals(cleanedState)) {
+        cleanedState = smallBoxRepair.state;
+        cleanedPlan = smallBoxRepair.plan;
+        System.err.format(
+                "Small remaining-box repair improved solved goals to %,d.%n",
+                countSolvedGoals(cleanedState)
+        );
+
+        if (cleanedState.isGoalState()) {
+            return cleanedPlan.toArray(new Action[0][]);
+        }
+    }
+}
+
+if (countUnsolvedBoxGoals(cleanedState) == 1
+        && isTightCorridorMap(cleanedState)
+        && System.nanoTime() < deadline) {
+    System.err.println("Trying nearby solved-box unblock repair.");
+
+    PocketResult unblockRepair = tryNearbySolvedBoxUnblockRepair(
+            cleanedState,
+            cleanedPlan,
+            analyzer,
+            planner,
+            deadline
+    );
+
+    if (unblockRepair != null && countSolvedGoals(unblockRepair.state) > countSolvedGoals(cleanedState)) {
+        cleanedState = unblockRepair.state;
+        cleanedPlan = unblockRepair.plan;
+        System.err.format(
+                "Nearby solved-box unblock repair improved solved goals to %,d.%n",
+                countSolvedGoals(cleanedState)
+        );
+
+        if (cleanedState.isGoalState()) {
+            return cleanedPlan.toArray(new Action[0][]);
+        }
+    }
+}
+
+if (countUnsolvedBoxGoals(cleanedState) == 1 && System.nanoTime() < deadline) {
+    System.err.println("Trying adjacent goal-pair unblock repair.");
+
+    PocketResult adjacentRepair = tryAdjacentGoalPairUnblockRepair(
+            cleanedState,
+            cleanedPlan,
+            analyzer,
+            planner,
+            deadline
+    );
+
+    if (adjacentRepair != null && countSolvedGoals(adjacentRepair.state) > countSolvedGoals(cleanedState)) {
+        cleanedState = adjacentRepair.state;
+        cleanedPlan = adjacentRepair.plan;
+        System.err.format(
+                "Adjacent goal-pair unblock repair improved solved goals to %,d.%n",
+                countSolvedGoals(cleanedState)
+        );
+
+        if (cleanedState.isGoalState()) {
+            return cleanedPlan.toArray(new Action[0][]);
+        }
+    }
+}
 
 if (countUnsolvedBoxGoals(cleanedState) == 0
         && countUnsolvedGoals(cleanedState) <= 8
@@ -939,6 +1023,29 @@ return bestNode.plan.toArray(new Action[0][]);
         );
 
         return agents;
+    }
+
+    private static boolean agentOwnsRemainingBoxColor(State state, int agent) {
+        if (agent < 0 || agent >= State.agentColors.length) {
+            return false;
+        }
+
+        Color agentColor = State.agentColors[agent];
+
+        for (int r = 0; r < State.goals.length; r++) {
+            for (int c = 0; c < State.goals[r].length; c++) {
+                char goal = State.goals[r][c];
+
+                if ('A' <= goal
+                        && goal <= 'Z'
+                        && state.boxes[r][c] != goal
+                        && State.boxColors[goal - 'A'] == agentColor) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     private static ArrayList<Integer> dependencyAwareAgentCleanupOrder(State state, LevelAnalyzer analyzer) {
@@ -1505,6 +1612,17 @@ return bestNode.plan.toArray(new Action[0][]);
         return State.walls.length == 15
                 && State.walls[0].length == 15
                 && state.agentRows.length == 6;
+    }
+
+    private static boolean isTightManyColorCorridorCandidate(State state) {
+        return isTightCorridorMap(state)
+                && state.agentRows.length >= 8
+                && countUnsolvedBoxGoals(state) >= 8;
+    }
+
+    private static boolean isTightCorridorMap(State state) {
+        return State.walls.length <= 12
+                && State.walls[0].length <= 25;
     }
 
     private static boolean isZoomHereCandidate(State state) {
@@ -2201,7 +2319,7 @@ return bestNode.plan.toArray(new Action[0][]);
     }
 
     private static int topDoorCorridorScore(State state) {
-        if (State.walls.length <= 2 || State.walls[0].length < 30) {
+        if (State.walls.length <= 2 || State.walls[0].length < 8) {
             return 0;
         }
 
@@ -3407,6 +3525,366 @@ return bestNode.plan.toArray(new Action[0][]);
         }
 
         return null;
+    }
+
+    private static PocketResult trySmallRemainingBoxRepair(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            long deadline
+    ) {
+        if (countUnsolvedBoxGoals(start) > 2) {
+            return null;
+        }
+
+        State current = copyState(start);
+        ArrayList<Action[]> plan = copyPlan(basePlan);
+        int previousSolved = countSolvedGoals(current);
+
+        for (int pass = 0; pass < 2 && countUnsolvedBoxGoals(current) > 0; pass++) {
+            ArrayList<UnsolvedBoxGoal> targets = remainingBoxGoals(current);
+            final State sortingState = current;
+            targets.sort(Comparator
+                    .comparingInt((UnsolvedBoxGoal target) -> -closestBoxDistance(analyzer, sortingState, target))
+                    .thenComparingInt(target -> target.goal.row)
+                    .thenComparingInt(target -> target.goal.col));
+
+            boolean progress = false;
+
+            for (UnsolvedBoxGoal target : targets) {
+                if (System.nanoTime() >= deadline || current.boxes[target.goal.row][target.goal.col] == target.letter) {
+                    continue;
+                }
+
+                long seconds = current.agentRows.length <= 4 ? 10L : 6L;
+                int expansions = current.agentRows.length <= 4 ? 1_200_000 : 700_000;
+                long targetDeadline = Math.min(deadline, System.nanoTime() + seconds * 1_000_000_000L);
+
+                Action[][] repair = focusedSingleGoalRepair(
+                        current,
+                        analyzer,
+                        target,
+                        targetDeadline,
+                        expansions
+                );
+
+                if (repair == null || repair.length == 0 || plan.size() + repair.length > MAX_TOTAL_ACTIONS) {
+                    continue;
+                }
+
+                appendJointPlan(plan, repair);
+                current = simulateJointPlan(current, repair);
+                progress = true;
+
+                System.err.format(
+                        "Small remaining-box repair placed %c at %s using %,d actions.%n",
+                        target.letter,
+                        target.goal,
+                        repair.length
+                );
+
+                if (allBoxGoalsSolved(current)) {
+                    return new PocketResult(current, plan);
+                }
+            }
+
+            if (!progress) {
+                break;
+            }
+        }
+
+        return countSolvedGoals(current) > previousSolved ? new PocketResult(current, plan) : null;
+    }
+
+    private static PocketResult tryNearbySolvedBoxUnblockRepair(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            SingleAgentPlanner planner,
+            long deadline
+    ) {
+        UnsolvedBoxGoal target = findOnlyUnsolvedBoxGoal(start);
+
+        if (target == null) {
+            return null;
+        }
+
+        ArrayList<Position> blockers = nearbySolvedBoxGoals(start, target.goal, 6);
+
+        for (Position blockerGoal : blockers) {
+            if (System.nanoTime() >= deadline) {
+                break;
+            }
+
+            char blocker = start.boxes[blockerGoal.row][blockerGoal.col];
+
+            if (!('A' <= blocker && blocker <= 'Z')) {
+                continue;
+            }
+
+            ArrayList<Integer> blockerAgents = agentsWithBoxColorByManhattan(start, blocker, blockerGoal);
+
+            for (int blockerAgent : blockerAgents) {
+                for (Position stage : blockerClearDestinations(start, blockerGoal, blocker)) {
+                    if (System.nanoTime() >= deadline) {
+                        return null;
+                    }
+
+                    if (stage.equals(blockerGoal) || stage.manhattanDistance(target.goal) <= 1) {
+                        continue;
+                    }
+
+                    State current = copyState(start);
+                    ArrayList<Action[]> plan = copyPlan(basePlan);
+
+                    Task stageTask = new Task(blocker, blockerGoal, stage, blockerAgent, 0);
+                    List<Action> stagePlan = planner.planBoxToGoalRelaxed(current, stageTask, new ReservationTable());
+
+                    if (stagePlan == null || stagePlan.isEmpty()
+                            || plan.size() + stagePlan.size() > MAX_TOTAL_ACTIONS) {
+                        continue;
+                    }
+
+                    appendAsJointActions(plan, stagePlan, blockerAgent, current.agentRows.length);
+                    current = simulateSingleAgentPlan(current, stagePlan, blockerAgent);
+
+                    long targetDeadline = Math.min(deadline, System.nanoTime() + 8L * 1_000_000_000L);
+                    Action[][] targetPlan = focusedSingleGoalRepair(
+                            current,
+                            analyzer,
+                            target,
+                            targetDeadline,
+                            800_000
+                    );
+
+                    if (targetPlan == null || targetPlan.length == 0
+                            || plan.size() + targetPlan.length > MAX_TOTAL_ACTIONS) {
+                        continue;
+                    }
+
+                    appendJointPlan(plan, targetPlan);
+                    current = simulateJointPlan(current, targetPlan);
+
+                    Task restoreTask = new Task(blocker, stage, blockerGoal, blockerAgent, 0);
+                    List<Action> restorePlan = planner.planBoxToGoalRelaxed(current, restoreTask, new ReservationTable());
+
+                    if (restorePlan == null || restorePlan.isEmpty()
+                            || plan.size() + restorePlan.size() > MAX_TOTAL_ACTIONS) {
+                        continue;
+                    }
+
+                    appendAsJointActions(plan, restorePlan, blockerAgent, current.agentRows.length);
+                    current = simulateSingleAgentPlan(current, restorePlan, blockerAgent);
+
+                    System.err.format(
+                            "Solved-box unblock moved %c via %s, placed %c at %s, restored %c at %s.%n",
+                            blocker,
+                            stage,
+                            target.letter,
+                            target.goal,
+                            blocker,
+                            blockerGoal
+                    );
+
+                    return new PocketResult(current, plan);
+                }
+            }
+        }
+
+        return null;
+    }
+
+    private static PocketResult tryAdjacentGoalPairUnblockRepair(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            SingleAgentPlanner planner,
+            long deadline
+    ) {
+        UnsolvedBoxGoal target = findOnlyUnsolvedBoxGoal(start);
+
+        if (target == null) {
+            return null;
+        }
+
+        for (Position blockerGoal : adjacentSolvedBoxGoals(start, target.goal)) {
+            if (System.nanoTime() >= deadline) {
+                return null;
+            }
+
+            char blocker = start.boxes[blockerGoal.row][blockerGoal.col];
+
+            if (State.boxColors[blocker - 'A'] != State.boxColors[target.letter - 'A']) {
+                continue;
+            }
+
+            ArrayList<Integer> blockerAgents = agentsWithBoxColorByManhattan(start, blocker, blockerGoal);
+            ArrayList<Position> stages = blockerClearDestinations(start, blockerGoal, blocker);
+            int triedStages = 0;
+
+            for (int blockerAgent : blockerAgents) {
+                for (Position stage : stages) {
+                    if (System.nanoTime() >= deadline) {
+                        return null;
+                    }
+
+                    if (stage.equals(blockerGoal)
+                            || stage.equals(target.goal)
+                            || stage.manhattanDistance(blockerGoal) > 5
+                            || ++triedStages > 16) {
+                        continue;
+                    }
+
+                    PocketResult result = tryStageTargetRestore(
+                            start,
+                            basePlan,
+                            analyzer,
+                            planner,
+                            deadline,
+                            target,
+                            blocker,
+                            blockerGoal,
+                            blockerAgent,
+                            stage,
+                            0
+                    );
+
+                    if (result != null) {
+                        return result;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    private static PocketResult tryStageTargetRestore(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            SingleAgentPlanner planner,
+            long deadline,
+            UnsolvedBoxGoal target,
+            char blocker,
+            Position blockerGoal,
+            int blockerAgent,
+            Position stage,
+            int targetExpansionLimit
+    ) {
+        State current = copyState(start);
+        ArrayList<Action[]> plan = copyPlan(basePlan);
+
+        Task stageTask = new Task(blocker, blockerGoal, stage, blockerAgent, 0);
+        List<Action> stagePlan = planner.planBoxToGoalRelaxed(current, stageTask, new ReservationTable());
+
+        if (stagePlan == null || stagePlan.isEmpty()
+                || plan.size() + stagePlan.size() > MAX_TOTAL_ACTIONS) {
+            return null;
+        }
+
+        appendAsJointActions(plan, stagePlan, blockerAgent, current.agentRows.length);
+        current = simulateSingleAgentPlan(current, stagePlan, blockerAgent);
+
+        Action[][] targetPlan = null;
+        Task targetTask = bestSameSideTaskForGoal(
+                current,
+                analyzer,
+                target.letter,
+                target.goal,
+                dominantBoundary(target.goal)
+        );
+
+        if (targetTask != null) {
+            List<Action> directTargetPlan = planner.planBoxToGoal(current, targetTask, new ReservationTable());
+
+            if (directTargetPlan == null || directTargetPlan.isEmpty()) {
+                directTargetPlan = planner.planBoxToGoalRelaxed(current, targetTask, new ReservationTable());
+            }
+
+            if (directTargetPlan != null && !directTargetPlan.isEmpty()) {
+                ArrayList<Action[]> directJointPlan = new ArrayList<>();
+                appendAsJointActions(directJointPlan, directTargetPlan, targetTask.assignedAgent, current.agentRows.length);
+                targetPlan = directJointPlan.toArray(new Action[0][]);
+            }
+        }
+
+        if ((targetPlan == null || targetPlan.length == 0) && targetExpansionLimit > 0) {
+            long targetDeadline = Math.min(deadline, System.nanoTime() + 10L * 1_000_000_000L);
+            targetPlan = focusedSingleGoalRepair(
+                    current,
+                    analyzer,
+                    target,
+                    targetDeadline,
+                    targetExpansionLimit
+            );
+        }
+
+        if (targetPlan == null || targetPlan.length == 0
+                || plan.size() + targetPlan.length > MAX_TOTAL_ACTIONS) {
+            return null;
+        }
+
+        appendJointPlan(plan, targetPlan);
+        current = simulateJointPlan(current, targetPlan);
+
+        Task restoreTask = new Task(blocker, stage, blockerGoal, blockerAgent, 0);
+        List<Action> restorePlan = planner.planBoxToGoalRelaxed(current, restoreTask, new ReservationTable());
+
+        if (restorePlan == null || restorePlan.isEmpty()
+                || plan.size() + restorePlan.size() > MAX_TOTAL_ACTIONS) {
+            return null;
+        }
+
+        appendAsJointActions(plan, restorePlan, blockerAgent, current.agentRows.length);
+        current = simulateSingleAgentPlan(current, restorePlan, blockerAgent);
+
+        System.err.format(
+                "Adjacent pair unblock moved %c via %s, placed %c at %s, restored %c at %s.%n",
+                blocker,
+                stage,
+                target.letter,
+                target.goal,
+                blocker,
+                blockerGoal
+        );
+
+        return new PocketResult(current, plan);
+    }
+
+    private static ArrayList<Position> adjacentSolvedBoxGoals(State state, Position target) {
+        ArrayList<Position> result = new ArrayList<>();
+
+        for (Position cell : accessCells(target)) {
+            char box = state.boxes[cell.row][cell.col];
+
+            if ('A' <= box && box <= 'Z' && State.goals[cell.row][cell.col] == box) {
+                result.add(cell);
+            }
+        }
+
+        result.sort(Comparator.comparingInt(p -> p.manhattanDistance(target)));
+        return result;
+    }
+
+    private static ArrayList<Position> nearbySolvedBoxGoals(State state, Position target, int maxDistance) {
+        ArrayList<Position> result = new ArrayList<>();
+
+        for (int r = 0; r < State.goals.length; r++) {
+            for (int c = 0; c < State.goals[r].length; c++) {
+                char goal = State.goals[r][c];
+
+                if ('A' <= goal
+                        && goal <= 'Z'
+                        && state.boxes[r][c] == goal
+                        && new Position(r, c).manhattanDistance(target) <= maxDistance) {
+                    result.add(new Position(r, c));
+                }
+            }
+        }
+
+        result.sort(Comparator.comparingInt(p -> p.manhattanDistance(target)));
+        return result;
     }
 
     private static Action[][] preSealAgentEvacuation(
@@ -4733,6 +5211,22 @@ return bestNode.plan.toArray(new Action[0][]);
                     }
 
                     result = new UnsolvedBoxGoal(goal, new Position(r, c));
+                }
+            }
+        }
+
+        return result;
+    }
+
+    private static ArrayList<UnsolvedBoxGoal> remainingBoxGoals(State state) {
+        ArrayList<UnsolvedBoxGoal> result = new ArrayList<>();
+
+        for (int r = 0; r < State.goals.length; r++) {
+            for (int c = 0; c < State.goals[r].length; c++) {
+                char goal = State.goals[r][c];
+
+                if ('A' <= goal && goal <= 'Z' && state.boxes[r][c] != goal) {
+                    result.add(new UnsolvedBoxGoal(goal, new Position(r, c)));
                 }
             }
         }
