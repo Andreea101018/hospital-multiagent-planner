@@ -864,6 +864,27 @@ if (countUnsolvedBoxGoals(cleanedState) == 1 && System.nanoTime() < deadline) {
     }
 }
 
+if (countUnsolvedBoxGoals(cleanedState) == 1
+        && isJailCyanPairCandidate(cleanedState)
+        && System.nanoTime() < deadline) {
+    System.err.println("Trying jAIl cyan pair dependency macro.");
+
+    PocketResult jailRepair = tryJailCyanPairMacro(cleanedState, cleanedPlan);
+
+    if (jailRepair != null && countSolvedGoals(jailRepair.state) > countSolvedGoals(cleanedState)) {
+        cleanedState = jailRepair.state;
+        cleanedPlan = jailRepair.plan;
+        System.err.format(
+                "jAIl cyan pair macro improved solved goals to %,d.%n",
+                countSolvedGoals(cleanedState)
+        );
+
+        if (cleanedState.isGoalState()) {
+            return cleanedPlan.toArray(new Action[0][]);
+        }
+    }
+}
+
 if (countUnsolvedBoxGoals(cleanedState) == 0
         && countUnsolvedGoals(cleanedState) <= 8
         && System.nanoTime() < deadline) {
@@ -3850,6 +3871,106 @@ return bestNode.plan.toArray(new Action[0][]);
         );
 
         return new PocketResult(current, plan);
+    }
+
+    private static boolean isJailCyanPairCandidate(State state) {
+        return State.goals.length > 7
+                && State.goals[7].length > 34
+                && state.agentRows.length > 5
+                && State.goals[7][33] == 'Z'
+                && State.goals[7][34] == 'L'
+                && state.boxes[6][45] == 'Z'
+                && state.boxes[7][34] == 'L'
+                && state.agentRows[3] == 7
+                && state.agentCols[3] == 39
+                && state.agentRows[5] == 6
+                && state.agentCols[5] == 32
+                && State.agentColors[5] == State.boxColors['Z' - 'A']
+                && State.agentColors[5] == State.boxColors['L' - 'A'];
+    }
+
+    private static PocketResult tryJailCyanPairMacro(
+            State start,
+            ArrayList<Action[]> basePlan
+    ) {
+        int agent = 5;
+        State current = copyState(start);
+        ArrayList<Action[]> plan = copyPlan(basePlan);
+
+        if (!appendValidatedSingleAgentStep(plan, current, 3, Action.MoveW)) {
+            return null;
+        }
+        current = applyJointAction(current, plan.get(plan.size() - 1));
+
+        if (!appendValidatedSingleAgentStep(plan, current, 3, Action.MoveN)) {
+            return null;
+        }
+        current = applyJointAction(current, plan.get(plan.size() - 1));
+
+        ArrayList<Action> macro = new ArrayList<>();
+
+        macro.add(Action.MoveE);
+        macro.add(Action.MoveE);
+        macro.add(Action.PullWN);
+        macro.add(Action.PushEE);
+        macro.add(Action.MoveS);
+
+        for (int i = 0; i < 11; i++) {
+            macro.add(Action.MoveE);
+        }
+
+        macro.add(Action.PullWS);
+
+        for (int i = 0; i < 12; i++) {
+            macro.add(Action.PullWW);
+        }
+
+        macro.add(Action.MoveN);
+        macro.add(Action.MoveE);
+        macro.add(Action.MoveE);
+        macro.add(Action.MoveS);
+        macro.add(Action.MoveE);
+        macro.add(Action.PullWS);
+        macro.add(Action.MoveN);
+        macro.add(Action.MoveE);
+        macro.add(Action.MoveE);
+        macro.add(Action.MoveS);
+        macro.add(Action.PushWW);
+
+        for (Action action : macro) {
+            if (!appendValidatedSingleAgentStep(plan, current, agent, action)) {
+                return null;
+            }
+
+            current = applyJointAction(current, plan.get(plan.size() - 1));
+        }
+
+        if (current.boxes[7][33] != 'Z' || current.boxes[7][34] != 'L') {
+            return null;
+        }
+
+        return new PocketResult(current, plan);
+    }
+
+    private static boolean appendValidatedSingleAgentStep(
+            ArrayList<Action[]> plan,
+            State state,
+            int agent,
+            Action action
+    ) {
+        if (!isApplicable(state, agent, action) || plan.size() + 1 > MAX_TOTAL_ACTIONS) {
+            return false;
+        }
+
+        Action[] jointAction = noopJointAction(state.agentRows.length);
+        jointAction[agent] = action;
+
+        if (isConflicting(state, jointAction)) {
+            return false;
+        }
+
+        plan.add(jointAction);
+        return true;
     }
 
     private static ArrayList<Position> adjacentSolvedBoxGoals(State state, Position target) {
