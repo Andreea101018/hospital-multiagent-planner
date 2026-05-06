@@ -789,7 +789,7 @@ printUnsolvedGoals(cleanedState);
 if (countUnsolvedBoxGoals(cleanedState) > 0
         && countUnsolvedBoxGoals(cleanedState) <= 3
         && countUnsolvedGoals(cleanedState) <= 8
-        && cleanedState.agentRows.length <= 4
+        && cleanedState.agentRows.length <= 5
         && System.nanoTime() < deadline) {
     System.err.println("Trying bounded mixed endgame repair.");
 
@@ -1429,7 +1429,6 @@ return bestNode.plan.toArray(new Action[0][]);
             int maxExpansions,
             int maxRegionArea
     ) {
-        int activeAgent = group.assignedAgent;
         int regionArea = (region.maxRow - region.minRow + 1) * (region.maxCol - region.minCol + 1);
 
         if (regionArea > maxRegionArea) {
@@ -1450,6 +1449,42 @@ return bestNode.plan.toArray(new Action[0][]);
                 region.maxCol
         );
 
+        for (int activeAgent : compactRoomRepairAgents(start, group, region)) {
+            if (System.nanoTime() >= deadline) {
+                break;
+            }
+
+            Action[][] candidate = compactRoomRepairWithAgent(
+                    start,
+                    analyzer,
+                    group,
+                    region,
+                    deadline,
+                    maxExpansions,
+                    activeAgent
+            );
+
+            if (candidate == null) {
+                continue;
+            }
+
+            return candidate;
+        }
+
+        return null;
+    }
+
+    private static Action[][] compactRoomRepairWithAgent(
+            State start,
+            LevelAnalyzer analyzer,
+            GoalGroup group,
+            RepairRegion region,
+            long deadline,
+            int maxExpansions,
+            int activeAgent
+    ) {
+        System.err.format("  Trying compact room repair with agent %,d.%n", activeAgent);
+
         PriorityQueue<FocusedNode> open = new PriorityQueue<>(Comparator.comparingInt(node -> node.f));
         HashMap<State, Integer> bestG = new HashMap<>();
 
@@ -1458,7 +1493,7 @@ return bestNode.plan.toArray(new Action[0][]);
                 null,
                 null,
                 0,
-                compactRoomHeuristic(start, analyzer, group, region)
+                compactRoomHeuristic(start, analyzer, group, region, activeAgent)
         ));
 
         int expansions = 0;
@@ -1499,7 +1534,7 @@ return bestNode.plan.toArray(new Action[0][]);
                     continue;
                 }
 
-                int h = compactRoomHeuristic(next, analyzer, group, region);
+                int h = compactRoomHeuristic(next, analyzer, group, region, activeAgent);
                 if (h >= LevelAnalyzer.INF) {
                     continue;
                 }
@@ -1510,6 +1545,42 @@ return bestNode.plan.toArray(new Action[0][]);
 
         System.err.format("Compact room repair exhausted search after %,d expansions.%n", expansions);
         return null;
+    }
+
+    private static ArrayList<Integer> compactRoomRepairAgents(State state, GoalGroup group, RepairRegion region) {
+        ArrayList<Integer> agents = new ArrayList<>();
+        addCompactRoomRepairAgent(agents, group.assignedAgent);
+
+        for (int agent = 0; agent < state.agentRows.length; agent++) {
+            if (agent == group.assignedAgent || !agentCanMoveCompactGroupLetter(agent, group)) {
+                continue;
+            }
+
+            addCompactRoomRepairAgent(agents, agent);
+        }
+
+        agents.sort(Comparator
+                .comparingInt((Integer agent) -> agent == group.assignedAgent ? 0 : 1)
+                .thenComparingInt(agent -> distanceToRegion(state.agentRows[agent], state.agentCols[agent], region)));
+        return agents;
+    }
+
+    private static void addCompactRoomRepairAgent(ArrayList<Integer> agents, int agent) {
+        if (agent < 0 || agents.contains(agent)) {
+            return;
+        }
+
+        agents.add(agent);
+    }
+
+    private static boolean agentCanMoveCompactGroupLetter(int agent, GoalGroup group) {
+        for (char letter : group.letters) {
+            if (State.agentColors[agent] == State.boxColors[letter - 'A']) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private static RepairRegion buildCompactRoomRegion(State state, GoalGroup group) {
@@ -2088,7 +2159,8 @@ return bestNode.plan.toArray(new Action[0][]);
             State state,
             LevelAnalyzer analyzer,
             GoalGroup group,
-            RepairRegion region
+            RepairRegion region,
+            int activeAgent
     ) {
         int h = 0;
         int unsolved = 0;
@@ -2120,7 +2192,7 @@ return bestNode.plan.toArray(new Action[0][]);
         }
 
         h += 220 * unsolved;
-        h += distanceToRegion(state.agentRows[group.assignedAgent], state.agentCols[group.assignedAgent], region);
+        h += distanceToRegion(state.agentRows[activeAgent], state.agentCols[activeAgent], region);
 
         return h;
     }
