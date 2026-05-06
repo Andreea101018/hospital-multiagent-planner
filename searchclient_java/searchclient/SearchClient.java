@@ -158,7 +158,7 @@ public class SearchClient
         System.err.println("SearchClient initializing. I am sending this using the error output stream.");
 
         // Send client name to server.
-        System.out.println("SearchClient");
+        System.out.println("ProgProj");
 
         // We can also print comments to stdout by prefixing with a #.
         System.out.println("#This is a comment.");

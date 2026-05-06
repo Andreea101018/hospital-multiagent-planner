@@ -787,6 +787,23 @@ System.err.println("Cleanup failed.");
 printUnsolvedGoals(cleanedState);
 
 if (countUnsolvedBoxGoals(cleanedState) > 0
+        && countUnsolvedBoxGoals(cleanedState) <= 3
+        && countUnsolvedGoals(cleanedState) <= 8
+        && cleanedState.agentRows.length <= 4
+        && System.nanoTime() < deadline) {
+    System.err.println("Trying bounded mixed endgame repair.");
+
+    long repairDeadline = Math.min(deadline, System.nanoTime() + 30L * 1_000_000_000L);
+    Action[][] repairPlan = boundedGlobalRepair(cleanedState, analyzer, repairDeadline, 2_500_000);
+
+    if (repairPlan != null && cleanedPlan.size() + repairPlan.length <= MAX_TOTAL_ACTIONS) {
+        appendJointPlan(cleanedPlan, repairPlan);
+        System.err.format("Bounded mixed endgame repair solved suffix with %,d actions.%n", repairPlan.length);
+        return cleanedPlan.toArray(new Action[0][]);
+    }
+}
+
+if (countUnsolvedBoxGoals(cleanedState) > 0
         && countUnsolvedBoxGoals(cleanedState) <= 2
         && System.nanoTime() < deadline) {
     System.err.println("Trying bounded small-remaining-box repair.");
