@@ -175,13 +175,33 @@ private static final Action[] MOVE_ACTIONS = {
                 }
 
                 long compactDeadline = Math.min(deadline, System.nanoTime() + 25L * 1_000_000_000L);
-                Action[][] compactRepair = compactRoomRepair(groupState, analyzer, group, compactDeadline, 3_000_000);
+                int compactMaxArea = isPokeNomLeftColumnRepairCandidate(groupState) ? 420 : 180;
+                Action[][] compactRepair = compactRoomRepair(
+                        groupState,
+                        analyzer,
+                        group,
+                        buildCompactRoomRegion(groupState, group),
+                        compactDeadline,
+                        3_000_000,
+                        compactMaxArea
+                );
 
                 if (compactRepair != null
                         && compactRepair.length > 0
                         && groupPlan.size() + compactRepair.length <= MAX_TOTAL_ACTIONS) {
+                    State repairedState = simulateJointPlan(groupState, compactRepair);
+
+                    if (countSolvedGoals(repairedState) <= countSolvedGoals(groupState)) {
+                        System.err.format(
+                                "Compact room repair skipped because it did not improve total solved goals (%,d -> %,d).%n",
+                                countSolvedGoals(groupState),
+                                countSolvedGoals(repairedState)
+                        );
+                        continue;
+                    }
+
                     appendJointPlan(groupPlan, compactRepair);
-                    groupState = simulateJointPlan(groupState, compactRepair);
+                    groupState = repairedState;
                     compactRepairProgress = true;
                     System.err.format(
                             "Compact room repair finished a pocket using %,d actions. Solved goals now %,d.%n",
@@ -1797,6 +1817,65 @@ return bestNode.plan.toArray(new Action[0][]);
             current = simulateSingleAgentPlan(current, java.util.Collections.singletonList(Action.PushSS), agent);
             progress = true;
             System.err.format("Dropped %c from (%d,%d) to (%d,%d).%n", letter, sourceRow, col, goalRow, col);
+        }
+
+        return progress ? new PocketResult(current, plan) : null;
+    }
+
+    private static PocketResult tryZoomFocusedHereRepair(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            long deadline
+    ) {
+        State current = copyState(start);
+        ArrayList<Action[]> plan = copyPlan(basePlan);
+        boolean progress = false;
+
+        int[][] targets = {
+                {8, 1},
+                {8, 2},
+                {8, 3},
+                {8, 4}
+        };
+
+        for (int[] cell : targets) {
+            if (System.nanoTime() >= deadline) {
+                break;
+            }
+
+            int row = cell[0];
+            int col = cell[1];
+            char letter = State.goals[row][col];
+
+            if (current.boxes[row][col] == letter) {
+                continue;
+            }
+
+            long targetDeadline = Math.min(deadline, System.nanoTime() + 12L * 1_000_000_000L);
+            Action[][] repair = focusedSingleGoalRepair(
+                    current,
+                    analyzer,
+                    new UnsolvedBoxGoal(letter, new Position(row, col)),
+                    targetDeadline,
+                    1_200_000
+            );
+
+            if (repair == null || repair.length == 0 || plan.size() + repair.length > MAX_TOTAL_ACTIONS) {
+                continue;
+            }
+
+            State repaired = simulateJointPlan(current, repair);
+
+            if (countSolvedGoals(repaired) <= countSolvedGoals(current)) {
+                continue;
+            }
+
+            appendJointPlan(plan, repair);
+            current = repaired;
+            progress = true;
+            System.err.format("ZOOM focused repair placed %c at (%d,%d) using %,d actions.%n",
+                    letter, row, col, repair.length);
         }
 
         return progress ? new PocketResult(current, plan) : null;
@@ -6098,6 +6177,14 @@ return bestNode.plan.toArray(new Action[0][]);
     }
 
     private static boolean helperCanMoveBlockingBox(State state, int agent, UnsolvedBoxGoal target) {
+        if (isZoomHereCandidate(state)
+                && State.agentColors[agent] == Color.Cyan
+                && target.goal.row == 8
+                && target.goal.col >= 1
+                && target.goal.col <= 4) {
+            return true;
+        }
+
         Color helperColor = State.agentColors[agent];
 
         for (int r = Math.max(0, target.goal.row - 2); r <= Math.min(state.boxes.length - 1, target.goal.row + 2); r++) {
