@@ -2,8 +2,10 @@ package searchclient;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -56,9 +58,11 @@ public final class TaskManager {
     }
 
     public List<Task> orderTasks(List<Task> tasks) {
+        Map<Task, Integer> duplicateAssignmentPenalties = duplicateAssignmentPenalties(tasks);
         tasks.sort(
                 Comparator
-                        .comparingInt(this::orderingScore)
+                        .comparingInt((Task task) ->
+                                orderingScore(task) + duplicateAssignmentPenalties.getOrDefault(task, 0))
                         .thenComparingInt(t -> t.priority)
                         .thenComparingInt(this::sameRowSplitTieBreaker)
                         .thenComparingInt(t -> t.goal.row)
@@ -68,13 +72,120 @@ public final class TaskManager {
         return tasks;
     }
 
+    private Map<Task, Integer> duplicateAssignmentPenalties(List<Task> tasks) {
+        HashMap<Task, Integer> penalties = new HashMap<>();
+
+        for (Task task : tasks) {
+            penalties.put(task, duplicateAssignmentPenalty(task, tasks));
+        }
+
+        return penalties;
+    }
+
+    private int duplicateAssignmentPenalty(Task task, List<Task> tasks) {
+        HashSet<Position> sameLetterGoals = new HashSet<>();
+        HashSet<Position> sameLetterBoxes = new HashSet<>();
+
+        for (Task other : tasks) {
+            if (other.boxLetter != task.boxLetter) {
+                continue;
+            }
+
+            sameLetterGoals.add(other.goal);
+            sameLetterBoxes.add(other.boxStart);
+        }
+
+        if (sameLetterGoals.size() < 2 || sameLetterBoxes.size() < 2) {
+            return 0;
+        }
+
+        int penalty = 0;
+        int taskDistance = analyzer.distance(task.boxStart, task.goal);
+        int currentGoalOptions = countSameLetterBoxOptions(tasks, task.boxLetter, task.goal);
+
+        // Duplicate-letter hard goals should normally be tried before easy goals,
+        // because easy goals tend to have more interchangeable candidate boxes.
+        if (currentGoalOptions <= 1) {
+            penalty -= 120;
+        } else if (currentGoalOptions >= 3) {
+            penalty += 40;
+        }
+
+        for (Position otherGoal : sameLetterGoals) {
+            if (otherGoal.equals(task.goal)) {
+                continue;
+            }
+
+            int thisBoxDistance = analyzer.distance(task.boxStart, otherGoal);
+            if (thisBoxDistance >= LevelAnalyzer.INF) {
+                continue;
+            }
+
+            int bestWithoutThisBox = bestSameLetterDistanceExcludingBox(
+                    tasks,
+                    task.boxLetter,
+                    otherGoal,
+                    task.boxStart
+            );
+
+            if (bestWithoutThisBox >= LevelAnalyzer.INF) {
+                penalty += currentGoalOptions > 1 ? 600 : 300;
+            } else if (thisBoxDistance + 3 < bestWithoutThisBox) {
+                penalty += Math.min(300, 40 * (bestWithoutThisBox - thisBoxDistance));
+            }
+
+            if (thisBoxDistance + 4 < taskDistance) {
+                penalty += 120;
+            }
+        }
+
+        return penalty;
+    }
+
+    private int countSameLetterBoxOptions(List<Task> tasks, char letter, Position goal) {
+        HashSet<Position> boxes = new HashSet<>();
+
+        for (Task task : tasks) {
+            if (task.boxLetter == letter
+                    && task.goal.equals(goal)
+                    && analyzer.distance(task.boxStart, goal) < LevelAnalyzer.INF) {
+                boxes.add(task.boxStart);
+            }
+        }
+
+        return boxes.size();
+    }
+
+    private int bestSameLetterDistanceExcludingBox(
+            List<Task> tasks,
+            char letter,
+            Position goal,
+            Position excludedBox
+    ) {
+        int best = LevelAnalyzer.INF;
+        HashSet<Position> seenBoxes = new HashSet<>();
+
+        for (Task task : tasks) {
+            if (task.boxLetter != letter
+                    || !task.goal.equals(goal)
+                    || task.boxStart.equals(excludedBox)
+                    || !seenBoxes.add(task.boxStart)) {
+                continue;
+            }
+
+            best = Math.min(best, analyzer.distance(task.boxStart, goal));
+        }
+
+        return best;
+    }
+
     /**
      * Lower score means earlier task.
      *
      * Important hospital-domain rule:
      * In goal rooms / goal rows, solve deeper goals first.
-     * For the top-row structure in help.lvl, this means solving the far-left/far-right goals
-     * before the goals closer to the central doorway.
+     * For top-row goal corridors, this means solving the far-left/far-right goals before
+     * the goals closer to the central doorway.
      */
     private int orderingScore(Task task) {
         int centerRow = analyzer.rows / 2;

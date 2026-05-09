@@ -19,31 +19,201 @@ private static final Action[] MOVE_ACTIONS = {
         Action.MoveE,
         Action.MoveW
 };
+private static HybridRunStats activeStats = null;
 
     private ProjectSolver() {}
 
     public static Action[][] solve(State initialState) {
-        System.err.println("Project solver: beam-search hierarchical task planner.");
+        long startTime = System.nanoTime();
+        System.err.println("Project solver: verified hybrid portfolio planner.");
         long deadline = System.nanoTime() + 170L * 1_000_000_000L;
 
-        LevelAnalyzer analyzer = new LevelAnalyzer(initialState);
-        analyzer.analyze();
+        LevelAnalyzer analyzer = analyzeLevel(initialState);
 
-        if (countUnsolvedGoals(initialState) <= 6
-                && initialState.agentRows.length <= 3
-                && State.walls.length * State.walls[0].length <= 700) {
-            System.err.println("Trying bounded global opening search for small level.");
-            Action[][] openingRepair = boundedGlobalRepair(
+        ArrayList<StrategyResult> results = new ArrayList<>();
+        results.add(runCbsPrefixStrategy(
+                "CBS-first hybrid",
+                initialState,
+                analyzer,
+                deadline,
+                8,
+                40L
+        ));
+
+        StrategyResult fallbackFromInitial = runFallbackStrategy(
+                "Heuristic fallback from initial",
+                initialState
+        );
+        results.add(fallbackFromInitial);
+
+        if (System.nanoTime() < deadline) {
+            results.add(runConservativeCbsAssistedStrategy(
+                    "Conservative CBS-assisted fallback",
                     initialState,
                     analyzer,
-                    Math.min(deadline, System.nanoTime() + 25L * 1_000_000_000L),
-                    300_000
-            );
+                    deadline,
+                    3,
+                    12L
+            ));
+        }
 
-            if (openingRepair != null) {
-                System.err.format("Opening global search solved level with %,d actions.%n", openingRepair.length);
-                return openingRepair;
+        if (System.nanoTime() < deadline) {
+            results.add(runCbsPrefixStrategy(
+                    "Small CBS-prefix hybrid",
+                    initialState,
+                    analyzer,
+                    deadline,
+                    2,
+                    15L
+            ));
+        }
+
+        if (System.nanoTime() < deadline) {
+            results.add(fallbackFromInitial.withName("Fallback-first final-agent CBS"));
+        }
+
+        StrategyResult best = null;
+        boolean cbsContributedToVerifiedCandidate = false;
+        for (StrategyResult result : results) {
+            printStrategySummary(result);
+            if (result.verified && result.cbsContributed()) {
+                cbsContributedToVerifiedCandidate = true;
             }
+            if (result.verified
+                    && (best == null || result.actionCount < best.actionCount)) {
+                best = result;
+            }
+        }
+
+        double totalRuntime = (System.nanoTime() - startTime) / 1_000_000_000.0;
+        if (best == null) {
+            System.err.format(
+                    "Verified portfolio found no complete solution in %.3f seconds; returning empty plan.%n",
+                    totalRuntime
+            );
+            return new Action[0][];
+        }
+
+        System.err.format(
+                "Verified portfolio winner: %s with %,d action(s) in %.3f total seconds.%n",
+                best.name,
+                best.actionCount,
+                totalRuntime
+        );
+        System.err.format(
+                "CBS contribution: winning=%s, any verified candidate=%s.%n",
+                best.cbsContributed() ? "yes" : "no",
+                cbsContributedToVerifiedCandidate ? "yes" : "no"
+        );
+        return best.plan;
+    }
+
+    private static StrategyResult runCbsPrefixStrategy(
+            String name,
+            State initialState,
+            LevelAnalyzer analyzer,
+            long deadline,
+            int maxBoxTasks,
+            long cbsSeconds
+    ) {
+        long startTime = System.nanoTime();
+        HybridRunStats stats = new HybridRunStats();
+        activeStats = stats;
+        long cbsDeadline = Math.min(deadline, System.nanoTime() + cbsSeconds * 1_000_000_000L);
+        BoxCBSPlanner.Result cbsResult = BoxCBSPlanner.solveBoxTasks(initialState, analyzer, cbsDeadline, maxBoxTasks);
+        stats.cbsBoxAttempted = cbsResult.attemptedBoxTasks;
+        stats.cbsBoxSolved = cbsResult.solvedBoxTasks;
+
+        Action[][] candidate = new Action[0][];
+        if (cbsResult.solvedBoxTasks > 0 && System.nanoTime() < deadline) {
+            stats.fallbackUsed = true;
+            Action[][] suffix = heuristicFallbackSolve(cbsResult.state);
+            candidate = concatenatePlans(cbsResult.plan, suffix);
+        } else if (cbsResult.solvedBoxTasks == 0) {
+            stats.rejectionReason = "Box-CBS found no usable prefix";
+        } else {
+            stats.rejectionReason = "deadline reached before fallback suffix";
+        }
+
+        PlanVerificationResult verification = PlanVerifier.verifyComplete(initialState, candidate, name);
+        stats.verificationPassed = candidate.length <= MAX_TOTAL_ACTIONS && verification.passed;
+        if (!stats.verificationPassed && stats.rejectionReason == null) {
+            stats.rejectionReason = candidate.length > MAX_TOTAL_ACTIONS
+                    ? "plan exceeds action budget"
+                    : verification.reason;
+        }
+        return StrategyResult.from(name, candidate, stats, startTime);
+    }
+
+    private static StrategyResult runConservativeCbsAssistedStrategy(
+            String name,
+            State initialState,
+            LevelAnalyzer analyzer,
+            long deadline,
+            int maxBoxTasks,
+            long cbsSeconds
+    ) {
+        long startTime = System.nanoTime();
+        HybridRunStats stats = new HybridRunStats();
+        activeStats = stats;
+        long cbsDeadline = Math.min(deadline, System.nanoTime() + cbsSeconds * 1_000_000_000L);
+        BoxCBSPlanner.Result cbsResult = BoxCBSPlanner.solveConservativeBoxTasks(
+                initialState,
+                analyzer,
+                cbsDeadline,
+                maxBoxTasks
+        );
+        stats.cbsBoxAttempted = cbsResult.attemptedBoxTasks;
+        stats.cbsBoxSolved = cbsResult.solvedBoxTasks;
+
+        Action[][] candidate = new Action[0][];
+        if (cbsResult.solvedBoxTasks == 0) {
+            stats.rejectionReason = "conservative Box-CBS found no safe prefix";
+        } else if (!isPrefixValid(initialState, cbsResult.plan)) {
+            stats.rejectionReason = "conservative Box-CBS prefix failed validation";
+        } else if (System.nanoTime() < deadline) {
+            stats.fallbackUsed = true;
+            Action[][] suffix = heuristicFallbackSolve(cbsResult.state);
+            candidate = concatenatePlans(cbsResult.plan, suffix);
+        } else {
+            stats.rejectionReason = "deadline reached before fallback suffix";
+        }
+
+        PlanVerificationResult verification = PlanVerifier.verifyComplete(initialState, candidate, name);
+        stats.verificationPassed = candidate.length <= MAX_TOTAL_ACTIONS && verification.passed;
+        if (!stats.verificationPassed && stats.rejectionReason == null) {
+            stats.rejectionReason = candidate.length > MAX_TOTAL_ACTIONS
+                    ? "plan exceeds action budget"
+                    : verification.reason;
+        }
+        return StrategyResult.from(name, candidate, stats, startTime);
+    }
+
+    private static StrategyResult runFallbackStrategy(String name, State initialState) {
+        long startTime = System.nanoTime();
+        HybridRunStats stats = new HybridRunStats();
+        activeStats = stats;
+        stats.fallbackUsed = true;
+        Action[][] candidate = heuristicFallbackSolve(initialState);
+        PlanVerificationResult verification = PlanVerifier.verifyComplete(initialState, candidate, name);
+        stats.verificationPassed = candidate.length <= MAX_TOTAL_ACTIONS && verification.passed;
+        if (!stats.verificationPassed) {
+            stats.rejectionReason = candidate.length > MAX_TOTAL_ACTIONS
+                    ? "plan exceeds action budget"
+                    : verification.reason;
+        }
+        return StrategyResult.from(name, candidate, stats, startTime);
+    }
+
+    private static Action[][] heuristicFallbackSolve(State initialState) {
+        System.err.println("Heuristic fallback solver: beam-search hierarchical task planner.");
+        long deadline = System.nanoTime() + 170L * 1_000_000_000L;
+
+        LevelAnalyzer analyzer = analyzeLevel(initialState);
+
+        Action[][] openingRepair = tryInitialBoundedGlobalRepair(initialState, analyzer, deadline);
+        if (openingRepair != null) {
+            return openingRepair;
         }
 
         TaskManager taskManager = new TaskManager(analyzer);
@@ -175,7 +345,6 @@ private static final Action[] MOVE_ACTIONS = {
                 }
 
                 long compactDeadline = Math.min(deadline, System.nanoTime() + 25L * 1_000_000_000L);
-                int compactMaxArea = isPokeNomLeftColumnRepairCandidate(groupState) ? 420 : 180;
                 Action[][] compactRepair = compactRoomRepair(
                         groupState,
                         analyzer,
@@ -183,7 +352,7 @@ private static final Action[] MOVE_ACTIONS = {
                         buildCompactRoomRegion(groupState, group),
                         compactDeadline,
                         3_000_000,
-                        compactMaxArea
+                        180
                 );
 
                 if (compactRepair != null
@@ -213,70 +382,6 @@ private static final Action[] MOVE_ACTIONS = {
             }
         }
 
-        Action[][] clusteredLetterRoomRepair = clusteredLetterRoomRepair(
-                groupState,
-                analyzer,
-                1,
-                6,
-                7,
-                10,
-                new char[]{'J', 'K'},
-                Math.min(deadline, System.nanoTime() + 12L * 1_000_000_000L)
-        );
-
-        if (clusteredLetterRoomRepair != null
-                && clusteredLetterRoomRepair.length > 0
-                && groupPlan.size() + clusteredLetterRoomRepair.length <= MAX_TOTAL_ACTIONS) {
-            appendJointPlan(groupPlan, clusteredLetterRoomRepair);
-            groupState = simulateJointPlan(groupState, clusteredLetterRoomRepair);
-            System.err.format(
-                    "Clustered letter-room repair solved a local mixed pocket using %,d actions. Solved goals now %,d.%n",
-                    clusteredLetterRoomRepair.length,
-                    countSolvedGoals(groupState)
-            );
-        }
-
-        if (isClosedAiLeftChamberCandidate(groupState) && groupState.boxes[8][4] != 'B' && System.nanoTime() < deadline) {
-            Task bTask = bestSameSideTaskForGoal(groupState, analyzer, 'B', new Position(8, 4), Boundary.LEFT);
-
-            if (bTask != null) {
-                List<Action> bPlan = planner.planBoxToGoal(groupState, bTask, new ReservationTable());
-
-                if (bPlan == null || bPlan.isEmpty()) {
-                    bPlan = planner.planBoxToGoalRelaxed(groupState, bTask, new ReservationTable());
-                }
-
-                if (bPlan != null && !bPlan.isEmpty() && groupPlan.size() + bPlan.size() <= MAX_TOTAL_ACTIONS) {
-                    appendAsJointActions(groupPlan, bPlan, bTask.assignedAgent, groupState.agentRows.length);
-                    groupState = simulateSingleAgentPlan(groupState, bPlan, bTask.assignedAgent);
-                    System.err.format("ClosedAI left chamber staged B using %,d actions.%n", bPlan.size());
-                }
-            }
-        }
-
-        clusteredLetterRoomRepair = clusteredLetterRoomRepair(
-                groupState,
-                analyzer,
-                1,
-                8,
-                1,
-                11,
-                new char[]{'A'},
-                Math.min(deadline, System.nanoTime() + 12L * 1_000_000_000L)
-        );
-
-        if (clusteredLetterRoomRepair != null
-                && clusteredLetterRoomRepair.length > 0
-                && groupPlan.size() + clusteredLetterRoomRepair.length <= MAX_TOTAL_ACTIONS) {
-            appendJointPlan(groupPlan, clusteredLetterRoomRepair);
-            groupState = simulateJointPlan(groupState, clusteredLetterRoomRepair);
-            System.err.format(
-                    "Clustered letter-room repair solved a local single-letter pocket using %,d actions. Solved goals now %,d.%n",
-                    clusteredLetterRoomRepair.length,
-                    countSolvedGoals(groupState)
-            );
-        }
-
         Action[][] preBoundaryEvacuation = preBoundaryLongAgentEvacuation(
                 groupState,
                 analyzer,
@@ -292,31 +397,7 @@ private static final Action[] MOVE_ACTIONS = {
             System.err.format("Pre-boundary evacuation moved agents using %,d actions.%n", preBoundaryEvacuation.length);
         }
 
-        if (isSpiralingCandidate(groupState) && System.nanoTime() < deadline) {
-            PocketResult spiralPreBoundary = trySpiralingOrderedCleanup(
-                    groupState,
-                    groupPlan,
-                    analyzer,
-                    planner,
-                    deadline,
-                    true
-            );
-
-            if (spiralPreBoundary != null && countSolvedGoals(spiralPreBoundary.state) > countSolvedGoals(groupState)) {
-                groupState = spiralPreBoundary.state;
-                groupPlan = spiralPreBoundary.plan;
-                System.err.format(
-                        "Spiraling pre-boundary ordering improved solved goals to %,d.%n",
-                        countSolvedGoals(groupState)
-                );
-
-                if (groupState.isGoalState()) {
-                    return groupPlan.toArray(new Action[0][]);
-                }
-            }
-        }
-
-        PocketResult pocketResult = (isTbStansColumnCandidate(groupState) || isTightManyColorCorridorCandidate(groupState))
+        PocketResult pocketResult = isTightManyColorCorridorCandidate(groupState)
                 ? null
                 : tryBoundaryPocketPlanner(
                         groupState,
@@ -493,96 +574,9 @@ if (countUnsolvedBoxGoals(cleanedState) == 1
     }
 }
 
-if (isTheGateChamberCandidate(cleanedState) && System.nanoTime() < deadline) {
-    System.err.println("Trying TheGate local chamber macro before parking agents.");
-
-    long chamberDeadline = Math.min(deadline, System.nanoTime() + 35L * 1_000_000_000L);
-    Action[][] chamberPlan = theGateChamberRepair(cleanedState, chamberDeadline, 5_500_000);
-
-    if (chamberPlan != null && cleanedPlan.size() + chamberPlan.length <= MAX_TOTAL_ACTIONS) {
-        appendJointPlan(cleanedPlan, chamberPlan);
-        cleanedState = simulateJointPlan(cleanedState, chamberPlan);
-        System.err.format(
-                "TheGate chamber macro solved central chamber with %,d actions. Solved goals now %,d.%n",
-                chamberPlan.length,
-                countSolvedGoals(cleanedState)
-        );
-    }
-}
-
-if (isPokeNomLeftColumnRepairCandidate(cleanedState) && System.nanoTime() < deadline) {
-    PocketResult pokeLeft = tryPokeNomLeftColumnRepairs(cleanedState, cleanedPlan, analyzer, deadline);
-
-    if (pokeLeft != null && countSolvedGoals(pokeLeft.state) > countSolvedGoals(cleanedState)) {
-        cleanedState = pokeLeft.state;
-        cleanedPlan = pokeLeft.plan;
-        System.err.format("PokeNOM left-column repair improved solved goals to %,d.%n", countSolvedGoals(cleanedState));
-    }
-}
-
-if (isTbStansColumnCandidate(cleanedState) && System.nanoTime() < deadline) {
-    PocketResult tbColumn = tryTbStansColumnOrders(cleanedState, cleanedPlan, analyzer, planner, deadline);
-
-    if (tbColumn != null && countSolvedGoals(tbColumn.state) > countSolvedGoals(cleanedState) + 1) {
-        cleanedState = tbColumn.state;
-        cleanedPlan = tbColumn.plan;
-        System.err.format("TBSTANS1 ordered column repair improved solved goals to %,d.%n", countSolvedGoals(cleanedState));
-
-        if (cleanedState.isGoalState()) {
-            return cleanedPlan.toArray(new Action[0][]);
-        }
-    }
-}
-
-if (isSpiralingCandidate(cleanedState) && System.nanoTime() < deadline) {
-    PocketResult spiral = trySpiralingOrderedCleanup(cleanedState, cleanedPlan, analyzer, planner, deadline, false);
-
-    if (spiral != null && countSolvedGoals(spiral.state) > countSolvedGoals(cleanedState)) {
-        cleanedState = spiral.state;
-        cleanedPlan = spiral.plan;
-        System.err.format("Spiraling ordered cleanup improved solved goals to %,d.%n", countSolvedGoals(cleanedState));
-    }
-
-    PocketResult spiralEvacuation = trySpiralingGoalAgentEvacuation(cleanedState, cleanedPlan, deadline);
-
-    if (spiralEvacuation != null && spiralEvacuation.plan.size() > cleanedPlan.size()) {
-        cleanedState = spiralEvacuation.state;
-        cleanedPlan = spiralEvacuation.plan;
-        System.err.println("Spiraling agents vacated remaining box-goal cells.");
-    }
-
-    PocketResult spiralFocused = trySpiralingFocusedRemaining(cleanedState, cleanedPlan, analyzer, deadline);
-
-    if (spiralFocused != null && countSolvedGoals(spiralFocused.state) > countSolvedGoals(cleanedState)) {
-        cleanedState = spiralFocused.state;
-        cleanedPlan = spiralFocused.plan;
-        System.err.format("Spiraling focused remaining repair improved solved goals to %,d.%n", countSolvedGoals(cleanedState));
-    }
-}
-
-if (inBounds(8, 4) && inBounds(7, 4) && System.nanoTime() < deadline) {
-    PocketResult zoomHere = tryDropWordOneRow(
-            cleanedState,
-            cleanedPlan,
-            7,
-            8,
-            1,
-            4,
-            deadline
-    );
-
-    if (zoomHere != null && countSolvedGoals(zoomHere.state) > countSolvedGoals(cleanedState)) {
-        cleanedState = zoomHere.state;
-        cleanedPlan = zoomHere.plan;
-        System.err.format("ZOOM row-word macro improved solved goals to %,d.%n", countSolvedGoals(cleanedState));
-    }
-}
-
 if (cleanedState.agentRows.length > 3
         && countUnsolvedBoxGoals(cleanedState) > 0
-        && countUnsolvedGoals(cleanedState) > 8
-        && !isBigSplitCandidate(cleanedState)
-        && !isTbStansColumnCandidate(cleanedState)) {
+        && countUnsolvedGoals(cleanedState) > 8) {
     System.err.println("Moving agents to parking before final box cleanup.");
 
     for (int agent = 0; agent < cleanedState.agentRows.length; agent++) {
@@ -688,6 +682,34 @@ List<Action> boxPlan = planner.planBoxToGoal(
 }
 }
 
+if (countUnsolvedBoxGoals(cleanedState) >= 1
+        && System.nanoTime() < deadline) {
+    PocketResult verifiedSmallEndgame = tryVerifiedSmallEndgameBoxRepair(
+            cleanedState,
+            cleanedPlan,
+            analyzer,
+            planner,
+            retreatPlanner,
+            deadline
+    );
+
+    if (verifiedSmallEndgame != null
+            && (countUnsolvedBoxGoals(verifiedSmallEndgame.state) < countUnsolvedBoxGoals(cleanedState)
+            || countSolvedGoals(verifiedSmallEndgame.state) > countSolvedGoals(cleanedState))) {
+        cleanedState = verifiedSmallEndgame.state;
+        cleanedPlan = verifiedSmallEndgame.plan;
+        System.err.format(
+                "Verified small-endgame repair accepted. Solved goals %,d, unsolved box goals %,d.%n",
+                countSolvedGoals(cleanedState),
+                countUnsolvedBoxGoals(cleanedState)
+        );
+
+        if (cleanedState.isGoalState()) {
+            return cleanedPlan.toArray(new Action[0][]);
+        }
+    }
+}
+
 if (!triedMixedGoalRoomRepair && countUnsolvedBoxGoals(cleanedState) == 1 && System.nanoTime() < deadline) {
     System.err.println("Trying mixed-color goal-room repair before agent cleanup.");
 
@@ -713,6 +735,28 @@ while (agentCleanupProgress && !cleanedState.isGoalState()) {
     agentCleanupProgress = false;
 
     if (countUnsolvedBoxGoals(cleanedState) == 0 && System.nanoTime() < deadline) {
+        State verifiedPrefixState = simulateValidatedJointPlan(initialState, cleanedPlan);
+        if (verifiedPrefixState == null) {
+            System.err.println("Skipping final CBS: committed prefix is not valid from the original state.");
+        } else {
+            cleanedState = verifiedPrefixState;
+            Action[][] cbsPlan = solveRemainingAgentsWithCBS(cleanedState, analyzer, deadline);
+
+            if (cbsPlan != null
+                    && cleanedPlan.size() + cbsPlan.length <= MAX_TOTAL_ACTIONS) {
+                State cbsState = simulateJointPlan(cleanedState, cbsPlan);
+
+                if (cbsState.isGoalState()) {
+                    if (activeStats != null) {
+                        activeStats.finalAgentCBSUsed = true;
+                    }
+                    appendJointPlan(cleanedPlan, cbsPlan);
+                    System.err.format("CBS solved final agent-goal cleanup with %,d actions.%n", cbsPlan.length);
+                    return cleanedPlan.toArray(new Action[0][]);
+                }
+            }
+        }
+
         long coordinatedDeadline = Math.min(deadline, System.nanoTime() + 4L * 1_000_000_000L);
         Action[][] coordinatedPlan = moveOnlyAgentGoalRepair(cleanedState, analyzer, coordinatedDeadline, 650_000);
 
@@ -901,27 +945,6 @@ if (countUnsolvedBoxGoals(cleanedState) == 1 && System.nanoTime() < deadline) {
     }
 }
 
-if (countUnsolvedBoxGoals(cleanedState) == 1
-        && isJailCyanPairCandidate(cleanedState)
-        && System.nanoTime() < deadline) {
-    System.err.println("Trying jAIl cyan pair dependency macro.");
-
-    PocketResult jailRepair = tryJailCyanPairMacro(cleanedState, cleanedPlan);
-
-    if (jailRepair != null && countSolvedGoals(jailRepair.state) > countSolvedGoals(cleanedState)) {
-        cleanedState = jailRepair.state;
-        cleanedPlan = jailRepair.plan;
-        System.err.format(
-                "jAIl cyan pair macro improved solved goals to %,d.%n",
-                countSolvedGoals(cleanedState)
-        );
-
-        if (cleanedState.isGoalState()) {
-            return cleanedPlan.toArray(new Action[0][]);
-        }
-    }
-}
-
 if (countUnsolvedBoxGoals(cleanedState) == 0
         && countUnsolvedGoals(cleanedState) <= 8
         && System.nanoTime() < deadline) {
@@ -1058,6 +1081,101 @@ return bestNode.plan.toArray(new Action[0][]);
         }
 
         return candidate.plan.size() < best.plan.size();
+    }
+
+    private static LevelAnalyzer analyzeLevel(State initialState) {
+        LevelAnalyzer analyzer = new LevelAnalyzer(initialState);
+        analyzer.analyze();
+        return analyzer;
+    }
+
+    private static Action[][] tryInitialBoundedGlobalRepair(
+            State initialState,
+            LevelAnalyzer analyzer,
+            long deadline
+    ) {
+        if (countUnsolvedGoals(initialState) > 6
+                || initialState.agentRows.length > 3
+                || State.walls.length * State.walls[0].length > 700) {
+            return null;
+        }
+
+        System.err.println("Trying bounded global opening search for small level.");
+        Action[][] openingRepair = boundedGlobalRepair(
+                initialState,
+                analyzer,
+                Math.min(deadline, System.nanoTime() + 25L * 1_000_000_000L),
+                300_000
+        );
+
+        if (openingRepair != null) {
+            System.err.format("Opening global search solved level with %,d actions.%n", openingRepair.length);
+        }
+
+        return openingRepair;
+    }
+
+    private static Action[][] solveRemainingAgentsWithCBS(State state, LevelAnalyzer analyzer, long deadline) {
+        if (countUnsolvedBoxGoals(state) != 0 || System.nanoTime() >= deadline) {
+            return null;
+        }
+
+        long cbsDeadline = Math.min(deadline, System.nanoTime() + 4L * 1_000_000_000L);
+        return CBSPlanner.planAgentGoals(state, analyzer, cbsDeadline, 4_000);
+    }
+
+    private static Action[][] concatenatePlans(Action[][] prefix, Action[][] suffix) {
+        Action[][] combined = new Action[prefix.length + suffix.length][];
+
+        for (int i = 0; i < prefix.length; i++) {
+            combined[i] = prefix[i].clone();
+        }
+
+        for (int i = 0; i < suffix.length; i++) {
+            combined[prefix.length + i] = suffix[i].clone();
+        }
+
+        return combined;
+    }
+
+    private static boolean verifyJointPlan(State initialState, Action[][] plan) {
+        return verifyJointPlan(initialState, plan, "candidate");
+    }
+
+    private static boolean verifyJointPlan(State initialState, Action[][] plan, String label) {
+        return PlanVerifier.verifyComplete(initialState, plan, label).passed;
+    }
+
+    private static boolean isPrefixValid(State initialState, Action[][] plan) {
+        return PlanVerifier.verifyPrefix(initialState, plan);
+    }
+
+    private static void printHybridSummary(HybridRunStats stats, int actionCount, long startTime) {
+        double runtime = (System.nanoTime() - startTime) / 1_000_000_000.0;
+        System.err.println("Hybrid solver summary:");
+        System.err.format("  CBS box tasks attempted: %,d%n", stats.cbsBoxAttempted);
+        System.err.format("  CBS box tasks solved: %,d%n", stats.cbsBoxSolved);
+        System.err.format("  Fallback used: %s%n", stats.fallbackUsed ? "yes" : "no");
+        System.err.format("  Final agent CBS used: %s%n", stats.finalAgentCBSUsed ? "yes" : "no");
+        System.err.format("  Final action count: %,d%n", actionCount);
+        System.err.format("  Runtime: %.3f seconds%n", runtime);
+        System.err.format("  Verification passed: %s%n", stats.verificationPassed ? "yes" : "no");
+    }
+
+    private static void printStrategySummary(StrategyResult result) {
+        System.err.format(
+                "Strategy %-37s solved=%s verified=%s actions=%,d runtime=%.3fs CBS-box=%,d/%,d final-agent-CBS=%s fallback=%s%s%n",
+                result.name + ":",
+                result.verified ? "yes" : "no",
+                result.verified ? "yes" : "no",
+                result.actionCount,
+                result.runtimeSeconds,
+                result.cbsBoxSolved,
+                result.cbsBoxAttempted,
+                result.finalAgentCBSUsed ? "yes" : "no",
+                result.fallbackUsed ? "yes" : "no",
+                result.verified || result.rejectionReason == null ? "" : ", rejection=" + result.rejectionReason
+        );
     }
 
     private static ArrayList<Integer> agentCleanupOrder(State state) {
@@ -1652,97 +1770,6 @@ return bestNode.plan.toArray(new Action[0][]);
         return best;
     }
 
-    private static Action[][] clusteredLetterRoomRepair(
-            State start,
-            LevelAnalyzer analyzer,
-            int minRow,
-            int maxRow,
-            int minCol,
-            int maxCol,
-            char[] roomLetters,
-            long deadline
-    ) {
-        RepairRegion explicitRegion = new RepairRegion(
-                Math.max(0, minRow - 1),
-                Math.min(State.walls.length - 1, maxRow + 3),
-                Math.max(0, minCol - 2),
-                Math.min(State.walls[0].length - 1, maxCol + 3)
-        );
-        ArrayList<Position> goals = new ArrayList<>();
-        ArrayList<Character> letters = new ArrayList<>();
-        boolean alreadySolved = true;
-
-        for (int r = minRow; r <= maxRow; r++) {
-            for (int c = minCol; c <= maxCol; c++) {
-                char goal = State.goals[r][c];
-
-                if (containsLetter(roomLetters, goal)) {
-                    goals.add(new Position(r, c));
-                    letters.add(goal);
-
-                    if (start.boxes[r][c] != goal) {
-                        alreadySolved = false;
-                    }
-                }
-            }
-        }
-
-        if (alreadySolved || goals.size() < 4) {
-            return null;
-        }
-
-        ArrayList<Integer> agents = agentsForLetterColor(start, roomLetters[0], explicitRegion);
-
-        for (int agent : agents) {
-            if (System.nanoTime() > deadline) {
-                break;
-            }
-
-            GoalGroup group = new GoalGroup(goals, letters, agent);
-            Action[][] repair = compactRoomRepair(
-                    start,
-                    analyzer,
-                    group,
-                    explicitRegion,
-                    Math.min(deadline, System.nanoTime() + 6L * 1_000_000_000L),
-                    900_000
-            );
-
-            if (repair != null && repair.length > 0) {
-                return repair;
-            }
-        }
-
-        return null;
-    }
-
-    private static boolean isClosedAiLeftChamberCandidate(State state) {
-        return State.walls.length == 14
-                && State.walls[0].length == 32
-                && State.goals[1][2] == 'A'
-                && State.goals[2][1] == 'A'
-                && State.goals[4][1] == 'A'
-                && State.goals[4][5] == 'A'
-                && State.goals[8][4] == 'B'
-                && state.agentRows.length >= 2;
-    }
-
-    private static boolean isBigSplitCandidate(State state) {
-        return State.walls.length == 26
-                && State.walls[0].length == 38
-                && State.goals[1][23] == 'C'
-                && State.goals[1][30] == 'F'
-                && State.goals[6][25] == 'C'
-                && State.goals[24][23] == 'D'
-                && state.agentRows.length >= 10;
-    }
-
-    private static boolean isTbStansColumnCandidate(State state) {
-        return State.walls.length == 15
-                && State.walls[0].length == 15
-                && state.agentRows.length == 6;
-    }
-
     private static boolean isTightManyColorCorridorCandidate(State state) {
         return isTightCorridorMap(state)
                 && state.agentRows.length >= 8
@@ -1752,410 +1779,6 @@ return bestNode.plan.toArray(new Action[0][]);
     private static boolean isTightCorridorMap(State state) {
         return State.walls.length <= 12
                 && State.walls[0].length <= 25;
-    }
-
-    private static boolean isZoomHereCandidate(State state) {
-        return inBounds(8, 4)
-                && State.goals[8][1] == 'H'
-                && State.goals[8][2] == 'E'
-                && State.goals[8][3] == 'R'
-                && State.goals[8][4] == 'E'
-                && state.boxes[7][1] == 'H'
-                && state.boxes[7][2] == 'E'
-                && state.boxes[7][3] == 'R'
-                && state.boxes[7][4] == 'E';
-    }
-
-    private static PocketResult tryDropWordOneRow(
-            State start,
-            ArrayList<Action[]> basePlan,
-            int sourceRow,
-            int goalRow,
-            int minCol,
-            int maxCol,
-            long deadline
-    ) {
-        State current = copyState(start);
-        ArrayList<Action[]> plan = copyPlan(basePlan);
-        boolean progress = false;
-
-        for (int col = minCol; col <= maxCol; col++) {
-            if (System.nanoTime() > deadline) {
-                break;
-            }
-
-            char letter = State.goals[goalRow][col];
-
-            if (!('A' <= letter && letter <= 'Z') || current.boxes[goalRow][col] == letter) {
-                continue;
-            }
-
-            if (current.boxes[sourceRow][col] != letter) {
-                continue;
-            }
-
-            int agent = nearestAgentWithColor(current, State.boxColors[letter - 'A'], new Position(sourceRow - 1, col));
-
-            if (agent == -1) {
-                continue;
-            }
-
-            List<Action> approach = planAgentToPosition(current, agent, new Position(sourceRow - 1, col), 30_000);
-
-            if (approach == null || plan.size() + approach.size() + 1 > MAX_TOTAL_ACTIONS) {
-                continue;
-            }
-
-            appendAsJointActions(plan, approach, agent, current.agentRows.length);
-            current = simulateSingleAgentPlan(current, approach, agent);
-
-            if (!isApplicable(current, agent, Action.PushSS)) {
-                continue;
-            }
-
-            appendAsJointActions(plan, java.util.Collections.singletonList(Action.PushSS), agent, current.agentRows.length);
-            current = simulateSingleAgentPlan(current, java.util.Collections.singletonList(Action.PushSS), agent);
-            progress = true;
-            System.err.format("Dropped %c from (%d,%d) to (%d,%d).%n", letter, sourceRow, col, goalRow, col);
-        }
-
-        return progress ? new PocketResult(current, plan) : null;
-    }
-
-    private static PocketResult tryZoomFocusedHereRepair(
-            State start,
-            ArrayList<Action[]> basePlan,
-            LevelAnalyzer analyzer,
-            long deadline
-    ) {
-        State current = copyState(start);
-        ArrayList<Action[]> plan = copyPlan(basePlan);
-        boolean progress = false;
-
-        int[][] targets = {
-                {8, 1},
-                {8, 2},
-                {8, 3},
-                {8, 4}
-        };
-
-        for (int[] cell : targets) {
-            if (System.nanoTime() >= deadline) {
-                break;
-            }
-
-            int row = cell[0];
-            int col = cell[1];
-            char letter = State.goals[row][col];
-
-            if (current.boxes[row][col] == letter) {
-                continue;
-            }
-
-            long targetDeadline = Math.min(deadline, System.nanoTime() + 12L * 1_000_000_000L);
-            Action[][] repair = focusedSingleGoalRepair(
-                    current,
-                    analyzer,
-                    new UnsolvedBoxGoal(letter, new Position(row, col)),
-                    targetDeadline,
-                    1_200_000
-            );
-
-            if (repair == null || repair.length == 0 || plan.size() + repair.length > MAX_TOTAL_ACTIONS) {
-                continue;
-            }
-
-            State repaired = simulateJointPlan(current, repair);
-
-            if (countSolvedGoals(repaired) <= countSolvedGoals(current)) {
-                continue;
-            }
-
-            appendJointPlan(plan, repair);
-            current = repaired;
-            progress = true;
-            System.err.format("ZOOM focused repair placed %c at (%d,%d) using %,d actions.%n",
-                    letter, row, col, repair.length);
-        }
-
-        return progress ? new PocketResult(current, plan) : null;
-    }
-
-    private static PocketResult tryTbStansColumnOrders(
-            State start,
-            ArrayList<Action[]> basePlan,
-            LevelAnalyzer analyzer,
-            SingleAgentPlanner planner,
-            long deadline
-    ) {
-        int[][][] orders = {
-                {{1, 1}, {2, 1}, {3, 1}, {8, 11}, {4, 1}, {5, 1}, {6, 1}},
-                {{1, 1}, {2, 1}, {8, 11}, {3, 1}, {4, 1}, {5, 1}, {6, 1}},
-                {{1, 1}, {8, 11}, {2, 1}, {3, 1}, {4, 1}, {5, 1}, {6, 1}},
-                {{2, 1}, {1, 1}, {3, 1}, {4, 1}, {5, 1}, {6, 1}, {8, 11}},
-                {{2, 1}, {3, 1}, {1, 1}, {4, 1}, {5, 1}, {6, 1}, {8, 11}},
-                {{1, 1}, {2, 1}, {3, 1}, {4, 1}, {5, 1}, {6, 1}, {8, 11}},
-                {{6, 1}, {5, 1}, {4, 1}, {3, 1}, {2, 1}, {1, 1}, {8, 11}}
-        };
-
-        PocketResult best = null;
-
-        for (int[][] order : orders) {
-            if (System.nanoTime() >= deadline) {
-                break;
-            }
-
-            State current = copyState(start);
-            ArrayList<Action[]> plan = copyPlan(basePlan);
-            boolean progress = false;
-
-            for (int[] cell : order) {
-                if (System.nanoTime() >= deadline || plan.size() >= MAX_TOTAL_ACTIONS) {
-                    break;
-                }
-
-                int row = cell[0];
-                int col = cell[1];
-                char letter = State.goals[row][col];
-
-                if (!('A' <= letter && letter <= 'Z') || current.boxes[row][col] == letter) {
-                    continue;
-                }
-
-                Task baseTask = bestSameSideTaskForGoal(current, analyzer, letter, new Position(row, col), Boundary.LEFT);
-
-                if (baseTask == null) {
-                    continue;
-                }
-
-                boolean placed = false;
-
-                for (Task task : expandTaskAgents(baseTask, current)) {
-                    List<Action> boxPlan = planner.planBoxToGoal(current, task, new ReservationTable());
-
-                    if (boxPlan == null || boxPlan.isEmpty()) {
-                        boxPlan = planner.planBoxToGoalRelaxed(current, task, new ReservationTable());
-                    }
-
-                    if (boxPlan == null || boxPlan.isEmpty() || plan.size() + boxPlan.size() > MAX_TOTAL_ACTIONS) {
-                        continue;
-                    }
-
-                    appendAsJointActions(plan, boxPlan, task.assignedAgent, current.agentRows.length);
-                    current = simulateSingleAgentPlan(current, boxPlan, task.assignedAgent);
-                    progress = true;
-                    placed = true;
-                    System.err.format("TBSTANS1 ordered repair placed %c at (%d,%d) using %,d actions.%n",
-                            letter, row, col, boxPlan.size());
-                    break;
-                }
-
-                if (!placed) {
-                    break;
-                }
-            }
-
-            if (!progress) {
-                continue;
-            }
-
-            PocketResult candidate = new PocketResult(current, plan);
-
-            if (best == null
-                    || countSolvedGoals(candidate.state) > countSolvedGoals(best.state)
-                    || (countSolvedGoals(candidate.state) == countSolvedGoals(best.state)
-                    && candidate.plan.size() < best.plan.size())) {
-                best = candidate;
-            }
-        }
-
-        return best;
-    }
-
-    private static boolean isSpiralingCandidate(State state) {
-        return State.walls.length == 30
-                && State.walls[0].length == 28
-                && state.agentRows.length == 10
-                && State.goals[4][13] == 'J'
-                && State.goals[7][13] == 'F'
-                && State.goals[10][13] == 'B'
-                && State.goals[17][20] == 'A'
-                && State.goals[28][13] == 'H';
-    }
-
-    private static PocketResult trySpiralingOrderedCleanup(
-            State start,
-            ArrayList<Action[]> basePlan,
-            LevelAnalyzer analyzer,
-            SingleAgentPlanner planner,
-            long deadline,
-            boolean preBoundary
-    ) {
-        char[][] orders = preBoundary
-                ? new char[][] {
-                        {'J', 'I'},
-                        {'I', 'J'}
-                }
-                : new char[][] {
-                        {'B', 'C', 'D', 'E', 'F', 'I', 'J'},
-                        {'F', 'B', 'C', 'D', 'E', 'I', 'J'},
-                        {'J', 'I', 'F', 'B', 'C', 'D', 'E'},
-                        {'A', 'B', 'C', 'D', 'E', 'F', 'I', 'J'}
-                };
-        PocketResult best = null;
-
-        for (char[] order : orders) {
-            if (System.nanoTime() >= deadline) {
-                break;
-            }
-
-            State current = copyState(start);
-            ArrayList<Action[]> plan = copyPlan(basePlan);
-            boolean progress = false;
-
-            for (char letter : order) {
-                Position goal = findBoxGoal(letter);
-
-                if (goal == null || current.boxes[goal.row][goal.col] == letter) {
-                    continue;
-                }
-
-                Task task = bestSameSideTaskForGoal(current, analyzer, letter, goal, dominantBoundary(goal));
-
-                if (task == null) {
-                    continue;
-                }
-
-                List<Action> boxPlan = planner.planBoxToGoal(current, task, new ReservationTable());
-
-                if (boxPlan == null || boxPlan.isEmpty()) {
-                    boxPlan = planner.planBoxToGoalRelaxed(current, task, new ReservationTable());
-                }
-
-                if (boxPlan == null || boxPlan.isEmpty() || plan.size() + boxPlan.size() > MAX_TOTAL_ACTIONS) {
-                    continue;
-                }
-
-                appendAsJointActions(plan, boxPlan, task.assignedAgent, current.agentRows.length);
-                current = simulateSingleAgentPlan(current, boxPlan, task.assignedAgent);
-                progress = true;
-                System.err.format("Spiraling ordered cleanup placed %c using %,d actions.%n", letter, boxPlan.size());
-            }
-
-            if (!progress) {
-                continue;
-            }
-
-            PocketResult candidate = new PocketResult(current, plan);
-
-            if (best == null
-                    || countSolvedGoals(candidate.state) > countSolvedGoals(best.state)
-                    || (countSolvedGoals(candidate.state) == countSolvedGoals(best.state)
-                    && candidate.plan.size() < best.plan.size())) {
-                best = candidate;
-            }
-        }
-
-        return best;
-    }
-
-    private static PocketResult trySpiralingGoalAgentEvacuation(
-            State start,
-            ArrayList<Action[]> basePlan,
-            long deadline
-    ) {
-        State current = copyState(start);
-        ArrayList<Action[]> plan = copyPlan(basePlan);
-        boolean progress = false;
-        int[][] cells = {
-                {17, 4, 17, 3},
-                {17, 23, 17, 24},
-                {25, 13, 24, 13}
-        };
-
-        for (int[] cell : cells) {
-            if (System.nanoTime() >= deadline) {
-                break;
-            }
-
-            int agent = agentAt(current, cell[0], cell[1]);
-
-            if (agent == -1) {
-                continue;
-            }
-
-            Position target = new Position(cell[2], cell[3]);
-
-            if (!cellIsFree(current, target.row, target.col)) {
-                target = nearestFreeNonGoalCell(current, new Position(cell[0], cell[1]), 4);
-            }
-
-            if (target == null) {
-                continue;
-            }
-
-            List<Action> route = planAgentToPosition(current, agent, target, 40_000);
-
-            if (route == null || route.isEmpty() || plan.size() + route.size() > MAX_TOTAL_ACTIONS) {
-                continue;
-            }
-
-            appendAsJointActions(plan, route, agent, current.agentRows.length);
-            current = simulateSingleAgentPlan(current, route, agent);
-            progress = true;
-            System.err.format("Spiraling evacuation moved agent %,d from (%d,%d) to %s.%n",
-                    agent, cell[0], cell[1], target);
-        }
-
-        return progress ? new PocketResult(current, plan) : null;
-    }
-
-    private static PocketResult trySpiralingFocusedRemaining(
-            State start,
-            ArrayList<Action[]> basePlan,
-            LevelAnalyzer analyzer,
-            long deadline
-    ) {
-        State current = copyState(start);
-        ArrayList<Action[]> plan = copyPlan(basePlan);
-        boolean progress = false;
-        char[] order = {'C', 'E', 'D'};
-
-        for (char letter : order) {
-            if (System.nanoTime() >= deadline) {
-                break;
-            }
-
-            Position goal = findBoxGoal(letter);
-
-            if (goal == null || current.boxes[goal.row][goal.col] == letter) {
-                continue;
-            }
-
-            long targetDeadline = Math.min(deadline, System.nanoTime() + (letter == 'C' ? 5L : 9L) * 1_000_000_000L);
-            Action[][] repair = focusedSingleGoalRepair(
-                    current,
-                    analyzer,
-                    new UnsolvedBoxGoal(letter, goal),
-                    targetDeadline,
-                    letter == 'C' ? 450_000 : 1_200_000
-            );
-
-            if (repair == null || plan.size() + repair.length > MAX_TOTAL_ACTIONS) {
-                continue;
-            }
-
-            State repaired = simulateJointPlan(current, repair);
-
-            if (countSolvedGoals(repaired) > countSolvedGoals(current)) {
-                appendJointPlan(plan, repair);
-                current = repaired;
-                progress = true;
-                System.err.format("Spiraling focused repair placed %c using %,d actions.%n", letter, repair.length);
-            }
-        }
-
-        return progress ? new PocketResult(current, plan) : null;
     }
 
     private static Position nearestFreeNonGoalCell(State state, Position origin, int radiusLimit) {
@@ -3319,6 +2942,22 @@ return bestNode.plan.toArray(new Action[0][]);
         return count;
     }
 
+    private static int countSolvedBoxGoals(State state) {
+        int count = 0;
+
+        for (int r = 0; r < State.goals.length; r++) {
+            for (int c = 0; c < State.goals[r].length; c++) {
+                char goal = State.goals[r][c];
+
+                if ('A' <= goal && goal <= 'Z' && state.boxes[r][c] == goal) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
     private static int estimateRemainingCost(LevelAnalyzer analyzer, State state) {
         int total = 0;
 
@@ -3537,97 +3176,6 @@ return bestNode.plan.toArray(new Action[0][]);
         return null;
     }
 
-    private static boolean isPokeNomLeftColumnRepairCandidate(State state) {
-        if (State.goals.length <= 1 || State.goals[1].length <= 3 || State.goals[1][3] != 'P') {
-            return false;
-        }
-
-        for (UnsolvedBoxGoal target : pokeNomLeftColumnTargets(state)) {
-            if (state.boxes[target.goal.row][target.goal.col] != target.letter) {
-                for (int r = 1; r <= Math.min(22, state.boxes.length - 1); r++) {
-                    for (int c = 1; c <= Math.min(8, state.boxes[r].length - 1); c++) {
-                        if (state.boxes[r][c] == target.letter) {
-                            return true;
-                        }
-                    }
-                }
-            }
-        }
-
-        return false;
-    }
-
-    private static PocketResult tryPokeNomLeftColumnRepairs(
-            State start,
-            ArrayList<Action[]> basePlan,
-            LevelAnalyzer analyzer,
-            long deadline
-    ) {
-        State current = copyState(start);
-        ArrayList<Action[]> plan = copyPlan(basePlan);
-        boolean progress = false;
-
-        for (UnsolvedBoxGoal target : pokeNomLeftColumnTargets(current)) {
-            if (System.nanoTime() >= deadline || current.boxes[target.goal.row][target.goal.col] == target.letter) {
-                continue;
-            }
-
-            int closest = closestBoxDistance(analyzer, current, target);
-
-            if (closest > (target.letter == 'P' ? 20 : 80)) {
-                continue;
-            }
-
-            long targetDeadline = Math.min(deadline, System.nanoTime() + 8L * 1_000_000_000L);
-            Action[][] repair = focusedSingleGoalRepair(current, analyzer, target, targetDeadline, 900_000);
-
-            if (repair == null || plan.size() + repair.length > MAX_TOTAL_ACTIONS) {
-                continue;
-            }
-
-            State repaired = simulateJointPlan(current, repair);
-
-            if (countSolvedGoals(repaired) > countSolvedGoals(current)) {
-                appendJointPlan(plan, repair);
-                current = repaired;
-                progress = true;
-                System.err.format(
-                        "PokeNOM repaired %c at %s using %,d actions.%n",
-                        target.letter,
-                        target.goal,
-                        repair.length
-                );
-            }
-        }
-
-        return progress ? new PocketResult(current, plan) : null;
-    }
-
-    private static ArrayList<UnsolvedBoxGoal> pokeNomLeftColumnTargets(State state) {
-        ArrayList<UnsolvedBoxGoal> targets = new ArrayList<>();
-
-        addPokeNomTarget(state, targets, 'P', 1, 3);
-        addPokeNomTarget(state, targets, 'C', 11, 1);
-        addPokeNomTarget(state, targets, 'C', 12, 1);
-
-        return targets;
-    }
-
-    private static void addPokeNomTarget(
-            State state,
-            ArrayList<UnsolvedBoxGoal> targets,
-            char letter,
-            int row,
-            int col
-    ) {
-        if (row < State.goals.length
-                && col < State.goals[row].length
-                && State.goals[row][col] == letter
-                && state.boxes[row][col] != letter) {
-            targets.add(new UnsolvedBoxGoal(letter, new Position(row, col)));
-        }
-    }
-
     private static Action[][] focusedSingleGoalRepair(
             State start,
             LevelAnalyzer analyzer,
@@ -3783,6 +3331,1296 @@ return bestNode.plan.toArray(new Action[0][]);
         }
 
         return countSolvedGoals(current) > previousSolved ? new PocketResult(current, plan) : null;
+    }
+
+    private static PocketResult tryVerifiedSmallEndgameBoxRepair(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            SingleAgentPlanner planner,
+            AgentRetreatPlanner retreatPlanner,
+            long deadline
+    ) {
+        int initialUnsolvedBoxes = countUnsolvedBoxGoals(start);
+        if (initialUnsolvedBoxes < 1) {
+            return null;
+        }
+
+        State current = copyState(start);
+        ArrayList<Action[]> plan = copyPlan(basePlan);
+        long repairDeadline = Math.min(deadline, System.nanoTime() + 12L * 1_000_000_000L);
+        int initialSolvedGoals = countSolvedGoals(current);
+        int initialSolvedBoxGoals = countSolvedBoxGoals(current);
+        System.err.format(
+                "Starting verified small-endgame box repair with %,d unsolved box goal(s).%n",
+                initialUnsolvedBoxes
+        );
+
+        boolean anyProgress = false;
+        for (int pass = 0; pass < 2
+                && countUnsolvedBoxGoals(current) > 0
+                && System.nanoTime() < repairDeadline; pass++) {
+            ArrayList<ArrayList<UnsolvedBoxGoal>> components = orderSmallEndgameComponents(current, analyzer);
+            System.err.format(
+                    "Small-endgame component pass %,d: %,d remaining box goal(s), %,d component(s).%n",
+                    pass + 1,
+                    countUnsolvedBoxGoals(current),
+                    components.size()
+            );
+            boolean passProgress = false;
+
+            for (ArrayList<UnsolvedBoxGoal> component : components) {
+                if (System.nanoTime() >= repairDeadline) {
+                    break;
+                }
+
+                if (component.isEmpty() || component.size() > 6) {
+                    continue;
+                }
+
+                RepairRegion componentRegion = buildSmallEndgameRepairRegion(current, analyzer, component);
+                if (componentRegion == null) {
+                    System.err.format(
+                            "Small-endgame component rejected by region size/access: %s.%n",
+                            describeTargets(component)
+                    );
+                    continue;
+                }
+
+                int area = repairRegionArea(componentRegion);
+                long componentDeadline = Math.min(repairDeadline, System.nanoTime() + 4L * 1_000_000_000L);
+                ArrayList<UnsolvedBoxGoal> targets = orderSmallEndgameTargets(current, analyzer, component);
+                System.err.format(
+                        "Small-endgame component %s region rows %d..%d cols %d..%d area %,d.%n",
+                        describeTargets(targets),
+                        componentRegion.minRow,
+                        componentRegion.maxRow,
+                        componentRegion.minCol,
+                        componentRegion.maxCol,
+                        area
+                );
+
+                for (UnsolvedBoxGoal target : targets) {
+                    if (System.nanoTime() >= componentDeadline
+                            || current.boxes[target.goal.row][target.goal.col] == target.letter) {
+                        continue;
+                    }
+
+                    System.err.format("Small-endgame attempting %c at %s.%n", target.letter, target.goal);
+                    PocketResult candidate = trySmallEndgameTarget(
+                            current,
+                            plan,
+                            analyzer,
+                            planner,
+                            retreatPlanner,
+                            target,
+                            targets,
+                            componentDeadline
+                    );
+
+                    if (candidate == null) {
+                        System.err.format("Small-endgame target %c at %s failed.%n", target.letter, target.goal);
+                        continue;
+                    }
+
+                    int beforeUnsolvedBoxes = countUnsolvedBoxGoals(current);
+                    int beforeSolvedGoals = countSolvedGoals(current);
+                    int beforeSolvedBoxGoals = countSolvedBoxGoals(current);
+                    int afterUnsolvedBoxes = countUnsolvedBoxGoals(candidate.state);
+                    int afterSolvedGoals = countSolvedGoals(candidate.state);
+                    int afterSolvedBoxGoals = countSolvedBoxGoals(candidate.state);
+
+                    if (afterSolvedBoxGoals < beforeSolvedBoxGoals) {
+                        System.err.println("Small-endgame rejected candidate: solved box goal would regress.");
+                        continue;
+                    }
+
+                    if (afterUnsolvedBoxes >= beforeUnsolvedBoxes && afterSolvedGoals <= beforeSolvedGoals) {
+                        System.err.println("Small-endgame rejected candidate: no verified improvement.");
+                        continue;
+                    }
+
+                    current = candidate.state;
+                    plan = candidate.plan;
+                    anyProgress = true;
+                    passProgress = true;
+                    System.err.format(
+                            "Small-endgame accepted %c at %s. Solved goals %,d, unsolved box goals %,d.%n",
+                            target.letter,
+                            target.goal,
+                            afterSolvedGoals,
+                            afterUnsolvedBoxes
+                    );
+
+                    if (allBoxGoalsSolved(current) || System.nanoTime() >= componentDeadline) {
+                        break;
+                    }
+                }
+
+                if (passProgress || allBoxGoalsSolved(current)) {
+                    break;
+                }
+            }
+
+            if (!passProgress) {
+                break;
+            }
+        }
+
+        System.err.format(
+                "Finished verified small-endgame repair. Solved goals %,d -> %,d, unsolved box goals %,d -> %,d.%n",
+                initialSolvedGoals,
+                countSolvedGoals(current),
+                initialUnsolvedBoxes,
+                countUnsolvedBoxGoals(current)
+        );
+
+        if (!anyProgress || countSolvedBoxGoals(current) < initialSolvedBoxGoals) {
+            return null;
+        }
+
+        return new PocketResult(current, plan);
+    }
+
+    private static PocketResult trySmallEndgameTarget(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            SingleAgentPlanner planner,
+            AgentRetreatPlanner retreatPlanner,
+            UnsolvedBoxGoal target,
+            ArrayList<UnsolvedBoxGoal> componentTargets,
+            long deadline
+    ) {
+        PocketResult direct = trySmallEndgameDirect(
+                start,
+                basePlan,
+                analyzer,
+                planner,
+                retreatPlanner,
+                target,
+                deadline,
+                false
+        );
+        if (direct != null) {
+            System.err.println("Small-endgame direct planner succeeded.");
+            return direct;
+        }
+        System.err.println("Small-endgame direct planner failed.");
+
+        PocketResult relaxed = trySmallEndgameDirect(
+                start,
+                basePlan,
+                analyzer,
+                planner,
+                retreatPlanner,
+                target,
+                deadline,
+                true
+        );
+        if (relaxed != null) {
+            System.err.println("Small-endgame relaxed planner succeeded.");
+            return relaxed;
+        }
+        System.err.println("Small-endgame relaxed planner failed.");
+
+        PocketResult local = trySmallEndgameLocalSearch(start, basePlan, analyzer, target, componentTargets, deadline);
+        if (local != null) {
+            System.err.println("Small-endgame local region search succeeded.");
+            return local;
+        }
+        System.err.println("Small-endgame local region search failed.");
+
+        PocketResult focused = trySmallEndgameFocused(start, basePlan, analyzer, target, deadline);
+        if (focused != null) {
+            System.err.println("Small-endgame focused repair succeeded.");
+            return focused;
+        }
+        System.err.println("Small-endgame focused repair failed.");
+
+        PocketResult staged = trySmallEndgameWithStaging(
+                start,
+                basePlan,
+                analyzer,
+                planner,
+                retreatPlanner,
+                target,
+                deadline
+        );
+        if (staged != null) {
+            System.err.println("Small-endgame blocker staging succeeded.");
+            return staged;
+        }
+        System.err.println("Small-endgame blocker staging failed.");
+        return null;
+    }
+
+    private static PocketResult trySmallEndgameDirect(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            SingleAgentPlanner planner,
+            AgentRetreatPlanner retreatPlanner,
+            UnsolvedBoxGoal target,
+            long deadline,
+            boolean relaxed
+    ) {
+        for (Task task : smallEndgameTasksForTarget(start, analyzer, target)) {
+            if (System.nanoTime() >= deadline) {
+                return null;
+            }
+
+            List<Action> boxPlan = relaxed
+                    ? planner.planBoxToGoalRelaxed(start, task, new ReservationTable())
+                    : planner.planBoxToGoal(start, task, new ReservationTable());
+
+            if (boxPlan == null || boxPlan.isEmpty()
+                    || basePlan.size() + boxPlan.size() > MAX_TOTAL_ACTIONS) {
+                continue;
+            }
+
+            PocketResult candidate = appendValidatedSingleAgentPlan(
+                    start,
+                    basePlan,
+                    boxPlan,
+                    task.assignedAgent
+            );
+
+            if (candidate == null) {
+                continue;
+            }
+
+            List<Action> retreat = retreatPlanner.planRetreat(candidate.state, task.assignedAgent, 8);
+            if (retreat != null && !retreat.isEmpty()
+                    && candidate.plan.size() + retreat.size() <= MAX_TOTAL_ACTIONS) {
+                PocketResult withRetreat = appendValidatedSingleAgentPlan(
+                        candidate.state,
+                        candidate.plan,
+                        retreat,
+                        task.assignedAgent
+                );
+
+                if (withRetreat != null) {
+                    candidate = withRetreat;
+                }
+            }
+
+            if (candidate.state.boxes[target.goal.row][target.goal.col] == target.letter) {
+                return candidate;
+            }
+        }
+
+        return null;
+    }
+
+    private static PocketResult trySmallEndgameFocused(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            UnsolvedBoxGoal target,
+            long deadline
+    ) {
+        long targetDeadline = Math.min(deadline, System.nanoTime() + 8L * 1_000_000_000L);
+        Action[][] repair = focusedSingleGoalRepair(start, analyzer, target, targetDeadline, 900_000);
+
+        if (repair == null || repair.length == 0 || basePlan.size() + repair.length > MAX_TOTAL_ACTIONS) {
+            return null;
+        }
+
+        State repaired = simulateValidatedJointPlan(start, java.util.Arrays.asList(repair));
+        if (repaired == null || repaired.boxes[target.goal.row][target.goal.col] != target.letter) {
+            return null;
+        }
+
+        ArrayList<Action[]> updatedPlan = copyPlan(basePlan);
+        appendJointPlan(updatedPlan, repair);
+        return new PocketResult(repaired, updatedPlan);
+    }
+
+    private static PocketResult trySmallEndgameLocalSearch(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            UnsolvedBoxGoal target,
+            ArrayList<UnsolvedBoxGoal> componentTargets,
+            long deadline
+    ) {
+        ArrayList<UnsolvedBoxGoal> targets = componentTargets == null
+                ? remainingBoxGoals(start)
+                : new ArrayList<>(componentTargets);
+        RepairRegion region = buildSmallEndgameRepairRegion(start, analyzer, targets);
+
+        if (region == null) {
+            System.err.println("Small-endgame local region rejected before search.");
+            return null;
+        }
+
+        long localDeadline = Math.min(deadline, System.nanoTime() + 750L * 1_000_000L);
+        int maxExpansions = smallEndgameLocalExpansionLimit(region);
+
+        for (int activeAgent : localRepairAgents(start, region, target)) {
+            if (System.nanoTime() >= localDeadline) {
+                return null;
+            }
+
+            Action[][] repair = boundedSmallEndgameLocalSearch(
+                    start,
+                    analyzer,
+                    targets,
+                    target,
+                    region,
+                    activeAgent,
+                    localDeadline,
+                    maxExpansions
+            );
+
+            if (repair == null || repair.length == 0 || basePlan.size() + repair.length > MAX_TOTAL_ACTIONS) {
+                continue;
+            }
+
+            State repaired = simulateValidatedJointPlan(start, java.util.Arrays.asList(repair));
+            if (repaired == null) {
+                continue;
+            }
+
+            if (countSolvedBoxGoals(repaired) < countSolvedBoxGoals(start)) {
+                continue;
+            }
+
+            if (repaired.boxes[target.goal.row][target.goal.col] != target.letter
+                    && countUnsolvedBoxGoals(repaired) >= countUnsolvedBoxGoals(start)) {
+                continue;
+            }
+
+            ArrayList<Action[]> updatedPlan = copyPlan(basePlan);
+            appendJointPlan(updatedPlan, repair);
+            return new PocketResult(repaired, updatedPlan);
+        }
+
+        return null;
+    }
+
+    private static Action[][] boundedSmallEndgameLocalSearch(
+            State start,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            UnsolvedBoxGoal primaryTarget,
+            RepairRegion region,
+            int activeAgent,
+            long deadline,
+            int maxExpansions
+    ) {
+        PriorityQueue<FocusedNode> open = new PriorityQueue<>(Comparator.comparingInt(node -> node.f));
+        HashMap<State, Integer> bestG = new HashMap<>();
+        int initialSolvedBoxGoals = countSolvedBoxGoals(start);
+        int initialUnsolvedBoxGoals = countUnsolvedBoxGoals(start);
+
+        open.add(new FocusedNode(
+                start,
+                null,
+                null,
+                0,
+                smallEndgameLocalHeuristic(start, analyzer, targets, primaryTarget)
+        ));
+
+        int expansions = 0;
+
+        while (!open.isEmpty() && System.nanoTime() < deadline) {
+            if (++expansions > maxExpansions) {
+                System.err.format("Small-endgame local search hit expansion limit. Open size: %,d.%n", open.size());
+                return null;
+            }
+
+            FocusedNode node = open.poll();
+            Integer seen = bestG.get(node.state);
+
+            if (seen != null && seen <= node.g) {
+                continue;
+            }
+
+            bestG.put(node.state, node.g);
+
+            if (countSolvedBoxGoals(node.state) >= initialSolvedBoxGoals
+                    && (node.state.boxes[primaryTarget.goal.row][primaryTarget.goal.col] == primaryTarget.letter
+                    || countUnsolvedBoxGoals(node.state) < initialUnsolvedBoxGoals
+                    || node.state.isGoalState())) {
+                System.err.format("Small-endgame local search expanded %,d states.%n", expansions);
+                return extractFocusedPlan(node, start.agentRows.length);
+            }
+
+            for (FocusedStep step : expandSmallEndgameLocal(
+                    node.state,
+                    analyzer,
+                    targets,
+                    primaryTarget,
+                    region,
+                    activeAgent
+            )) {
+                int nextG = node.g + 1;
+                Integer bestKnown = bestG.get(step.state);
+
+                if (bestKnown != null && bestKnown <= nextG) {
+                    continue;
+                }
+
+                if (countSolvedBoxGoals(step.state) < initialSolvedBoxGoals) {
+                    continue;
+                }
+
+                int h = smallEndgameLocalHeuristic(step.state, analyzer, targets, primaryTarget);
+                open.add(new FocusedNode(step.state, node, step.jointAction, nextG, nextG + 6 * h));
+            }
+        }
+
+        return null;
+    }
+
+    private static ArrayList<FocusedStep> expandSmallEndgameLocal(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            UnsolvedBoxGoal primaryTarget,
+            RepairRegion region,
+            int activeAgent
+    ) {
+        int numAgents = state.agentRows.length;
+        Action[][] actionSets = new Action[numAgents][];
+
+        for (int agent = 0; agent < numAgents; agent++) {
+            if (agent == activeAgent) {
+                actionSets[agent] = applicableSmallEndgameLocalActions(
+                        state,
+                        analyzer,
+                        targets,
+                        primaryTarget,
+                        region,
+                        agent,
+                        true
+                );
+            } else if (localHelperRelevant(state, region, agent)) {
+                actionSets[agent] = applicableSmallEndgameLocalActions(
+                        state,
+                        analyzer,
+                        targets,
+                        primaryTarget,
+                        region,
+                        agent,
+                        false
+                );
+            } else {
+                actionSets[agent] = new Action[] { Action.NoOp };
+            }
+        }
+
+        ArrayList<FocusedStep> result = new ArrayList<>();
+        Action[] jointAction = new Action[numAgents];
+        enumerateFocusedActions(state, actionSets, jointAction, 0, result);
+        result.sort(Comparator
+                .comparingInt((FocusedStep step) -> smallEndgameLocalStepScore(step, analyzer, targets, primaryTarget, region))
+                .thenComparingInt(step -> movingActionCount(step.jointAction)));
+        return result;
+    }
+
+    private static Action[] applicableSmallEndgameLocalActions(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            UnsolvedBoxGoal primaryTarget,
+            RepairRegion region,
+            int agent,
+            boolean canMoveBoxes
+    ) {
+        ArrayList<Action> actions = new ArrayList<>();
+
+        for (Action action : Action.values()) {
+            if (action.type == ActionType.NoOp) {
+                actions.add(action);
+                continue;
+            }
+
+            if (!isApplicable(state, agent, action)) {
+                continue;
+            }
+
+            if (!localActionStaysInRegion(state, agent, action, region)) {
+                continue;
+            }
+
+            if (!canMoveBoxes && action.type != ActionType.Move) {
+                continue;
+            }
+
+            if ((action.type == ActionType.Push || action.type == ActionType.Pull)
+                    && !smallEndgameBoxMoveAllowed(state, analyzer, targets, primaryTarget, agent, action, region)) {
+                continue;
+            }
+
+            actions.add(action);
+        }
+
+        actions.sort(Comparator.comparingInt(action -> smallEndgameActionPriority(state, agent, action, primaryTarget)));
+        if (actions.size() > 5) {
+            return actions.subList(0, 5).toArray(new Action[0]);
+        }
+        return actions.toArray(new Action[0]);
+    }
+
+    private static boolean smallEndgameBoxMoveAllowed(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            UnsolvedBoxGoal primaryTarget,
+            int agent,
+            Action action,
+            RepairRegion region
+    ) {
+        int agentRow = state.agentRows[agent];
+        int agentCol = state.agentCols[agent];
+        int boxRow = action.type == ActionType.Push
+                ? agentRow + action.agentRowDelta
+                : agentRow - action.boxRowDelta;
+        int boxCol = action.type == ActionType.Push
+                ? agentCol + action.agentColDelta
+                : agentCol - action.boxColDelta;
+        int newBoxRow = boxRow + action.boxRowDelta;
+        int newBoxCol = boxCol + action.boxColDelta;
+
+        if (!inBounds(boxRow, boxCol) || !region.containsWithMargin(newBoxRow, newBoxCol, 0)) {
+            return false;
+        }
+
+        char box = state.boxes[boxRow][boxCol];
+        if (!('A' <= box && box <= 'Z')) {
+            return false;
+        }
+
+        if (State.goals[boxRow][boxCol] == box && !blocksRemainingTarget(state, targets, new Position(boxRow, boxCol))) {
+            return false;
+        }
+
+        if (!isRemainingTargetLetter(targets, box) && !wrongGoalBlockerForRemainingTarget(state, targets, boxRow, boxCol)) {
+            return false;
+        }
+
+        Position oldBox = new Position(boxRow, boxCol);
+        Position newBox = new Position(newBoxRow, newBoxCol);
+        int before = nearestMatchingRemainingGoalDistance(analyzer, targets, box, oldBox);
+        int after = nearestMatchingRemainingGoalDistance(analyzer, targets, box, newBox);
+
+        return box == primaryTarget.letter || after <= before + 2 || wrongGoalBlockerForRemainingTarget(state, targets, boxRow, boxCol);
+    }
+
+    private static boolean localActionStaysInRegion(State state, int agent, Action action, RepairRegion region) {
+        int agentRow = state.agentRows[agent];
+        int agentCol = state.agentCols[agent];
+        int newAgentRow = agentRow + action.agentRowDelta;
+        int newAgentCol = agentCol + action.agentColDelta;
+
+        if (!region.containsWithMargin(newAgentRow, newAgentCol, 0)) {
+            return false;
+        }
+
+        if (action.type == ActionType.Push || action.type == ActionType.Pull) {
+            int boxRow = action.type == ActionType.Push
+                    ? agentRow + action.agentRowDelta
+                    : agentRow - action.boxRowDelta;
+            int boxCol = action.type == ActionType.Push
+                    ? agentCol + action.agentColDelta
+                    : agentCol - action.boxColDelta;
+            int newBoxRow = boxRow + action.boxRowDelta;
+            int newBoxCol = boxCol + action.boxColDelta;
+            return region.containsWithMargin(boxRow, boxCol, 0)
+                    && region.containsWithMargin(newBoxRow, newBoxCol, 0);
+        }
+
+        return true;
+    }
+
+    private static RepairRegion buildSmallEndgameRepairRegion(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets
+    ) {
+        if (targets.isEmpty() || targets.size() > 6) {
+            return null;
+        }
+
+        int minRow = analyzer.rows;
+        int maxRow = -1;
+        int minCol = analyzer.cols;
+        int maxCol = -1;
+
+        for (UnsolvedBoxGoal target : targets) {
+            minRow = Math.min(minRow, target.goal.row);
+            maxRow = Math.max(maxRow, target.goal.row);
+            minCol = Math.min(minCol, target.goal.col);
+            maxCol = Math.max(maxCol, target.goal.col);
+        }
+
+        HashSet<Character> letters = new HashSet<>();
+        for (UnsolvedBoxGoal target : targets) {
+            letters.add(target.letter);
+        }
+
+        for (int r = 0; r < state.boxes.length; r++) {
+            for (int c = 0; c < state.boxes[r].length; c++) {
+                char box = state.boxes[r][c];
+                Position boxPos = new Position(r, c);
+                if ((letters.contains(box) && boxRelevantToComponent(analyzer, targets, box, boxPos))
+                        || wrongGoalBlockerForRemainingTarget(state, targets, r, c)) {
+                    minRow = Math.min(minRow, r);
+                    maxRow = Math.max(maxRow, r);
+                    minCol = Math.min(minCol, c);
+                    maxCol = Math.max(maxCol, c);
+                }
+            }
+        }
+
+        for (UnsolvedBoxGoal target : targets) {
+            for (Position cell : adjacentCells(target.goal)) {
+                if (!inBounds(cell.row, cell.col)) {
+                    continue;
+                }
+
+                char blocker = state.boxes[cell.row][cell.col];
+                if ('A' <= blocker && blocker <= 'Z' && State.goals[cell.row][cell.col] != blocker) {
+                    minRow = Math.min(minRow, cell.row);
+                    maxRow = Math.max(maxRow, cell.row);
+                    minCol = Math.min(minCol, cell.col);
+                    maxCol = Math.max(maxCol, cell.col);
+                }
+            }
+        }
+
+        if (maxRow < minRow || maxCol < minCol) {
+            return null;
+        }
+
+        int margin = 4;
+        minRow = Math.max(0, minRow - margin);
+        maxRow = Math.min(analyzer.rows - 1, maxRow + margin);
+        minCol = Math.max(0, minCol - margin);
+        maxCol = Math.min(analyzer.cols - 1, maxCol + margin);
+
+        int area = (maxRow - minRow + 1) * (maxCol - minCol + 1);
+        if (area > 260) {
+            return null;
+        }
+
+        return new RepairRegion(minRow, maxRow, minCol, maxCol);
+    }
+
+    private static boolean boxRelevantToComponent(
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            char box,
+            Position boxPos
+    ) {
+        if (!('A' <= box && box <= 'Z')) {
+            return false;
+        }
+
+        int bestDistance = LevelAnalyzer.INF;
+        for (UnsolvedBoxGoal target : targets) {
+            if (target.letter == box) {
+                bestDistance = Math.min(bestDistance, analyzer.distance(boxPos, target.goal));
+            }
+        }
+
+        return bestDistance <= 22;
+    }
+
+    private static int smallEndgameLocalExpansionLimit(RepairRegion region) {
+        int area = repairRegionArea(region);
+        return Math.max(4_000, Math.min(12_000, 80 * area));
+    }
+
+    private static int repairRegionArea(RepairRegion region) {
+        return (region.maxRow - region.minRow + 1) * (region.maxCol - region.minCol + 1);
+    }
+
+    private static ArrayList<Integer> localRepairAgents(State state, RepairRegion region, UnsolvedBoxGoal target) {
+        ArrayList<Integer> agents = new ArrayList<>();
+        Color color = State.boxColors[target.letter - 'A'];
+
+        for (int agent = 0; agent < state.agentRows.length; agent++) {
+            if (State.agentColors[agent] == color) {
+                agents.add(agent);
+            }
+        }
+
+        agents.sort(Comparator.comparingInt(agent -> distanceToRegion(state.agentRows[agent], state.agentCols[agent], region)));
+        if (agents.size() > 3) {
+            return new ArrayList<>(agents.subList(0, 3));
+        }
+        return agents;
+    }
+
+    private static boolean localHelperRelevant(State state, RepairRegion region, int agent) {
+        if (region.containsWithMargin(state.agentRows[agent], state.agentCols[agent], 2)) {
+            return true;
+        }
+        return distanceToRegion(state.agentRows[agent], state.agentCols[agent], region) <= 4;
+    }
+
+    private static int smallEndgameLocalHeuristic(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            UnsolvedBoxGoal primaryTarget
+    ) {
+        int score = 500 * countUnsolvedBoxGoals(state);
+
+        for (UnsolvedBoxGoal target : targets) {
+            if (state.boxes[target.goal.row][target.goal.col] == target.letter) {
+                continue;
+            }
+
+            score += 20 * closestBoxDistance(analyzer, state, target);
+            if (target == primaryTarget) {
+                score += 30 * closestBoxDistance(analyzer, state, target);
+            }
+
+            if (wrongBoxPressure(state, target)) {
+                score += 200;
+            }
+        }
+
+        return score;
+    }
+
+    private static int smallEndgameLocalStepScore(
+            FocusedStep step,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            UnsolvedBoxGoal primaryTarget,
+            RepairRegion region
+    ) {
+        int score = smallEndgameLocalHeuristic(step.state, analyzer, targets, primaryTarget);
+
+        for (int agent = 0; agent < step.state.agentRows.length; agent++) {
+            score += distanceToRegion(step.state.agentRows[agent], step.state.agentCols[agent], region);
+        }
+
+        return score;
+    }
+
+    private static int smallEndgameActionPriority(State state, int agent, Action action, UnsolvedBoxGoal target) {
+        if (action.type == ActionType.NoOp) {
+            return 50;
+        }
+
+        int nextRow = state.agentRows[agent] + action.agentRowDelta;
+        int nextCol = state.agentCols[agent] + action.agentColDelta;
+        int score = Math.abs(nextRow - target.goal.row) + Math.abs(nextCol - target.goal.col);
+
+        if (action.type == ActionType.Push || action.type == ActionType.Pull) {
+            score -= 20;
+        }
+
+        return score;
+    }
+
+    private static boolean isRemainingTargetLetter(ArrayList<UnsolvedBoxGoal> targets, char letter) {
+        for (UnsolvedBoxGoal target : targets) {
+            if (target.letter == letter) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static boolean wrongGoalBlockerForRemainingTarget(
+            State state,
+            ArrayList<UnsolvedBoxGoal> targets,
+            int row,
+            int col
+    ) {
+        char box = state.boxes[row][col];
+        if (!('A' <= box && box <= 'Z')) {
+            return false;
+        }
+
+        for (UnsolvedBoxGoal target : targets) {
+            if (target.goal.row == row && target.goal.col == col && box != target.letter) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static boolean blocksRemainingTarget(
+            State state,
+            ArrayList<UnsolvedBoxGoal> targets,
+            Position boxPosition
+    ) {
+        for (UnsolvedBoxGoal target : targets) {
+            if (boxPosition.manhattanDistance(target.goal) <= 1 && state.boxes[target.goal.row][target.goal.col] != target.letter) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static int nearestMatchingRemainingGoalDistance(
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets,
+            char letter,
+            Position box
+    ) {
+        int best = LevelAnalyzer.INF;
+        for (UnsolvedBoxGoal target : targets) {
+            if (target.letter == letter) {
+                best = Math.min(best, analyzer.distance(box, target.goal));
+            }
+        }
+        return best;
+    }
+
+    private static PocketResult trySmallEndgameWithStaging(
+            State start,
+            ArrayList<Action[]> basePlan,
+            LevelAnalyzer analyzer,
+            SingleAgentPlanner planner,
+            AgentRetreatPlanner retreatPlanner,
+            UnsolvedBoxGoal target,
+            long deadline
+    ) {
+        ArrayList<Position> blockers = smallEndgameBlockers(start, target);
+
+        for (Position blockerPos : blockers) {
+            if (System.nanoTime() >= deadline) {
+                return null;
+            }
+
+            char blocker = start.boxes[blockerPos.row][blockerPos.col];
+            if (!('A' <= blocker && blocker <= 'Z')
+                    || State.goals[blockerPos.row][blockerPos.col] == blocker) {
+                continue;
+            }
+
+            for (Position destination : blockerClearDestinations(start, blockerPos, blocker)) {
+                if (System.nanoTime() >= deadline) {
+                    return null;
+                }
+
+                PocketResult staged = tryMoveSpecificBoxTo(
+                        start,
+                        basePlan,
+                        planner,
+                        blocker,
+                        blockerPos,
+                        destination,
+                        deadline
+                );
+
+                if (staged == null || countSolvedBoxGoals(staged.state) < countSolvedBoxGoals(start)) {
+                    continue;
+                }
+
+                PocketResult placed = trySmallEndgameDirect(
+                        staged.state,
+                        staged.plan,
+                        analyzer,
+                        planner,
+                        retreatPlanner,
+                        target,
+                        deadline,
+                        false
+                );
+
+                if (placed == null) {
+                    placed = trySmallEndgameDirect(
+                            staged.state,
+                            staged.plan,
+                            analyzer,
+                            planner,
+                            retreatPlanner,
+                            target,
+                            deadline,
+                            true
+                    );
+                }
+
+                if (placed == null) {
+                    placed = trySmallEndgameFocused(staged.state, staged.plan, analyzer, target, deadline);
+                }
+
+                if (placed != null
+                        && placed.state.boxes[target.goal.row][target.goal.col] == target.letter
+                        && countSolvedBoxGoals(placed.state) >= countSolvedBoxGoals(start)) {
+                    return placed;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    private static PocketResult tryMoveSpecificBoxTo(
+            State start,
+            ArrayList<Action[]> basePlan,
+            SingleAgentPlanner planner,
+            char box,
+            Position source,
+            Position destination,
+            long deadline
+    ) {
+        if (start.boxes[source.row][source.col] != box || !cellIsFree(start, destination.row, destination.col)) {
+            return null;
+        }
+
+        for (int agent : agentsWithBoxColorByManhattan(start, box, source)) {
+            if (System.nanoTime() >= deadline) {
+                return null;
+            }
+
+            Task task = new Task(box, source, destination, agent, 0);
+            List<Action> plan = planner.planBoxToGoal(start, task, new ReservationTable());
+
+            if (plan == null || plan.isEmpty()) {
+                plan = planner.planBoxToGoalRelaxed(start, task, new ReservationTable());
+            }
+
+            if (plan == null || plan.isEmpty() || basePlan.size() + plan.size() > MAX_TOTAL_ACTIONS) {
+                continue;
+            }
+
+            PocketResult candidate = appendValidatedSingleAgentPlan(start, basePlan, plan, agent);
+            if (candidate != null && candidate.state.boxes[destination.row][destination.col] == box) {
+                System.err.format(
+                        "Small-endgame staged blocker %c from %s to %s using %,d actions.%n",
+                        box,
+                        source,
+                        destination,
+                        plan.size()
+                );
+                return candidate;
+            }
+        }
+
+        return null;
+    }
+
+    private static PocketResult appendValidatedSingleAgentPlan(
+            State start,
+            ArrayList<Action[]> basePlan,
+            List<Action> singleAgentPlan,
+            int activeAgent
+    ) {
+        ArrayList<Action[]> suffix = new ArrayList<>();
+        appendAsJointActions(suffix, singleAgentPlan, activeAgent, start.agentRows.length);
+        State next = simulateValidatedJointPlan(start, suffix);
+
+        if (next == null) {
+            return null;
+        }
+
+        ArrayList<Action[]> updatedPlan = copyPlan(basePlan);
+        updatedPlan.addAll(suffix);
+        return new PocketResult(next, updatedPlan);
+    }
+
+    private static ArrayList<Task> smallEndgameTasksForTarget(
+            State state,
+            LevelAnalyzer analyzer,
+            UnsolvedBoxGoal target
+    ) {
+        ArrayList<Task> tasks = new ArrayList<>();
+
+        for (int r = 0; r < state.boxes.length; r++) {
+            for (int c = 0; c < state.boxes[r].length; c++) {
+                if (state.boxes[r][c] != target.letter) {
+                    continue;
+                }
+
+                Position box = new Position(r, c);
+                if (State.goals[r][c] == target.letter && !box.equals(target.goal)) {
+                    continue;
+                }
+
+                for (int agent = 0; agent < state.agentRows.length; agent++) {
+                    if (State.agentColors[agent] == State.boxColors[target.letter - 'A']) {
+                        int priority = analyzer.distance(box, target.goal)
+                                + analyzer.distance(new Position(state.agentRows[agent], state.agentCols[agent]), box);
+                        tasks.add(new Task(target.letter, box, target.goal, agent, priority));
+                    }
+                }
+            }
+        }
+
+        tasks.sort(Comparator
+                .comparingInt((Task task) -> task.priority)
+                .thenComparingInt(task -> task.boxStart.manhattanDistance(target.goal))
+                .thenComparingInt(task -> task.assignedAgent));
+        return tasks;
+    }
+
+    private static ArrayList<UnsolvedBoxGoal> orderSmallEndgameTargets(State state, LevelAnalyzer analyzer) {
+        return orderSmallEndgameTargets(state, analyzer, remainingBoxGoals(state));
+    }
+
+    private static ArrayList<UnsolvedBoxGoal> orderSmallEndgameTargets(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> targets
+    ) {
+        targets = new ArrayList<>(targets);
+
+        targets.sort(Comparator
+                .comparingInt((UnsolvedBoxGoal target) -> wrongBoxPressure(state, target) ? 0 : 1)
+                .thenComparingInt(target -> boundaryOrCornerPressure(analyzer, target.goal) ? 0 : 1)
+                .thenComparingInt((UnsolvedBoxGoal target) -> -goalConstraintScore(state, analyzer, target.goal))
+                .thenComparingInt(target -> closestBoxDistance(analyzer, state, target))
+                .thenComparingInt(target -> target.goal.row)
+                .thenComparingInt(target -> target.goal.col));
+        return targets;
+    }
+
+    private static ArrayList<ArrayList<UnsolvedBoxGoal>> orderSmallEndgameComponents(
+            State state,
+            LevelAnalyzer analyzer
+    ) {
+        ArrayList<UnsolvedBoxGoal> remaining = remainingBoxGoals(state);
+        ArrayList<ArrayList<UnsolvedBoxGoal>> components = splitSmallEndgameComponents(state, analyzer, remaining);
+        components = splitOversizedSmallEndgameComponents(state, analyzer, components);
+
+        components.sort(Comparator
+                .comparingInt((ArrayList<UnsolvedBoxGoal> component) -> component.size())
+                .thenComparingInt(component -> candidateBoxCountForComponent(state, component))
+                .thenComparingInt(component -> boundaryComponent(component, analyzer) ? 0 : 1)
+                .thenComparingInt(component -> -wrongGoalBlockerCount(state, component))
+                .thenComparingInt(component -> componentBoundingArea(component)));
+        return components;
+    }
+
+    private static ArrayList<ArrayList<UnsolvedBoxGoal>> splitOversizedSmallEndgameComponents(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<ArrayList<UnsolvedBoxGoal>> components
+    ) {
+        ArrayList<ArrayList<UnsolvedBoxGoal>> result = new ArrayList<>();
+
+        for (ArrayList<UnsolvedBoxGoal> component : components) {
+            if (component.size() <= 6) {
+                result.add(component);
+                continue;
+            }
+
+            ArrayList<UnsolvedBoxGoal> ordered = orderSmallEndgameTargets(state, analyzer, component);
+            for (UnsolvedBoxGoal target : ordered) {
+                ArrayList<UnsolvedBoxGoal> singleton = new ArrayList<>();
+                singleton.add(target);
+                result.add(singleton);
+            }
+        }
+
+        return result;
+    }
+
+    private static ArrayList<ArrayList<UnsolvedBoxGoal>> splitSmallEndgameComponents(
+            State state,
+            LevelAnalyzer analyzer,
+            ArrayList<UnsolvedBoxGoal> goals
+    ) {
+        ArrayList<ArrayList<UnsolvedBoxGoal>> components = new ArrayList<>();
+        boolean[] seen = new boolean[goals.size()];
+
+        for (int i = 0; i < goals.size(); i++) {
+            if (seen[i]) {
+                continue;
+            }
+
+            ArrayDeque<Integer> queue = new ArrayDeque<>();
+            ArrayList<UnsolvedBoxGoal> component = new ArrayList<>();
+            seen[i] = true;
+            queue.add(i);
+
+            while (!queue.isEmpty()) {
+                int index = queue.removeFirst();
+                UnsolvedBoxGoal goal = goals.get(index);
+                component.add(goal);
+
+                for (int j = 0; j < goals.size(); j++) {
+                    if (!seen[j] && goalsBelongToSameSmallComponent(state, analyzer, goal, goals.get(j))) {
+                        seen[j] = true;
+                        queue.add(j);
+                    }
+                }
+            }
+
+            components.add(component);
+        }
+
+        return components;
+    }
+
+    private static boolean goalsBelongToSameSmallComponent(
+            State state,
+            LevelAnalyzer analyzer,
+            UnsolvedBoxGoal a,
+            UnsolvedBoxGoal b
+    ) {
+        int goalDistance = a.goal.manhattanDistance(b.goal);
+        if (goalDistance <= 8) {
+            return true;
+        }
+
+        if ((a.goal.row == b.goal.row || a.goal.col == b.goal.col) && goalDistance <= 18) {
+            return clearLineBetweenGoals(a.goal, b.goal);
+        }
+
+        if (analyzer.distance(a.goal, b.goal) < LevelAnalyzer.INF && goalDistance <= 14) {
+            return true;
+        }
+
+        return false;
+    }
+
+    private static boolean clearLineBetweenGoals(Position a, Position b) {
+        if (a.row == b.row) {
+            int minCol = Math.min(a.col, b.col);
+            int maxCol = Math.max(a.col, b.col);
+            for (int col = minCol; col <= maxCol; col++) {
+                if (State.walls[a.row][col]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        if (a.col == b.col) {
+            int minRow = Math.min(a.row, b.row);
+            int maxRow = Math.max(a.row, b.row);
+            for (int row = minRow; row <= maxRow; row++) {
+                if (State.walls[row][a.col]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        return false;
+    }
+
+    private static int candidateBoxCountForComponent(State state, ArrayList<UnsolvedBoxGoal> component) {
+        HashSet<Character> letters = new HashSet<>();
+        for (UnsolvedBoxGoal target : component) {
+            letters.add(target.letter);
+        }
+
+        int count = 0;
+        for (int r = 0; r < state.boxes.length; r++) {
+            for (int c = 0; c < state.boxes[r].length; c++) {
+                if (letters.contains(state.boxes[r][c])) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    private static boolean boundaryComponent(ArrayList<UnsolvedBoxGoal> component, LevelAnalyzer analyzer) {
+        for (UnsolvedBoxGoal target : component) {
+            if (boundaryOrCornerPressure(analyzer, target.goal)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static int wrongGoalBlockerCount(State state, ArrayList<UnsolvedBoxGoal> component) {
+        int count = 0;
+        for (UnsolvedBoxGoal target : component) {
+            if (wrongBoxPressure(state, target)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    private static int componentBoundingArea(ArrayList<UnsolvedBoxGoal> component) {
+        int minRow = Integer.MAX_VALUE;
+        int maxRow = Integer.MIN_VALUE;
+        int minCol = Integer.MAX_VALUE;
+        int maxCol = Integer.MIN_VALUE;
+
+        for (UnsolvedBoxGoal target : component) {
+            minRow = Math.min(minRow, target.goal.row);
+            maxRow = Math.max(maxRow, target.goal.row);
+            minCol = Math.min(minCol, target.goal.col);
+            maxCol = Math.max(maxCol, target.goal.col);
+        }
+
+        return (maxRow - minRow + 1) * (maxCol - minCol + 1);
+    }
+
+    private static String describeTargets(ArrayList<UnsolvedBoxGoal> targets) {
+        ArrayList<String> parts = new ArrayList<>();
+        for (UnsolvedBoxGoal target : targets) {
+            parts.add(target.letter + "@" + target.goal);
+        }
+        return parts.toString();
+    }
+
+    private static boolean wrongBoxPressure(State state, UnsolvedBoxGoal target) {
+        char box = state.boxes[target.goal.row][target.goal.col];
+        return 'A' <= box && box <= 'Z' && box != target.letter;
+    }
+
+    private static boolean boundaryOrCornerPressure(LevelAnalyzer analyzer, Position goal) {
+        if (goal.row <= 1 || goal.row >= analyzer.rows - 2 || goal.col <= 1 || goal.col >= analyzer.cols - 2) {
+            return true;
+        }
+        return goalConstraintScore(null, analyzer, goal) >= 2;
+    }
+
+    private static int goalConstraintScore(State state, LevelAnalyzer analyzer, Position goal) {
+        int score = 0;
+        for (Position cell : adjacentCells(goal)) {
+            if (!analyzer.inBounds(cell) || State.walls[cell.row][cell.col]) {
+                score += 2;
+            } else if (state != null && state.boxes[cell.row][cell.col] != 0) {
+                score++;
+            } else if (state != null && agentAt(state, cell.row, cell.col) != -1) {
+                score++;
+            }
+        }
+        return score;
+    }
+
+    private static ArrayList<Position> smallEndgameBlockers(State state, UnsolvedBoxGoal target) {
+        ArrayList<Position> blockers = new ArrayList<>();
+
+        if (wrongBoxPressure(state, target)) {
+            blockers.add(target.goal);
+        }
+
+        for (Position cell : adjacentCells(target.goal)) {
+            if (!inBounds(cell.row, cell.col)) {
+                continue;
+            }
+
+            char box = state.boxes[cell.row][cell.col];
+            if ('A' <= box && box <= 'Z'
+                    && State.goals[cell.row][cell.col] != box
+                    && !blockers.contains(cell)) {
+                blockers.add(cell);
+            }
+        }
+
+        blockers.sort(Comparator.comparingInt(p -> p.manhattanDistance(target.goal)));
+        return blockers;
+    }
+
+    private static ArrayList<Position> adjacentCells(Position position) {
+        ArrayList<Position> cells = new ArrayList<>(4);
+        cells.add(new Position(position.row - 1, position.col));
+        cells.add(new Position(position.row + 1, position.col));
+        cells.add(new Position(position.row, position.col - 1));
+        cells.add(new Position(position.row, position.col + 1));
+        return cells;
     }
 
     private static PocketResult tryNearbySolvedBoxUnblockRepair(
@@ -4037,85 +4875,6 @@ return bestNode.plan.toArray(new Action[0][]);
                 blocker,
                 blockerGoal
         );
-
-        return new PocketResult(current, plan);
-    }
-
-    private static boolean isJailCyanPairCandidate(State state) {
-        return State.goals.length > 7
-                && State.goals[7].length > 34
-                && state.agentRows.length > 5
-                && State.goals[7][33] == 'Z'
-                && State.goals[7][34] == 'L'
-                && state.boxes[6][45] == 'Z'
-                && state.boxes[7][34] == 'L'
-                && state.agentRows[3] == 7
-                && state.agentCols[3] == 39
-                && state.agentRows[5] == 6
-                && state.agentCols[5] == 32
-                && State.agentColors[5] == State.boxColors['Z' - 'A']
-                && State.agentColors[5] == State.boxColors['L' - 'A'];
-    }
-
-    private static PocketResult tryJailCyanPairMacro(
-            State start,
-            ArrayList<Action[]> basePlan
-    ) {
-        int agent = 5;
-        State current = copyState(start);
-        ArrayList<Action[]> plan = copyPlan(basePlan);
-
-        if (!appendValidatedSingleAgentStep(plan, current, 3, Action.MoveW)) {
-            return null;
-        }
-        current = applyJointAction(current, plan.get(plan.size() - 1));
-
-        if (!appendValidatedSingleAgentStep(plan, current, 3, Action.MoveN)) {
-            return null;
-        }
-        current = applyJointAction(current, plan.get(plan.size() - 1));
-
-        ArrayList<Action> macro = new ArrayList<>();
-
-        macro.add(Action.MoveE);
-        macro.add(Action.MoveE);
-        macro.add(Action.PullWN);
-        macro.add(Action.PushEE);
-        macro.add(Action.MoveS);
-
-        for (int i = 0; i < 11; i++) {
-            macro.add(Action.MoveE);
-        }
-
-        macro.add(Action.PullWS);
-
-        for (int i = 0; i < 12; i++) {
-            macro.add(Action.PullWW);
-        }
-
-        macro.add(Action.MoveN);
-        macro.add(Action.MoveE);
-        macro.add(Action.MoveE);
-        macro.add(Action.MoveS);
-        macro.add(Action.MoveE);
-        macro.add(Action.PullWS);
-        macro.add(Action.MoveN);
-        macro.add(Action.MoveE);
-        macro.add(Action.MoveE);
-        macro.add(Action.MoveS);
-        macro.add(Action.PushWW);
-
-        for (Action action : macro) {
-            if (!appendValidatedSingleAgentStep(plan, current, agent, action)) {
-                return null;
-            }
-
-            current = applyJointAction(current, plan.get(plan.size() - 1));
-        }
-
-        if (current.boxes[7][33] != 'Z' || current.boxes[7][34] != 'L') {
-            return null;
-        }
 
         return new PocketResult(current, plan);
     }
@@ -4552,267 +5311,6 @@ return bestNode.plan.toArray(new Action[0][]);
         }
 
         return null;
-    }
-
-    private static boolean isTheGateChamberCandidate(State state) {
-        if (state.agentRows.length <= 7) {
-            return false;
-        }
-
-        Position aGoal = findBoxGoal('A');
-        Position bGoal = findBoxGoal('B');
-        Position cGoal = findBoxGoal('C');
-        Position dGoal = findBoxGoal('D');
-        Position agent7Goal = findAgentGoal(7);
-
-        if (!isCentralGatePosition(aGoal)
-                || !isCentralGatePosition(bGoal)
-                || !isCentralGatePosition(cGoal)
-                || !isCentralGatePosition(dGoal)
-                || !isCentralGatePosition(agent7Goal)) {
-            return false;
-        }
-
-        return state.boxes[aGoal.row][aGoal.col] != 'A'
-                || state.boxes[bGoal.row][bGoal.col] != 'B'
-                || state.boxes[cGoal.row][cGoal.col] != 'C'
-                || state.boxes[dGoal.row][dGoal.col] != 'D'
-                || state.boxes[agent7Goal.row][agent7Goal.col] != 0
-                || state.agentRows[7] != agent7Goal.row
-                || state.agentCols[7] != agent7Goal.col;
-    }
-
-    private static boolean isCentralGatePosition(Position p) {
-        return p != null && p.row >= 7 && p.row <= 13 && p.col >= 17 && p.col <= 27;
-    }
-
-    private static Action[][] theGateChamberRepair(State start, long deadline, int maxExpansions) {
-        GateProblem problem = GateProblem.from(start);
-
-        if (problem == null) {
-            return null;
-        }
-
-        PriorityQueue<GateNode> open = new PriorityQueue<>(Comparator.comparingInt(node -> node.f));
-        HashMap<GateState, Integer> bestG = new HashMap<>();
-
-        GateState initial = problem.initialState;
-        open.add(new GateNode(initial, null, null, 0, theGateChamberHeuristic(problem, initial)));
-
-        int expansions = 0;
-
-        while (!open.isEmpty() && System.nanoTime() < deadline) {
-            if (++expansions > maxExpansions) {
-                System.err.format("TheGate chamber macro hit expansion limit. Open size: %,d.%n", open.size());
-                return null;
-            }
-
-            GateNode node = open.poll();
-            Integer seen = bestG.get(node.state);
-
-            if (seen != null && seen <= node.g) {
-                continue;
-            }
-
-            bestG.put(node.state, node.g);
-
-            if (theGateChamberSolved(problem, node.state)) {
-                System.err.format("TheGate chamber macro expanded %,d states.%n", expansions);
-                return extractGatePlan(node, start.agentRows.length);
-            }
-
-            for (GateStep step : expandGateState(problem, node.state)) {
-                int nextG = node.g + 1;
-                Integer bestKnown = bestG.get(step.state);
-
-                if (bestKnown != null && bestKnown <= nextG) {
-                    continue;
-                }
-
-                int h = theGateChamberHeuristic(problem, step.state);
-                open.add(new GateNode(step.state, node, step.jointAction, nextG, nextG + 8 * h));
-            }
-        }
-
-        System.err.format("TheGate chamber macro exhausted search after %,d expansions.%n", expansions);
-        return null;
-    }
-
-    private static boolean theGateChamberSolved(GateProblem problem, GateState state) {
-        for (int box = 0; box < 4; box++) {
-            if (state.boxCells[box] != problem.boxGoalCells[box]) {
-                return false;
-            }
-        }
-
-        return state.agentCells[4] == problem.agent7GoalCell
-                && state.boxCells[4] != problem.agent7GoalCell;
-    }
-
-    private static int theGateChamberHeuristic(GateProblem problem, GateState state) {
-        int h = 0;
-
-        for (int box = 0; box < 4; box++) {
-            if (state.boxCells[box] != problem.boxGoalCells[box]) {
-                h += 80 * problem.distances[state.boxCells[box]][problem.boxGoalCells[box]] + 700;
-            }
-        }
-
-        if (state.boxCells[4] == problem.agent7GoalCell) {
-            h += 900;
-        }
-
-        h += 25 * problem.distances[state.agentCells[4]][problem.agent7GoalCell];
-
-        for (int agent = 0; agent < problem.activeAgents.length; agent++) {
-            int box = agent == 4 ? 4 : agent;
-            h += nearestAgentBoxDistance(problem, state, agent, box);
-        }
-
-        return h;
-    }
-
-    private static int nearestAgentBoxDistance(GateProblem problem, GateState state, int agent, int box) {
-        int best = problem.distances[state.agentCells[agent]][state.boxCells[box]];
-        return best >= 1000 ? 1000 : best;
-    }
-
-    private static ArrayList<GateStep> expandGateState(GateProblem problem, GateState state) {
-        ArrayList<GateStep> result = new ArrayList<>();
-
-        for (int agentIndex = 0; agentIndex < problem.activeAgents.length; agentIndex++) {
-            for (Action action : Action.values()) {
-                if (action.type == ActionType.NoOp) {
-                    continue;
-                }
-
-                GateState next = applyGateAction(problem, state, agentIndex, action);
-
-                if (next == null) {
-                    continue;
-                }
-
-                Action[] jointAction = noopJointAction(problem.numAgents);
-                jointAction[problem.activeAgents[agentIndex]] = action;
-                result.add(new GateStep(next, jointAction));
-            }
-        }
-
-        result.sort(Comparator.comparingInt(step -> theGateChamberHeuristic(problem, step.state)));
-        return result;
-    }
-
-    private static GateState applyGateAction(GateProblem problem, GateState state, int agentIndex, Action action) {
-        int agentCell = state.agentCells[agentIndex];
-        int agentRow = problem.rows[agentCell];
-        int agentCol = problem.cols[agentCell];
-
-        switch (action.type) {
-            case Move: {
-                int dest = problem.cellIndex(agentRow + action.agentRowDelta, agentCol + action.agentColDelta);
-
-                if (dest == -1 || occupiedGateAgent(state, dest) || occupiedGateBox(state, dest) != -1) {
-                    return null;
-                }
-
-                int[] agents = state.agentCells.clone();
-                agents[agentIndex] = dest;
-                return new GateState(agents, state.boxCells);
-            }
-
-            case Push: {
-                int boxCell = problem.cellIndex(agentRow + action.agentRowDelta, agentCol + action.agentColDelta);
-                int boxIndex = occupiedGateBox(state, boxCell);
-
-                if (boxIndex == -1 || !canGateAgentMoveBox(agentIndex, boxIndex)) {
-                    return null;
-                }
-
-                int boxRow = problem.rows[boxCell];
-                int boxCol = problem.cols[boxCell];
-                int dest = problem.cellIndex(boxRow + action.boxRowDelta, boxCol + action.boxColDelta);
-
-                if (dest == -1 || occupiedGateAgent(state, dest) || occupiedGateBox(state, dest) != -1) {
-                    return null;
-                }
-
-                int[] agents = state.agentCells.clone();
-                int[] boxes = state.boxCells.clone();
-                agents[agentIndex] = boxCell;
-                boxes[boxIndex] = dest;
-                return new GateState(agents, boxes);
-            }
-
-            case Pull: {
-                int dest = problem.cellIndex(agentRow + action.agentRowDelta, agentCol + action.agentColDelta);
-
-                if (dest == -1 || occupiedGateAgent(state, dest) || occupiedGateBox(state, dest) != -1) {
-                    return null;
-                }
-
-                int boxCell = problem.cellIndex(agentRow - action.boxRowDelta, agentCol - action.boxColDelta);
-                int boxIndex = occupiedGateBox(state, boxCell);
-
-                if (boxIndex == -1 || !canGateAgentMoveBox(agentIndex, boxIndex)) {
-                    return null;
-                }
-
-                int[] agents = state.agentCells.clone();
-                int[] boxes = state.boxCells.clone();
-                agents[agentIndex] = dest;
-                boxes[boxIndex] = agentCell;
-                return new GateState(agents, boxes);
-            }
-
-            default:
-                return null;
-        }
-    }
-
-    private static boolean canGateAgentMoveBox(int agentIndex, int boxIndex) {
-        return agentIndex == boxIndex;
-    }
-
-    private static boolean occupiedGateAgent(GateState state, int cell) {
-        for (int agentCell : state.agentCells) {
-            if (agentCell == cell) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private static int occupiedGateBox(GateState state, int cell) {
-        if (cell == -1) {
-            return -1;
-        }
-
-        for (int box = 0; box < state.boxCells.length; box++) {
-            if (state.boxCells[box] == cell) {
-                return box;
-            }
-        }
-
-        return -1;
-    }
-
-    private static Action[][] extractGatePlan(GateNode goalNode, int numAgents) {
-        ArrayList<Action[]> reversed = new ArrayList<>();
-        GateNode node = goalNode;
-
-        while (node.parent != null) {
-            reversed.add(node.jointAction);
-            node = node.parent;
-        }
-
-        Action[][] plan = new Action[reversed.size()][numAgents];
-
-        for (int i = 0; i < reversed.size(); i++) {
-            plan[i] = reversed.get(reversed.size() - 1 - i).clone();
-        }
-
-        return plan;
     }
 
     private static Action[][] agentGoalPushRepair(
@@ -6177,14 +6675,6 @@ return bestNode.plan.toArray(new Action[0][]);
     }
 
     private static boolean helperCanMoveBlockingBox(State state, int agent, UnsolvedBoxGoal target) {
-        if (isZoomHereCandidate(state)
-                && State.agentColors[agent] == Color.Cyan
-                && target.goal.row == 8
-                && target.goal.col >= 1
-                && target.goal.col <= 4) {
-            return true;
-        }
-
         Color helperColor = State.agentColors[agent];
 
         for (int r = Math.max(0, target.goal.row - 2); r <= Math.min(state.boxes.length - 1, target.goal.row + 2); r++) {
@@ -6284,7 +6774,7 @@ return bestNode.plan.toArray(new Action[0][]);
         return distance > activeBoxDistanceLimit;
     }
 
-    private static boolean isApplicable(State state, int agent, Action action) {
+    static boolean isApplicable(State state, int agent, Action action) {
         int agentRow = state.agentRows[agent];
         int agentCol = state.agentCols[agent];
         Color agentColor = State.agentColors[agent];
@@ -6336,7 +6826,7 @@ return bestNode.plan.toArray(new Action[0][]);
         return false;
     }
 
-    private static boolean isConflicting(State state, Action[] jointAction) {
+    static boolean isConflicting(State state, Action[] jointAction) {
         int n = state.agentRows.length;
         int[] agentDestRow = new int[n];
         int[] agentDestCol = new int[n];
@@ -6435,7 +6925,7 @@ return bestNode.plan.toArray(new Action[0][]);
         return false;
     }
 
-    private static State applyJointAction(State state, Action[] jointAction) {
+    static State applyJointAction(State state, Action[] jointAction) {
         State next = copyState(state);
 
         for (int agent = 0; agent < jointAction.length; agent++) {
@@ -6593,6 +7083,30 @@ return bestNode.plan.toArray(new Action[0][]);
         return current;
     }
 
+    private static State simulateValidatedJointPlan(State state, List<Action[]> plan) {
+        State current = copyState(state);
+
+        for (Action[] jointAction : plan) {
+            if (jointAction == null || jointAction.length != current.agentRows.length) {
+                return null;
+            }
+
+            for (int agent = 0; agent < jointAction.length; agent++) {
+                if (jointAction[agent] == null || !isApplicable(current, agent, jointAction[agent])) {
+                    return null;
+                }
+            }
+
+            if (isConflicting(current, jointAction)) {
+                return null;
+            }
+
+            current = applyJointAction(current, jointAction);
+        }
+
+        return current;
+    }
+
     private static State applySingleAgentAction(State state, Action action, int agent) {
         int[] agentRows = state.agentRows.clone();
         int[] agentCols = state.agentCols.clone();
@@ -6657,7 +7171,7 @@ return bestNode.plan.toArray(new Action[0][]);
         );
     }
 
-    private static State copyState(State state) {
+    static State copyState(State state) {
         return new State(
                 state.agentRows.clone(),
                 state.agentCols.clone(),
@@ -6895,265 +7409,4 @@ private static List<Task> selectExpansionTasks(List<Task> tasks) {
         }
     }
 
-    private static final class GateProblem {
-        final int numAgents;
-        final int[] activeAgents;
-        final int[] rows;
-        final int[] cols;
-        final int[][] indexByCell;
-        final int[][] distances;
-        final int[] boxGoalCells;
-        final int agent7GoalCell;
-        final GateState initialState;
-
-        private GateProblem(
-                int numAgents,
-                int[] activeAgents,
-                int[] rows,
-                int[] cols,
-                int[][] indexByCell,
-                int[][] distances,
-                int[] boxGoalCells,
-                int agent7GoalCell,
-                GateState initialState
-        ) {
-            this.numAgents = numAgents;
-            this.activeAgents = activeAgents;
-            this.rows = rows;
-            this.cols = cols;
-            this.indexByCell = indexByCell;
-            this.distances = distances;
-            this.boxGoalCells = boxGoalCells;
-            this.agent7GoalCell = agent7GoalCell;
-            this.initialState = initialState;
-        }
-
-        static GateProblem from(State state) {
-            int minRow = 6;
-            int maxRow = 14;
-            int minCol = 16;
-            int maxCol = 28;
-            int[][] indexByCell = new int[State.walls.length][State.walls[0].length];
-
-            for (int r = 0; r < indexByCell.length; r++) {
-                for (int c = 0; c < indexByCell[r].length; c++) {
-                    indexByCell[r][c] = -1;
-                }
-            }
-
-            ArrayList<Integer> rowList = new ArrayList<>();
-            ArrayList<Integer> colList = new ArrayList<>();
-
-            for (int r = minRow; r <= maxRow; r++) {
-                for (int c = minCol; c <= maxCol; c++) {
-                    if (r != 10 && c != 22) {
-                        continue;
-                    }
-
-                    if (State.walls[r][c]) {
-                        continue;
-                    }
-
-                    char box = state.boxes[r][c];
-                    if (box != 0 && box != 'A' && box != 'B' && box != 'C' && box != 'D' && box != 'Z') {
-                        continue;
-                    }
-
-                    int index = rowList.size();
-                    indexByCell[r][c] = index;
-                    rowList.add(r);
-                    colList.add(c);
-                }
-            }
-
-            int[] activeAgents = { 0, 1, 2, 3, 7 };
-            int[] agentCells = new int[activeAgents.length];
-
-            for (int i = 0; i < activeAgents.length; i++) {
-                int agent = activeAgents[i];
-                agentCells[i] = cellIndex(indexByCell, state.agentRows[agent], state.agentCols[agent]);
-
-                if (agentCells[i] == -1) {
-                    return null;
-                }
-            }
-
-            int[] boxCells = new int[5];
-            char[] boxes = { 'A', 'B', 'C', 'D', 'Z' };
-
-            for (int i = 0; i < boxes.length; i++) {
-                boxCells[i] = findBoxCell(state, indexByCell, boxes[i], minRow, maxRow, minCol, maxCol);
-
-                if (boxCells[i] == -1) {
-                    return null;
-                }
-            }
-
-            int[] boxGoalCells = new int[4];
-
-            for (int i = 0; i < 4; i++) {
-                Position goal = findBoxGoal((char) ('A' + i));
-
-                if (goal == null) {
-                    return null;
-                }
-
-                boxGoalCells[i] = cellIndex(indexByCell, goal.row, goal.col);
-
-                if (boxGoalCells[i] == -1) {
-                    return null;
-                }
-            }
-
-            Position agent7Goal = findAgentGoal(7);
-
-            if (agent7Goal == null) {
-                return null;
-            }
-
-            int agent7GoalCell = cellIndex(indexByCell, agent7Goal.row, agent7Goal.col);
-
-            if (agent7GoalCell == -1) {
-                return null;
-            }
-
-            int[] rows = new int[rowList.size()];
-            int[] cols = new int[colList.size()];
-
-            for (int i = 0; i < rows.length; i++) {
-                rows[i] = rowList.get(i);
-                cols[i] = colList.get(i);
-            }
-
-            int[][] distances = computeGateDistances(rows, cols, indexByCell);
-
-            return new GateProblem(
-                    state.agentRows.length,
-                    activeAgents,
-                    rows,
-                    cols,
-                    indexByCell,
-                    distances,
-                    boxGoalCells,
-                    agent7GoalCell,
-                    new GateState(agentCells, boxCells)
-            );
-        }
-
-        int cellIndex(int row, int col) {
-            return cellIndex(indexByCell, row, col);
-        }
-
-        private static int cellIndex(int[][] indexByCell, int row, int col) {
-            if (row < 0 || row >= indexByCell.length || col < 0 || col >= indexByCell[row].length) {
-                return -1;
-            }
-
-            return indexByCell[row][col];
-        }
-
-        private static int findBoxCell(
-                State state,
-                int[][] indexByCell,
-                char box,
-                int minRow,
-                int maxRow,
-                int minCol,
-                int maxCol
-        ) {
-            for (int r = minRow; r <= maxRow; r++) {
-                for (int c = minCol; c <= maxCol; c++) {
-                    if (state.boxes[r][c] == box) {
-                        return cellIndex(indexByCell, r, c);
-                    }
-                }
-            }
-
-            return -1;
-        }
-
-        private static int[][] computeGateDistances(int[] rows, int[] cols, int[][] indexByCell) {
-            int[][] distances = new int[rows.length][rows.length];
-
-            for (int i = 0; i < distances.length; i++) {
-                for (int j = 0; j < distances[i].length; j++) {
-                    distances[i][j] = 1000;
-                }
-            }
-
-            for (int source = 0; source < rows.length; source++) {
-                ArrayDeque<Integer> queue = new ArrayDeque<>();
-                distances[source][source] = 0;
-                queue.add(source);
-
-                while (!queue.isEmpty()) {
-                    int cell = queue.removeFirst();
-                    int baseDistance = distances[source][cell];
-
-                    for (Action move : MOVE_ACTIONS) {
-                        int next = cellIndex(indexByCell, rows[cell] + move.agentRowDelta, cols[cell] + move.agentColDelta);
-
-                        if (next != -1 && distances[source][next] > baseDistance + 1) {
-                            distances[source][next] = baseDistance + 1;
-                            queue.add(next);
-                        }
-                    }
-                }
-            }
-
-            return distances;
-        }
-    }
-
-    private static final class GateState {
-        final int[] agentCells;
-        final int[] boxCells;
-
-        GateState(int[] agentCells, int[] boxCells) {
-            this.agentCells = agentCells.clone();
-            this.boxCells = boxCells.clone();
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (!(obj instanceof GateState)) {
-                return false;
-            }
-
-            GateState other = (GateState) obj;
-            return java.util.Arrays.equals(agentCells, other.agentCells)
-                    && java.util.Arrays.equals(boxCells, other.boxCells);
-        }
-
-        @Override
-        public int hashCode() {
-            return 31 * java.util.Arrays.hashCode(agentCells) + java.util.Arrays.hashCode(boxCells);
-        }
-    }
-
-    private static final class GateStep {
-        final GateState state;
-        final Action[] jointAction;
-
-        GateStep(GateState state, Action[] jointAction) {
-            this.state = state;
-            this.jointAction = jointAction;
-        }
-    }
-
-    private static final class GateNode {
-        final GateState state;
-        final GateNode parent;
-        final Action[] jointAction;
-        final int g;
-        final int f;
-
-        GateNode(GateState state, GateNode parent, Action[] jointAction, int g, int f) {
-            this.state = state;
-            this.parent = parent;
-            this.jointAction = jointAction;
-            this.g = g;
-            this.f = f;
-        }
-    }
 }

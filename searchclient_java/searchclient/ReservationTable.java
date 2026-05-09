@@ -4,9 +4,6 @@ import java.util.*;
 
 /**
  * Time-indexed reservations for prioritized multi-agent planning.
- *
- * The first skeleton only exposes the methods you will need. The TODO is to update it
- * with actual positions while simulating each AgentPlan.
  */
 public final class ReservationTable {
     private final Map<Integer, Set<Position>> occupiedAtTime = new HashMap<>();
@@ -27,11 +24,5 @@ public final class ReservationTable {
 
     public void reserveEdge(Position from, Position to, int time) {
         edgesAtTime.computeIfAbsent(time, k -> new HashSet<>()).add(new Edge(from, to));
-    }
-
-    public void reserve(AgentPlan plan) {
-        // TODO: simulate the plan from the current global state and reserve all occupied cells/edges.
-        // This is intentionally left as a project implementation point, because it depends on
-        // whether you reserve boxes, agents, or both.
     }
 }

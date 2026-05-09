@@ -13,8 +13,7 @@ import java.util.Set;
  * - Detect horizontal rows of box goals.
  * - If a row has at least 3 box goals, treat it as a local group.
  *
- * This is useful for levels like help.lvl where several boxes must be arranged
- * into a tight goal corridor.
+ * This is useful when several boxes must be arranged into a tight goal corridor.
  */
 public final class GoalGroupManager {
     private final LevelAnalyzer analyzer;

@@ -93,8 +93,7 @@ public final class AgentRetreatPlanner {
             return false;
         }
 
-        // Important for help.lvl and similar goal-row levels:
-        // Do not park inside the top goal corridor or directly below it.
+        // Do not park inside a top goal corridor or directly below it.
         if (p.row <= 2) {
             return false;
         }
